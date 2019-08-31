@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hipparcos-DB", "Hipparcos-DB.csproj", "{DFA97EB0-FE03-4A39-BD8B-C08438875DEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFA97EB0-FE03-4A39-BD8B-C08438875DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA97EB0-FE03-4A39-BD8B-C08438875DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA97EB0-FE03-4A39-BD8B-C08438875DEC}.Debug|x64.ActiveCfg = Debug|x64
+		{DFA97EB0-FE03-4A39-BD8B-C08438875DEC}.Debug|x64.Build.0 = Debug|x64
+		{DFA97EB0-FE03-4A39-BD8B-C08438875DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA97EB0-FE03-4A39-BD8B-C08438875DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFA97EB0-FE03-4A39-BD8B-C08438875DEC}.Release|x64.ActiveCfg = Release|x64
+		{DFA97EB0-FE03-4A39-BD8B-C08438875DEC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {900A89F5-CA81-4751-901F-7E50A1AD1D9E}
+	EndGlobalSection
+EndGlobal
