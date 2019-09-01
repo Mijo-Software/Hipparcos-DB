@@ -27,10 +27,12 @@ namespace Hipparcos_DB
 
 		private void ButtonOpenHipparcosCatalogue_Click(object sender, EventArgs e)
 		{
+			new HipparcosCatalogueViewerForm().Show();
 		}
 
 		private void ButtonOpenTychoCatalogue_Click(object sender, EventArgs e)
 		{
+			throw new NotImplementedException();
 		}
 
 		private void ButtonExit_Click(object sender, EventArgs e)

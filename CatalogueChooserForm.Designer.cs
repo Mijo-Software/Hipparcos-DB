@@ -34,10 +34,10 @@
 			this.buttonExit = new System.Windows.Forms.Button();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.panel = new System.Windows.Forms.Panel();
-			this.statusStrip = new System.Windows.Forms.StatusStrip();
+			this.statusStripText = new System.Windows.Forms.StatusStrip();
 			this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.panel.SuspendLayout();
-			this.statusStrip.SuspendLayout();
+			this.statusStripText.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// buttonOpenHipparcosCatalogue
@@ -110,16 +110,16 @@
 			this.panel.Size = new System.Drawing.Size(168, 63);
 			this.panel.TabIndex = 0;
 			// 
-			// statusStrip
+			// statusStripText
 			// 
-			this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.statusStripText.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-			this.statusStrip.Location = new System.Drawing.Point(0, 128);
-			this.statusStrip.Name = "statusStrip";
-			this.statusStrip.Size = new System.Drawing.Size(192, 22);
-			this.statusStrip.SizingGrip = false;
-			this.statusStrip.TabIndex = 4;
-			this.statusStrip.Text = "statusStrip";
+			this.statusStripText.Location = new System.Drawing.Point(0, 128);
+			this.statusStripText.Name = "statusStripText";
+			this.statusStripText.Size = new System.Drawing.Size(192, 22);
+			this.statusStripText.SizingGrip = false;
+			this.statusStripText.TabIndex = 4;
+			this.statusStripText.Text = "statusStrip";
 			// 
 			// toolStripStatusLabel
 			// 
@@ -132,7 +132,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(192, 150);
-			this.Controls.Add(this.statusStrip);
+			this.Controls.Add(this.statusStripText);
 			this.Controls.Add(this.panel);
 			this.Controls.Add(this.buttonExit);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -142,8 +142,8 @@
 			this.Text = "Catalogue Chooser";
 			this.Load += new System.EventHandler(this.CatalogueChooserForm_Load);
 			this.panel.ResumeLayout(false);
-			this.statusStrip.ResumeLayout(false);
-			this.statusStrip.PerformLayout();
+			this.statusStripText.ResumeLayout(false);
+			this.statusStripText.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -156,7 +156,7 @@
 		private System.Windows.Forms.Button buttonExit;
 		private System.Windows.Forms.ToolTip toolTip;
 		private System.Windows.Forms.Panel panel;
-		private System.Windows.Forms.StatusStrip statusStrip;
+		private System.Windows.Forms.StatusStrip statusStripText;
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
 	}
 }
