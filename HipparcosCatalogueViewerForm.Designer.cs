@@ -67,12 +67,12 @@
 			this.labelStandardErrorJohnsonBvColourDesc = new System.Windows.Forms.Label();
 			this.labelJohnsonBvColourDesc = new System.Windows.Forms.Label();
 			this.labelStandardErrorMeanVtMagnitudeDesc = new System.Windows.Forms.Label();
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc = new System.Windows.Forms.Label();
-			this.labelScatterMeanMagnitudeInHipparcosSystemDesc = new System.Windows.Forms.Label();
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemDesc = new System.Windows.Forms.Label();
-			this.labelMeanMagnitudeInHipparcosSystemDesc = new System.Windows.Forms.Label();
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc = new System.Windows.Forms.Label();
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc = new System.Windows.Forms.Label();
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc = new System.Windows.Forms.Label();
+			this.labelMedianMagnitudeInHipparcosSystemDesc = new System.Windows.Forms.Label();
 			this.labelSourceOfViDesc = new System.Windows.Forms.Label();
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumDesc = new System.Windows.Forms.Label();
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc = new System.Windows.Forms.Label();
 			this.labelSolutionQualityDesc = new System.Windows.Forms.Label();
 			this.labelAstrometricSourceFlagDesc = new System.Windows.Forms.Label();
 			this.labelMultipleSystemsFlagDesc = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
 			this.labelAdditionalDataAboutVariabilityDesc = new System.Windows.Forms.Label();
 			this.labelVariabilityTypeDesc = new System.Windows.Forms.Label();
 			this.labelVariabilityPeriodDesc = new System.Windows.Forms.Label();
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumDesc = new System.Windows.Forms.Label();
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc = new System.Windows.Forms.Label();
 			this.labelCcdmIdentifierDesc = new System.Windows.Forms.Label();
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc = new System.Windows.Forms.Label();
 			this.labelMagnitudeDifferenceBetweenComponentsDesc = new System.Windows.Forms.Label();
@@ -107,7 +107,7 @@
 			this.labelFlagForCombinedMagnitudesDesc = new System.Windows.Forms.Label();
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc = new System.Windows.Forms.Label();
 			this.labelHistoricalStatusFlagDesc = new System.Windows.Forms.Label();
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc = new System.Windows.Forms.Label();
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc = new System.Windows.Forms.Label();
 			this.toolStrip = new System.Windows.Forms.ToolStrip();
 			this.toolStripButtonStepToBegin = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonStepBackward = new System.Windows.Forms.ToolStripButton();
@@ -175,19 +175,19 @@
 			this.labelProperMotionAlphaData = new System.Windows.Forms.Label();
 			this.labelVariabilityPeriodData = new System.Windows.Forms.Label();
 			this.labelTrigonomicParallaxData = new System.Windows.Forms.Label();
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumData = new System.Windows.Forms.Label();
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData = new System.Windows.Forms.Label();
 			this.labelReferenceFlagForAstrometryData = new System.Windows.Forms.Label();
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumData = new System.Windows.Forms.Label();
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData = new System.Windows.Forms.Label();
 			this.labelDeltaData = new System.Windows.Forms.Label();
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemData = new System.Windows.Forms.Label();
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData = new System.Windows.Forms.Label();
 			this.labelAlphaData = new System.Windows.Forms.Label();
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemData = new System.Windows.Forms.Label();
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData = new System.Windows.Forms.Label();
 			this.labelSourceOfMagnitudeData = new System.Windows.Forms.Label();
-			this.labelScatterMeanMagnitudeInHipparcosSystemData = new System.Windows.Forms.Label();
+			this.labelScatterMedianMagnitudeInHipparcosSystemData = new System.Windows.Forms.Label();
 			this.labelCoarseVariabilityFlagData = new System.Windows.Forms.Label();
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemData = new System.Windows.Forms.Label();
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData = new System.Windows.Forms.Label();
 			this.labelMagnitudeJohnsonData = new System.Windows.Forms.Label();
-			this.labelMeanMagnitudeInHipparcosSystemData = new System.Windows.Forms.Label();
+			this.labelMedianMagnitudeInHipparcosSystemData = new System.Windows.Forms.Label();
 			this.labelDeclinationData = new System.Windows.Forms.Label();
 			this.labelFlagForCombinedMagnitudesData = new System.Windows.Forms.Label();
 			this.labelRightAscensionData = new System.Windows.Forms.Label();
@@ -213,6 +213,10 @@
 			this.labelIdentifierDesc.TabIndex = 2;
 			this.labelIdentifierDesc.Text = "Identifier (HIP number)";
 			this.toolTip.SetToolTip(this.labelIdentifierDesc, "Identifier (HIP number)");
+			this.labelIdentifierDesc.Enter += new System.EventHandler(this.LabelIdentifierDesc_Enter);
+			this.labelIdentifierDesc.Leave += new System.EventHandler(this.LabelIdentifierDesc_Leave);
+			this.labelIdentifierDesc.MouseEnter += new System.EventHandler(this.LabelIdentifierDesc_MouseEnter);
+			this.labelIdentifierDesc.MouseLeave += new System.EventHandler(this.LabelIdentifierDesc_MouseLeave);
 			// 
 			// labelRightAscensionDesc
 			// 
@@ -224,6 +228,10 @@
 			this.labelRightAscensionDesc.TabIndex = 6;
 			this.labelRightAscensionDesc.Text = "Right ascension in h m s, ICRS (J1991.25)";
 			this.toolTip.SetToolTip(this.labelRightAscensionDesc, "Right ascension in h m s, ICRS (J1991.25)");
+			this.labelRightAscensionDesc.Enter += new System.EventHandler(this.LabelRightAscensionDesc_Enter);
+			this.labelRightAscensionDesc.Leave += new System.EventHandler(this.LabelRightAscensionDesc_Leave);
+			this.labelRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelRightAscensionDesc_MouseEnter);
+			this.labelRightAscensionDesc.MouseLeave += new System.EventHandler(this.LabelRightAscensionDesc_MouseLeave);
 			// 
 			// labelDeclinationDesc
 			// 
@@ -235,6 +243,10 @@
 			this.labelDeclinationDesc.TabIndex = 8;
 			this.labelDeclinationDesc.Text = "Declination in deg \' \", ICRS (J1991.25)";
 			this.toolTip.SetToolTip(this.labelDeclinationDesc, "Declination in deg \' \", ICRS (J1991.25)");
+			this.labelDeclinationDesc.Enter += new System.EventHandler(this.LabelDeclinationDesc_Enter);
+			this.labelDeclinationDesc.Leave += new System.EventHandler(this.LabelDeclinationDesc_Leave);
+			this.labelDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelDeclinationDesc_MouseEnter);
+			this.labelDeclinationDesc.MouseLeave += new System.EventHandler(this.LabelDeclinationDesc_MouseLeave);
 			// 
 			// labelMagnitudeJohnsonDesc
 			// 
@@ -246,6 +258,10 @@
 			this.labelMagnitudeJohnsonDesc.TabIndex = 10;
 			this.labelMagnitudeJohnsonDesc.Text = "Magnitude in Johnson V";
 			this.toolTip.SetToolTip(this.labelMagnitudeJohnsonDesc, "Magnitude in Johnson V");
+			this.labelMagnitudeJohnsonDesc.Enter += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_Enter);
+			this.labelMagnitudeJohnsonDesc.Leave += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_Leave);
+			this.labelMagnitudeJohnsonDesc.MouseEnter += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_MouseEnter);
+			this.labelMagnitudeJohnsonDesc.MouseLeave += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_MouseLeave);
 			// 
 			// labelSourceOfMagnitudeDesc
 			// 
@@ -257,6 +273,10 @@
 			this.labelSourceOfMagnitudeDesc.TabIndex = 14;
 			this.labelSourceOfMagnitudeDesc.Text = "Source of magnitude";
 			this.toolTip.SetToolTip(this.labelSourceOfMagnitudeDesc, "Source of magnitude");
+			this.labelSourceOfMagnitudeDesc.Enter += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_Enter);
+			this.labelSourceOfMagnitudeDesc.Leave += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_Leave);
+			this.labelSourceOfMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_MouseEnter);
+			this.labelSourceOfMagnitudeDesc.MouseLeave += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_MouseLeave);
 			// 
 			// labelAlphaDesc
 			// 
@@ -268,16 +288,25 @@
 			this.labelAlphaDesc.TabIndex = 16;
 			this.labelAlphaDesc.Text = "alpha, degrees (ICRS, Epoch=J1991.25)";
 			this.toolTip.SetToolTip(this.labelAlphaDesc, "alpha, degrees (ICRS, Epoch=J1991.25)");
+			this.labelAlphaDesc.Enter += new System.EventHandler(this.LabelAlphaDesc_Enter);
+			this.labelAlphaDesc.Leave += new System.EventHandler(this.LabelAlphaDesc_Leave);
+			this.labelAlphaDesc.MouseEnter += new System.EventHandler(this.LabelAlphaDesc_MouseEnter);
+			this.labelAlphaDesc.MouseLeave += new System.EventHandler(this.LabelAlphaDesc_MouseLeave);
 			// 
 			// labelDeltaDesc
 			// 
 			this.labelDeltaDesc.AutoSize = true;
+			this.labelDeltaDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelDeltaDesc.Location = new System.Drawing.Point(6, 165);
 			this.labelDeltaDesc.Name = "labelDeltaDesc";
-			this.labelDeltaDesc.Size = new System.Drawing.Size(195, 13);
+			this.labelDeltaDesc.Size = new System.Drawing.Size(242, 15);
 			this.labelDeltaDesc.TabIndex = 18;
 			this.labelDeltaDesc.Text = "delta, degrees (ICRS, Epoch=J1991.25)";
 			this.toolTip.SetToolTip(this.labelDeltaDesc, "delta, degrees (ICRS, Epoch=J1991.25)");
+			this.labelDeltaDesc.Enter += new System.EventHandler(this.LabelDeltaDesc_Enter);
+			this.labelDeltaDesc.Leave += new System.EventHandler(this.LabelDeltaDesc_Leave);
+			this.labelDeltaDesc.MouseEnter += new System.EventHandler(this.LabelDeltaDesc_MouseEnter);
+			this.labelDeltaDesc.MouseLeave += new System.EventHandler(this.LabelDeltaDesc_MouseLeave);
 			// 
 			// labelTrigonomicParallaxDesc
 			// 
@@ -289,6 +318,10 @@
 			this.labelTrigonomicParallaxDesc.TabIndex = 22;
 			this.labelTrigonomicParallaxDesc.Text = "Trigonometric parallax";
 			this.toolTip.SetToolTip(this.labelTrigonomicParallaxDesc, "Trigonometric parallax");
+			this.labelTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelTrigonomicParallaxDesc_Enter);
+			this.labelTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelTrigonomicParallaxDesc_Leave);
+			this.labelTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelTrigonomicParallaxDesc_MouseEnter);
+			this.labelTrigonomicParallaxDesc.MouseLeave += new System.EventHandler(this.LabelTrigonomicParallaxDesc_MouseLeave);
 			// 
 			// labelProperMotionAlphaDesc
 			// 
@@ -300,6 +333,10 @@
 			this.labelProperMotionAlphaDesc.TabIndex = 24;
 			this.labelProperMotionAlphaDesc.Text = "Proper motion mu_alpha.cos(delta), ICRS";
 			this.toolTip.SetToolTip(this.labelProperMotionAlphaDesc, "Proper motion mu_alpha.cos(delta), ICRS");
+			this.labelProperMotionAlphaDesc.Enter += new System.EventHandler(this.LabelProperMotionAlphaDesc_Enter);
+			this.labelProperMotionAlphaDesc.Leave += new System.EventHandler(this.LabelProperMotionAlphaDesc_Leave);
+			this.labelProperMotionAlphaDesc.MouseEnter += new System.EventHandler(this.LabelProperMotionAlphaDesc_MouseEnter);
+			this.labelProperMotionAlphaDesc.MouseLeave += new System.EventHandler(this.LabelProperMotionAlphaDesc_MouseLeave);
 			// 
 			// labelProperMotionDeltaDesc
 			// 
@@ -311,6 +348,10 @@
 			this.labelProperMotionDeltaDesc.TabIndex = 26;
 			this.labelProperMotionDeltaDesc.Text = "Proper motion mu_delta, ICRS";
 			this.toolTip.SetToolTip(this.labelProperMotionDeltaDesc, "Proper motion mu_delta, ICRS");
+			this.labelProperMotionDeltaDesc.Enter += new System.EventHandler(this.LabelProperMotionDeltaDesc_Enter);
+			this.labelProperMotionDeltaDesc.Leave += new System.EventHandler(this.LabelProperMotionDeltaDesc_Leave);
+			this.labelProperMotionDeltaDesc.MouseEnter += new System.EventHandler(this.LabelProperMotionDeltaDesc_MouseEnter);
+			this.labelProperMotionDeltaDesc.MouseLeave += new System.EventHandler(this.LabelProperMotionDeltaDesc_MouseLeave);
 			// 
 			// labelStandardErrorRightAscensionDesc
 			// 
@@ -322,6 +363,10 @@
 			this.labelStandardErrorRightAscensionDesc.TabIndex = 28;
 			this.labelStandardErrorRightAscensionDesc.Text = "Standard error in RA*cos(DEdeg)";
 			this.toolTip.SetToolTip(this.labelStandardErrorRightAscensionDesc, "Standard error in RA*cos(DEdeg)");
+			this.labelStandardErrorRightAscensionDesc.Enter += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_Enter);
+			this.labelStandardErrorRightAscensionDesc.Leave += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_Leave);
+			this.labelStandardErrorRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_MouseEnter);
+			this.labelStandardErrorRightAscensionDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_MouseLeave);
 			// 
 			// labelStandardErrorDeclinationDesc
 			// 
@@ -333,6 +378,10 @@
 			this.labelStandardErrorDeclinationDesc.TabIndex = 30;
 			this.labelStandardErrorDeclinationDesc.Text = "Standard error in DE";
 			this.toolTip.SetToolTip(this.labelStandardErrorDeclinationDesc, "Standard error in DE");
+			this.labelStandardErrorDeclinationDesc.Enter += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_Enter);
+			this.labelStandardErrorDeclinationDesc.Leave += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_Leave);
+			this.labelStandardErrorDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_MouseEnter);
+			this.labelStandardErrorDeclinationDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_MouseLeave);
 			// 
 			// labelStandardErrorTrigonomicParallaxDesc
 			// 
@@ -344,6 +393,10 @@
 			this.labelStandardErrorTrigonomicParallaxDesc.TabIndex = 32;
 			this.labelStandardErrorTrigonomicParallaxDesc.Text = "Standard error in Plx";
 			this.toolTip.SetToolTip(this.labelStandardErrorTrigonomicParallaxDesc, "Standard error in Plx");
+			this.labelStandardErrorTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_Enter);
+			this.labelStandardErrorTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_Leave);
+			this.labelStandardErrorTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_MouseEnter);
+			this.labelStandardErrorTrigonomicParallaxDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_MouseLeave);
 			// 
 			// labelStandardErrorProperMotionDeclinationDesc
 			// 
@@ -355,6 +408,10 @@
 			this.labelStandardErrorProperMotionDeclinationDesc.TabIndex = 36;
 			this.labelStandardErrorProperMotionDeclinationDesc.Text = "Standard error in pmDE";
 			this.toolTip.SetToolTip(this.labelStandardErrorProperMotionDeclinationDesc, "Standard error in pmDE");
+			this.labelStandardErrorProperMotionDeclinationDesc.Enter += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_Enter);
+			this.labelStandardErrorProperMotionDeclinationDesc.Leave += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_Leave);
+			this.labelStandardErrorProperMotionDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_MouseEnter);
+			this.labelStandardErrorProperMotionDeclinationDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_MouseLeave);
 			// 
 			// labelStandardErrorProperMotionRightAscensionDesc
 			// 
@@ -366,6 +423,10 @@
 			this.labelStandardErrorProperMotionRightAscensionDesc.TabIndex = 34;
 			this.labelStandardErrorProperMotionRightAscensionDesc.Text = "Standard error in pmRA";
 			this.toolTip.SetToolTip(this.labelStandardErrorProperMotionRightAscensionDesc, "Standard error in pmRA");
+			this.labelStandardErrorProperMotionRightAscensionDesc.Enter += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_Enter);
+			this.labelStandardErrorProperMotionRightAscensionDesc.Leave += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_Leave);
+			this.labelStandardErrorProperMotionRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_MouseEnter);
+			this.labelStandardErrorProperMotionRightAscensionDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_MouseLeave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByRightAscensionDesc
 			// 
@@ -377,6 +438,10 @@
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.TabIndex = 44;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Text = "Correlation, pmRA/RA*cos(delta)";
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc, "Correlation, pmRA/RA*cos(delta)");
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Enter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Leave);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseLeave);
 			// 
 			// labelCorrelationTrigonomicParallaxByDeclinationDesc
 			// 
@@ -388,6 +453,10 @@
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.TabIndex = 42;
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Text = "Correlation, Plx/DE";
 			this.toolTip.SetToolTip(this.labelCorrelationTrigonomicParallaxByDeclinationDesc, "Correlation, Plx/DE");
+			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Enter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_Enter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Leave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_Leave);
+			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseEnter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.MouseLeave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseLeave);
 			// 
 			// labelCorrelationTrigonomicParallaxByRightAscensionDesc
 			// 
@@ -399,6 +468,10 @@
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.TabIndex = 40;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Text = "Correlation, Plx/RA*cos(delta)";
 			this.toolTip.SetToolTip(this.labelCorrelationTrigonomicParallaxByRightAscensionDesc, "Correlation, Plx/RA*cos(delta)");
+			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Enter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Leave);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseEnter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.MouseLeave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseLeave);
 			// 
 			// labelCorrelationDeclinationByRightAscensionDesc
 			// 
@@ -410,6 +483,10 @@
 			this.labelCorrelationDeclinationByRightAscensionDesc.TabIndex = 38;
 			this.labelCorrelationDeclinationByRightAscensionDesc.Text = "Correlation, DE/RA*cos(delta)";
 			this.toolTip.SetToolTip(this.labelCorrelationDeclinationByRightAscensionDesc, "Correlation, DE/RA*cos(delta)");
+			this.labelCorrelationDeclinationByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_Enter);
+			this.labelCorrelationDeclinationByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_Leave);
+			this.labelCorrelationDeclinationByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_MouseEnter);
+			this.labelCorrelationDeclinationByRightAscensionDesc.MouseLeave += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_MouseLeave);
 			// 
 			// labelCorrelationProperMotionDeclinationByRightAscensionDesc
 			// 
@@ -421,6 +498,10 @@
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.TabIndex = 50;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Text = "Correlation, pmDE/RA*cos(delta)";
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByRightAscensionDesc, "Correlation, pmDE/RA*cos(delta)");
+			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Enter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Leave);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseLeave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc
 			// 
@@ -432,6 +513,10 @@
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.TabIndex = 48;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Text = "Correlation, pmRA/Plx";
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, "Correlation, pmRA/Plx");
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Enter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Leave);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseLeave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByDeclinationDesc
 			// 
@@ -443,6 +528,10 @@
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.TabIndex = 46;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Text = "Correlation, pmRA/DE";
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByDeclinationDesc, "Correlation, pmRA/DE");
+			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Enter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Leave);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseLeave);
 			// 
 			// labelGoodnessOfFitParameterDesc
 			// 
@@ -454,6 +543,10 @@
 			this.labelGoodnessOfFitParameterDesc.TabIndex = 60;
 			this.labelGoodnessOfFitParameterDesc.Text = "Goodness-of-fit parameter";
 			this.toolTip.SetToolTip(this.labelGoodnessOfFitParameterDesc, "Goodness-of-fit parameter");
+			this.labelGoodnessOfFitParameterDesc.Enter += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_Enter);
+			this.labelGoodnessOfFitParameterDesc.Leave += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_Leave);
+			this.labelGoodnessOfFitParameterDesc.MouseEnter += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_MouseEnter);
+			this.labelGoodnessOfFitParameterDesc.MouseLeave += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_MouseLeave);
 			// 
 			// labelPercentageOfRejectedDataDesc
 			// 
@@ -465,6 +558,10 @@
 			this.labelPercentageOfRejectedDataDesc.TabIndex = 58;
 			this.labelPercentageOfRejectedDataDesc.Text = "Percentage of rejected data";
 			this.toolTip.SetToolTip(this.labelPercentageOfRejectedDataDesc, "Percentage of rejected data");
+			this.labelPercentageOfRejectedDataDesc.Enter += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_Enter);
+			this.labelPercentageOfRejectedDataDesc.Leave += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_Leave);
+			this.labelPercentageOfRejectedDataDesc.MouseEnter += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_MouseEnter);
+			this.labelPercentageOfRejectedDataDesc.MouseLeave += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_MouseLeave);
 			// 
 			// labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc
 			// 
@@ -476,6 +573,10 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.TabIndex = 54;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Text = "Correlation, pmDE/Plx";
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, "Correlation, pmDE/Plx");
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Enter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Leave);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseLeave);
 			// 
 			// labelCorrelationProperMotionDeclinationByDeclinationDesc
 			// 
@@ -487,6 +588,10 @@
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.TabIndex = 52;
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Text = "Correlation, pmDE/DE";
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByDeclinationDesc, "Correlation, pmDE/DE");
+			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_Enter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_Leave);
+			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseLeave);
 			// 
 			// labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc
 			// 
@@ -498,6 +603,10 @@
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.TabIndex = 56;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Text = "Correlation, pmDE/pmRA";
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, "Correlation, pmDE/pmRA");
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Enter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Leave);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseLeave);
 			// 
 			// labelStandardErrorMeanBtMagnitudeDesc
 			// 
@@ -509,6 +618,10 @@
 			this.labelStandardErrorMeanBtMagnitudeDesc.TabIndex = 64;
 			this.labelStandardErrorMeanBtMagnitudeDesc.Text = "Standard error on BTmag";
 			this.toolTip.SetToolTip(this.labelStandardErrorMeanBtMagnitudeDesc, "Standard error on BTmag");
+			this.labelStandardErrorMeanBtMagnitudeDesc.Enter += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_Enter);
+			this.labelStandardErrorMeanBtMagnitudeDesc.Leave += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_Leave);
+			this.labelStandardErrorMeanBtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_MouseEnter);
+			this.labelStandardErrorMeanBtMagnitudeDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_MouseLeave);
 			// 
 			// labelMeanBtMagnitudeDesc
 			// 
@@ -520,6 +633,10 @@
 			this.labelMeanBtMagnitudeDesc.TabIndex = 62;
 			this.labelMeanBtMagnitudeDesc.Text = "Mean BT magnitude";
 			this.toolTip.SetToolTip(this.labelMeanBtMagnitudeDesc, "Mean BT magnitude");
+			this.labelMeanBtMagnitudeDesc.Enter += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_Enter);
+			this.labelMeanBtMagnitudeDesc.Leave += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_Leave);
+			this.labelMeanBtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_MouseEnter);
+			this.labelMeanBtMagnitudeDesc.MouseLeave += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_MouseLeave);
 			// 
 			// labelStandardErrorViDesc
 			// 
@@ -531,6 +648,10 @@
 			this.labelStandardErrorViDesc.TabIndex = 80;
 			this.labelStandardErrorViDesc.Text = "Standard error on V-I";
 			this.toolTip.SetToolTip(this.labelStandardErrorViDesc, "Standard error on V-I");
+			this.labelStandardErrorViDesc.Enter += new System.EventHandler(this.LabelStandardErrorViDesc_Enter);
+			this.labelStandardErrorViDesc.Leave += new System.EventHandler(this.LabelStandardErrorViDesc_Leave);
+			this.labelStandardErrorViDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorViDesc_MouseEnter);
+			this.labelStandardErrorViDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorViDesc_MouseLeave);
 			// 
 			// labelMeanVtMagnitudeDesc
 			// 
@@ -542,6 +663,10 @@
 			this.labelMeanVtMagnitudeDesc.TabIndex = 66;
 			this.labelMeanVtMagnitudeDesc.Text = "Mean VT magnitude";
 			this.toolTip.SetToolTip(this.labelMeanVtMagnitudeDesc, "Mean VT magnitude");
+			this.labelMeanVtMagnitudeDesc.Enter += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_Enter);
+			this.labelMeanVtMagnitudeDesc.Leave += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_Leave);
+			this.labelMeanVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_MouseEnter);
+			this.labelMeanVtMagnitudeDesc.MouseLeave += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_MouseLeave);
 			// 
 			// labelColourIndexInCousinsSystemDesc
 			// 
@@ -553,6 +678,10 @@
 			this.labelColourIndexInCousinsSystemDesc.TabIndex = 78;
 			this.labelColourIndexInCousinsSystemDesc.Text = "Colour index in Cousins\' system";
 			this.toolTip.SetToolTip(this.labelColourIndexInCousinsSystemDesc, "Colour index in Cousins\' system");
+			this.labelColourIndexInCousinsSystemDesc.Enter += new System.EventHandler(this.LabelColourIndexInCousinsSystemDesc_Enter);
+			this.labelColourIndexInCousinsSystemDesc.Leave += new System.EventHandler(this.LabelColourIndexInCousinsSystemDesc_Leave);
+			this.labelColourIndexInCousinsSystemDesc.MouseEnter += new System.EventHandler(this.LabelColourIndexInCousinsSystemDesc_MouseEnter);
+			this.labelColourIndexInCousinsSystemDesc.MouseLeave += new System.EventHandler(this.LabelColourIndexInCousinsSystemDesc_MouseLeave);
 			// 
 			// labelSourceOfBvColourDesc
 			// 
@@ -564,6 +693,9 @@
 			this.labelSourceOfBvColourDesc.TabIndex = 76;
 			this.labelSourceOfBvColourDesc.Text = "Source of B-V from Ground or Tycho";
 			this.toolTip.SetToolTip(this.labelSourceOfBvColourDesc, "Source of B-V from Ground or Tycho");
+			this.labelSourceOfBvColourDesc.Enter += new System.EventHandler(this.LabelSourceOfBvColourDesc_Enter);
+			this.labelSourceOfBvColourDesc.Leave += new System.EventHandler(this.LabelSourceOfBvColourDesc_Leave);
+			this.labelSourceOfBvColourDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfBvColourDesc_MouseEnter);
 			// 
 			// labelStandardErrorJohnsonBvColourDesc
 			// 
@@ -575,6 +707,10 @@
 			this.labelStandardErrorJohnsonBvColourDesc.TabIndex = 72;
 			this.labelStandardErrorJohnsonBvColourDesc.Text = "Standard error on B-V";
 			this.toolTip.SetToolTip(this.labelStandardErrorJohnsonBvColourDesc, "Standard error on B-V");
+			this.labelStandardErrorJohnsonBvColourDesc.Enter += new System.EventHandler(this.LabelStandardErrorJohnsonBvColourDesc_Enter);
+			this.labelStandardErrorJohnsonBvColourDesc.Leave += new System.EventHandler(this.LabelStandardErrorJohnsonBvColourDesc_Leave);
+			this.labelStandardErrorJohnsonBvColourDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorJohnsonBvColourDesc_MouseEnter);
+			this.labelStandardErrorJohnsonBvColourDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorJohnsonBvColourDesc_MouseLeave);
 			// 
 			// labelJohnsonBvColourDesc
 			// 
@@ -586,6 +722,10 @@
 			this.labelJohnsonBvColourDesc.TabIndex = 70;
 			this.labelJohnsonBvColourDesc.Text = "Johnson B-V colour";
 			this.toolTip.SetToolTip(this.labelJohnsonBvColourDesc, "Johnson B-V colour");
+			this.labelJohnsonBvColourDesc.Enter += new System.EventHandler(this.LabelJohnsonBvColourDesc_Enter);
+			this.labelJohnsonBvColourDesc.Leave += new System.EventHandler(this.LabelJohnsonBvColourDesc_Leave);
+			this.labelJohnsonBvColourDesc.MouseEnter += new System.EventHandler(this.LabelJohnsonBvColourDesc_MouseEnter);
+			this.labelJohnsonBvColourDesc.MouseLeave += new System.EventHandler(this.LabelJohnsonBvColourDesc_MouseLeave);
 			// 
 			// labelStandardErrorMeanVtMagnitudeDesc
 			// 
@@ -597,50 +737,70 @@
 			this.labelStandardErrorMeanVtMagnitudeDesc.TabIndex = 68;
 			this.labelStandardErrorMeanVtMagnitudeDesc.Text = "Standard error on VTmag";
 			this.toolTip.SetToolTip(this.labelStandardErrorMeanVtMagnitudeDesc, "Standard error on VTmag");
+			this.labelStandardErrorMeanVtMagnitudeDesc.Enter += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_Enter);
+			this.labelStandardErrorMeanVtMagnitudeDesc.Leave += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_Leave);
+			this.labelStandardErrorMeanVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_MouseEnter);
+			this.labelStandardErrorMeanVtMagnitudeDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_MouseLeave);
 			// 
-			// labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc
+			// labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc
 			// 
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc.AutoSize = true;
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(508, 129);
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc.Name = "labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc";
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc.Size = new System.Drawing.Size(242, 15);
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc.TabIndex = 97;
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc.Text = "Number of observations for Hpmag";
-			this.toolTip.SetToolTip(this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc, "Number of observations for Hpmag");
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.AutoSize = true;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(508, 129);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Name = "labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc";
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Size = new System.Drawing.Size(242, 15);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.TabIndex = 97;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Text = "Number of observations for Hpmag";
+			this.toolTip.SetToolTip(this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc, "Number of observations for Hpmag");
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Enter);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Leave);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.MouseLeave += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_MouseLeave);
 			// 
-			// labelScatterMeanMagnitudeInHipparcosSystemDesc
+			// labelScatterMedianMagnitudeInHipparcosSystemDesc
 			// 
-			this.labelScatterMeanMagnitudeInHipparcosSystemDesc.AutoSize = true;
-			this.labelScatterMeanMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelScatterMeanMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(508, 111);
-			this.labelScatterMeanMagnitudeInHipparcosSystemDesc.Name = "labelScatterMeanMagnitudeInHipparcosSystemDesc";
-			this.labelScatterMeanMagnitudeInHipparcosSystemDesc.Size = new System.Drawing.Size(242, 15);
-			this.labelScatterMeanMagnitudeInHipparcosSystemDesc.TabIndex = 95;
-			this.labelScatterMeanMagnitudeInHipparcosSystemDesc.Text = "Scatter on Hpmag";
-			this.toolTip.SetToolTip(this.labelScatterMeanMagnitudeInHipparcosSystemDesc, "Scatter on Hpmag");
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.AutoSize = true;
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(508, 111);
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Name = "labelScatterMedianMagnitudeInHipparcosSystemDesc";
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Size = new System.Drawing.Size(242, 15);
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.TabIndex = 95;
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Text = "Scatter on Hpmag";
+			this.toolTip.SetToolTip(this.labelScatterMedianMagnitudeInHipparcosSystemDesc, "Scatter on Hpmag");
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_Enter);
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_Leave);
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.MouseLeave += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_MouseLeave);
 			// 
-			// labelStandardErrorMeanMagnitudeInHipparcosSystemDesc
+			// labelStandardErrorMedianMagnitudeInHipparcosSystemDesc
 			// 
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemDesc.AutoSize = true;
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(508, 93);
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemDesc.Name = "labelStandardErrorMeanMagnitudeInHipparcosSystemDesc";
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemDesc.Size = new System.Drawing.Size(242, 15);
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemDesc.TabIndex = 92;
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemDesc.Text = "Standard error on Hpmag";
-			this.toolTip.SetToolTip(this.labelStandardErrorMeanMagnitudeInHipparcosSystemDesc, "Standard error on Hpmag");
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.AutoSize = true;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(508, 93);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Name = "labelStandardErrorMedianMagnitudeInHipparcosSystemDesc";
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Size = new System.Drawing.Size(242, 15);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.TabIndex = 92;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Text = "Standard error on Hpmag";
+			this.toolTip.SetToolTip(this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc, "Standard error on Hpmag");
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Enter);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Leave);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_MouseLeave);
 			// 
-			// labelMeanMagnitudeInHipparcosSystemDesc
+			// labelMedianMagnitudeInHipparcosSystemDesc
 			// 
-			this.labelMeanMagnitudeInHipparcosSystemDesc.AutoSize = true;
-			this.labelMeanMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelMeanMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(508, 75);
-			this.labelMeanMagnitudeInHipparcosSystemDesc.Name = "labelMeanMagnitudeInHipparcosSystemDesc";
-			this.labelMeanMagnitudeInHipparcosSystemDesc.Size = new System.Drawing.Size(242, 15);
-			this.labelMeanMagnitudeInHipparcosSystemDesc.TabIndex = 90;
-			this.labelMeanMagnitudeInHipparcosSystemDesc.Text = "Median magnitude in Hipparcos system";
-			this.toolTip.SetToolTip(this.labelMeanMagnitudeInHipparcosSystemDesc, "Median magnitude in Hipparcos system");
+			this.labelMedianMagnitudeInHipparcosSystemDesc.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(508, 75);
+			this.labelMedianMagnitudeInHipparcosSystemDesc.Name = "labelMedianMagnitudeInHipparcosSystemDesc";
+			this.labelMedianMagnitudeInHipparcosSystemDesc.Size = new System.Drawing.Size(242, 15);
+			this.labelMedianMagnitudeInHipparcosSystemDesc.TabIndex = 90;
+			this.labelMedianMagnitudeInHipparcosSystemDesc.Text = "Median magnitude in Hipparcos system";
+			this.toolTip.SetToolTip(this.labelMedianMagnitudeInHipparcosSystemDesc, "Median magnitude in Hipparcos system");
+			this.labelMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemDesc.MouseLeave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_MouseLeave);
 			// 
 			// labelSourceOfViDesc
 			// 
@@ -652,17 +812,25 @@
 			this.labelSourceOfViDesc.TabIndex = 82;
 			this.labelSourceOfViDesc.Text = "Source of V-I";
 			this.toolTip.SetToolTip(this.labelSourceOfViDesc, "Source of V-I");
+			this.labelSourceOfViDesc.Enter += new System.EventHandler(this.LabelSourceOfViDesc_Enter);
+			this.labelSourceOfViDesc.Leave += new System.EventHandler(this.LabelSourceOfViDesc_Leave);
+			this.labelSourceOfViDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfViDesc_MouseEnter);
+			this.labelSourceOfViDesc.MouseLeave += new System.EventHandler(this.LabelSourceOfViDesc_MouseLeave);
 			// 
-			// labelMeanMagnitudeInHipparcosSystemAtMaximumDesc
+			// labelMedianMagnitudeInHipparcosSystemAtMaximumDesc
 			// 
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumDesc.AutoSize = true;
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumDesc.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumDesc.Location = new System.Drawing.Point(508, 165);
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumDesc.Name = "labelMeanMagnitudeInHipparcosSystemAtMaximumDesc";
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumDesc.Size = new System.Drawing.Size(242, 15);
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumDesc.TabIndex = 101;
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumDesc.Text = "Hpmag at maximum (5th percentile)";
-			this.toolTip.SetToolTip(this.labelMeanMagnitudeInHipparcosSystemAtMaximumDesc, "Hpmag at maximum (5th percentile)");
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Location = new System.Drawing.Point(508, 165);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Name = "labelMedianMagnitudeInHipparcosSystemAtMaximumDesc";
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Size = new System.Drawing.Size(242, 15);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.TabIndex = 101;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Text = "Hpmag at maximum (5th percentile)";
+			this.toolTip.SetToolTip(this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc, "Hpmag at maximum (5th percentile)");
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.MouseLeave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_MouseLeave);
 			// 
 			// labelSolutionQualityDesc
 			// 
@@ -674,6 +842,10 @@
 			this.labelSolutionQualityDesc.TabIndex = 125;
 			this.labelSolutionQualityDesc.Text = "Solution quality";
 			this.toolTip.SetToolTip(this.labelSolutionQualityDesc, "Solution quality");
+			this.labelSolutionQualityDesc.Enter += new System.EventHandler(this.LabelSolutionQualityDesc_Enter);
+			this.labelSolutionQualityDesc.Leave += new System.EventHandler(this.LabelSolutionQualityDesc_Leave);
+			this.labelSolutionQualityDesc.MouseEnter += new System.EventHandler(this.LabelSolutionQualityDesc_MouseEnter);
+			this.labelSolutionQualityDesc.MouseLeave += new System.EventHandler(this.LabelSolutionQualityDesc_MouseLeave);
 			// 
 			// labelAstrometricSourceFlagDesc
 			// 
@@ -685,6 +857,10 @@
 			this.labelAstrometricSourceFlagDesc.TabIndex = 123;
 			this.labelAstrometricSourceFlagDesc.Text = "Astrometric source flag";
 			this.toolTip.SetToolTip(this.labelAstrometricSourceFlagDesc, "Astrometric source flag");
+			this.labelAstrometricSourceFlagDesc.Enter += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_Enter);
+			this.labelAstrometricSourceFlagDesc.Leave += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_Leave);
+			this.labelAstrometricSourceFlagDesc.MouseEnter += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_MouseEnter);
+			this.labelAstrometricSourceFlagDesc.MouseLeave += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_MouseLeave);
 			// 
 			// labelMultipleSystemsFlagDesc
 			// 
@@ -696,6 +872,10 @@
 			this.labelMultipleSystemsFlagDesc.TabIndex = 121;
 			this.labelMultipleSystemsFlagDesc.Text = "Double/Multiple Systems flag";
 			this.toolTip.SetToolTip(this.labelMultipleSystemsFlagDesc, "Double/Multiple Systems flag");
+			this.labelMultipleSystemsFlagDesc.Enter += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_Enter);
+			this.labelMultipleSystemsFlagDesc.Leave += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_Leave);
+			this.labelMultipleSystemsFlagDesc.MouseEnter += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_MouseEnter);
+			this.labelMultipleSystemsFlagDesc.MouseLeave += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_MouseLeave);
 			// 
 			// labelNumberComponentsInThisEntryDesc
 			// 
@@ -707,6 +887,10 @@
 			this.labelNumberComponentsInThisEntryDesc.TabIndex = 119;
 			this.labelNumberComponentsInThisEntryDesc.Text = "Number of components in this entry";
 			this.toolTip.SetToolTip(this.labelNumberComponentsInThisEntryDesc, "Number of components in this entry");
+			this.labelNumberComponentsInThisEntryDesc.Enter += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_Enter);
+			this.labelNumberComponentsInThisEntryDesc.Leave += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_Leave);
+			this.labelNumberComponentsInThisEntryDesc.MouseEnter += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_MouseEnter);
+			this.labelNumberComponentsInThisEntryDesc.MouseLeave += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_MouseLeave);
 			// 
 			// labelNumberEntriesWithSameCcdmDesc
 			// 
@@ -718,6 +902,10 @@
 			this.labelNumberEntriesWithSameCcdmDesc.TabIndex = 117;
 			this.labelNumberEntriesWithSameCcdmDesc.Text = "Number of entries with same CCDM";
 			this.toolTip.SetToolTip(this.labelNumberEntriesWithSameCcdmDesc, "Number of entries with same CCDM");
+			this.labelNumberEntriesWithSameCcdmDesc.Enter += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_Enter);
+			this.labelNumberEntriesWithSameCcdmDesc.Leave += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_Leave);
+			this.labelNumberEntriesWithSameCcdmDesc.MouseEnter += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_MouseEnter);
+			this.labelNumberEntriesWithSameCcdmDesc.MouseLeave += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_MouseLeave);
 			// 
 			// labelComponentIdentifiersDesc
 			// 
@@ -729,6 +917,10 @@
 			this.labelComponentIdentifiersDesc.TabIndex = 127;
 			this.labelComponentIdentifiersDesc.Text = "Component identifiers";
 			this.toolTip.SetToolTip(this.labelComponentIdentifiersDesc, "Component identifiers");
+			this.labelComponentIdentifiersDesc.Enter += new System.EventHandler(this.LabelComponentIdentifiersDesc_Enter);
+			this.labelComponentIdentifiersDesc.Leave += new System.EventHandler(this.LabelComponentIdentifiersDesc_Leave);
+			this.labelComponentIdentifiersDesc.MouseEnter += new System.EventHandler(this.LabelComponentIdentifiersDesc_MouseEnter);
+			this.labelComponentIdentifiersDesc.MouseLeave += new System.EventHandler(this.LabelComponentIdentifiersDesc_MouseLeave);
 			// 
 			// labelLightCurveAnnexDesc
 			// 
@@ -740,6 +932,10 @@
 			this.labelLightCurveAnnexDesc.TabIndex = 111;
 			this.labelLightCurveAnnexDesc.Text = "Light curve Annex";
 			this.toolTip.SetToolTip(this.labelLightCurveAnnexDesc, "Light curve Annex");
+			this.labelLightCurveAnnexDesc.Enter += new System.EventHandler(this.LabelLightCurveAnnexDesc_Enter);
+			this.labelLightCurveAnnexDesc.Leave += new System.EventHandler(this.LabelLightCurveAnnexDesc_Leave);
+			this.labelLightCurveAnnexDesc.MouseEnter += new System.EventHandler(this.LabelLightCurveAnnexDesc_MouseEnter);
+			this.labelLightCurveAnnexDesc.MouseLeave += new System.EventHandler(this.LabelLightCurveAnnexDesc_MouseLeave);
 			// 
 			// labelAdditionalDataAboutVariabilityDesc
 			// 
@@ -751,6 +947,10 @@
 			this.labelAdditionalDataAboutVariabilityDesc.TabIndex = 109;
 			this.labelAdditionalDataAboutVariabilityDesc.Text = "Additional data about variability";
 			this.toolTip.SetToolTip(this.labelAdditionalDataAboutVariabilityDesc, "Additional data about variability");
+			this.labelAdditionalDataAboutVariabilityDesc.Enter += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_Enter);
+			this.labelAdditionalDataAboutVariabilityDesc.Leave += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_Leave);
+			this.labelAdditionalDataAboutVariabilityDesc.MouseEnter += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_MouseEnter);
+			this.labelAdditionalDataAboutVariabilityDesc.MouseLeave += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_MouseLeave);
 			// 
 			// labelVariabilityTypeDesc
 			// 
@@ -762,6 +962,10 @@
 			this.labelVariabilityTypeDesc.TabIndex = 107;
 			this.labelVariabilityTypeDesc.Text = "Variability type";
 			this.toolTip.SetToolTip(this.labelVariabilityTypeDesc, "Variability type");
+			this.labelVariabilityTypeDesc.Enter += new System.EventHandler(this.LabelVariabilityTypeDesc_Enter);
+			this.labelVariabilityTypeDesc.Leave += new System.EventHandler(this.LabelVariabilityTypeDesc_Leave);
+			this.labelVariabilityTypeDesc.MouseEnter += new System.EventHandler(this.LabelVariabilityTypeDesc_MouseEnter);
+			this.labelVariabilityTypeDesc.MouseLeave += new System.EventHandler(this.LabelVariabilityTypeDesc_MouseLeave);
 			// 
 			// labelVariabilityPeriodDesc
 			// 
@@ -773,17 +977,25 @@
 			this.labelVariabilityPeriodDesc.TabIndex = 105;
 			this.labelVariabilityPeriodDesc.Text = "Variability period (days)";
 			this.toolTip.SetToolTip(this.labelVariabilityPeriodDesc, "Variability period (days)");
+			this.labelVariabilityPeriodDesc.Enter += new System.EventHandler(this.LabelVariabilityPeriodDesc_Enter);
+			this.labelVariabilityPeriodDesc.Leave += new System.EventHandler(this.LabelVariabilityPeriodDesc_Leave);
+			this.labelVariabilityPeriodDesc.MouseEnter += new System.EventHandler(this.LabelVariabilityPeriodDesc_MouseEnter);
+			this.labelVariabilityPeriodDesc.MouseLeave += new System.EventHandler(this.LabelVariabilityPeriodDesc_MouseLeave);
 			// 
-			// labelMeanMagnitudeInHipparcosSystemAtMinimumDesc
+			// labelMedianMagnitudeInHipparcosSystemAtMinimumDesc
 			// 
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumDesc.AutoSize = true;
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumDesc.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumDesc.Location = new System.Drawing.Point(508, 183);
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumDesc.Name = "labelMeanMagnitudeInHipparcosSystemAtMinimumDesc";
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumDesc.Size = new System.Drawing.Size(242, 15);
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumDesc.TabIndex = 103;
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumDesc.Text = "Hpmag at minimum (95th percentile)";
-			this.toolTip.SetToolTip(this.labelMeanMagnitudeInHipparcosSystemAtMinimumDesc, "Hpmag at minimum (95th percentile)");
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Location = new System.Drawing.Point(508, 183);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Name = "labelMedianMagnitudeInHipparcosSystemAtMinimumDesc";
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Size = new System.Drawing.Size(242, 15);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.TabIndex = 103;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Text = "Hpmag at minimum (95th percentile)";
+			this.toolTip.SetToolTip(this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc, "Hpmag at minimum (95th percentile)");
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.MouseLeave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_MouseLeave);
 			// 
 			// labelCcdmIdentifierDesc
 			// 
@@ -795,6 +1007,10 @@
 			this.labelCcdmIdentifierDesc.TabIndex = 113;
 			this.labelCcdmIdentifierDesc.Text = "CCDM identifier";
 			this.toolTip.SetToolTip(this.labelCcdmIdentifierDesc, "CCDM identifier");
+			this.labelCcdmIdentifierDesc.Enter += new System.EventHandler(this.LabelCcdmIdentifierDesc_Enter);
+			this.labelCcdmIdentifierDesc.Leave += new System.EventHandler(this.LabelCcdmIdentifierDesc_Leave);
+			this.labelCcdmIdentifierDesc.MouseEnter += new System.EventHandler(this.LabelCcdmIdentifierDesc_MouseEnter);
+			this.labelCcdmIdentifierDesc.MouseLeave += new System.EventHandler(this.LabelCcdmIdentifierDesc_MouseLeave);
 			// 
 			// labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc
 			// 
@@ -806,6 +1022,10 @@
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.TabIndex = 137;
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Text = "Standard error on dHp";
 			this.toolTip.SetToolTip(this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc, "Standard error on dHp");
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Enter);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Leave);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_MouseEnter);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_MouseLeave);
 			// 
 			// labelMagnitudeDifferenceBetweenComponentsDesc
 			// 
@@ -817,6 +1037,10 @@
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.TabIndex = 135;
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.Text = "Magnitude difference of components";
 			this.toolTip.SetToolTip(this.labelMagnitudeDifferenceBetweenComponentsDesc, "Magnitude difference of components");
+			this.labelMagnitudeDifferenceBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_Enter);
+			this.labelMagnitudeDifferenceBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_Leave);
+			this.labelMagnitudeDifferenceBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_MouseEnter);
+			this.labelMagnitudeDifferenceBetweenComponentsDesc.MouseLeave += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_MouseLeave);
 			// 
 			// labelStandardErrorRhoDesc
 			// 
@@ -828,6 +1052,10 @@
 			this.labelStandardErrorRhoDesc.TabIndex = 133;
 			this.labelStandardErrorRhoDesc.Text = "Standard error on rho";
 			this.toolTip.SetToolTip(this.labelStandardErrorRhoDesc, "Standard error on rho");
+			this.labelStandardErrorRhoDesc.Enter += new System.EventHandler(this.LabelStandardErrorRhoDesc_Enter);
+			this.labelStandardErrorRhoDesc.Leave += new System.EventHandler(this.LabelStandardErrorRhoDesc_Leave);
+			this.labelStandardErrorRhoDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorRhoDesc_MouseEnter);
+			this.labelStandardErrorRhoDesc.MouseLeave += new System.EventHandler(this.LabelStandardErrorRhoDesc_MouseLeave);
 			// 
 			// labelAngularSeparationBetweenComponentsDesc
 			// 
@@ -839,6 +1067,10 @@
 			this.labelAngularSeparationBetweenComponentsDesc.TabIndex = 131;
 			this.labelAngularSeparationBetweenComponentsDesc.Text = "Angular separation between components";
 			this.toolTip.SetToolTip(this.labelAngularSeparationBetweenComponentsDesc, "Angular separation between components");
+			this.labelAngularSeparationBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_Enter);
+			this.labelAngularSeparationBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_Leave);
+			this.labelAngularSeparationBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_MouseEnter);
+			this.labelAngularSeparationBetweenComponentsDesc.MouseLeave += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_MouseLeave);
 			// 
 			// labelPositionAngleBetweenComponentsDesc
 			// 
@@ -850,6 +1082,10 @@
 			this.labelPositionAngleBetweenComponentsDesc.TabIndex = 129;
 			this.labelPositionAngleBetweenComponentsDesc.Text = "Position angle between components";
 			this.toolTip.SetToolTip(this.labelPositionAngleBetweenComponentsDesc, "Position angle between components");
+			this.labelPositionAngleBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_Enter);
+			this.labelPositionAngleBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_Leave);
+			this.labelPositionAngleBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_MouseEnter);
+			this.labelPositionAngleBetweenComponentsDesc.MouseLeave += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_MouseLeave);
 			// 
 			// labelFlagIndicatingSurveyStarDesc
 			// 
@@ -861,6 +1097,10 @@
 			this.labelFlagIndicatingSurveyStarDesc.TabIndex = 141;
 			this.labelFlagIndicatingSurveyStarDesc.Text = "Flag indicating a Survey Star";
 			this.toolTip.SetToolTip(this.labelFlagIndicatingSurveyStarDesc, "Flag indicating a Survey Star");
+			this.labelFlagIndicatingSurveyStarDesc.Enter += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_Enter);
+			this.labelFlagIndicatingSurveyStarDesc.Leave += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_Leave);
+			this.labelFlagIndicatingSurveyStarDesc.MouseEnter += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_MouseEnter);
+			this.labelFlagIndicatingSurveyStarDesc.MouseLeave += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_MouseLeave);
 			// 
 			// labelIdentificationChartDesc
 			// 
@@ -872,6 +1112,10 @@
 			this.labelIdentificationChartDesc.TabIndex = 143;
 			this.labelIdentificationChartDesc.Text = "Identification Chart";
 			this.toolTip.SetToolTip(this.labelIdentificationChartDesc, "Identification Chart");
+			this.labelIdentificationChartDesc.Enter += new System.EventHandler(this.LabelIdentificationChartDesc_Enter);
+			this.labelIdentificationChartDesc.Leave += new System.EventHandler(this.LabelIdentificationChartDesc_Leave);
+			this.labelIdentificationChartDesc.MouseEnter += new System.EventHandler(this.LabelIdentificationChartDesc_MouseEnter);
+			this.labelIdentificationChartDesc.MouseLeave += new System.EventHandler(this.LabelIdentificationChartDesc_MouseLeave);
 			// 
 			// labelExistenceOfNotesDesc
 			// 
@@ -883,6 +1127,10 @@
 			this.labelExistenceOfNotesDesc.TabIndex = 145;
 			this.labelExistenceOfNotesDesc.Text = "Existence of notes";
 			this.toolTip.SetToolTip(this.labelExistenceOfNotesDesc, "Existence of notes");
+			this.labelExistenceOfNotesDesc.Enter += new System.EventHandler(this.LabelExistenceOfNotesDesc_Enter);
+			this.labelExistenceOfNotesDesc.Leave += new System.EventHandler(this.LabelExistenceOfNotesDesc_Leave);
+			this.labelExistenceOfNotesDesc.MouseEnter += new System.EventHandler(this.LabelExistenceOfNotesDesc_MouseEnter);
+			this.labelExistenceOfNotesDesc.MouseLeave += new System.EventHandler(this.LabelExistenceOfNotesDesc_MouseLeave);
 			// 
 			// labelBonnerDmDesc
 			// 
@@ -894,6 +1142,10 @@
 			this.labelBonnerDmDesc.TabIndex = 149;
 			this.labelBonnerDmDesc.Text = "Bonner Durchmusterung (DM)";
 			this.toolTip.SetToolTip(this.labelBonnerDmDesc, "Bonner Durchmusterung (DM)");
+			this.labelBonnerDmDesc.Enter += new System.EventHandler(this.LabelBonnerDmDesc_Enter);
+			this.labelBonnerDmDesc.Leave += new System.EventHandler(this.LabelBonnerDmDesc_Leave);
+			this.labelBonnerDmDesc.MouseEnter += new System.EventHandler(this.LabelBonnerDmDesc_MouseEnter);
+			this.labelBonnerDmDesc.MouseLeave += new System.EventHandler(this.LabelBonnerDmDesc_MouseLeave);
 			// 
 			// labelHdNumberDesc
 			// 
@@ -905,6 +1157,10 @@
 			this.labelHdNumberDesc.TabIndex = 147;
 			this.labelHdNumberDesc.Text = "HD number";
 			this.toolTip.SetToolTip(this.labelHdNumberDesc, "HD number");
+			this.labelHdNumberDesc.Enter += new System.EventHandler(this.LabelHdNumberDesc_Enter);
+			this.labelHdNumberDesc.Leave += new System.EventHandler(this.LabelHdNumberDesc_Leave);
+			this.labelHdNumberDesc.MouseEnter += new System.EventHandler(this.LabelHdNumberDesc_MouseEnter);
+			this.labelHdNumberDesc.MouseLeave += new System.EventHandler(this.LabelHdNumberDesc_MouseLeave);
 			// 
 			// labelSpectraTypeDesc
 			// 
@@ -916,6 +1172,10 @@
 			this.labelSpectraTypeDesc.TabIndex = 3;
 			this.labelSpectraTypeDesc.Text = "Spectral type";
 			this.toolTip.SetToolTip(this.labelSpectraTypeDesc, "Spectral type");
+			this.labelSpectraTypeDesc.Enter += new System.EventHandler(this.LabelSpectraTypeDesc_Enter);
+			this.labelSpectraTypeDesc.Leave += new System.EventHandler(this.LabelSpectraTypeDesc_Leave);
+			this.labelSpectraTypeDesc.MouseEnter += new System.EventHandler(this.LabelSpectraTypeDesc_MouseEnter);
+			this.labelSpectraTypeDesc.MouseLeave += new System.EventHandler(this.LabelSpectraTypeDesc_MouseLeave);
 			// 
 			// labelViUsedForReductionsDesc
 			// 
@@ -927,6 +1187,10 @@
 			this.labelViUsedForReductionsDesc.TabIndex = 1;
 			this.labelViUsedForReductionsDesc.Text = "V-I used for reductions";
 			this.toolTip.SetToolTip(this.labelViUsedForReductionsDesc, "V-I used for reductions");
+			this.labelViUsedForReductionsDesc.Enter += new System.EventHandler(this.LabelViUsedForReductionsDesc_Enter);
+			this.labelViUsedForReductionsDesc.Leave += new System.EventHandler(this.LabelViUsedForReductionsDesc_Leave);
+			this.labelViUsedForReductionsDesc.MouseEnter += new System.EventHandler(this.LabelViUsedForReductionsDesc_MouseEnter);
+			this.labelViUsedForReductionsDesc.MouseLeave += new System.EventHandler(this.LabelViUsedForReductionsDesc_MouseLeave);
 			// 
 			// labelCapePhotographicDmDesc
 			// 
@@ -938,6 +1202,10 @@
 			this.labelCapePhotographicDmDesc.TabIndex = 153;
 			this.labelCapePhotographicDmDesc.Text = "Cape Photographic DM";
 			this.toolTip.SetToolTip(this.labelCapePhotographicDmDesc, "Cape Photographic DM");
+			this.labelCapePhotographicDmDesc.Enter += new System.EventHandler(this.LabelCapePhotographicDmDesc_Enter);
+			this.labelCapePhotographicDmDesc.Leave += new System.EventHandler(this.LabelCapePhotographicDmDesc_Leave);
+			this.labelCapePhotographicDmDesc.MouseEnter += new System.EventHandler(this.LabelCapePhotographicDmDesc_MouseEnter);
+			this.labelCapePhotographicDmDesc.MouseLeave += new System.EventHandler(this.LabelCapePhotographicDmDesc_MouseLeave);
 			// 
 			// labelCordobaDmDesc
 			// 
@@ -949,6 +1217,10 @@
 			this.labelCordobaDmDesc.TabIndex = 151;
 			this.labelCordobaDmDesc.Text = "Cordoba Durchmusterung (DM)";
 			this.toolTip.SetToolTip(this.labelCordobaDmDesc, "Cordoba Durchmusterung (DM)");
+			this.labelCordobaDmDesc.Enter += new System.EventHandler(this.LabelCordobaDmDesc_Enter);
+			this.labelCordobaDmDesc.Leave += new System.EventHandler(this.LabelCordobaDmDesc_Leave);
+			this.labelCordobaDmDesc.MouseEnter += new System.EventHandler(this.LabelCordobaDmDesc_MouseEnter);
+			this.labelCordobaDmDesc.MouseLeave += new System.EventHandler(this.LabelCordobaDmDesc_MouseLeave);
 			// 
 			// labelReferenceFlagForAstrometryDesc
 			// 
@@ -960,6 +1232,10 @@
 			this.labelReferenceFlagForAstrometryDesc.TabIndex = 20;
 			this.labelReferenceFlagForAstrometryDesc.Text = "Reference flag for astrometry";
 			this.toolTip.SetToolTip(this.labelReferenceFlagForAstrometryDesc, "Reference flag for astrometry");
+			this.labelReferenceFlagForAstrometryDesc.Enter += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_Enter);
+			this.labelReferenceFlagForAstrometryDesc.Leave += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_Leave);
+			this.labelReferenceFlagForAstrometryDesc.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_MouseEnter);
+			this.labelReferenceFlagForAstrometryDesc.MouseLeave += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_MouseLeave);
 			// 
 			// labelSourceOfSpectraTypeDesc
 			// 
@@ -971,6 +1247,10 @@
 			this.labelSourceOfSpectraTypeDesc.TabIndex = 5;
 			this.labelSourceOfSpectraTypeDesc.Text = "Source of spectral type";
 			this.toolTip.SetToolTip(this.labelSourceOfSpectraTypeDesc, "Source of spectral type");
+			this.labelSourceOfSpectraTypeDesc.Enter += new System.EventHandler(this.LabelSourceOfSpectraTypeDesc_Enter);
+			this.labelSourceOfSpectraTypeDesc.Leave += new System.EventHandler(this.LabelSourceOfSpectraTypeDesc_Leave);
+			this.labelSourceOfSpectraTypeDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfSpectraTypeDesc_MouseEnter);
+			this.labelSourceOfSpectraTypeDesc.MouseLeave += new System.EventHandler(this.LabelSourceOfSpectraTypeDesc_MouseLeave);
 			// 
 			// labelCoarseVariabilityFlagDesc
 			// 
@@ -982,6 +1262,10 @@
 			this.labelCoarseVariabilityFlagDesc.TabIndex = 12;
 			this.labelCoarseVariabilityFlagDesc.Text = "Coarse variability flag";
 			this.toolTip.SetToolTip(this.labelCoarseVariabilityFlagDesc, "Coarse variability flag");
+			this.labelCoarseVariabilityFlagDesc.Enter += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_Enter);
+			this.labelCoarseVariabilityFlagDesc.Leave += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_Leave);
+			this.labelCoarseVariabilityFlagDesc.MouseEnter += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_MouseEnter);
+			this.labelCoarseVariabilityFlagDesc.MouseLeave += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_MouseLeave);
 			// 
 			// labelProximityFlagDesc
 			// 
@@ -993,6 +1277,10 @@
 			this.labelProximityFlagDesc.TabIndex = 4;
 			this.labelProximityFlagDesc.Text = "Proximity flag";
 			this.toolTip.SetToolTip(this.labelProximityFlagDesc, "Proximity flag");
+			this.labelProximityFlagDesc.Enter += new System.EventHandler(this.LabelProximityFlagDesc_Enter);
+			this.labelProximityFlagDesc.Leave += new System.EventHandler(this.LabelProximityFlagDesc_Leave);
+			this.labelProximityFlagDesc.MouseEnter += new System.EventHandler(this.LabelProximityFlagDesc_MouseEnter);
+			this.labelProximityFlagDesc.MouseLeave += new System.EventHandler(this.LabelProximityFlagDesc_MouseLeave);
 			// 
 			// labelCatalogueDesc
 			// 
@@ -1004,6 +1292,10 @@
 			this.labelCatalogueDesc.TabIndex = 0;
 			this.labelCatalogueDesc.Text = "Catalogue (H=Hipparcos)";
 			this.toolTip.SetToolTip(this.labelCatalogueDesc, "Catalogue (H=Hipparcos)");
+			this.labelCatalogueDesc.Enter += new System.EventHandler(this.LabelCatalogueDesc_Enter);
+			this.labelCatalogueDesc.Leave += new System.EventHandler(this.LabelCatalogueDesc_Leave);
+			this.labelCatalogueDesc.MouseEnter += new System.EventHandler(this.LabelCatalogueDesc_MouseEnter);
+			this.labelCatalogueDesc.MouseLeave += new System.EventHandler(this.LabelCatalogueDesc_MouseLeave);
 			// 
 			// labelFlagForCombinedMagnitudesDesc
 			// 
@@ -1015,6 +1307,10 @@
 			this.labelFlagForCombinedMagnitudesDesc.TabIndex = 88;
 			this.labelFlagForCombinedMagnitudesDesc.Text = "Flag for combined Vmag, B-V, V-I";
 			this.toolTip.SetToolTip(this.labelFlagForCombinedMagnitudesDesc, "Flag for combined Vmag, B-V, V-I");
+			this.labelFlagForCombinedMagnitudesDesc.Enter += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_Enter);
+			this.labelFlagForCombinedMagnitudesDesc.Leave += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_Leave);
+			this.labelFlagForCombinedMagnitudesDesc.MouseEnter += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_MouseEnter);
+			this.labelFlagForCombinedMagnitudesDesc.MouseLeave += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_MouseLeave);
 			// 
 			// labelReferenceFlagForBtAndVtMagnitudeDesc
 			// 
@@ -1026,6 +1322,10 @@
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.TabIndex = 74;
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Text = "Reference flag for BT and VTmag";
 			this.toolTip.SetToolTip(this.labelReferenceFlagForBtAndVtMagnitudeDesc, "Reference flag for BT and VTmag");
+			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Enter += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_Enter);
+			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Leave += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_Leave);
+			this.labelReferenceFlagForBtAndVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_MouseEnter);
+			this.labelReferenceFlagForBtAndVtMagnitudeDesc.MouseLeave += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_MouseLeave);
 			// 
 			// labelHistoricalStatusFlagDesc
 			// 
@@ -1037,17 +1337,25 @@
 			this.labelHistoricalStatusFlagDesc.TabIndex = 115;
 			this.labelHistoricalStatusFlagDesc.Text = "Historical status flag";
 			this.toolTip.SetToolTip(this.labelHistoricalStatusFlagDesc, "Historical status flag");
+			this.labelHistoricalStatusFlagDesc.Enter += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_Enter);
+			this.labelHistoricalStatusFlagDesc.Leave += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_Leave);
+			this.labelHistoricalStatusFlagDesc.MouseEnter += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_MouseEnter);
+			this.labelHistoricalStatusFlagDesc.MouseLeave += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_MouseLeave);
 			// 
-			// labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc
+			// labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc
 			// 
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc.AutoSize = true;
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(508, 147);
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc.Name = "labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc";
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc.Size = new System.Drawing.Size(242, 15);
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc.TabIndex = 99;
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc.Text = "Reference flag for Hpmag";
-			this.toolTip.SetToolTip(this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc, "Reference flag for Hpmag");
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.AutoSize = true;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(508, 147);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Name = "labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc";
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Size = new System.Drawing.Size(242, 15);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.TabIndex = 99;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Text = "Reference flag for Hpmag";
+			this.toolTip.SetToolTip(this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc, "Reference flag for Hpmag");
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Enter);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Leave);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.MouseLeave += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_MouseLeave);
 			// 
 			// toolStrip
 			// 
@@ -1250,19 +1558,19 @@
 			this.tableLayoutPanel.Controls.Add(this.labelProperMotionAlphaData, 1, 12);
 			this.tableLayoutPanel.Controls.Add(this.labelVariabilityPeriodData, 3, 11);
 			this.tableLayoutPanel.Controls.Add(this.labelTrigonomicParallaxData, 1, 11);
-			this.tableLayoutPanel.Controls.Add(this.labelMeanMagnitudeInHipparcosSystemAtMinimumData, 3, 10);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemAtMinimumData, 3, 10);
 			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForAstrometryData, 1, 10);
-			this.tableLayoutPanel.Controls.Add(this.labelMeanMagnitudeInHipparcosSystemAtMaximumData, 3, 9);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemAtMaximumData, 3, 9);
 			this.tableLayoutPanel.Controls.Add(this.labelDeltaData, 1, 9);
-			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemData, 3, 8);
+			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData, 3, 8);
 			this.tableLayoutPanel.Controls.Add(this.labelAlphaData, 1, 8);
-			this.tableLayoutPanel.Controls.Add(this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemData, 3, 7);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData, 3, 7);
 			this.tableLayoutPanel.Controls.Add(this.labelSourceOfMagnitudeData, 1, 7);
-			this.tableLayoutPanel.Controls.Add(this.labelScatterMeanMagnitudeInHipparcosSystemData, 3, 6);
+			this.tableLayoutPanel.Controls.Add(this.labelScatterMedianMagnitudeInHipparcosSystemData, 3, 6);
 			this.tableLayoutPanel.Controls.Add(this.labelCoarseVariabilityFlagData, 1, 6);
-			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanMagnitudeInHipparcosSystemData, 3, 5);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMedianMagnitudeInHipparcosSystemData, 3, 5);
 			this.tableLayoutPanel.Controls.Add(this.labelMagnitudeJohnsonData, 1, 5);
-			this.tableLayoutPanel.Controls.Add(this.labelMeanMagnitudeInHipparcosSystemData, 3, 4);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemData, 3, 4);
 			this.tableLayoutPanel.Controls.Add(this.labelDeclinationData, 1, 4);
 			this.tableLayoutPanel.Controls.Add(this.labelFlagForCombinedMagnitudesData, 3, 3);
 			this.tableLayoutPanel.Controls.Add(this.labelRightAscensionData, 1, 3);
@@ -1277,7 +1585,7 @@
 			this.tableLayoutPanel.Controls.Add(this.labelSpectraTypeDesc, 2, 36);
 			this.tableLayoutPanel.Controls.Add(this.labelFlagForCombinedMagnitudesDesc, 2, 3);
 			this.tableLayoutPanel.Controls.Add(this.labelViUsedForReductionsDesc, 2, 35);
-			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc, 2, 8);
+			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc, 2, 8);
 			this.tableLayoutPanel.Controls.Add(this.labelCapePhotographicDmDesc, 2, 34);
 			this.tableLayoutPanel.Controls.Add(this.labelProximityFlagDesc, 0, 2);
 			this.tableLayoutPanel.Controls.Add(this.labelCordobaDmDesc, 2, 33);
@@ -1325,17 +1633,17 @@
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc, 0, 22);
 			this.tableLayoutPanel.Controls.Add(this.labelVariabilityPeriodDesc, 2, 11);
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByDeclinationDesc, 0, 23);
-			this.tableLayoutPanel.Controls.Add(this.labelMeanMagnitudeInHipparcosSystemAtMinimumDesc, 2, 10);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc, 2, 10);
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, 0, 24);
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByRightAscensionDesc, 0, 25);
-			this.tableLayoutPanel.Controls.Add(this.labelMeanMagnitudeInHipparcosSystemAtMaximumDesc, 2, 9);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc, 2, 9);
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByDeclinationDesc, 0, 26);
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, 0, 27);
-			this.tableLayoutPanel.Controls.Add(this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc, 2, 7);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc, 2, 7);
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, 0, 28);
-			this.tableLayoutPanel.Controls.Add(this.labelScatterMeanMagnitudeInHipparcosSystemDesc, 2, 6);
+			this.tableLayoutPanel.Controls.Add(this.labelScatterMedianMagnitudeInHipparcosSystemDesc, 2, 6);
 			this.tableLayoutPanel.Controls.Add(this.labelPercentageOfRejectedDataDesc, 0, 29);
-			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanMagnitudeInHipparcosSystemDesc, 2, 5);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc, 2, 5);
 			this.tableLayoutPanel.Controls.Add(this.labelGoodnessOfFitParameterDesc, 0, 30);
 			this.tableLayoutPanel.Controls.Add(this.labelMeanBtMagnitudeDesc, 0, 31);
 			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanBtMagnitudeDesc, 0, 32);
@@ -1347,7 +1655,7 @@
 			this.tableLayoutPanel.Controls.Add(this.labelColourIndexInCousinsSystemDesc, 2, 0);
 			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorJohnsonBvColourDesc, 0, 36);
 			this.tableLayoutPanel.Controls.Add(this.labelSourceOfBvColourDesc, 0, 38);
-			this.tableLayoutPanel.Controls.Add(this.labelMeanMagnitudeInHipparcosSystemDesc, 2, 4);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemDesc, 2, 4);
 			this.tableLayoutPanel.Controls.Add(this.labelCatalogueData, 1, 0);
 			this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel.Location = new System.Drawing.Point(0, 49);
@@ -1406,6 +1714,10 @@
 			this.labelSourceOfBvColourData.TabIndex = 77;
 			this.labelSourceOfBvColourData.Text = "---";
 			this.labelSourceOfBvColourData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelSourceOfBvColourData.Enter += new System.EventHandler(this.LabelSourceOfBvColourData_Enter);
+			this.labelSourceOfBvColourData.Leave += new System.EventHandler(this.LabelSourceOfBvColourData_Leave);
+			this.labelSourceOfBvColourData.MouseEnter += new System.EventHandler(this.LabelSourceOfBvColourData_MouseEnter);
+			this.labelSourceOfBvColourData.MouseLeave += new System.EventHandler(this.LabelSourceOfBvColourData_MouseLeave);
 			// 
 			// labelSourceOfSpectraTypeData
 			// 
@@ -1418,6 +1730,10 @@
 			this.labelSourceOfSpectraTypeData.TabIndex = 6;
 			this.labelSourceOfSpectraTypeData.Text = "---";
 			this.labelSourceOfSpectraTypeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelSourceOfSpectraTypeData.Enter += new System.EventHandler(this.LabelSourceOfSpectraTypeData_Enter);
+			this.labelSourceOfSpectraTypeData.Leave += new System.EventHandler(this.LabelSourceOfSpectraTypeData_Leave);
+			this.labelSourceOfSpectraTypeData.MouseEnter += new System.EventHandler(this.LabelSourceOfSpectraTypeData_MouseEnter);
+			this.labelSourceOfSpectraTypeData.MouseLeave += new System.EventHandler(this.LabelSourceOfSpectraTypeData_MouseLeave);
 			// 
 			// labelReferenceFlagForBtAndVtMagnitudeData
 			// 
@@ -1430,6 +1746,9 @@
 			this.labelReferenceFlagForBtAndVtMagnitudeData.TabIndex = 75;
 			this.labelReferenceFlagForBtAndVtMagnitudeData.Text = "---";
 			this.labelReferenceFlagForBtAndVtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelReferenceFlagForBtAndVtMagnitudeData.Enter += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeData_Enter);
+			this.labelReferenceFlagForBtAndVtMagnitudeData.Leave += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeData_Leave);
+			this.labelReferenceFlagForBtAndVtMagnitudeData.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeData_MouseEnter);
 			// 
 			// labelSpectraTypeData
 			// 
@@ -1442,6 +1761,10 @@
 			this.labelSpectraTypeData.TabIndex = 4;
 			this.labelSpectraTypeData.Text = "---";
 			this.labelSpectraTypeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelSpectraTypeData.Enter += new System.EventHandler(this.LabelSpectraTypeData_Enter);
+			this.labelSpectraTypeData.Leave += new System.EventHandler(this.LabelSpectraTypeData_Leave);
+			this.labelSpectraTypeData.MouseEnter += new System.EventHandler(this.LabelSpectraTypeData_MouseEnter);
+			this.labelSpectraTypeData.MouseLeave += new System.EventHandler(this.LabelSpectraTypeData_MouseLeave);
 			// 
 			// labelStandardErrorJohnsonBvColourData
 			// 
@@ -1454,6 +1777,10 @@
 			this.labelStandardErrorJohnsonBvColourData.TabIndex = 73;
 			this.labelStandardErrorJohnsonBvColourData.Text = "---";
 			this.labelStandardErrorJohnsonBvColourData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorJohnsonBvColourData.Enter += new System.EventHandler(this.LabelStandardErrorJohnsonBvColourData_Enter);
+			this.labelStandardErrorJohnsonBvColourData.Leave += new System.EventHandler(this.LabelStandardErrorJohnsonBvColourData_Leave);
+			this.labelStandardErrorJohnsonBvColourData.MouseEnter += new System.EventHandler(this.LabelStandardErrorJohnsonBvColourData_MouseEnter);
+			this.labelStandardErrorJohnsonBvColourData.MouseLeave += new System.EventHandler(this.LabelStandardErrorJohnsonBvColourData_MouseLeave);
 			// 
 			// labelViUsedForReductionsData
 			// 
@@ -1466,6 +1793,10 @@
 			this.labelViUsedForReductionsData.TabIndex = 2;
 			this.labelViUsedForReductionsData.Text = "---";
 			this.labelViUsedForReductionsData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelViUsedForReductionsData.Enter += new System.EventHandler(this.LabelViUsedForReductionsData_Enter);
+			this.labelViUsedForReductionsData.Leave += new System.EventHandler(this.LabelViUsedForReductionsData_Leave);
+			this.labelViUsedForReductionsData.MouseEnter += new System.EventHandler(this.LabelViUsedForReductionsData_MouseEnter);
+			this.labelViUsedForReductionsData.MouseLeave += new System.EventHandler(this.LabelViUsedForReductionsData_MouseLeave);
 			// 
 			// labelJohnsonBvColourData
 			// 
@@ -1478,6 +1809,10 @@
 			this.labelJohnsonBvColourData.TabIndex = 71;
 			this.labelJohnsonBvColourData.Text = "---";
 			this.labelJohnsonBvColourData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelJohnsonBvColourData.Enter += new System.EventHandler(this.LabelJohnsonBvColourData_Enter);
+			this.labelJohnsonBvColourData.Leave += new System.EventHandler(this.LabelJohnsonBvColourData_Leave);
+			this.labelJohnsonBvColourData.MouseEnter += new System.EventHandler(this.LabelJohnsonBvColourData_MouseEnter);
+			this.labelJohnsonBvColourData.MouseLeave += new System.EventHandler(this.LabelJohnsonBvColourData_MouseLeave);
 			// 
 			// labelCapePhotographicDmData
 			// 
@@ -1490,6 +1825,10 @@
 			this.labelCapePhotographicDmData.TabIndex = 0;
 			this.labelCapePhotographicDmData.Text = "---";
 			this.labelCapePhotographicDmData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCapePhotographicDmData.Enter += new System.EventHandler(this.LabelCapePhotographicDmData_Enter);
+			this.labelCapePhotographicDmData.Leave += new System.EventHandler(this.LabelCapePhotographicDmData_Leave);
+			this.labelCapePhotographicDmData.MouseEnter += new System.EventHandler(this.LabelCapePhotographicDmData_MouseEnter);
+			this.labelCapePhotographicDmData.MouseLeave += new System.EventHandler(this.LabelCapePhotographicDmData_MouseLeave);
 			// 
 			// labelStandardErrorMeanVtMagnitudeData
 			// 
@@ -1502,6 +1841,10 @@
 			this.labelStandardErrorMeanVtMagnitudeData.TabIndex = 69;
 			this.labelStandardErrorMeanVtMagnitudeData.Text = "---";
 			this.labelStandardErrorMeanVtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorMeanVtMagnitudeData.Enter += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeData_Enter);
+			this.labelStandardErrorMeanVtMagnitudeData.Leave += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeData_Leave);
+			this.labelStandardErrorMeanVtMagnitudeData.MouseEnter += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeData_MouseEnter);
+			this.labelStandardErrorMeanVtMagnitudeData.MouseLeave += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeData_MouseLeave);
 			// 
 			// labelCordobaDmData
 			// 
@@ -1514,6 +1857,10 @@
 			this.labelCordobaDmData.TabIndex = 152;
 			this.labelCordobaDmData.Text = "---";
 			this.labelCordobaDmData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCordobaDmData.Enter += new System.EventHandler(this.LabelCordobaDmData_Enter);
+			this.labelCordobaDmData.Leave += new System.EventHandler(this.LabelCordobaDmData_Leave);
+			this.labelCordobaDmData.MouseEnter += new System.EventHandler(this.LabelCordobaDmData_MouseEnter);
+			this.labelCordobaDmData.MouseLeave += new System.EventHandler(this.LabelCordobaDmData_MouseLeave);
 			// 
 			// labelMeanVtMagnitudeData
 			// 
@@ -1526,6 +1873,10 @@
 			this.labelMeanVtMagnitudeData.TabIndex = 67;
 			this.labelMeanVtMagnitudeData.Text = "---";
 			this.labelMeanVtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelMeanVtMagnitudeData.Enter += new System.EventHandler(this.LabelMeanVtMagnitudeData_Enter);
+			this.labelMeanVtMagnitudeData.Leave += new System.EventHandler(this.LabelMeanVtMagnitudeData_Leave);
+			this.labelMeanVtMagnitudeData.MouseEnter += new System.EventHandler(this.LabelMeanVtMagnitudeData_MouseEnter);
+			this.labelMeanVtMagnitudeData.MouseLeave += new System.EventHandler(this.LabelMeanVtMagnitudeData_MouseLeave);
 			// 
 			// labelBonnerDmData
 			// 
@@ -1538,6 +1889,10 @@
 			this.labelBonnerDmData.TabIndex = 150;
 			this.labelBonnerDmData.Text = "---";
 			this.labelBonnerDmData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelBonnerDmData.Enter += new System.EventHandler(this.LabelBonnerDmData_Enter);
+			this.labelBonnerDmData.Leave += new System.EventHandler(this.LabelBonnerDmData_Leave);
+			this.labelBonnerDmData.MouseEnter += new System.EventHandler(this.LabelBonnerDmData_MouseEnter);
+			this.labelBonnerDmData.MouseLeave += new System.EventHandler(this.LabelBonnerDmData_MouseLeave);
 			// 
 			// labelStandardErrorMeanBtMagnitudeData
 			// 
@@ -1550,6 +1905,10 @@
 			this.labelStandardErrorMeanBtMagnitudeData.TabIndex = 65;
 			this.labelStandardErrorMeanBtMagnitudeData.Text = "---";
 			this.labelStandardErrorMeanBtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorMeanBtMagnitudeData.Enter += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeData_Enter);
+			this.labelStandardErrorMeanBtMagnitudeData.Leave += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeData_Leave);
+			this.labelStandardErrorMeanBtMagnitudeData.MouseEnter += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeData_MouseEnter);
+			this.labelStandardErrorMeanBtMagnitudeData.MouseLeave += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeData_MouseLeave);
 			// 
 			// labelHdNumberData
 			// 
@@ -1562,6 +1921,10 @@
 			this.labelHdNumberData.TabIndex = 148;
 			this.labelHdNumberData.Text = "---";
 			this.labelHdNumberData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelHdNumberData.Enter += new System.EventHandler(this.LabelHdNumberData_Enter);
+			this.labelHdNumberData.Leave += new System.EventHandler(this.LabelHdNumberData_Leave);
+			this.labelHdNumberData.MouseEnter += new System.EventHandler(this.LabelHdNumberData_MouseEnter);
+			this.labelHdNumberData.MouseLeave += new System.EventHandler(this.LabelHdNumberData_MouseLeave);
 			// 
 			// labelMeanBtMagnitudeData
 			// 
@@ -1574,6 +1937,10 @@
 			this.labelMeanBtMagnitudeData.TabIndex = 63;
 			this.labelMeanBtMagnitudeData.Text = "---";
 			this.labelMeanBtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelMeanBtMagnitudeData.Enter += new System.EventHandler(this.LabelMeanBtMagnitudeData_Enter);
+			this.labelMeanBtMagnitudeData.Leave += new System.EventHandler(this.LabelMeanBtMagnitudeData_Leave);
+			this.labelMeanBtMagnitudeData.MouseEnter += new System.EventHandler(this.LabelMeanBtMagnitudeData_MouseEnter);
+			this.labelMeanBtMagnitudeData.MouseLeave += new System.EventHandler(this.LabelMeanBtMagnitudeData_MouseLeave);
 			// 
 			// labelExistenceOfNotesData
 			// 
@@ -1586,6 +1953,10 @@
 			this.labelExistenceOfNotesData.TabIndex = 146;
 			this.labelExistenceOfNotesData.Text = "---";
 			this.labelExistenceOfNotesData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelExistenceOfNotesData.Enter += new System.EventHandler(this.LabelExistenceOfNotesData_Enter);
+			this.labelExistenceOfNotesData.Leave += new System.EventHandler(this.LabelExistenceOfNotesData_Leave);
+			this.labelExistenceOfNotesData.MouseEnter += new System.EventHandler(this.LabelExistenceOfNotesData_MouseEnter);
+			this.labelExistenceOfNotesData.MouseLeave += new System.EventHandler(this.LabelExistenceOfNotesData_MouseLeave);
 			// 
 			// labelGoodnessOfFitParameterData
 			// 
@@ -1598,6 +1969,10 @@
 			this.labelGoodnessOfFitParameterData.TabIndex = 61;
 			this.labelGoodnessOfFitParameterData.Text = "---";
 			this.labelGoodnessOfFitParameterData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelGoodnessOfFitParameterData.Enter += new System.EventHandler(this.LabelGoodnessOfFitParameterData_Enter);
+			this.labelGoodnessOfFitParameterData.Leave += new System.EventHandler(this.LabelGoodnessOfFitParameterData_Leave);
+			this.labelGoodnessOfFitParameterData.MouseEnter += new System.EventHandler(this.LabelGoodnessOfFitParameterData_MouseEnter);
+			this.labelGoodnessOfFitParameterData.MouseLeave += new System.EventHandler(this.LabelGoodnessOfFitParameterData_MouseLeave);
 			// 
 			// labelIdentificationChartData
 			// 
@@ -1610,6 +1985,10 @@
 			this.labelIdentificationChartData.TabIndex = 144;
 			this.labelIdentificationChartData.Text = "---";
 			this.labelIdentificationChartData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelIdentificationChartData.Enter += new System.EventHandler(this.LabelIdentificationChartData_Enter);
+			this.labelIdentificationChartData.Leave += new System.EventHandler(this.LabelIdentificationChartData_Leave);
+			this.labelIdentificationChartData.MouseEnter += new System.EventHandler(this.LabelIdentificationChartData_MouseEnter);
+			this.labelIdentificationChartData.MouseLeave += new System.EventHandler(this.LabelIdentificationChartData_MouseLeave);
 			// 
 			// labelPercentageOfRejectedDataData
 			// 
@@ -1622,6 +2001,10 @@
 			this.labelPercentageOfRejectedDataData.TabIndex = 59;
 			this.labelPercentageOfRejectedDataData.Text = "---";
 			this.labelPercentageOfRejectedDataData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelPercentageOfRejectedDataData.Enter += new System.EventHandler(this.LabelPercentageOfRejectedDataData_Enter);
+			this.labelPercentageOfRejectedDataData.Leave += new System.EventHandler(this.LabelPercentageOfRejectedDataData_Leave);
+			this.labelPercentageOfRejectedDataData.MouseEnter += new System.EventHandler(this.LabelPercentageOfRejectedDataData_MouseEnter);
+			this.labelPercentageOfRejectedDataData.MouseLeave += new System.EventHandler(this.LabelPercentageOfRejectedDataData_MouseLeave);
 			// 
 			// labelFlagIndicatingSurveyStarData
 			// 
@@ -1634,6 +2017,10 @@
 			this.labelFlagIndicatingSurveyStarData.TabIndex = 142;
 			this.labelFlagIndicatingSurveyStarData.Text = "---";
 			this.labelFlagIndicatingSurveyStarData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelFlagIndicatingSurveyStarData.Enter += new System.EventHandler(this.LabelFlagIndicatingSurveyStarData_Enter);
+			this.labelFlagIndicatingSurveyStarData.Leave += new System.EventHandler(this.LabelFlagIndicatingSurveyStarData_Leave);
+			this.labelFlagIndicatingSurveyStarData.MouseEnter += new System.EventHandler(this.LabelFlagIndicatingSurveyStarData_MouseEnter);
+			this.labelFlagIndicatingSurveyStarData.MouseLeave += new System.EventHandler(this.LabelFlagIndicatingSurveyStarData_MouseLeave);
 			// 
 			// labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData
 			// 
@@ -1646,6 +2033,10 @@
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.TabIndex = 57;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Text = "---";
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_Enter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_Leave);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseLeave);
 			// 
 			// labelStandardErrorMagnitudeDifferenceBetweenComponentsData
 			// 
@@ -1658,6 +2049,10 @@
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.TabIndex = 138;
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.Text = "---";
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.Enter += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_Enter);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.Leave += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_Leave);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.MouseEnter += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_MouseEnter);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.MouseLeave += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_MouseLeave);
 			// 
 			// labelCorrelationProperMotionDeclinationByTrigonomicParallaxData
 			// 
@@ -1670,6 +2065,10 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.TabIndex = 55;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Text = "---";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_Enter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_Leave);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseLeave);
 			// 
 			// labelMagnitudeDifferenceBetweenComponentsData
 			// 
@@ -1682,6 +2081,10 @@
 			this.labelMagnitudeDifferenceBetweenComponentsData.TabIndex = 136;
 			this.labelMagnitudeDifferenceBetweenComponentsData.Text = "---";
 			this.labelMagnitudeDifferenceBetweenComponentsData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelMagnitudeDifferenceBetweenComponentsData.Enter += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsData_Enter);
+			this.labelMagnitudeDifferenceBetweenComponentsData.Leave += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsData_Leave);
+			this.labelMagnitudeDifferenceBetweenComponentsData.MouseEnter += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsData_MouseEnter);
+			this.labelMagnitudeDifferenceBetweenComponentsData.MouseLeave += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsData_MouseLeave);
 			// 
 			// labelCorrelationProperMotionDeclinationByDeclinationData
 			// 
@@ -1694,6 +2097,10 @@
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.TabIndex = 53;
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.Text = "---";
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_Enter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_Leave);
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_MouseLeave);
 			// 
 			// labelStandardErrorRhoData
 			// 
@@ -1706,6 +2113,10 @@
 			this.labelStandardErrorRhoData.TabIndex = 134;
 			this.labelStandardErrorRhoData.Text = "---";
 			this.labelStandardErrorRhoData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorRhoData.Enter += new System.EventHandler(this.LabelStandardErrorRhoData_Enter);
+			this.labelStandardErrorRhoData.Leave += new System.EventHandler(this.LabelStandardErrorRhoData_Leave);
+			this.labelStandardErrorRhoData.MouseEnter += new System.EventHandler(this.LabelStandardErrorRhoData_MouseEnter);
+			this.labelStandardErrorRhoData.MouseLeave += new System.EventHandler(this.LabelStandardErrorRhoData_MouseLeave);
 			// 
 			// labelCorrelationProperMotionDeclinationByRightAscensionData
 			// 
@@ -1718,6 +2129,10 @@
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.TabIndex = 51;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Text = "---";
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionData_Enter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionData_Leave);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionData.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseLeave);
 			// 
 			// labelAngularSeparationBetweenComponentsData
 			// 
@@ -1730,6 +2145,10 @@
 			this.labelAngularSeparationBetweenComponentsData.TabIndex = 132;
 			this.labelAngularSeparationBetweenComponentsData.Text = "---";
 			this.labelAngularSeparationBetweenComponentsData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelAngularSeparationBetweenComponentsData.Enter += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsData_Enter);
+			this.labelAngularSeparationBetweenComponentsData.Leave += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsData_Leave);
+			this.labelAngularSeparationBetweenComponentsData.MouseEnter += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsData_MouseEnter);
+			this.labelAngularSeparationBetweenComponentsData.MouseLeave += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsData_MouseLeave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData
 			// 
@@ -1742,6 +2161,10 @@
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.TabIndex = 49;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Text = "---";
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_Enter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_Leave);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseLeave);
 			// 
 			// labelPositionAngleBetweenComponentsData
 			// 
@@ -1754,6 +2177,10 @@
 			this.labelPositionAngleBetweenComponentsData.TabIndex = 130;
 			this.labelPositionAngleBetweenComponentsData.Text = "---";
 			this.labelPositionAngleBetweenComponentsData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelPositionAngleBetweenComponentsData.Enter += new System.EventHandler(this.LabelPositionAngleBetweenComponentsData_Enter);
+			this.labelPositionAngleBetweenComponentsData.Leave += new System.EventHandler(this.LabelPositionAngleBetweenComponentsData_Leave);
+			this.labelPositionAngleBetweenComponentsData.MouseEnter += new System.EventHandler(this.LabelPositionAngleBetweenComponentsData_MouseEnter);
+			this.labelPositionAngleBetweenComponentsData.MouseLeave += new System.EventHandler(this.LabelPositionAngleBetweenComponentsData_MouseLeave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByDeclinationData
 			// 
@@ -1766,6 +2193,10 @@
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.TabIndex = 47;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Text = "---";
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationData_Enter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationData_Leave);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationData.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseLeave);
 			// 
 			// labelComponentIdentifiersData
 			// 
@@ -1778,6 +2209,10 @@
 			this.labelComponentIdentifiersData.TabIndex = 128;
 			this.labelComponentIdentifiersData.Text = "---";
 			this.labelComponentIdentifiersData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelComponentIdentifiersData.Enter += new System.EventHandler(this.LabelComponentIdentifiersData_Enter);
+			this.labelComponentIdentifiersData.Leave += new System.EventHandler(this.LabelComponentIdentifiersData_Leave);
+			this.labelComponentIdentifiersData.MouseEnter += new System.EventHandler(this.LabelComponentIdentifiersData_MouseEnter);
+			this.labelComponentIdentifiersData.MouseLeave += new System.EventHandler(this.LabelComponentIdentifiersData_MouseLeave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByRightAscensionData
 			// 
@@ -1790,6 +2225,10 @@
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.TabIndex = 45;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Text = "---";
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionData_Enter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionData_Leave);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseLeave);
 			// 
 			// labelSolutionQualityData
 			// 
@@ -1802,6 +2241,10 @@
 			this.labelSolutionQualityData.TabIndex = 126;
 			this.labelSolutionQualityData.Text = "---";
 			this.labelSolutionQualityData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelSolutionQualityData.Enter += new System.EventHandler(this.LabelSolutionQualityData_Enter);
+			this.labelSolutionQualityData.Leave += new System.EventHandler(this.LabelSolutionQualityData_Leave);
+			this.labelSolutionQualityData.MouseEnter += new System.EventHandler(this.LabelSolutionQualityData_MouseEnter);
+			this.labelSolutionQualityData.MouseLeave += new System.EventHandler(this.LabelSolutionQualityData_MouseLeave);
 			// 
 			// labelCorrelationTrigonomicParallaxByDeclinationData
 			// 
@@ -1814,6 +2257,10 @@
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.TabIndex = 43;
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.Text = "---";
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCorrelationTrigonomicParallaxByDeclinationData.Enter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationData_Enter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationData.Leave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationData_Leave);
+			this.labelCorrelationTrigonomicParallaxByDeclinationData.MouseEnter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationData_MouseEnter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationData.MouseLeave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationData_MouseLeave);
 			// 
 			// labelAstrometricSourceFlagData
 			// 
@@ -1826,6 +2273,10 @@
 			this.labelAstrometricSourceFlagData.TabIndex = 124;
 			this.labelAstrometricSourceFlagData.Text = "---";
 			this.labelAstrometricSourceFlagData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelAstrometricSourceFlagData.Enter += new System.EventHandler(this.LabelAstrometricSourceFlagData_Enter);
+			this.labelAstrometricSourceFlagData.Leave += new System.EventHandler(this.LabelAstrometricSourceFlagData_Leave);
+			this.labelAstrometricSourceFlagData.MouseEnter += new System.EventHandler(this.LabelAstrometricSourceFlagData_MouseEnter);
+			this.labelAstrometricSourceFlagData.MouseLeave += new System.EventHandler(this.LabelAstrometricSourceFlagData_MouseLeave);
 			// 
 			// labelCorrelationTrigonomicParallaxByRightAscensionData
 			// 
@@ -1838,6 +2289,10 @@
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.TabIndex = 41;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Text = "---";
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Enter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionData_Enter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Leave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionData_Leave);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionData.MouseEnter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseEnter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionData.MouseLeave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseLeave);
 			// 
 			// labelMultipleSystemsFlagData
 			// 
@@ -1850,6 +2305,10 @@
 			this.labelMultipleSystemsFlagData.TabIndex = 122;
 			this.labelMultipleSystemsFlagData.Text = "---";
 			this.labelMultipleSystemsFlagData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelMultipleSystemsFlagData.Enter += new System.EventHandler(this.LabelMultipleSystemsFlagData_Enter);
+			this.labelMultipleSystemsFlagData.Leave += new System.EventHandler(this.LabelMultipleSystemsFlagData_Leave);
+			this.labelMultipleSystemsFlagData.MouseEnter += new System.EventHandler(this.LabelMultipleSystemsFlagData_MouseEnter);
+			this.labelMultipleSystemsFlagData.MouseLeave += new System.EventHandler(this.LabelMultipleSystemsFlagData_MouseLeave);
 			// 
 			// labelCorrelationDeclinationByRightAscensionData
 			// 
@@ -1862,6 +2321,10 @@
 			this.labelCorrelationDeclinationByRightAscensionData.TabIndex = 39;
 			this.labelCorrelationDeclinationByRightAscensionData.Text = "---";
 			this.labelCorrelationDeclinationByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCorrelationDeclinationByRightAscensionData.Enter += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionData_Enter);
+			this.labelCorrelationDeclinationByRightAscensionData.Leave += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionData_Leave);
+			this.labelCorrelationDeclinationByRightAscensionData.MouseEnter += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionData_MouseEnter);
+			this.labelCorrelationDeclinationByRightAscensionData.MouseLeave += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionData_MouseLeave);
 			// 
 			// labelNumberComponentsInThisEntryData
 			// 
@@ -1874,6 +2337,10 @@
 			this.labelNumberComponentsInThisEntryData.TabIndex = 120;
 			this.labelNumberComponentsInThisEntryData.Text = "---";
 			this.labelNumberComponentsInThisEntryData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelNumberComponentsInThisEntryData.Enter += new System.EventHandler(this.LabelNumberComponentsInThisEntryData_Enter);
+			this.labelNumberComponentsInThisEntryData.Leave += new System.EventHandler(this.LabelNumberComponentsInThisEntryData_Leave);
+			this.labelNumberComponentsInThisEntryData.MouseEnter += new System.EventHandler(this.LabelNumberComponentsInThisEntryData_MouseEnter);
+			this.labelNumberComponentsInThisEntryData.MouseLeave += new System.EventHandler(this.LabelNumberComponentsInThisEntryData_MouseLeave);
 			// 
 			// labelStandardErrorProperMotionDeclinationData
 			// 
@@ -1886,6 +2353,10 @@
 			this.labelStandardErrorProperMotionDeclinationData.TabIndex = 37;
 			this.labelStandardErrorProperMotionDeclinationData.Text = "---";
 			this.labelStandardErrorProperMotionDeclinationData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorProperMotionDeclinationData.Enter += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationData_Enter);
+			this.labelStandardErrorProperMotionDeclinationData.Leave += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationData_Leave);
+			this.labelStandardErrorProperMotionDeclinationData.MouseEnter += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationData_MouseEnter);
+			this.labelStandardErrorProperMotionDeclinationData.MouseLeave += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationData_MouseLeave);
 			// 
 			// labelNumberEntriesWithSameCcdmData
 			// 
@@ -1898,6 +2369,10 @@
 			this.labelNumberEntriesWithSameCcdmData.TabIndex = 118;
 			this.labelNumberEntriesWithSameCcdmData.Text = "---";
 			this.labelNumberEntriesWithSameCcdmData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelNumberEntriesWithSameCcdmData.Enter += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmData_Enter);
+			this.labelNumberEntriesWithSameCcdmData.Leave += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmData_Leave);
+			this.labelNumberEntriesWithSameCcdmData.MouseEnter += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmData_MouseEnter);
+			this.labelNumberEntriesWithSameCcdmData.MouseLeave += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmData_MouseLeave);
 			// 
 			// labelStandardErrorProperMotionRightAscensionData
 			// 
@@ -1910,6 +2385,10 @@
 			this.labelStandardErrorProperMotionRightAscensionData.TabIndex = 35;
 			this.labelStandardErrorProperMotionRightAscensionData.Text = "---";
 			this.labelStandardErrorProperMotionRightAscensionData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorProperMotionRightAscensionData.Enter += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionData_Enter);
+			this.labelStandardErrorProperMotionRightAscensionData.Leave += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionData_Leave);
+			this.labelStandardErrorProperMotionRightAscensionData.MouseEnter += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionData_MouseEnter);
+			this.labelStandardErrorProperMotionRightAscensionData.MouseLeave += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionData_MouseLeave);
 			// 
 			// labelHistoricalStatusFlagData
 			// 
@@ -1922,6 +2401,10 @@
 			this.labelHistoricalStatusFlagData.TabIndex = 116;
 			this.labelHistoricalStatusFlagData.Text = "---";
 			this.labelHistoricalStatusFlagData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelHistoricalStatusFlagData.Enter += new System.EventHandler(this.LabelHistoricalStatusFlagData_Enter);
+			this.labelHistoricalStatusFlagData.Leave += new System.EventHandler(this.LabelHistoricalStatusFlagData_Leave);
+			this.labelHistoricalStatusFlagData.MouseEnter += new System.EventHandler(this.LabelHistoricalStatusFlagData_MouseEnter);
+			this.labelHistoricalStatusFlagData.MouseLeave += new System.EventHandler(this.LabelHistoricalStatusFlagData_MouseLeave);
 			// 
 			// labelStandardErrorTrigonomicParallaxData
 			// 
@@ -1934,6 +2417,10 @@
 			this.labelStandardErrorTrigonomicParallaxData.TabIndex = 33;
 			this.labelStandardErrorTrigonomicParallaxData.Text = "---";
 			this.labelStandardErrorTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorTrigonomicParallaxData.Enter += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxData_Enter);
+			this.labelStandardErrorTrigonomicParallaxData.Leave += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxData_Leave);
+			this.labelStandardErrorTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxData_MouseEnter);
+			this.labelStandardErrorTrigonomicParallaxData.MouseLeave += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxData_MouseLeave);
 			// 
 			// labelCcdmIdentifierData
 			// 
@@ -1946,6 +2433,10 @@
 			this.labelCcdmIdentifierData.TabIndex = 114;
 			this.labelCcdmIdentifierData.Text = "---";
 			this.labelCcdmIdentifierData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCcdmIdentifierData.Enter += new System.EventHandler(this.LabelCcdmIdentifierData_Enter);
+			this.labelCcdmIdentifierData.Leave += new System.EventHandler(this.LabelCcdmIdentifierData_Leave);
+			this.labelCcdmIdentifierData.MouseEnter += new System.EventHandler(this.LabelCcdmIdentifierData_MouseEnter);
+			this.labelCcdmIdentifierData.MouseLeave += new System.EventHandler(this.LabelCcdmIdentifierData_MouseLeave);
 			// 
 			// labelStandardErrorDeclinationData
 			// 
@@ -1958,6 +2449,10 @@
 			this.labelStandardErrorDeclinationData.TabIndex = 31;
 			this.labelStandardErrorDeclinationData.Text = "---";
 			this.labelStandardErrorDeclinationData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorDeclinationData.Enter += new System.EventHandler(this.LabelStandardErrorDeclinationData_Enter);
+			this.labelStandardErrorDeclinationData.Leave += new System.EventHandler(this.LabelStandardErrorDeclinationData_Leave);
+			this.labelStandardErrorDeclinationData.MouseEnter += new System.EventHandler(this.LabelStandardErrorDeclinationData_MouseEnter);
+			this.labelStandardErrorDeclinationData.MouseLeave += new System.EventHandler(this.LabelStandardErrorDeclinationData_MouseLeave);
 			// 
 			// labelLightCurveAnnexData
 			// 
@@ -1970,6 +2465,10 @@
 			this.labelLightCurveAnnexData.TabIndex = 112;
 			this.labelLightCurveAnnexData.Text = "---";
 			this.labelLightCurveAnnexData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelLightCurveAnnexData.Enter += new System.EventHandler(this.LabelLightCurveAnnexData_Enter);
+			this.labelLightCurveAnnexData.Leave += new System.EventHandler(this.LabelLightCurveAnnexData_Leave);
+			this.labelLightCurveAnnexData.MouseEnter += new System.EventHandler(this.LabelLightCurveAnnexData_MouseEnter);
+			this.labelLightCurveAnnexData.MouseLeave += new System.EventHandler(this.LabelLightCurveAnnexData_MouseLeave);
 			// 
 			// labelStandardErrorRightAscensionData
 			// 
@@ -1982,6 +2481,10 @@
 			this.labelStandardErrorRightAscensionData.TabIndex = 29;
 			this.labelStandardErrorRightAscensionData.Text = "---";
 			this.labelStandardErrorRightAscensionData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorRightAscensionData.Enter += new System.EventHandler(this.LabelStandardErrorRightAscensionData_Enter);
+			this.labelStandardErrorRightAscensionData.Leave += new System.EventHandler(this.LabelStandardErrorRightAscensionData_Leave);
+			this.labelStandardErrorRightAscensionData.MouseEnter += new System.EventHandler(this.LabelStandardErrorRightAscensionData_MouseEnter);
+			this.labelStandardErrorRightAscensionData.MouseLeave += new System.EventHandler(this.LabelStandardErrorRightAscensionData_MouseLeave);
 			// 
 			// labelAdditionalDataAboutVariabilityData
 			// 
@@ -1994,6 +2497,10 @@
 			this.labelAdditionalDataAboutVariabilityData.TabIndex = 110;
 			this.labelAdditionalDataAboutVariabilityData.Text = "---";
 			this.labelAdditionalDataAboutVariabilityData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelAdditionalDataAboutVariabilityData.Enter += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityData_Enter);
+			this.labelAdditionalDataAboutVariabilityData.Leave += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityData_Leave);
+			this.labelAdditionalDataAboutVariabilityData.MouseEnter += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityData_MouseEnter);
+			this.labelAdditionalDataAboutVariabilityData.MouseLeave += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityData_MouseLeave);
 			// 
 			// labelProperMotionDeltaData
 			// 
@@ -2006,6 +2513,10 @@
 			this.labelProperMotionDeltaData.TabIndex = 27;
 			this.labelProperMotionDeltaData.Text = "---";
 			this.labelProperMotionDeltaData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelProperMotionDeltaData.Enter += new System.EventHandler(this.LabelProperMotionDeltaData_Enter);
+			this.labelProperMotionDeltaData.Leave += new System.EventHandler(this.LabelProperMotionDeltaData_Leave);
+			this.labelProperMotionDeltaData.MouseEnter += new System.EventHandler(this.LabelProperMotionDeltaData_MouseEnter);
+			this.labelProperMotionDeltaData.MouseLeave += new System.EventHandler(this.LabelProperMotionDeltaData_MouseLeave);
 			// 
 			// labelVariabilityTypeData
 			// 
@@ -2018,6 +2529,10 @@
 			this.labelVariabilityTypeData.TabIndex = 108;
 			this.labelVariabilityTypeData.Text = "---";
 			this.labelVariabilityTypeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelVariabilityTypeData.Enter += new System.EventHandler(this.LabelVariabilityTypeData_Enter);
+			this.labelVariabilityTypeData.Leave += new System.EventHandler(this.LabelVariabilityTypeData_Leave);
+			this.labelVariabilityTypeData.MouseEnter += new System.EventHandler(this.LabelVariabilityTypeData_MouseEnter);
+			this.labelVariabilityTypeData.MouseLeave += new System.EventHandler(this.LabelVariabilityTypeData_MouseLeave);
 			// 
 			// labelProperMotionAlphaData
 			// 
@@ -2030,6 +2545,10 @@
 			this.labelProperMotionAlphaData.TabIndex = 25;
 			this.labelProperMotionAlphaData.Text = "---";
 			this.labelProperMotionAlphaData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelProperMotionAlphaData.Enter += new System.EventHandler(this.LabelProperMotionAlphaData_Enter);
+			this.labelProperMotionAlphaData.Leave += new System.EventHandler(this.LabelProperMotionAlphaData_Leave);
+			this.labelProperMotionAlphaData.MouseEnter += new System.EventHandler(this.LabelProperMotionAlphaData_MouseEnter);
+			this.labelProperMotionAlphaData.MouseLeave += new System.EventHandler(this.LabelProperMotionAlphaData_MouseLeave);
 			// 
 			// labelVariabilityPeriodData
 			// 
@@ -2042,6 +2561,10 @@
 			this.labelVariabilityPeriodData.TabIndex = 106;
 			this.labelVariabilityPeriodData.Text = "---";
 			this.labelVariabilityPeriodData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelVariabilityPeriodData.Enter += new System.EventHandler(this.LabelVariabilityPeriodData_Enter);
+			this.labelVariabilityPeriodData.Leave += new System.EventHandler(this.LabelVariabilityPeriodData_Leave);
+			this.labelVariabilityPeriodData.MouseEnter += new System.EventHandler(this.LabelVariabilityPeriodData_MouseEnter);
+			this.labelVariabilityPeriodData.MouseLeave += new System.EventHandler(this.LabelVariabilityPeriodData_MouseLeave);
 			// 
 			// labelTrigonomicParallaxData
 			// 
@@ -2054,18 +2577,26 @@
 			this.labelTrigonomicParallaxData.TabIndex = 23;
 			this.labelTrigonomicParallaxData.Text = "---";
 			this.labelTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelTrigonomicParallaxData.Click += new System.EventHandler(this.LabelTrigonomicParallaxData_Click);
+			this.labelTrigonomicParallaxData.Enter += new System.EventHandler(this.LabelTrigonomicParallaxData_Enter);
+			this.labelTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.LabelTrigonomicParallaxData_MouseEnter);
+			this.labelTrigonomicParallaxData.MouseLeave += new System.EventHandler(this.LabelTrigonomicParallaxData_MouseLeave);
 			// 
-			// labelMeanMagnitudeInHipparcosSystemAtMinimumData
+			// labelMedianMagnitudeInHipparcosSystemAtMinimumData
 			// 
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumData.AutoSize = true;
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumData.Location = new System.Drawing.Point(759, 183);
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumData.Name = "labelMeanMagnitudeInHipparcosSystemAtMinimumData";
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumData.Size = new System.Drawing.Size(243, 15);
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumData.TabIndex = 104;
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumData.Text = "---";
-			this.labelMeanMagnitudeInHipparcosSystemAtMinimumData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Location = new System.Drawing.Point(759, 183);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Name = "labelMedianMagnitudeInHipparcosSystemAtMinimumData";
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Size = new System.Drawing.Size(243, 15);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.TabIndex = 104;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Text = "---";
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumData_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumData_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumData_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.MouseLeave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumData_MouseLeave);
 			// 
 			// labelReferenceFlagForAstrometryData
 			// 
@@ -2078,18 +2609,26 @@
 			this.labelReferenceFlagForAstrometryData.TabIndex = 21;
 			this.labelReferenceFlagForAstrometryData.Text = "---";
 			this.labelReferenceFlagForAstrometryData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelReferenceFlagForAstrometryData.Enter += new System.EventHandler(this.LabelReferenceFlagForAstrometryData_Enter);
+			this.labelReferenceFlagForAstrometryData.Leave += new System.EventHandler(this.LabelReferenceFlagForAstrometryData_Leave);
+			this.labelReferenceFlagForAstrometryData.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForAstrometryData_MouseEnter);
+			this.labelReferenceFlagForAstrometryData.MouseLeave += new System.EventHandler(this.LabelReferenceFlagForAstrometryData_MouseLeave);
 			// 
-			// labelMeanMagnitudeInHipparcosSystemAtMaximumData
+			// labelMedianMagnitudeInHipparcosSystemAtMaximumData
 			// 
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumData.AutoSize = true;
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumData.Location = new System.Drawing.Point(759, 165);
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumData.Name = "labelMeanMagnitudeInHipparcosSystemAtMaximumData";
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumData.Size = new System.Drawing.Size(243, 15);
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumData.TabIndex = 102;
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumData.Text = "---";
-			this.labelMeanMagnitudeInHipparcosSystemAtMaximumData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Location = new System.Drawing.Point(759, 165);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Name = "labelMedianMagnitudeInHipparcosSystemAtMaximumData";
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Size = new System.Drawing.Size(243, 15);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.TabIndex = 102;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Text = "---";
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumData_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumData_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumData_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.MouseLeave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumData_MouseLeave);
 			// 
 			// labelDeltaData
 			// 
@@ -2102,18 +2641,26 @@
 			this.labelDeltaData.TabIndex = 19;
 			this.labelDeltaData.Text = "---";
 			this.labelDeltaData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelDeltaData.Enter += new System.EventHandler(this.LabelDeltaData_Enter);
+			this.labelDeltaData.Leave += new System.EventHandler(this.LabelDeltaData_Leave);
+			this.labelDeltaData.MouseEnter += new System.EventHandler(this.LabelDeltaData_MouseEnter);
+			this.labelDeltaData.MouseLeave += new System.EventHandler(this.LabelDeltaData_MouseLeave);
 			// 
-			// labelReferenceFlagForMeanMagnitudeInHipparcosSystemData
+			// labelReferenceFlagForMedianMagnitudeInHipparcosSystemData
 			// 
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemData.AutoSize = true;
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(759, 147);
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemData.Name = "labelReferenceFlagForMeanMagnitudeInHipparcosSystemData";
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemData.Size = new System.Drawing.Size(243, 15);
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemData.TabIndex = 100;
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemData.Text = "---";
-			this.labelReferenceFlagForMeanMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.AutoSize = true;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(759, 147);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Name = "labelReferenceFlagForMedianMagnitudeInHipparcosSystemData";
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Size = new System.Drawing.Size(243, 15);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.TabIndex = 100;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Text = "---";
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Enter += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_Enter);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Leave += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_Leave);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_MouseEnter);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.MouseLeave += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_MouseLeave);
 			// 
 			// labelAlphaData
 			// 
@@ -2126,18 +2673,26 @@
 			this.labelAlphaData.TabIndex = 17;
 			this.labelAlphaData.Text = "---";
 			this.labelAlphaData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelAlphaData.Enter += new System.EventHandler(this.LabelAlphaData_Enter);
+			this.labelAlphaData.Leave += new System.EventHandler(this.LabelAlphaData_Leave);
+			this.labelAlphaData.MouseEnter += new System.EventHandler(this.LabelAlphaData_MouseEnter);
+			this.labelAlphaData.MouseLeave += new System.EventHandler(this.LabelAlphaData_MouseLeave);
 			// 
-			// labelNumberObservationsForMeanMagnitudeInHipparcosSystemData
+			// labelNumberObservationsForMedianMagnitudeInHipparcosSystemData
 			// 
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemData.AutoSize = true;
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(759, 129);
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemData.Name = "labelNumberObservationsForMeanMagnitudeInHipparcosSystemData";
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemData.Size = new System.Drawing.Size(243, 15);
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemData.TabIndex = 98;
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemData.Text = "---";
-			this.labelNumberObservationsForMeanMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.AutoSize = true;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(759, 129);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Name = "labelNumberObservationsForMedianMagnitudeInHipparcosSystemData";
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Size = new System.Drawing.Size(243, 15);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.TabIndex = 98;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Text = "---";
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Enter += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_Enter);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Leave += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_Leave);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.MouseEnter += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_MouseEnter);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.MouseLeave += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_MouseLeave);
 			// 
 			// labelSourceOfMagnitudeData
 			// 
@@ -2150,18 +2705,26 @@
 			this.labelSourceOfMagnitudeData.TabIndex = 15;
 			this.labelSourceOfMagnitudeData.Text = "---";
 			this.labelSourceOfMagnitudeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelSourceOfMagnitudeData.Enter += new System.EventHandler(this.LabelSourceOfMagnitudeData_Enter);
+			this.labelSourceOfMagnitudeData.Leave += new System.EventHandler(this.LabelSourceOfMagnitudeData_Leave);
+			this.labelSourceOfMagnitudeData.MouseEnter += new System.EventHandler(this.LabelSourceOfMagnitudeData_MouseEnter);
+			this.labelSourceOfMagnitudeData.MouseLeave += new System.EventHandler(this.LabelSourceOfMagnitudeData_MouseLeave);
 			// 
-			// labelScatterMeanMagnitudeInHipparcosSystemData
+			// labelScatterMedianMagnitudeInHipparcosSystemData
 			// 
-			this.labelScatterMeanMagnitudeInHipparcosSystemData.AutoSize = true;
-			this.labelScatterMeanMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelScatterMeanMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelScatterMeanMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(759, 111);
-			this.labelScatterMeanMagnitudeInHipparcosSystemData.Name = "labelScatterMeanMagnitudeInHipparcosSystemData";
-			this.labelScatterMeanMagnitudeInHipparcosSystemData.Size = new System.Drawing.Size(243, 15);
-			this.labelScatterMeanMagnitudeInHipparcosSystemData.TabIndex = 96;
-			this.labelScatterMeanMagnitudeInHipparcosSystemData.Text = "---";
-			this.labelScatterMeanMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.AutoSize = true;
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(759, 111);
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.Name = "labelScatterMedianMagnitudeInHipparcosSystemData";
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.Size = new System.Drawing.Size(243, 15);
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.TabIndex = 96;
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.Text = "---";
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.Enter += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemData_Enter);
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.Leave += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemData_Leave);
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.MouseEnter += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemData_MouseEnter);
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.MouseLeave += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemData_MouseLeave);
 			// 
 			// labelCoarseVariabilityFlagData
 			// 
@@ -2174,18 +2737,26 @@
 			this.labelCoarseVariabilityFlagData.TabIndex = 13;
 			this.labelCoarseVariabilityFlagData.Text = "---";
 			this.labelCoarseVariabilityFlagData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCoarseVariabilityFlagData.Enter += new System.EventHandler(this.LabelCoarseVariabilityFlagData_Enter);
+			this.labelCoarseVariabilityFlagData.Leave += new System.EventHandler(this.LabelCoarseVariabilityFlagData_Leave);
+			this.labelCoarseVariabilityFlagData.MouseEnter += new System.EventHandler(this.LabelCoarseVariabilityFlagData_MouseEnter);
+			this.labelCoarseVariabilityFlagData.MouseLeave += new System.EventHandler(this.LabelCoarseVariabilityFlagData_MouseLeave);
 			// 
-			// labelStandardErrorMeanMagnitudeInHipparcosSystemData
+			// labelStandardErrorMedianMagnitudeInHipparcosSystemData
 			// 
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemData.AutoSize = true;
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(759, 93);
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemData.Name = "labelStandardErrorMeanMagnitudeInHipparcosSystemData";
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemData.Size = new System.Drawing.Size(243, 15);
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemData.TabIndex = 93;
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemData.Text = "---";
-			this.labelStandardErrorMeanMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.AutoSize = true;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(759, 93);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Name = "labelStandardErrorMedianMagnitudeInHipparcosSystemData";
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Size = new System.Drawing.Size(243, 15);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.TabIndex = 93;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Text = "---";
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Enter += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemData_Enter);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Leave += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemData_Leave);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.MouseEnter += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemData_MouseEnter);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.MouseLeave += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemData_MouseLeave);
 			// 
 			// labelMagnitudeJohnsonData
 			// 
@@ -2198,18 +2769,26 @@
 			this.labelMagnitudeJohnsonData.TabIndex = 11;
 			this.labelMagnitudeJohnsonData.Text = "---";
 			this.labelMagnitudeJohnsonData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelMagnitudeJohnsonData.Enter += new System.EventHandler(this.LabelMagnitudeJohnsonData_Enter);
+			this.labelMagnitudeJohnsonData.Leave += new System.EventHandler(this.LabelMagnitudeJohnsonData_Leave);
+			this.labelMagnitudeJohnsonData.MouseEnter += new System.EventHandler(this.LabelMagnitudeJohnsonData_MouseEnter);
+			this.labelMagnitudeJohnsonData.MouseLeave += new System.EventHandler(this.LabelMagnitudeJohnsonData_MouseLeave);
 			// 
-			// labelMeanMagnitudeInHipparcosSystemData
+			// labelMedianMagnitudeInHipparcosSystemData
 			// 
-			this.labelMeanMagnitudeInHipparcosSystemData.AutoSize = true;
-			this.labelMeanMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelMeanMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelMeanMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(759, 75);
-			this.labelMeanMagnitudeInHipparcosSystemData.Name = "labelMeanMagnitudeInHipparcosSystemData";
-			this.labelMeanMagnitudeInHipparcosSystemData.Size = new System.Drawing.Size(243, 15);
-			this.labelMeanMagnitudeInHipparcosSystemData.TabIndex = 91;
-			this.labelMeanMagnitudeInHipparcosSystemData.Text = "---";
-			this.labelMeanMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelMedianMagnitudeInHipparcosSystemData.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelMedianMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(759, 75);
+			this.labelMedianMagnitudeInHipparcosSystemData.Name = "labelMedianMagnitudeInHipparcosSystemData";
+			this.labelMedianMagnitudeInHipparcosSystemData.Size = new System.Drawing.Size(243, 15);
+			this.labelMedianMagnitudeInHipparcosSystemData.TabIndex = 91;
+			this.labelMedianMagnitudeInHipparcosSystemData.Text = "---";
+			this.labelMedianMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelMedianMagnitudeInHipparcosSystemData.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemData_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemData.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemData_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemData.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemData_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemData.MouseLeave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemData_MouseLeave);
 			// 
 			// labelDeclinationData
 			// 
@@ -2222,6 +2801,10 @@
 			this.labelDeclinationData.TabIndex = 9;
 			this.labelDeclinationData.Text = "---";
 			this.labelDeclinationData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelDeclinationData.Enter += new System.EventHandler(this.LabelDeclinationData_Enter);
+			this.labelDeclinationData.Leave += new System.EventHandler(this.LabelDeclinationData_Leave);
+			this.labelDeclinationData.MouseEnter += new System.EventHandler(this.LabelDeclinationData_MouseEnter);
+			this.labelDeclinationData.MouseLeave += new System.EventHandler(this.LabelDeclinationData_MouseLeave);
 			// 
 			// labelFlagForCombinedMagnitudesData
 			// 
@@ -2234,6 +2817,10 @@
 			this.labelFlagForCombinedMagnitudesData.TabIndex = 89;
 			this.labelFlagForCombinedMagnitudesData.Text = "---";
 			this.labelFlagForCombinedMagnitudesData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelFlagForCombinedMagnitudesData.Enter += new System.EventHandler(this.LabelFlagForCombinedMagnitudesData_Enter);
+			this.labelFlagForCombinedMagnitudesData.Leave += new System.EventHandler(this.LabelFlagForCombinedMagnitudesData_Leave);
+			this.labelFlagForCombinedMagnitudesData.MouseEnter += new System.EventHandler(this.LabelFlagForCombinedMagnitudesData_MouseEnter);
+			this.labelFlagForCombinedMagnitudesData.MouseLeave += new System.EventHandler(this.LabelFlagForCombinedMagnitudesData_MouseLeave);
 			// 
 			// labelRightAscensionData
 			// 
@@ -2246,6 +2833,10 @@
 			this.labelRightAscensionData.TabIndex = 7;
 			this.labelRightAscensionData.Text = "---";
 			this.labelRightAscensionData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelRightAscensionData.Enter += new System.EventHandler(this.LabelRightAscensionData_Enter);
+			this.labelRightAscensionData.Leave += new System.EventHandler(this.LabelRightAscensionData_Leave);
+			this.labelRightAscensionData.MouseEnter += new System.EventHandler(this.LabelRightAscensionData_MouseEnter);
+			this.labelRightAscensionData.MouseLeave += new System.EventHandler(this.LabelRightAscensionData_MouseLeave);
 			// 
 			// labelSourceOfViData
 			// 
@@ -2258,6 +2849,10 @@
 			this.labelSourceOfViData.TabIndex = 83;
 			this.labelSourceOfViData.Text = "---";
 			this.labelSourceOfViData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelSourceOfViData.Enter += new System.EventHandler(this.LabelSourceOfViData_Enter);
+			this.labelSourceOfViData.Leave += new System.EventHandler(this.LabelSourceOfViData_Leave);
+			this.labelSourceOfViData.MouseEnter += new System.EventHandler(this.LabelSourceOfViData_MouseEnter);
+			this.labelSourceOfViData.MouseLeave += new System.EventHandler(this.LabelSourceOfViData_MouseLeave);
 			// 
 			// labelProximityData
 			// 
@@ -2270,6 +2865,10 @@
 			this.labelProximityData.TabIndex = 5;
 			this.labelProximityData.Text = "---";
 			this.labelProximityData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelProximityData.Enter += new System.EventHandler(this.LabelProximityData_Enter);
+			this.labelProximityData.Leave += new System.EventHandler(this.LabelProximityData_Leave);
+			this.labelProximityData.MouseEnter += new System.EventHandler(this.LabelProximityData_MouseEnter);
+			this.labelProximityData.MouseLeave += new System.EventHandler(this.LabelProximityData_MouseLeave);
 			// 
 			// labelStandardErrorViData
 			// 
@@ -2282,6 +2881,10 @@
 			this.labelStandardErrorViData.TabIndex = 81;
 			this.labelStandardErrorViData.Text = "---";
 			this.labelStandardErrorViData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelStandardErrorViData.Enter += new System.EventHandler(this.LabelStandardErrorViData_Enter);
+			this.labelStandardErrorViData.Leave += new System.EventHandler(this.LabelStandardErrorViData_Leave);
+			this.labelStandardErrorViData.MouseEnter += new System.EventHandler(this.LabelStandardErrorViData_MouseEnter);
+			this.labelStandardErrorViData.MouseLeave += new System.EventHandler(this.LabelStandardErrorViData_MouseLeave);
 			// 
 			// labelIdentifierData
 			// 
@@ -2294,6 +2897,10 @@
 			this.labelIdentifierData.TabIndex = 3;
 			this.labelIdentifierData.Text = "---";
 			this.labelIdentifierData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelIdentifierData.Enter += new System.EventHandler(this.LabelIdentifierData_Enter);
+			this.labelIdentifierData.Leave += new System.EventHandler(this.LabelIdentifierData_Leave);
+			this.labelIdentifierData.MouseEnter += new System.EventHandler(this.LabelIdentifierData_MouseEnter);
+			this.labelIdentifierData.MouseLeave += new System.EventHandler(this.LabelIdentifierData_MouseLeave);
 			// 
 			// labelColourIndexInCousinsSystemData
 			// 
@@ -2306,6 +2913,10 @@
 			this.labelColourIndexInCousinsSystemData.TabIndex = 79;
 			this.labelColourIndexInCousinsSystemData.Text = "---";
 			this.labelColourIndexInCousinsSystemData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelColourIndexInCousinsSystemData.Enter += new System.EventHandler(this.LabelColourIndexInCousinsSystemData_Enter);
+			this.labelColourIndexInCousinsSystemData.Leave += new System.EventHandler(this.LabelColourIndexInCousinsSystemData_Leave);
+			this.labelColourIndexInCousinsSystemData.MouseEnter += new System.EventHandler(this.LabelColourIndexInCousinsSystemData_MouseEnter);
+			this.labelColourIndexInCousinsSystemData.MouseLeave += new System.EventHandler(this.LabelColourIndexInCousinsSystemData_MouseLeave);
 			// 
 			// labelCatalogueData
 			// 
@@ -2318,6 +2929,10 @@
 			this.labelCatalogueData.TabIndex = 1;
 			this.labelCatalogueData.Text = "---";
 			this.labelCatalogueData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelCatalogueData.Enter += new System.EventHandler(this.LabelCatalogueData_Enter);
+			this.labelCatalogueData.Leave += new System.EventHandler(this.LabelCatalogueData_Leave);
+			this.labelCatalogueData.MouseEnter += new System.EventHandler(this.LabelCatalogueData_MouseEnter);
+			this.labelCatalogueData.MouseLeave += new System.EventHandler(this.LabelCatalogueData_MouseLeave);
 			// 
 			// HipparcosCatalogueViewerForm
 			// 
@@ -2398,12 +3013,12 @@
 		private System.Windows.Forms.Label labelStandardErrorJohnsonBvColourDesc;
 		private System.Windows.Forms.Label labelJohnsonBvColourDesc;
 		private System.Windows.Forms.Label labelStandardErrorMeanVtMagnitudeDesc;
-		private System.Windows.Forms.Label labelNumberObservationsForMeanMagnitudeInHipparcosSystemDesc;
-		private System.Windows.Forms.Label labelScatterMeanMagnitudeInHipparcosSystemDesc;
-		private System.Windows.Forms.Label labelStandardErrorMeanMagnitudeInHipparcosSystemDesc;
-		private System.Windows.Forms.Label labelMeanMagnitudeInHipparcosSystemDesc;
+		private System.Windows.Forms.Label labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc;
+		private System.Windows.Forms.Label labelScatterMedianMagnitudeInHipparcosSystemDesc;
+		private System.Windows.Forms.Label labelStandardErrorMedianMagnitudeInHipparcosSystemDesc;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemDesc;
 		private System.Windows.Forms.Label labelSourceOfViDesc;
-		private System.Windows.Forms.Label labelMeanMagnitudeInHipparcosSystemAtMaximumDesc;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemAtMaximumDesc;
 		private System.Windows.Forms.Label labelSolutionQualityDesc;
 		private System.Windows.Forms.Label labelAstrometricSourceFlagDesc;
 		private System.Windows.Forms.Label labelMultipleSystemsFlagDesc;
@@ -2414,7 +3029,7 @@
 		private System.Windows.Forms.Label labelAdditionalDataAboutVariabilityDesc;
 		private System.Windows.Forms.Label labelVariabilityTypeDesc;
 		private System.Windows.Forms.Label labelVariabilityPeriodDesc;
-		private System.Windows.Forms.Label labelMeanMagnitudeInHipparcosSystemAtMinimumDesc;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemAtMinimumDesc;
 		private System.Windows.Forms.Label labelCcdmIdentifierDesc;
 		private System.Windows.Forms.Label labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc;
 		private System.Windows.Forms.Label labelMagnitudeDifferenceBetweenComponentsDesc;
@@ -2438,7 +3053,7 @@
 		private System.Windows.Forms.Label labelFlagForCombinedMagnitudesDesc;
 		private System.Windows.Forms.Label labelReferenceFlagForBtAndVtMagnitudeDesc;
 		private System.Windows.Forms.Label labelHistoricalStatusFlagDesc;
-		private System.Windows.Forms.Label labelReferenceFlagForMeanMagnitudeInHipparcosSystemDesc;
+		private System.Windows.Forms.Label labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
 		private System.Windows.Forms.Label labelSourceOfBvColourData;
 		private System.Windows.Forms.Label labelSourceOfSpectraTypeData;
@@ -2495,19 +3110,19 @@
 		private System.Windows.Forms.Label labelProperMotionAlphaData;
 		private System.Windows.Forms.Label labelVariabilityPeriodData;
 		private System.Windows.Forms.Label labelTrigonomicParallaxData;
-		private System.Windows.Forms.Label labelMeanMagnitudeInHipparcosSystemAtMinimumData;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemAtMinimumData;
 		private System.Windows.Forms.Label labelReferenceFlagForAstrometryData;
-		private System.Windows.Forms.Label labelMeanMagnitudeInHipparcosSystemAtMaximumData;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemAtMaximumData;
 		private System.Windows.Forms.Label labelDeltaData;
-		private System.Windows.Forms.Label labelReferenceFlagForMeanMagnitudeInHipparcosSystemData;
+		private System.Windows.Forms.Label labelReferenceFlagForMedianMagnitudeInHipparcosSystemData;
 		private System.Windows.Forms.Label labelAlphaData;
-		private System.Windows.Forms.Label labelNumberObservationsForMeanMagnitudeInHipparcosSystemData;
+		private System.Windows.Forms.Label labelNumberObservationsForMedianMagnitudeInHipparcosSystemData;
 		private System.Windows.Forms.Label labelSourceOfMagnitudeData;
-		private System.Windows.Forms.Label labelScatterMeanMagnitudeInHipparcosSystemData;
+		private System.Windows.Forms.Label labelScatterMedianMagnitudeInHipparcosSystemData;
 		private System.Windows.Forms.Label labelCoarseVariabilityFlagData;
-		private System.Windows.Forms.Label labelStandardErrorMeanMagnitudeInHipparcosSystemData;
+		private System.Windows.Forms.Label labelStandardErrorMedianMagnitudeInHipparcosSystemData;
 		private System.Windows.Forms.Label labelMagnitudeJohnsonData;
-		private System.Windows.Forms.Label labelMeanMagnitudeInHipparcosSystemData;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemData;
 		private System.Windows.Forms.Label labelDeclinationData;
 		private System.Windows.Forms.Label labelFlagForCombinedMagnitudesData;
 		private System.Windows.Forms.Label labelRightAscensionData;
