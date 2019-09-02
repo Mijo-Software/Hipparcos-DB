@@ -95,12 +95,12 @@
 			this.labelExistenceOfNotesDesc = new System.Windows.Forms.Label();
 			this.labelBonnerDmDesc = new System.Windows.Forms.Label();
 			this.labelHdNumberDesc = new System.Windows.Forms.Label();
-			this.labelSpectraTypeDesc = new System.Windows.Forms.Label();
+			this.labelSpectralTypeDesc = new System.Windows.Forms.Label();
 			this.labelViUsedForReductionsDesc = new System.Windows.Forms.Label();
 			this.labelCapePhotographicDmDesc = new System.Windows.Forms.Label();
 			this.labelCordobaDmDesc = new System.Windows.Forms.Label();
 			this.labelReferenceFlagForAstrometryDesc = new System.Windows.Forms.Label();
-			this.labelSourceOfSpectraTypeDesc = new System.Windows.Forms.Label();
+			this.labelSourceOfSpectralTypeDesc = new System.Windows.Forms.Label();
 			this.labelCoarseVariabilityFlagDesc = new System.Windows.Forms.Label();
 			this.labelProximityFlagDesc = new System.Windows.Forms.Label();
 			this.labelCatalogueDesc = new System.Windows.Forms.Label();
@@ -121,9 +121,9 @@
 			this.menuitemClose = new System.Windows.Forms.ToolStripMenuItem();
 			this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.labelSourceOfBvColourData = new System.Windows.Forms.Label();
-			this.labelSourceOfSpectraTypeData = new System.Windows.Forms.Label();
+			this.labelSourceOfSpectralTypeData = new System.Windows.Forms.Label();
 			this.labelReferenceFlagForBtAndVtMagnitudeData = new System.Windows.Forms.Label();
-			this.labelSpectraTypeData = new System.Windows.Forms.Label();
+			this.labelSpectralTypeData = new System.Windows.Forms.Label();
 			this.labelStandardErrorJohnsonBvColourData = new System.Windows.Forms.Label();
 			this.labelViUsedForReductionsData = new System.Windows.Forms.Label();
 			this.labelJohnsonBvColourData = new System.Windows.Forms.Label();
@@ -1162,20 +1162,20 @@
 			this.labelHdNumberDesc.MouseEnter += new System.EventHandler(this.LabelHdNumberDesc_MouseEnter);
 			this.labelHdNumberDesc.MouseLeave += new System.EventHandler(this.LabelHdNumberDesc_MouseLeave);
 			// 
-			// labelSpectraTypeDesc
+			// labelSpectralTypeDesc
 			// 
-			this.labelSpectraTypeDesc.AutoSize = true;
-			this.labelSpectraTypeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelSpectraTypeDesc.Location = new System.Drawing.Point(508, 651);
-			this.labelSpectraTypeDesc.Name = "labelSpectraTypeDesc";
-			this.labelSpectraTypeDesc.Size = new System.Drawing.Size(242, 15);
-			this.labelSpectraTypeDesc.TabIndex = 3;
-			this.labelSpectraTypeDesc.Text = "Spectral type";
-			this.toolTip.SetToolTip(this.labelSpectraTypeDesc, "Spectral type");
-			this.labelSpectraTypeDesc.Enter += new System.EventHandler(this.LabelSpectraTypeDesc_Enter);
-			this.labelSpectraTypeDesc.Leave += new System.EventHandler(this.LabelSpectraTypeDesc_Leave);
-			this.labelSpectraTypeDesc.MouseEnter += new System.EventHandler(this.LabelSpectraTypeDesc_MouseEnter);
-			this.labelSpectraTypeDesc.MouseLeave += new System.EventHandler(this.LabelSpectraTypeDesc_MouseLeave);
+			this.labelSpectralTypeDesc.AutoSize = true;
+			this.labelSpectralTypeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSpectralTypeDesc.Location = new System.Drawing.Point(508, 651);
+			this.labelSpectralTypeDesc.Name = "labelSpectralTypeDesc";
+			this.labelSpectralTypeDesc.Size = new System.Drawing.Size(242, 15);
+			this.labelSpectralTypeDesc.TabIndex = 3;
+			this.labelSpectralTypeDesc.Text = "Spectral type";
+			this.toolTip.SetToolTip(this.labelSpectralTypeDesc, "Spectral type");
+			this.labelSpectralTypeDesc.Enter += new System.EventHandler(this.LabelSpectralTypeDesc_Enter);
+			this.labelSpectralTypeDesc.Leave += new System.EventHandler(this.LabelSpectralTypeDesc_Leave);
+			this.labelSpectralTypeDesc.MouseEnter += new System.EventHandler(this.LabelSpectralTypeDesc_MouseEnter);
+			this.labelSpectralTypeDesc.MouseLeave += new System.EventHandler(this.LabelSpectralTypeDesc_MouseLeave);
 			// 
 			// labelViUsedForReductionsDesc
 			// 
@@ -1237,20 +1237,20 @@
 			this.labelReferenceFlagForAstrometryDesc.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_MouseEnter);
 			this.labelReferenceFlagForAstrometryDesc.MouseLeave += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_MouseLeave);
 			// 
-			// labelSourceOfSpectraTypeDesc
+			// labelSourceOfSpectralTypeDesc
 			// 
-			this.labelSourceOfSpectraTypeDesc.AutoSize = true;
-			this.labelSourceOfSpectraTypeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelSourceOfSpectraTypeDesc.Location = new System.Drawing.Point(508, 669);
-			this.labelSourceOfSpectraTypeDesc.Name = "labelSourceOfSpectraTypeDesc";
-			this.labelSourceOfSpectraTypeDesc.Size = new System.Drawing.Size(242, 15);
-			this.labelSourceOfSpectraTypeDesc.TabIndex = 5;
-			this.labelSourceOfSpectraTypeDesc.Text = "Source of spectral type";
-			this.toolTip.SetToolTip(this.labelSourceOfSpectraTypeDesc, "Source of spectral type");
-			this.labelSourceOfSpectraTypeDesc.Enter += new System.EventHandler(this.LabelSourceOfSpectraTypeDesc_Enter);
-			this.labelSourceOfSpectraTypeDesc.Leave += new System.EventHandler(this.LabelSourceOfSpectraTypeDesc_Leave);
-			this.labelSourceOfSpectraTypeDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfSpectraTypeDesc_MouseEnter);
-			this.labelSourceOfSpectraTypeDesc.MouseLeave += new System.EventHandler(this.LabelSourceOfSpectraTypeDesc_MouseLeave);
+			this.labelSourceOfSpectralTypeDesc.AutoSize = true;
+			this.labelSourceOfSpectralTypeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfSpectralTypeDesc.Location = new System.Drawing.Point(508, 669);
+			this.labelSourceOfSpectralTypeDesc.Name = "labelSourceOfSpectralTypeDesc";
+			this.labelSourceOfSpectralTypeDesc.Size = new System.Drawing.Size(242, 15);
+			this.labelSourceOfSpectralTypeDesc.TabIndex = 5;
+			this.labelSourceOfSpectralTypeDesc.Text = "Source of spectral type";
+			this.toolTip.SetToolTip(this.labelSourceOfSpectralTypeDesc, "Source of spectral type");
+			this.labelSourceOfSpectralTypeDesc.Enter += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_Enter);
+			this.labelSourceOfSpectralTypeDesc.Leave += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_Leave);
+			this.labelSourceOfSpectralTypeDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_MouseEnter);
+			this.labelSourceOfSpectralTypeDesc.MouseLeave += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_MouseLeave);
 			// 
 			// labelCoarseVariabilityFlagDesc
 			// 
@@ -1504,9 +1504,9 @@
 			this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
 			this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
 			this.tableLayoutPanel.Controls.Add(this.labelSourceOfBvColourData, 1, 38);
-			this.tableLayoutPanel.Controls.Add(this.labelSourceOfSpectraTypeData, 3, 37);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfSpectralTypeData, 3, 37);
 			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForBtAndVtMagnitudeData, 1, 37);
-			this.tableLayoutPanel.Controls.Add(this.labelSpectraTypeData, 3, 36);
+			this.tableLayoutPanel.Controls.Add(this.labelSpectralTypeData, 3, 36);
 			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorJohnsonBvColourData, 1, 36);
 			this.tableLayoutPanel.Controls.Add(this.labelViUsedForReductionsData, 3, 35);
 			this.tableLayoutPanel.Controls.Add(this.labelJohnsonBvColourData, 1, 35);
@@ -1580,9 +1580,9 @@
 			this.tableLayoutPanel.Controls.Add(this.labelIdentifierData, 1, 1);
 			this.tableLayoutPanel.Controls.Add(this.labelColourIndexInCousinsSystemData, 3, 0);
 			this.tableLayoutPanel.Controls.Add(this.labelCatalogueDesc, 0, 0);
-			this.tableLayoutPanel.Controls.Add(this.labelSourceOfSpectraTypeDesc, 2, 37);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfSpectralTypeDesc, 2, 37);
 			this.tableLayoutPanel.Controls.Add(this.labelHistoricalStatusFlagDesc, 2, 16);
-			this.tableLayoutPanel.Controls.Add(this.labelSpectraTypeDesc, 2, 36);
+			this.tableLayoutPanel.Controls.Add(this.labelSpectralTypeDesc, 2, 36);
 			this.tableLayoutPanel.Controls.Add(this.labelFlagForCombinedMagnitudesDesc, 2, 3);
 			this.tableLayoutPanel.Controls.Add(this.labelViUsedForReductionsDesc, 2, 35);
 			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc, 2, 8);
@@ -1719,21 +1719,21 @@
 			this.labelSourceOfBvColourData.MouseEnter += new System.EventHandler(this.LabelSourceOfBvColourData_MouseEnter);
 			this.labelSourceOfBvColourData.MouseLeave += new System.EventHandler(this.LabelSourceOfBvColourData_MouseLeave);
 			// 
-			// labelSourceOfSpectraTypeData
+			// labelSourceOfSpectralTypeData
 			// 
-			this.labelSourceOfSpectraTypeData.AutoSize = true;
-			this.labelSourceOfSpectraTypeData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelSourceOfSpectraTypeData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelSourceOfSpectraTypeData.Location = new System.Drawing.Point(759, 669);
-			this.labelSourceOfSpectraTypeData.Name = "labelSourceOfSpectraTypeData";
-			this.labelSourceOfSpectraTypeData.Size = new System.Drawing.Size(243, 15);
-			this.labelSourceOfSpectraTypeData.TabIndex = 6;
-			this.labelSourceOfSpectraTypeData.Text = "---";
-			this.labelSourceOfSpectraTypeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			this.labelSourceOfSpectraTypeData.Enter += new System.EventHandler(this.LabelSourceOfSpectraTypeData_Enter);
-			this.labelSourceOfSpectraTypeData.Leave += new System.EventHandler(this.LabelSourceOfSpectraTypeData_Leave);
-			this.labelSourceOfSpectraTypeData.MouseEnter += new System.EventHandler(this.LabelSourceOfSpectraTypeData_MouseEnter);
-			this.labelSourceOfSpectraTypeData.MouseLeave += new System.EventHandler(this.LabelSourceOfSpectraTypeData_MouseLeave);
+			this.labelSourceOfSpectralTypeData.AutoSize = true;
+			this.labelSourceOfSpectralTypeData.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfSpectralTypeData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelSourceOfSpectralTypeData.Location = new System.Drawing.Point(759, 669);
+			this.labelSourceOfSpectralTypeData.Name = "labelSourceOfSpectralTypeData";
+			this.labelSourceOfSpectralTypeData.Size = new System.Drawing.Size(243, 15);
+			this.labelSourceOfSpectralTypeData.TabIndex = 6;
+			this.labelSourceOfSpectralTypeData.Text = "---";
+			this.labelSourceOfSpectralTypeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelSourceOfSpectralTypeData.Enter += new System.EventHandler(this.LabelSourceOfSpectralTypeData_Enter);
+			this.labelSourceOfSpectralTypeData.Leave += new System.EventHandler(this.LabelSourceOfSpectralTypeData_Leave);
+			this.labelSourceOfSpectralTypeData.MouseEnter += new System.EventHandler(this.LabelSourceOfSpectralTypeData_MouseEnter);
+			this.labelSourceOfSpectralTypeData.MouseLeave += new System.EventHandler(this.LabelSourceOfSpectralTypeData_MouseLeave);
 			// 
 			// labelReferenceFlagForBtAndVtMagnitudeData
 			// 
@@ -1750,21 +1750,21 @@
 			this.labelReferenceFlagForBtAndVtMagnitudeData.Leave += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeData_Leave);
 			this.labelReferenceFlagForBtAndVtMagnitudeData.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeData_MouseEnter);
 			// 
-			// labelSpectraTypeData
+			// labelSpectralTypeData
 			// 
-			this.labelSpectraTypeData.AutoSize = true;
-			this.labelSpectraTypeData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelSpectraTypeData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelSpectraTypeData.Location = new System.Drawing.Point(759, 651);
-			this.labelSpectraTypeData.Name = "labelSpectraTypeData";
-			this.labelSpectraTypeData.Size = new System.Drawing.Size(243, 15);
-			this.labelSpectraTypeData.TabIndex = 4;
-			this.labelSpectraTypeData.Text = "---";
-			this.labelSpectraTypeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			this.labelSpectraTypeData.Enter += new System.EventHandler(this.LabelSpectraTypeData_Enter);
-			this.labelSpectraTypeData.Leave += new System.EventHandler(this.LabelSpectraTypeData_Leave);
-			this.labelSpectraTypeData.MouseEnter += new System.EventHandler(this.LabelSpectraTypeData_MouseEnter);
-			this.labelSpectraTypeData.MouseLeave += new System.EventHandler(this.LabelSpectraTypeData_MouseLeave);
+			this.labelSpectralTypeData.AutoSize = true;
+			this.labelSpectralTypeData.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSpectralTypeData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelSpectralTypeData.Location = new System.Drawing.Point(759, 651);
+			this.labelSpectralTypeData.Name = "labelSpectralTypeData";
+			this.labelSpectralTypeData.Size = new System.Drawing.Size(243, 15);
+			this.labelSpectralTypeData.TabIndex = 4;
+			this.labelSpectralTypeData.Text = "---";
+			this.labelSpectralTypeData.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelSpectralTypeData.Enter += new System.EventHandler(this.LabelSpectralTypeData_Enter);
+			this.labelSpectralTypeData.Leave += new System.EventHandler(this.LabelSpectralTypeData_Leave);
+			this.labelSpectralTypeData.MouseEnter += new System.EventHandler(this.LabelSpectralTypeData_MouseEnter);
+			this.labelSpectralTypeData.MouseLeave += new System.EventHandler(this.LabelSpectralTypeData_MouseLeave);
 			// 
 			// labelStandardErrorJohnsonBvColourData
 			// 
@@ -3041,12 +3041,12 @@
 		private System.Windows.Forms.Label labelExistenceOfNotesDesc;
 		private System.Windows.Forms.Label labelBonnerDmDesc;
 		private System.Windows.Forms.Label labelHdNumberDesc;
-		private System.Windows.Forms.Label labelSpectraTypeDesc;
+		private System.Windows.Forms.Label labelSpectralTypeDesc;
 		private System.Windows.Forms.Label labelViUsedForReductionsDesc;
 		private System.Windows.Forms.Label labelCapePhotographicDmDesc;
 		private System.Windows.Forms.Label labelCordobaDmDesc;
 		private System.Windows.Forms.Label labelReferenceFlagForAstrometryDesc;
-		private System.Windows.Forms.Label labelSourceOfSpectraTypeDesc;
+		private System.Windows.Forms.Label labelSourceOfSpectralTypeDesc;
 		private System.Windows.Forms.Label labelCoarseVariabilityFlagDesc;
 		private System.Windows.Forms.Label labelProximityFlagDesc;
 		private System.Windows.Forms.Label labelCatalogueDesc;
@@ -3056,9 +3056,9 @@
 		private System.Windows.Forms.Label labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
 		private System.Windows.Forms.Label labelSourceOfBvColourData;
-		private System.Windows.Forms.Label labelSourceOfSpectraTypeData;
+		private System.Windows.Forms.Label labelSourceOfSpectralTypeData;
 		private System.Windows.Forms.Label labelReferenceFlagForBtAndVtMagnitudeData;
-		private System.Windows.Forms.Label labelSpectraTypeData;
+		private System.Windows.Forms.Label labelSpectralTypeData;
 		private System.Windows.Forms.Label labelStandardErrorJohnsonBvColourData;
 		private System.Windows.Forms.Label labelViUsedForReductionsData;
 		private System.Windows.Forms.Label labelJohnsonBvColourData;
