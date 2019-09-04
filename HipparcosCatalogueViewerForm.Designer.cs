@@ -205,6 +205,7 @@
 			// 
 			// labelIdentifierDesc
 			// 
+			this.labelIdentifierDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelIdentifierDesc.AutoSize = true;
 			this.labelIdentifierDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelIdentifierDesc.Location = new System.Drawing.Point(6, 21);
@@ -220,6 +221,7 @@
 			// 
 			// labelRightAscensionDesc
 			// 
+			this.labelRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelRightAscensionDesc.AutoSize = true;
 			this.labelRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelRightAscensionDesc.Location = new System.Drawing.Point(6, 57);
@@ -235,6 +237,7 @@
 			// 
 			// labelDeclinationDesc
 			// 
+			this.labelDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelDeclinationDesc.AutoSize = true;
 			this.labelDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelDeclinationDesc.Location = new System.Drawing.Point(6, 75);
@@ -250,6 +253,7 @@
 			// 
 			// labelMagnitudeJohnsonDesc
 			// 
+			this.labelMagnitudeJohnsonDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMagnitudeJohnsonDesc.AutoSize = true;
 			this.labelMagnitudeJohnsonDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMagnitudeJohnsonDesc.Location = new System.Drawing.Point(6, 93);
@@ -265,6 +269,7 @@
 			// 
 			// labelSourceOfMagnitudeDesc
 			// 
+			this.labelSourceOfMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSourceOfMagnitudeDesc.AutoSize = true;
 			this.labelSourceOfMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSourceOfMagnitudeDesc.Location = new System.Drawing.Point(6, 129);
@@ -280,6 +285,7 @@
 			// 
 			// labelAlphaDesc
 			// 
+			this.labelAlphaDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelAlphaDesc.AutoSize = true;
 			this.labelAlphaDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelAlphaDesc.Location = new System.Drawing.Point(6, 147);
@@ -295,6 +301,7 @@
 			// 
 			// labelDeltaDesc
 			// 
+			this.labelDeltaDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelDeltaDesc.AutoSize = true;
 			this.labelDeltaDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelDeltaDesc.Location = new System.Drawing.Point(6, 165);
@@ -310,6 +317,7 @@
 			// 
 			// labelTrigonomicParallaxDesc
 			// 
+			this.labelTrigonomicParallaxDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelTrigonomicParallaxDesc.AutoSize = true;
 			this.labelTrigonomicParallaxDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelTrigonomicParallaxDesc.Location = new System.Drawing.Point(6, 201);
@@ -325,6 +333,7 @@
 			// 
 			// labelProperMotionAlphaDesc
 			// 
+			this.labelProperMotionAlphaDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelProperMotionAlphaDesc.AutoSize = true;
 			this.labelProperMotionAlphaDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelProperMotionAlphaDesc.Location = new System.Drawing.Point(6, 219);
@@ -340,6 +349,7 @@
 			// 
 			// labelProperMotionDeltaDesc
 			// 
+			this.labelProperMotionDeltaDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelProperMotionDeltaDesc.AutoSize = true;
 			this.labelProperMotionDeltaDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelProperMotionDeltaDesc.Location = new System.Drawing.Point(6, 237);
@@ -355,6 +365,7 @@
 			// 
 			// labelStandardErrorRightAscensionDesc
 			// 
+			this.labelStandardErrorRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorRightAscensionDesc.AutoSize = true;
 			this.labelStandardErrorRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorRightAscensionDesc.Location = new System.Drawing.Point(6, 255);
@@ -370,6 +381,7 @@
 			// 
 			// labelStandardErrorDeclinationDesc
 			// 
+			this.labelStandardErrorDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorDeclinationDesc.AutoSize = true;
 			this.labelStandardErrorDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorDeclinationDesc.Location = new System.Drawing.Point(6, 273);
@@ -385,6 +397,7 @@
 			// 
 			// labelStandardErrorTrigonomicParallaxDesc
 			// 
+			this.labelStandardErrorTrigonomicParallaxDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorTrigonomicParallaxDesc.AutoSize = true;
 			this.labelStandardErrorTrigonomicParallaxDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorTrigonomicParallaxDesc.Location = new System.Drawing.Point(6, 291);
@@ -400,6 +413,7 @@
 			// 
 			// labelStandardErrorProperMotionDeclinationDesc
 			// 
+			this.labelStandardErrorProperMotionDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorProperMotionDeclinationDesc.AutoSize = true;
 			this.labelStandardErrorProperMotionDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorProperMotionDeclinationDesc.Location = new System.Drawing.Point(6, 327);
@@ -415,6 +429,7 @@
 			// 
 			// labelStandardErrorProperMotionRightAscensionDesc
 			// 
+			this.labelStandardErrorProperMotionRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorProperMotionRightAscensionDesc.AutoSize = true;
 			this.labelStandardErrorProperMotionRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorProperMotionRightAscensionDesc.Location = new System.Drawing.Point(6, 309);
@@ -430,6 +445,7 @@
 			// 
 			// labelCorrelationProperMotionRightAscensionByRightAscensionDesc
 			// 
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.AutoSize = true;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Location = new System.Drawing.Point(6, 399);
@@ -445,6 +461,7 @@
 			// 
 			// labelCorrelationTrigonomicParallaxByDeclinationDesc
 			// 
+			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.AutoSize = true;
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Location = new System.Drawing.Point(6, 381);
@@ -460,6 +477,7 @@
 			// 
 			// labelCorrelationTrigonomicParallaxByRightAscensionDesc
 			// 
+			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.AutoSize = true;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Location = new System.Drawing.Point(6, 363);
@@ -475,6 +493,7 @@
 			// 
 			// labelCorrelationDeclinationByRightAscensionDesc
 			// 
+			this.labelCorrelationDeclinationByRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationDeclinationByRightAscensionDesc.AutoSize = true;
 			this.labelCorrelationDeclinationByRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationDeclinationByRightAscensionDesc.Location = new System.Drawing.Point(6, 345);
@@ -490,6 +509,7 @@
 			// 
 			// labelCorrelationProperMotionDeclinationByRightAscensionDesc
 			// 
+			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.AutoSize = true;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Location = new System.Drawing.Point(6, 453);
@@ -505,6 +525,7 @@
 			// 
 			// labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc
 			// 
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.AutoSize = true;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Location = new System.Drawing.Point(6, 435);
@@ -520,6 +541,7 @@
 			// 
 			// labelCorrelationProperMotionRightAscensionByDeclinationDesc
 			// 
+			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.AutoSize = true;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Location = new System.Drawing.Point(6, 417);
@@ -535,6 +557,7 @@
 			// 
 			// labelGoodnessOfFitParameterDesc
 			// 
+			this.labelGoodnessOfFitParameterDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelGoodnessOfFitParameterDesc.AutoSize = true;
 			this.labelGoodnessOfFitParameterDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelGoodnessOfFitParameterDesc.Location = new System.Drawing.Point(6, 543);
@@ -550,6 +573,7 @@
 			// 
 			// labelPercentageOfRejectedDataDesc
 			// 
+			this.labelPercentageOfRejectedDataDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelPercentageOfRejectedDataDesc.AutoSize = true;
 			this.labelPercentageOfRejectedDataDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelPercentageOfRejectedDataDesc.Location = new System.Drawing.Point(6, 525);
@@ -565,6 +589,7 @@
 			// 
 			// labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc
 			// 
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.AutoSize = true;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Location = new System.Drawing.Point(6, 489);
@@ -580,6 +605,7 @@
 			// 
 			// labelCorrelationProperMotionDeclinationByDeclinationDesc
 			// 
+			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.AutoSize = true;
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Location = new System.Drawing.Point(6, 471);
@@ -595,6 +621,7 @@
 			// 
 			// labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc
 			// 
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.AutoSize = true;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Location = new System.Drawing.Point(6, 507);
@@ -610,6 +637,7 @@
 			// 
 			// labelStandardErrorMeanBtMagnitudeDesc
 			// 
+			this.labelStandardErrorMeanBtMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorMeanBtMagnitudeDesc.AutoSize = true;
 			this.labelStandardErrorMeanBtMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorMeanBtMagnitudeDesc.Location = new System.Drawing.Point(6, 579);
@@ -625,6 +653,7 @@
 			// 
 			// labelMeanBtMagnitudeDesc
 			// 
+			this.labelMeanBtMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMeanBtMagnitudeDesc.AutoSize = true;
 			this.labelMeanBtMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMeanBtMagnitudeDesc.Location = new System.Drawing.Point(6, 561);
@@ -655,6 +684,7 @@
 			// 
 			// labelMeanVtMagnitudeDesc
 			// 
+			this.labelMeanVtMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMeanVtMagnitudeDesc.AutoSize = true;
 			this.labelMeanVtMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMeanVtMagnitudeDesc.Location = new System.Drawing.Point(6, 597);
@@ -685,6 +715,7 @@
 			// 
 			// labelSourceOfBvColourDesc
 			// 
+			this.labelSourceOfBvColourDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSourceOfBvColourDesc.AutoSize = true;
 			this.labelSourceOfBvColourDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSourceOfBvColourDesc.Location = new System.Drawing.Point(6, 687);
@@ -699,6 +730,7 @@
 			// 
 			// labelStandardErrorJohnsonBvColourDesc
 			// 
+			this.labelStandardErrorJohnsonBvColourDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorJohnsonBvColourDesc.AutoSize = true;
 			this.labelStandardErrorJohnsonBvColourDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorJohnsonBvColourDesc.Location = new System.Drawing.Point(6, 651);
@@ -714,6 +746,7 @@
 			// 
 			// labelJohnsonBvColourDesc
 			// 
+			this.labelJohnsonBvColourDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelJohnsonBvColourDesc.AutoSize = true;
 			this.labelJohnsonBvColourDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelJohnsonBvColourDesc.Location = new System.Drawing.Point(6, 633);
@@ -729,6 +762,7 @@
 			// 
 			// labelStandardErrorMeanVtMagnitudeDesc
 			// 
+			this.labelStandardErrorMeanVtMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorMeanVtMagnitudeDesc.AutoSize = true;
 			this.labelStandardErrorMeanVtMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorMeanVtMagnitudeDesc.Location = new System.Drawing.Point(6, 615);
@@ -1224,6 +1258,7 @@
 			// 
 			// labelReferenceFlagForAstrometryDesc
 			// 
+			this.labelReferenceFlagForAstrometryDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelReferenceFlagForAstrometryDesc.AutoSize = true;
 			this.labelReferenceFlagForAstrometryDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelReferenceFlagForAstrometryDesc.Location = new System.Drawing.Point(6, 183);
@@ -1254,6 +1289,7 @@
 			// 
 			// labelCoarseVariabilityFlagDesc
 			// 
+			this.labelCoarseVariabilityFlagDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCoarseVariabilityFlagDesc.AutoSize = true;
 			this.labelCoarseVariabilityFlagDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCoarseVariabilityFlagDesc.Location = new System.Drawing.Point(6, 111);
@@ -1269,6 +1305,7 @@
 			// 
 			// labelProximityFlagDesc
 			// 
+			this.labelProximityFlagDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelProximityFlagDesc.AutoSize = true;
 			this.labelProximityFlagDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelProximityFlagDesc.Location = new System.Drawing.Point(6, 39);
@@ -1284,6 +1321,7 @@
 			// 
 			// labelCatalogueDesc
 			// 
+			this.labelCatalogueDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCatalogueDesc.AutoSize = true;
 			this.labelCatalogueDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCatalogueDesc.Location = new System.Drawing.Point(6, 3);
@@ -1314,6 +1352,7 @@
 			// 
 			// labelReferenceFlagForBtAndVtMagnitudeDesc
 			// 
+			this.labelReferenceFlagForBtAndVtMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.AutoSize = true;
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Location = new System.Drawing.Point(6, 669);
