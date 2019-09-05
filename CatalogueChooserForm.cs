@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Hipparcos_DB
@@ -27,7 +28,19 @@ namespace Hipparcos_DB
 
 		private void ButtonOpenHipparcosCatalogue_Click(object sender, EventArgs e)
 		{
-			new HipparcosCatalogueViewerForm().Show();
+			string dataFile = @"hip_main.dat";
+			if (File.Exists(path: dataFile))
+			{
+				new HipparcosCatalogueViewerForm().Show();
+			}
+			else
+			{
+				MessageBox.Show(
+					text: "Die Datei HIP_MAIN.DAT fehlt. Stellen Sie sicher, dass die Datei im Ordner der Anwendung vorhanden ist. Sie können die Datei unter der URL http://cdsarc.u-strasbg.fr/viz-bin/nph-Cat/txt.gz?I/239/hip_main.dat.gz downloaden.",
+					caption: "Datei fehlt",
+					buttons: MessageBoxButtons.OK,
+					icon: MessageBoxIcon.Error);
+			}
 		}
 
 		private void ButtonOpenTychoCatalogue_Click(object sender, EventArgs e)

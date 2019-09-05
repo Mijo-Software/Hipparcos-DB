@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace Hipparcos_DB
@@ -14,8 +12,8 @@ namespace Hipparcos_DB
 		static void Main()
 		{
 			Application.EnableVisualStyles();
-			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new CatalogueChooserForm());
+			Application.SetCompatibleTextRenderingDefault(defaultValue: false);
+			Application.Run(mainForm: new CatalogueChooserForm());
 		}
 	}
 }

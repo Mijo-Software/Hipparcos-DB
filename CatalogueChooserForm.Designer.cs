@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CatalogueChooserForm));
 			this.buttonOpenHipparcosCatalogue = new System.Windows.Forms.Button();
 			this.buttonOpenTychoCatalogue = new System.Windows.Forms.Button();
 			this.buttonExit = new System.Windows.Forms.Button();
@@ -42,15 +43,9 @@
 			// 
 			// buttonOpenHipparcosCatalogue
 			// 
-			this.buttonOpenHipparcosCatalogue.AccessibleDescription = "Open the Hipparcos Catalogue";
-			this.buttonOpenHipparcosCatalogue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.buttonOpenHipparcosCatalogue.Location = new System.Drawing.Point(3, 3);
+			resources.ApplyResources(this.buttonOpenHipparcosCatalogue, "buttonOpenHipparcosCatalogue");
 			this.buttonOpenHipparcosCatalogue.Name = "buttonOpenHipparcosCatalogue";
-			this.buttonOpenHipparcosCatalogue.Size = new System.Drawing.Size(160, 23);
-			this.buttonOpenHipparcosCatalogue.TabIndex = 0;
-			this.buttonOpenHipparcosCatalogue.Text = "&Hipparcos Catalogue";
-			this.toolTip.SetToolTip(this.buttonOpenHipparcosCatalogue, "Open the Hipparcos Catalogue");
+			this.toolTip.SetToolTip(this.buttonOpenHipparcosCatalogue, resources.GetString("buttonOpenHipparcosCatalogue.ToolTip"));
 			this.buttonOpenHipparcosCatalogue.UseVisualStyleBackColor = true;
 			this.buttonOpenHipparcosCatalogue.Click += new System.EventHandler(this.ButtonOpenHipparcosCatalogue_Click);
 			this.buttonOpenHipparcosCatalogue.Enter += new System.EventHandler(this.ButtonOpenHipparcosCatalogue_Enter);
@@ -60,16 +55,9 @@
 			// 
 			// buttonOpenTychoCatalogue
 			// 
-			this.buttonOpenTychoCatalogue.AccessibleDescription = "Open the Tycho Catalogue";
-			this.buttonOpenTychoCatalogue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.buttonOpenTychoCatalogue.Enabled = false;
-			this.buttonOpenTychoCatalogue.Location = new System.Drawing.Point(3, 32);
+			resources.ApplyResources(this.buttonOpenTychoCatalogue, "buttonOpenTychoCatalogue");
 			this.buttonOpenTychoCatalogue.Name = "buttonOpenTychoCatalogue";
-			this.buttonOpenTychoCatalogue.Size = new System.Drawing.Size(160, 23);
-			this.buttonOpenTychoCatalogue.TabIndex = 1;
-			this.buttonOpenTychoCatalogue.Text = "&Tycho Catalogue";
-			this.toolTip.SetToolTip(this.buttonOpenTychoCatalogue, "Open the Tycho Catalogue");
+			this.toolTip.SetToolTip(this.buttonOpenTychoCatalogue, resources.GetString("buttonOpenTychoCatalogue.ToolTip"));
 			this.buttonOpenTychoCatalogue.UseVisualStyleBackColor = true;
 			this.buttonOpenTychoCatalogue.Click += new System.EventHandler(this.ButtonOpenTychoCatalogue_Click);
 			this.buttonOpenTychoCatalogue.Enter += new System.EventHandler(this.ButtonOpenTychoCatalogue_Enter);
@@ -79,17 +67,11 @@
 			// 
 			// buttonExit
 			// 
-			this.buttonExit.AccessibleDescription = "Exit the application";
-			this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			resources.ApplyResources(this.buttonExit, "buttonExit");
 			this.buttonExit.BackColor = System.Drawing.Color.Transparent;
 			this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.buttonExit.Location = new System.Drawing.Point(12, 92);
 			this.buttonExit.Name = "buttonExit";
-			this.buttonExit.Size = new System.Drawing.Size(168, 23);
-			this.buttonExit.TabIndex = 1;
-			this.buttonExit.Text = "E&xit";
-			this.toolTip.SetToolTip(this.buttonExit, "Exit the application");
+			this.toolTip.SetToolTip(this.buttonExit, resources.GetString("buttonExit.ToolTip"));
 			this.buttonExit.UseVisualStyleBackColor = false;
 			this.buttonExit.Click += new System.EventHandler(this.ButtonExit_Click);
 			this.buttonExit.Enter += new System.EventHandler(this.ButtonExit_Enter);
@@ -99,47 +81,39 @@
 			// 
 			// panel
 			// 
-			this.panel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+			resources.ApplyResources(this.panel, "panel");
 			this.panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.panel.Controls.Add(this.buttonOpenHipparcosCatalogue);
 			this.panel.Controls.Add(this.buttonOpenTychoCatalogue);
 			this.panel.Cursor = System.Windows.Forms.Cursors.Default;
-			this.panel.Location = new System.Drawing.Point(12, 12);
 			this.panel.Name = "panel";
-			this.panel.Size = new System.Drawing.Size(168, 63);
-			this.panel.TabIndex = 0;
+			this.toolTip.SetToolTip(this.panel, resources.GetString("panel.ToolTip"));
 			// 
 			// statusStripText
 			// 
+			resources.ApplyResources(this.statusStripText, "statusStripText");
 			this.statusStripText.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-			this.statusStripText.Location = new System.Drawing.Point(0, 128);
 			this.statusStripText.Name = "statusStripText";
-			this.statusStripText.Size = new System.Drawing.Size(192, 22);
 			this.statusStripText.SizingGrip = false;
-			this.statusStripText.TabIndex = 4;
-			this.statusStripText.Text = "statusStrip";
+			this.toolTip.SetToolTip(this.statusStripText, resources.GetString("statusStripText.ToolTip"));
 			// 
 			// toolStripStatusLabel
 			// 
+			resources.ApplyResources(this.toolStripStatusLabel, "toolStripStatusLabel");
 			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-			this.toolStripStatusLabel.Size = new System.Drawing.Size(50, 17);
-			this.toolStripStatusLabel.Text = "info text";
 			// 
 			// CatalogueChooserForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(192, 150);
 			this.Controls.Add(this.statusStripText);
 			this.Controls.Add(this.panel);
 			this.Controls.Add(this.buttonExit);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.MaximizeBox = false;
 			this.Name = "CatalogueChooserForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Catalogue Chooser";
+			this.toolTip.SetToolTip(this, resources.GetString("$this.ToolTip"));
 			this.Load += new System.EventHandler(this.CatalogueChooserForm_Load);
 			this.panel.ResumeLayout(false);
 			this.statusStripText.ResumeLayout(false);

@@ -1,10 +1,15 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Hipparcos_DB
 {
 	public partial class HipparcosCatalogueViewerForm : Form
 	{
+		private uint
+			index = 0,
+			maxIndex = 0;
+
 		public HipparcosCatalogueViewerForm()
 		{
 			InitializeComponent();
@@ -20,46 +25,87 @@ namespace Hipparcos_DB
 			toolStripStatusLabel.Text = string.Empty;
 		}
 
-		private void HipparcosCatalogueViewerForm_Load(object sender, System.EventArgs e)
+		private void UpdateIndexLabel()
+		{
+			toolStripTextBoxGotoIndex.Text = index.ToString();
+		}
+
+		private void HipparcosCatalogueViewerForm_Load(object sender, EventArgs e)
 		{
 			ClearStatusbar();
+			string dataFile = @"hip_main.dat";
+			if (File.Exists(path: dataFile))
+			{
+				string[] lines = File.ReadAllLines(path: dataFile);
+				/*foreach (string line in lines)
+				{
+					Console.WriteLine(value: line);
+				}*/
+				index = 1;
+				maxIndex = Convert.ToUInt32(value: lines.Length);
+				toolStripLabelIndex.Text = "/" + maxIndex.ToString();
+				UpdateIndexLabel();
+				progressBar.Visible = false;
+			}
 		}
 
 		#region Click event handlers
 
-		private void MenuitemClose_Click(object sender, System.EventArgs e)
+		private void MenuitemClose_Click(object sender, EventArgs e)
 		{
 			Close();
 		}
 
-		private void ToolStripButtonStepToBegin_Click(object sender, System.EventArgs e)
+		private void ToolStripButtonStepToBegin_Click(object sender, EventArgs e)
 		{
-			throw new NotImplementedException();
+			index = 1;
+			UpdateIndexLabel();
 		}
 
-		private void ToolStripButtonStepFastBackward_Click(object sender, System.EventArgs e)
+		private void ToolStripButtonStepFastBackward_Click(object sender, EventArgs e)
 		{
-			throw new NotImplementedException();
+			index -= 1000;
+			if (index < 1 || index > maxIndex)
+			{
+				index = 1;
+			}
+			UpdateIndexLabel();
 		}
 
-		private void ToolStripButtonStepBackward_Click(object sender, System.EventArgs e)
+		private void ToolStripButtonStepBackward_Click(object sender, EventArgs e)
 		{
-			throw new NotImplementedException();
+			index--;
+			if (index < 1)
+			{
+				index = 1;
+			}
+			UpdateIndexLabel();
 		}
 
-		private void ToolStripButtonStepForward_Click(object sender, System.EventArgs e)
+		private void ToolStripButtonStepForward_Click(object sender, EventArgs e)
 		{
-			throw new NotImplementedException();
+			index++;
+			if (index > maxIndex)
+			{
+				index = maxIndex;
+			}
+			UpdateIndexLabel();
 		}
 
-		private void ToolStripButtonStepFastForward_Click(object sender, System.EventArgs e)
+		private void ToolStripButtonStepFastForward_Click(object sender, EventArgs e)
 		{
-			throw new NotImplementedException();
+			index += 1000;
+			if (index > maxIndex)
+			{
+				index = maxIndex;
+			}
+			UpdateIndexLabel();
 		}
 
-		private void ToolStripButtonStepToEnd_Click(object sender, System.EventArgs e)
+		private void ToolStripButtonStepToEnd_Click(object sender, EventArgs e)
 		{
-			throw new NotImplementedException();
+			index = maxIndex;
+			UpdateIndexLabel();
 		}
 
 		#endregion
@@ -840,37 +886,37 @@ namespace Hipparcos_DB
 
 		#region MouseEnter event handlers
 
-		private void MenuitemClose_MouseEnter(object sender, System.EventArgs e)
+		private void MenuitemClose_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(text: menuitemClose.AccessibleDescription);
 		}
 
-		private void ToolStripButtonStepToBegin_MouseEnter(object sender, System.EventArgs e)
+		private void ToolStripButtonStepToBegin_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(text: toolStripButtonStepToBegin.AccessibleDescription);
 		}
 
-		private void ToolStripButtonStepFastBackward_MouseEnter(object sender, System.EventArgs e)
+		private void ToolStripButtonStepFastBackward_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(text: toolStripButtonStepFastBackward.AccessibleDescription);
 		}
 
-		private void ToolStripButtonStepBackward_MouseEnter(object sender, System.EventArgs e)
+		private void ToolStripButtonStepBackward_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(text: toolStripButtonStepBackward.AccessibleDescription);
 		}
 
-		private void ToolStripButtonStepForward_MouseEnter(object sender, System.EventArgs e)
+		private void ToolStripButtonStepForward_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(text: toolStripButtonStepForward.AccessibleDescription);
 		}
 
-		private void ToolStripButtonStepFastForward_MouseEnter(object sender, System.EventArgs e)
+		private void ToolStripButtonStepFastForward_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(text: toolStripButtonStepFastForward.AccessibleDescription);
 		}
 
-		private void ToolStripButtonStepToEnd_MouseEnter(object sender, System.EventArgs e)
+		private void ToolStripButtonStepToEnd_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(text: toolStripButtonStepToEnd.AccessibleDescription);
 		}
@@ -2423,37 +2469,37 @@ namespace Hipparcos_DB
 
 		#region MouseLeave event handlers
 
-		private void MenuitemClose_MouseLeave(object sender, System.EventArgs e)
+		private void MenuitemClose_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
 
-		private void ToolStripButtonStepToBegin_MouseLeave(object sender, System.EventArgs e)
+		private void ToolStripButtonStepToBegin_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
 
-		private void ToolStripButtonStepFastBackward_MouseLeave(object sender, System.EventArgs e)
+		private void ToolStripButtonStepFastBackward_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
 
-		private void ToolStripButtonStepBackward_MouseLeave(object sender, System.EventArgs e)
+		private void ToolStripButtonStepBackward_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
 
-		private void ToolStripButtonStepForward_MouseLeave(object sender, System.EventArgs e)
+		private void ToolStripButtonStepForward_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
 
-		private void ToolStripButtonStepFastForward_MouseLeave(object sender, System.EventArgs e)
+		private void ToolStripButtonStepFastForward_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
 
-		private void ToolStripButtonStepToEnd_MouseLeave(object sender, System.EventArgs e)
+		private void ToolStripButtonStepToEnd_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
