@@ -117,203 +117,206 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="buttonOpenTychoCatalogue.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabel.Name" xml:space="preserve">
-    <value>toolStripStatusLabel</value>
-  </data>
-  <data name="&gt;&gt;buttonOpenTychoCatalogue.Name" xml:space="preserve">
-    <value>buttonOpenTychoCatalogue</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="toolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 17</value>
-  </data>
-  <data name="buttonExit.ToolTip" xml:space="preserve">
-    <value>Exit the application</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>CatalogueChooserForm</value>
-  </data>
-  <data name="&gt;&gt;buttonOpenHipparcosCatalogue.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;buttonExit.Name" xml:space="preserve">
-    <value>buttonExit</value>
-  </data>
-  <data name="&gt;&gt;buttonExit.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;toolStripStatusLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonOpenTychoCatalogue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;statusStripText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonOpenHipparcosCatalogue.Name" xml:space="preserve">
-    <value>buttonOpenHipparcosCatalogue</value>
-  </data>
-  <data name="buttonOpenTychoCatalogue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 23</value>
-  </data>
-  <data name="buttonOpenHipparcosCatalogue.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;buttonOpenTychoCatalogue.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;panel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
-    <value>toolTip</value>
-  </data>
-  <data name="&gt;&gt;panel.Name" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="buttonOpenTychoCatalogue.ToolTip" xml:space="preserve">
-    <value>Open the Tycho Catalogue</value>
-  </data>
-  <data name="panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 63</value>
-  </data>
-  <data name="buttonOpenHipparcosCatalogue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="statusStripText.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="buttonOpenHipparcosCatalogue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 23</value>
-  </data>
-  <data name="buttonExit.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="buttonExit.AccessibleDescription" xml:space="preserve">
     <value>Exit the application</value>
   </data>
-  <data name="buttonOpenHipparcosCatalogue.Text" xml:space="preserve">
-    <value>&amp;Hipparcos Catalogue</value>
+  <data name="buttonExit.AccessibleName" xml:space="preserve">
+    <value>Exit</value>
   </data>
-  <data name="toolStripStatusLabel.Text" xml:space="preserve">
-    <value>info text</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonExit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="buttonExit.Text" xml:space="preserve">
-    <value>E&amp;xit</value>
-  </data>
-  <data name="panel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="buttonOpenTychoCatalogue.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;statusStripText.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonExit.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 92</value>
-  </data>
-  <data name="panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="statusStripText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 128</value>
-  </data>
-  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="buttonOpenHipparcosCatalogue.AccessibleDescription" xml:space="preserve">
-    <value>Open the Hipparcos Catalogue</value>
-  </data>
-  <data name="buttonOpenTychoCatalogue.AccessibleDescription" xml:space="preserve">
-    <value>Open the Tycho Catalogue</value>
-  </data>
-  <data name="&gt;&gt;buttonOpenHipparcosCatalogue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="buttonExit.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 23</value>
   </data>
-  <data name="&gt;&gt;buttonOpenTychoCatalogue.Type" xml:space="preserve">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonExit.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonExit.Text" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="buttonExit.ToolTip" xml:space="preserve">
+    <value>Exit the application</value>
+  </data>
+  <data name="&gt;&gt;buttonExit.Name" xml:space="preserve">
+    <value>buttonExit</value>
+  </data>
+  <data name="&gt;&gt;buttonExit.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="buttonOpenHipparcosCatalogue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="statusStripText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 22</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Catalogue Chooser</value>
-  </data>
-  <data name="panel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;buttonOpenHipparcosCatalogue.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;buttonExit.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonExit.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="buttonExit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <metadata name="statusStripText.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 17</value>
+  </metadata>
+  <data name="statusStripText.AccessibleDescription" xml:space="preserve">
+    <value>status bar with some information</value>
   </data>
-  <data name="&gt;&gt;panel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="statusStripText.AccessibleName" xml:space="preserve">
+    <value>information status bar</value>
+  </data>
+  <data name="toolStripStatusLabel.AccessibleDescription" xml:space="preserve">
+    <value>text with some information</value>
+  </data>
+  <data name="toolStripStatusLabel.AccessibleName" xml:space="preserve">
+    <value>information text</value>
+  </data>
+  <data name="toolStripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 17</value>
+  </data>
+  <data name="toolStripStatusLabel.Text" xml:space="preserve">
+    <value>info text</value>
+  </data>
+  <data name="statusStripText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 124</value>
+  </data>
+  <data name="statusStripText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
+  </data>
+  <data name="statusStripText.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="statusStripText.Text" xml:space="preserve">
+    <value>statusStrip</value>
   </data>
   <data name="&gt;&gt;statusStripText.Name" xml:space="preserve">
     <value>statusStripText</value>
   </data>
-  <data name="buttonOpenHipparcosCatalogue.ToolTip" xml:space="preserve">
-    <value>Open the Hipparcos Catalogue</value>
+  <data name="&gt;&gt;statusStripText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStripText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStripText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonOpenTychoCatalogue.AccessibleDescription" xml:space="preserve">
+    <value>Open the Tycho Catalogue</value>
+  </data>
+  <data name="buttonOpenTychoCatalogue.AccessibleName" xml:space="preserve">
+    <value>Tyxho Catalogue</value>
+  </data>
+  <data name="buttonOpenTychoCatalogue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="buttonOpenTychoCatalogue.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="buttonOpenTychoCatalogue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonOpenTychoCatalogue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 46</value>
+  </data>
+  <data name="buttonOpenTychoCatalogue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 23</value>
+  </data>
+  <data name="buttonOpenTychoCatalogue.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="buttonOpenTychoCatalogue.Text" xml:space="preserve">
     <value>&amp;Tycho Catalogue</value>
   </data>
-  <data name="&gt;&gt;statusStripText.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="buttonOpenTychoCatalogue.ToolTip" xml:space="preserve">
+    <value>Open the Tycho Catalogue</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>192, 150</value>
+  <data name="&gt;&gt;buttonOpenTychoCatalogue.Name" xml:space="preserve">
+    <value>buttonOpenTychoCatalogue</value>
+  </data>
+  <data name="&gt;&gt;buttonOpenTychoCatalogue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonOpenTychoCatalogue.Parent" xml:space="preserve">
+    <value>groupBoxChooseCatalogue</value>
   </data>
   <data name="&gt;&gt;buttonOpenTychoCatalogue.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="buttonOpenHipparcosCatalogue.AccessibleDescription" xml:space="preserve">
+    <value>Open the Hipparcos Catalogue</value>
   </data>
-  <data name="statusStripText.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="buttonOpenHipparcosCatalogue.AccessibleName" xml:space="preserve">
+    <value>Hipparcos Catalogue</value>
   </data>
-  <data name="buttonOpenTychoCatalogue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 32</value>
+  <data name="buttonOpenHipparcosCatalogue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="statusStripText.Text" xml:space="preserve">
-    <value>statusStrip</value>
+  <data name="buttonOpenHipparcosCatalogue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonOpenHipparcosCatalogue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="buttonOpenHipparcosCatalogue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 23</value>
+  </data>
+  <data name="buttonOpenHipparcosCatalogue.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonOpenHipparcosCatalogue.Text" xml:space="preserve">
+    <value>&amp;Hipparcos Catalogue</value>
+  </data>
+  <data name="buttonOpenHipparcosCatalogue.ToolTip" xml:space="preserve">
+    <value>Open the Hipparcos Catalogue</value>
+  </data>
+  <data name="&gt;&gt;buttonOpenHipparcosCatalogue.Name" xml:space="preserve">
+    <value>buttonOpenHipparcosCatalogue</value>
+  </data>
+  <data name="&gt;&gt;buttonOpenHipparcosCatalogue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonOpenHipparcosCatalogue.Parent" xml:space="preserve">
+    <value>groupBoxChooseCatalogue</value>
+  </data>
+  <data name="&gt;&gt;buttonOpenHipparcosCatalogue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxChooseCatalogue.AccessibleDescription" xml:space="preserve">
+    <value>group the catalogues</value>
+  </data>
+  <data name="groupBoxChooseCatalogue.AccessibleName" xml:space="preserve">
+    <value>catalogue chooser grouping</value>
+  </data>
+  <data name="groupBoxChooseCatalogue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="groupBoxChooseCatalogue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 10</value>
+  </data>
+  <data name="groupBoxChooseCatalogue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 76</value>
+  </data>
+  <data name="groupBoxChooseCatalogue.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxChooseCatalogue.Text" xml:space="preserve">
+    <value>Catalogues</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalogue.Name" xml:space="preserve">
+    <value>groupBoxChooseCatalogue</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalogue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalogue.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalogue.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -321,10 +324,40 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>73</value>
   </metadata>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="statusStripText.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>107, 17</value>
-  </metadata>
+  <data name="$this.AccessibleDescription" xml:space="preserve">
+    <value>Window of the catalogue chooser</value>
+  </data>
+  <data name="$this.AccessibleName" xml:space="preserve">
+    <value>Catalogue chooser</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>192, 146</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Catalogue Chooser</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel.Name" xml:space="preserve">
+    <value>toolStripStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;toolStripStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CatalogueChooserForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

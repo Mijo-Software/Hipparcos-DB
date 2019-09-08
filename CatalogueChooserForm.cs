@@ -36,8 +36,8 @@ namespace Hipparcos_DB
 			else
 			{
 				MessageBox.Show(
-					text: "Die Datei HIP_MAIN.DAT fehlt. Stellen Sie sicher, dass die Datei im Ordner der Anwendung vorhanden ist. Sie können die Datei unter der URL http://cdsarc.u-strasbg.fr/viz-bin/nph-Cat/txt.gz?I/239/hip_main.dat.gz downloaden.",
-					caption: "Datei fehlt",
+					text: "The file HIP_MAIN.DAT is missing. Make sure that the file exists in the folder of the application. You can download the file from the URL http://cdsarc.u-strasbg.fr/viz-bin/nph-Cat/txt.gz?I/239/hip_main.dat.gz.",
+					caption: "Missing file",
 					buttons: MessageBoxButtons.OK,
 					icon: MessageBoxIcon.Error);
 			}
