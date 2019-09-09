@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
 [assembly: AssemblyTitle("Hipparcos-DB")]
-[assembly: AssemblyDescription("Viewer for the Hipparcos Catalogue and the Tycho Catalogue")]
+[assembly: AssemblyDescription("Viewer for the Hipparcos Catalog and the Tycho Catalog")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Mijo Software")]
 [assembly: AssemblyProduct("Hipparcos-DB")]
@@ -33,7 +33,7 @@ using System.Runtime.InteropServices;
 // Sie können alle Werte angeben oder Standardwerte für die Build- und Revisionsnummern verwenden,
 // indem Sie "*" wie unten gezeigt eingeben:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.1.1.6")]
-[assembly: AssemblyFileVersion("0.1.1.6")]
-[assembly: NeutralResourcesLanguage("en-GB")]
+[assembly: AssemblyVersion("0.1.2.7")]
+[assembly: AssemblyFileVersion("0.1.2.7")]
+[assembly: NeutralResourcesLanguage("en")]
 

@@ -89,25 +89,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CatalogueChooserForm.cs">
+    <Compile Include="CatalogChooserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CatalogueChooserForm.Designer.cs">
-      <DependentUpon>CatalogueChooserForm.cs</DependentUpon>
+    <Compile Include="CatalogChooserForm.Designer.cs">
+      <DependentUpon>CatalogChooserForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="HipparcosCatalogueViewerForm.cs">
+    <Compile Include="HipparcosCatalogViewerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HipparcosCatalogueViewerForm.Designer.cs">
-      <DependentUpon>HipparcosCatalogueViewerForm.cs</DependentUpon>
+    <Compile Include="HipparcosCatalogViewerForm.Designer.cs">
+      <DependentUpon>HipparcosCatalogViewerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CatalogueChooserForm.resx">
-      <DependentUpon>CatalogueChooserForm.cs</DependentUpon>
+    <EmbeddedResource Include="CatalogChooserForm.resx">
+      <DependentUpon>CatalogChooserForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HipparcosCatalogueViewerForm.resx">
-      <DependentUpon>HipparcosCatalogueViewerForm.cs</DependentUpon>
+    <EmbeddedResource Include="HipparcosCatalogViewerForm.resx">
+      <DependentUpon>HipparcosCatalogViewerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -13,7 +13,7 @@ namespace Hipparcos_DB
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(defaultValue: false);
-			Application.Run(mainForm: new CatalogueChooserForm());
+			Application.Run(mainForm: new CatalogChooserForm());
 		}
 	}
 }
