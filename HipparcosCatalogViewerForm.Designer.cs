@@ -3652,10 +3652,10 @@
 			this.labelProximityFlagData.TabIndex = 5;
 			this.labelProximityFlagData.Text = "---";
 			this.labelProximityFlagData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelProximityFlagData.Enter += new System.EventHandler(this.LabelProximityData_Enter);
-			this.labelProximityFlagData.Leave += new System.EventHandler(this.LabelProximityData_Leave);
-			this.labelProximityFlagData.MouseEnter += new System.EventHandler(this.LabelProximityData_MouseEnter);
-			this.labelProximityFlagData.MouseLeave += new System.EventHandler(this.LabelProximityData_MouseLeave);
+			this.labelProximityFlagData.Enter += new System.EventHandler(this.LabelProximityFlagData_Enter);
+			this.labelProximityFlagData.Leave += new System.EventHandler(this.LabelProximityFlagData_Leave);
+			this.labelProximityFlagData.MouseEnter += new System.EventHandler(this.LabelProximityFlagData_MouseEnter);
+			this.labelProximityFlagData.MouseLeave += new System.EventHandler(this.LabelProximityFlagData_MouseLeave);
 			// 
 			// labelStandardErrorViData
 			// 
