@@ -203,6 +203,7 @@
 			this.labelIdentifierData = new System.Windows.Forms.Label();
 			this.labelColorIndexInCousinsSystemData = new System.Windows.Forms.Label();
 			this.labelCatalogData = new System.Windows.Forms.Label();
+			this.toolStripMenuItemInfo = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStrip.SuspendLayout();
 			this.statusStrip.SuspendLayout();
 			this.menuStrip.SuspendLayout();
@@ -1777,13 +1778,14 @@
 			this.toolStripButtonStepToBegin.AccessibleDescription = "Step the index to begin";
 			this.toolStripButtonStepToBegin.AccessibleName = "Step to begin";
 			this.toolStripButtonStepToBegin.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.toolStripButtonStepToBegin.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+			this.toolStripButtonStepToBegin.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.toolStripButtonStepToBegin.Font = new System.Drawing.Font("Consolas", 9F);
 			this.toolStripButtonStepToBegin.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonStepToBegin.Image")));
 			this.toolStripButtonStepToBegin.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonStepToBegin.Name = "toolStripButtonStepToBegin";
-			this.toolStripButtonStepToBegin.Size = new System.Drawing.Size(25, 22);
+			this.toolStripButtonStepToBegin.Size = new System.Drawing.Size(23, 22);
 			this.toolStripButtonStepToBegin.Text = "|<";
+			this.toolStripButtonStepToBegin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.toolStripButtonStepToBegin.Click += new System.EventHandler(this.ToolStripButtonStepToBegin_Click);
 			this.toolStripButtonStepToBegin.MouseEnter += new System.EventHandler(this.ToolStripButtonStepToBegin_MouseEnter);
 			this.toolStripButtonStepToBegin.MouseLeave += new System.EventHandler(this.ToolStripButtonStepToBegin_MouseLeave);
@@ -1793,13 +1795,14 @@
 			this.toolStripButtonStepFastBackward.AccessibleDescription = "Step the index fast backward";
 			this.toolStripButtonStepFastBackward.AccessibleName = "Step fast backward";
 			this.toolStripButtonStepFastBackward.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.toolStripButtonStepFastBackward.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+			this.toolStripButtonStepFastBackward.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.toolStripButtonStepFastBackward.Font = new System.Drawing.Font("Consolas", 9F);
 			this.toolStripButtonStepFastBackward.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonStepFastBackward.Image")));
 			this.toolStripButtonStepFastBackward.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonStepFastBackward.Name = "toolStripButtonStepFastBackward";
-			this.toolStripButtonStepFastBackward.Size = new System.Drawing.Size(25, 22);
+			this.toolStripButtonStepFastBackward.Size = new System.Drawing.Size(23, 22);
 			this.toolStripButtonStepFastBackward.Text = "<<";
+			this.toolStripButtonStepFastBackward.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.toolStripButtonStepFastBackward.Click += new System.EventHandler(this.ToolStripButtonStepFastBackward_Click);
 			this.toolStripButtonStepFastBackward.MouseEnter += new System.EventHandler(this.ToolStripButtonStepFastBackward_MouseEnter);
 			this.toolStripButtonStepFastBackward.MouseLeave += new System.EventHandler(this.ToolStripButtonStepFastBackward_MouseLeave);
@@ -1809,13 +1812,14 @@
 			this.toolStripButtonStepBackward.AccessibleDescription = "Step the index backward";
 			this.toolStripButtonStepBackward.AccessibleName = "Step backward";
 			this.toolStripButtonStepBackward.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.toolStripButtonStepBackward.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+			this.toolStripButtonStepBackward.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.toolStripButtonStepBackward.Font = new System.Drawing.Font("Consolas", 9F);
 			this.toolStripButtonStepBackward.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonStepBackward.Image")));
 			this.toolStripButtonStepBackward.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonStepBackward.Name = "toolStripButtonStepBackward";
 			this.toolStripButtonStepBackward.Size = new System.Drawing.Size(23, 22);
 			this.toolStripButtonStepBackward.Text = "<";
+			this.toolStripButtonStepBackward.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.toolStripButtonStepBackward.Click += new System.EventHandler(this.ToolStripButtonStepBackward_Click);
 			this.toolStripButtonStepBackward.MouseEnter += new System.EventHandler(this.ToolStripButtonStepBackward_MouseEnter);
 			this.toolStripButtonStepBackward.MouseLeave += new System.EventHandler(this.ToolStripButtonStepBackward_MouseLeave);
@@ -1825,13 +1829,14 @@
 			this.toolStripButtonStepForward.AccessibleDescription = "Step the index forward";
 			this.toolStripButtonStepForward.AccessibleName = "Step forward";
 			this.toolStripButtonStepForward.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.toolStripButtonStepForward.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+			this.toolStripButtonStepForward.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.toolStripButtonStepForward.Font = new System.Drawing.Font("Consolas", 9F);
 			this.toolStripButtonStepForward.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonStepForward.Image")));
 			this.toolStripButtonStepForward.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonStepForward.Name = "toolStripButtonStepForward";
 			this.toolStripButtonStepForward.Size = new System.Drawing.Size(23, 22);
 			this.toolStripButtonStepForward.Text = ">";
+			this.toolStripButtonStepForward.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.toolStripButtonStepForward.Click += new System.EventHandler(this.ToolStripButtonStepForward_Click);
 			this.toolStripButtonStepForward.MouseEnter += new System.EventHandler(this.ToolStripButtonStepForward_MouseEnter);
 			this.toolStripButtonStepForward.MouseLeave += new System.EventHandler(this.ToolStripButtonStepForward_MouseLeave);
@@ -1841,13 +1846,14 @@
 			this.toolStripButtonStepFastForward.AccessibleDescription = "Step the index fast forward";
 			this.toolStripButtonStepFastForward.AccessibleName = "Step fast forward";
 			this.toolStripButtonStepFastForward.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.toolStripButtonStepFastForward.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+			this.toolStripButtonStepFastForward.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.toolStripButtonStepFastForward.Font = new System.Drawing.Font("Consolas", 9F);
 			this.toolStripButtonStepFastForward.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonStepFastForward.Image")));
 			this.toolStripButtonStepFastForward.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonStepFastForward.Name = "toolStripButtonStepFastForward";
-			this.toolStripButtonStepFastForward.Size = new System.Drawing.Size(25, 22);
+			this.toolStripButtonStepFastForward.Size = new System.Drawing.Size(23, 22);
 			this.toolStripButtonStepFastForward.Text = ">>";
+			this.toolStripButtonStepFastForward.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.toolStripButtonStepFastForward.Click += new System.EventHandler(this.ToolStripButtonStepFastForward_Click);
 			this.toolStripButtonStepFastForward.MouseEnter += new System.EventHandler(this.ToolStripButtonStepFastForward_MouseEnter);
 			this.toolStripButtonStepFastForward.MouseLeave += new System.EventHandler(this.ToolStripButtonStepFastForward_MouseLeave);
@@ -1857,13 +1863,14 @@
 			this.toolStripButtonStepToEnd.AccessibleDescription = "Step the index to end";
 			this.toolStripButtonStepToEnd.AccessibleName = "Step to end";
 			this.toolStripButtonStepToEnd.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.toolStripButtonStepToEnd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+			this.toolStripButtonStepToEnd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.toolStripButtonStepToEnd.Font = new System.Drawing.Font("Consolas", 9F);
 			this.toolStripButtonStepToEnd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonStepToEnd.Image")));
 			this.toolStripButtonStepToEnd.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonStepToEnd.Name = "toolStripButtonStepToEnd";
-			this.toolStripButtonStepToEnd.Size = new System.Drawing.Size(25, 22);
+			this.toolStripButtonStepToEnd.Size = new System.Drawing.Size(23, 22);
 			this.toolStripButtonStepToEnd.Text = ">|";
+			this.toolStripButtonStepToEnd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.toolStripButtonStepToEnd.Click += new System.EventHandler(this.ToolStripButtonStepToEnd_Click);
 			this.toolStripButtonStepToEnd.MouseEnter += new System.EventHandler(this.ToolStripButtonStepToEnd_MouseEnter);
 			this.toolStripButtonStepToEnd.MouseLeave += new System.EventHandler(this.ToolStripButtonStepToEnd_MouseLeave);
@@ -1913,11 +1920,10 @@
 			this.toolStripButtonGoToIndex.AccessibleDescription = "Go to the index of the entered number";
 			this.toolStripButtonGoToIndex.AccessibleName = "Go to index";
 			this.toolStripButtonGoToIndex.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.toolStripButtonGoToIndex.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
 			this.toolStripButtonGoToIndex.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonGoToIndex.Image")));
 			this.toolStripButtonGoToIndex.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonGoToIndex.Name = "toolStripButtonGoToIndex";
-			this.toolStripButtonGoToIndex.Size = new System.Drawing.Size(26, 22);
+			this.toolStripButtonGoToIndex.Size = new System.Drawing.Size(42, 22);
 			this.toolStripButtonGoToIndex.Text = "&Go";
 			this.toolStripButtonGoToIndex.ToolTipText = "Go to index";
 			this.toolStripButtonGoToIndex.Click += new System.EventHandler(this.ToolStripButtonGotoIndex_Click);
@@ -1935,6 +1941,7 @@
 			this.statusStrip.Location = new System.Drawing.Point(0, 754);
 			this.statusStrip.Name = "statusStrip";
 			this.statusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
+			this.statusStrip.ShowItemToolTips = true;
 			this.statusStrip.Size = new System.Drawing.Size(844, 22);
 			this.statusStrip.SizingGrip = false;
 			this.statusStrip.TabIndex = 3;
@@ -1945,8 +1952,11 @@
 			this.toolStripStatusLabel.AccessibleDescription = "text with some information";
 			this.toolStripStatusLabel.AccessibleName = "information text";
 			this.toolStripStatusLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.toolStripStatusLabel.AutoToolTip = true;
+			this.toolStripStatusLabel.DoubleClickEnabled = true;
+			this.toolStripStatusLabel.Image = ((System.Drawing.Image)(resources.GetObject("toolStripStatusLabel.Image")));
 			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-			this.toolStripStatusLabel.Size = new System.Drawing.Size(50, 17);
+			this.toolStripStatusLabel.Size = new System.Drawing.Size(66, 17);
 			this.toolStripStatusLabel.Text = "info text";
 			// 
 			// progressBar
@@ -1966,7 +1976,8 @@
 			this.menuStrip.AccessibleName = "menu bar";
 			this.menuStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
 			this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuitemClose});
+            this.menuitemClose,
+            this.toolStripMenuItemInfo});
 			this.menuStrip.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip.Name = "menuStrip";
 			this.menuStrip.Size = new System.Drawing.Size(844, 24);
@@ -1979,8 +1990,9 @@
 			this.menuitemClose.AccessibleName = "Close";
 			this.menuitemClose.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuItem;
 			this.menuitemClose.AutoToolTip = true;
+			this.menuitemClose.Image = ((System.Drawing.Image)(resources.GetObject("menuitemClose.Image")));
 			this.menuitemClose.Name = "menuitemClose";
-			this.menuitemClose.Size = new System.Drawing.Size(48, 20);
+			this.menuitemClose.Size = new System.Drawing.Size(64, 20);
 			this.menuitemClose.Text = "&Close";
 			this.menuitemClose.Click += new System.EventHandler(this.MenuitemClose_Click);
 			this.menuitemClose.MouseEnter += new System.EventHandler(this.MenuitemClose_MouseEnter);
@@ -3737,6 +3749,14 @@
 			this.labelCatalogData.MouseEnter += new System.EventHandler(this.LabelCatalogData_MouseEnter);
 			this.labelCatalogData.MouseLeave += new System.EventHandler(this.LabelCatalogData_MouseLeave);
 			// 
+			// toolStripMenuItemInfo
+			// 
+			this.toolStripMenuItemInfo.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemInfo.Image")));
+			this.toolStripMenuItemInfo.Name = "toolStripMenuItemInfo";
+			this.toolStripMenuItemInfo.Size = new System.Drawing.Size(56, 20);
+			this.toolStripMenuItemInfo.Text = "&Info";
+			this.toolStripMenuItemInfo.Click += new System.EventHandler(this.ToolStripMenuItemInfo_Click);
+			// 
 			// HipparcosCatalogViewerForm
 			// 
 			this.AccessibleDescription = "Window of the Hipparcos Catalog Viewer";
@@ -3750,6 +3770,8 @@
 			this.Controls.Add(this.toolStrip);
 			this.Controls.Add(this.menuStrip);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.KeyPreview = true;
 			this.MainMenuStrip = this.menuStrip;
 			this.MaximizeBox = false;
 			this.Name = "HipparcosCatalogViewerForm";
@@ -3945,5 +3967,6 @@
 		private System.Windows.Forms.ToolStripLabel toolStripLabelGoToIndexDesc;
 		private System.Windows.Forms.ToolStripTextBox toolStripTextBoxGoToIndex;
 		private System.Windows.Forms.ToolStripButton toolStripButtonGoToIndex;
+		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemInfo;
 	}
 }

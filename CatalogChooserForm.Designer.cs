@@ -32,11 +32,12 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CatalogChooserForm));
 			this.buttonExit = new System.Windows.Forms.Button();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-			this.statusStripText = new System.Windows.Forms.StatusStrip();
-			this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.buttonOpenTychoCatalog = new System.Windows.Forms.Button();
 			this.buttonOpenHipparcosCatalog = new System.Windows.Forms.Button();
+			this.statusStripText = new System.Windows.Forms.StatusStrip();
+			this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.groupBoxChooseCatalog = new System.Windows.Forms.GroupBox();
+			this.buttonInfo = new System.Windows.Forms.Button();
 			this.statusStripText.SuspendLayout();
 			this.groupBoxChooseCatalog.SuspendLayout();
 			this.SuspendLayout();
@@ -55,22 +56,6 @@
 			this.buttonExit.Leave += new System.EventHandler(this.ButtonExit_Leave);
 			this.buttonExit.MouseEnter += new System.EventHandler(this.ButtonExit_MouseEnter);
 			this.buttonExit.MouseLeave += new System.EventHandler(this.ButtonExit_MouseLeave);
-			// 
-			// statusStripText
-			// 
-			resources.ApplyResources(this.statusStripText, "statusStripText");
-			this.statusStripText.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.statusStripText.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
-			this.statusStripText.Name = "statusStripText";
-			this.statusStripText.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-			this.statusStripText.SizingGrip = false;
-			// 
-			// toolStripStatusLabel
-			// 
-			resources.ApplyResources(this.toolStripStatusLabel, "toolStripStatusLabel");
-			this.toolStripStatusLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
 			// 
 			// buttonOpenTychoCatalog
 			// 
@@ -98,6 +83,25 @@
 			this.buttonOpenHipparcosCatalog.MouseEnter += new System.EventHandler(this.ButtonOpenHipparcosCatalog_MouseEnter);
 			this.buttonOpenHipparcosCatalog.MouseLeave += new System.EventHandler(this.ButtonOpenHipparcosCatalog_MouseLeave);
 			// 
+			// statusStripText
+			// 
+			resources.ApplyResources(this.statusStripText, "statusStripText");
+			this.statusStripText.AccessibleRole = System.Windows.Forms.AccessibleRole.StatusBar;
+			this.statusStripText.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+			this.statusStripText.Name = "statusStripText";
+			this.statusStripText.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
+			this.statusStripText.ShowItemToolTips = true;
+			this.statusStripText.SizingGrip = false;
+			// 
+			// toolStripStatusLabel
+			// 
+			resources.ApplyResources(this.toolStripStatusLabel, "toolStripStatusLabel");
+			this.toolStripStatusLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.toolStripStatusLabel.AutoToolTip = true;
+			this.toolStripStatusLabel.DoubleClickEnabled = true;
+			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+			// 
 			// groupBoxChooseCatalog
 			// 
 			resources.ApplyResources(this.groupBoxChooseCatalog, "groupBoxChooseCatalog");
@@ -107,17 +111,31 @@
 			this.groupBoxChooseCatalog.Name = "groupBoxChooseCatalog";
 			this.groupBoxChooseCatalog.TabStop = false;
 			// 
-			// CatalogueChooserForm
+			// buttonInfo
+			// 
+			resources.ApplyResources(this.buttonInfo, "buttonInfo");
+			this.buttonInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.buttonInfo.Name = "buttonInfo";
+			this.toolTip.SetToolTip(this.buttonInfo, resources.GetString("buttonInfo.ToolTip"));
+			this.buttonInfo.UseVisualStyleBackColor = true;
+			this.buttonInfo.Click += new System.EventHandler(this.ButtonInfo_Click);
+			this.buttonInfo.Enter += new System.EventHandler(this.ButtonInfo_Enter);
+			this.buttonInfo.Leave += new System.EventHandler(this.ButtonInfo_Leave);
+			this.buttonInfo.MouseEnter += new System.EventHandler(this.ButtonInfo_MouseEnter);
+			this.buttonInfo.MouseLeave += new System.EventHandler(this.ButtonInfo_MouseLeave);
+			// 
+			// CatalogChooserForm
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.buttonInfo);
 			this.Controls.Add(this.groupBoxChooseCatalog);
 			this.Controls.Add(this.statusStripText);
 			this.Controls.Add(this.buttonExit);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.MaximizeBox = false;
-			this.Name = "CatalogueChooserForm";
+			this.Name = "CatalogChooserForm";
 			this.Load += new System.EventHandler(this.CatalogChooserForm_Load);
 			this.statusStripText.ResumeLayout(false);
 			this.statusStripText.PerformLayout();
@@ -135,6 +153,7 @@
 		private System.Windows.Forms.Button buttonOpenTychoCatalog;
 		private System.Windows.Forms.Button buttonOpenHipparcosCatalog;
 		private System.Windows.Forms.GroupBox groupBoxChooseCatalog;
+		private System.Windows.Forms.Button buttonInfo;
 	}
 }
 

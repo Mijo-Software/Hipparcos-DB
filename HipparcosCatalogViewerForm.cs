@@ -17,12 +17,95 @@ namespace Hipparcos_DB
 
 		private void SetStatusbar(string text)
 		{
+			toolStripStatusLabel.Visible = true;
 			toolStripStatusLabel.Text = text;
 		}
+
+		private void SetStatusbar(object sender, EventArgs e)
+		{
+			if (sender is TextBox)
+			{
+				SetStatusbar(text: ((TextBox)sender).AccessibleDescription);
+			}
+			else if (sender is Button)
+			{
+				SetStatusbar(text: ((Button)sender).AccessibleDescription);
+			}
+			else if (sender is RadioButton)
+			{
+				SetStatusbar(text: ((RadioButton)sender).AccessibleDescription);
+			}
+			else if (sender is DateTimePicker)
+			{
+				SetStatusbar(text: ((DateTimePicker)sender).AccessibleDescription);
+			}
+			else if (sender is Label)
+			{
+				SetStatusbar(text: ((Label)sender).AccessibleDescription);
+			}
+			else if (sender is PictureBox)
+			{
+				SetStatusbar(text: ((PictureBox)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripButton)
+			{
+				SetStatusbar(text: ((ToolStripButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripMenuItem)
+			{
+				SetStatusbar(text: ((ToolStripMenuItem)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripLabel)
+			{
+				SetStatusbar(text: ((ToolStripLabel)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripComboBox)
+			{
+				SetStatusbar(text: ((ToolStripComboBox)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDown)
+			{
+				SetStatusbar(text: ((ToolStripDropDown)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownButton)
+			{
+				SetStatusbar(text: ((ToolStripDropDownButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownItem)
+			{
+				SetStatusbar(text: ((ToolStripDropDownItem)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownMenu)
+			{
+				SetStatusbar(text: ((ToolStripDropDownMenu)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripProgressBar)
+			{
+				SetStatusbar(text: ((ToolStripProgressBar)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripSplitButton)
+			{
+				SetStatusbar(text: ((ToolStripSplitButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripSeparator)
+			{
+				SetStatusbar(text: ((ToolStripSeparator)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripStatusLabel)
+			{
+				SetStatusbar(text: ((ToolStripStatusLabel)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripTextBox)
+			{
+				SetStatusbar(text: ((ToolStripTextBox)sender).AccessibleDescription);
+			}
+		}
+
 
 		private void ClearStatusbar()
 		{
 			toolStripStatusLabel.Text = string.Empty;
+			toolStripStatusLabel.Visible = false;
 		}
 
 		private void UpdateIndexLabel()
@@ -247,937 +330,943 @@ namespace Hipparcos_DB
 			GoToIndex();
 		}
 
+		private void ToolStripMenuItemInfo_Click(object sender, EventArgs e)
+		{
+			new AboutBoxForm().ShowDialog();
+		}
+
+
 		#endregion
 
 		#region Enter event handlers
 
 		private void LabelCatalogDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCatalogDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCatalogDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCatalogData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCatalogData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCatalogData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelIdentifierDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelIdentifierDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelIdentifierDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelIdentifierData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelIdentifierData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelIdentifierData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelProximityFlagDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProximityFlagDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProximityFlagDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelProximityFlagData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProximityFlagData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProximityFlagData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelRightAscensionData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelDeclinationDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelDeclinationData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelDeclinationData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMagnitudeJohnsonDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMagnitudeJohnsonDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMagnitudeJohnsonDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMagnitudeJohnsonData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMagnitudeJohnsonData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMagnitudeJohnsonData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCoarseVariabilityFlagDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCoarseVariabilityFlagDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCoarseVariabilityFlagDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCoarseVariabilityFlagData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCoarseVariabilityFlagData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCoarseVariabilityFlagData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSourceOfMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSourceOfMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfMagnitudeData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelAlphaDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAlphaDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAlphaDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelAlphaData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAlphaData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAlphaData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelDeltaDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelDeltaDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCatalogDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelDeltaData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelDeltaData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelDeltaData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelReferenceFlagForAstrometryDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForAstrometryDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForAstrometryDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelReferenceFlagForAstrometryData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForAstrometryData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForAstrometryData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelTrigonomicParallaxDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelTrigonomicParallaxDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelTrigonomicParallaxData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelTrigonomicParallaxData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelTrigonomicParallaxData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelProperMotionAlphaDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProperMotionAlphaDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProperMotionAlphaDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelProperMotionAlphaData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProperMotionAlphaData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProperMotionAlphaData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelProperMotionDeltaDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProperMotionDeltaDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProperMotionDeltaDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelProperMotionDeltaData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProperMotionDeltaData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProperMotionDeltaData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorRightAscensionData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorDeclinationDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorDeclinationData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorDeclinationData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorTrigonomicParallaxDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorTrigonomicParallaxDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorTrigonomicParallaxData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorTrigonomicParallaxData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorTrigonomicParallaxData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorProperMotionRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorProperMotionRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorProperMotionRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorProperMotionRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorProperMotionRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorProperMotionRightAscensionData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorProperMotionDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorProperMotionDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorProperMotionDeclinationDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorProperMotionDeclinationData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorProperMotionDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorProperMotionDeclinationData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationDeclinationByRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationDeclinationByRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationDeclinationByRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationDeclinationByRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationDeclinationByRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationDeclinationByRightAscensionData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationTrigonomicParallaxByRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationTrigonomicParallaxByRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationTrigonomicParallaxByRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationTrigonomicParallaxByRightAscensionData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationTrigonomicParallaxByDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationTrigonomicParallaxByDeclinationDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByDeclinationData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationTrigonomicParallaxByDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationTrigonomicParallaxByDeclinationData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByRightAscensionData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByDeclinationDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByDeclinationData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByRightAscensionData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByDeclinationDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByDeclinationData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByDeclinationData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelPercentageOfRejectedDataDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelPercentageOfRejectedDataDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelPercentageOfRejectedDataDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelPercentageOfRejectedDataData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelPercentageOfRejectedDataData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelPercentageOfRejectedDataData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelGoodnessOfFitParameterDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelGoodnessOfFitParameterDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelGoodnessOfFitParameterDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelGoodnessOfFitParameterData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelGoodnessOfFitParameterData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelGoodnessOfFitParameterData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMeanBtMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMeanBtMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMeanBtMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMeanBtMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMeanBtMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMeanBtMagnitudeData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorMeanBtMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMeanBtMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMeanBtMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorMeanBtMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMeanBtMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMeanBtMagnitudeData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMeanVtMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMeanVtMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMeanVtMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMeanVtMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMeanVtMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMeanVtMagnitudeData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorMeanVtMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMeanVtMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMeanVtMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorMeanVtMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMeanVtMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMeanVtMagnitudeData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelJohnsonBvColorDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelJohnsonBvColorDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelJohnsonBvColorDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelJohnsonBvColorData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelJohnsonBvColorData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelJohnsonBvColorData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorJohnsonBvColorDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorJohnsonBvColorDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorJohnsonBvColorDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorJohnsonBvColorData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorJohnsonBvColorData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorJohnsonBvColorData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForBtAndVtMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForBtAndVtMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelReferenceFlagForBtAndVtMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForBtAndVtMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForBtAndVtMagnitudeData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSourceOfBvColorDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfBvColorDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfBvColorDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSourceOfBvColorData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfBvColorData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfBvColorData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelColorIndexInCousinsSystemDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelColorIndexInCousinsSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelColorIndexInCousinsSystemDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelColorIndexInCousinsSystemData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelColorIndexInCousinsSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelColorIndexInCousinsSystemData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorViDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorViDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorViDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorViData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorViData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorViData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSourceOfViDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfViDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfViDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSourceOfViData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfViData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfViData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelFlagForCombinedMagnitudesDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelFlagForCombinedMagnitudesDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelFlagForCombinedMagnitudesDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelFlagForCombinedMagnitudesData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelFlagForCombinedMagnitudesData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelFlagForCombinedMagnitudesData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMedianMagnitudeInHipparcosSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelScatterMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelScatterMedianMagnitudeInHipparcosSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelScatterMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelScatterMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelScatterMedianMagnitudeInHipparcosSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelScatterMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemAtMaximumData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemAtMaximumData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemAtMinimumData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemAtMinimumData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelVariabilityPeriodDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelVariabilityPeriodDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelVariabilityPeriodDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelVariabilityPeriodData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelVariabilityPeriodData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelVariabilityPeriodData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelVariabilityTypeDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelVariabilityTypeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelVariabilityTypeDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelVariabilityTypeData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelVariabilityTypeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelVariabilityTypeData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelAdditionalDataAboutVariabilityDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAdditionalDataAboutVariabilityDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAdditionalDataAboutVariabilityDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelAdditionalDataAboutVariabilityData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAdditionalDataAboutVariabilityData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAdditionalDataAboutVariabilityData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelLightCurveAnnexDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelLightCurveAnnexDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelLightCurveAnnexDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelLightCurveAnnexData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelLightCurveAnnexData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelLightCurveAnnexData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCcdmIdentifierDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCcdmIdentifierDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCcdmIdentifierDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCcdmIdentifierData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCcdmIdentifierData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCcdmIdentifierData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelHistoricalStatusFlagDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelHistoricalStatusFlagDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelHistoricalStatusFlagDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelHistoricalStatusFlagData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelHistoricalStatusFlagData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelHistoricalStatusFlagData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelNumberEntriesWithSameCcdmDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberEntriesWithSameCcdmDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberEntriesWithSameCcdmDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelNumberEntriesWithSameCcdmData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberEntriesWithSameCcdmData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberEntriesWithSameCcdmData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelNumberComponentsInThisEntryDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberComponentsInThisEntryDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberComponentsInThisEntryDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelNumberComponentsInThisEntryData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberComponentsInThisEntryData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberComponentsInThisEntryData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMultipleSystemsFlagDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMultipleSystemsFlagDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMultipleSystemsFlagDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMultipleSystemsFlagData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMultipleSystemsFlagData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMultipleSystemsFlagData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelAstrometricSourceFlagDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAstrometricSourceFlagDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAstrometricSourceFlagDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelAstrometricSourceFlagData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAstrometricSourceFlagData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAstrometricSourceFlagData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSolutionQualityDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSolutionQualityDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSolutionQualityDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSolutionQualityData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSolutionQualityData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSolutionQualityData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelComponentIdentifiersDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelComponentIdentifiersDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelComponentIdentifiersDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelComponentIdentifiersData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelComponentIdentifiersData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelComponentIdentifiersData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelPositionAngleBetweenComponentsDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelPositionAngleBetweenComponentsDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelPositionAngleBetweenComponentsDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelPositionAngleBetweenComponentsData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelPositionAngleBetweenComponentsData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelPositionAngleBetweenComponentsData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelAngularSeparationBetweenComponentsDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAngularSeparationBetweenComponentsDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAngularSeparationBetweenComponentsDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelAngularSeparationBetweenComponentsData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAngularSeparationBetweenComponentsData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAngularSeparationBetweenComponentsData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorRhoDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorRhoDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorRhoDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorRhoData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorRhoData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorRhoData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMagnitudeDifferenceBetweenComponentsDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMagnitudeDifferenceBetweenComponentsDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMagnitudeDifferenceBetweenComponentsDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelMagnitudeDifferenceBetweenComponentsData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMagnitudeDifferenceBetweenComponentsData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMagnitudeDifferenceBetweenComponentsData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelFlagIndicatingSurveyStarDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelFlagIndicatingSurveyStarDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelFlagIndicatingSurveyStarDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelFlagIndicatingSurveyStarData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelFlagIndicatingSurveyStarData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelFlagIndicatingSurveyStarData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelIdentificationChartDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelIdentificationChartDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelIdentificationChartDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelIdentificationChartData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelIdentificationChartData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelIdentificationChartData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelExistenceOfNotesDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelExistenceOfNotesDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelExistenceOfNotesDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelExistenceOfNotesData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelExistenceOfNotesData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelExistenceOfNotesData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelHdNumberDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelHdNumberDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelHdNumberDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelHdNumberData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelHdNumberData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelHdNumberData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelBonnerDmDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelBonnerDmDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelBonnerDmDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelBonnerDmData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelBonnerDmData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelBonnerDmData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCordobaDmDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCordobaDmDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCordobaDmDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCordobaDmData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCordobaDmData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCordobaDmData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCapePhotographicDmDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCapePhotographicDmDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCapePhotographicDmDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelCapePhotographicDmData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCapePhotographicDmData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCapePhotographicDmData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelViUsedForReductionsDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelViUsedForReductionsDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelViUsedForReductionsDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelViUsedForReductionsData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelViUsedForReductionsData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelViUsedForReductionsData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSpectralTypeDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSpectralTypeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSpectralTypeDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSpectralTypeData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSpectralTypeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSpectralTypeData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSourceOfSpectralTypeDesc_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfSpectralTypeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e); SetStatusbar(sender: sender, e: e);
 			labelSourceOfSpectralTypeDesc.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void LabelSourceOfSpectralTypeData_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfSpectralTypeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfSpectralTypeData.BackColor = SystemColors.ControlLightLight;
 		}
 
 		private void ToolStripTextBoxGoToIndex_Enter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: toolStripTextBoxGoToIndex.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 		}
 
 		#endregion
@@ -1186,966 +1275,966 @@ namespace Hipparcos_DB
 
 		private void MenuitemClose_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: menuitemClose.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 		}
 
 		private void ToolStripButtonStepToBegin_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: toolStripButtonStepToBegin.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 		}
 
 		private void ToolStripButtonStepFastBackward_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: toolStripButtonStepFastBackward.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 		}
 
 		private void ToolStripButtonStepBackward_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: toolStripButtonStepBackward.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 		}
 
 		private void ToolStripButtonStepForward_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: toolStripButtonStepForward.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 		}
 
 		private void ToolStripButtonStepFastForward_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: toolStripButtonStepFastForward.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 		}
 
 		private void ToolStripButtonStepToEnd_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: toolStripButtonStepToEnd.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 		}
 
 		private void LabelCatalogDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCatalogDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCatalogDesc.BackColor = labelCatalogData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCatalogData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCatalogData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCatalogDesc.BackColor = labelCatalogData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelIdentifierDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelIdentifierDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelIdentifierDesc.BackColor = labelIdentifierData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelIdentifierData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelIdentifierData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelIdentifierDesc.BackColor = labelIdentifierData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelProximityFlagDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProximityFlagDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProximityFlagDesc.BackColor = labelProximityFlagData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelProximityFlagData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProximityFlagData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProximityFlagDesc.BackColor = labelProximityFlagData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelRightAscensionDesc.BackColor = labelRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelRightAscensionDesc.BackColor = labelRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelDeclinationDesc.BackColor = labelDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelDeclinationDesc.BackColor = labelDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMagnitudeJohnsonDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMagnitudeJohnsonDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMagnitudeJohnsonDesc.BackColor = labelMagnitudeJohnsonData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMagnitudeJohnsonData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMagnitudeJohnsonData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMagnitudeJohnsonDesc.BackColor = labelMagnitudeJohnsonData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCoarseVariabilityFlagDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCoarseVariabilityFlagDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCoarseVariabilityFlagDesc.BackColor = labelCoarseVariabilityFlagData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCoarseVariabilityFlagData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCoarseVariabilityFlagData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCoarseVariabilityFlagDesc.BackColor = labelCoarseVariabilityFlagData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSourceOfMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfMagnitudeDesc.BackColor = labelSourceOfMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSourceOfMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfMagnitudeDesc.BackColor = labelSourceOfMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelAlphaDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAlphaDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAlphaDesc.BackColor = labelAlphaData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelAlphaData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAlphaData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAlphaDesc.BackColor = labelAlphaData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelDeltaDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelDeltaDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelDeltaDesc.BackColor = labelDeltaData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelDeltaData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelDeltaData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelDeltaDesc.BackColor = labelDeltaData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelReferenceFlagForAstrometryDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForAstrometryDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForAstrometryDesc.BackColor = labelReferenceFlagForAstrometryData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelReferenceFlagForAstrometryData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForAstrometryData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForAstrometryDesc.BackColor = labelReferenceFlagForAstrometryData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelTrigonomicParallaxDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelTrigonomicParallaxDesc.BackColor = labelTrigonomicParallaxData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelTrigonomicParallaxData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelTrigonomicParallaxData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelTrigonomicParallaxDesc.BackColor = labelTrigonomicParallaxData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelProperMotionAlphaDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProperMotionAlphaDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProperMotionAlphaDesc.BackColor = labelProperMotionAlphaData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelProperMotionAlphaData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProperMotionAlphaData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProperMotionAlphaDesc.BackColor = labelProperMotionAlphaData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelProperMotionDeltaDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProperMotionDeltaDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProperMotionDeltaDesc.BackColor = labelProperMotionDeltaData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelProperMotionDeltaData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelProperMotionDeltaData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelProperMotionDeltaDesc.BackColor = labelProperMotionDeltaData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorRightAscensionDesc.BackColor = labelStandardErrorRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorRightAscensionDesc.BackColor = labelStandardErrorRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorDeclinationDesc.BackColor = labelStandardErrorDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorDeclinationDesc.BackColor = labelStandardErrorDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorTrigonomicParallaxDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorTrigonomicParallaxDesc.BackColor = labelStandardErrorTrigonomicParallaxData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorTrigonomicParallaxData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorTrigonomicParallaxData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorTrigonomicParallaxDesc.BackColor = labelStandardErrorTrigonomicParallaxData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorProperMotionRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorProperMotionRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorProperMotionRightAscensionDesc.BackColor = labelStandardErrorProperMotionRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorProperMotionRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorProperMotionRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorProperMotionRightAscensionDesc.BackColor = labelStandardErrorProperMotionRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorProperMotionDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorProperMotionDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorProperMotionDeclinationDesc.BackColor = labelStandardErrorProperMotionDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorProperMotionDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorProperMotionDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorProperMotionDeclinationDesc.BackColor = labelStandardErrorProperMotionDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationDeclinationByRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationDeclinationByRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationDeclinationByRightAscensionDesc.BackColor = labelCorrelationDeclinationByRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationDeclinationByRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationDeclinationByRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationDeclinationByRightAscensionDesc.BackColor = labelCorrelationDeclinationByRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationTrigonomicParallaxByRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationTrigonomicParallaxByRightAscensionDesc.BackColor = labelCorrelationTrigonomicParallaxByRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationTrigonomicParallaxByRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationTrigonomicParallaxByRightAscensionDesc.BackColor = labelCorrelationTrigonomicParallaxByRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationTrigonomicParallaxByDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationTrigonomicParallaxByDeclinationDesc.BackColor = labelCorrelationTrigonomicParallaxByDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationTrigonomicParallaxByDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationTrigonomicParallaxByDeclinationDesc.BackColor = labelCorrelationTrigonomicParallaxByDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByRightAscensionDesc.BackColor = labelCorrelationProperMotionRightAscensionByRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByRightAscensionDesc.BackColor = labelCorrelationProperMotionRightAscensionByRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByDeclinationDesc.BackColor = labelCorrelationProperMotionRightAscensionByDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByDeclinationDesc.BackColor = labelCorrelationProperMotionRightAscensionByDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.BackColor = labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.BackColor = labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByRightAscensionDesc.BackColor = labelCorrelationProperMotionDeclinationByRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByRightAscensionDesc.BackColor = labelCorrelationProperMotionDeclinationByRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByDeclinationDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByDeclinationDesc.BackColor = labelCorrelationProperMotionDeclinationByDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByDeclinationDesc.BackColor = labelCorrelationProperMotionDeclinationByDeclinationData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.BackColor = labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.BackColor = labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.BackColor = labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.BackColor = labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelPercentageOfRejectedDataDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelPercentageOfRejectedDataDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelPercentageOfRejectedDataDesc.BackColor = labelPercentageOfRejectedDataData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelPercentageOfRejectedDataData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelPercentageOfRejectedDataData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelPercentageOfRejectedDataDesc.BackColor = labelPercentageOfRejectedDataData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelGoodnessOfFitParameterDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelGoodnessOfFitParameterDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelGoodnessOfFitParameterDesc.BackColor = labelGoodnessOfFitParameterData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelGoodnessOfFitParameterData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelGoodnessOfFitParameterData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelGoodnessOfFitParameterDesc.BackColor = labelGoodnessOfFitParameterData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMeanBtMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMeanBtMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMeanBtMagnitudeDesc.BackColor = labelMeanBtMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMeanBtMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMeanBtMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMeanBtMagnitudeDesc.BackColor = labelMeanBtMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorMeanBtMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMeanBtMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMeanBtMagnitudeDesc.BackColor = labelStandardErrorMeanBtMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorMeanBtMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMeanBtMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMeanBtMagnitudeDesc.BackColor = labelStandardErrorMeanBtMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMeanVtMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMeanVtMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMeanVtMagnitudeDesc.BackColor = labelMeanVtMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMeanVtMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMeanVtMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMeanVtMagnitudeDesc.BackColor = labelMeanVtMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorMeanVtMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMeanVtMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMeanVtMagnitudeDesc.BackColor = labelStandardErrorMeanVtMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorMeanVtMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMeanVtMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMeanVtMagnitudeDesc.BackColor = labelStandardErrorMeanVtMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelJohnsonBvColorDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelJohnsonBvColorDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelJohnsonBvColorDesc.BackColor = labelJohnsonBvColorData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelJohnsonBvColorData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelJohnsonBvColorData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelJohnsonBvColorDesc.BackColor = labelJohnsonBvColorData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorJohnsonBvColorDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorJohnsonBvColorDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorJohnsonBvColorDesc.BackColor = labelStandardErrorJohnsonBvColorData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorJohnsonBvColorData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorJohnsonBvColorData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorJohnsonBvColorDesc.BackColor = labelStandardErrorJohnsonBvColorData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForBtAndVtMagnitudeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForBtAndVtMagnitudeDesc.BackColor = labelReferenceFlagForBtAndVtMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSourceOfBvColorData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfBvColorData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfBvColorDesc.BackColor = labelSourceOfBvColorData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelColorIndexInCousinsSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelColorIndexInCousinsSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelColorIndexInCousinsSystemDesc.BackColor = labelColorIndexInCousinsSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelColorIndexInCousinsSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelColorIndexInCousinsSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelColorIndexInCousinsSystemDesc.BackColor = labelColorIndexInCousinsSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorViDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorViDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorViDesc.BackColor = labelStandardErrorViData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorViData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorViData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorViDesc.BackColor = labelStandardErrorViData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSourceOfViDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfViDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfViDesc.BackColor = labelSourceOfViData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSourceOfViData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfViData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfViDesc.BackColor = labelSourceOfViData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelFlagForCombinedMagnitudesDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelFlagForCombinedMagnitudesDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelFlagForCombinedMagnitudesDesc.BackColor = labelFlagForCombinedMagnitudesData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelFlagForCombinedMagnitudesData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelFlagForCombinedMagnitudesData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelFlagForCombinedMagnitudesDesc.BackColor = labelFlagForCombinedMagnitudesData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemDesc.BackColor = labelMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemDesc.BackColor = labelMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.BackColor = labelStandardErrorMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMedianMagnitudeInHipparcosSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.BackColor = labelStandardErrorMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelScatterMedianMagnitudeInHipparcosSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelScatterMedianMagnitudeInHipparcosSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelScatterMedianMagnitudeInHipparcosSystemDesc.BackColor = labelScatterMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelScatterMedianMagnitudeInHipparcosSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelScatterMedianMagnitudeInHipparcosSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelScatterMedianMagnitudeInHipparcosSystemDesc.BackColor = labelScatterMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.BackColor = labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.BackColor = labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.BackColor = labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.BackColor = labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelReferenceFlagForBtAndVtMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelReferenceFlagForBtAndVtMagnitudeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelReferenceFlagForBtAndVtMagnitudeDesc.BackColor = labelReferenceFlagForBtAndVtMagnitudeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSourceOfBvColorDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfBvColorDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfBvColorDesc.BackColor = labelSourceOfBvColorData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.BackColor = labelMedianMagnitudeInHipparcosSystemAtMaximumData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemAtMaximumData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.BackColor = labelMedianMagnitudeInHipparcosSystemAtMaximumData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.BackColor = labelMedianMagnitudeInHipparcosSystemAtMinimumData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMedianMagnitudeInHipparcosSystemAtMinimumData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.BackColor = labelMedianMagnitudeInHipparcosSystemAtMinimumData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelVariabilityPeriodDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelVariabilityPeriodDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelVariabilityPeriodDesc.BackColor = labelVariabilityPeriodData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelVariabilityPeriodData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelVariabilityPeriodData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelVariabilityPeriodDesc.BackColor = labelVariabilityPeriodData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelVariabilityTypeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelVariabilityTypeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelVariabilityTypeDesc.BackColor = labelVariabilityTypeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelVariabilityTypeData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelVariabilityTypeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelVariabilityTypeDesc.BackColor = labelVariabilityTypeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelAdditionalDataAboutVariabilityDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAdditionalDataAboutVariabilityDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAdditionalDataAboutVariabilityDesc.BackColor = labelAdditionalDataAboutVariabilityData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelAdditionalDataAboutVariabilityData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAdditionalDataAboutVariabilityData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAdditionalDataAboutVariabilityDesc.BackColor = labelAdditionalDataAboutVariabilityData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelLightCurveAnnexDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelLightCurveAnnexDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelLightCurveAnnexDesc.BackColor = labelLightCurveAnnexData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelLightCurveAnnexData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelLightCurveAnnexData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelLightCurveAnnexDesc.BackColor = labelLightCurveAnnexData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCcdmIdentifierDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCcdmIdentifierDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCcdmIdentifierDesc.BackColor = labelCcdmIdentifierData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCcdmIdentifierData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCcdmIdentifierData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCcdmIdentifierDesc.BackColor = labelCcdmIdentifierData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelHistoricalStatusFlagDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelHistoricalStatusFlagDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelHistoricalStatusFlagDesc.BackColor = labelHistoricalStatusFlagData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelHistoricalStatusFlagData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelHistoricalStatusFlagData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelHistoricalStatusFlagDesc.BackColor = labelHistoricalStatusFlagData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelNumberEntriesWithSameCcdmDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberEntriesWithSameCcdmDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberEntriesWithSameCcdmDesc.BackColor = labelNumberEntriesWithSameCcdmData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelNumberEntriesWithSameCcdmData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberEntriesWithSameCcdmData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberEntriesWithSameCcdmDesc.BackColor = labelNumberEntriesWithSameCcdmData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelNumberComponentsInThisEntryDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberComponentsInThisEntryDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberComponentsInThisEntryDesc.BackColor = labelNumberComponentsInThisEntryData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelNumberComponentsInThisEntryData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelNumberComponentsInThisEntryData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelNumberComponentsInThisEntryDesc.BackColor = labelNumberComponentsInThisEntryData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMultipleSystemsFlagDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMultipleSystemsFlagDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMultipleSystemsFlagDesc.BackColor = labelMultipleSystemsFlagData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMultipleSystemsFlagData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMultipleSystemsFlagData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMultipleSystemsFlagDesc.BackColor = labelMultipleSystemsFlagData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelAstrometricSourceFlagDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAstrometricSourceFlagDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAstrometricSourceFlagDesc.BackColor = labelAstrometricSourceFlagData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelAstrometricSourceFlagData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAstrometricSourceFlagData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAstrometricSourceFlagDesc.BackColor = labelAstrometricSourceFlagData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSolutionQualityDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSolutionQualityDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSolutionQualityDesc.BackColor = labelSolutionQualityData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSolutionQualityData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSolutionQualityData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSolutionQualityDesc.BackColor = labelSolutionQualityData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelComponentIdentifiersDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelComponentIdentifiersDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelComponentIdentifiersDesc.BackColor = labelComponentIdentifiersData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelComponentIdentifiersData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelComponentIdentifiersData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelComponentIdentifiersDesc.BackColor = labelComponentIdentifiersData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelPositionAngleBetweenComponentsDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelPositionAngleBetweenComponentsDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelPositionAngleBetweenComponentsDesc.BackColor = labelPositionAngleBetweenComponentsData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelPositionAngleBetweenComponentsData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelPositionAngleBetweenComponentsData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelPositionAngleBetweenComponentsDesc.BackColor = labelPositionAngleBetweenComponentsData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelAngularSeparationBetweenComponentsDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAngularSeparationBetweenComponentsDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAngularSeparationBetweenComponentsDesc.BackColor = labelAngularSeparationBetweenComponentsData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelAngularSeparationBetweenComponentsData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelAngularSeparationBetweenComponentsData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelAngularSeparationBetweenComponentsDesc.BackColor = labelAngularSeparationBetweenComponentsData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorRhoDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorRhoDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorRhoDesc.BackColor = labelStandardErrorRhoData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorRhoData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorRhoData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorRhoDesc.BackColor = labelStandardErrorRhoData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMagnitudeDifferenceBetweenComponentsDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMagnitudeDifferenceBetweenComponentsDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMagnitudeDifferenceBetweenComponentsDesc.BackColor = labelMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelMagnitudeDifferenceBetweenComponentsData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelMagnitudeDifferenceBetweenComponentsData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelMagnitudeDifferenceBetweenComponentsDesc.BackColor = labelMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.BackColor = labelStandardErrorMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelStandardErrorMagnitudeDifferenceBetweenComponentsData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.BackColor = labelStandardErrorMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelFlagIndicatingSurveyStarDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelFlagIndicatingSurveyStarDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelFlagIndicatingSurveyStarDesc.BackColor = labelFlagIndicatingSurveyStarData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelFlagIndicatingSurveyStarData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelFlagIndicatingSurveyStarData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelFlagIndicatingSurveyStarDesc.BackColor = labelFlagIndicatingSurveyStarData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelIdentificationChartDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelIdentificationChartDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelIdentificationChartDesc.BackColor = labelIdentificationChartData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelIdentificationChartData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelIdentificationChartData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelIdentificationChartDesc.BackColor = labelIdentificationChartData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelExistenceOfNotesDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelExistenceOfNotesDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelExistenceOfNotesDesc.BackColor = labelExistenceOfNotesData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelExistenceOfNotesData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelExistenceOfNotesData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelExistenceOfNotesDesc.BackColor = labelExistenceOfNotesData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelHdNumberDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelHdNumberDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelHdNumberDesc.BackColor = labelHdNumberData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelHdNumberData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelHdNumberData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelHdNumberDesc.BackColor = labelHdNumberData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelBonnerDmDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelBonnerDmDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelBonnerDmDesc.BackColor = labelBonnerDmData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelBonnerDmData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelBonnerDmData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelBonnerDmDesc.BackColor = labelBonnerDmData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCordobaDmDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCordobaDmDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCordobaDmDesc.BackColor = labelCordobaDmData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCordobaDmData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCordobaDmData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCordobaDmDesc.BackColor = labelCordobaDmData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCapePhotographicDmDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCapePhotographicDmDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCapePhotographicDmDesc.BackColor = labelCapePhotographicDmData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelCapePhotographicDmData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelCapePhotographicDmData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelCapePhotographicDmDesc.BackColor = labelCapePhotographicDmData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelViUsedForReductionsDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelViUsedForReductionsDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelViUsedForReductionsDesc.BackColor = labelViUsedForReductionsData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelViUsedForReductionsData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelViUsedForReductionsData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelViUsedForReductionsDesc.BackColor = labelViUsedForReductionsData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSpectralTypeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSpectralTypeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSpectralTypeDesc.BackColor = labelSpectralTypeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSpectralTypeData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSpectralTypeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSpectralTypeDesc.BackColor = labelSpectralTypeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSourceOfSpectralTypeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfSpectralTypeDesc.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfSpectralTypeDesc.BackColor = labelSourceOfSpectralTypeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void LabelSourceOfSpectralTypeData_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: labelSourceOfSpectralTypeData.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 			labelSourceOfSpectralTypeDesc.BackColor = labelSourceOfSpectralTypeData.BackColor = SystemColors.ControlLight;
 		}
 
 		private void ToolStripButtonGoToIndex_MouseEnter(object sender, EventArgs e)
 		{
-			SetStatusbar(text: toolStripTextBoxGoToIndex.AccessibleDescription);
+			SetStatusbar(sender: sender, e: e);
 		}
 
 		#endregion
