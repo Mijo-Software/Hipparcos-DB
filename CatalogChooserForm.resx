@@ -143,10 +143,10 @@
 </value>
   </data>
   <data name="buttonExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 92</value>
+    <value>118, 92</value>
   </data>
   <data name="buttonExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
+    <value>102, 24</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="buttonExit.TabIndex" type="System.Int32, mscorlib">
@@ -305,30 +305,6 @@
   <data name="statusStripText.AccessibleName" xml:space="preserve">
     <value>information status bar</value>
   </data>
-  <data name="statusStripText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 124</value>
-  </data>
-  <data name="statusStripText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 22</value>
-  </data>
-  <data name="statusStripText.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="statusStripText.Text" xml:space="preserve">
-    <value>statusStrip</value>
-  </data>
-  <data name="&gt;&gt;statusStripText.Name" xml:space="preserve">
-    <value>statusStripText</value>
-  </data>
-  <data name="&gt;&gt;statusStripText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStripText.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;statusStripText.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="toolStripStatusLabel.AccessibleDescription" xml:space="preserve">
     <value>Text with some information</value>
   </data>
@@ -356,6 +332,30 @@
   </data>
   <data name="toolStripStatusLabel.Text" xml:space="preserve">
     <value>info text</value>
+  </data>
+  <data name="statusStripText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 124</value>
+  </data>
+  <data name="statusStripText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
+  </data>
+  <data name="statusStripText.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="statusStripText.Text" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="&gt;&gt;statusStripText.Name" xml:space="preserve">
+    <value>statusStripText</value>
+  </data>
+  <data name="&gt;&gt;statusStripText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStripText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStripText.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="groupBoxChooseCatalog.AccessibleDescription" xml:space="preserve">
     <value>Group the catalogs</value>
@@ -415,7 +415,7 @@
     <value>12, 92</value>
   </data>
   <data name="buttonInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 24</value>
+    <value>102, 24</value>
   </data>
   <data name="buttonInfo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

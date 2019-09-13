@@ -15,6 +15,172 @@ namespace Hipparcos_DB
 			index = 0,
 			maxIndex = 0;
 
+		private void CopyToClipboard(string text)
+		{
+			Clipboard.SetText(text: text);
+			MessageBox.Show(text: "Copied to clipboard", caption: "The text was copied to the clipboard!", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
+		}
+
+		private void CopyToClipboard(object sender, EventArgs e)
+		{
+			if (sender is TextBox)
+			{
+				CopyToClipboard(text: ((TextBox)sender).AccessibleDescription);
+			}
+			else if (sender is Button)
+			{
+				CopyToClipboard(text: ((Button)sender).AccessibleDescription);
+			}
+			else if (sender is RadioButton)
+			{
+				CopyToClipboard(text: ((RadioButton)sender).AccessibleDescription);
+			}
+			else if (sender is DateTimePicker)
+			{
+				CopyToClipboard(text: ((DateTimePicker)sender).AccessibleDescription);
+			}
+			else if (sender is Label)
+			{
+				CopyToClipboard(text: ((Label)sender).AccessibleDescription);
+			}
+			else if (sender is PictureBox)
+			{
+				CopyToClipboard(text: ((PictureBox)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripButton)
+			{
+				CopyToClipboard(text: ((ToolStripButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripMenuItem)
+			{
+				CopyToClipboard(text: ((ToolStripMenuItem)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripLabel)
+			{
+				CopyToClipboard(text: ((ToolStripLabel)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripComboBox)
+			{
+				CopyToClipboard(text: ((ToolStripComboBox)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDown)
+			{
+				CopyToClipboard(text: ((ToolStripDropDown)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownButton)
+			{
+				CopyToClipboard(text: ((ToolStripDropDownButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownItem)
+			{
+				CopyToClipboard(text: ((ToolStripDropDownItem)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownMenu)
+			{
+				CopyToClipboard(text: ((ToolStripDropDownMenu)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripProgressBar)
+			{
+				CopyToClipboard(text: ((ToolStripProgressBar)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripSplitButton)
+			{
+				CopyToClipboard(text: ((ToolStripSplitButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripSeparator)
+			{
+				CopyToClipboard(text: ((ToolStripSeparator)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripStatusLabel)
+			{
+				CopyToClipboard(text: ((ToolStripStatusLabel)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripTextBox)
+			{
+				CopyToClipboard(text: ((ToolStripTextBox)sender).AccessibleDescription);
+			}
+		}
+	
+		private void CopyToClipboard(object sender, MouseEventArgs e)
+		{
+			if (sender is TextBox)
+			{
+				CopyToClipboard(text: ((TextBox)sender).AccessibleDescription);
+			}
+			else if (sender is Button)
+			{
+				CopyToClipboard(text: ((Button)sender).AccessibleDescription);
+			}
+			else if (sender is RadioButton)
+			{
+				CopyToClipboard(text: ((RadioButton)sender).AccessibleDescription);
+			}
+			else if (sender is DateTimePicker)
+			{
+				CopyToClipboard(text: ((DateTimePicker)sender).AccessibleDescription);
+			}
+			else if (sender is Label)
+			{
+				CopyToClipboard(text: ((Label)sender).AccessibleDescription);
+			}
+			else if (sender is PictureBox)
+			{
+				CopyToClipboard(text: ((PictureBox)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripButton)
+			{
+				CopyToClipboard(text: ((ToolStripButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripMenuItem)
+			{
+				CopyToClipboard(text: ((ToolStripMenuItem)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripLabel)
+			{
+				CopyToClipboard(text: ((ToolStripLabel)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripComboBox)
+			{
+				CopyToClipboard(text: ((ToolStripComboBox)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDown)
+			{
+				CopyToClipboard(text: ((ToolStripDropDown)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownButton)
+			{
+				CopyToClipboard(text: ((ToolStripDropDownButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownItem)
+			{
+				CopyToClipboard(text: ((ToolStripDropDownItem)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownMenu)
+			{
+				CopyToClipboard(text: ((ToolStripDropDownMenu)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripProgressBar)
+			{
+				CopyToClipboard(text: ((ToolStripProgressBar)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripSplitButton)
+			{
+				CopyToClipboard(text: ((ToolStripSplitButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripSeparator)
+			{
+				CopyToClipboard(text: ((ToolStripSeparator)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripStatusLabel)
+			{
+				CopyToClipboard(text: ((ToolStripStatusLabel)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripTextBox)
+			{
+				CopyToClipboard(text: ((ToolStripTextBox)sender).AccessibleDescription);
+			}
+		}
+
 		private void SetStatusbar(string text)
 		{
 			toolStripStatusLabel.Visible = true;
@@ -275,7 +441,8 @@ namespace Hipparcos_DB
 
 		private void MenuitemClose_Click(object sender, EventArgs e)
 		{
-			Dispose();
+			Array.Clear(catalogEntries, 0, catalogEntries.Length);
+			GC.Collect();
 			Close();
 		}
 
@@ -2379,7 +2546,7 @@ namespace Hipparcos_DB
 			labelTrigonomicParallaxDesc.BackColor = SystemColors.Control;
 		}
 
-		private void LabelTrigonomicParallaxData_Click(object sender, EventArgs e)
+		private void LabelTrigonomicParallaxData_Leave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 			labelTrigonomicParallaxData.BackColor = SystemColors.Control;
@@ -4188,6 +4355,786 @@ namespace Hipparcos_DB
 					ShowEntriesOnIndex();
 					break;
 			}
+		}
+
+		#endregion
+
+		#region DoubleClick event handlers
+
+		private void LabelCatalogData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelIdentifierData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelProximityFlagData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelRightAscensionData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelDeclinationData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMagnitudeJohnsonData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCoarseVariabilityFlagData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSourceOfMagnitudeData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelAlphaData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelDeltaData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelProperMotionAlphaData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelProperMotionDeltaData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorRightAscensionData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorDeclinationData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorProperMotionRightAscensionData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorProperMotionDeclinationData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationDeclinationByRightAscensionData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationTrigonomicParallaxByDeclinationData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+
+		}
+
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+
+		}
+
+		private void LabelCorrelationProperMotionDeclinationByDeclinationData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+
+		}
+
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelPercentageOfRejectedDataData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelGoodnessOfFitParameterData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMeanBtMagnitudeData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorMeanBtMagnitudeData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMeanVtMagnitudeData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorMeanVtMagnitudeData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelJohnsonBvColorData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorJohnsonBvColorData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelReferenceFlagForBtAndVtMagnitudeData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSourceOfBvColorData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelColorIndexInCousinsSystemData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorViData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSourceOfViData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelFlagForCombinedMagnitudesData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMedianMagnitudeInHipparcosSystemData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelScatterMedianMagnitudeInHipparcosSystemData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelVariabilityPeriodData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelVariabilityTypeData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelAdditionalDataAboutVariabilityData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelLightCurveAnnexData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCcdmIdentifierData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelHistoricalStatusFlagData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelNumberEntriesWithSameCcdmData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelNumberComponentsInThisEntryData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMultipleSystemsFlagData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelAstrometricSourceFlagData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSolutionQualityData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelComponentIdentifiersData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelPositionAngleBetweenComponentsData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelAngularSeparationBetweenComponentsData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorRhoData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMagnitudeDifferenceBetweenComponentsData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelFlagIndicatingSurveyStarData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelIdentificationChartData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelExistenceOfNotesData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelHdNumberData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelBonnerDmData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCordobaDmData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCapePhotographicDmData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelViUsedForReductionsData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSpectralTypeData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSourceOfSpectralTypeData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelReferenceFlagForAstrometryData_DoubleClick(object sender, EventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		#endregion
+
+		#region MouseDoubleClick event handlers
+		private void LabelCatalogData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelIdentifierData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelProximityFlagData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelRightAscensionData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelDeclinationData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMagnitudeJohnsonData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCoarseVariabilityFlagData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSourceOfMagnitudeData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelAlphaData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelDeltaData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelReferenceFlagForAstrometryData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelTrigonomicParallaxData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelProperMotionAlphaData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelProperMotionDeltaData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorRightAscensionData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorDeclinationData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorTrigonomicParallaxData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorProperMotionRightAscensionData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorProperMotionDeclinationData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationDeclinationByRightAscensionData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationTrigonomicParallaxByDeclinationData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationProperMotionDeclinationByDeclinationData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelPercentageOfRejectedDataData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelGoodnessOfFitParameterData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMeanBtMagnitudeData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorMeanBtMagnitudeData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMeanVtMagnitudeData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorMeanVtMagnitudeData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelJohnsonBvColorData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorJohnsonBvColorData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelReferenceFlagForBtAndVtMagnitudeData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSourceOfBvColorData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelColorIndexInCousinsSystemData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorViData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSourceOfViData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelFlagForCombinedMagnitudesData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMedianMagnitudeInHipparcosSystemData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelScatterMedianMagnitudeInHipparcosSystemData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelVariabilityPeriodData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelVariabilityTypeData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelAdditionalDataAboutVariabilityData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelLightCurveAnnexData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCcdmIdentifierData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelHistoricalStatusFlagData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelNumberEntriesWithSameCcdmData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelNumberComponentsInThisEntryData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMultipleSystemsFlagData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelAstrometricSourceFlagData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSolutionQualityData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelComponentIdentifiersData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelPositionAngleBetweenComponentsData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelAngularSeparationBetweenComponentsData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorRhoData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelMagnitudeDifferenceBetweenComponentsData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelFlagIndicatingSurveyStarData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelIdentificationChartData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelExistenceOfNotesData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelHdNumberData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelBonnerDmData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCordobaDmData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelCapePhotographicDmData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelViUsedForReductionsData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSpectralTypeData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
+		}
+
+		private void LabelSourceOfSpectralTypeData_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			CopyToClipboard(sender: sender, e: e);
 		}
 
 		#endregion
