@@ -101,6 +101,12 @@
     <Compile Include="CatalogChooserForm.Designer.cs">
       <DependentUpon>CatalogChooserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DownloaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DownloaderForm.Designer.cs">
+      <DependentUpon>DownloaderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HipparcosCatalogViewerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CatalogChooserForm.resx">
       <DependentUpon>CatalogChooserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownloaderForm.resx">
+      <DependentUpon>DownloaderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HipparcosCatalogViewerForm.resx">
       <DependentUpon>HipparcosCatalogViewerForm.cs</DependentUpon>
