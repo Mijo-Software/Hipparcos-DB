@@ -34,10 +34,10 @@
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.buttonOpenTychoCatalog = new System.Windows.Forms.Button();
 			this.buttonOpenHipparcosCatalog = new System.Windows.Forms.Button();
+			this.buttonInfo = new System.Windows.Forms.Button();
 			this.statusStripText = new System.Windows.Forms.StatusStrip();
 			this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.groupBoxChooseCatalog = new System.Windows.Forms.GroupBox();
-			this.buttonInfo = new System.Windows.Forms.Button();
 			this.statusStripText.SuspendLayout();
 			this.groupBoxChooseCatalog.SuspendLayout();
 			this.SuspendLayout();
@@ -83,6 +83,19 @@
 			this.buttonOpenHipparcosCatalog.MouseEnter += new System.EventHandler(this.ButtonOpenHipparcosCatalog_MouseEnter);
 			this.buttonOpenHipparcosCatalog.MouseLeave += new System.EventHandler(this.ButtonOpenHipparcosCatalog_MouseLeave);
 			// 
+			// buttonInfo
+			// 
+			resources.ApplyResources(this.buttonInfo, "buttonInfo");
+			this.buttonInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.buttonInfo.Name = "buttonInfo";
+			this.toolTip.SetToolTip(this.buttonInfo, resources.GetString("buttonInfo.ToolTip"));
+			this.buttonInfo.UseVisualStyleBackColor = true;
+			this.buttonInfo.Click += new System.EventHandler(this.ButtonInfo_Click);
+			this.buttonInfo.Enter += new System.EventHandler(this.ButtonInfo_Enter);
+			this.buttonInfo.Leave += new System.EventHandler(this.ButtonInfo_Leave);
+			this.buttonInfo.MouseEnter += new System.EventHandler(this.ButtonInfo_MouseEnter);
+			this.buttonInfo.MouseLeave += new System.EventHandler(this.ButtonInfo_MouseLeave);
+			// 
 			// statusStripText
 			// 
 			resources.ApplyResources(this.statusStripText, "statusStripText");
@@ -110,19 +123,6 @@
 			this.groupBoxChooseCatalog.Controls.Add(this.buttonOpenTychoCatalog);
 			this.groupBoxChooseCatalog.Name = "groupBoxChooseCatalog";
 			this.groupBoxChooseCatalog.TabStop = false;
-			// 
-			// buttonInfo
-			// 
-			resources.ApplyResources(this.buttonInfo, "buttonInfo");
-			this.buttonInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonInfo.Name = "buttonInfo";
-			this.toolTip.SetToolTip(this.buttonInfo, resources.GetString("buttonInfo.ToolTip"));
-			this.buttonInfo.UseVisualStyleBackColor = true;
-			this.buttonInfo.Click += new System.EventHandler(this.ButtonInfo_Click);
-			this.buttonInfo.Enter += new System.EventHandler(this.ButtonInfo_Enter);
-			this.buttonInfo.Leave += new System.EventHandler(this.ButtonInfo_Leave);
-			this.buttonInfo.MouseEnter += new System.EventHandler(this.ButtonInfo_MouseEnter);
-			this.buttonInfo.MouseLeave += new System.EventHandler(this.ButtonInfo_MouseLeave);
 			// 
 			// CatalogChooserForm
 			// 

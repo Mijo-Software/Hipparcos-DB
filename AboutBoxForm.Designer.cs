@@ -74,7 +74,7 @@
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.0622F));
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.66029F));
-			this.tableLayoutPanel.Size = new System.Drawing.Size(408, 160);
+			this.tableLayoutPanel.Size = new System.Drawing.Size(408, 135);
 			this.tableLayoutPanel.TabIndex = 0;
 			this.tableLayoutPanel.TabStop = true;
 			// 
@@ -88,7 +88,7 @@
 			this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
 			this.logoPictureBox.Name = "logoPictureBox";
 			this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
-			this.logoPictureBox.Size = new System.Drawing.Size(128, 154);
+			this.logoPictureBox.Size = new System.Drawing.Size(128, 129);
 			this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.logoPictureBox.TabIndex = 12;
 			this.logoPictureBox.TabStop = false;
@@ -104,7 +104,7 @@
 			this.labelProductName.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
 			this.labelProductName.MaximumSize = new System.Drawing.Size(0, 17);
 			this.labelProductName.Name = "labelProductName";
-			this.labelProductName.Size = new System.Drawing.Size(265, 15);
+			this.labelProductName.Size = new System.Drawing.Size(265, 13);
 			this.labelProductName.TabIndex = 0;
 			this.labelProductName.Text = "product name";
 			this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -120,11 +120,11 @@
 			this.labelVersion.AccessibleName = "version";
 			this.labelVersion.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelVersion.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelVersion.Location = new System.Drawing.Point(140, 15);
+			this.labelVersion.Location = new System.Drawing.Point(140, 13);
 			this.labelVersion.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
 			this.labelVersion.MaximumSize = new System.Drawing.Size(0, 17);
 			this.labelVersion.Name = "labelVersion";
-			this.labelVersion.Size = new System.Drawing.Size(265, 15);
+			this.labelVersion.Size = new System.Drawing.Size(265, 13);
 			this.labelVersion.TabIndex = 1;
 			this.labelVersion.Text = "version";
 			this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -140,11 +140,11 @@
 			this.labelCopyright.AccessibleName = "copyright";
 			this.labelCopyright.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCopyright.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCopyright.Location = new System.Drawing.Point(140, 30);
+			this.labelCopyright.Location = new System.Drawing.Point(140, 26);
 			this.labelCopyright.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
 			this.labelCopyright.MaximumSize = new System.Drawing.Size(0, 17);
 			this.labelCopyright.Name = "labelCopyright";
-			this.labelCopyright.Size = new System.Drawing.Size(265, 15);
+			this.labelCopyright.Size = new System.Drawing.Size(265, 13);
 			this.labelCopyright.TabIndex = 2;
 			this.labelCopyright.Text = "copyright";
 			this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -160,11 +160,11 @@
 			this.labelCompanyName.AccessibleName = "company name";
 			this.labelCompanyName.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCompanyName.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCompanyName.Location = new System.Drawing.Point(140, 45);
+			this.labelCompanyName.Location = new System.Drawing.Point(140, 39);
 			this.labelCompanyName.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
 			this.labelCompanyName.MaximumSize = new System.Drawing.Size(0, 17);
 			this.labelCompanyName.Name = "labelCompanyName";
-			this.labelCompanyName.Size = new System.Drawing.Size(265, 15);
+			this.labelCompanyName.Size = new System.Drawing.Size(265, 13);
 			this.labelCompanyName.TabIndex = 3;
 			this.labelCompanyName.Text = "company name";
 			this.labelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -180,13 +180,13 @@
 			this.textBoxDescription.AccessibleName = "description";
 			this.textBoxDescription.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
 			this.textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBoxDescription.Location = new System.Drawing.Point(140, 63);
+			this.textBoxDescription.Location = new System.Drawing.Point(140, 55);
 			this.textBoxDescription.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
 			this.textBoxDescription.Multiline = true;
 			this.textBoxDescription.Name = "textBoxDescription";
 			this.textBoxDescription.ReadOnly = true;
 			this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.textBoxDescription.Size = new System.Drawing.Size(265, 61);
+			this.textBoxDescription.Size = new System.Drawing.Size(265, 51);
 			this.textBoxDescription.TabIndex = 4;
 			this.textBoxDescription.Text = "description";
 			this.toolTip.SetToolTip(this.textBoxDescription, "description of the application");
@@ -203,9 +203,9 @@
 			this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
 			this.okButton.Image = ((System.Drawing.Image)(resources.GetObject("okButton.Image")));
-			this.okButton.Location = new System.Drawing.Point(330, 134);
+			this.okButton.Location = new System.Drawing.Point(330, 112);
 			this.okButton.Name = "okButton";
-			this.okButton.Size = new System.Drawing.Size(75, 23);
+			this.okButton.Size = new System.Drawing.Size(75, 20);
 			this.okButton.TabIndex = 5;
 			this.okButton.Text = "&OK";
 			this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -267,7 +267,7 @@
 			this.toolStripContainer.ContentPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.ContentPanel.AutoScroll = true;
 			this.toolStripContainer.ContentPanel.Controls.Add(this.tableLayoutPanel);
-			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(408, 160);
+			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(408, 135);
 			this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
 			// 
 			// toolStripContainer.LeftToolStripPanel
