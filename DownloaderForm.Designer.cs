@@ -35,18 +35,18 @@
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.textBox = new System.Windows.Forms.TextBox();
 			this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-			this.labelDownloadPercent = new System.Windows.Forms.Label();
 			this.labelFilesDownload = new System.Windows.Forms.Label();
+			this.labelDownloadPercent = new System.Windows.Forms.Label();
 			this.labelDownlaodStatus = new System.Windows.Forms.Label();
 			this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
 			this.statusStrip = new System.Windows.Forms.StatusStrip();
-			this.toolStrip = new System.Windows.Forms.ToolStrip();
-			this.toolStripTextBoxHost = new System.Windows.Forms.ToolStripTextBox();
-			this.toolStripButtonStartDownload = new System.Windows.Forms.ToolStripButton();
-			this.toolStripLabelHost = new System.Windows.Forms.ToolStripLabel();
-			this.toolStripSeparatorDownload = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripButtonEditHost = new System.Windows.Forms.ToolStripButton();
 			this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+			this.toolStrip = new System.Windows.Forms.ToolStrip();
+			this.toolStripLabelHost = new System.Windows.Forms.ToolStripLabel();
+			this.toolStripTextBoxHost = new System.Windows.Forms.ToolStripTextBox();
+			this.toolStripButtonEditHost = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparatorDownload = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripButtonStartDownload = new System.Windows.Forms.ToolStripButton();
 			this.tableLayoutPanel.SuspendLayout();
 			this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
 			this.toolStripContainer.ContentPanel.SuspendLayout();
@@ -119,19 +119,6 @@
 			this.tableLayoutPanel.Size = new System.Drawing.Size(800, 403);
 			this.tableLayoutPanel.TabIndex = 4;
 			// 
-			// labelDownloadPercent
-			// 
-			this.labelDownloadPercent.AutoSize = true;
-			this.labelDownloadPercent.Location = new System.Drawing.Point(745, 13);
-			this.labelDownloadPercent.Name = "labelDownloadPercent";
-			this.labelDownloadPercent.Size = new System.Drawing.Size(36, 13);
-			this.labelDownloadPercent.TabIndex = 2;
-			this.labelDownloadPercent.Text = "100 %";
-			this.labelDownloadPercent.Enter += new System.EventHandler(this.LabelDownloadPercent_Enter);
-			this.labelDownloadPercent.Leave += new System.EventHandler(this.LabelDownloadPercent_Leave);
-			this.labelDownloadPercent.MouseEnter += new System.EventHandler(this.LabelDownloadPercent_MouseEnter);
-			this.labelDownloadPercent.MouseLeave += new System.EventHandler(this.LabelDownloadPercent_MouseLeave);
-			// 
 			// labelFilesDownload
 			// 
 			this.labelFilesDownload.AutoSize = true;
@@ -144,6 +131,19 @@
 			this.labelFilesDownload.Leave += new System.EventHandler(this.LabelFilesDownload_Leave);
 			this.labelFilesDownload.MouseEnter += new System.EventHandler(this.LabelFilesDownload_MouseEnter);
 			this.labelFilesDownload.MouseLeave += new System.EventHandler(this.LabelFilesDownload_MouseLeave);
+			// 
+			// labelDownloadPercent
+			// 
+			this.labelDownloadPercent.AutoSize = true;
+			this.labelDownloadPercent.Location = new System.Drawing.Point(745, 13);
+			this.labelDownloadPercent.Name = "labelDownloadPercent";
+			this.labelDownloadPercent.Size = new System.Drawing.Size(36, 13);
+			this.labelDownloadPercent.TabIndex = 2;
+			this.labelDownloadPercent.Text = "100 %";
+			this.labelDownloadPercent.Enter += new System.EventHandler(this.LabelDownloadPercent_Enter);
+			this.labelDownloadPercent.Leave += new System.EventHandler(this.LabelDownloadPercent_Leave);
+			this.labelDownloadPercent.MouseEnter += new System.EventHandler(this.LabelDownloadPercent_MouseEnter);
+			this.labelDownloadPercent.MouseLeave += new System.EventHandler(this.LabelDownloadPercent_MouseLeave);
 			// 
 			// labelDownlaodStatus
 			// 
@@ -198,8 +198,24 @@
 			this.statusStrip.TabStop = true;
 			this.statusStrip.Text = "statusStrip";
 			// 
+			// toolStripStatusLabel
+			// 
+			this.toolStripStatusLabel.AccessibleDescription = "text with some information";
+			this.toolStripStatusLabel.AccessibleName = "information text";
+			this.toolStripStatusLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.toolStripStatusLabel.AutoToolTip = true;
+			this.toolStripStatusLabel.DoubleClickEnabled = true;
+			this.toolStripStatusLabel.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_white_16px_shadowless;
+			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+			this.toolStripStatusLabel.Size = new System.Drawing.Size(66, 17);
+			this.toolStripStatusLabel.Text = "info text";
+			this.toolStripStatusLabel.ToolTipText = "info text";
+			this.toolStripStatusLabel.MouseEnter += new System.EventHandler(this.ToolStripStatusLabel_MouseEnter);
+			this.toolStripStatusLabel.MouseLeave += new System.EventHandler(this.ToolStripStatusLabel_MouseLeave);
+			// 
 			// toolStrip
 			// 
+			this.toolStrip.Dock = System.Windows.Forms.DockStyle.None;
 			this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabelHost,
             this.toolStripTextBoxHost,
@@ -213,65 +229,51 @@
 			this.toolStrip.Stretch = true;
 			this.toolStrip.TabIndex = 0;
 			// 
+			// toolStripLabelHost
+			// 
+			this.toolStripLabelHost.Name = "toolStripLabelHost";
+			this.toolStripLabelHost.Size = new System.Drawing.Size(35, 22);
+			this.toolStripLabelHost.Text = "&Host:";
+			this.toolStripLabelHost.MouseEnter += new System.EventHandler(this.ToolStripLabelHost_MouseEnter);
+			this.toolStripLabelHost.MouseLeave += new System.EventHandler(this.ToolStripLabelHost_MouseLeave);
+			// 
 			// toolStripTextBoxHost
 			// 
+			this.toolStripTextBoxHost.AutoToolTip = true;
+			this.toolStripTextBoxHost.BackColor = System.Drawing.SystemColors.Window;
 			this.toolStripTextBoxHost.Name = "toolStripTextBoxHost";
-			this.toolStripTextBoxHost.ReadOnly = true;
 			this.toolStripTextBoxHost.Size = new System.Drawing.Size(200, 25);
 			this.toolStripTextBoxHost.Enter += new System.EventHandler(this.ToolStripTextBoxHost_Enter);
 			this.toolStripTextBoxHost.Leave += new System.EventHandler(this.ToolStripTextBoxHost_Leave);
 			this.toolStripTextBoxHost.MouseEnter += new System.EventHandler(this.ToolStripTextBoxHost_MouseEnter);
 			this.toolStripTextBoxHost.MouseLeave += new System.EventHandler(this.ToolStripTextBoxHost_MouseLeave);
 			// 
-			// toolStripButtonStartDownload
+			// toolStripButtonEditHost
 			// 
-			this.toolStripButtonStartDownload.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonStartDownload.Image")));
-			this.toolStripButtonStartDownload.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripButtonStartDownload.Name = "toolStripButtonStartDownload";
-			this.toolStripButtonStartDownload.Size = new System.Drawing.Size(107, 22);
-			this.toolStripButtonStartDownload.Text = "Start download";
-			this.toolStripButtonStartDownload.Click += new System.EventHandler(this.ToolStripButtonStartDownload_Click);
-			this.toolStripButtonStartDownload.MouseEnter += new System.EventHandler(this.ToolStripButtonStartDownload_MouseEnter);
-			this.toolStripButtonStartDownload.MouseLeave += new System.EventHandler(this.ToolStripButtonStartDownload_MouseLeave);
-			// 
-			// toolStripLabelHost
-			// 
-			this.toolStripLabelHost.Name = "toolStripLabelHost";
-			this.toolStripLabelHost.Size = new System.Drawing.Size(35, 22);
-			this.toolStripLabelHost.Text = "Host:";
-			this.toolStripLabelHost.MouseEnter += new System.EventHandler(this.ToolStripLabelHost_MouseEnter);
-			this.toolStripLabelHost.MouseLeave += new System.EventHandler(this.ToolStripLabelHost_MouseLeave);
+			this.toolStripButtonEditHost.Image = global::Hipparcos_DB.Properties.Resources.fugue_pencil_16px_shadowless;
+			this.toolStripButtonEditHost.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButtonEditHost.Name = "toolStripButtonEditHost";
+			this.toolStripButtonEditHost.Size = new System.Drawing.Size(73, 22);
+			this.toolStripButtonEditHost.Text = "&Edit host";
+			this.toolStripButtonEditHost.Click += new System.EventHandler(this.ToolStripButtonEditHost_Click);
+			this.toolStripButtonEditHost.MouseEnter += new System.EventHandler(this.ToolStripButtonEditHost_MouseEnter);
+			this.toolStripButtonEditHost.MouseLeave += new System.EventHandler(this.ToolStripButtonEditHost_MouseLeave);
 			// 
 			// toolStripSeparatorDownload
 			// 
 			this.toolStripSeparatorDownload.Name = "toolStripSeparatorDownload";
 			this.toolStripSeparatorDownload.Size = new System.Drawing.Size(6, 25);
 			// 
-			// toolStripButtonEditHost
+			// toolStripButtonStartDownload
 			// 
-			this.toolStripButtonEditHost.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonEditHost.Image")));
-			this.toolStripButtonEditHost.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripButtonEditHost.Name = "toolStripButtonEditHost";
-			this.toolStripButtonEditHost.Size = new System.Drawing.Size(73, 22);
-			this.toolStripButtonEditHost.Text = "Edit host";
-			this.toolStripButtonEditHost.Click += new System.EventHandler(this.ToolStripButtonEditHost_Click);
-			this.toolStripButtonEditHost.MouseEnter += new System.EventHandler(this.ToolStripButtonEditHost_MouseEnter);
-			this.toolStripButtonEditHost.MouseLeave += new System.EventHandler(this.ToolStripButtonEditHost_MouseLeave);
-			// 
-			// toolStripStatusLabel
-			// 
-			this.toolStripStatusLabel.AccessibleDescription = "text with some information";
-			this.toolStripStatusLabel.AccessibleName = "information text";
-			this.toolStripStatusLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.toolStripStatusLabel.AutoToolTip = true;
-			this.toolStripStatusLabel.DoubleClickEnabled = true;
-			this.toolStripStatusLabel.Image = ((System.Drawing.Image)(resources.GetObject("toolStripStatusLabel.Image")));
-			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-			this.toolStripStatusLabel.Size = new System.Drawing.Size(66, 17);
-			this.toolStripStatusLabel.Text = "info text";
-			this.toolStripStatusLabel.ToolTipText = "info text";
-			this.toolStripStatusLabel.MouseEnter += new System.EventHandler(this.ToolStripStatusLabel_MouseEnter);
-			this.toolStripStatusLabel.MouseLeave += new System.EventHandler(this.ToolStripStatusLabel_MouseLeave);
+			this.toolStripButtonStartDownload.Image = global::Hipparcos_DB.Properties.Resources.fugue_drive_download_16px_shadowless;
+			this.toolStripButtonStartDownload.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButtonStartDownload.Name = "toolStripButtonStartDownload";
+			this.toolStripButtonStartDownload.Size = new System.Drawing.Size(107, 22);
+			this.toolStripButtonStartDownload.Text = "&Start download";
+			this.toolStripButtonStartDownload.Click += new System.EventHandler(this.ToolStripButtonStartDownload_Click);
+			this.toolStripButtonStartDownload.MouseEnter += new System.EventHandler(this.ToolStripButtonStartDownload_MouseEnter);
+			this.toolStripButtonStartDownload.MouseLeave += new System.EventHandler(this.ToolStripButtonStartDownload_MouseLeave);
 			// 
 			// DownloaderForm
 			// 

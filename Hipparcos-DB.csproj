@@ -162,6 +162,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-full.ico" />
+    <None Include="Properties\fugue_door_16px_shadowless.png" />
+    <None Include="Properties\fugue_application_16px_shadowless.png" />
+    <None Include="Properties\fugue_information-button_16px_shadowless.png" />
+    <None Include="Properties\fugue_control_16px_shadowless.png" />
+    <None Include="Properties\fugue_control-stop-180_16px_shadowless.png" />
+    <None Include="Properties\fugue_control-stop_16px_shadowless.png" />
+    <None Include="Properties\fugue_control-double_16px_shadowless.png" />
+    <None Include="Properties\fugue_control-180_16px_shadowless.png" />
+    <None Include="Properties\fugue_control-double-180_16px_shadowless.png" />
+    <None Include="Properties\fugue_arrow-000-medium_16_shadowless.png" />
+    <None Include="Properties\fugue_cross_16px_shadowless.png" />
+    <None Include="Properties\fugue_tick-button_16px-shadowless.png" />
+    <None Include="Properties\hipparcos1.jpg" />
+    <None Include="Properties\fugue_information-white_16px_shadowless.png" />
+    <None Include="Properties\fugue_information_16px_shadowless.png" />
+    <None Include="Properties\fugue_drive-download_16px_shadowless.png" />
+    <None Include="Properties\fugue_pencil_16px_shadowless.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

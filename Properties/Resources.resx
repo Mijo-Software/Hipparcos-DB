@@ -117,4 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="fugue_drive-download_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_drive-download_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_tick-button_16px-shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_tick-button_16px-shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_information-white_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_information-white_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_pencil_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_pencil_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_information-button_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_information-button_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_cross_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_cross_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hipparcos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>hipparcos1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_information_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_information_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_application_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_application_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_door_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_door_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_arrow_000_medium_16_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_arrow-000-medium_16_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_control_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_control_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_control_180_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_control-180_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_control_double_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_control-double_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_control_double_180_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_control-double-180_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_control_stop_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_control-stop_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_control_stop_180_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_control-stop-180_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

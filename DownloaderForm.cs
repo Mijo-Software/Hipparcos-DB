@@ -105,16 +105,28 @@ namespace Hipparcos_DB
 		private void DownloaderForm_Load(object sender, EventArgs e)
 		{
 			ClearStatusbar();
+			toolStripButtonEditHost.Checked = toolStripTextBoxHost.Enabled = !toolStripTextBoxHost.Enabled;
 		}
 
 		private void ToolStripButtonEditHost_Click(object sender, EventArgs e)
 		{
 			toolStripButtonEditHost.Checked = toolStripTextBoxHost.Enabled = !toolStripTextBoxHost.Enabled;
+
+			if (toolStripButtonEditHost.Checked)
+			{
+				toolStripButtonEditHost.Image = Properties.Resources.fugue_tick_button_16px_shadowless;
+				toolStripButtonEditHost.Text = "&Apply";
+			}
+			else
+			{
+				toolStripButtonEditHost.Image = Properties.Resources.fugue_pencil_16px_shadowless;
+				toolStripButtonEditHost.Text = "&Edit host";
+			}
 		}
 
 		private void ToolStripButtonStartDownload_Click(object sender, EventArgs e)
 		{
-			toolStripButtonStartDownload.Enabled = false;
+			toolStripButtonStartDownload.Enabled = toolStripTextBoxHost.Enabled = toolStripButtonEditHost.Enabled = false;
 		}
 
 		private void ToolStripTextBoxHost_Enter(object sender, EventArgs e)

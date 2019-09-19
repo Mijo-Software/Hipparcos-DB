@@ -1366,6 +1366,11 @@ namespace Hipparcos_DB
 			SetStatusbar(sender: sender, e: e);
 		}
 
+		private void ToolStripMenuItemInfo_MouseEnter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
 		private void ToolStripButtonStepToBegin_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(sender: sender, e: e);
@@ -3267,6 +3272,11 @@ namespace Hipparcos_DB
 			ClearStatusbar();
 		}
 
+		private void ToolStripMenuItemInfo_MouseLeave(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+		}
+
 		private void ToolStripButtonStepToBegin_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
@@ -4664,7 +4674,7 @@ namespace Hipparcos_DB
 		{
 			CopyToClipboard(sender: sender, e: e);
 		}
-
+	
 		private void LabelReferenceFlagForAstrometryData_DoubleClick(object sender, EventArgs e)
 		{
 			CopyToClipboard(sender: sender, e: e);

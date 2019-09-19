@@ -105,6 +105,7 @@ namespace Hipparcos_DB
 
 		private void CatalogChooserForm_Load(object sender, EventArgs e)
 		{
+			buttonDownloadTychoCatalog.Enabled = buttonOpenTychoCatalog.Enabled = false;
 			ClearStatusbar();
 		}
 
@@ -237,5 +238,17 @@ namespace Hipparcos_DB
 		}
 
 		#endregion
+
+		private void ButtonDownloadHipparcosCatalog_Click(object sender, EventArgs e)
+		{
+			DownloaderForm formDownloder = new DownloaderForm();
+			formDownloder.ShowDialog();
+		}
+
+		private void ButtonDownloadTychoCatalog_Click(object sender, EventArgs e)
+		{
+			DownloaderForm formDownloder = new DownloaderForm();
+			formDownloder.ShowDialog();
+		}
 	}
 }
