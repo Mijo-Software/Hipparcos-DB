@@ -162,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-full.ico" />
+    <None Include="Properties\fugue_arrow-curve-180-left_shadowless.png" />
     <None Include="Properties\fugue_door_16px_shadowless.png" />
     <None Include="Properties\fugue_application_16px_shadowless.png" />
     <None Include="Properties\fugue_information-button_16px_shadowless.png" />

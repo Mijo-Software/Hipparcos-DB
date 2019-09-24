@@ -8,12 +8,38 @@ namespace Hipparcos_DB
 {
 	public partial class HipparcosCatalogViewerForm : Form
 	{
+		private readonly string[] filesHipparcosCatalog =
+			{
+				"h_dm_com.dat.gz",
+				"h_dm_cor.dat.gz",
+				"hd_notes.doc.gz",
+				"hg_notes.doc.gz",
+				"h_dm_cor.dat.gz",
+				"hip_dm_g.dat.gz",
+				"hip_dm_o.dat.gz",
+				"hip_dm_v.dat.gz",
+				"hip_dm_x.dat.gz",
+				"hip_main.dat.gz",
+				"hip_va_1.dat.gz",
+				"hip_va_2.dat.gz",
+				"hp_auth.doc.gz",
+				"hp_notes.doc.gz",
+				"hp_refs.doc.gz",
+				"solar_ha.dat.gz",
+				"solar_hp.dat.gz",
+				"solar_t.dat.gz"
+			};
 
 		private string[] catalogEntries;
 
 		private uint
 			index = 0,
 			maxIndex = 0;
+
+		private string RemoveFileExtension(string filename)
+		{
+			return filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
+		}
 
 		private void CopyToClipboard(string text)
 		{
@@ -100,7 +126,6 @@ namespace Hipparcos_DB
 				CopyToClipboard(text: ((ToolStripTextBox)sender).AccessibleDescription);
 			}
 		}
-	
 
 		private void SetStatusbar(string text)
 		{
@@ -187,7 +212,6 @@ namespace Hipparcos_DB
 				SetStatusbar(text: ((ToolStripTextBox)sender).AccessibleDescription);
 			}
 		}
-
 
 		private void ClearStatusbar()
 		{
@@ -299,9 +323,9 @@ namespace Hipparcos_DB
 
 		private void GoToIndex()
 		{
-			if (int.TryParse(toolStripTextBoxGoToIndex.Text, out int tempIndex))
+			if (int.TryParse(s: toolStripTextBoxGoToIndex.Text, result: out int tempIndex))
 			{
-				if ((tempIndex < 1) || (tempIndex > maxIndex))
+				if (tempIndex < 1 || tempIndex > maxIndex)
 				{
 					MessageBox.Show(
 						text: "The number is out of range. The number to be entered must be greater than zero and less than the maximum value.",
@@ -344,9 +368,21 @@ namespace Hipparcos_DB
 		private void HipparcosCatalogViewerForm_Load(object sender, EventArgs e)
 		{
 			ClearStatusbar();
-			string dataFile = @"hip_main.dat";
-			if (File.Exists(path: dataFile))
+			bool allFilesFound = false;
+			foreach (string file in filesHipparcosCatalog)
 			{
+				if (File.Exists(path: "catalogs/i239/" + RemoveFileExtension(filename: file)))
+				{
+					allFilesFound = true;
+				}
+				else
+				{
+					allFilesFound = false;
+				}
+			}
+			if (allFilesFound)
+			{
+				string dataFile = "catalogs/i239/" + "hip_main.dat";
 				catalogEntries = File.ReadAllLines(path: dataFile);
 				index = 1;
 				maxIndex = Convert.ToUInt32(value: catalogEntries.Length);
@@ -362,7 +398,7 @@ namespace Hipparcos_DB
 
 		private void MenuitemClose_Click(object sender, EventArgs e)
 		{
-			Array.Clear(catalogEntries, 0, catalogEntries.Length);
+			Array.Clear(array: catalogEntries, index: 0, length: catalogEntries.Length);
 			GC.Collect();
 			Close();
 		}

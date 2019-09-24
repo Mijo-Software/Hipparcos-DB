@@ -6,6 +6,33 @@ namespace Hipparcos_DB
 {
 	public partial class CatalogChooserForm : Form
 	{
+		private readonly string[] filesHipparcosCatalog =
+			{
+				"h_dm_com.dat.gz",
+				"h_dm_cor.dat.gz",
+				"hd_notes.doc.gz",
+				"hg_notes.doc.gz",
+				"h_dm_cor.dat.gz",
+				"hip_dm_g.dat.gz",
+				"hip_dm_o.dat.gz",
+				"hip_dm_v.dat.gz",
+				"hip_dm_x.dat.gz",
+				"hip_main.dat.gz",
+				"hip_va_1.dat.gz",
+				"hip_va_2.dat.gz",
+				"hp_auth.doc.gz",
+				"hp_notes.doc.gz",
+				"hp_refs.doc.gz",
+				"solar_ha.dat.gz",
+				"solar_hp.dat.gz",
+				"solar_t.dat.gz"
+			};
+
+		private string RemoveFileExtension(string filename)
+		{
+			return filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
+		}
+
 		public CatalogChooserForm()
 		{
 			InitializeComponent();
@@ -106,21 +133,39 @@ namespace Hipparcos_DB
 		private void CatalogChooserForm_Load(object sender, EventArgs e)
 		{
 			buttonDownloadTychoCatalog.Enabled = buttonOpenTychoCatalog.Enabled = false;
+			/*
+			if (!Directory.Exists(path: "catalogs/i239"))
+			{
+				buttonOpenHipparcosCatalog.Enabled = false;
+				buttonOpenTychoCatalog.Enabled = false;
+			}
+			*/
 			ClearStatusbar();
 		}
 
 		private void ButtonOpenHipparcosCatalog_Click(object sender, EventArgs e)
 		{
-			string dataFile = @"hip_main.dat";
-			if (File.Exists(path: dataFile))
+			bool allFilesFound = false;
+			foreach (string file in filesHipparcosCatalog)
+			{				
+				if (File.Exists(path: "catalogs/i239/" + RemoveFileExtension(filename: file)))
+				{
+					allFilesFound = true;
+				}
+				else
+				{
+					allFilesFound = false;
+				}
+			}
+			if (allFilesFound)
 			{
 				new HipparcosCatalogViewerForm().ShowDialog();
 			}
 			else
 			{
 				MessageBox.Show(
-					text: "The file HIP_MAIN.DAT is missing. Make sure that the file exists in the folder of the application. You can download the file from the URL http://cdsarc.u-strasbg.fr/viz-bin/nph-Cat/txt.gz?I/239/hip_main.dat.gz.",
-					caption: "Missing file",
+					text: "Some files are missing. Please use the download button to download all file.",
+					caption: "Missing files",
 					buttons: MessageBoxButtons.OK,
 					icon: MessageBoxIcon.Error);
 			}
@@ -241,14 +286,22 @@ namespace Hipparcos_DB
 
 		private void ButtonDownloadHipparcosCatalog_Click(object sender, EventArgs e)
 		{
-			DownloaderForm formDownloder = new DownloaderForm();
-			formDownloder.ShowDialog();
+			using (DownloaderForm downloaderForm = new DownloaderForm())
+			{			
+				downloaderForm.SetHost(host: "http://cdsarc.u-strasbg.fr/ftp/I/239/");
+				//downloaderForm.SetHost(host: "http://cdsarc.u-strasbg.fr/viz-bin/nph-Cat/txt.gz?I/239/");
+				downloaderForm.SetHostUrls(files: filesHipparcosCatalog);
+				downloaderForm.SetCatalogDirectory(directory: "catalogs/i239/");
+				downloaderForm.ShowDialog();
+			}
 		}
 
 		private void ButtonDownloadTychoCatalog_Click(object sender, EventArgs e)
 		{
-			DownloaderForm formDownloder = new DownloaderForm();
-			formDownloder.ShowDialog();
+			using (DownloaderForm downloaderForm = new DownloaderForm())
+			{
+				downloaderForm.ShowDialog();
+			}
 		}
 	}
 }

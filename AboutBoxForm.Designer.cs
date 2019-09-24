@@ -30,6 +30,11 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBoxForm));
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+			this.textBoxDescription = new System.Windows.Forms.TextBox();
+			this.labelCompanyName = new System.Windows.Forms.Label();
+			this.labelCopyright = new System.Windows.Forms.Label();
+			this.labelVersion = new System.Windows.Forms.Label();
+			this.labelProductName = new System.Windows.Forms.Label();
 			this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
 			this.statusStrip = new System.Windows.Forms.StatusStrip();
 			this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
@@ -37,11 +42,6 @@
 			this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
 			this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
 			this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-			this.textBoxDescription = new System.Windows.Forms.TextBox();
-			this.labelCompanyName = new System.Windows.Forms.Label();
-			this.labelCopyright = new System.Windows.Forms.Label();
-			this.labelVersion = new System.Windows.Forms.Label();
-			this.labelProductName = new System.Windows.Forms.Label();
 			this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
 			this.okButton = new System.Windows.Forms.Button();
 			this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -53,107 +53,6 @@
 			this.toolStripContainer.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// BottomToolStripPanel
-			// 
-			this.BottomToolStripPanel.AccessibleDescription = "lower part of the container";
-			this.BottomToolStripPanel.AccessibleName = "lower part of the container";
-			this.BottomToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.BottomToolStripPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.BottomToolStripPanel.Location = new System.Drawing.Point(0, 153);
-			this.BottomToolStripPanel.Name = "BottomToolStripPanel";
-			this.BottomToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-			this.BottomToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-			this.BottomToolStripPanel.Size = new System.Drawing.Size(150, 22);
-			// 
-			// statusStrip
-			// 
-			this.statusStrip.AccessibleDescription = "status bar with some information";
-			this.statusStrip.AccessibleName = "information status bar";
-			this.statusStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.StatusBar;
-			this.statusStrip.Dock = System.Windows.Forms.DockStyle.None;
-			this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
-			this.statusStrip.Location = new System.Drawing.Point(0, 0);
-			this.statusStrip.Name = "statusStrip";
-			this.statusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-			this.statusStrip.ShowItemToolTips = true;
-			this.statusStrip.Size = new System.Drawing.Size(324, 22);
-			this.statusStrip.SizingGrip = false;
-			this.statusStrip.TabIndex = 0;
-			this.statusStrip.Text = "statusStrip";
-			// 
-			// TopToolStripPanel
-			// 
-			this.TopToolStripPanel.AccessibleDescription = "upper part of the container";
-			this.TopToolStripPanel.AccessibleName = "upper part of the container";
-			this.TopToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.TopToolStripPanel.Dock = System.Windows.Forms.DockStyle.Top;
-			this.TopToolStripPanel.Location = new System.Drawing.Point(0, 0);
-			this.TopToolStripPanel.Name = "TopToolStripPanel";
-			this.TopToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
-			this.TopToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-			this.TopToolStripPanel.Size = new System.Drawing.Size(150, 0);
-			// 
-			// RightToolStripPanel
-			// 
-			this.RightToolStripPanel.AccessibleDescription = "right part of the container";
-			this.RightToolStripPanel.AccessibleName = "right part of the container";
-			this.RightToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.RightToolStripPanel.Dock = System.Windows.Forms.DockStyle.Right;
-			this.RightToolStripPanel.Location = new System.Drawing.Point(150, 0);
-			this.RightToolStripPanel.Name = "RightToolStripPanel";
-			this.RightToolStripPanel.Orientation = System.Windows.Forms.Orientation.Vertical;
-			this.RightToolStripPanel.RowMargin = new System.Windows.Forms.Padding(0, 3, 0, 0);
-			this.RightToolStripPanel.Size = new System.Drawing.Size(0, 153);
-			// 
-			// LeftToolStripPanel
-			// 
-			this.LeftToolStripPanel.AccessibleDescription = "left part of the container";
-			this.LeftToolStripPanel.AccessibleName = "left part of the container";
-			this.LeftToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.LeftToolStripPanel.Dock = System.Windows.Forms.DockStyle.Left;
-			this.LeftToolStripPanel.Location = new System.Drawing.Point(0, 0);
-			this.LeftToolStripPanel.Name = "LeftToolStripPanel";
-			this.LeftToolStripPanel.Orientation = System.Windows.Forms.Orientation.Vertical;
-			this.LeftToolStripPanel.RowMargin = new System.Windows.Forms.Padding(0, 3, 0, 0);
-			this.LeftToolStripPanel.Size = new System.Drawing.Size(0, 153);
-			// 
-			// ContentPanel
-			// 
-			this.ContentPanel.AccessibleDescription = "content panel of the container";
-			this.ContentPanel.AccessibleName = "content panel of the container";
-			this.ContentPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.ContentPanel.Size = new System.Drawing.Size(150, 153);
-			// 
-			// tableLayoutPanel
-			// 
-			this.tableLayoutPanel.AccessibleDescription = "pane with some information of the application";
-			this.tableLayoutPanel.AccessibleName = "information panel";
-			this.tableLayoutPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.tableLayoutPanel.ColumnCount = 2;
-			this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
-			this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67F));
-			this.tableLayoutPanel.Controls.Add(this.logoPictureBox, 0, 0);
-			this.tableLayoutPanel.Controls.Add(this.labelProductName, 1, 0);
-			this.tableLayoutPanel.Controls.Add(this.labelVersion, 1, 1);
-			this.tableLayoutPanel.Controls.Add(this.labelCopyright, 1, 2);
-			this.tableLayoutPanel.Controls.Add(this.labelCompanyName, 1, 3);
-			this.tableLayoutPanel.Controls.Add(this.textBoxDescription, 1, 4);
-			this.tableLayoutPanel.Controls.Add(this.okButton, 1, 5);
-			this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
-			this.tableLayoutPanel.Name = "tableLayoutPanel";
-			this.tableLayoutPanel.RowCount = 6;
-			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.14598F));
-			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.89781F));
-			this.tableLayoutPanel.Size = new System.Drawing.Size(324, 137);
-			this.tableLayoutPanel.TabIndex = 0;
-			this.tableLayoutPanel.TabStop = true;
 			// 
 			// textBoxDescription
 			// 
@@ -255,6 +154,107 @@
 			this.labelProductName.Leave += new System.EventHandler(this.LabelProductName_Leave);
 			this.labelProductName.MouseEnter += new System.EventHandler(this.LabelProductName_MouseEnter);
 			this.labelProductName.MouseLeave += new System.EventHandler(this.LabelProductName_MouseLeave);
+			// 
+			// BottomToolStripPanel
+			// 
+			this.BottomToolStripPanel.AccessibleDescription = "lower part of the container";
+			this.BottomToolStripPanel.AccessibleName = "lower part of the container";
+			this.BottomToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
+			this.BottomToolStripPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+			this.BottomToolStripPanel.Location = new System.Drawing.Point(0, 153);
+			this.BottomToolStripPanel.Name = "BottomToolStripPanel";
+			this.BottomToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
+			this.BottomToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+			this.BottomToolStripPanel.Size = new System.Drawing.Size(150, 22);
+			// 
+			// statusStrip
+			// 
+			this.statusStrip.AccessibleDescription = "status bar with some information";
+			this.statusStrip.AccessibleName = "information status bar";
+			this.statusStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.StatusBar;
+			this.statusStrip.Dock = System.Windows.Forms.DockStyle.None;
+			this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+			this.statusStrip.Location = new System.Drawing.Point(0, 0);
+			this.statusStrip.Name = "statusStrip";
+			this.statusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
+			this.statusStrip.ShowItemToolTips = true;
+			this.statusStrip.Size = new System.Drawing.Size(324, 22);
+			this.statusStrip.SizingGrip = false;
+			this.statusStrip.TabIndex = 0;
+			this.statusStrip.Text = "statusStrip";
+			// 
+			// TopToolStripPanel
+			// 
+			this.TopToolStripPanel.AccessibleDescription = "upper part of the container";
+			this.TopToolStripPanel.AccessibleName = "upper part of the container";
+			this.TopToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
+			this.TopToolStripPanel.Dock = System.Windows.Forms.DockStyle.Top;
+			this.TopToolStripPanel.Location = new System.Drawing.Point(0, 0);
+			this.TopToolStripPanel.Name = "TopToolStripPanel";
+			this.TopToolStripPanel.Orientation = System.Windows.Forms.Orientation.Horizontal;
+			this.TopToolStripPanel.RowMargin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+			this.TopToolStripPanel.Size = new System.Drawing.Size(150, 0);
+			// 
+			// RightToolStripPanel
+			// 
+			this.RightToolStripPanel.AccessibleDescription = "right part of the container";
+			this.RightToolStripPanel.AccessibleName = "right part of the container";
+			this.RightToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
+			this.RightToolStripPanel.Dock = System.Windows.Forms.DockStyle.Right;
+			this.RightToolStripPanel.Location = new System.Drawing.Point(150, 0);
+			this.RightToolStripPanel.Name = "RightToolStripPanel";
+			this.RightToolStripPanel.Orientation = System.Windows.Forms.Orientation.Vertical;
+			this.RightToolStripPanel.RowMargin = new System.Windows.Forms.Padding(0, 3, 0, 0);
+			this.RightToolStripPanel.Size = new System.Drawing.Size(0, 153);
+			// 
+			// LeftToolStripPanel
+			// 
+			this.LeftToolStripPanel.AccessibleDescription = "left part of the container";
+			this.LeftToolStripPanel.AccessibleName = "left part of the container";
+			this.LeftToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
+			this.LeftToolStripPanel.Dock = System.Windows.Forms.DockStyle.Left;
+			this.LeftToolStripPanel.Location = new System.Drawing.Point(0, 0);
+			this.LeftToolStripPanel.Name = "LeftToolStripPanel";
+			this.LeftToolStripPanel.Orientation = System.Windows.Forms.Orientation.Vertical;
+			this.LeftToolStripPanel.RowMargin = new System.Windows.Forms.Padding(0, 3, 0, 0);
+			this.LeftToolStripPanel.Size = new System.Drawing.Size(0, 153);
+			// 
+			// ContentPanel
+			// 
+			this.ContentPanel.AccessibleDescription = "content panel of the container";
+			this.ContentPanel.AccessibleName = "content panel of the container";
+			this.ContentPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
+			this.ContentPanel.Size = new System.Drawing.Size(150, 153);
+			// 
+			// tableLayoutPanel
+			// 
+			this.tableLayoutPanel.AccessibleDescription = "pane with some information of the application";
+			this.tableLayoutPanel.AccessibleName = "information panel";
+			this.tableLayoutPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
+			this.tableLayoutPanel.ColumnCount = 2;
+			this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
+			this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67F));
+			this.tableLayoutPanel.Controls.Add(this.logoPictureBox, 0, 0);
+			this.tableLayoutPanel.Controls.Add(this.labelProductName, 1, 0);
+			this.tableLayoutPanel.Controls.Add(this.labelVersion, 1, 1);
+			this.tableLayoutPanel.Controls.Add(this.labelCopyright, 1, 2);
+			this.tableLayoutPanel.Controls.Add(this.labelCompanyName, 1, 3);
+			this.tableLayoutPanel.Controls.Add(this.textBoxDescription, 1, 4);
+			this.tableLayoutPanel.Controls.Add(this.okButton, 1, 5);
+			this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+			this.tableLayoutPanel.Name = "tableLayoutPanel";
+			this.tableLayoutPanel.RowCount = 6;
+			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.14598F));
+			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.89781F));
+			this.tableLayoutPanel.Size = new System.Drawing.Size(324, 137);
+			this.tableLayoutPanel.TabIndex = 0;
+			this.tableLayoutPanel.TabStop = true;
 			// 
 			// toolStripContainer
 			// 
