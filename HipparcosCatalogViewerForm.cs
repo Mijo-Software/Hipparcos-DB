@@ -44,7 +44,12 @@ namespace Hipparcos_DB
 		private void CopyToClipboard(string text)
 		{
 			Clipboard.SetText(text: text);
-			MessageBox.Show(text: "Copied to clipboard", caption: "The text was copied to the clipboard!", buttons: MessageBoxButtons.OK, icon: MessageBoxIcon.Information);
+			MessageBox.Show(
+				owner: this,
+				text: "Copied to clipboard",
+				caption: "The text was copied to the clipboard!",
+				buttons: MessageBoxButtons.OK,
+				icon: MessageBoxIcon.Information);
 		}
 
 		private void CopyToClipboard(object sender, EventArgs e)
@@ -328,6 +333,7 @@ namespace Hipparcos_DB
 				if (tempIndex < 1 || tempIndex > maxIndex)
 				{
 					MessageBox.Show(
+						owner: this,
 						text: "The number is out of range. The number to be entered must be greater than zero and less than the maximum value.",
 						caption: "Number out of range",
 						buttons: MessageBoxButtons.OK,
@@ -343,6 +349,7 @@ namespace Hipparcos_DB
 			else
 			{
 				MessageBox.Show(
+					owner: this,
 					text: "The input is not a natural number. Make sure the input is a natural number, for example: 1, 2, 3, ...",
 					caption: "Wrong number format",
 					buttons: MessageBoxButtons.OK,
@@ -382,6 +389,7 @@ namespace Hipparcos_DB
 			else
 			{
 				MessageBox.Show(
+					owner: this,
 					text: "Some files are missing. Please download all files in the main window.",
 					caption: "Missing files",
 					buttons: MessageBoxButtons.OK,
@@ -453,9 +461,11 @@ namespace Hipparcos_DB
 
 		private void ToolStripMenuItemInfo_Click(object sender, EventArgs e)
 		{
-			new AboutBoxForm().ShowDialog();
+			using (AboutBoxForm formAboutBox = new AboutBoxForm())
+			{
+				formAboutBox.ShowDialog();
+			}
 		}
-
 
 		#endregion
 

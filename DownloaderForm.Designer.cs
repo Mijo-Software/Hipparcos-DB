@@ -51,6 +51,8 @@
 			this.toolStripButtonStartDownload = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonEditHost = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonRestoreHost = new System.Windows.Forms.ToolStripButton();
+			this.toolStripButtonSaveLogging = new System.Windows.Forms.ToolStripButton();
+			this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
 			this.tableLayoutPanel.SuspendLayout();
 			this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
 			this.toolStripContainer.ContentPanel.SuspendLayout();
@@ -81,7 +83,7 @@
 			this.progressBarDownloadFiles.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.progressBarDownloadFiles.Location = new System.Drawing.Point(3, 16);
 			this.progressBarDownloadFiles.Name = "progressBarDownloadFiles";
-			this.progressBarDownloadFiles.Size = new System.Drawing.Size(490, 13);
+			this.progressBarDownloadFiles.Size = new System.Drawing.Size(588, 13);
 			this.progressBarDownloadFiles.Step = 1;
 			this.progressBarDownloadFiles.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
 			this.progressBarDownloadFiles.TabIndex = 3;
@@ -103,7 +105,7 @@
 			this.textBox.Name = "textBox";
 			this.textBox.ReadOnly = true;
 			this.textBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.textBox.Size = new System.Drawing.Size(548, 319);
+			this.textBox.Size = new System.Drawing.Size(646, 319);
 			this.textBox.TabIndex = 5;
 			this.toolTip.SetToolTip(this.textBox, "Download logging");
 			this.textBox.Enter += new System.EventHandler(this.TextBox_Enter);
@@ -131,7 +133,7 @@
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-			this.tableLayoutPanel.Size = new System.Drawing.Size(554, 385);
+			this.tableLayoutPanel.Size = new System.Drawing.Size(652, 385);
 			this.tableLayoutPanel.TabIndex = 4;
 			// 
 			// labelFilesDownload
@@ -141,7 +143,7 @@
 			this.labelFilesDownload.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelFilesDownload.AutoSize = true;
 			this.labelFilesDownload.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelFilesDownload.Location = new System.Drawing.Point(499, 13);
+			this.labelFilesDownload.Location = new System.Drawing.Point(597, 13);
 			this.labelFilesDownload.Name = "labelFilesDownload";
 			this.labelFilesDownload.Size = new System.Drawing.Size(52, 19);
 			this.labelFilesDownload.TabIndex = 4;
@@ -163,7 +165,7 @@
 			this.labelDownloadStatus.Dock = System.Windows.Forms.DockStyle.Top;
 			this.labelDownloadStatus.Location = new System.Drawing.Point(3, 0);
 			this.labelDownloadStatus.Name = "labelDownloadStatus";
-			this.labelDownloadStatus.Size = new System.Drawing.Size(548, 13);
+			this.labelDownloadStatus.Size = new System.Drawing.Size(646, 13);
 			this.labelDownloadStatus.TabIndex = 0;
 			this.labelDownloadStatus.Text = "Click the button \"Start download\" to begin";
 			this.toolTip.SetToolTip(this.labelDownloadStatus, "Download status");
@@ -176,7 +178,7 @@
 			// 
 			this.labelDownloadPercent.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelDownloadPercent.AutoSize = true;
-			this.labelDownloadPercent.Location = new System.Drawing.Point(499, 357);
+			this.labelDownloadPercent.Location = new System.Drawing.Point(597, 357);
 			this.labelDownloadPercent.Name = "labelDownloadPercent";
 			this.labelDownloadPercent.Size = new System.Drawing.Size(36, 13);
 			this.labelDownloadPercent.TabIndex = 2;
@@ -208,7 +210,7 @@
 			this.toolStripContainer.ContentPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.ContentPanel.Controls.Add(this.tableLayoutPanel);
 			this.toolStripContainer.ContentPanel.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(554, 385);
+			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(652, 385);
 			this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
 			// 
 			// toolStripContainer.LeftToolStripPanel
@@ -224,7 +226,7 @@
 			this.toolStripContainer.RightToolStripPanel.AccessibleDescription = "right part of the container";
 			this.toolStripContainer.RightToolStripPanel.AccessibleName = "right part of the container";
 			this.toolStripContainer.RightToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.toolStripContainer.Size = new System.Drawing.Size(554, 432);
+			this.toolStripContainer.Size = new System.Drawing.Size(652, 432);
 			this.toolStripContainer.TabIndex = 6;
 			this.toolStripContainer.Text = "toolStripContainer";
 			// 
@@ -248,7 +250,7 @@
 			this.statusStrip.Name = "statusStrip";
 			this.statusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
 			this.statusStrip.ShowItemToolTips = true;
-			this.statusStrip.Size = new System.Drawing.Size(554, 22);
+			this.statusStrip.Size = new System.Drawing.Size(652, 22);
 			this.statusStrip.SizingGrip = false;
 			this.statusStrip.TabIndex = 0;
 			this.statusStrip.TabStop = true;
@@ -266,11 +268,12 @@
             this.toolStripLabelHost,
             this.toolStripTextBoxHost,
             this.toolStripButtonEditHost,
-            this.toolStripButtonRestoreHost});
+            this.toolStripButtonRestoreHost,
+            this.toolStripButtonSaveLogging});
 			this.toolStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
 			this.toolStrip.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip.Name = "toolStrip";
-			this.toolStrip.Size = new System.Drawing.Size(554, 25);
+			this.toolStrip.Size = new System.Drawing.Size(652, 25);
 			this.toolStrip.Stretch = true;
 			this.toolStrip.TabIndex = 0;
 			// 
@@ -341,10 +344,10 @@
 			this.toolStripStatusLabelDownloadAnimation.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.toolStripStatusLabelDownloadAnimation.AutoToolTip = true;
 			this.toolStripStatusLabelDownloadAnimation.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.toolStripStatusLabelDownloadAnimation.Image = global::Hipparcos_DB.Properties.Resources.fugue_drive_download_16px_shadowless;
+			this.toolStripStatusLabelDownloadAnimation.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_270_16px_shadowless;
 			this.toolStripStatusLabelDownloadAnimation.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.toolStripStatusLabelDownloadAnimation.Name = "toolStripStatusLabelDownloadAnimation";
-			this.toolStripStatusLabelDownloadAnimation.Size = new System.Drawing.Size(442, 17);
+			this.toolStripStatusLabelDownloadAnimation.Size = new System.Drawing.Size(571, 17);
 			this.toolStripStatusLabelDownloadAnimation.Spring = true;
 			this.toolStripStatusLabelDownloadAnimation.Text = "Download animation";
 			this.toolStripStatusLabelDownloadAnimation.MouseEnter += new System.EventHandler(this.ToolStripStatusLabelDownloadAnimation_MouseEnter);
@@ -392,6 +395,31 @@
 			this.toolStripButtonRestoreHost.MouseEnter += new System.EventHandler(this.ToolStripButtonRestoreHost_MouseEnter);
 			this.toolStripButtonRestoreHost.MouseLeave += new System.EventHandler(this.ToolStripButtonRestoreHost_MouseLeave);
 			// 
+			// toolStripButtonSaveLogging
+			// 
+			this.toolStripButtonSaveLogging.AccessibleDescription = "Save the download logging into a file";
+			this.toolStripButtonSaveLogging.AccessibleName = "Save logging";
+			this.toolStripButtonSaveLogging.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.toolStripButtonSaveLogging.Image = global::Hipparcos_DB.Properties.Resources.fugue_disk_16px_shadowless;
+			this.toolStripButtonSaveLogging.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButtonSaveLogging.Name = "toolStripButtonSaveLogging";
+			this.toolStripButtonSaveLogging.Size = new System.Drawing.Size(95, 22);
+			this.toolStripButtonSaveLogging.Text = "Save &logging";
+			this.toolStripButtonSaveLogging.Click += new System.EventHandler(this.ToolStripButtonSaveLogging_Click);
+			this.toolStripButtonSaveLogging.MouseEnter += new System.EventHandler(this.ToolStripButtonSaveLogging_MouseEnter);
+			this.toolStripButtonSaveLogging.MouseLeave += new System.EventHandler(this.ToolStripButtonSaveLogging_MouseLeave);
+			// 
+			// saveFileDialog
+			// 
+			this.saveFileDialog.CreatePrompt = true;
+			this.saveFileDialog.DefaultExt = "txt";
+			this.saveFileDialog.FileName = "logging.txt";
+			this.saveFileDialog.Filter = "text files|*.txt|all files|*.*";
+			this.saveFileDialog.RestoreDirectory = true;
+			this.saveFileDialog.SupportMultiDottedExtensions = true;
+			this.saveFileDialog.Title = "Save file";
+			this.saveFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.SaveFileDialog_FileOk);
+			// 
 			// DownloaderForm
 			// 
 			this.AccessibleDescription = "Dialog to download all required catalog files";
@@ -399,7 +427,7 @@
 			this.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(554, 432);
+			this.ClientSize = new System.Drawing.Size(652, 432);
 			this.Controls.Add(this.toolStripContainer);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -448,5 +476,7 @@
 		private System.ComponentModel.BackgroundWorker backgroundWorker;
 		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelDownloadAnimation;
 		private System.Windows.Forms.Timer timerDownloadAnimation;
+		private System.Windows.Forms.ToolStripButton toolStripButtonSaveLogging;
+		private System.Windows.Forms.SaveFileDialog saveFileDialog;
 	}
 }

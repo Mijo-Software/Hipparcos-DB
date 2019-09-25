@@ -142,6 +142,46 @@ namespace Hipparcos_DB
 			*/
 			ClearStatusbar();
 		}
+				
+		#region Click event handlers
+
+		private void ButtonOpenTychoCatalog_Click(object sender, EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
+		private void ButtonInfo_Click(object sender, EventArgs e)
+		{
+			using (AboutBoxForm formAboutBox = new AboutBoxForm())
+			{
+				formAboutBox.ShowDialog();
+			}
+		}
+
+		private void ButtonExit_Click(object sender, EventArgs e)
+		{
+			Close();
+		}
+
+		private void ButtonDownloadHipparcosCatalog_Click(object sender, EventArgs e)
+		{
+			using (DownloaderForm downloaderForm = new DownloaderForm())
+			{
+				downloaderForm.SetHost(host: "http://cdsarc.u-strasbg.fr/ftp/I/239/");
+				//downloaderForm.SetHost(host: "http://cdsarc.u-strasbg.fr/viz-bin/nph-Cat/txt.gz?I/239/");
+				downloaderForm.SetHostUrls(files: filesHipparcosCatalog);
+				downloaderForm.SetCatalogDirectory(directory: "catalogs/i239/");
+				downloaderForm.ShowDialog();
+			}
+		}
+
+		private void ButtonDownloadTychoCatalog_Click(object sender, EventArgs e)
+		{
+			using (DownloaderForm downloaderForm = new DownloaderForm())
+			{
+				downloaderForm.ShowDialog();
+			}
+		}
 
 		private void ButtonOpenHipparcosCatalog_Click(object sender, EventArgs e)
 		{
@@ -162,7 +202,10 @@ namespace Hipparcos_DB
 			}
 			if (allFilesFound)
 			{
-				new HipparcosCatalogViewerForm().ShowDialog();
+				using (HipparcosCatalogViewerForm formHipparcosCatalogViewer = new HipparcosCatalogViewerForm())
+				{
+					formHipparcosCatalogViewer.ShowDialog();
+				}
 			}
 			else
 			{
@@ -172,23 +215,6 @@ namespace Hipparcos_DB
 					buttons: MessageBoxButtons.OK,
 					icon: MessageBoxIcon.Error);
 			}
-		}
-
-		#region Click event handlers
-
-		private void ButtonOpenTychoCatalog_Click(object sender, EventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-
-		private void ButtonInfo_Click(object sender, EventArgs e)
-		{
-			new AboutBoxForm().ShowDialog();
-		}
-
-		private void ButtonExit_Click(object sender, EventArgs e)
-		{
-			Close();
 		}
 
 		#endregion
@@ -285,26 +311,6 @@ namespace Hipparcos_DB
 			ClearStatusbar();
 		}
 
-		#endregion
-
-		private void ButtonDownloadHipparcosCatalog_Click(object sender, EventArgs e)
-		{
-			using (DownloaderForm downloaderForm = new DownloaderForm())
-			{			
-				downloaderForm.SetHost(host: "http://cdsarc.u-strasbg.fr/ftp/I/239/");
-				//downloaderForm.SetHost(host: "http://cdsarc.u-strasbg.fr/viz-bin/nph-Cat/txt.gz?I/239/");
-				downloaderForm.SetHostUrls(files: filesHipparcosCatalog);
-				downloaderForm.SetCatalogDirectory(directory: "catalogs/i239/");
-				downloaderForm.ShowDialog();
-			}
-		}
-
-		private void ButtonDownloadTychoCatalog_Click(object sender, EventArgs e)
-		{
-			using (DownloaderForm downloaderForm = new DownloaderForm())
-			{
-				downloaderForm.ShowDialog();
-			}
-		}
+		#endregion		
 	}
 }

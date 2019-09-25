@@ -204,7 +204,7 @@ namespace Hipparcos_DB
 		{
 			ClearStatusbar();
 			toolStripButtonEditHost.Checked = toolStripTextBoxHost.Enabled = !toolStripTextBoxHost.Enabled;
-			toolStripButtonRestoreHost.Enabled = toolStripStatusLabelDownloadAnimation.Visible = false;
+			toolStripButtonRestoreHost.Enabled = toolStripStatusLabelDownloadAnimation.Visible = toolStripButtonSaveLogging.Enabled = false;
 			hostToRestore = host;
 		}
 
@@ -247,6 +247,15 @@ namespace Hipparcos_DB
 			toolStripTextBoxHost.Text = GetHost();
 		}
 
+		private void ToolStripButtonSaveLogging_Click(object sender, EventArgs e)
+		{
+			saveFileDialog.ShowDialog();
+		}
+
+		#endregion
+
+		#region Enter event handlers
+
 		private void ToolStripTextBoxHost_Enter(object sender, EventArgs e)
 		{
 			SetStatusbar(sender: sender, e: e);
@@ -274,7 +283,7 @@ namespace Hipparcos_DB
 
 		#endregion
 
-		#region MouseClick event handlers
+		#region MouseEnter event handlers
 
 		private void ToolStripLabelHost_MouseEnter(object sender, EventArgs e)
 		{
@@ -337,6 +346,11 @@ namespace Hipparcos_DB
 		}
 
 		private void ToolStripStatusLabelDownloadAnimation_MouseEnter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
+		private void ToolStripButtonSaveLogging_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(sender: sender, e: e);
 		}
@@ -439,7 +453,38 @@ namespace Hipparcos_DB
 			ClearStatusbar();
 		}
 
+		private void ToolStripButtonSaveLogging_MouseLeave(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+		}
+
 		#endregion
+
+		private void SaveFileDialog_FileOk(object sender, CancelEventArgs e)
+		{
+			try
+			{
+				File.WriteAllText(path: saveFileDialog.FileName, contents: textBox.Text);
+			}
+			catch (Exception exception)
+			{
+				MessageBox.Show(
+					owner: this,
+					text: "Logging file couldn't saved." + Environment.NewLine + Environment.NewLine + "Reason: " + exception.Message,
+					caption: "Error",
+					buttons: MessageBoxButtons.OK,
+					icon: MessageBoxIcon.Error);
+			}
+			finally
+			{
+				MessageBox.Show(
+					owner: this,
+					text: "Logging file saved.",
+					caption: "Successful",
+					buttons: MessageBoxButtons.OK,
+					icon: MessageBoxIcon.Information);
+			}
+		}
 
 		private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
 		{
@@ -458,7 +503,7 @@ namespace Hipparcos_DB
 						url = GetHost() + hostFiles[index];
 						uri = new Uri(uriString: url);
 						webClient.Proxy = null;
-						labelDownloadStatus.Text = "Downloading: " + url;
+						labelDownloadStatus.Text = "[" + DateTime.Now.ToString() + "] Downloading: " + url;
 						textBox.AppendText(text: labelDownloadStatus.Text + Environment.NewLine);
 						//progressBarDownloadFile.Value = 0;
 						progressBarDownloadFiles.PerformStep();
@@ -469,28 +514,29 @@ namespace Hipparcos_DB
 						if (File.Exists(downloadedFile))
 						{
 							fileArray = File.ReadAllBytes(path: downloadedFile);
-							labelDownloadStatus.Text = "Decompress: " + downloadedFile + " -> " + decompressedFile;
+							labelDownloadStatus.Text = "[" + DateTime.Now.ToString() + "] Decompress: " + downloadedFile + " -> " + decompressedFile;
 							textBox.AppendText(text: labelDownloadStatus.Text + Environment.NewLine);
 							File.WriteAllBytes(path: decompressedFile, bytes: Decompress(gzip: fileArray));
-							labelDownloadStatus.Text = "Delete: " + downloadedFile;
+							labelDownloadStatus.Text = "[" + DateTime.Now.ToString() + "] Delete: " + downloadedFile;
 							textBox.AppendText(text: labelDownloadStatus.Text + Environment.NewLine + Environment.NewLine);
 							File.Delete(path: downloadedFile);
 						}
 						else
 						{
-							textBox.AppendText(text: "ERROR!!! " + downloadedFile + "couldn't decompressed." + Environment.NewLine + Environment.NewLine);
+							textBox.AppendText(text: "[" + DateTime.Now.ToString() + "] ERROR!!! " + downloadedFile + "couldn't decompressed." + Environment.NewLine + Environment.NewLine);
 						}
 					}
 					catch (Exception exception)
 					{
 						downloadWasSuccessful = false;
-						textBox.AppendText(text: "ERROR!!! " + exception.Message + Environment.NewLine + Environment.NewLine);
+						textBox.AppendText(text: "[" + DateTime.Now.ToString() + "] ERROR!!! " + exception.Message + Environment.NewLine + Environment.NewLine);
 					}
 				}
 				toolStripStatusLabelDownloadAnimation.Visible = timerDownloadAnimation.Enabled = false;
 				if (downloadWasSuccessful)
 				{
 					MessageBox.Show(
+						owner: this,
 						text: "All files were downloaded and decompressed.",
 						caption: "Successful",
 						buttons: MessageBoxButtons.OK,
@@ -499,7 +545,9 @@ namespace Hipparcos_DB
 				}
 				else
 				{
+					toolStripButtonSaveLogging.Enabled = true;
 					MessageBox.Show(
+						owner: this,
 						text: "Some files couldn't downloaded and decompressed. Read the logged error messages!",
 						caption: "Error",
 						buttons: MessageBoxButtons.OK,
