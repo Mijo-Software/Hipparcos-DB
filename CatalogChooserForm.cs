@@ -158,6 +158,14 @@ namespace Hipparcos_DB
 			}
 		}
 
+		private void ButtonOptions_Click(object sender, EventArgs e)
+		{
+			using (OptionsForm formOptions = new OptionsForm())
+			{
+				formOptions.ShowDialog();
+			}
+		}
+
 		private void ButtonExit_Click(object sender, EventArgs e)
 		{
 			Close();
@@ -210,6 +218,7 @@ namespace Hipparcos_DB
 			else
 			{
 				MessageBox.Show(
+					owner: this,
 					text: "Some files are missing. Please use the download button to download all files.",
 					caption: "Missing files",
 					buttons: MessageBoxButtons.OK,
@@ -232,6 +241,11 @@ namespace Hipparcos_DB
 		}
 
 		private void ButtonInfo_Enter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
+		private void ButtonOptions_Enter(object sender, EventArgs e)
 		{
 			SetStatusbar(sender: sender, e: e);
 		}
@@ -259,6 +273,11 @@ namespace Hipparcos_DB
 			SetStatusbar(sender: sender, e: e);
 		}
 
+		private void ButtonOptions_MouseEnter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
 		private void ButtonExit_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(sender: sender, e: e);
@@ -278,6 +297,11 @@ namespace Hipparcos_DB
 			ClearStatusbar();
 		}
 		private void ButtonInfo_Leave(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+		}
+
+		private void ButtonOptions_Leave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
@@ -306,11 +330,16 @@ namespace Hipparcos_DB
 			ClearStatusbar();
 		}
 
+		private void ButtonOptions_MouseLeave(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+		}
+
 		private void ButtonExit_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
 
-		#endregion		
+		#endregion
 	}
 }

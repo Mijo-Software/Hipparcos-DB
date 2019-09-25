@@ -46,13 +46,13 @@
 			this.toolStripTextBoxHost = new System.Windows.Forms.ToolStripTextBox();
 			this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
 			this.timerDownloadAnimation = new System.Windows.Forms.Timer(this.components);
+			this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
 			this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStripStatusLabelDownloadAnimation = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStripButtonStartDownload = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonEditHost = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonRestoreHost = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonSaveLogging = new System.Windows.Forms.ToolStripButton();
-			this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
 			this.tableLayoutPanel.SuspendLayout();
 			this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
 			this.toolStripContainer.ContentPanel.SuspendLayout();
@@ -209,7 +209,6 @@
 			this.toolStripContainer.ContentPanel.AccessibleName = "content panel of the container";
 			this.toolStripContainer.ContentPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.ContentPanel.Controls.Add(this.tableLayoutPanel);
-			this.toolStripContainer.ContentPanel.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
 			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(652, 385);
 			this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
 			// 
@@ -323,6 +322,17 @@
 			this.timerDownloadAnimation.Interval = 250;
 			this.timerDownloadAnimation.Tick += new System.EventHandler(this.TimerDownloadAnimation_Tick);
 			// 
+			// saveFileDialog
+			// 
+			this.saveFileDialog.CreatePrompt = true;
+			this.saveFileDialog.DefaultExt = "txt";
+			this.saveFileDialog.FileName = "logging.txt";
+			this.saveFileDialog.Filter = "text files|*.txt|all files|*.*";
+			this.saveFileDialog.RestoreDirectory = true;
+			this.saveFileDialog.SupportMultiDottedExtensions = true;
+			this.saveFileDialog.Title = "Save file";
+			this.saveFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.SaveFileDialog_FileOk);
+			// 
 			// toolStripStatusLabelInfo
 			// 
 			this.toolStripStatusLabelInfo.AccessibleDescription = "Text with some information";
@@ -408,17 +418,6 @@
 			this.toolStripButtonSaveLogging.Click += new System.EventHandler(this.ToolStripButtonSaveLogging_Click);
 			this.toolStripButtonSaveLogging.MouseEnter += new System.EventHandler(this.ToolStripButtonSaveLogging_MouseEnter);
 			this.toolStripButtonSaveLogging.MouseLeave += new System.EventHandler(this.ToolStripButtonSaveLogging_MouseLeave);
-			// 
-			// saveFileDialog
-			// 
-			this.saveFileDialog.CreatePrompt = true;
-			this.saveFileDialog.DefaultExt = "txt";
-			this.saveFileDialog.FileName = "logging.txt";
-			this.saveFileDialog.Filter = "text files|*.txt|all files|*.*";
-			this.saveFileDialog.RestoreDirectory = true;
-			this.saveFileDialog.SupportMultiDottedExtensions = true;
-			this.saveFileDialog.Title = "Save file";
-			this.saveFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.SaveFileDialog_FileOk);
 			// 
 			// DownloaderForm
 			// 

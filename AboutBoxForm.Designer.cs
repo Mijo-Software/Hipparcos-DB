@@ -275,7 +275,6 @@
 			this.toolStripContainer.ContentPanel.AccessibleName = "content panel of the container";
 			this.toolStripContainer.ContentPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.ContentPanel.Controls.Add(this.tableLayoutPanel);
-			this.toolStripContainer.ContentPanel.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
 			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(324, 137);
 			this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
 			// 
