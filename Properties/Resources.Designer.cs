@@ -83,6 +83,36 @@ namespace Hipparcos_DB.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fugue_arrow_270_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_arrow_270_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fugue_arrow_270_medium_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_arrow_270_medium_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fugue_arrow_270_small_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_arrow_270_small_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fugue_arrow_curve_180_left_shadowless {
             get {
                 object obj = ResourceManager.GetObject("fugue_arrow_curve_180_left_shadowless", resourceCulture);

@@ -129,8 +129,8 @@ namespace Hipparcos_DB
 
 		private void SetStatusbar(string text)
 		{
-			toolStripStatusLabel.Visible = true;
-			toolStripStatusLabel.Text = text;
+			toolStripStatusLabelInfo.Visible = true;
+			toolStripStatusLabelInfo.Text = text;
 		}
 
 		private void SetStatusbar(object sender, EventArgs e)
@@ -215,8 +215,8 @@ namespace Hipparcos_DB
 
 		private void ClearStatusbar()
 		{
-			toolStripStatusLabel.Text = string.Empty;
-			toolStripStatusLabel.Visible = false;
+			toolStripStatusLabelInfo.Text = string.Empty;
+			toolStripStatusLabelInfo.Visible = false;
 		}
 
 		private void UpdateIndexLabel()
@@ -368,21 +368,9 @@ namespace Hipparcos_DB
 		private void HipparcosCatalogViewerForm_Load(object sender, EventArgs e)
 		{
 			ClearStatusbar();
-			bool allFilesFound = false;
-			foreach (string file in filesHipparcosCatalog)
+			string dataFile = "catalogs/i239/" + "hip_main.dat";
+			if (File.Exists(path: dataFile))
 			{
-				if (File.Exists(path: "catalogs/i239/" + RemoveFileExtension(filename: file)))
-				{
-					allFilesFound = true;
-				}
-				else
-				{
-					allFilesFound = false;
-				}
-			}
-			if (allFilesFound)
-			{
-				string dataFile = "catalogs/i239/" + "hip_main.dat";
 				catalogEntries = File.ReadAllLines(path: dataFile);
 				index = 1;
 				maxIndex = Convert.ToUInt32(value: catalogEntries.Length);
@@ -390,6 +378,15 @@ namespace Hipparcos_DB
 				progressBar.Visible = false;
 				UpdateIndexLabel();
 				ShowEntriesOnIndex();
+			}
+			else
+			{
+				MessageBox.Show(
+					text: "Some files are missing. Please download all files in the main window.",
+					caption: "Missing files",
+					buttons: MessageBoxButtons.OK,
+					icon: MessageBoxIcon.Error);
+				Close();
 			}
 			SetDoubleBuffered(control: tableLayoutPanel);
 		}

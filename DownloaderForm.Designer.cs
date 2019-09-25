@@ -40,15 +40,17 @@
 			this.labelDownloadPercent = new System.Windows.Forms.Label();
 			this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
 			this.statusStrip = new System.Windows.Forms.StatusStrip();
-			this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolStrip = new System.Windows.Forms.ToolStrip();
-			this.toolStripButtonStartDownload = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparatorDownload = new System.Windows.Forms.ToolStripSeparator();
 			this.toolStripLabelHost = new System.Windows.Forms.ToolStripLabel();
 			this.toolStripTextBoxHost = new System.Windows.Forms.ToolStripTextBox();
+			this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
+			this.timerDownloadAnimation = new System.Windows.Forms.Timer(this.components);
+			this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
+			this.toolStripStatusLabelDownloadAnimation = new System.Windows.Forms.ToolStripStatusLabel();
+			this.toolStripButtonStartDownload = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonEditHost = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonRestoreHost = new System.Windows.Forms.ToolStripButton();
-			this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
 			this.tableLayoutPanel.SuspendLayout();
 			this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
 			this.toolStripContainer.ContentPanel.SuspendLayout();
@@ -60,6 +62,7 @@
 			// 
 			// progressBarDownloadFile
 			// 
+			this.progressBarDownloadFile.AccessibleRole = System.Windows.Forms.AccessibleRole.ProgressBar;
 			this.progressBarDownloadFile.Location = new System.Drawing.Point(3, 360);
 			this.progressBarDownloadFile.Name = "progressBarDownloadFile";
 			this.progressBarDownloadFile.Size = new System.Drawing.Size(490, 13);
@@ -72,6 +75,9 @@
 			// 
 			// progressBarDownloadFiles
 			// 
+			this.progressBarDownloadFiles.AccessibleDescription = "Show the progress of the download";
+			this.progressBarDownloadFiles.AccessibleName = "Progress bar of the download";
+			this.progressBarDownloadFiles.AccessibleRole = System.Windows.Forms.AccessibleRole.ProgressBar;
 			this.progressBarDownloadFiles.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.progressBarDownloadFiles.Location = new System.Drawing.Point(3, 16);
 			this.progressBarDownloadFiles.Name = "progressBarDownloadFiles";
@@ -79,6 +85,7 @@
 			this.progressBarDownloadFiles.Step = 1;
 			this.progressBarDownloadFiles.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
 			this.progressBarDownloadFiles.TabIndex = 3;
+			this.toolTip.SetToolTip(this.progressBarDownloadFiles, "Download progress");
 			this.progressBarDownloadFiles.MouseEnter += new System.EventHandler(this.ProgressBarDownloadFiles_MouseEnter);
 			this.progressBarDownloadFiles.MouseLeave += new System.EventHandler(this.ProgressBarDownloadFiles_MouseLeave);
 			// 
@@ -86,6 +93,9 @@
 			// 
 			this.textBox.AcceptsReturn = true;
 			this.textBox.AcceptsTab = true;
+			this.textBox.AccessibleDescription = "Show the logging of all processes";
+			this.textBox.AccessibleName = "Download logging";
+			this.textBox.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
 			this.tableLayoutPanel.SetColumnSpan(this.textBox, 2);
 			this.textBox.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.textBox.Location = new System.Drawing.Point(3, 35);
@@ -95,6 +105,7 @@
 			this.textBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
 			this.textBox.Size = new System.Drawing.Size(548, 319);
 			this.textBox.TabIndex = 5;
+			this.toolTip.SetToolTip(this.textBox, "Download logging");
 			this.textBox.Enter += new System.EventHandler(this.TextBox_Enter);
 			this.textBox.Leave += new System.EventHandler(this.TextBox_Leave);
 			this.textBox.MouseEnter += new System.EventHandler(this.TextBox_MouseEnter);
@@ -125,6 +136,9 @@
 			// 
 			// labelFilesDownload
 			// 
+			this.labelFilesDownload.AccessibleDescription = "Show how many files are in progress";
+			this.labelFilesDownload.AccessibleName = "File counter text";
+			this.labelFilesDownload.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelFilesDownload.AutoSize = true;
 			this.labelFilesDownload.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelFilesDownload.Location = new System.Drawing.Point(499, 13);
@@ -133,21 +147,26 @@
 			this.labelFilesDownload.TabIndex = 4;
 			this.labelFilesDownload.Text = "00 / 99";
 			this.labelFilesDownload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.toolTip.SetToolTip(this.labelFilesDownload, "How many files in progress");
 			this.labelFilesDownload.Enter += new System.EventHandler(this.LabelFilesDownload_Enter);
 			this.labelFilesDownload.Leave += new System.EventHandler(this.LabelFilesDownload_Leave);
 			this.labelFilesDownload.MouseEnter += new System.EventHandler(this.LabelFilesDownload_MouseEnter);
 			this.labelFilesDownload.MouseLeave += new System.EventHandler(this.LabelFilesDownload_MouseLeave);
 			// 
-			// labelDownlaodStatus
+			// labelDownloadStatus
 			// 
+			this.labelDownloadStatus.AccessibleDescription = "Text with some information about the download status";
+			this.labelDownloadStatus.AccessibleName = "Download status";
+			this.labelDownloadStatus.AccessibleRole = System.Windows.Forms.AccessibleRole.StatusBar;
 			this.labelDownloadStatus.AutoSize = true;
 			this.tableLayoutPanel.SetColumnSpan(this.labelDownloadStatus, 2);
 			this.labelDownloadStatus.Dock = System.Windows.Forms.DockStyle.Top;
 			this.labelDownloadStatus.Location = new System.Drawing.Point(3, 0);
-			this.labelDownloadStatus.Name = "labelDownlaodStatus";
+			this.labelDownloadStatus.Name = "labelDownloadStatus";
 			this.labelDownloadStatus.Size = new System.Drawing.Size(548, 13);
 			this.labelDownloadStatus.TabIndex = 0;
 			this.labelDownloadStatus.Text = "Click the button \"Start download\" to begin";
+			this.toolTip.SetToolTip(this.labelDownloadStatus, "Download status");
 			this.labelDownloadStatus.Enter += new System.EventHandler(this.LabelDownlaodStatus_Enter);
 			this.labelDownloadStatus.Leave += new System.EventHandler(this.LabelDownlaodStatus_Leave);
 			this.labelDownloadStatus.MouseEnter += new System.EventHandler(this.LabelDownlaodStatus_MouseEnter);
@@ -155,6 +174,7 @@
 			// 
 			// labelDownloadPercent
 			// 
+			this.labelDownloadPercent.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelDownloadPercent.AutoSize = true;
 			this.labelDownloadPercent.Location = new System.Drawing.Point(499, 357);
 			this.labelDownloadPercent.Name = "labelDownloadPercent";
@@ -170,31 +190,60 @@
 			// 
 			// toolStripContainer
 			// 
+			this.toolStripContainer.AccessibleDescription = "Group the toolstrip container";
+			this.toolStripContainer.AccessibleName = "container grouping";
+			this.toolStripContainer.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
 			// 
 			// toolStripContainer.BottomToolStripPanel
 			// 
+			this.toolStripContainer.BottomToolStripPanel.AccessibleDescription = "lower part of the container";
+			this.toolStripContainer.BottomToolStripPanel.AccessibleName = "lower part of the container";
+			this.toolStripContainer.BottomToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.BottomToolStripPanel.Controls.Add(this.statusStrip);
 			// 
 			// toolStripContainer.ContentPanel
 			// 
+			this.toolStripContainer.ContentPanel.AccessibleDescription = "content panel of the container";
+			this.toolStripContainer.ContentPanel.AccessibleName = "content panel of the container";
+			this.toolStripContainer.ContentPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.ContentPanel.Controls.Add(this.tableLayoutPanel);
+			this.toolStripContainer.ContentPanel.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
 			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(554, 385);
 			this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+			// 
+			// toolStripContainer.LeftToolStripPanel
+			// 
+			this.toolStripContainer.LeftToolStripPanel.AccessibleDescription = "left part of the container";
+			this.toolStripContainer.LeftToolStripPanel.AccessibleName = "left part of the container";
+			this.toolStripContainer.LeftToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.Location = new System.Drawing.Point(0, 0);
 			this.toolStripContainer.Name = "toolStripContainer";
+			// 
+			// toolStripContainer.RightToolStripPanel
+			// 
+			this.toolStripContainer.RightToolStripPanel.AccessibleDescription = "right part of the container";
+			this.toolStripContainer.RightToolStripPanel.AccessibleName = "right part of the container";
+			this.toolStripContainer.RightToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.Size = new System.Drawing.Size(554, 432);
 			this.toolStripContainer.TabIndex = 6;
-			this.toolStripContainer.Text = "toolStripContainer1";
+			this.toolStripContainer.Text = "toolStripContainer";
 			// 
 			// toolStripContainer.TopToolStripPanel
 			// 
+			this.toolStripContainer.TopToolStripPanel.AccessibleDescription = "upper part of the container";
+			this.toolStripContainer.TopToolStripPanel.AccessibleName = "upper part of the container";
+			this.toolStripContainer.TopToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.TopToolStripPanel.Controls.Add(this.toolStrip);
 			// 
 			// statusStrip
 			// 
+			this.statusStrip.AccessibleDescription = "Status bar with some information";
+			this.statusStrip.AccessibleName = "Information status bar";
+			this.statusStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.StatusBar;
 			this.statusStrip.Dock = System.Windows.Forms.DockStyle.None;
 			this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
+            this.toolStripStatusLabelInfo,
+            this.toolStripStatusLabelDownloadAnimation});
 			this.statusStrip.Location = new System.Drawing.Point(0, 0);
 			this.statusStrip.Name = "statusStrip";
 			this.statusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
@@ -205,23 +254,11 @@
 			this.statusStrip.TabStop = true;
 			this.statusStrip.Text = "statusStrip";
 			// 
-			// toolStripStatusLabel
-			// 
-			this.toolStripStatusLabel.AccessibleDescription = "text with some information";
-			this.toolStripStatusLabel.AccessibleName = "information text";
-			this.toolStripStatusLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.toolStripStatusLabel.AutoToolTip = true;
-			this.toolStripStatusLabel.DoubleClickEnabled = true;
-			this.toolStripStatusLabel.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_white_16px_shadowless;
-			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-			this.toolStripStatusLabel.Size = new System.Drawing.Size(66, 17);
-			this.toolStripStatusLabel.Text = "info text";
-			this.toolStripStatusLabel.ToolTipText = "info text";
-			this.toolStripStatusLabel.MouseEnter += new System.EventHandler(this.ToolStripStatusLabel_MouseEnter);
-			this.toolStripStatusLabel.MouseLeave += new System.EventHandler(this.ToolStripStatusLabel_MouseLeave);
-			// 
 			// toolStrip
 			// 
+			this.toolStrip.AccessibleDescription = "Contents some download options";
+			this.toolStrip.AccessibleName = "Download bar";
+			this.toolStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.ToolBar;
 			this.toolStrip.Dock = System.Windows.Forms.DockStyle.None;
 			this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonStartDownload,
@@ -237,8 +274,87 @@
 			this.toolStrip.Stretch = true;
 			this.toolStrip.TabIndex = 0;
 			// 
+			// toolStripSeparatorDownload
+			// 
+			this.toolStripSeparatorDownload.AccessibleDescription = "Separator";
+			this.toolStripSeparatorDownload.AccessibleName = "Separator";
+			this.toolStripSeparatorDownload.AccessibleRole = System.Windows.Forms.AccessibleRole.Separator;
+			this.toolStripSeparatorDownload.Name = "toolStripSeparatorDownload";
+			this.toolStripSeparatorDownload.Size = new System.Drawing.Size(6, 25);
+			// 
+			// toolStripLabelHost
+			// 
+			this.toolStripLabelHost.AccessibleDescription = "Short description of the host";
+			this.toolStripLabelHost.AccessibleName = "Host description";
+			this.toolStripLabelHost.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.toolStripLabelHost.Name = "toolStripLabelHost";
+			this.toolStripLabelHost.Size = new System.Drawing.Size(35, 22);
+			this.toolStripLabelHost.Text = "&Host:";
+			this.toolStripLabelHost.ToolTipText = "Name of the host";
+			this.toolStripLabelHost.MouseEnter += new System.EventHandler(this.ToolStripLabelHost_MouseEnter);
+			this.toolStripLabelHost.MouseLeave += new System.EventHandler(this.ToolStripLabelHost_MouseLeave);
+			// 
+			// toolStripTextBoxHost
+			// 
+			this.toolStripTextBoxHost.AccessibleDescription = "Contents the name of the host";
+			this.toolStripTextBoxHost.AccessibleName = "Name of the host";
+			this.toolStripTextBoxHost.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.toolStripTextBoxHost.AutoToolTip = true;
+			this.toolStripTextBoxHost.BackColor = System.Drawing.SystemColors.Window;
+			this.toolStripTextBoxHost.Name = "toolStripTextBoxHost";
+			this.toolStripTextBoxHost.Size = new System.Drawing.Size(200, 25);
+			this.toolStripTextBoxHost.ToolTipText = "Name of the host";
+			this.toolStripTextBoxHost.Enter += new System.EventHandler(this.ToolStripTextBoxHost_Enter);
+			this.toolStripTextBoxHost.Leave += new System.EventHandler(this.ToolStripTextBoxHost_Leave);
+			this.toolStripTextBoxHost.MouseEnter += new System.EventHandler(this.ToolStripTextBoxHost_MouseEnter);
+			this.toolStripTextBoxHost.MouseLeave += new System.EventHandler(this.ToolStripTextBoxHost_MouseLeave);
+			// 
+			// backgroundWorker
+			// 
+			this.backgroundWorker.WorkerReportsProgress = true;
+			this.backgroundWorker.WorkerSupportsCancellation = true;
+			this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BackgroundWorker_DoWork);
+			// 
+			// timerDownloadAnimation
+			// 
+			this.timerDownloadAnimation.Interval = 250;
+			this.timerDownloadAnimation.Tick += new System.EventHandler(this.TimerDownloadAnimation_Tick);
+			// 
+			// toolStripStatusLabelInfo
+			// 
+			this.toolStripStatusLabelInfo.AccessibleDescription = "Text with some information";
+			this.toolStripStatusLabelInfo.AccessibleName = "Information text";
+			this.toolStripStatusLabelInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.toolStripStatusLabelInfo.AutoToolTip = true;
+			this.toolStripStatusLabelInfo.DoubleClickEnabled = true;
+			this.toolStripStatusLabelInfo.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_white_16px_shadowless;
+			this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
+			this.toolStripStatusLabelInfo.Size = new System.Drawing.Size(66, 17);
+			this.toolStripStatusLabelInfo.Text = "info text";
+			this.toolStripStatusLabelInfo.MouseEnter += new System.EventHandler(this.ToolStripStatusLabel_MouseEnter);
+			this.toolStripStatusLabelInfo.MouseLeave += new System.EventHandler(this.ToolStripStatusLabel_MouseLeave);
+			// 
+			// toolStripStatusLabelDownloadAnimation
+			// 
+			this.toolStripStatusLabelDownloadAnimation.AccessibleDescription = "Show an animation on download";
+			this.toolStripStatusLabelDownloadAnimation.AccessibleName = "Download animation";
+			this.toolStripStatusLabelDownloadAnimation.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.toolStripStatusLabelDownloadAnimation.AutoToolTip = true;
+			this.toolStripStatusLabelDownloadAnimation.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripStatusLabelDownloadAnimation.Image = global::Hipparcos_DB.Properties.Resources.fugue_drive_download_16px_shadowless;
+			this.toolStripStatusLabelDownloadAnimation.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.toolStripStatusLabelDownloadAnimation.Name = "toolStripStatusLabelDownloadAnimation";
+			this.toolStripStatusLabelDownloadAnimation.Size = new System.Drawing.Size(442, 17);
+			this.toolStripStatusLabelDownloadAnimation.Spring = true;
+			this.toolStripStatusLabelDownloadAnimation.Text = "Download animation";
+			this.toolStripStatusLabelDownloadAnimation.MouseEnter += new System.EventHandler(this.ToolStripStatusLabelDownloadAnimation_MouseEnter);
+			this.toolStripStatusLabelDownloadAnimation.MouseLeave += new System.EventHandler(this.ToolStripStatusLabelDownloadAnimation_MouseLeave);
+			// 
 			// toolStripButtonStartDownload
 			// 
+			this.toolStripButtonStartDownload.AccessibleDescription = "Start the download";
+			this.toolStripButtonStartDownload.AccessibleName = "Start download";
+			this.toolStripButtonStartDownload.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
 			this.toolStripButtonStartDownload.Image = global::Hipparcos_DB.Properties.Resources.fugue_drive_download_16px_shadowless;
 			this.toolStripButtonStartDownload.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonStartDownload.Name = "toolStripButtonStartDownload";
@@ -248,32 +364,11 @@
 			this.toolStripButtonStartDownload.MouseEnter += new System.EventHandler(this.ToolStripButtonStartDownload_MouseEnter);
 			this.toolStripButtonStartDownload.MouseLeave += new System.EventHandler(this.ToolStripButtonStartDownload_MouseLeave);
 			// 
-			// toolStripSeparatorDownload
-			// 
-			this.toolStripSeparatorDownload.Name = "toolStripSeparatorDownload";
-			this.toolStripSeparatorDownload.Size = new System.Drawing.Size(6, 25);
-			// 
-			// toolStripLabelHost
-			// 
-			this.toolStripLabelHost.Name = "toolStripLabelHost";
-			this.toolStripLabelHost.Size = new System.Drawing.Size(35, 22);
-			this.toolStripLabelHost.Text = "&Host:";
-			this.toolStripLabelHost.MouseEnter += new System.EventHandler(this.ToolStripLabelHost_MouseEnter);
-			this.toolStripLabelHost.MouseLeave += new System.EventHandler(this.ToolStripLabelHost_MouseLeave);
-			// 
-			// toolStripTextBoxHost
-			// 
-			this.toolStripTextBoxHost.AutoToolTip = true;
-			this.toolStripTextBoxHost.BackColor = System.Drawing.SystemColors.Window;
-			this.toolStripTextBoxHost.Name = "toolStripTextBoxHost";
-			this.toolStripTextBoxHost.Size = new System.Drawing.Size(200, 25);
-			this.toolStripTextBoxHost.Enter += new System.EventHandler(this.ToolStripTextBoxHost_Enter);
-			this.toolStripTextBoxHost.Leave += new System.EventHandler(this.ToolStripTextBoxHost_Leave);
-			this.toolStripTextBoxHost.MouseEnter += new System.EventHandler(this.ToolStripTextBoxHost_MouseEnter);
-			this.toolStripTextBoxHost.MouseLeave += new System.EventHandler(this.ToolStripTextBoxHost_MouseLeave);
-			// 
 			// toolStripButtonEditHost
 			// 
+			this.toolStripButtonEditHost.AccessibleDescription = "Edit the name of the host";
+			this.toolStripButtonEditHost.AccessibleName = "Edit host";
+			this.toolStripButtonEditHost.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
 			this.toolStripButtonEditHost.Image = global::Hipparcos_DB.Properties.Resources.fugue_pencil_16px_shadowless;
 			this.toolStripButtonEditHost.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonEditHost.Name = "toolStripButtonEditHost";
@@ -285,6 +380,9 @@
 			// 
 			// toolStripButtonRestoreHost
 			// 
+			this.toolStripButtonRestoreHost.AccessibleDescription = "Restore the name of the host";
+			this.toolStripButtonRestoreHost.AccessibleName = "Restore host";
+			this.toolStripButtonRestoreHost.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
 			this.toolStripButtonRestoreHost.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
 			this.toolStripButtonRestoreHost.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonRestoreHost.Name = "toolStripButtonRestoreHost";
@@ -292,16 +390,13 @@
 			this.toolStripButtonRestoreHost.Text = "&Restore host";
 			this.toolStripButtonRestoreHost.Click += new System.EventHandler(this.ToolStripButtonRestoreHost_Click);
 			this.toolStripButtonRestoreHost.MouseEnter += new System.EventHandler(this.ToolStripButtonRestoreHost_MouseEnter);
-			this.toolStripButtonRestoreHost.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ToolStripButtonRestoreHost_MouseMove);
-			// 
-			// backgroundWorker
-			// 
-			this.backgroundWorker.WorkerReportsProgress = true;
-			this.backgroundWorker.WorkerSupportsCancellation = true;
-			this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BackgroundWorker_DoWork);
+			this.toolStripButtonRestoreHost.MouseLeave += new System.EventHandler(this.ToolStripButtonRestoreHost_MouseLeave);
 			// 
 			// DownloaderForm
 			// 
+			this.AccessibleDescription = "Dialog to download all required catalog files";
+			this.AccessibleName = "Dowloader dialog";
+			this.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(554, 432);
@@ -311,7 +406,7 @@
 			this.MaximizeBox = false;
 			this.Name = "DownloaderForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "DownloaderForm";
+			this.Text = "Downloader";
 			this.Load += new System.EventHandler(this.DownloaderForm_Load);
 			this.tableLayoutPanel.ResumeLayout(false);
 			this.tableLayoutPanel.PerformLayout();
@@ -348,8 +443,10 @@
 		private System.Windows.Forms.ToolStripButton toolStripButtonEditHost;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparatorDownload;
 		private System.Windows.Forms.ToolStripButton toolStripButtonStartDownload;
-		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelInfo;
 		private System.Windows.Forms.ToolStripButton toolStripButtonRestoreHost;
 		private System.ComponentModel.BackgroundWorker backgroundWorker;
+		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelDownloadAnimation;
+		private System.Windows.Forms.Timer timerDownloadAnimation;
 	}
 }

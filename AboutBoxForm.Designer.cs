@@ -44,7 +44,7 @@
 			this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
 			this.okButton = new System.Windows.Forms.Button();
-			this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+			this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
 			this.logoPictureBox = new System.Windows.Forms.PictureBox();
 			this.statusStrip.SuspendLayout();
 			this.tableLayoutPanel.SuspendLayout();
@@ -169,12 +169,12 @@
 			// 
 			// statusStrip
 			// 
-			this.statusStrip.AccessibleDescription = "status bar with some information";
-			this.statusStrip.AccessibleName = "information status bar";
+			this.statusStrip.AccessibleDescription = "Status bar with some information";
+			this.statusStrip.AccessibleName = "Information status bar";
 			this.statusStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.StatusBar;
 			this.statusStrip.Dock = System.Windows.Forms.DockStyle.None;
 			this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
+            this.toolStripStatusLabelInfo});
 			this.statusStrip.Location = new System.Drawing.Point(0, 0);
 			this.statusStrip.Name = "statusStrip";
 			this.statusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
@@ -275,6 +275,7 @@
 			this.toolStripContainer.ContentPanel.AccessibleName = "content panel of the container";
 			this.toolStripContainer.ContentPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.ContentPanel.Controls.Add(this.tableLayoutPanel);
+			this.toolStripContainer.ContentPanel.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
 			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(324, 137);
 			this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
 			// 
@@ -293,7 +294,7 @@
 			this.toolStripContainer.RightToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.Size = new System.Drawing.Size(324, 159);
 			this.toolStripContainer.TabIndex = 3;
-			this.toolStripContainer.Text = "toolStripContainer1";
+			this.toolStripContainer.Text = "toolStripContainer";
 			// 
 			// toolStripContainer.TopToolStripPanel
 			// 
@@ -321,20 +322,19 @@
 			this.okButton.MouseEnter += new System.EventHandler(this.OkButton_MouseEnter);
 			this.okButton.MouseLeave += new System.EventHandler(this.OkButton_MouseLeave);
 			// 
-			// toolStripStatusLabel
+			// toolStripStatusLabelInfo
 			// 
-			this.toolStripStatusLabel.AccessibleDescription = "text with some information";
-			this.toolStripStatusLabel.AccessibleName = "information text";
-			this.toolStripStatusLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.toolStripStatusLabel.AutoToolTip = true;
-			this.toolStripStatusLabel.DoubleClickEnabled = true;
-			this.toolStripStatusLabel.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_white_16px_shadowless;
-			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-			this.toolStripStatusLabel.Size = new System.Drawing.Size(66, 17);
-			this.toolStripStatusLabel.Text = "info text";
-			this.toolStripStatusLabel.ToolTipText = "info text";
-			this.toolStripStatusLabel.MouseEnter += new System.EventHandler(this.ToolStripStatusLabel_MouseEnter);
-			this.toolStripStatusLabel.MouseLeave += new System.EventHandler(this.ToolStripStatusLabel_MouseLeave);
+			this.toolStripStatusLabelInfo.AccessibleDescription = "text with some information";
+			this.toolStripStatusLabelInfo.AccessibleName = "information text";
+			this.toolStripStatusLabelInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.toolStripStatusLabelInfo.AutoToolTip = true;
+			this.toolStripStatusLabelInfo.DoubleClickEnabled = true;
+			this.toolStripStatusLabelInfo.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_white_16px_shadowless;
+			this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
+			this.toolStripStatusLabelInfo.Size = new System.Drawing.Size(66, 17);
+			this.toolStripStatusLabelInfo.Text = "info text";
+			this.toolStripStatusLabelInfo.MouseEnter += new System.EventHandler(this.ToolStripStatusLabel_MouseEnter);
+			this.toolStripStatusLabelInfo.MouseLeave += new System.EventHandler(this.ToolStripStatusLabel_MouseLeave);
 			// 
 			// logoPictureBox
 			// 
@@ -387,7 +387,7 @@
 		private System.Windows.Forms.ToolTip toolTip;
 		private System.Windows.Forms.ToolStripPanel BottomToolStripPanel;
 		private System.Windows.Forms.StatusStrip statusStrip;
-		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelInfo;
 		private System.Windows.Forms.ToolStripPanel TopToolStripPanel;
 		private System.Windows.Forms.ToolStripPanel RightToolStripPanel;
 		private System.Windows.Forms.ToolStripPanel LeftToolStripPanel;

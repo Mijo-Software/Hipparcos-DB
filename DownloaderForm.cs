@@ -13,6 +13,8 @@ namespace Hipparcos_DB
 
 		private string[] hostFiles;
 
+		long ticks;
+
 		public void SetHostUrls(string[] files)
 		{
 			hostFiles = files ?? throw new ArgumentNullException(paramName: nameof(files), message: "The name of the host files are null.");
@@ -42,7 +44,6 @@ namespace Hipparcos_DB
 		{
 			return catalogDirectory;
 		}
-
 
 		private string RemoveFileExtension(string filename)
 		{
@@ -74,15 +75,10 @@ namespace Hipparcos_DB
 			}
 		}
 
-		public DownloaderForm()
-		{
-			InitializeComponent();
-		}
-
 		private void SetStatusbar(string text)
 		{
-			toolStripStatusLabel.Text = text;
-			toolStripStatusLabel.Visible = true;
+			toolStripStatusLabelInfo.Text = text;
+			toolStripStatusLabelInfo.Visible = true;
 		}
 
 		private void SetStatusbar(object sender, EventArgs e)
@@ -167,8 +163,8 @@ namespace Hipparcos_DB
 
 		private void ClearStatusbar()
 		{
-			toolStripStatusLabel.Text = string.Empty;
-			toolStripStatusLabel.Visible = false;
+			toolStripStatusLabelInfo.Text = string.Empty;
+			toolStripStatusLabelInfo.Visible = false;
 		}
 
 		/*
@@ -199,11 +195,16 @@ namespace Hipparcos_DB
 		}
 		*/
 
+		public DownloaderForm()
+		{
+			InitializeComponent();
+		}
+
 		private void DownloaderForm_Load(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 			toolStripButtonEditHost.Checked = toolStripTextBoxHost.Enabled = !toolStripTextBoxHost.Enabled;
-			toolStripButtonRestoreHost.Enabled = false;
+			toolStripButtonRestoreHost.Enabled = toolStripStatusLabelDownloadAnimation.Visible = false;
 			hostToRestore = host;
 		}
 
@@ -223,8 +224,12 @@ namespace Hipparcos_DB
 			}
 		}
 
+		#region Click event handlers
+
 		private void ToolStripButtonStartDownload_Click(object sender, EventArgs e)
 		{
+			toolStripStatusLabelDownloadAnimation.Visible = true;
+			timerDownloadAnimation.Enabled = true;
 			toolStripButtonStartDownload.Enabled = toolStripTextBoxHost.Enabled = toolStripButtonEditHost.Enabled = toolStripButtonRestoreHost.Enabled = false;
 			labelFilesDownload.Text = string.Empty;
 			if (!Directory.Exists(path: GetCatalogDirectory()))
@@ -266,6 +271,10 @@ namespace Hipparcos_DB
 		{
 			SetStatusbar(sender: sender, e: e);
 		}
+
+		#endregion
+
+		#region MouseClick event handlers
 
 		private void ToolStripLabelHost_MouseEnter(object sender, EventArgs e)
 		{
@@ -327,6 +336,15 @@ namespace Hipparcos_DB
 			SetStatusbar(sender: sender, e: e);
 		}
 
+		private void ToolStripStatusLabelDownloadAnimation_MouseEnter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
+		#endregion
+
+		#region Leave event handlers
+
 		private void ToolStripTextBoxHost_Leave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
@@ -351,6 +369,10 @@ namespace Hipparcos_DB
 		{
 			ClearStatusbar();
 		}
+
+		#endregion
+
+		#region MouseLeave event handlers
 
 		private void ToolStripLabelHost_MouseLeave(object sender, EventArgs e)
 		{
@@ -402,15 +424,22 @@ namespace Hipparcos_DB
 			ClearStatusbar();
 		}
 
+		private void ToolStripButtonRestoreHost_MouseLeave(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+		}
+
 		private void ToolStripStatusLabel_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
 
-		private void ToolStripButtonRestoreHost_MouseMove(object sender, MouseEventArgs e)
+		private void ToolStripStatusLabelDownloadAnimation_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
+
+		#endregion
 
 		private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
 		{
@@ -458,6 +487,7 @@ namespace Hipparcos_DB
 						textBox.AppendText(text: "ERROR!!! " + exception.Message + Environment.NewLine + Environment.NewLine);
 					}
 				}
+				toolStripStatusLabelDownloadAnimation.Visible = timerDownloadAnimation.Enabled = false;
 				if (downloadWasSuccessful)
 				{
 					MessageBox.Show(
@@ -475,6 +505,19 @@ namespace Hipparcos_DB
 						buttons: MessageBoxButtons.OK,
 						icon: MessageBoxIcon.Error);
 				}
+			}
+		}
+
+		private void TimerDownloadAnimation_Tick(object sender, EventArgs e)
+		{
+			ticks++;
+			if (ticks % 2 == 0)
+			{
+				toolStripStatusLabelDownloadAnimation.Image = Properties.Resources.fugue_arrow_270_16px_shadowless;
+			}
+			else
+			{
+				toolStripStatusLabelDownloadAnimation.Image = Properties.Resources.fugue_arrow_270_small_16px_shadowless;
 			}
 		}
 	}

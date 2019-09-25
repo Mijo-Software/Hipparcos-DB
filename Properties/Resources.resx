@@ -169,6 +169,15 @@
   <data name="fugue_control_stop_180_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>fugue_control-stop-180_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fugue_arrow_270_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_arrow-270_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_arrow_270_medium_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_arrow-270-medium_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fugue_arrow_270_small_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>fugue_arrow-270-small_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fugue_arrow_curve_180_left_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>fugue_arrow-curve-180-left_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

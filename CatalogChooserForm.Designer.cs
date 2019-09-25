@@ -31,69 +31,23 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CatalogChooserForm));
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-			this.statusStripText = new System.Windows.Forms.StatusStrip();
-			this.groupBoxChooseCatalog = new System.Windows.Forms.GroupBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.labelHipparcosCatalog = new System.Windows.Forms.Label();
-			this.labelTychoCatalog = new System.Windows.Forms.Label();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.buttonInfo = new System.Windows.Forms.Button();
-			this.buttonDownloadTychoCatalog = new System.Windows.Forms.Button();
-			this.buttonDownloadHipparcosCatalog = new System.Windows.Forms.Button();
 			this.buttonOpenTychoCatalog = new System.Windows.Forms.Button();
 			this.buttonOpenHipparcosCatalog = new System.Windows.Forms.Button();
-			this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.buttonExit = new System.Windows.Forms.Button();
+			this.statusStripText = new System.Windows.Forms.StatusStrip();
+			this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
+			this.groupBoxChooseCatalog = new System.Windows.Forms.GroupBox();
+			this.buttonDownloadTychoCatalog = new System.Windows.Forms.Button();
+			this.buttonDownloadHipparcosCatalog = new System.Windows.Forms.Button();
+			this.labelTychoCatalog = new System.Windows.Forms.Label();
+			this.labelHipparcosCatalog = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.statusStripText.SuspendLayout();
 			this.groupBoxChooseCatalog.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// statusStripText
-			// 
-			resources.ApplyResources(this.statusStripText, "statusStripText");
-			this.statusStripText.AccessibleRole = System.Windows.Forms.AccessibleRole.StatusBar;
-			this.statusStripText.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
-			this.statusStripText.Name = "statusStripText";
-			this.statusStripText.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
-			this.statusStripText.ShowItemToolTips = true;
-			this.statusStripText.SizingGrip = false;
-			// 
-			// groupBoxChooseCatalog
-			// 
-			resources.ApplyResources(this.groupBoxChooseCatalog, "groupBoxChooseCatalog");
-			this.groupBoxChooseCatalog.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-			this.groupBoxChooseCatalog.Controls.Add(this.buttonDownloadTychoCatalog);
-			this.groupBoxChooseCatalog.Controls.Add(this.buttonDownloadHipparcosCatalog);
-			this.groupBoxChooseCatalog.Controls.Add(this.labelTychoCatalog);
-			this.groupBoxChooseCatalog.Controls.Add(this.buttonOpenTychoCatalog);
-			this.groupBoxChooseCatalog.Controls.Add(this.buttonOpenHipparcosCatalog);
-			this.groupBoxChooseCatalog.Controls.Add(this.labelHipparcosCatalog);
-			this.groupBoxChooseCatalog.Name = "groupBoxChooseCatalog";
-			this.groupBoxChooseCatalog.TabStop = false;
-			// 
-			// label1
-			// 
-			resources.ApplyResources(this.label1, "label1");
-			this.label1.Name = "label1";
-			// 
-			// labelHipparcosCatalog
-			// 
-			resources.ApplyResources(this.labelHipparcosCatalog, "labelHipparcosCatalog");
-			this.labelHipparcosCatalog.Name = "labelHipparcosCatalog";
-			// 
-			// labelTychoCatalog
-			// 
-			resources.ApplyResources(this.labelTychoCatalog, "labelTychoCatalog");
-			this.labelTychoCatalog.Name = "labelTychoCatalog";
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Image = global::Hipparcos_DB.Properties.Resources.hipparcos1;
-			resources.ApplyResources(this.pictureBox1, "pictureBox1");
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.TabStop = false;
 			// 
 			// buttonInfo
 			// 
@@ -108,22 +62,6 @@
 			this.buttonInfo.Leave += new System.EventHandler(this.ButtonInfo_Leave);
 			this.buttonInfo.MouseEnter += new System.EventHandler(this.ButtonInfo_MouseEnter);
 			this.buttonInfo.MouseLeave += new System.EventHandler(this.ButtonInfo_MouseLeave);
-			// 
-			// buttonDownloadTychoCatalog
-			// 
-			this.buttonDownloadTychoCatalog.Image = global::Hipparcos_DB.Properties.Resources.fugue_drive_download_16px_shadowless;
-			resources.ApplyResources(this.buttonDownloadTychoCatalog, "buttonDownloadTychoCatalog");
-			this.buttonDownloadTychoCatalog.Name = "buttonDownloadTychoCatalog";
-			this.buttonDownloadTychoCatalog.UseVisualStyleBackColor = true;
-			this.buttonDownloadTychoCatalog.Click += new System.EventHandler(this.ButtonDownloadTychoCatalog_Click);
-			// 
-			// buttonDownloadHipparcosCatalog
-			// 
-			this.buttonDownloadHipparcosCatalog.Image = global::Hipparcos_DB.Properties.Resources.fugue_drive_download_16px_shadowless;
-			resources.ApplyResources(this.buttonDownloadHipparcosCatalog, "buttonDownloadHipparcosCatalog");
-			this.buttonDownloadHipparcosCatalog.Name = "buttonDownloadHipparcosCatalog";
-			this.buttonDownloadHipparcosCatalog.UseVisualStyleBackColor = true;
-			this.buttonDownloadHipparcosCatalog.Click += new System.EventHandler(this.ButtonDownloadHipparcosCatalog_Click);
 			// 
 			// buttonOpenTychoCatalog
 			// 
@@ -153,15 +91,6 @@
 			this.buttonOpenHipparcosCatalog.MouseEnter += new System.EventHandler(this.ButtonOpenHipparcosCatalog_MouseEnter);
 			this.buttonOpenHipparcosCatalog.MouseLeave += new System.EventHandler(this.ButtonOpenHipparcosCatalog_MouseLeave);
 			// 
-			// toolStripStatusLabel
-			// 
-			resources.ApplyResources(this.toolStripStatusLabel, "toolStripStatusLabel");
-			this.toolStripStatusLabel.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.toolStripStatusLabel.AutoToolTip = true;
-			this.toolStripStatusLabel.DoubleClickEnabled = true;
-			this.toolStripStatusLabel.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_white_16px_shadowless;
-			this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-			// 
 			// buttonExit
 			// 
 			resources.ApplyResources(this.buttonExit, "buttonExit");
@@ -177,6 +106,77 @@
 			this.buttonExit.Leave += new System.EventHandler(this.ButtonExit_Leave);
 			this.buttonExit.MouseEnter += new System.EventHandler(this.ButtonExit_MouseEnter);
 			this.buttonExit.MouseLeave += new System.EventHandler(this.ButtonExit_MouseLeave);
+			// 
+			// statusStripText
+			// 
+			resources.ApplyResources(this.statusStripText, "statusStripText");
+			this.statusStripText.AccessibleRole = System.Windows.Forms.AccessibleRole.StatusBar;
+			this.statusStripText.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabelInfo});
+			this.statusStripText.Name = "statusStripText";
+			this.statusStripText.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
+			this.statusStripText.ShowItemToolTips = true;
+			this.statusStripText.SizingGrip = false;
+			// 
+			// toolStripStatusLabelInfo
+			// 
+			resources.ApplyResources(this.toolStripStatusLabelInfo, "toolStripStatusLabelInfo");
+			this.toolStripStatusLabelInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.toolStripStatusLabelInfo.AutoToolTip = true;
+			this.toolStripStatusLabelInfo.DoubleClickEnabled = true;
+			this.toolStripStatusLabelInfo.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_white_16px_shadowless;
+			this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
+			// 
+			// groupBoxChooseCatalog
+			// 
+			resources.ApplyResources(this.groupBoxChooseCatalog, "groupBoxChooseCatalog");
+			this.groupBoxChooseCatalog.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			this.groupBoxChooseCatalog.Controls.Add(this.buttonDownloadTychoCatalog);
+			this.groupBoxChooseCatalog.Controls.Add(this.buttonDownloadHipparcosCatalog);
+			this.groupBoxChooseCatalog.Controls.Add(this.labelTychoCatalog);
+			this.groupBoxChooseCatalog.Controls.Add(this.buttonOpenTychoCatalog);
+			this.groupBoxChooseCatalog.Controls.Add(this.buttonOpenHipparcosCatalog);
+			this.groupBoxChooseCatalog.Controls.Add(this.labelHipparcosCatalog);
+			this.groupBoxChooseCatalog.Name = "groupBoxChooseCatalog";
+			this.groupBoxChooseCatalog.TabStop = false;
+			// 
+			// buttonDownloadTychoCatalog
+			// 
+			this.buttonDownloadTychoCatalog.Image = global::Hipparcos_DB.Properties.Resources.fugue_drive_download_16px_shadowless;
+			resources.ApplyResources(this.buttonDownloadTychoCatalog, "buttonDownloadTychoCatalog");
+			this.buttonDownloadTychoCatalog.Name = "buttonDownloadTychoCatalog";
+			this.buttonDownloadTychoCatalog.UseVisualStyleBackColor = true;
+			this.buttonDownloadTychoCatalog.Click += new System.EventHandler(this.ButtonDownloadTychoCatalog_Click);
+			// 
+			// buttonDownloadHipparcosCatalog
+			// 
+			this.buttonDownloadHipparcosCatalog.Image = global::Hipparcos_DB.Properties.Resources.fugue_drive_download_16px_shadowless;
+			resources.ApplyResources(this.buttonDownloadHipparcosCatalog, "buttonDownloadHipparcosCatalog");
+			this.buttonDownloadHipparcosCatalog.Name = "buttonDownloadHipparcosCatalog";
+			this.buttonDownloadHipparcosCatalog.UseVisualStyleBackColor = true;
+			this.buttonDownloadHipparcosCatalog.Click += new System.EventHandler(this.ButtonDownloadHipparcosCatalog_Click);
+			// 
+			// labelTychoCatalog
+			// 
+			resources.ApplyResources(this.labelTychoCatalog, "labelTychoCatalog");
+			this.labelTychoCatalog.Name = "labelTychoCatalog";
+			// 
+			// labelHipparcosCatalog
+			// 
+			resources.ApplyResources(this.labelHipparcosCatalog, "labelHipparcosCatalog");
+			this.labelHipparcosCatalog.Name = "labelHipparcosCatalog";
+			// 
+			// label1
+			// 
+			resources.ApplyResources(this.label1, "label1");
+			this.label1.Name = "label1";
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Image = global::Hipparcos_DB.Properties.Resources.hipparcos1;
+			resources.ApplyResources(this.pictureBox1, "pictureBox1");
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.TabStop = false;
 			// 
 			// CatalogChooserForm
 			// 
@@ -207,7 +207,7 @@
 		private System.Windows.Forms.Button buttonExit;
 		private System.Windows.Forms.ToolTip toolTip;
 		private System.Windows.Forms.StatusStrip statusStripText;
-		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelInfo;
 		private System.Windows.Forms.Button buttonOpenTychoCatalog;
 		private System.Windows.Forms.Button buttonOpenHipparcosCatalog;
 		private System.Windows.Forms.GroupBox groupBoxChooseCatalog;

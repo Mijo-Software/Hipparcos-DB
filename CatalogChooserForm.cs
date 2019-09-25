@@ -40,8 +40,8 @@ namespace Hipparcos_DB
 
 		private void SetStatusbar(string text)
 		{
-			toolStripStatusLabel.Text = text;
-			toolStripStatusLabel.Visible = true;
+			toolStripStatusLabelInfo.Text = text;
+			toolStripStatusLabelInfo.Visible = true;
 		}
 
 		private void SetStatusbar(object sender, EventArgs e)
@@ -126,8 +126,8 @@ namespace Hipparcos_DB
 
 		private void ClearStatusbar()
 		{
-			toolStripStatusLabel.Text = string.Empty;
-			toolStripStatusLabel.Visible = false;
+			toolStripStatusLabelInfo.Text = string.Empty;
+			toolStripStatusLabelInfo.Visible = false;
 		}
 
 		private void CatalogChooserForm_Load(object sender, EventArgs e)
@@ -145,16 +145,19 @@ namespace Hipparcos_DB
 
 		private void ButtonOpenHipparcosCatalog_Click(object sender, EventArgs e)
 		{
-			bool allFilesFound = false;
+			bool allFilesFound = true;
 			foreach (string file in filesHipparcosCatalog)
-			{				
-				if (File.Exists(path: "catalogs/i239/" + RemoveFileExtension(filename: file)))
+			{
+				if (allFilesFound)
 				{
-					allFilesFound = true;
-				}
-				else
-				{
-					allFilesFound = false;
+					if (File.Exists(path: "catalogs/i239/" + RemoveFileExtension(filename: file)))
+					{
+						allFilesFound = true;
+					}
+					else
+					{
+						allFilesFound = false;
+					}
 				}
 			}
 			if (allFilesFound)
@@ -164,7 +167,7 @@ namespace Hipparcos_DB
 			else
 			{
 				MessageBox.Show(
-					text: "Some files are missing. Please use the download button to download all file.",
+					text: "Some files are missing. Please use the download button to download all files.",
 					caption: "Missing files",
 					buttons: MessageBoxButtons.OK,
 					icon: MessageBoxIcon.Error);

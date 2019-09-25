@@ -19,8 +19,8 @@ namespace Hipparcos_DB
 
 		private void SetStatusbar(string text)
 		{
-			toolStripStatusLabel.Text = text;
-			toolStripStatusLabel.Visible = true;
+			toolStripStatusLabelInfo.Text = text;
+			toolStripStatusLabelInfo.Visible = true;
 		}
 
 		private void SetStatusbar(object sender, EventArgs e)
@@ -105,8 +105,8 @@ namespace Hipparcos_DB
 
 		private void ClearStatusbar()
 		{
-			toolStripStatusLabel.Text = string.Empty;
-			toolStripStatusLabel.Visible = false;
+			toolStripStatusLabelInfo.Text = string.Empty;
+			toolStripStatusLabelInfo.Visible = false;
 		}
 
 		private void AboutBoxForm_Load(object sender, EventArgs e)
