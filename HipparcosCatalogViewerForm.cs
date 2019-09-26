@@ -4717,7 +4717,7 @@ namespace Hipparcos_DB
 		{
 			CopyToClipboard(sender: sender, e: e);
 		}
-	
+
 		private void LabelReferenceFlagForAstrometryData_DoubleClick(object sender, EventArgs e)
 		{
 			CopyToClipboard(sender: sender, e: e);

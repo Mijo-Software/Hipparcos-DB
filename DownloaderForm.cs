@@ -215,7 +215,7 @@ namespace Hipparcos_DB
 			{
 				toolStripButtonEditHost.Image = Properties.Resources.fugue_tick_button_16px_shadowless;
 				toolStripButtonEditHost.Text = "&Apply";
-				toolStripButtonRestoreHost.Enabled = true;				
+				toolStripButtonRestoreHost.Enabled = true;
 			}
 			else
 			{

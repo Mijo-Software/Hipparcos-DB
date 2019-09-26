@@ -142,7 +142,7 @@ namespace Hipparcos_DB
 			*/
 			ClearStatusbar();
 		}
-				
+
 		#region Click event handlers
 
 		private void ButtonOpenTychoCatalog_Click(object sender, EventArgs e)

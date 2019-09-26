@@ -1,7 +1,54 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Hipparcos_DB.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DefaultHostName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://cdsarc.u-strasbg.fr/ftp/I/239/</Value>
+    </Setting>
+    <Setting Name="UserHostName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://cdsarc.u-strasbg.fr/ftp/I/239/</Value>
+    </Setting>
+    <Setting Name="DefaultHipparcosCatalogDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">catalog/i239/</Value>
+    </Setting>
+    <Setting Name="UserHipparcosCatalogDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">catalog/i239/</Value>
+    </Setting>
+    <Setting Name="DefaultTychoCatalogDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">catalog/i239/</Value>
+    </Setting>
+    <Setting Name="UserTychoCatalogDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">catalog/i239/</Value>
+    </Setting>
+    <Setting Name="UserEnableHoverEffect" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="UserCopyDataMethod" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="UserDataTableStyle" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="UserEnableQuickDownload" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="UserStartPosition" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DefaultStartPosition" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DefaultEnableQuickDownload" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DefaultEnableHoverEffect" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DefaultDataTableStyle" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DefaultCopyDataMethod" Type="System.Byte" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

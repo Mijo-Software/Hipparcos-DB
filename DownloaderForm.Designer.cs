@@ -298,8 +298,8 @@
 			// 
 			// toolStripTextBoxHost
 			// 
-			this.toolStripTextBoxHost.AccessibleDescription = "Contents the name of the host";
-			this.toolStripTextBoxHost.AccessibleName = "Name of the host";
+			this.toolStripTextBoxHost.AccessibleDescription = "Contents the url of the host";
+			this.toolStripTextBoxHost.AccessibleName = "Host url";
 			this.toolStripTextBoxHost.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
 			this.toolStripTextBoxHost.AutoToolTip = true;
 			this.toolStripTextBoxHost.BackColor = System.Drawing.SystemColors.Window;
