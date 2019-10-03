@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hipparcos_DB.Properties;
+using System;
 using System.ComponentModel;
 using System.IO;
 using System.IO.Compression;
@@ -9,7 +10,9 @@ namespace Hipparcos_DB
 {
 	public partial class DownloaderForm : Form
 	{
-		private string host, hostToRestore, catalogDirectory;
+		private readonly Settings settings = new Settings();
+
+		private string host, catalogDirectory;
 
 		private string[] hostFiles;
 
@@ -94,6 +97,10 @@ namespace Hipparcos_DB
 			else if (sender is RadioButton)
 			{
 				SetStatusbar(text: ((RadioButton)sender).AccessibleDescription);
+			}
+			else if (sender is CheckBox)
+			{
+				SetStatusbar(text: ((CheckBox)sender).AccessibleDescription);
 			}
 			else if (sender is DateTimePicker)
 			{
@@ -198,14 +205,23 @@ namespace Hipparcos_DB
 		public DownloaderForm()
 		{
 			InitializeComponent();
+			switch (settings.UserStartPosition)
+			{
+				case 0: StartPosition = FormStartPosition.CenterParent; break;
+				case 1: StartPosition = FormStartPosition.CenterScreen; break;
+				default: StartPosition = FormStartPosition.CenterParent; break;
+			}
+			toolStripButtonEditHost.Checked = toolStripTextBoxHost.Enabled = !toolStripTextBoxHost.Enabled;
+			toolStripButtonRestoreHost.Enabled = toolStripStatusLabelDownloadAnimation.Visible = toolStripButtonSaveLogging.Enabled = false;
 		}
 
 		private void DownloaderForm_Load(object sender, EventArgs e)
 		{
 			ClearStatusbar();
-			toolStripButtonEditHost.Checked = toolStripTextBoxHost.Enabled = !toolStripTextBoxHost.Enabled;
-			toolStripButtonRestoreHost.Enabled = toolStripStatusLabelDownloadAnimation.Visible = toolStripButtonSaveLogging.Enabled = false;
-			hostToRestore = host;
+			if (settings.UserEnableQuickDownload)
+			{
+				ToolStripButtonStartDownload_Click(sender: sender, e: e);
+			}
 		}
 
 		private void ToolStripButtonEditHost_Click(object sender, EventArgs e)
@@ -213,14 +229,16 @@ namespace Hipparcos_DB
 			toolStripButtonEditHost.Checked = toolStripTextBoxHost.Enabled = !toolStripTextBoxHost.Enabled;
 			if (toolStripButtonEditHost.Checked)
 			{
-				toolStripButtonEditHost.Image = Properties.Resources.fugue_tick_button_16px_shadowless;
+				toolStripButtonEditHost.Image = Resources.fugue_tick_button_16px_shadowless;
 				toolStripButtonEditHost.Text = "&Apply";
 				toolStripButtonRestoreHost.Enabled = true;
 			}
 			else
 			{
-				toolStripButtonEditHost.Image = Properties.Resources.fugue_pencil_16px_shadowless;
+				toolStripButtonEditHost.Image = Resources.fugue_pencil_16px_shadowless;
 				toolStripButtonEditHost.Text = "&Edit host";
+				settings.UserHostName = toolStripTextBoxHost.Text;
+				settings.Save();
 			}
 		}
 
@@ -243,7 +261,7 @@ namespace Hipparcos_DB
 
 		private void ToolStripButtonRestoreHost_Click(object sender, EventArgs e)
 		{
-			SetHost(host: hostToRestore);
+			SetHost(host: settings.DefaultHostName);
 			toolStripTextBoxHost.Text = GetHost();
 		}
 
@@ -535,12 +553,15 @@ namespace Hipparcos_DB
 				toolStripStatusLabelDownloadAnimation.Visible = timerDownloadAnimation.Enabled = false;
 				if (downloadWasSuccessful)
 				{
-					MessageBox.Show(
-						owner: this,
-						text: "All files were downloaded and decompressed.",
-						caption: "Successful",
-						buttons: MessageBoxButtons.OK,
-						icon: MessageBoxIcon.Information);
+					if (!settings.UserEnableQuickDownload)
+					{
+						MessageBox.Show(
+							owner: this,
+							text: "All files were downloaded and decompressed.",
+							caption: "Successful",
+							buttons: MessageBoxButtons.OK,
+							icon: MessageBoxIcon.Information);
+					}
 					Close();
 				}
 				else
@@ -561,11 +582,11 @@ namespace Hipparcos_DB
 			ticks++;
 			if (ticks % 2 == 0)
 			{
-				toolStripStatusLabelDownloadAnimation.Image = Properties.Resources.fugue_arrow_270_16px_shadowless;
+				toolStripStatusLabelDownloadAnimation.Image = Resources.fugue_arrow_270_16px_shadowless;
 			}
 			else
 			{
-				toolStripStatusLabelDownloadAnimation.Image = Properties.Resources.fugue_arrow_270_small_16px_shadowless;
+				toolStripStatusLabelDownloadAnimation.Image = Resources.fugue_arrow_270_small_16px_shadowless;
 			}
 		}
 	}

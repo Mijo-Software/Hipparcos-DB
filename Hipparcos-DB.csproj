@@ -171,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-full.ico" />
+    <None Include="Properties\fugue_clipboard_16px_shadowless.png" />
     <None Include="Properties\fugue_gear_16_shadowless.png" />
     <None Include="Properties\fugue_disk_16px_shadowless.png" />
     <None Include="Properties\fugue_arrow-270-small_16px_shadowless.png" />

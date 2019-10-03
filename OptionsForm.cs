@@ -6,11 +6,25 @@ namespace Hipparcos_DB
 {
 	public partial class OptionsForm : Form
 	{
-		private readonly Settings setting = new Settings();
+		private readonly Settings settings = new Settings();
 
 		public OptionsForm()
 		{
 			InitializeComponent();
+			checkBoxEnableHoverEffect.Checked = settings.UserEnableHoverEffect;
+			checkBoxEnableQuickDownload.Checked = settings.UserEnableQuickDownload;
+			checkBoxEnableDoubleClickCopy.Checked = settings.UserEnableCopyMethod;
+			comboBoxDataTableStyle.SelectedIndex = settings.UserDataTableStyle;
+			comboBoxStartPosition.SelectedIndex = settings.UserStartPosition;
+			textBoxHost.Text = settings.UserHostName;
+			textBoxHipparcosDirectory.Text = settings.UserHipparcosCatalogDirectory;
+			textBoxTychoDirectory.Text = settings.UserTychoCatalogDirectory;
+			switch (settings.UserStartPosition)
+			{
+				case 0: StartPosition = FormStartPosition.CenterParent; break;
+				case 1: StartPosition = FormStartPosition.CenterScreen; break;
+				default: StartPosition = FormStartPosition.CenterParent; break;
+			}
 		}
 
 		private void SetStatusbar(string text)
@@ -32,6 +46,10 @@ namespace Hipparcos_DB
 			else if (sender is RadioButton)
 			{
 				SetStatusbar(text: ((RadioButton)sender).AccessibleDescription);
+			}
+			else if (sender is CheckBox)
+			{
+				SetStatusbar(text: ((CheckBox)sender).AccessibleDescription);
 			}
 			else if (sender is DateTimePicker)
 			{
@@ -108,22 +126,9 @@ namespace Hipparcos_DB
 		private void OptionsForm_Load(object sender, EventArgs e)
 		{
 			ClearStatusbar();
-			checkBoxEnableHoverEffect.Checked = setting.UserEnableHoverEffect;
-			checkBoxEnableQuickDownload.Checked = setting.UserEnableQuickDownload;
-			labelHost.Enabled = textBoxHost.Enabled = buttonRestoreHost.Enabled = checkBoxEnableQuickDownload.Checked;
-			comboBoxCopyDataMethod.SelectedIndex = setting.UserCopyDataMethod;
-			comboBoxDataTableStyle.SelectedIndex = setting.UserDataTableStyle;
-			comboBoxStartPosition.SelectedIndex = setting.UserStartPosition;
-			textBoxHost.Text = setting.UserHostName;
-			textBoxHipparcosDirectory.Text = setting.UserHipparcosCatalogDirectory;
-			textBoxTychoDirectory.Text = setting.UserTychoCatalogDirectory;
-			switch (setting.UserStartPosition)
-			{
-				case 0: StartPosition = FormStartPosition.CenterScreen; break;
-				case 1: StartPosition = FormStartPosition.CenterParent; break;
-				default: StartPosition = FormStartPosition.CenterScreen; break;
-			}
 		}
+
+		#region Enter event handlers
 
 		private void ButtonApply_Enter(object sender, EventArgs e)
 		{
@@ -136,16 +141,6 @@ namespace Hipparcos_DB
 		}
 
 		private void CheckBoxEnableHoverEffect_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void LabelCopyDataMethod_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void ComboBoxCopyDataMethod_Enter(object sender, EventArgs e)
 		{
 			SetStatusbar(sender: sender, e: e);
 		}
@@ -225,6 +220,16 @@ namespace Hipparcos_DB
 			SetStatusbar(sender: sender, e: e);
 		}
 
+		private void CheckBoxEnableDoubleClickCopy_Enter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
+
+		#endregion
+
+		#region MouseEnter event handlers
+
 		private void ButtonApply_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(sender: sender, e: e);
@@ -236,11 +241,6 @@ namespace Hipparcos_DB
 		}
 
 		private void CheckBoxEnableHoverEffect_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void LabelCopyDataMethod_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(sender: sender, e: e);
 		}
@@ -330,6 +330,15 @@ namespace Hipparcos_DB
 			SetStatusbar(sender: sender, e: e);
 		}
 
+		private void CheckBoxEnableDoubleClickCopy_MouseEnter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
+		#endregion
+
+		#region Leave event handlers
+
 		private void ButtonApply_Leave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
@@ -341,16 +350,6 @@ namespace Hipparcos_DB
 		}
 
 		private void CheckBoxEnableHoverEffect_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void LabelCopyDataMethod_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ComboBoxCopyDataMethod_Leave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
@@ -440,17 +439,16 @@ namespace Hipparcos_DB
 			ClearStatusbar();
 		}
 
+		private void CheckBoxEnableDoubleClickCopy_Leave(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+		}
+		
+		#endregion
+
+		#region MouseLeave event handlers
+
 		private void CheckBoxEnableHoverEffect_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void LabelCopyDataMethod_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ComboBoxCopyDataMethod_MouseLeave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
@@ -535,49 +533,55 @@ namespace Hipparcos_DB
 			ClearStatusbar();
 		}
 
+		private void CheckBoxEnableDoubleClickCopy_MouseLeave(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+		}
+
+		#endregion
+
+		#region Click event handlers
+
 		private void ButtonApply_Click(object sender, EventArgs e)
 		{
-			setting.UserEnableHoverEffect = checkBoxEnableHoverEffect.Checked;
-			setting.UserCopyDataMethod = (byte)comboBoxCopyDataMethod.SelectedIndex;
-			setting.UserDataTableStyle = (byte)comboBoxDataTableStyle.SelectedIndex;
-			setting.UserEnableQuickDownload = checkBoxEnableQuickDownload.Checked;
-			setting.UserHostName = textBoxHost.Text;
-			setting.UserHipparcosCatalogDirectory = textBoxHipparcosDirectory.Text;
-			setting.UserTychoCatalogDirectory = textBoxTychoDirectory.Text;
-			setting.UserStartPosition = (byte)comboBoxStartPosition.SelectedIndex;
-			setting.Save();
+			settings.UserEnableHoverEffect = checkBoxEnableHoverEffect.Checked;
+			settings.UserEnableCopyMethod = checkBoxEnableDoubleClickCopy.Checked;
+			settings.UserDataTableStyle = (byte)comboBoxDataTableStyle.SelectedIndex;
+			settings.UserEnableQuickDownload = checkBoxEnableQuickDownload.Checked;
+			settings.UserHostName = textBoxHost.Text;
+			settings.UserHipparcosCatalogDirectory = textBoxHipparcosDirectory.Text;
+			settings.UserTychoCatalogDirectory = textBoxTychoDirectory.Text;
+			settings.UserStartPosition = (byte)comboBoxStartPosition.SelectedIndex;
+			settings.Save();
 		}
 
 		private void ButtonDefaultSettings_Click(object sender, EventArgs e)
 		{
-			checkBoxEnableHoverEffect.Checked = setting.DefaultEnableHoverEffect;
-			comboBoxStartPosition.SelectedIndex = setting.DefaultStartPosition;
-			comboBoxCopyDataMethod.SelectedIndex = setting.DefaultCopyDataMethod;
-			comboBoxDataTableStyle.SelectedIndex = setting.DefaultDataTableStyle;
-			checkBoxEnableQuickDownload.Checked = setting.DefaultEnableQuickDownload;
-			textBoxHost.Text = setting.DefaultHostName;
-			textBoxHipparcosDirectory.Text = setting.DefaultHipparcosCatalogDirectory;
-			textBoxTychoDirectory.Text = setting.DefaultTychoCatalogDirectory;
+			checkBoxEnableHoverEffect.Checked = settings.DefaultEnableHoverEffect;
+			comboBoxStartPosition.SelectedIndex = settings.DefaultStartPosition;
+			checkBoxEnableDoubleClickCopy.Checked = settings.DefaultEnableCopyMethod;
+			comboBoxDataTableStyle.SelectedIndex = settings.DefaultDataTableStyle;
+			checkBoxEnableQuickDownload.Checked = settings.DefaultEnableQuickDownload;
+			textBoxHost.Text = settings.DefaultHostName;
+			textBoxHipparcosDirectory.Text = settings.DefaultHipparcosCatalogDirectory;
+			textBoxTychoDirectory.Text = settings.DefaultTychoCatalogDirectory;
 		}
 
 		private void ButtonRestoreHost_Click(object sender, EventArgs e)
 		{
-			textBoxHost.Text = setting.DefaultHostName;
+			textBoxHost.Text = settings.DefaultHostName;
 		}
 
 		private void ButtonRestoreHipparcosDirectory_Click(object sender, EventArgs e)
 		{
-			textBoxHipparcosDirectory.Text = setting.DefaultHipparcosCatalogDirectory;
+			textBoxHipparcosDirectory.Text = settings.DefaultHipparcosCatalogDirectory;
 		}
 
 		private void ButtonRestoreTychoDirectory_Click(object sender, EventArgs e)
 		{
-			textBoxTychoDirectory.Text = setting.DefaultTychoCatalogDirectory;
+			textBoxTychoDirectory.Text = settings.DefaultTychoCatalogDirectory;
 		}
 
-		private void CheckBoxEnableQuickDownload_CheckedChanged(object sender, EventArgs e)
-		{
-			labelHost.Enabled = textBoxHost.Enabled = buttonRestoreHost.Enabled = checkBoxEnableQuickDownload.Checked;
-		}
+		#endregion
 	}
 }

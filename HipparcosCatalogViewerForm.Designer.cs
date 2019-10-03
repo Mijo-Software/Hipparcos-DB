@@ -32,6 +32,8 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HipparcosCatalogViewerForm));
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.labelIdentifierDesc = new System.Windows.Forms.Label();
+			this.contextMenuStripCopyData = new System.Windows.Forms.ContextMenuStrip(this.components);
+			this.toolStripMenuItemCopyData = new System.Windows.Forms.ToolStripMenuItem();
 			this.labelRightAscensionDesc = new System.Windows.Forms.Label();
 			this.labelDeclinationDesc = new System.Windows.Forms.Label();
 			this.labelMagnitudeJohnsonDesc = new System.Windows.Forms.Label();
@@ -204,6 +206,7 @@
 			this.labelIdentifierData = new System.Windows.Forms.Label();
 			this.labelColorIndexInCousinsSystemData = new System.Windows.Forms.Label();
 			this.labelCatalogData = new System.Windows.Forms.Label();
+			this.contextMenuStripCopyData.SuspendLayout();
 			this.toolStrip.SuspendLayout();
 			this.statusStrip.SuspendLayout();
 			this.menuStrip.SuspendLayout();
@@ -216,6 +219,7 @@
 			this.labelIdentifierDesc.AccessibleName = "Identifier (HIP number) description";
 			this.labelIdentifierDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelIdentifierDesc.AutoSize = true;
+			this.labelIdentifierDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelIdentifierDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelIdentifierDesc.Location = new System.Drawing.Point(3, 21);
 			this.labelIdentifierDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -225,10 +229,37 @@
 			this.labelIdentifierDesc.Text = "Identifier (HIP number)";
 			this.labelIdentifierDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelIdentifierDesc, "Identifier (HIP number)");
+			this.labelIdentifierDesc.DoubleClick += new System.EventHandler(this.LabelIdentifierDesc_DoubleClick);
 			this.labelIdentifierDesc.Enter += new System.EventHandler(this.LabelIdentifierDesc_Enter);
 			this.labelIdentifierDesc.Leave += new System.EventHandler(this.LabelIdentifierDesc_Leave);
 			this.labelIdentifierDesc.MouseEnter += new System.EventHandler(this.LabelIdentifierDesc_MouseEnter);
 			this.labelIdentifierDesc.MouseLeave += new System.EventHandler(this.LabelIdentifierDesc_MouseLeave);
+			// 
+			// contextMenuStripCopyData
+			// 
+			this.contextMenuStripCopyData.AccessibleDescription = "Click to copy the data into the clipboard";
+			this.contextMenuStripCopyData.AccessibleName = "Copy data";
+			this.contextMenuStripCopyData.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuPopup;
+			this.contextMenuStripCopyData.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemCopyData});
+			this.contextMenuStripCopyData.Name = "contextMenuStripCopyData";
+			this.contextMenuStripCopyData.Size = new System.Drawing.Size(217, 26);
+			this.contextMenuStripCopyData.TabStop = true;
+			this.contextMenuStripCopyData.Text = "Copy data method";
+			this.toolTip.SetToolTip(this.contextMenuStripCopyData, "Copy data method");
+			// 
+			// toolStripMenuItemCopyData
+			// 
+			this.toolStripMenuItemCopyData.AccessibleDescription = "Click to copy the data into the clipboard";
+			this.toolStripMenuItemCopyData.AccessibleName = "Copy data";
+			this.toolStripMenuItemCopyData.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuItem;
+			this.toolStripMenuItemCopyData.AutoToolTip = true;
+			this.toolStripMenuItemCopyData.Image = global::Hipparcos_DB.Properties.Resources.fugue_clipboard_16px_shadowless;
+			this.toolStripMenuItemCopyData.Name = "toolStripMenuItemCopyData";
+			this.toolStripMenuItemCopyData.ShortcutKeyDisplayString = "Shift+C";
+			this.toolStripMenuItemCopyData.Size = new System.Drawing.Size(216, 22);
+			this.toolStripMenuItemCopyData.Text = "&Copy to clipboard";
+			this.toolStripMenuItemCopyData.Click += new System.EventHandler(this.ToolStripMenuItemCopyData_Click);
 			// 
 			// labelRightAscensionDesc
 			// 
@@ -236,6 +267,7 @@
 			this.labelRightAscensionDesc.AccessibleName = "Right ascension in h m s, ICRS (J1991.25) description";
 			this.labelRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelRightAscensionDesc.AutoSize = true;
+			this.labelRightAscensionDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelRightAscensionDesc.Location = new System.Drawing.Point(3, 57);
 			this.labelRightAscensionDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -245,6 +277,7 @@
 			this.labelRightAscensionDesc.Text = "Right ascension in h m s, ICRS (J1991.25)";
 			this.labelRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelRightAscensionDesc, "Right ascension in h m s, ICRS (J1991.25)");
+			this.labelRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelRightAscensionDesc_DoubleClick);
 			this.labelRightAscensionDesc.Enter += new System.EventHandler(this.LabelRightAscensionDesc_Enter);
 			this.labelRightAscensionDesc.Leave += new System.EventHandler(this.LabelRightAscensionDesc_Leave);
 			this.labelRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelRightAscensionDesc_MouseEnter);
@@ -256,6 +289,7 @@
 			this.labelDeclinationDesc.AccessibleName = "Declination in deg \' \", ICRS (J1991.25) description";
 			this.labelDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelDeclinationDesc.AutoSize = true;
+			this.labelDeclinationDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelDeclinationDesc.Location = new System.Drawing.Point(3, 75);
 			this.labelDeclinationDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -265,6 +299,7 @@
 			this.labelDeclinationDesc.Text = "Declination in deg \' \", ICRS (J1991.25)";
 			this.labelDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelDeclinationDesc, "Declination in deg \' \", ICRS (J1991.25)");
+			this.labelDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelDeclinationDesc_DoubleClick);
 			this.labelDeclinationDesc.Enter += new System.EventHandler(this.LabelDeclinationDesc_Enter);
 			this.labelDeclinationDesc.Leave += new System.EventHandler(this.LabelDeclinationDesc_Leave);
 			this.labelDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelDeclinationDesc_MouseEnter);
@@ -276,6 +311,7 @@
 			this.labelMagnitudeJohnsonDesc.AccessibleName = "Magnitude in Johnson V description";
 			this.labelMagnitudeJohnsonDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMagnitudeJohnsonDesc.AutoSize = true;
+			this.labelMagnitudeJohnsonDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMagnitudeJohnsonDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMagnitudeJohnsonDesc.Location = new System.Drawing.Point(3, 93);
 			this.labelMagnitudeJohnsonDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -285,6 +321,7 @@
 			this.labelMagnitudeJohnsonDesc.Text = "Magnitude in Johnson V";
 			this.labelMagnitudeJohnsonDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMagnitudeJohnsonDesc, "Magnitude in Johnson V");
+			this.labelMagnitudeJohnsonDesc.DoubleClick += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_DoubleClick);
 			this.labelMagnitudeJohnsonDesc.Enter += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_Enter);
 			this.labelMagnitudeJohnsonDesc.Leave += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_Leave);
 			this.labelMagnitudeJohnsonDesc.MouseEnter += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_MouseEnter);
@@ -296,6 +333,7 @@
 			this.labelSourceOfMagnitudeDesc.AccessibleName = "Source of magnitude description";
 			this.labelSourceOfMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSourceOfMagnitudeDesc.AutoSize = true;
+			this.labelSourceOfMagnitudeDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelSourceOfMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSourceOfMagnitudeDesc.Location = new System.Drawing.Point(3, 129);
 			this.labelSourceOfMagnitudeDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -305,6 +343,7 @@
 			this.labelSourceOfMagnitudeDesc.Text = "Source of magnitude";
 			this.labelSourceOfMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSourceOfMagnitudeDesc, "Source of magnitude");
+			this.labelSourceOfMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_DoubleClick);
 			this.labelSourceOfMagnitudeDesc.Enter += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_Enter);
 			this.labelSourceOfMagnitudeDesc.Leave += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_Leave);
 			this.labelSourceOfMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_MouseEnter);
@@ -316,6 +355,7 @@
 			this.labelAlphaDesc.AccessibleName = "alpha, degrees (ICRS, Epoch=J1991.25) description";
 			this.labelAlphaDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelAlphaDesc.AutoSize = true;
+			this.labelAlphaDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelAlphaDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelAlphaDesc.Location = new System.Drawing.Point(3, 147);
 			this.labelAlphaDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -325,6 +365,7 @@
 			this.labelAlphaDesc.Text = "alpha, degrees (ICRS, Epoch=J1991.25)";
 			this.labelAlphaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelAlphaDesc, "alpha, degrees (ICRS, Epoch=J1991.25)");
+			this.labelAlphaDesc.DoubleClick += new System.EventHandler(this.LabelAlphaDesc_DoubleClick);
 			this.labelAlphaDesc.Enter += new System.EventHandler(this.LabelAlphaDesc_Enter);
 			this.labelAlphaDesc.Leave += new System.EventHandler(this.LabelAlphaDesc_Leave);
 			this.labelAlphaDesc.MouseEnter += new System.EventHandler(this.LabelAlphaDesc_MouseEnter);
@@ -336,6 +377,7 @@
 			this.labelDeltaDesc.AccessibleName = "delta, degrees (ICRS, Epoch=J1991.25) description";
 			this.labelDeltaDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelDeltaDesc.AutoSize = true;
+			this.labelDeltaDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelDeltaDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelDeltaDesc.Location = new System.Drawing.Point(3, 165);
 			this.labelDeltaDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -345,6 +387,7 @@
 			this.labelDeltaDesc.Text = "delta, degrees (ICRS, Epoch=J1991.25)";
 			this.labelDeltaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelDeltaDesc, "delta, degrees (ICRS, Epoch=J1991.25)");
+			this.labelDeltaDesc.DoubleClick += new System.EventHandler(this.LabelDeltaDesc_DoubleClick);
 			this.labelDeltaDesc.Enter += new System.EventHandler(this.LabelDeltaDesc_Enter);
 			this.labelDeltaDesc.Leave += new System.EventHandler(this.LabelDeltaDesc_Leave);
 			this.labelDeltaDesc.MouseEnter += new System.EventHandler(this.LabelDeltaDesc_MouseEnter);
@@ -356,6 +399,7 @@
 			this.labelTrigonomicParallaxDesc.AccessibleName = "Trigonometric parallax description";
 			this.labelTrigonomicParallaxDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelTrigonomicParallaxDesc.AutoSize = true;
+			this.labelTrigonomicParallaxDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelTrigonomicParallaxDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelTrigonomicParallaxDesc.Location = new System.Drawing.Point(3, 201);
 			this.labelTrigonomicParallaxDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -365,6 +409,7 @@
 			this.labelTrigonomicParallaxDesc.Text = "Trigonometric parallax";
 			this.labelTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelTrigonomicParallaxDesc, "Trigonometric parallax");
+			this.labelTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.LabelTrigonomicParallaxDesc_DoubleClick);
 			this.labelTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelTrigonomicParallaxDesc_Enter);
 			this.labelTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelTrigonomicParallaxDesc_Leave);
 			this.labelTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelTrigonomicParallaxDesc_MouseEnter);
@@ -376,6 +421,7 @@
 			this.labelProperMotionAlphaDesc.AccessibleName = "Proper motion mu_alpha.cos(delta), ICRS description";
 			this.labelProperMotionAlphaDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelProperMotionAlphaDesc.AutoSize = true;
+			this.labelProperMotionAlphaDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelProperMotionAlphaDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelProperMotionAlphaDesc.Location = new System.Drawing.Point(3, 219);
 			this.labelProperMotionAlphaDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -385,6 +431,7 @@
 			this.labelProperMotionAlphaDesc.Text = "Proper motion mu_alpha.cos(delta), ICRS";
 			this.labelProperMotionAlphaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelProperMotionAlphaDesc, "Proper motion mu_alpha.cos(delta), ICRS");
+			this.labelProperMotionAlphaDesc.DoubleClick += new System.EventHandler(this.LabelProperMotionAlphaDesc_DoubleClick);
 			this.labelProperMotionAlphaDesc.Enter += new System.EventHandler(this.LabelProperMotionAlphaDesc_Enter);
 			this.labelProperMotionAlphaDesc.Leave += new System.EventHandler(this.LabelProperMotionAlphaDesc_Leave);
 			this.labelProperMotionAlphaDesc.MouseEnter += new System.EventHandler(this.LabelProperMotionAlphaDesc_MouseEnter);
@@ -396,6 +443,7 @@
 			this.labelProperMotionDeltaDesc.AccessibleName = "Proper motion mu_delta, ICRS description";
 			this.labelProperMotionDeltaDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelProperMotionDeltaDesc.AutoSize = true;
+			this.labelProperMotionDeltaDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelProperMotionDeltaDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelProperMotionDeltaDesc.Location = new System.Drawing.Point(3, 237);
 			this.labelProperMotionDeltaDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -405,6 +453,7 @@
 			this.labelProperMotionDeltaDesc.Text = "Proper motion mu_delta, ICRS";
 			this.labelProperMotionDeltaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelProperMotionDeltaDesc, "Proper motion mu_delta, ICRS");
+			this.labelProperMotionDeltaDesc.DoubleClick += new System.EventHandler(this.LabelProperMotionDeltaDesc_DoubleClick);
 			this.labelProperMotionDeltaDesc.Enter += new System.EventHandler(this.LabelProperMotionDeltaDesc_Enter);
 			this.labelProperMotionDeltaDesc.Leave += new System.EventHandler(this.LabelProperMotionDeltaDesc_Leave);
 			this.labelProperMotionDeltaDesc.MouseEnter += new System.EventHandler(this.LabelProperMotionDeltaDesc_MouseEnter);
@@ -416,6 +465,7 @@
 			this.labelStandardErrorRightAscensionDesc.AccessibleName = "Standard error in RA*cos(DEdeg) description";
 			this.labelStandardErrorRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorRightAscensionDesc.AutoSize = true;
+			this.labelStandardErrorRightAscensionDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorRightAscensionDesc.Location = new System.Drawing.Point(3, 255);
 			this.labelStandardErrorRightAscensionDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -425,6 +475,7 @@
 			this.labelStandardErrorRightAscensionDesc.Text = "Standard error in RA*cos(DEdeg)";
 			this.labelStandardErrorRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorRightAscensionDesc, "Standard error in RA*cos(DEdeg)");
+			this.labelStandardErrorRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_DoubleClick);
 			this.labelStandardErrorRightAscensionDesc.Enter += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_Enter);
 			this.labelStandardErrorRightAscensionDesc.Leave += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_Leave);
 			this.labelStandardErrorRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_MouseEnter);
@@ -436,6 +487,7 @@
 			this.labelStandardErrorDeclinationDesc.AccessibleName = "Standard error in DE description";
 			this.labelStandardErrorDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorDeclinationDesc.AutoSize = true;
+			this.labelStandardErrorDeclinationDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorDeclinationDesc.Location = new System.Drawing.Point(3, 273);
 			this.labelStandardErrorDeclinationDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -445,6 +497,7 @@
 			this.labelStandardErrorDeclinationDesc.Text = "Standard error in DE";
 			this.labelStandardErrorDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorDeclinationDesc, "Standard error in DE");
+			this.labelStandardErrorDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_DoubleClick);
 			this.labelStandardErrorDeclinationDesc.Enter += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_Enter);
 			this.labelStandardErrorDeclinationDesc.Leave += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_Leave);
 			this.labelStandardErrorDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_MouseEnter);
@@ -456,6 +509,7 @@
 			this.labelStandardErrorTrigonomicParallaxDesc.AccessibleName = "Standard error in Plx description";
 			this.labelStandardErrorTrigonomicParallaxDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorTrigonomicParallaxDesc.AutoSize = true;
+			this.labelStandardErrorTrigonomicParallaxDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorTrigonomicParallaxDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorTrigonomicParallaxDesc.Location = new System.Drawing.Point(3, 291);
 			this.labelStandardErrorTrigonomicParallaxDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -465,6 +519,7 @@
 			this.labelStandardErrorTrigonomicParallaxDesc.Text = "Standard error in Plx";
 			this.labelStandardErrorTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorTrigonomicParallaxDesc, "Standard error in Plx");
+			this.labelStandardErrorTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_DoubleClick);
 			this.labelStandardErrorTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_Enter);
 			this.labelStandardErrorTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_Leave);
 			this.labelStandardErrorTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_MouseEnter);
@@ -476,6 +531,7 @@
 			this.labelStandardErrorProperMotionDeclinationDesc.AccessibleName = "Standard error in pmDE description";
 			this.labelStandardErrorProperMotionDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorProperMotionDeclinationDesc.AutoSize = true;
+			this.labelStandardErrorProperMotionDeclinationDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorProperMotionDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorProperMotionDeclinationDesc.Location = new System.Drawing.Point(3, 327);
 			this.labelStandardErrorProperMotionDeclinationDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -485,6 +541,7 @@
 			this.labelStandardErrorProperMotionDeclinationDesc.Text = "Standard error in pmDE";
 			this.labelStandardErrorProperMotionDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorProperMotionDeclinationDesc, "Standard error in pmDE");
+			this.labelStandardErrorProperMotionDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_DoubleClick);
 			this.labelStandardErrorProperMotionDeclinationDesc.Enter += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_Enter);
 			this.labelStandardErrorProperMotionDeclinationDesc.Leave += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_Leave);
 			this.labelStandardErrorProperMotionDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_MouseEnter);
@@ -496,6 +553,7 @@
 			this.labelStandardErrorProperMotionRightAscensionDesc.AccessibleName = "Standard error in pmRA description";
 			this.labelStandardErrorProperMotionRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorProperMotionRightAscensionDesc.AutoSize = true;
+			this.labelStandardErrorProperMotionRightAscensionDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorProperMotionRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorProperMotionRightAscensionDesc.Location = new System.Drawing.Point(3, 309);
 			this.labelStandardErrorProperMotionRightAscensionDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -505,6 +563,7 @@
 			this.labelStandardErrorProperMotionRightAscensionDesc.Text = "Standard error in pmRA";
 			this.labelStandardErrorProperMotionRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorProperMotionRightAscensionDesc, "Standard error in pmRA");
+			this.labelStandardErrorProperMotionRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_DoubleClick);
 			this.labelStandardErrorProperMotionRightAscensionDesc.Enter += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_Enter);
 			this.labelStandardErrorProperMotionRightAscensionDesc.Leave += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_Leave);
 			this.labelStandardErrorProperMotionRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_MouseEnter);
@@ -516,6 +575,7 @@
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.AccessibleName = "Correlation, pmRA/RA*cos(delta) description";
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Location = new System.Drawing.Point(3, 399);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -525,6 +585,7 @@
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Text = "Correlation, pmRA/RA*cos(delta)";
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc, "Correlation, pmRA/RA*cos(delta)");
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_DoubleClick);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Enter);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Leave);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseEnter);
@@ -536,6 +597,7 @@
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.AccessibleName = "Correlation, Plx/DE description";
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.AutoSize = true;
+			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Location = new System.Drawing.Point(3, 381);
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -545,6 +607,7 @@
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Text = "Correlation, Plx/DE";
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationTrigonomicParallaxByDeclinationDesc, "Correlation, Plx/DE");
+			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_DoubleClick);
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Enter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_Enter);
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Leave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_Leave);
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseEnter);
@@ -556,6 +619,7 @@
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.AccessibleName = "Correlation, Plx/RA*cos(delta) description";
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.AutoSize = true;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Location = new System.Drawing.Point(3, 363);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -565,6 +629,7 @@
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Text = "Correlation, Plx/RA*cos(delta)";
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationTrigonomicParallaxByRightAscensionDesc, "Correlation, Plx/RA*cos(delta)");
+			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_DoubleClick);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Enter);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Leave);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseEnter);
@@ -576,6 +641,7 @@
 			this.labelCorrelationDeclinationByRightAscensionDesc.AccessibleName = "Correlation, DE/RA*cos(delta) description";
 			this.labelCorrelationDeclinationByRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationDeclinationByRightAscensionDesc.AutoSize = true;
+			this.labelCorrelationDeclinationByRightAscensionDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationDeclinationByRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationDeclinationByRightAscensionDesc.Location = new System.Drawing.Point(3, 345);
 			this.labelCorrelationDeclinationByRightAscensionDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -585,6 +651,7 @@
 			this.labelCorrelationDeclinationByRightAscensionDesc.Text = "Correlation, DE/RA*cos(delta)";
 			this.labelCorrelationDeclinationByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationDeclinationByRightAscensionDesc, "Correlation, DE/RA*cos(delta)");
+			this.labelCorrelationDeclinationByRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_DoubleClick);
 			this.labelCorrelationDeclinationByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_Enter);
 			this.labelCorrelationDeclinationByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_Leave);
 			this.labelCorrelationDeclinationByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_MouseEnter);
@@ -596,6 +663,7 @@
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.AccessibleName = "Correlation, pmDE/RA*cos(delta) description";
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Location = new System.Drawing.Point(3, 453);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -605,6 +673,7 @@
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Text = "Correlation, pmDE/RA*cos(delta)";
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByRightAscensionDesc, "Correlation, pmDE/RA*cos(delta)");
+			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Enter);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Leave);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseEnter);
@@ -616,6 +685,7 @@
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.AccessibleName = "Correlation, pmRA/Plx description";
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Location = new System.Drawing.Point(3, 435);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -625,6 +695,7 @@
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Text = "Correlation, pmRA/Plx";
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, "Correlation, pmRA/Plx");
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_DoubleClick);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Enter);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Leave);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseEnter);
@@ -636,6 +707,7 @@
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.AccessibleName = "Correlation, pmRA/DE description";
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Location = new System.Drawing.Point(3, 417);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -645,6 +717,7 @@
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Text = "Correlation, pmRA/DE";
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByDeclinationDesc, "Correlation, pmRA/DE");
+			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_DoubleClick);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Enter);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Leave);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseEnter);
@@ -656,6 +729,7 @@
 			this.labelGoodnessOfFitParameterDesc.AccessibleName = "Goodness-of-fit parameter description";
 			this.labelGoodnessOfFitParameterDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelGoodnessOfFitParameterDesc.AutoSize = true;
+			this.labelGoodnessOfFitParameterDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelGoodnessOfFitParameterDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelGoodnessOfFitParameterDesc.Location = new System.Drawing.Point(3, 543);
 			this.labelGoodnessOfFitParameterDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -665,6 +739,7 @@
 			this.labelGoodnessOfFitParameterDesc.Text = "Goodness-of-fit parameter";
 			this.labelGoodnessOfFitParameterDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelGoodnessOfFitParameterDesc, "Goodness-of-fit parameter");
+			this.labelGoodnessOfFitParameterDesc.DoubleClick += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_DoubleClick);
 			this.labelGoodnessOfFitParameterDesc.Enter += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_Enter);
 			this.labelGoodnessOfFitParameterDesc.Leave += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_Leave);
 			this.labelGoodnessOfFitParameterDesc.MouseEnter += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_MouseEnter);
@@ -676,6 +751,7 @@
 			this.labelPercentageOfRejectedDataDesc.AccessibleName = "Percentage of rejected data description";
 			this.labelPercentageOfRejectedDataDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelPercentageOfRejectedDataDesc.AutoSize = true;
+			this.labelPercentageOfRejectedDataDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelPercentageOfRejectedDataDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelPercentageOfRejectedDataDesc.Location = new System.Drawing.Point(3, 525);
 			this.labelPercentageOfRejectedDataDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -685,6 +761,7 @@
 			this.labelPercentageOfRejectedDataDesc.Text = "Percentage of rejected data";
 			this.labelPercentageOfRejectedDataDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelPercentageOfRejectedDataDesc, "Percentage of rejected data");
+			this.labelPercentageOfRejectedDataDesc.DoubleClick += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_DoubleClick);
 			this.labelPercentageOfRejectedDataDesc.Enter += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_Enter);
 			this.labelPercentageOfRejectedDataDesc.Leave += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_Leave);
 			this.labelPercentageOfRejectedDataDesc.MouseEnter += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_MouseEnter);
@@ -696,6 +773,7 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.AccessibleName = "Correlation, pmDE/Plx description";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Location = new System.Drawing.Point(3, 489);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -705,6 +783,7 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Text = "Correlation, pmDE/Plx";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, "Correlation, pmDE/Plx");
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Enter);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Leave);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseEnter);
@@ -716,6 +795,7 @@
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.AccessibleName = "Correlation, pmDE/DE description";
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Location = new System.Drawing.Point(3, 471);
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -725,6 +805,7 @@
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Text = "Correlation, pmDE/DE";
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByDeclinationDesc, "Correlation, pmDE/DE");
+			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_Enter);
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_Leave);
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseEnter);
@@ -736,6 +817,7 @@
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.AccessibleName = "Correlation, pmDE/pmRA description";
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Location = new System.Drawing.Point(3, 507);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -745,6 +827,7 @@
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Text = "Correlation, pmDE/pmRA";
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, "Correlation, pmDE/pmRA");
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Enter);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Leave);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseEnter);
@@ -756,6 +839,7 @@
 			this.labelStandardErrorMeanBtMagnitudeDesc.AccessibleName = "Standard error on BTmag description";
 			this.labelStandardErrorMeanBtMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorMeanBtMagnitudeDesc.AutoSize = true;
+			this.labelStandardErrorMeanBtMagnitudeDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorMeanBtMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorMeanBtMagnitudeDesc.Location = new System.Drawing.Point(3, 579);
 			this.labelStandardErrorMeanBtMagnitudeDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -765,6 +849,7 @@
 			this.labelStandardErrorMeanBtMagnitudeDesc.Text = "Standard error on BTmag";
 			this.labelStandardErrorMeanBtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorMeanBtMagnitudeDesc, "Standard error on BTmag");
+			this.labelStandardErrorMeanBtMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_DoubleClick);
 			this.labelStandardErrorMeanBtMagnitudeDesc.Enter += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_Enter);
 			this.labelStandardErrorMeanBtMagnitudeDesc.Leave += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_Leave);
 			this.labelStandardErrorMeanBtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_MouseEnter);
@@ -776,6 +861,7 @@
 			this.labelMeanBtMagnitudeDesc.AccessibleName = "Mean BT magnitude description";
 			this.labelMeanBtMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMeanBtMagnitudeDesc.AutoSize = true;
+			this.labelMeanBtMagnitudeDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMeanBtMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMeanBtMagnitudeDesc.Location = new System.Drawing.Point(3, 561);
 			this.labelMeanBtMagnitudeDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -785,6 +871,7 @@
 			this.labelMeanBtMagnitudeDesc.Text = "Mean BT magnitude";
 			this.labelMeanBtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMeanBtMagnitudeDesc, "Mean BT magnitude");
+			this.labelMeanBtMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_DoubleClick);
 			this.labelMeanBtMagnitudeDesc.Enter += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_Enter);
 			this.labelMeanBtMagnitudeDesc.Leave += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_Leave);
 			this.labelMeanBtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_MouseEnter);
@@ -796,6 +883,7 @@
 			this.labelStandardErrorViDesc.AccessibleName = "Standard error on V-I description";
 			this.labelStandardErrorViDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorViDesc.AutoSize = true;
+			this.labelStandardErrorViDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorViDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorViDesc.Location = new System.Drawing.Point(423, 21);
 			this.labelStandardErrorViDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -805,6 +893,7 @@
 			this.labelStandardErrorViDesc.Text = "Standard error on V-I";
 			this.labelStandardErrorViDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorViDesc, "Standard error on V-I");
+			this.labelStandardErrorViDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorViDesc_DoubleClick);
 			this.labelStandardErrorViDesc.Enter += new System.EventHandler(this.LabelStandardErrorViDesc_Enter);
 			this.labelStandardErrorViDesc.Leave += new System.EventHandler(this.LabelStandardErrorViDesc_Leave);
 			this.labelStandardErrorViDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorViDesc_MouseEnter);
@@ -816,6 +905,7 @@
 			this.labelMeanVtMagnitudeDesc.AccessibleName = "Mean VT magnitude description";
 			this.labelMeanVtMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMeanVtMagnitudeDesc.AutoSize = true;
+			this.labelMeanVtMagnitudeDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMeanVtMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMeanVtMagnitudeDesc.Location = new System.Drawing.Point(3, 597);
 			this.labelMeanVtMagnitudeDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -825,6 +915,7 @@
 			this.labelMeanVtMagnitudeDesc.Text = "Mean VT magnitude";
 			this.labelMeanVtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMeanVtMagnitudeDesc, "Mean VT magnitude");
+			this.labelMeanVtMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_DoubleClick);
 			this.labelMeanVtMagnitudeDesc.Enter += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_Enter);
 			this.labelMeanVtMagnitudeDesc.Leave += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_Leave);
 			this.labelMeanVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_MouseEnter);
@@ -836,6 +927,7 @@
 			this.labelColorIndexInCousinsSystemDesc.AccessibleName = "Color index in Cousins\' system description";
 			this.labelColorIndexInCousinsSystemDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelColorIndexInCousinsSystemDesc.AutoSize = true;
+			this.labelColorIndexInCousinsSystemDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelColorIndexInCousinsSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelColorIndexInCousinsSystemDesc.Location = new System.Drawing.Point(423, 3);
 			this.labelColorIndexInCousinsSystemDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -845,6 +937,7 @@
 			this.labelColorIndexInCousinsSystemDesc.Text = "Color index in Cousins\' system";
 			this.labelColorIndexInCousinsSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelColorIndexInCousinsSystemDesc, "Color index in Cousins\' system");
+			this.labelColorIndexInCousinsSystemDesc.DoubleClick += new System.EventHandler(this.LabelColorIndexInCousinsSystemDesc_DoubleClick);
 			this.labelColorIndexInCousinsSystemDesc.Enter += new System.EventHandler(this.LabelColorIndexInCousinsSystemDesc_Enter);
 			this.labelColorIndexInCousinsSystemDesc.Leave += new System.EventHandler(this.LabelColorIndexInCousinsSystemDesc_Leave);
 			this.labelColorIndexInCousinsSystemDesc.MouseEnter += new System.EventHandler(this.LabelColorIndexInCousinsSystemDesc_MouseEnter);
@@ -856,6 +949,7 @@
 			this.labelSourceOfBvColorDesc.AccessibleName = "Source of B-V from Ground or Tycho description";
 			this.labelSourceOfBvColorDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSourceOfBvColorDesc.AutoSize = true;
+			this.labelSourceOfBvColorDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelSourceOfBvColorDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSourceOfBvColorDesc.Location = new System.Drawing.Point(3, 687);
 			this.labelSourceOfBvColorDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -865,6 +959,7 @@
 			this.labelSourceOfBvColorDesc.Text = "Source of B-V from Ground or Tycho";
 			this.labelSourceOfBvColorDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSourceOfBvColorDesc, "Source of B-V from Ground or Tycho");
+			this.labelSourceOfBvColorDesc.DoubleClick += new System.EventHandler(this.LabelSourceOfBvColorDesc_DoubleClick);
 			this.labelSourceOfBvColorDesc.Enter += new System.EventHandler(this.LabelSourceOfBvColorDesc_Enter);
 			this.labelSourceOfBvColorDesc.Leave += new System.EventHandler(this.LabelSourceOfBvColorDesc_Leave);
 			this.labelSourceOfBvColorDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfBvColorDesc_MouseEnter);
@@ -876,6 +971,7 @@
 			this.labelStandardErrorJohnsonBvColorDesc.AccessibleName = "Standard error on B-V description";
 			this.labelStandardErrorJohnsonBvColorDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorJohnsonBvColorDesc.AutoSize = true;
+			this.labelStandardErrorJohnsonBvColorDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorJohnsonBvColorDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorJohnsonBvColorDesc.Location = new System.Drawing.Point(3, 651);
 			this.labelStandardErrorJohnsonBvColorDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -885,6 +981,7 @@
 			this.labelStandardErrorJohnsonBvColorDesc.Text = "Standard error on B-V";
 			this.labelStandardErrorJohnsonBvColorDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorJohnsonBvColorDesc, "Standard error on B-V");
+			this.labelStandardErrorJohnsonBvColorDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorDesc_DoubleClick);
 			this.labelStandardErrorJohnsonBvColorDesc.Enter += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorDesc_Enter);
 			this.labelStandardErrorJohnsonBvColorDesc.Leave += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorDesc_Leave);
 			this.labelStandardErrorJohnsonBvColorDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorDesc_MouseEnter);
@@ -896,6 +993,7 @@
 			this.labelJohnsonBvColorDesc.AccessibleName = "Johnson B-V color description";
 			this.labelJohnsonBvColorDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelJohnsonBvColorDesc.AutoSize = true;
+			this.labelJohnsonBvColorDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelJohnsonBvColorDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelJohnsonBvColorDesc.Location = new System.Drawing.Point(3, 633);
 			this.labelJohnsonBvColorDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -905,6 +1003,7 @@
 			this.labelJohnsonBvColorDesc.Text = "Johnson B-V color";
 			this.labelJohnsonBvColorDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelJohnsonBvColorDesc, "Johnson B-V color");
+			this.labelJohnsonBvColorDesc.DoubleClick += new System.EventHandler(this.LabelJohnsonBvColorDesc_DoubleClick);
 			this.labelJohnsonBvColorDesc.Enter += new System.EventHandler(this.LabelJohnsonBvColorDesc_Enter);
 			this.labelJohnsonBvColorDesc.Leave += new System.EventHandler(this.LabelJohnsonBvColorDesc_Leave);
 			this.labelJohnsonBvColorDesc.MouseEnter += new System.EventHandler(this.LabelJohnsonBvColorDesc_MouseEnter);
@@ -916,6 +1015,7 @@
 			this.labelStandardErrorMeanVtMagnitudeDesc.AccessibleName = "Standard error on VTmag description";
 			this.labelStandardErrorMeanVtMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorMeanVtMagnitudeDesc.AutoSize = true;
+			this.labelStandardErrorMeanVtMagnitudeDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorMeanVtMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorMeanVtMagnitudeDesc.Location = new System.Drawing.Point(3, 615);
 			this.labelStandardErrorMeanVtMagnitudeDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -925,6 +1025,7 @@
 			this.labelStandardErrorMeanVtMagnitudeDesc.Text = "Standard error on VTmag";
 			this.labelStandardErrorMeanVtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorMeanVtMagnitudeDesc, "Standard error on VTmag");
+			this.labelStandardErrorMeanVtMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_DoubleClick);
 			this.labelStandardErrorMeanVtMagnitudeDesc.Enter += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_Enter);
 			this.labelStandardErrorMeanVtMagnitudeDesc.Leave += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_Leave);
 			this.labelStandardErrorMeanVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_MouseEnter);
@@ -936,6 +1037,7 @@
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.AccessibleName = "Number of observations for Hpmag description";
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.AutoSize = true;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(423, 129);
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -945,6 +1047,7 @@
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Text = "Number of observations for Hpmag";
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc, "Number of observations for Hpmag");
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_DoubleClick);
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Enter);
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Leave);
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
@@ -956,6 +1059,7 @@
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.AccessibleName = "Scatter on Hpmag description";
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.AutoSize = true;
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(423, 111);
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -965,6 +1069,7 @@
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Text = "Scatter on Hpmag";
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelScatterMedianMagnitudeInHipparcosSystemDesc, "Scatter on Hpmag");
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_DoubleClick);
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_Enter);
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_Leave);
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
@@ -976,6 +1081,7 @@
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.AccessibleName = "Standard error on Hpmag description";
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.AutoSize = true;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(423, 93);
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -985,6 +1091,7 @@
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Text = "Standard error on Hpmag";
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc, "Standard error on Hpmag");
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_DoubleClick);
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Enter);
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Leave);
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
@@ -996,6 +1103,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemDesc.AccessibleName = "Median magnitude in Hipparcos system description";
 			this.labelMedianMagnitudeInHipparcosSystemDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMedianMagnitudeInHipparcosSystemDesc.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMedianMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMedianMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(423, 75);
 			this.labelMedianMagnitudeInHipparcosSystemDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1005,6 +1113,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemDesc.Text = "Median magnitude in Hipparcos system";
 			this.labelMedianMagnitudeInHipparcosSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMedianMagnitudeInHipparcosSystemDesc, "Median magnitude in Hipparcos system");
+			this.labelMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_DoubleClick);
 			this.labelMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_Enter);
 			this.labelMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_Leave);
 			this.labelMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
@@ -1016,6 +1125,7 @@
 			this.labelSourceOfViDesc.AccessibleName = "Source of V-I description";
 			this.labelSourceOfViDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSourceOfViDesc.AutoSize = true;
+			this.labelSourceOfViDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelSourceOfViDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSourceOfViDesc.Location = new System.Drawing.Point(423, 39);
 			this.labelSourceOfViDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1025,6 +1135,7 @@
 			this.labelSourceOfViDesc.Text = "Source of V-I";
 			this.labelSourceOfViDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSourceOfViDesc, "Source of V-I");
+			this.labelSourceOfViDesc.DoubleClick += new System.EventHandler(this.LabelSourceOfViDesc_DoubleClick);
 			this.labelSourceOfViDesc.Enter += new System.EventHandler(this.LabelSourceOfViDesc_Enter);
 			this.labelSourceOfViDesc.Leave += new System.EventHandler(this.LabelSourceOfViDesc_Leave);
 			this.labelSourceOfViDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfViDesc_MouseEnter);
@@ -1036,6 +1147,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.AccessibleName = "Hpmag at maximum (5th percentile) description";
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Location = new System.Drawing.Point(423, 165);
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1045,6 +1157,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Text = "Hpmag at maximum (5th percentile)";
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc, "Hpmag at maximum (5th percentile)");
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.DoubleClick += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_DoubleClick);
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Enter);
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Leave);
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_MouseEnter);
@@ -1056,6 +1169,7 @@
 			this.labelSolutionQualityDesc.AccessibleName = "Solution quality description";
 			this.labelSolutionQualityDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSolutionQualityDesc.AutoSize = true;
+			this.labelSolutionQualityDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelSolutionQualityDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSolutionQualityDesc.Location = new System.Drawing.Point(423, 381);
 			this.labelSolutionQualityDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1065,6 +1179,7 @@
 			this.labelSolutionQualityDesc.Text = "Solution quality";
 			this.labelSolutionQualityDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSolutionQualityDesc, "Solution quality");
+			this.labelSolutionQualityDesc.DoubleClick += new System.EventHandler(this.LabelSolutionQualityDesc_DoubleClick);
 			this.labelSolutionQualityDesc.Enter += new System.EventHandler(this.LabelSolutionQualityDesc_Enter);
 			this.labelSolutionQualityDesc.Leave += new System.EventHandler(this.LabelSolutionQualityDesc_Leave);
 			this.labelSolutionQualityDesc.MouseEnter += new System.EventHandler(this.LabelSolutionQualityDesc_MouseEnter);
@@ -1076,6 +1191,7 @@
 			this.labelAstrometricSourceFlagDesc.AccessibleName = "Astrometric source flag description";
 			this.labelAstrometricSourceFlagDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelAstrometricSourceFlagDesc.AutoSize = true;
+			this.labelAstrometricSourceFlagDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelAstrometricSourceFlagDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelAstrometricSourceFlagDesc.Location = new System.Drawing.Point(423, 363);
 			this.labelAstrometricSourceFlagDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1085,6 +1201,7 @@
 			this.labelAstrometricSourceFlagDesc.Text = "Astrometric source flag";
 			this.labelAstrometricSourceFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelAstrometricSourceFlagDesc, "Astrometric source flag");
+			this.labelAstrometricSourceFlagDesc.DoubleClick += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_DoubleClick);
 			this.labelAstrometricSourceFlagDesc.Enter += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_Enter);
 			this.labelAstrometricSourceFlagDesc.Leave += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_Leave);
 			this.labelAstrometricSourceFlagDesc.MouseEnter += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_MouseEnter);
@@ -1096,6 +1213,7 @@
 			this.labelMultipleSystemsFlagDesc.AccessibleName = "Double/Multiple Systems flag description";
 			this.labelMultipleSystemsFlagDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMultipleSystemsFlagDesc.AutoSize = true;
+			this.labelMultipleSystemsFlagDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMultipleSystemsFlagDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMultipleSystemsFlagDesc.Location = new System.Drawing.Point(423, 345);
 			this.labelMultipleSystemsFlagDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1105,6 +1223,7 @@
 			this.labelMultipleSystemsFlagDesc.Text = "Double/Multiple Systems flag";
 			this.labelMultipleSystemsFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMultipleSystemsFlagDesc, "Double/Multiple Systems flag");
+			this.labelMultipleSystemsFlagDesc.DoubleClick += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_DoubleClick);
 			this.labelMultipleSystemsFlagDesc.Enter += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_Enter);
 			this.labelMultipleSystemsFlagDesc.Leave += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_Leave);
 			this.labelMultipleSystemsFlagDesc.MouseEnter += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_MouseEnter);
@@ -1116,6 +1235,7 @@
 			this.labelNumberComponentsInThisEntryDesc.AccessibleName = "Number of components in this entry description";
 			this.labelNumberComponentsInThisEntryDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelNumberComponentsInThisEntryDesc.AutoSize = true;
+			this.labelNumberComponentsInThisEntryDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelNumberComponentsInThisEntryDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelNumberComponentsInThisEntryDesc.Location = new System.Drawing.Point(423, 327);
 			this.labelNumberComponentsInThisEntryDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1125,6 +1245,7 @@
 			this.labelNumberComponentsInThisEntryDesc.Text = "Number of components in this entry";
 			this.labelNumberComponentsInThisEntryDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelNumberComponentsInThisEntryDesc, "Number of components in this entry");
+			this.labelNumberComponentsInThisEntryDesc.DoubleClick += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_DoubleClick);
 			this.labelNumberComponentsInThisEntryDesc.Enter += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_Enter);
 			this.labelNumberComponentsInThisEntryDesc.Leave += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_Leave);
 			this.labelNumberComponentsInThisEntryDesc.MouseEnter += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_MouseEnter);
@@ -1136,6 +1257,7 @@
 			this.labelNumberEntriesWithSameCcdmDesc.AccessibleName = "Number of entries with same CCDM description";
 			this.labelNumberEntriesWithSameCcdmDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelNumberEntriesWithSameCcdmDesc.AutoSize = true;
+			this.labelNumberEntriesWithSameCcdmDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelNumberEntriesWithSameCcdmDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelNumberEntriesWithSameCcdmDesc.Location = new System.Drawing.Point(423, 309);
 			this.labelNumberEntriesWithSameCcdmDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1145,6 +1267,7 @@
 			this.labelNumberEntriesWithSameCcdmDesc.Text = "Number of entries with same CCDM";
 			this.labelNumberEntriesWithSameCcdmDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelNumberEntriesWithSameCcdmDesc, "Number of entries with same CCDM");
+			this.labelNumberEntriesWithSameCcdmDesc.DoubleClick += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_DoubleClick);
 			this.labelNumberEntriesWithSameCcdmDesc.Enter += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_Enter);
 			this.labelNumberEntriesWithSameCcdmDesc.Leave += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_Leave);
 			this.labelNumberEntriesWithSameCcdmDesc.MouseEnter += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_MouseEnter);
@@ -1156,6 +1279,7 @@
 			this.labelComponentIdentifiersDesc.AccessibleName = "Component identifiers description";
 			this.labelComponentIdentifiersDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelComponentIdentifiersDesc.AutoSize = true;
+			this.labelComponentIdentifiersDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelComponentIdentifiersDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelComponentIdentifiersDesc.Location = new System.Drawing.Point(423, 399);
 			this.labelComponentIdentifiersDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1165,6 +1289,7 @@
 			this.labelComponentIdentifiersDesc.Text = "Component identifiers";
 			this.labelComponentIdentifiersDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelComponentIdentifiersDesc, "Component identifiers");
+			this.labelComponentIdentifiersDesc.DoubleClick += new System.EventHandler(this.LabelComponentIdentifiersDesc_DoubleClick);
 			this.labelComponentIdentifiersDesc.Enter += new System.EventHandler(this.LabelComponentIdentifiersDesc_Enter);
 			this.labelComponentIdentifiersDesc.Leave += new System.EventHandler(this.LabelComponentIdentifiersDesc_Leave);
 			this.labelComponentIdentifiersDesc.MouseEnter += new System.EventHandler(this.LabelComponentIdentifiersDesc_MouseEnter);
@@ -1176,6 +1301,7 @@
 			this.labelLightCurveAnnexDesc.AccessibleName = "Light curve Annex description";
 			this.labelLightCurveAnnexDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelLightCurveAnnexDesc.AutoSize = true;
+			this.labelLightCurveAnnexDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelLightCurveAnnexDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelLightCurveAnnexDesc.Location = new System.Drawing.Point(423, 255);
 			this.labelLightCurveAnnexDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1185,6 +1311,7 @@
 			this.labelLightCurveAnnexDesc.Text = "Light curve Annex";
 			this.labelLightCurveAnnexDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelLightCurveAnnexDesc, "Light curve Annex");
+			this.labelLightCurveAnnexDesc.DoubleClick += new System.EventHandler(this.LabelLightCurveAnnexDesc_DoubleClick);
 			this.labelLightCurveAnnexDesc.Enter += new System.EventHandler(this.LabelLightCurveAnnexDesc_Enter);
 			this.labelLightCurveAnnexDesc.Leave += new System.EventHandler(this.LabelLightCurveAnnexDesc_Leave);
 			this.labelLightCurveAnnexDesc.MouseEnter += new System.EventHandler(this.LabelLightCurveAnnexDesc_MouseEnter);
@@ -1196,6 +1323,7 @@
 			this.labelAdditionalDataAboutVariabilityDesc.AccessibleName = "Additional data about variability description";
 			this.labelAdditionalDataAboutVariabilityDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelAdditionalDataAboutVariabilityDesc.AutoSize = true;
+			this.labelAdditionalDataAboutVariabilityDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelAdditionalDataAboutVariabilityDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelAdditionalDataAboutVariabilityDesc.Location = new System.Drawing.Point(423, 237);
 			this.labelAdditionalDataAboutVariabilityDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1205,6 +1333,7 @@
 			this.labelAdditionalDataAboutVariabilityDesc.Text = "Additional data about variability";
 			this.labelAdditionalDataAboutVariabilityDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelAdditionalDataAboutVariabilityDesc, "Additional data about variability");
+			this.labelAdditionalDataAboutVariabilityDesc.DoubleClick += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_DoubleClick);
 			this.labelAdditionalDataAboutVariabilityDesc.Enter += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_Enter);
 			this.labelAdditionalDataAboutVariabilityDesc.Leave += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_Leave);
 			this.labelAdditionalDataAboutVariabilityDesc.MouseEnter += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_MouseEnter);
@@ -1216,6 +1345,7 @@
 			this.labelVariabilityTypeDesc.AccessibleName = "Variability type description";
 			this.labelVariabilityTypeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelVariabilityTypeDesc.AutoSize = true;
+			this.labelVariabilityTypeDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelVariabilityTypeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelVariabilityTypeDesc.Location = new System.Drawing.Point(423, 219);
 			this.labelVariabilityTypeDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1225,6 +1355,7 @@
 			this.labelVariabilityTypeDesc.Text = "Variability type";
 			this.labelVariabilityTypeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelVariabilityTypeDesc, "Variability type");
+			this.labelVariabilityTypeDesc.DoubleClick += new System.EventHandler(this.LabelVariabilityTypeDesc_DoubleClick);
 			this.labelVariabilityTypeDesc.Enter += new System.EventHandler(this.LabelVariabilityTypeDesc_Enter);
 			this.labelVariabilityTypeDesc.Leave += new System.EventHandler(this.LabelVariabilityTypeDesc_Leave);
 			this.labelVariabilityTypeDesc.MouseEnter += new System.EventHandler(this.LabelVariabilityTypeDesc_MouseEnter);
@@ -1236,6 +1367,7 @@
 			this.labelVariabilityPeriodDesc.AccessibleName = "Variability period (days) description";
 			this.labelVariabilityPeriodDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelVariabilityPeriodDesc.AutoSize = true;
+			this.labelVariabilityPeriodDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelVariabilityPeriodDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelVariabilityPeriodDesc.Location = new System.Drawing.Point(423, 201);
 			this.labelVariabilityPeriodDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1245,6 +1377,7 @@
 			this.labelVariabilityPeriodDesc.Text = "Variability period (days)";
 			this.labelVariabilityPeriodDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelVariabilityPeriodDesc, "Variability period (days)");
+			this.labelVariabilityPeriodDesc.DoubleClick += new System.EventHandler(this.LabelVariabilityPeriodDesc_DoubleClick);
 			this.labelVariabilityPeriodDesc.Enter += new System.EventHandler(this.LabelVariabilityPeriodDesc_Enter);
 			this.labelVariabilityPeriodDesc.Leave += new System.EventHandler(this.LabelVariabilityPeriodDesc_Leave);
 			this.labelVariabilityPeriodDesc.MouseEnter += new System.EventHandler(this.LabelVariabilityPeriodDesc_MouseEnter);
@@ -1256,6 +1389,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.AccessibleName = "Hpmag at minimum (95th percentile) description";
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Location = new System.Drawing.Point(423, 183);
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1265,6 +1399,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Text = "Hpmag at minimum (95th percentile)";
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc, "Hpmag at minimum (95th percentile)");
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.DoubleClick += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_DoubleClick);
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Enter);
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Leave);
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_MouseEnter);
@@ -1276,6 +1411,7 @@
 			this.labelCcdmIdentifierDesc.AccessibleName = "CCDM identifier description";
 			this.labelCcdmIdentifierDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCcdmIdentifierDesc.AutoSize = true;
+			this.labelCcdmIdentifierDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCcdmIdentifierDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCcdmIdentifierDesc.Location = new System.Drawing.Point(423, 273);
 			this.labelCcdmIdentifierDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1285,6 +1421,7 @@
 			this.labelCcdmIdentifierDesc.Text = "CCDM identifier";
 			this.labelCcdmIdentifierDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCcdmIdentifierDesc, "CCDM identifier");
+			this.labelCcdmIdentifierDesc.DoubleClick += new System.EventHandler(this.LabelCcdmIdentifierDesc_DoubleClick);
 			this.labelCcdmIdentifierDesc.Enter += new System.EventHandler(this.LabelCcdmIdentifierDesc_Enter);
 			this.labelCcdmIdentifierDesc.Leave += new System.EventHandler(this.LabelCcdmIdentifierDesc_Leave);
 			this.labelCcdmIdentifierDesc.MouseEnter += new System.EventHandler(this.LabelCcdmIdentifierDesc_MouseEnter);
@@ -1296,6 +1433,7 @@
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.AccessibleName = "Standard error on dHp description";
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.AutoSize = true;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Location = new System.Drawing.Point(423, 489);
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1305,6 +1443,7 @@
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Text = "Standard error on dHp";
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc, "Standard error on dHp");
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_DoubleClick);
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Enter);
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Leave);
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_MouseEnter);
@@ -1316,6 +1455,7 @@
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.AccessibleName = "Magnitude difference of components description";
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.AutoSize = true;
+			this.labelMagnitudeDifferenceBetweenComponentsDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.Location = new System.Drawing.Point(423, 471);
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1325,6 +1465,7 @@
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.Text = "Magnitude difference of components";
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMagnitudeDifferenceBetweenComponentsDesc, "Magnitude difference of components");
+			this.labelMagnitudeDifferenceBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_DoubleClick);
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_Enter);
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_Leave);
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_MouseEnter);
@@ -1336,6 +1477,7 @@
 			this.labelStandardErrorRhoDesc.AccessibleName = "Standard error on rho description";
 			this.labelStandardErrorRhoDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorRhoDesc.AutoSize = true;
+			this.labelStandardErrorRhoDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorRhoDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorRhoDesc.Location = new System.Drawing.Point(423, 453);
 			this.labelStandardErrorRhoDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1345,6 +1487,7 @@
 			this.labelStandardErrorRhoDesc.Text = "Standard error on rho";
 			this.labelStandardErrorRhoDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorRhoDesc, "Standard error on rho");
+			this.labelStandardErrorRhoDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorRhoDesc_DoubleClick);
 			this.labelStandardErrorRhoDesc.Enter += new System.EventHandler(this.LabelStandardErrorRhoDesc_Enter);
 			this.labelStandardErrorRhoDesc.Leave += new System.EventHandler(this.LabelStandardErrorRhoDesc_Leave);
 			this.labelStandardErrorRhoDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorRhoDesc_MouseEnter);
@@ -1356,6 +1499,7 @@
 			this.labelAngularSeparationBetweenComponentsDesc.AccessibleName = "Angular separation between components description";
 			this.labelAngularSeparationBetweenComponentsDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelAngularSeparationBetweenComponentsDesc.AutoSize = true;
+			this.labelAngularSeparationBetweenComponentsDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelAngularSeparationBetweenComponentsDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelAngularSeparationBetweenComponentsDesc.Location = new System.Drawing.Point(423, 435);
 			this.labelAngularSeparationBetweenComponentsDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1365,6 +1509,7 @@
 			this.labelAngularSeparationBetweenComponentsDesc.Text = "Angular separation between components";
 			this.labelAngularSeparationBetweenComponentsDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelAngularSeparationBetweenComponentsDesc, "Angular separation between components");
+			this.labelAngularSeparationBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_DoubleClick);
 			this.labelAngularSeparationBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_Enter);
 			this.labelAngularSeparationBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_Leave);
 			this.labelAngularSeparationBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_MouseEnter);
@@ -1376,6 +1521,7 @@
 			this.labelPositionAngleBetweenComponentsDesc.AccessibleName = "Position angle between components description";
 			this.labelPositionAngleBetweenComponentsDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelPositionAngleBetweenComponentsDesc.AutoSize = true;
+			this.labelPositionAngleBetweenComponentsDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelPositionAngleBetweenComponentsDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelPositionAngleBetweenComponentsDesc.Location = new System.Drawing.Point(423, 417);
 			this.labelPositionAngleBetweenComponentsDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1385,6 +1531,7 @@
 			this.labelPositionAngleBetweenComponentsDesc.Text = "Position angle between components";
 			this.labelPositionAngleBetweenComponentsDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelPositionAngleBetweenComponentsDesc, "Position angle between components");
+			this.labelPositionAngleBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_DoubleClick);
 			this.labelPositionAngleBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_Enter);
 			this.labelPositionAngleBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_Leave);
 			this.labelPositionAngleBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_MouseEnter);
@@ -1396,6 +1543,7 @@
 			this.labelFlagIndicatingSurveyStarDesc.AccessibleName = "Flag indicating a Survey Star description";
 			this.labelFlagIndicatingSurveyStarDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelFlagIndicatingSurveyStarDesc.AutoSize = true;
+			this.labelFlagIndicatingSurveyStarDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelFlagIndicatingSurveyStarDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelFlagIndicatingSurveyStarDesc.Location = new System.Drawing.Point(423, 507);
 			this.labelFlagIndicatingSurveyStarDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1405,6 +1553,7 @@
 			this.labelFlagIndicatingSurveyStarDesc.Text = "Flag indicating a Survey Star";
 			this.labelFlagIndicatingSurveyStarDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelFlagIndicatingSurveyStarDesc, "Flag indicating a Survey Star");
+			this.labelFlagIndicatingSurveyStarDesc.DoubleClick += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_DoubleClick);
 			this.labelFlagIndicatingSurveyStarDesc.Enter += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_Enter);
 			this.labelFlagIndicatingSurveyStarDesc.Leave += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_Leave);
 			this.labelFlagIndicatingSurveyStarDesc.MouseEnter += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_MouseEnter);
@@ -1416,6 +1565,7 @@
 			this.labelIdentificationChartDesc.AccessibleName = "Identification Chart description";
 			this.labelIdentificationChartDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelIdentificationChartDesc.AutoSize = true;
+			this.labelIdentificationChartDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelIdentificationChartDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelIdentificationChartDesc.Location = new System.Drawing.Point(423, 525);
 			this.labelIdentificationChartDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1425,6 +1575,7 @@
 			this.labelIdentificationChartDesc.Text = "Identification Chart";
 			this.labelIdentificationChartDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelIdentificationChartDesc, "Identification Chart");
+			this.labelIdentificationChartDesc.DoubleClick += new System.EventHandler(this.LabelIdentificationChartDesc_DoubleClick);
 			this.labelIdentificationChartDesc.Enter += new System.EventHandler(this.LabelIdentificationChartDesc_Enter);
 			this.labelIdentificationChartDesc.Leave += new System.EventHandler(this.LabelIdentificationChartDesc_Leave);
 			this.labelIdentificationChartDesc.MouseEnter += new System.EventHandler(this.LabelIdentificationChartDesc_MouseEnter);
@@ -1436,6 +1587,7 @@
 			this.labelExistenceOfNotesDesc.AccessibleName = "Existence of notes description";
 			this.labelExistenceOfNotesDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelExistenceOfNotesDesc.AutoSize = true;
+			this.labelExistenceOfNotesDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelExistenceOfNotesDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelExistenceOfNotesDesc.Location = new System.Drawing.Point(423, 543);
 			this.labelExistenceOfNotesDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1445,6 +1597,7 @@
 			this.labelExistenceOfNotesDesc.Text = "Existence of notes";
 			this.labelExistenceOfNotesDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelExistenceOfNotesDesc, "Existence of notes");
+			this.labelExistenceOfNotesDesc.DoubleClick += new System.EventHandler(this.LabelExistenceOfNotesDesc_DoubleClick);
 			this.labelExistenceOfNotesDesc.Enter += new System.EventHandler(this.LabelExistenceOfNotesDesc_Enter);
 			this.labelExistenceOfNotesDesc.Leave += new System.EventHandler(this.LabelExistenceOfNotesDesc_Leave);
 			this.labelExistenceOfNotesDesc.MouseEnter += new System.EventHandler(this.LabelExistenceOfNotesDesc_MouseEnter);
@@ -1456,6 +1609,7 @@
 			this.labelBonnerDmDesc.AccessibleName = "Bonner Durchmusterung (DM) description";
 			this.labelBonnerDmDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelBonnerDmDesc.AutoSize = true;
+			this.labelBonnerDmDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelBonnerDmDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelBonnerDmDesc.Location = new System.Drawing.Point(423, 579);
 			this.labelBonnerDmDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1465,6 +1619,7 @@
 			this.labelBonnerDmDesc.Text = "Bonner Durchmusterung (DM)";
 			this.labelBonnerDmDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelBonnerDmDesc, "Bonner Durchmusterung (DM)");
+			this.labelBonnerDmDesc.DoubleClick += new System.EventHandler(this.LabelBonnerDmDesc_DoubleClick);
 			this.labelBonnerDmDesc.Enter += new System.EventHandler(this.LabelBonnerDmDesc_Enter);
 			this.labelBonnerDmDesc.Leave += new System.EventHandler(this.LabelBonnerDmDesc_Leave);
 			this.labelBonnerDmDesc.MouseEnter += new System.EventHandler(this.LabelBonnerDmDesc_MouseEnter);
@@ -1476,6 +1631,7 @@
 			this.labelHdNumberDesc.AccessibleName = "HD number description";
 			this.labelHdNumberDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelHdNumberDesc.AutoSize = true;
+			this.labelHdNumberDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelHdNumberDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelHdNumberDesc.Location = new System.Drawing.Point(423, 561);
 			this.labelHdNumberDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1485,6 +1641,7 @@
 			this.labelHdNumberDesc.Text = "HD number";
 			this.labelHdNumberDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelHdNumberDesc, "HD number");
+			this.labelHdNumberDesc.DoubleClick += new System.EventHandler(this.LabelHdNumberDesc_DoubleClick);
 			this.labelHdNumberDesc.Enter += new System.EventHandler(this.LabelHdNumberDesc_Enter);
 			this.labelHdNumberDesc.Leave += new System.EventHandler(this.LabelHdNumberDesc_Leave);
 			this.labelHdNumberDesc.MouseEnter += new System.EventHandler(this.LabelHdNumberDesc_MouseEnter);
@@ -1496,6 +1653,7 @@
 			this.labelSpectralTypeDesc.AccessibleName = "Spectral type description";
 			this.labelSpectralTypeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSpectralTypeDesc.AutoSize = true;
+			this.labelSpectralTypeDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelSpectralTypeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSpectralTypeDesc.Location = new System.Drawing.Point(423, 651);
 			this.labelSpectralTypeDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1505,6 +1663,7 @@
 			this.labelSpectralTypeDesc.Text = "Spectral type";
 			this.labelSpectralTypeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSpectralTypeDesc, "Spectral type");
+			this.labelSpectralTypeDesc.DoubleClick += new System.EventHandler(this.LabelSpectralTypeDesc_DoubleClick);
 			this.labelSpectralTypeDesc.Enter += new System.EventHandler(this.LabelSpectralTypeDesc_Enter);
 			this.labelSpectralTypeDesc.Leave += new System.EventHandler(this.LabelSpectralTypeDesc_Leave);
 			this.labelSpectralTypeDesc.MouseEnter += new System.EventHandler(this.LabelSpectralTypeDesc_MouseEnter);
@@ -1516,6 +1675,7 @@
 			this.labelViUsedForReductionsDesc.AccessibleName = "V-I used for reductions description";
 			this.labelViUsedForReductionsDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelViUsedForReductionsDesc.AutoSize = true;
+			this.labelViUsedForReductionsDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelViUsedForReductionsDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelViUsedForReductionsDesc.Location = new System.Drawing.Point(423, 633);
 			this.labelViUsedForReductionsDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1525,6 +1685,7 @@
 			this.labelViUsedForReductionsDesc.Text = "V-I used for reductions";
 			this.labelViUsedForReductionsDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelViUsedForReductionsDesc, "V-I used for reductions");
+			this.labelViUsedForReductionsDesc.DoubleClick += new System.EventHandler(this.LabelViUsedForReductionsDesc_DoubleClick);
 			this.labelViUsedForReductionsDesc.Enter += new System.EventHandler(this.LabelViUsedForReductionsDesc_Enter);
 			this.labelViUsedForReductionsDesc.Leave += new System.EventHandler(this.LabelViUsedForReductionsDesc_Leave);
 			this.labelViUsedForReductionsDesc.MouseEnter += new System.EventHandler(this.LabelViUsedForReductionsDesc_MouseEnter);
@@ -1536,6 +1697,7 @@
 			this.labelCapePhotographicDmDesc.AccessibleName = "Cape Photographic DM description";
 			this.labelCapePhotographicDmDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCapePhotographicDmDesc.AutoSize = true;
+			this.labelCapePhotographicDmDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCapePhotographicDmDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCapePhotographicDmDesc.Location = new System.Drawing.Point(423, 615);
 			this.labelCapePhotographicDmDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1545,6 +1707,7 @@
 			this.labelCapePhotographicDmDesc.Text = "Cape Photographic DM";
 			this.labelCapePhotographicDmDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCapePhotographicDmDesc, "Cape Photographic DM");
+			this.labelCapePhotographicDmDesc.DoubleClick += new System.EventHandler(this.LabelCapePhotographicDmDesc_DoubleClick);
 			this.labelCapePhotographicDmDesc.Enter += new System.EventHandler(this.LabelCapePhotographicDmDesc_Enter);
 			this.labelCapePhotographicDmDesc.Leave += new System.EventHandler(this.LabelCapePhotographicDmDesc_Leave);
 			this.labelCapePhotographicDmDesc.MouseEnter += new System.EventHandler(this.LabelCapePhotographicDmDesc_MouseEnter);
@@ -1556,6 +1719,7 @@
 			this.labelCordobaDmDesc.AccessibleName = "Cordoba Durchmusterung (DM) description";
 			this.labelCordobaDmDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCordobaDmDesc.AutoSize = true;
+			this.labelCordobaDmDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCordobaDmDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCordobaDmDesc.Location = new System.Drawing.Point(423, 597);
 			this.labelCordobaDmDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1565,6 +1729,7 @@
 			this.labelCordobaDmDesc.Text = "Cordoba Durchmusterung (DM)";
 			this.labelCordobaDmDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCordobaDmDesc, "Cordoba Durchmusterung (DM)");
+			this.labelCordobaDmDesc.DoubleClick += new System.EventHandler(this.LabelCordobaDmDesc_DoubleClick);
 			this.labelCordobaDmDesc.Enter += new System.EventHandler(this.LabelCordobaDmDesc_Enter);
 			this.labelCordobaDmDesc.Leave += new System.EventHandler(this.LabelCordobaDmDesc_Leave);
 			this.labelCordobaDmDesc.MouseEnter += new System.EventHandler(this.LabelCordobaDmDesc_MouseEnter);
@@ -1576,6 +1741,7 @@
 			this.labelReferenceFlagForAstrometryDesc.AccessibleName = "Reference flag for astrometry description";
 			this.labelReferenceFlagForAstrometryDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelReferenceFlagForAstrometryDesc.AutoSize = true;
+			this.labelReferenceFlagForAstrometryDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelReferenceFlagForAstrometryDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelReferenceFlagForAstrometryDesc.Location = new System.Drawing.Point(3, 183);
 			this.labelReferenceFlagForAstrometryDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1585,6 +1751,7 @@
 			this.labelReferenceFlagForAstrometryDesc.Text = "Reference flag for astrometry";
 			this.labelReferenceFlagForAstrometryDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelReferenceFlagForAstrometryDesc, "Reference flag for astrometry");
+			this.labelReferenceFlagForAstrometryDesc.DoubleClick += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_DoubleClick);
 			this.labelReferenceFlagForAstrometryDesc.Enter += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_Enter);
 			this.labelReferenceFlagForAstrometryDesc.Leave += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_Leave);
 			this.labelReferenceFlagForAstrometryDesc.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_MouseEnter);
@@ -1596,6 +1763,7 @@
 			this.labelSourceOfSpectralTypeDesc.AccessibleName = "Source of spectral type description";
 			this.labelSourceOfSpectralTypeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSourceOfSpectralTypeDesc.AutoSize = true;
+			this.labelSourceOfSpectralTypeDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelSourceOfSpectralTypeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSourceOfSpectralTypeDesc.Location = new System.Drawing.Point(423, 669);
 			this.labelSourceOfSpectralTypeDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1605,6 +1773,7 @@
 			this.labelSourceOfSpectralTypeDesc.Text = "Source of spectral type";
 			this.labelSourceOfSpectralTypeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSourceOfSpectralTypeDesc, "Source of spectral type");
+			this.labelSourceOfSpectralTypeDesc.DoubleClick += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_DoubleClick);
 			this.labelSourceOfSpectralTypeDesc.Enter += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_Enter);
 			this.labelSourceOfSpectralTypeDesc.Leave += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_Leave);
 			this.labelSourceOfSpectralTypeDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_MouseEnter);
@@ -1616,6 +1785,7 @@
 			this.labelCoarseVariabilityFlagDesc.AccessibleName = "Coarse variability flag description";
 			this.labelCoarseVariabilityFlagDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCoarseVariabilityFlagDesc.AutoSize = true;
+			this.labelCoarseVariabilityFlagDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCoarseVariabilityFlagDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCoarseVariabilityFlagDesc.Location = new System.Drawing.Point(3, 111);
 			this.labelCoarseVariabilityFlagDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1625,6 +1795,7 @@
 			this.labelCoarseVariabilityFlagDesc.Text = "Coarse variability flag";
 			this.labelCoarseVariabilityFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCoarseVariabilityFlagDesc, "Coarse variability flag");
+			this.labelCoarseVariabilityFlagDesc.DoubleClick += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_DoubleClick);
 			this.labelCoarseVariabilityFlagDesc.Enter += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_Enter);
 			this.labelCoarseVariabilityFlagDesc.Leave += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_Leave);
 			this.labelCoarseVariabilityFlagDesc.MouseEnter += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_MouseEnter);
@@ -1636,6 +1807,7 @@
 			this.labelProximityFlagDesc.AccessibleName = "Proximity flag description";
 			this.labelProximityFlagDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelProximityFlagDesc.AutoSize = true;
+			this.labelProximityFlagDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelProximityFlagDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelProximityFlagDesc.Location = new System.Drawing.Point(3, 39);
 			this.labelProximityFlagDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1645,6 +1817,7 @@
 			this.labelProximityFlagDesc.Text = "Proximity flag";
 			this.labelProximityFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelProximityFlagDesc, "Proximity flag");
+			this.labelProximityFlagDesc.DoubleClick += new System.EventHandler(this.LabelProximityFlagDesc_DoubleClick);
 			this.labelProximityFlagDesc.Enter += new System.EventHandler(this.LabelProximityFlagDesc_Enter);
 			this.labelProximityFlagDesc.Leave += new System.EventHandler(this.LabelProximityFlagDesc_Leave);
 			this.labelProximityFlagDesc.MouseEnter += new System.EventHandler(this.LabelProximityFlagDesc_MouseEnter);
@@ -1656,6 +1829,7 @@
 			this.labelCatalogDesc.AccessibleName = "Catalog (H=Hipparcos) description";
 			this.labelCatalogDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCatalogDesc.AutoSize = true;
+			this.labelCatalogDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCatalogDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCatalogDesc.Location = new System.Drawing.Point(3, 3);
 			this.labelCatalogDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1665,6 +1839,7 @@
 			this.labelCatalogDesc.Text = "Catalog (H=Hipparcos)";
 			this.labelCatalogDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCatalogDesc, "Catalogue (H=Hipparcos)");
+			this.labelCatalogDesc.DoubleClick += new System.EventHandler(this.LabelCatalogDesc_DoubleClick);
 			this.labelCatalogDesc.Enter += new System.EventHandler(this.LabelCatalogDesc_Enter);
 			this.labelCatalogDesc.Leave += new System.EventHandler(this.LabelCatalogDesc_Leave);
 			this.labelCatalogDesc.MouseEnter += new System.EventHandler(this.LabelCatalogDesc_MouseEnter);
@@ -1676,6 +1851,7 @@
 			this.labelFlagForCombinedMagnitudesDesc.AccessibleName = "Flag for combined Vmag, B-V, V-I description";
 			this.labelFlagForCombinedMagnitudesDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelFlagForCombinedMagnitudesDesc.AutoSize = true;
+			this.labelFlagForCombinedMagnitudesDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelFlagForCombinedMagnitudesDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelFlagForCombinedMagnitudesDesc.Location = new System.Drawing.Point(423, 57);
 			this.labelFlagForCombinedMagnitudesDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1685,6 +1861,7 @@
 			this.labelFlagForCombinedMagnitudesDesc.Text = "Flag for combined Vmag, B-V, V-I";
 			this.labelFlagForCombinedMagnitudesDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelFlagForCombinedMagnitudesDesc, "Flag for combined Vmag, B-V, V-I");
+			this.labelFlagForCombinedMagnitudesDesc.DoubleClick += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_DoubleClick);
 			this.labelFlagForCombinedMagnitudesDesc.Enter += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_Enter);
 			this.labelFlagForCombinedMagnitudesDesc.Leave += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_Leave);
 			this.labelFlagForCombinedMagnitudesDesc.MouseEnter += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_MouseEnter);
@@ -1696,6 +1873,7 @@
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.AccessibleName = "Reference flag for BT and VTmag description";
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.AutoSize = true;
+			this.labelReferenceFlagForBtAndVtMagnitudeDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Location = new System.Drawing.Point(3, 669);
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1705,6 +1883,7 @@
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Text = "Reference flag for BT and VTmag";
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelReferenceFlagForBtAndVtMagnitudeDesc, "Reference flag for BT and VTmag");
+			this.labelReferenceFlagForBtAndVtMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_DoubleClick);
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Enter += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_Enter);
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Leave += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_Leave);
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_MouseEnter);
@@ -1716,6 +1895,7 @@
 			this.labelHistoricalStatusFlagDesc.AccessibleName = "Historical status flag description";
 			this.labelHistoricalStatusFlagDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelHistoricalStatusFlagDesc.AutoSize = true;
+			this.labelHistoricalStatusFlagDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelHistoricalStatusFlagDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelHistoricalStatusFlagDesc.Location = new System.Drawing.Point(423, 291);
 			this.labelHistoricalStatusFlagDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1725,6 +1905,7 @@
 			this.labelHistoricalStatusFlagDesc.Text = "Historical status flag";
 			this.labelHistoricalStatusFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelHistoricalStatusFlagDesc, "Historical status flag");
+			this.labelHistoricalStatusFlagDesc.DoubleClick += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_DoubleClick);
 			this.labelHistoricalStatusFlagDesc.Enter += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_Enter);
 			this.labelHistoricalStatusFlagDesc.Leave += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_Leave);
 			this.labelHistoricalStatusFlagDesc.MouseEnter += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_MouseEnter);
@@ -1736,6 +1917,7 @@
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.AccessibleName = "Reference flag for Hpmag description";
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.AutoSize = true;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Location = new System.Drawing.Point(423, 147);
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1745,6 +1927,7 @@
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Text = "Reference flag for Hpmag";
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc, "Reference flag for Hpmag");
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_DoubleClick);
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Enter);
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Leave);
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
@@ -1755,6 +1938,7 @@
 			this.toolStrip.AccessibleDescription = "Navigate the index of the dataset";
 			this.toolStrip.AccessibleName = "Navigation bar";
 			this.toolStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.ToolBar;
+			this.toolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
 			this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonStepToBegin,
             this.toolStripButtonStepFastBackward,
@@ -1982,6 +2166,7 @@
 			this.menuStrip.Name = "menuStrip";
 			this.menuStrip.Size = new System.Drawing.Size(844, 24);
 			this.menuStrip.TabIndex = 0;
+			this.menuStrip.TabStop = true;
 			this.menuStrip.Text = "menu";
 			// 
 			// menuitemClose
@@ -2002,13 +2187,13 @@
 			// 
 			// toolStripMenuItemInfo
 			// 
+			this.toolStripMenuItemInfo.AutoToolTip = true;
 			this.toolStripMenuItemInfo.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_16px_shadowless;
 			this.toolStripMenuItemInfo.Name = "toolStripMenuItemInfo";
 			this.toolStripMenuItemInfo.ShortcutKeyDisplayString = "Strg+I";
 			this.toolStripMenuItemInfo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
 			this.toolStripMenuItemInfo.Size = new System.Drawing.Size(56, 20);
 			this.toolStripMenuItemInfo.Text = "&Info";
-			this.toolStripMenuItemInfo.ToolTipText = "Info";
 			this.toolStripMenuItemInfo.Click += new System.EventHandler(this.ToolStripMenuItemInfo_Click);
 			this.toolStripMenuItemInfo.MouseEnter += new System.EventHandler(this.ToolStripMenuItemInfo_MouseEnter);
 			this.toolStripMenuItemInfo.MouseLeave += new System.EventHandler(this.ToolStripMenuItemInfo_MouseLeave);
@@ -2251,6 +2436,7 @@
 			this.labelSourceOfSpectralTypeData.AccessibleName = "Source of spectral type data";
 			this.labelSourceOfSpectralTypeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSourceOfSpectralTypeData.AutoSize = true;
+			this.labelSourceOfSpectralTypeData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelSourceOfSpectralTypeData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSourceOfSpectralTypeData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelSourceOfSpectralTypeData.Location = new System.Drawing.Point(702, 669);
@@ -2293,6 +2479,7 @@
 			this.labelSpectralTypeData.AccessibleName = "Spectral type data";
 			this.labelSpectralTypeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSpectralTypeData.AutoSize = true;
+			this.labelSpectralTypeData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelSpectralTypeData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSpectralTypeData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelSpectralTypeData.Location = new System.Drawing.Point(702, 651);
@@ -2335,6 +2522,7 @@
 			this.labelViUsedForReductionsData.AccessibleName = "V-I used for reductions data";
 			this.labelViUsedForReductionsData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelViUsedForReductionsData.AutoSize = true;
+			this.labelViUsedForReductionsData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelViUsedForReductionsData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelViUsedForReductionsData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelViUsedForReductionsData.Location = new System.Drawing.Point(702, 633);
@@ -2377,6 +2565,7 @@
 			this.labelCapePhotographicDmData.AccessibleName = "Cape Photographic DM data";
 			this.labelCapePhotographicDmData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCapePhotographicDmData.AutoSize = true;
+			this.labelCapePhotographicDmData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCapePhotographicDmData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCapePhotographicDmData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCapePhotographicDmData.Location = new System.Drawing.Point(702, 615);
@@ -2419,6 +2608,7 @@
 			this.labelCordobaDmData.AccessibleName = "Cordoba Durchmusterung (DM) data";
 			this.labelCordobaDmData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCordobaDmData.AutoSize = true;
+			this.labelCordobaDmData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCordobaDmData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCordobaDmData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCordobaDmData.Location = new System.Drawing.Point(702, 597);
@@ -2440,6 +2630,7 @@
 			this.labelMeanVtMagnitudeData.AccessibleName = "Mean VT magnitude data";
 			this.labelMeanVtMagnitudeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMeanVtMagnitudeData.AutoSize = true;
+			this.labelMeanVtMagnitudeData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMeanVtMagnitudeData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMeanVtMagnitudeData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelMeanVtMagnitudeData.Location = new System.Drawing.Point(282, 597);
@@ -2461,6 +2652,7 @@
 			this.labelBonnerDmData.AccessibleName = "Bonner Durchmusterung (DM) data";
 			this.labelBonnerDmData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelBonnerDmData.AutoSize = true;
+			this.labelBonnerDmData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelBonnerDmData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelBonnerDmData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelBonnerDmData.Location = new System.Drawing.Point(702, 579);
@@ -2482,6 +2674,7 @@
 			this.labelStandardErrorMeanBtMagnitudeData.AccessibleName = "Standard error on BTmag data";
 			this.labelStandardErrorMeanBtMagnitudeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorMeanBtMagnitudeData.AutoSize = true;
+			this.labelStandardErrorMeanBtMagnitudeData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorMeanBtMagnitudeData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorMeanBtMagnitudeData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelStandardErrorMeanBtMagnitudeData.Location = new System.Drawing.Point(282, 579);
@@ -2503,6 +2696,7 @@
 			this.labelHdNumberData.AccessibleName = "HD number data";
 			this.labelHdNumberData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelHdNumberData.AutoSize = true;
+			this.labelHdNumberData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelHdNumberData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelHdNumberData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelHdNumberData.Location = new System.Drawing.Point(702, 561);
@@ -2524,6 +2718,7 @@
 			this.labelMeanBtMagnitudeData.AccessibleName = "Mean BT magnitude data";
 			this.labelMeanBtMagnitudeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMeanBtMagnitudeData.AutoSize = true;
+			this.labelMeanBtMagnitudeData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMeanBtMagnitudeData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMeanBtMagnitudeData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelMeanBtMagnitudeData.Location = new System.Drawing.Point(282, 561);
@@ -2545,6 +2740,7 @@
 			this.labelExistenceOfNotesData.AccessibleName = "Existence of notes data";
 			this.labelExistenceOfNotesData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelExistenceOfNotesData.AutoSize = true;
+			this.labelExistenceOfNotesData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelExistenceOfNotesData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelExistenceOfNotesData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelExistenceOfNotesData.Location = new System.Drawing.Point(702, 543);
@@ -2566,6 +2762,7 @@
 			this.labelGoodnessOfFitParameterData.AccessibleName = "Goodness-of-fit parameter data";
 			this.labelGoodnessOfFitParameterData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelGoodnessOfFitParameterData.AutoSize = true;
+			this.labelGoodnessOfFitParameterData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelGoodnessOfFitParameterData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelGoodnessOfFitParameterData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelGoodnessOfFitParameterData.Location = new System.Drawing.Point(282, 543);
@@ -2587,6 +2784,7 @@
 			this.labelIdentificationChartData.AccessibleName = "Identification chart data";
 			this.labelIdentificationChartData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelIdentificationChartData.AutoSize = true;
+			this.labelIdentificationChartData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelIdentificationChartData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelIdentificationChartData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelIdentificationChartData.Location = new System.Drawing.Point(702, 525);
@@ -2608,6 +2806,7 @@
 			this.labelPercentageOfRejectedDataData.AccessibleName = "Percentage of rejected data";
 			this.labelPercentageOfRejectedDataData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelPercentageOfRejectedDataData.AutoSize = true;
+			this.labelPercentageOfRejectedDataData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelPercentageOfRejectedDataData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelPercentageOfRejectedDataData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelPercentageOfRejectedDataData.Location = new System.Drawing.Point(282, 525);
@@ -2629,6 +2828,7 @@
 			this.labelFlagIndicatingSurveyStarData.AccessibleName = "Flag indicating a Survey Star data";
 			this.labelFlagIndicatingSurveyStarData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelFlagIndicatingSurveyStarData.AutoSize = true;
+			this.labelFlagIndicatingSurveyStarData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelFlagIndicatingSurveyStarData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelFlagIndicatingSurveyStarData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelFlagIndicatingSurveyStarData.Location = new System.Drawing.Point(702, 507);
@@ -2650,6 +2850,7 @@
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.AccessibleName = "Correlation, pmDE/pmRA data";
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Location = new System.Drawing.Point(282, 507);
@@ -2671,6 +2872,7 @@
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.AccessibleName = "Standard error on dHp data";
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.AutoSize = true;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.Location = new System.Drawing.Point(702, 489);
@@ -2692,6 +2894,7 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleName = "Correlation, pmDE/Plx data";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Location = new System.Drawing.Point(282, 489);
@@ -2713,6 +2916,7 @@
 			this.labelMagnitudeDifferenceBetweenComponentsData.AccessibleName = "Magnitude difference of components data";
 			this.labelMagnitudeDifferenceBetweenComponentsData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMagnitudeDifferenceBetweenComponentsData.AutoSize = true;
+			this.labelMagnitudeDifferenceBetweenComponentsData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMagnitudeDifferenceBetweenComponentsData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMagnitudeDifferenceBetweenComponentsData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelMagnitudeDifferenceBetweenComponentsData.Location = new System.Drawing.Point(702, 471);
@@ -2734,6 +2938,7 @@
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleName = "Correlation, pmDE/DE data";
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.Location = new System.Drawing.Point(282, 471);
@@ -2755,6 +2960,7 @@
 			this.labelStandardErrorRhoData.AccessibleName = "Standard error on rho data";
 			this.labelStandardErrorRhoData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorRhoData.AutoSize = true;
+			this.labelStandardErrorRhoData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorRhoData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorRhoData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelStandardErrorRhoData.Location = new System.Drawing.Point(702, 453);
@@ -2776,6 +2982,7 @@
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.AccessibleName = "Correlation, pmDE/RA*cos(delta) data";
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Location = new System.Drawing.Point(282, 453);
@@ -2797,6 +3004,7 @@
 			this.labelAngularSeparationBetweenComponentsData.AccessibleName = "Angular separation between components data";
 			this.labelAngularSeparationBetweenComponentsData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelAngularSeparationBetweenComponentsData.AutoSize = true;
+			this.labelAngularSeparationBetweenComponentsData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelAngularSeparationBetweenComponentsData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelAngularSeparationBetweenComponentsData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelAngularSeparationBetweenComponentsData.Location = new System.Drawing.Point(702, 435);
@@ -2818,6 +3026,7 @@
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.AccessibleName = "Correlation, pmRA/Plx data";
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Location = new System.Drawing.Point(282, 435);
@@ -2839,6 +3048,7 @@
 			this.labelPositionAngleBetweenComponentsData.AccessibleName = "Position angle between components data";
 			this.labelPositionAngleBetweenComponentsData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelPositionAngleBetweenComponentsData.AutoSize = true;
+			this.labelPositionAngleBetweenComponentsData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelPositionAngleBetweenComponentsData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelPositionAngleBetweenComponentsData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelPositionAngleBetweenComponentsData.Location = new System.Drawing.Point(702, 417);
@@ -2860,6 +3070,7 @@
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.AccessibleName = "Correlation, pmRA/DE data";
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Location = new System.Drawing.Point(282, 417);
@@ -2881,6 +3092,7 @@
 			this.labelComponentIdentifiersData.AccessibleName = "Component identifiers data";
 			this.labelComponentIdentifiersData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelComponentIdentifiersData.AutoSize = true;
+			this.labelComponentIdentifiersData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelComponentIdentifiersData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelComponentIdentifiersData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelComponentIdentifiersData.Location = new System.Drawing.Point(702, 399);
@@ -2902,6 +3114,7 @@
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.AccessibleName = "Correlation, pmRA/RA*cos(delta) data";
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Location = new System.Drawing.Point(282, 399);
@@ -2923,6 +3136,7 @@
 			this.labelSolutionQualityData.AccessibleName = "Solution quality data";
 			this.labelSolutionQualityData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSolutionQualityData.AutoSize = true;
+			this.labelSolutionQualityData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelSolutionQualityData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSolutionQualityData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelSolutionQualityData.Location = new System.Drawing.Point(702, 381);
@@ -2944,6 +3158,7 @@
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.AccessibleName = "Correlation, Plx/DE data";
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.AutoSize = true;
+			this.labelCorrelationTrigonomicParallaxByDeclinationData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.Location = new System.Drawing.Point(282, 381);
@@ -2965,6 +3180,7 @@
 			this.labelAstrometricSourceFlagData.AccessibleName = "Astrometric source flag data";
 			this.labelAstrometricSourceFlagData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelAstrometricSourceFlagData.AutoSize = true;
+			this.labelAstrometricSourceFlagData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelAstrometricSourceFlagData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelAstrometricSourceFlagData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelAstrometricSourceFlagData.Location = new System.Drawing.Point(702, 363);
@@ -2986,6 +3202,7 @@
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.AccessibleName = "Correlation, Plx/RA*cos(delta) data";
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.AutoSize = true;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Location = new System.Drawing.Point(282, 363);
@@ -3007,6 +3224,7 @@
 			this.labelMultipleSystemsFlagData.AccessibleName = "Double/Multiple Systems flag data";
 			this.labelMultipleSystemsFlagData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMultipleSystemsFlagData.AutoSize = true;
+			this.labelMultipleSystemsFlagData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMultipleSystemsFlagData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMultipleSystemsFlagData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelMultipleSystemsFlagData.Location = new System.Drawing.Point(702, 345);
@@ -3028,6 +3246,7 @@
 			this.labelCorrelationDeclinationByRightAscensionData.AccessibleName = "Correlation, DE/RA*cos(delta) data";
 			this.labelCorrelationDeclinationByRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationDeclinationByRightAscensionData.AutoSize = true;
+			this.labelCorrelationDeclinationByRightAscensionData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationDeclinationByRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationDeclinationByRightAscensionData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCorrelationDeclinationByRightAscensionData.Location = new System.Drawing.Point(282, 345);
@@ -3049,6 +3268,7 @@
 			this.labelNumberComponentsInThisEntryData.AccessibleName = "Number of components in this entry data";
 			this.labelNumberComponentsInThisEntryData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelNumberComponentsInThisEntryData.AutoSize = true;
+			this.labelNumberComponentsInThisEntryData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelNumberComponentsInThisEntryData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelNumberComponentsInThisEntryData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelNumberComponentsInThisEntryData.Location = new System.Drawing.Point(702, 327);
@@ -3070,6 +3290,7 @@
 			this.labelStandardErrorProperMotionDeclinationData.AccessibleName = "Standard error in pmDE data";
 			this.labelStandardErrorProperMotionDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorProperMotionDeclinationData.AutoSize = true;
+			this.labelStandardErrorProperMotionDeclinationData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorProperMotionDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorProperMotionDeclinationData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelStandardErrorProperMotionDeclinationData.Location = new System.Drawing.Point(282, 327);
@@ -3091,6 +3312,7 @@
 			this.labelNumberEntriesWithSameCcdmData.AccessibleName = "Number of entries with same CCDM data";
 			this.labelNumberEntriesWithSameCcdmData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelNumberEntriesWithSameCcdmData.AutoSize = true;
+			this.labelNumberEntriesWithSameCcdmData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelNumberEntriesWithSameCcdmData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelNumberEntriesWithSameCcdmData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelNumberEntriesWithSameCcdmData.Location = new System.Drawing.Point(702, 309);
@@ -3112,6 +3334,7 @@
 			this.labelStandardErrorProperMotionRightAscensionData.AccessibleName = "Standard error in pmRA data";
 			this.labelStandardErrorProperMotionRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorProperMotionRightAscensionData.AutoSize = true;
+			this.labelStandardErrorProperMotionRightAscensionData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorProperMotionRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorProperMotionRightAscensionData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelStandardErrorProperMotionRightAscensionData.Location = new System.Drawing.Point(282, 309);
@@ -3133,6 +3356,7 @@
 			this.labelHistoricalStatusFlagData.AccessibleName = "Historical status flag data";
 			this.labelHistoricalStatusFlagData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelHistoricalStatusFlagData.AutoSize = true;
+			this.labelHistoricalStatusFlagData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelHistoricalStatusFlagData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelHistoricalStatusFlagData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelHistoricalStatusFlagData.Location = new System.Drawing.Point(702, 291);
@@ -3154,6 +3378,7 @@
 			this.labelStandardErrorTrigonomicParallaxData.AccessibleName = "Standard error in Plx data";
 			this.labelStandardErrorTrigonomicParallaxData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorTrigonomicParallaxData.AutoSize = true;
+			this.labelStandardErrorTrigonomicParallaxData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorTrigonomicParallaxData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorTrigonomicParallaxData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelStandardErrorTrigonomicParallaxData.Location = new System.Drawing.Point(282, 291);
@@ -3175,6 +3400,7 @@
 			this.labelCcdmIdentifierData.AccessibleName = "CCDM identifier data";
 			this.labelCcdmIdentifierData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCcdmIdentifierData.AutoSize = true;
+			this.labelCcdmIdentifierData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCcdmIdentifierData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCcdmIdentifierData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCcdmIdentifierData.Location = new System.Drawing.Point(702, 273);
@@ -3196,6 +3422,7 @@
 			this.labelStandardErrorDeclinationData.AccessibleName = "Standard error in DE data";
 			this.labelStandardErrorDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorDeclinationData.AutoSize = true;
+			this.labelStandardErrorDeclinationData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorDeclinationData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelStandardErrorDeclinationData.Location = new System.Drawing.Point(282, 273);
@@ -3217,6 +3444,7 @@
 			this.labelLightCurveAnnexData.AccessibleName = "Light curve Annex data";
 			this.labelLightCurveAnnexData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelLightCurveAnnexData.AutoSize = true;
+			this.labelLightCurveAnnexData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelLightCurveAnnexData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelLightCurveAnnexData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelLightCurveAnnexData.Location = new System.Drawing.Point(702, 255);
@@ -3238,6 +3466,7 @@
 			this.labelStandardErrorRightAscensionData.AccessibleName = "Standard error in RA*cos(DEdeg) data";
 			this.labelStandardErrorRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorRightAscensionData.AutoSize = true;
+			this.labelStandardErrorRightAscensionData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorRightAscensionData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelStandardErrorRightAscensionData.Location = new System.Drawing.Point(282, 255);
@@ -3259,6 +3488,7 @@
 			this.labelAdditionalDataAboutVariabilityData.AccessibleName = "Additional data about variability data";
 			this.labelAdditionalDataAboutVariabilityData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelAdditionalDataAboutVariabilityData.AutoSize = true;
+			this.labelAdditionalDataAboutVariabilityData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelAdditionalDataAboutVariabilityData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelAdditionalDataAboutVariabilityData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelAdditionalDataAboutVariabilityData.Location = new System.Drawing.Point(702, 237);
@@ -3280,6 +3510,7 @@
 			this.labelProperMotionDeltaData.AccessibleName = "Proper motion mu_delta, ICRS data";
 			this.labelProperMotionDeltaData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelProperMotionDeltaData.AutoSize = true;
+			this.labelProperMotionDeltaData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelProperMotionDeltaData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelProperMotionDeltaData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelProperMotionDeltaData.Location = new System.Drawing.Point(282, 237);
@@ -3301,6 +3532,7 @@
 			this.labelVariabilityTypeData.AccessibleName = "Variability type data";
 			this.labelVariabilityTypeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelVariabilityTypeData.AutoSize = true;
+			this.labelVariabilityTypeData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelVariabilityTypeData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelVariabilityTypeData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelVariabilityTypeData.Location = new System.Drawing.Point(702, 219);
@@ -3322,6 +3554,7 @@
 			this.labelProperMotionAlphaData.AccessibleName = "Proper motion mu_alpha.cos(delta), ICRS data";
 			this.labelProperMotionAlphaData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelProperMotionAlphaData.AutoSize = true;
+			this.labelProperMotionAlphaData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelProperMotionAlphaData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelProperMotionAlphaData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelProperMotionAlphaData.Location = new System.Drawing.Point(282, 219);
@@ -3343,6 +3576,7 @@
 			this.labelVariabilityPeriodData.AccessibleName = "Variability period (days) data";
 			this.labelVariabilityPeriodData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelVariabilityPeriodData.AutoSize = true;
+			this.labelVariabilityPeriodData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelVariabilityPeriodData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelVariabilityPeriodData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelVariabilityPeriodData.Location = new System.Drawing.Point(702, 201);
@@ -3364,6 +3598,7 @@
 			this.labelTrigonomicParallaxData.AccessibleName = "Trigonometric parallax data";
 			this.labelTrigonomicParallaxData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelTrigonomicParallaxData.AutoSize = true;
+			this.labelTrigonomicParallaxData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelTrigonomicParallaxData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelTrigonomicParallaxData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelTrigonomicParallaxData.Location = new System.Drawing.Point(282, 201);
@@ -3385,6 +3620,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.AccessibleName = "Hpmag at minimum (95th percentile) data";
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Location = new System.Drawing.Point(702, 183);
@@ -3406,6 +3642,7 @@
 			this.labelReferenceFlagForAstrometryData.AccessibleName = "Reference flag for astrometry data";
 			this.labelReferenceFlagForAstrometryData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelReferenceFlagForAstrometryData.AutoSize = true;
+			this.labelReferenceFlagForAstrometryData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelReferenceFlagForAstrometryData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelReferenceFlagForAstrometryData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelReferenceFlagForAstrometryData.Location = new System.Drawing.Point(282, 183);
@@ -3427,6 +3664,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.AccessibleName = "Hpmag at maximum (5th percentile) data";
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Location = new System.Drawing.Point(702, 165);
@@ -3448,6 +3686,7 @@
 			this.labelDeltaData.AccessibleName = "delta, degrees (ICRS, Epoch=J1991.25) data";
 			this.labelDeltaData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelDeltaData.AutoSize = true;
+			this.labelDeltaData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelDeltaData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelDeltaData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelDeltaData.Location = new System.Drawing.Point(282, 165);
@@ -3469,6 +3708,7 @@
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.AccessibleName = "Reference flag for Hpmag data";
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.AutoSize = true;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(702, 147);
@@ -3490,6 +3730,7 @@
 			this.labelAlphaData.AccessibleName = "alpha, degrees (ICRS, Epoch=J1991.25) data";
 			this.labelAlphaData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelAlphaData.AutoSize = true;
+			this.labelAlphaData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelAlphaData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelAlphaData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelAlphaData.Location = new System.Drawing.Point(282, 147);
@@ -3511,6 +3752,7 @@
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.AccessibleName = "Number of observations for Hpmag data";
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.AutoSize = true;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(702, 129);
@@ -3532,6 +3774,7 @@
 			this.labelSourceOfMagnitudeData.AccessibleName = "Source of magnitude data";
 			this.labelSourceOfMagnitudeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSourceOfMagnitudeData.AutoSize = true;
+			this.labelSourceOfMagnitudeData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelSourceOfMagnitudeData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSourceOfMagnitudeData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelSourceOfMagnitudeData.Location = new System.Drawing.Point(282, 129);
@@ -3553,6 +3796,7 @@
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.AccessibleName = "Scatter on Hpmag data";
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.AutoSize = true;
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(702, 111);
@@ -3574,6 +3818,7 @@
 			this.labelCoarseVariabilityFlagData.AccessibleName = "Coarse variability flag data";
 			this.labelCoarseVariabilityFlagData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCoarseVariabilityFlagData.AutoSize = true;
+			this.labelCoarseVariabilityFlagData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCoarseVariabilityFlagData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCoarseVariabilityFlagData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCoarseVariabilityFlagData.Location = new System.Drawing.Point(282, 111);
@@ -3595,6 +3840,7 @@
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.AccessibleName = "Standard error on Hpmag data";
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.AutoSize = true;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(702, 93);
@@ -3616,6 +3862,7 @@
 			this.labelMagnitudeJohnsonData.AccessibleName = "Magnitude in Johnson V data";
 			this.labelMagnitudeJohnsonData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMagnitudeJohnsonData.AutoSize = true;
+			this.labelMagnitudeJohnsonData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMagnitudeJohnsonData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMagnitudeJohnsonData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelMagnitudeJohnsonData.Location = new System.Drawing.Point(282, 93);
@@ -3637,6 +3884,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemData.AccessibleName = "Median magnitude in Hipparcos system data";
 			this.labelMedianMagnitudeInHipparcosSystemData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelMedianMagnitudeInHipparcosSystemData.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelMedianMagnitudeInHipparcosSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelMedianMagnitudeInHipparcosSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelMedianMagnitudeInHipparcosSystemData.Location = new System.Drawing.Point(702, 75);
@@ -3658,6 +3906,7 @@
 			this.labelDeclinationData.AccessibleName = "Declination in deg \' \", ICRS (J1991.25) data";
 			this.labelDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelDeclinationData.AutoSize = true;
+			this.labelDeclinationData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelDeclinationData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelDeclinationData.Location = new System.Drawing.Point(282, 75);
@@ -3679,6 +3928,7 @@
 			this.labelFlagForCombinedMagnitudesData.AccessibleName = "Flag for combined Vmag, B-V, V-I data";
 			this.labelFlagForCombinedMagnitudesData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelFlagForCombinedMagnitudesData.AutoSize = true;
+			this.labelFlagForCombinedMagnitudesData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelFlagForCombinedMagnitudesData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelFlagForCombinedMagnitudesData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelFlagForCombinedMagnitudesData.Location = new System.Drawing.Point(702, 57);
@@ -3700,6 +3950,7 @@
 			this.labelRightAscensionData.AccessibleName = "Right ascension in h m s, ICRS (J1991.25) data";
 			this.labelRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelRightAscensionData.AutoSize = true;
+			this.labelRightAscensionData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelRightAscensionData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelRightAscensionData.Location = new System.Drawing.Point(282, 57);
@@ -3721,6 +3972,7 @@
 			this.labelSourceOfViData.AccessibleName = "Source of V-I data";
 			this.labelSourceOfViData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelSourceOfViData.AutoSize = true;
+			this.labelSourceOfViData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelSourceOfViData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelSourceOfViData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelSourceOfViData.Location = new System.Drawing.Point(702, 39);
@@ -3742,6 +3994,7 @@
 			this.labelProximityFlagData.AccessibleName = "Proximity flag data";
 			this.labelProximityFlagData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelProximityFlagData.AutoSize = true;
+			this.labelProximityFlagData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelProximityFlagData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelProximityFlagData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelProximityFlagData.Location = new System.Drawing.Point(282, 39);
@@ -3763,6 +4016,7 @@
 			this.labelStandardErrorViData.AccessibleName = "Standard error on V-I data";
 			this.labelStandardErrorViData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelStandardErrorViData.AutoSize = true;
+			this.labelStandardErrorViData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelStandardErrorViData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelStandardErrorViData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelStandardErrorViData.Location = new System.Drawing.Point(702, 21);
@@ -3784,6 +4038,7 @@
 			this.labelIdentifierData.AccessibleName = "Identifier (HIP number) data";
 			this.labelIdentifierData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelIdentifierData.AutoSize = true;
+			this.labelIdentifierData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelIdentifierData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelIdentifierData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelIdentifierData.Location = new System.Drawing.Point(282, 21);
@@ -3805,6 +4060,7 @@
 			this.labelColorIndexInCousinsSystemData.AccessibleName = "Colour index in Cousins\' system data";
 			this.labelColorIndexInCousinsSystemData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelColorIndexInCousinsSystemData.AutoSize = true;
+			this.labelColorIndexInCousinsSystemData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelColorIndexInCousinsSystemData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelColorIndexInCousinsSystemData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelColorIndexInCousinsSystemData.Location = new System.Drawing.Point(702, 3);
@@ -3826,6 +4082,7 @@
 			this.labelCatalogData.AccessibleName = "Catalogue (H=Hipparcos) data";
 			this.labelCatalogData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCatalogData.AutoSize = true;
+			this.labelCatalogData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCatalogData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCatalogData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelCatalogData.Location = new System.Drawing.Point(282, 3);
@@ -3863,6 +4120,7 @@
 			this.Text = "Hipparcos Catalog Viewer";
 			this.Load += new System.EventHandler(this.HipparcosCatalogViewerForm_Load);
 			this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.HipparcosCatalogViewerForm_PreviewKeyDown);
+			this.contextMenuStripCopyData.ResumeLayout(false);
 			this.toolStrip.ResumeLayout(false);
 			this.toolStrip.PerformLayout();
 			this.statusStrip.ResumeLayout(false);
@@ -4052,5 +4310,7 @@
 		private System.Windows.Forms.ToolStripTextBox toolStripTextBoxGoToIndex;
 		private System.Windows.Forms.ToolStripButton toolStripButtonGoToIndex;
 		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemInfo;
+		private System.Windows.Forms.ContextMenuStrip contextMenuStripCopyData;
+		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemCopyData;
 	}
 }

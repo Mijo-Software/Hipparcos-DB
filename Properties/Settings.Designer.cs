@@ -100,13 +100,13 @@ namespace Hipparcos_DB.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public byte UserCopyDataMethod {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool UserEnableCopyMethod {
             get {
-                return ((byte)(this["UserCopyDataMethod"]));
+                return ((bool)(this["UserEnableCopyMethod"]));
             }
             set {
-                this["UserCopyDataMethod"] = value;
+                this["UserEnableCopyMethod"] = value;
             }
         }
         
@@ -184,10 +184,10 @@ namespace Hipparcos_DB.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public byte DefaultCopyDataMethod {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool DefaultEnableCopyMethod {
             get {
-                return ((byte)(this["DefaultCopyDataMethod"]));
+                return ((bool)(this["DefaultEnableCopyMethod"]));
             }
         }
     }

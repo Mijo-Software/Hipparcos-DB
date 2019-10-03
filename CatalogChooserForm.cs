@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hipparcos_DB.Properties;
+using System;
 using System.IO;
 using System.Windows.Forms;
 
@@ -6,6 +7,8 @@ namespace Hipparcos_DB
 {
 	public partial class CatalogChooserForm : Form
 	{
+		private readonly Settings settings = new Settings();
+
 		private readonly string[] filesHipparcosCatalog =
 			{
 				"h_dm_com.dat.gz",
@@ -36,6 +39,14 @@ namespace Hipparcos_DB
 		public CatalogChooserForm()
 		{
 			InitializeComponent();
+			/*switch (settings.UserStartPosition)
+			{
+				case 0: StartPosition = FormStartPosition.CenterParent; break;
+				case 1: StartPosition = FormStartPosition.CenterScreen; break;
+				default: StartPosition = FormStartPosition.CenterParent; break;
+			}
+			*/
+			buttonDownloadTychoCatalog.Enabled = buttonOpenTychoCatalog.Enabled = false;
 		}
 
 		private void SetStatusbar(string text)
@@ -57,6 +68,10 @@ namespace Hipparcos_DB
 			else if (sender is RadioButton)
 			{
 				SetStatusbar(text: ((RadioButton)sender).AccessibleDescription);
+			}
+			else if (sender is CheckBox)
+			{
+				SetStatusbar(text: ((CheckBox)sender).AccessibleDescription);
 			}
 			else if (sender is DateTimePicker)
 			{
@@ -132,14 +147,6 @@ namespace Hipparcos_DB
 
 		private void CatalogChooserForm_Load(object sender, EventArgs e)
 		{
-			buttonDownloadTychoCatalog.Enabled = buttonOpenTychoCatalog.Enabled = false;
-			/*
-			if (!Directory.Exists(path: "catalogs/i239"))
-			{
-				buttonOpenHipparcosCatalog.Enabled = false;
-				buttonOpenTychoCatalog.Enabled = false;
-			}
-			*/
 			ClearStatusbar();
 		}
 
@@ -147,11 +154,13 @@ namespace Hipparcos_DB
 
 		private void ButtonOpenTychoCatalog_Click(object sender, EventArgs e)
 		{
+			settings.Reload();
 			throw new NotImplementedException();
 		}
 
 		private void ButtonInfo_Click(object sender, EventArgs e)
 		{
+			settings.Reload();
 			using (AboutBoxForm formAboutBox = new AboutBoxForm())
 			{
 				formAboutBox.ShowDialog();
@@ -160,6 +169,7 @@ namespace Hipparcos_DB
 
 		private void ButtonOptions_Click(object sender, EventArgs e)
 		{
+			settings.Reload();
 			using (OptionsForm formOptions = new OptionsForm())
 			{
 				formOptions.ShowDialog();
@@ -173,18 +183,19 @@ namespace Hipparcos_DB
 
 		private void ButtonDownloadHipparcosCatalog_Click(object sender, EventArgs e)
 		{
+			settings.Reload();
 			using (DownloaderForm downloaderForm = new DownloaderForm())
 			{
-				downloaderForm.SetHost(host: "http://cdsarc.u-strasbg.fr/ftp/I/239/");
-				//downloaderForm.SetHost(host: "http://cdsarc.u-strasbg.fr/viz-bin/nph-Cat/txt.gz?I/239/");
+				downloaderForm.SetHost(host: settings.UserHostName);
 				downloaderForm.SetHostUrls(files: filesHipparcosCatalog);
-				downloaderForm.SetCatalogDirectory(directory: "catalogs/i239/");
+				downloaderForm.SetCatalogDirectory(directory: settings.UserHipparcosCatalogDirectory);
 				downloaderForm.ShowDialog();
 			}
 		}
 
 		private void ButtonDownloadTychoCatalog_Click(object sender, EventArgs e)
 		{
+			settings.Reload();
 			using (DownloaderForm downloaderForm = new DownloaderForm())
 			{
 				downloaderForm.ShowDialog();
@@ -193,12 +204,13 @@ namespace Hipparcos_DB
 
 		private void ButtonOpenHipparcosCatalog_Click(object sender, EventArgs e)
 		{
+			settings.Reload();
 			bool allFilesFound = true;
 			foreach (string file in filesHipparcosCatalog)
 			{
 				if (allFilesFound)
 				{
-					if (File.Exists(path: "catalogs/i239/" + RemoveFileExtension(filename: file)))
+					if (File.Exists(path: settings.UserHipparcosCatalogDirectory + RemoveFileExtension(filename: file)))
 					{
 						allFilesFound = true;
 					}

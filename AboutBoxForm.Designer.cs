@@ -35,23 +35,23 @@
 			this.labelCopyright = new System.Windows.Forms.Label();
 			this.labelVersion = new System.Windows.Forms.Label();
 			this.labelProductName = new System.Windows.Forms.Label();
+			this.okButton = new System.Windows.Forms.Button();
 			this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
 			this.statusStrip = new System.Windows.Forms.StatusStrip();
+			this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
 			this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
 			this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
 			this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
 			this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
 			this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-			this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
-			this.okButton = new System.Windows.Forms.Button();
-			this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
 			this.logoPictureBox = new System.Windows.Forms.PictureBox();
+			this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
 			this.statusStrip.SuspendLayout();
 			this.tableLayoutPanel.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
 			this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
 			this.toolStripContainer.ContentPanel.SuspendLayout();
 			this.toolStripContainer.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// textBoxDescription
@@ -155,6 +155,26 @@
 			this.labelProductName.MouseEnter += new System.EventHandler(this.LabelProductName_MouseEnter);
 			this.labelProductName.MouseLeave += new System.EventHandler(this.LabelProductName_MouseLeave);
 			// 
+			// okButton
+			// 
+			this.okButton.AccessibleDescription = "Clock to close the dialog";
+			this.okButton.AccessibleName = "okay button";
+			this.okButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+			this.okButton.Image = global::Hipparcos_DB.Properties.Resources.fugue_tick_button_16px_shadowless;
+			this.okButton.Location = new System.Drawing.Point(246, 111);
+			this.okButton.Name = "okButton";
+			this.okButton.Size = new System.Drawing.Size(75, 23);
+			this.okButton.TabIndex = 5;
+			this.okButton.Text = "&OK";
+			this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.okButton, "OK");
+			this.okButton.Enter += new System.EventHandler(this.OkButton_Enter);
+			this.okButton.MouseEnter += new System.EventHandler(this.OkButton_MouseEnter);
+			this.okButton.MouseLeave += new System.EventHandler(this.OkButton_MouseLeave);
+			// 
 			// BottomToolStripPanel
 			// 
 			this.BottomToolStripPanel.AccessibleDescription = "lower part of the container";
@@ -183,6 +203,20 @@
 			this.statusStrip.SizingGrip = false;
 			this.statusStrip.TabIndex = 0;
 			this.statusStrip.Text = "statusStrip";
+			// 
+			// toolStripStatusLabelInfo
+			// 
+			this.toolStripStatusLabelInfo.AccessibleDescription = "text with some information";
+			this.toolStripStatusLabelInfo.AccessibleName = "information text";
+			this.toolStripStatusLabelInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.toolStripStatusLabelInfo.AutoToolTip = true;
+			this.toolStripStatusLabelInfo.DoubleClickEnabled = true;
+			this.toolStripStatusLabelInfo.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_white_16px_shadowless;
+			this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
+			this.toolStripStatusLabelInfo.Size = new System.Drawing.Size(66, 17);
+			this.toolStripStatusLabelInfo.Text = "info text";
+			this.toolStripStatusLabelInfo.MouseEnter += new System.EventHandler(this.ToolStripStatusLabel_MouseEnter);
+			this.toolStripStatusLabelInfo.MouseLeave += new System.EventHandler(this.ToolStripStatusLabel_MouseLeave);
 			// 
 			// TopToolStripPanel
 			// 
@@ -256,6 +290,22 @@
 			this.tableLayoutPanel.TabIndex = 0;
 			this.tableLayoutPanel.TabStop = true;
 			// 
+			// logoPictureBox
+			// 
+			this.logoPictureBox.AccessibleDescription = "image with hipparcos";
+			this.logoPictureBox.AccessibleName = "image with hipparcos";
+			this.logoPictureBox.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+			this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.logoPictureBox.Image = global::Hipparcos_DB.Properties.Resources.hipparcos1;
+			this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
+			this.logoPictureBox.Name = "logoPictureBox";
+			this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
+			this.logoPictureBox.Size = new System.Drawing.Size(100, 131);
+			this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.logoPictureBox.TabIndex = 12;
+			this.logoPictureBox.TabStop = false;
+			this.logoPictureBox.MouseEnter += new System.EventHandler(this.LogoPictureBox_MouseEnter);
+			// 
 			// toolStripContainer
 			// 
 			this.toolStripContainer.AccessibleDescription = "Group the toolstrip container";
@@ -301,56 +351,6 @@
 			this.toolStripContainer.TopToolStripPanel.AccessibleName = "upper part of the container";
 			this.toolStripContainer.TopToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			// 
-			// okButton
-			// 
-			this.okButton.AccessibleDescription = "Clock to close the dialog";
-			this.okButton.AccessibleName = "okay button";
-			this.okButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.okButton.Image = global::Hipparcos_DB.Properties.Resources.fugue_tick_button_16px_shadowless;
-			this.okButton.Location = new System.Drawing.Point(246, 111);
-			this.okButton.Name = "okButton";
-			this.okButton.Size = new System.Drawing.Size(75, 23);
-			this.okButton.TabIndex = 5;
-			this.okButton.Text = "&OK";
-			this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.toolTip.SetToolTip(this.okButton, "OK");
-			this.okButton.Enter += new System.EventHandler(this.OkButton_Enter);
-			this.okButton.MouseEnter += new System.EventHandler(this.OkButton_MouseEnter);
-			this.okButton.MouseLeave += new System.EventHandler(this.OkButton_MouseLeave);
-			// 
-			// toolStripStatusLabelInfo
-			// 
-			this.toolStripStatusLabelInfo.AccessibleDescription = "text with some information";
-			this.toolStripStatusLabelInfo.AccessibleName = "information text";
-			this.toolStripStatusLabelInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.toolStripStatusLabelInfo.AutoToolTip = true;
-			this.toolStripStatusLabelInfo.DoubleClickEnabled = true;
-			this.toolStripStatusLabelInfo.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_white_16px_shadowless;
-			this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
-			this.toolStripStatusLabelInfo.Size = new System.Drawing.Size(66, 17);
-			this.toolStripStatusLabelInfo.Text = "info text";
-			this.toolStripStatusLabelInfo.MouseEnter += new System.EventHandler(this.ToolStripStatusLabel_MouseEnter);
-			this.toolStripStatusLabelInfo.MouseLeave += new System.EventHandler(this.ToolStripStatusLabel_MouseLeave);
-			// 
-			// logoPictureBox
-			// 
-			this.logoPictureBox.AccessibleDescription = "image with hipparcos";
-			this.logoPictureBox.AccessibleName = "image with hipparcos";
-			this.logoPictureBox.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
-			this.logoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.logoPictureBox.Image = global::Hipparcos_DB.Properties.Resources.hipparcos1;
-			this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
-			this.logoPictureBox.Name = "logoPictureBox";
-			this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
-			this.logoPictureBox.Size = new System.Drawing.Size(100, 131);
-			this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.logoPictureBox.TabIndex = 12;
-			this.logoPictureBox.TabStop = false;
-			this.logoPictureBox.MouseEnter += new System.EventHandler(this.LogoPictureBox_MouseEnter);
-			// 
 			// AboutBoxForm
 			// 
 			this.AcceptButton = this.okButton;
@@ -372,12 +372,12 @@
 			this.statusStrip.PerformLayout();
 			this.tableLayoutPanel.ResumeLayout(false);
 			this.tableLayoutPanel.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
 			this.toolStripContainer.BottomToolStripPanel.ResumeLayout(false);
 			this.toolStripContainer.BottomToolStripPanel.PerformLayout();
 			this.toolStripContainer.ContentPanel.ResumeLayout(false);
 			this.toolStripContainer.ResumeLayout(false);
 			this.toolStripContainer.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
 			this.ResumeLayout(false);
 
         }

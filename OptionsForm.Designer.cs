@@ -33,43 +33,44 @@
 			this.statusStrip = new System.Windows.Forms.StatusStrip();
 			this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-			this.buttonRestoreHost = new System.Windows.Forms.Button();
-			this.buttonRestoreHipparcosDirectory = new System.Windows.Forms.Button();
-			this.buttonRestoreTychoDirectory = new System.Windows.Forms.Button();
-			this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
-			this.groupBoxCatalogDirectories = new System.Windows.Forms.GroupBox();
 			this.textBoxTychoDirectory = new System.Windows.Forms.TextBox();
 			this.labelTychoDirectory = new System.Windows.Forms.Label();
 			this.textBoxHipparcosDirectory = new System.Windows.Forms.TextBox();
 			this.labelHipparcosDirectory = new System.Windows.Forms.Label();
-			this.groupBoxHoverEffect = new System.Windows.Forms.GroupBox();
 			this.checkBoxEnableHoverEffect = new System.Windows.Forms.CheckBox();
-			this.groupBoxCopyDataMethod = new System.Windows.Forms.GroupBox();
-			this.comboBoxCopyDataMethod = new System.Windows.Forms.ComboBox();
-			this.labelCopyDataMethod = new System.Windows.Forms.Label();
-			this.groupBoxDataTableStyle = new System.Windows.Forms.GroupBox();
 			this.comboBoxDataTableStyle = new System.Windows.Forms.ComboBox();
 			this.labelDataTableStyle = new System.Windows.Forms.Label();
-			this.groupBoxQuickDownload = new System.Windows.Forms.GroupBox();
 			this.textBoxHost = new System.Windows.Forms.TextBox();
 			this.labelHost = new System.Windows.Forms.Label();
 			this.checkBoxEnableQuickDownload = new System.Windows.Forms.CheckBox();
-			this.buttonCancel = new System.Windows.Forms.Button();
-			this.buttonApply = new System.Windows.Forms.Button();
 			this.comboBoxStartPosition = new System.Windows.Forms.ComboBox();
 			this.labelStartPosition = new System.Windows.Forms.Label();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.buttonApply = new System.Windows.Forms.Button();
+			this.buttonCancel = new System.Windows.Forms.Button();
+			this.buttonRestoreHost = new System.Windows.Forms.Button();
 			this.buttonDefaultSettings = new System.Windows.Forms.Button();
+			this.buttonRestoreTychoDirectory = new System.Windows.Forms.Button();
+			this.buttonRestoreHipparcosDirectory = new System.Windows.Forms.Button();
+			this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
+			this.groupBoxHost = new System.Windows.Forms.GroupBox();
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.groupBoxCatalogDirectories = new System.Windows.Forms.GroupBox();
+			this.groupBoxHoverEffect = new System.Windows.Forms.GroupBox();
+			this.groupBoxCopyMethod = new System.Windows.Forms.GroupBox();
+			this.groupBoxDataTableStyle = new System.Windows.Forms.GroupBox();
+			this.groupBoxQuickDownload = new System.Windows.Forms.GroupBox();
+			this.checkBoxEnableDoubleClickCopy = new System.Windows.Forms.CheckBox();
 			this.statusStrip.SuspendLayout();
 			this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
 			this.toolStripContainer.ContentPanel.SuspendLayout();
 			this.toolStripContainer.SuspendLayout();
+			this.groupBoxHost.SuspendLayout();
+			this.groupBox1.SuspendLayout();
 			this.groupBoxCatalogDirectories.SuspendLayout();
 			this.groupBoxHoverEffect.SuspendLayout();
-			this.groupBoxCopyDataMethod.SuspendLayout();
+			this.groupBoxCopyMethod.SuspendLayout();
 			this.groupBoxDataTableStyle.SuspendLayout();
 			this.groupBoxQuickDownload.SuspendLayout();
-			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// statusStrip
@@ -102,134 +103,6 @@
 			this.toolStripStatusLabelInfo.Text = "info text";
 			this.toolStripStatusLabelInfo.MouseEnter += new System.EventHandler(this.ToolStripStatusLabelInfo_MouseEnter);
 			this.toolStripStatusLabelInfo.MouseLeave += new System.EventHandler(this.ToolStripStatusLabelInfo_MouseLeave);
-			// 
-			// buttonRestoreHost
-			// 
-			this.buttonRestoreHost.AccessibleDescription = "Restore the host url";
-			this.buttonRestoreHost.AccessibleName = "Restore the host url";
-			this.buttonRestoreHost.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonRestoreHost.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
-			this.buttonRestoreHost.Location = new System.Drawing.Point(336, 39);
-			this.buttonRestoreHost.Name = "buttonRestoreHost";
-			this.buttonRestoreHost.Size = new System.Drawing.Size(29, 23);
-			this.buttonRestoreHost.TabIndex = 3;
-			this.buttonRestoreHost.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.toolTip.SetToolTip(this.buttonRestoreHost, "Restore the host url");
-			this.buttonRestoreHost.UseVisualStyleBackColor = true;
-			this.buttonRestoreHost.Click += new System.EventHandler(this.ButtonRestoreHost_Click);
-			this.buttonRestoreHost.Enter += new System.EventHandler(this.ButtonRestoreHost_Enter);
-			this.buttonRestoreHost.Leave += new System.EventHandler(this.ButtonRestoreHost_Leave);
-			this.buttonRestoreHost.MouseEnter += new System.EventHandler(this.ButtonRestoreHost_MouseEnter);
-			this.buttonRestoreHost.MouseLeave += new System.EventHandler(this.ButtonRestoreHost_MouseLeave);
-			// 
-			// buttonRestoreHipparcosDirectory
-			// 
-			this.buttonRestoreHipparcosDirectory.AccessibleDescription = "Restore the Hipparcos catalog directory";
-			this.buttonRestoreHipparcosDirectory.AccessibleName = "Restore the Hipparcos catalog directory";
-			this.buttonRestoreHipparcosDirectory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonRestoreHipparcosDirectory.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
-			this.buttonRestoreHipparcosDirectory.Location = new System.Drawing.Point(336, 11);
-			this.buttonRestoreHipparcosDirectory.Name = "buttonRestoreHipparcosDirectory";
-			this.buttonRestoreHipparcosDirectory.Size = new System.Drawing.Size(29, 23);
-			this.buttonRestoreHipparcosDirectory.TabIndex = 2;
-			this.buttonRestoreHipparcosDirectory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.toolTip.SetToolTip(this.buttonRestoreHipparcosDirectory, "Restore the Hipparcos catalog directory");
-			this.buttonRestoreHipparcosDirectory.UseVisualStyleBackColor = true;
-			this.buttonRestoreHipparcosDirectory.Click += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_Click);
-			this.buttonRestoreHipparcosDirectory.Enter += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_Enter);
-			this.buttonRestoreHipparcosDirectory.Leave += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_Leave);
-			this.buttonRestoreHipparcosDirectory.MouseEnter += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_MouseEnter);
-			this.buttonRestoreHipparcosDirectory.MouseLeave += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_MouseLeave);
-			// 
-			// buttonRestoreTychoDirectory
-			// 
-			this.buttonRestoreTychoDirectory.AccessibleDescription = "Restore the Tycho catalog directory";
-			this.buttonRestoreTychoDirectory.AccessibleName = "Restore the Tycho catalog directory";
-			this.buttonRestoreTychoDirectory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonRestoreTychoDirectory.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
-			this.buttonRestoreTychoDirectory.Location = new System.Drawing.Point(336, 37);
-			this.buttonRestoreTychoDirectory.Name = "buttonRestoreTychoDirectory";
-			this.buttonRestoreTychoDirectory.Size = new System.Drawing.Size(29, 23);
-			this.buttonRestoreTychoDirectory.TabIndex = 5;
-			this.buttonRestoreTychoDirectory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.toolTip.SetToolTip(this.buttonRestoreTychoDirectory, "Restore Tycho catalog directory");
-			this.buttonRestoreTychoDirectory.UseVisualStyleBackColor = true;
-			this.buttonRestoreTychoDirectory.Click += new System.EventHandler(this.ButtonRestoreTychoDirectory_Click);
-			this.buttonRestoreTychoDirectory.Enter += new System.EventHandler(this.ButtonRestoreTychoDirectory_Enter);
-			this.buttonRestoreTychoDirectory.Leave += new System.EventHandler(this.ButtonRestoreTychoDirectory_Leave);
-			this.buttonRestoreTychoDirectory.MouseEnter += new System.EventHandler(this.ButtonRestoreTychoDirectory_MouseEnter);
-			this.buttonRestoreTychoDirectory.MouseLeave += new System.EventHandler(this.ButtonRestoreTychoDirectory_MouseLeave);
-			// 
-			// toolStripContainer
-			// 
-			this.toolStripContainer.AccessibleDescription = "Group the toolstrip container";
-			this.toolStripContainer.AccessibleName = "container grouping";
-			this.toolStripContainer.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-			// 
-			// toolStripContainer.BottomToolStripPanel
-			// 
-			this.toolStripContainer.BottomToolStripPanel.AccessibleDescription = "lower part of the container";
-			this.toolStripContainer.BottomToolStripPanel.AccessibleName = "lower part of the container";
-			this.toolStripContainer.BottomToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.toolStripContainer.BottomToolStripPanel.Controls.Add(this.statusStrip);
-			// 
-			// toolStripContainer.ContentPanel
-			// 
-			this.toolStripContainer.ContentPanel.AccessibleDescription = "content panel of the container";
-			this.toolStripContainer.ContentPanel.AccessibleName = "content panel of the container";
-			this.toolStripContainer.ContentPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.toolStripContainer.ContentPanel.Controls.Add(this.buttonDefaultSettings);
-			this.toolStripContainer.ContentPanel.Controls.Add(this.buttonCancel);
-			this.toolStripContainer.ContentPanel.Controls.Add(this.buttonApply);
-			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBox1);
-			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBoxCatalogDirectories);
-			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBoxHoverEffect);
-			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBoxCopyDataMethod);
-			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBoxDataTableStyle);
-			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBoxQuickDownload);
-			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(396, 311);
-			this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-			// 
-			// toolStripContainer.LeftToolStripPanel
-			// 
-			this.toolStripContainer.LeftToolStripPanel.AccessibleDescription = "left part of the container";
-			this.toolStripContainer.LeftToolStripPanel.AccessibleName = "left part of the container";
-			this.toolStripContainer.LeftToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.toolStripContainer.Location = new System.Drawing.Point(0, 0);
-			this.toolStripContainer.Name = "toolStripContainer";
-			// 
-			// toolStripContainer.RightToolStripPanel
-			// 
-			this.toolStripContainer.RightToolStripPanel.AccessibleDescription = "right part of the container";
-			this.toolStripContainer.RightToolStripPanel.AccessibleName = "right part of the container";
-			this.toolStripContainer.RightToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.toolStripContainer.Size = new System.Drawing.Size(396, 333);
-			this.toolStripContainer.TabIndex = 0;
-			this.toolStripContainer.Text = "toolStripContainer";
-			// 
-			// toolStripContainer.TopToolStripPanel
-			// 
-			this.toolStripContainer.TopToolStripPanel.AccessibleDescription = "upper part of the container";
-			this.toolStripContainer.TopToolStripPanel.AccessibleName = "upper part of the container";
-			this.toolStripContainer.TopToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			// 
-			// groupBoxCatalogDirectories
-			// 
-			this.groupBoxCatalogDirectories.AccessibleDescription = "Group the catalog directories setting";
-			this.groupBoxCatalogDirectories.AccessibleName = "Group the catalog directories setting";
-			this.groupBoxCatalogDirectories.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-			this.groupBoxCatalogDirectories.Controls.Add(this.buttonRestoreTychoDirectory);
-			this.groupBoxCatalogDirectories.Controls.Add(this.buttonRestoreHipparcosDirectory);
-			this.groupBoxCatalogDirectories.Controls.Add(this.textBoxTychoDirectory);
-			this.groupBoxCatalogDirectories.Controls.Add(this.labelTychoDirectory);
-			this.groupBoxCatalogDirectories.Controls.Add(this.textBoxHipparcosDirectory);
-			this.groupBoxCatalogDirectories.Controls.Add(this.labelHipparcosDirectory);
-			this.groupBoxCatalogDirectories.Location = new System.Drawing.Point(12, 205);
-			this.groupBoxCatalogDirectories.Name = "groupBoxCatalogDirectories";
-			this.groupBoxCatalogDirectories.Size = new System.Drawing.Size(371, 69);
-			this.groupBoxCatalogDirectories.TabIndex = 5;
-			this.groupBoxCatalogDirectories.TabStop = false;
-			this.groupBoxCatalogDirectories.Text = "Catalog directories";
 			// 
 			// textBoxTychoDirectory
 			// 
@@ -299,19 +172,6 @@
 			this.labelHipparcosDirectory.MouseEnter += new System.EventHandler(this.LabelHipparcosDirectory_MouseEnter);
 			this.labelHipparcosDirectory.MouseLeave += new System.EventHandler(this.LabelHipparcosDirectory_MouseLeave);
 			// 
-			// groupBoxHoverEffect
-			// 
-			this.groupBoxHoverEffect.AccessibleDescription = "Group the hover effect setting";
-			this.groupBoxHoverEffect.AccessibleName = "Hover effect grouping";
-			this.groupBoxHoverEffect.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-			this.groupBoxHoverEffect.Controls.Add(this.checkBoxEnableHoverEffect);
-			this.groupBoxHoverEffect.Location = new System.Drawing.Point(12, 12);
-			this.groupBoxHoverEffect.Name = "groupBoxHoverEffect";
-			this.groupBoxHoverEffect.Size = new System.Drawing.Size(182, 53);
-			this.groupBoxHoverEffect.TabIndex = 0;
-			this.groupBoxHoverEffect.TabStop = false;
-			this.groupBoxHoverEffect.Text = "Hover effect";
-			// 
 			// checkBoxEnableHoverEffect
 			// 
 			this.checkBoxEnableHoverEffect.AccessibleDescription = "Check to enable the hover effect on data tables";
@@ -320,7 +180,7 @@
 			this.checkBoxEnableHoverEffect.AutoSize = true;
 			this.checkBoxEnableHoverEffect.Checked = true;
 			this.checkBoxEnableHoverEffect.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.checkBoxEnableHoverEffect.Location = new System.Drawing.Point(9, 23);
+			this.checkBoxEnableHoverEffect.Location = new System.Drawing.Point(9, 21);
 			this.checkBoxEnableHoverEffect.Name = "checkBoxEnableHoverEffect";
 			this.checkBoxEnableHoverEffect.Size = new System.Drawing.Size(119, 17);
 			this.checkBoxEnableHoverEffect.TabIndex = 0;
@@ -331,71 +191,6 @@
 			this.checkBoxEnableHoverEffect.Leave += new System.EventHandler(this.CheckBoxEnableHoverEffect_Leave);
 			this.checkBoxEnableHoverEffect.MouseEnter += new System.EventHandler(this.CheckBoxEnableHoverEffect_MouseEnter);
 			this.checkBoxEnableHoverEffect.MouseLeave += new System.EventHandler(this.CheckBoxEnableHoverEffect_MouseLeave);
-			// 
-			// groupBoxCopyDataMethod
-			// 
-			this.groupBoxCopyDataMethod.AccessibleDescription = "Group the copy data method setting";
-			this.groupBoxCopyDataMethod.AccessibleName = "Copy data method grouping";
-			this.groupBoxCopyDataMethod.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-			this.groupBoxCopyDataMethod.Controls.Add(this.comboBoxCopyDataMethod);
-			this.groupBoxCopyDataMethod.Controls.Add(this.labelCopyDataMethod);
-			this.groupBoxCopyDataMethod.Location = new System.Drawing.Point(12, 71);
-			this.groupBoxCopyDataMethod.Name = "groupBoxCopyDataMethod";
-			this.groupBoxCopyDataMethod.Size = new System.Drawing.Size(182, 53);
-			this.groupBoxCopyDataMethod.TabIndex = 2;
-			this.groupBoxCopyDataMethod.TabStop = false;
-			this.groupBoxCopyDataMethod.Text = "Copy data method";
-			// 
-			// comboBoxCopyDataMethod
-			// 
-			this.comboBoxCopyDataMethod.AccessibleDescription = "list of the copy data method";
-			this.comboBoxCopyDataMethod.AccessibleName = "Copy data method";
-			this.comboBoxCopyDataMethod.AccessibleRole = System.Windows.Forms.AccessibleRole.DropList;
-			this.comboBoxCopyDataMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBoxCopyDataMethod.FormattingEnabled = true;
-			this.comboBoxCopyDataMethod.Items.AddRange(new object[] {
-            "Double click",
-            "Right mouse click"});
-			this.comboBoxCopyDataMethod.Location = new System.Drawing.Point(58, 19);
-			this.comboBoxCopyDataMethod.Name = "comboBoxCopyDataMethod";
-			this.comboBoxCopyDataMethod.Size = new System.Drawing.Size(118, 21);
-			this.comboBoxCopyDataMethod.TabIndex = 1;
-			this.toolTip.SetToolTip(this.comboBoxCopyDataMethod, "Copy data method");
-			this.comboBoxCopyDataMethod.Enter += new System.EventHandler(this.ComboBoxCopyDataMethod_Enter);
-			this.comboBoxCopyDataMethod.Leave += new System.EventHandler(this.ComboBoxCopyDataMethod_Leave);
-			this.comboBoxCopyDataMethod.MouseEnter += new System.EventHandler(this.ComboBoxCopyDataMethod_MouseEnter);
-			this.comboBoxCopyDataMethod.MouseLeave += new System.EventHandler(this.ComboBoxCopyDataMethod_MouseLeave);
-			// 
-			// labelCopyDataMethod
-			// 
-			this.labelCopyDataMethod.AccessibleDescription = "Short description of the copy data method";
-			this.labelCopyDataMethod.AccessibleName = "Copy data method";
-			this.labelCopyDataMethod.AccessibleRole = System.Windows.Forms.AccessibleRole.StatusBar;
-			this.labelCopyDataMethod.AutoSize = true;
-			this.labelCopyDataMethod.Location = new System.Drawing.Point(6, 22);
-			this.labelCopyDataMethod.Name = "labelCopyDataMethod";
-			this.labelCopyDataMethod.Size = new System.Drawing.Size(46, 13);
-			this.labelCopyDataMethod.TabIndex = 0;
-			this.labelCopyDataMethod.Text = "&Method:";
-			this.toolTip.SetToolTip(this.labelCopyDataMethod, "Copy data method");
-			this.labelCopyDataMethod.Enter += new System.EventHandler(this.LabelCopyDataMethod_Enter);
-			this.labelCopyDataMethod.Leave += new System.EventHandler(this.LabelCopyDataMethod_Leave);
-			this.labelCopyDataMethod.MouseEnter += new System.EventHandler(this.LabelCopyDataMethod_MouseEnter);
-			this.labelCopyDataMethod.MouseLeave += new System.EventHandler(this.LabelCopyDataMethod_MouseLeave);
-			// 
-			// groupBoxDataTableStyle
-			// 
-			this.groupBoxDataTableStyle.AccessibleDescription = "Group the data table style setting";
-			this.groupBoxDataTableStyle.AccessibleName = "Data table style grouping";
-			this.groupBoxDataTableStyle.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-			this.groupBoxDataTableStyle.Controls.Add(this.comboBoxDataTableStyle);
-			this.groupBoxDataTableStyle.Controls.Add(this.labelDataTableStyle);
-			this.groupBoxDataTableStyle.Location = new System.Drawing.Point(201, 71);
-			this.groupBoxDataTableStyle.Name = "groupBoxDataTableStyle";
-			this.groupBoxDataTableStyle.Size = new System.Drawing.Size(182, 53);
-			this.groupBoxDataTableStyle.TabIndex = 3;
-			this.groupBoxDataTableStyle.TabStop = false;
-			this.groupBoxDataTableStyle.Text = "Data table style";
 			// 
 			// comboBoxDataTableStyle
 			// 
@@ -434,32 +229,16 @@
 			this.labelDataTableStyle.MouseEnter += new System.EventHandler(this.LabelDataTableStyle_MouseEnter);
 			this.labelDataTableStyle.MouseLeave += new System.EventHandler(this.LabelDataTableStyle_MouseLeave);
 			// 
-			// groupBoxQuickDownload
-			// 
-			this.groupBoxQuickDownload.AccessibleDescription = "Group the Quick download setting";
-			this.groupBoxQuickDownload.AccessibleName = "Group the quick download setting";
-			this.groupBoxQuickDownload.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-			this.groupBoxQuickDownload.Controls.Add(this.buttonRestoreHost);
-			this.groupBoxQuickDownload.Controls.Add(this.textBoxHost);
-			this.groupBoxQuickDownload.Controls.Add(this.labelHost);
-			this.groupBoxQuickDownload.Controls.Add(this.checkBoxEnableQuickDownload);
-			this.groupBoxQuickDownload.Location = new System.Drawing.Point(12, 130);
-			this.groupBoxQuickDownload.Name = "groupBoxQuickDownload";
-			this.groupBoxQuickDownload.Size = new System.Drawing.Size(371, 69);
-			this.groupBoxQuickDownload.TabIndex = 4;
-			this.groupBoxQuickDownload.TabStop = false;
-			this.groupBoxQuickDownload.Text = "Quick download";
-			// 
 			// textBoxHost
 			// 
 			this.textBoxHost.AccessibleDescription = "Contents the url of the host";
 			this.textBoxHost.AccessibleName = "Host url";
 			this.textBoxHost.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
 			this.textBoxHost.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-			this.textBoxHost.Location = new System.Drawing.Point(58, 41);
+			this.textBoxHost.Location = new System.Drawing.Point(42, 13);
 			this.textBoxHost.Name = "textBoxHost";
-			this.textBoxHost.Size = new System.Drawing.Size(272, 20);
-			this.textBoxHost.TabIndex = 2;
+			this.textBoxHost.Size = new System.Drawing.Size(288, 20);
+			this.textBoxHost.TabIndex = 1;
 			this.textBoxHost.Text = "http://cdsarc.u-strasbg.fr/ftp/I/239/";
 			this.toolTip.SetToolTip(this.textBoxHost, "URL of the host");
 			this.textBoxHost.Enter += new System.EventHandler(this.TextBoxHost_Enter);
@@ -473,10 +252,10 @@
 			this.labelHost.AccessibleName = "Host url";
 			this.labelHost.AccessibleRole = System.Windows.Forms.AccessibleRole.StatusBar;
 			this.labelHost.AutoSize = true;
-			this.labelHost.Location = new System.Drawing.Point(22, 44);
+			this.labelHost.Location = new System.Drawing.Point(4, 16);
 			this.labelHost.Name = "labelHost";
 			this.labelHost.Size = new System.Drawing.Size(32, 13);
-			this.labelHost.TabIndex = 1;
+			this.labelHost.TabIndex = 0;
 			this.labelHost.Text = "H&ost:";
 			this.toolTip.SetToolTip(this.labelHost, "URL of the host");
 			this.labelHost.Enter += new System.EventHandler(this.LabelHost_Enter);
@@ -490,61 +269,17 @@
 			this.checkBoxEnableQuickDownload.AccessibleName = "Enable quick download";
 			this.checkBoxEnableQuickDownload.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
 			this.checkBoxEnableQuickDownload.AutoSize = true;
-			this.checkBoxEnableQuickDownload.Location = new System.Drawing.Point(7, 20);
+			this.checkBoxEnableQuickDownload.Location = new System.Drawing.Point(9, 19);
 			this.checkBoxEnableQuickDownload.Name = "checkBoxEnableQuickDownload";
 			this.checkBoxEnableQuickDownload.Size = new System.Drawing.Size(208, 17);
 			this.checkBoxEnableQuickDownload.TabIndex = 0;
 			this.checkBoxEnableQuickDownload.Text = "Enable &quick download of catalog files";
 			this.toolTip.SetToolTip(this.checkBoxEnableQuickDownload, "Check to enable quick download of catalog files");
 			this.checkBoxEnableQuickDownload.UseVisualStyleBackColor = true;
-			this.checkBoxEnableQuickDownload.CheckedChanged += new System.EventHandler(this.CheckBoxEnableQuickDownload_CheckedChanged);
 			this.checkBoxEnableQuickDownload.Enter += new System.EventHandler(this.CheckBoxEnableQuickDownload_Enter);
 			this.checkBoxEnableQuickDownload.Leave += new System.EventHandler(this.CheckBoxEnableQuickDownload_Leave);
 			this.checkBoxEnableQuickDownload.MouseEnter += new System.EventHandler(this.CheckBoxEnableQuickDownload_MouseEnter);
 			this.checkBoxEnableQuickDownload.MouseLeave += new System.EventHandler(this.CheckBoxEnableQuickDownload_MouseLeave);
-			// 
-			// buttonCancel
-			// 
-			this.buttonCancel.AccessibleDescription = "Cancel the settings";
-			this.buttonCancel.AccessibleName = "Cancel the settings";
-			this.buttonCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.buttonCancel.Image = global::Hipparcos_DB.Properties.Resources.fugue_cross_16px_shadowless;
-			this.buttonCancel.Location = new System.Drawing.Point(143, 280);
-			this.buttonCancel.Name = "buttonCancel";
-			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
-			this.buttonCancel.TabIndex = 7;
-			this.buttonCancel.Text = "&Cancel";
-			this.buttonCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.buttonCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.toolTip.SetToolTip(this.buttonCancel, "Cancel");
-			this.buttonCancel.UseVisualStyleBackColor = true;
-			this.buttonCancel.Enter += new System.EventHandler(this.ButtonCancel_Enter);
-			this.buttonCancel.Leave += new System.EventHandler(this.ButtonCancel_Leave);
-			this.buttonCancel.MouseEnter += new System.EventHandler(this.ButtonCancel_MouseEnter);
-			this.buttonCancel.MouseLeave += new System.EventHandler(this.ButtonCancel_MouseLeave);
-			// 
-			// buttonApply
-			// 
-			this.buttonApply.AccessibleDescription = "Apply the settings";
-			this.buttonApply.AccessibleName = "Apply the settings";
-			this.buttonApply.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonApply.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.buttonApply.Image = global::Hipparcos_DB.Properties.Resources.fugue_tick_button_16px_shadowless;
-			this.buttonApply.Location = new System.Drawing.Point(63, 280);
-			this.buttonApply.Name = "buttonApply";
-			this.buttonApply.Size = new System.Drawing.Size(75, 23);
-			this.buttonApply.TabIndex = 6;
-			this.buttonApply.Text = "&Apply";
-			this.buttonApply.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.buttonApply.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.toolTip.SetToolTip(this.buttonApply, "Apply");
-			this.buttonApply.UseVisualStyleBackColor = true;
-			this.buttonApply.Click += new System.EventHandler(this.ButtonApply_Click);
-			this.buttonApply.Enter += new System.EventHandler(this.ButtonApply_Enter);
-			this.buttonApply.Leave += new System.EventHandler(this.ButtonApply_Leave);
-			this.buttonApply.MouseEnter += new System.EventHandler(this.ButtonApply_MouseEnter);
-			this.buttonApply.MouseLeave += new System.EventHandler(this.ButtonApply_MouseLeave);
 			// 
 			// comboBoxStartPosition
 			// 
@@ -554,8 +289,8 @@
 			this.comboBoxStartPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.comboBoxStartPosition.FormattingEnabled = true;
 			this.comboBoxStartPosition.Items.AddRange(new object[] {
-            "Center on screen",
-            "Center on parent window"});
+            "Center on parent",
+            "Center on screen"});
 			this.comboBoxStartPosition.Location = new System.Drawing.Point(58, 19);
 			this.comboBoxStartPosition.Name = "comboBoxStartPosition";
 			this.comboBoxStartPosition.Size = new System.Drawing.Size(118, 21);
@@ -583,6 +318,196 @@
 			this.labelStartPosition.MouseEnter += new System.EventHandler(this.LabelStartPosition_MouseEnter);
 			this.labelStartPosition.MouseLeave += new System.EventHandler(this.LabelStartPosition_MouseLeave);
 			// 
+			// buttonApply
+			// 
+			this.buttonApply.AccessibleDescription = "Apply the settings";
+			this.buttonApply.AccessibleName = "Apply the settings";
+			this.buttonApply.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.buttonApply.DialogResult = System.Windows.Forms.DialogResult.OK;
+			this.buttonApply.Image = global::Hipparcos_DB.Properties.Resources.fugue_tick_button_16px_shadowless;
+			this.buttonApply.Location = new System.Drawing.Point(63, 305);
+			this.buttonApply.Name = "buttonApply";
+			this.buttonApply.Size = new System.Drawing.Size(75, 23);
+			this.buttonApply.TabIndex = 7;
+			this.buttonApply.Text = "&Apply";
+			this.buttonApply.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.buttonApply.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.buttonApply, "Apply");
+			this.buttonApply.UseVisualStyleBackColor = true;
+			this.buttonApply.Click += new System.EventHandler(this.ButtonApply_Click);
+			this.buttonApply.Enter += new System.EventHandler(this.ButtonApply_Enter);
+			this.buttonApply.Leave += new System.EventHandler(this.ButtonApply_Leave);
+			this.buttonApply.MouseEnter += new System.EventHandler(this.ButtonApply_MouseEnter);
+			this.buttonApply.MouseLeave += new System.EventHandler(this.ButtonApply_MouseLeave);
+			// 
+			// buttonCancel
+			// 
+			this.buttonCancel.AccessibleDescription = "Cancel the settings";
+			this.buttonCancel.AccessibleName = "Cancel the settings";
+			this.buttonCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+			this.buttonCancel.Image = global::Hipparcos_DB.Properties.Resources.fugue_cross_16px_shadowless;
+			this.buttonCancel.Location = new System.Drawing.Point(143, 305);
+			this.buttonCancel.Name = "buttonCancel";
+			this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+			this.buttonCancel.TabIndex = 8;
+			this.buttonCancel.Text = "&Cancel";
+			this.buttonCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.buttonCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.buttonCancel, "Cancel");
+			this.buttonCancel.UseVisualStyleBackColor = true;
+			this.buttonCancel.Enter += new System.EventHandler(this.ButtonCancel_Enter);
+			this.buttonCancel.Leave += new System.EventHandler(this.ButtonCancel_Leave);
+			this.buttonCancel.MouseEnter += new System.EventHandler(this.ButtonCancel_MouseEnter);
+			this.buttonCancel.MouseLeave += new System.EventHandler(this.ButtonCancel_MouseLeave);
+			// 
+			// buttonRestoreHost
+			// 
+			this.buttonRestoreHost.AccessibleDescription = "Restore the host url";
+			this.buttonRestoreHost.AccessibleName = "Restore the host url";
+			this.buttonRestoreHost.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.buttonRestoreHost.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
+			this.buttonRestoreHost.Location = new System.Drawing.Point(334, 11);
+			this.buttonRestoreHost.Name = "buttonRestoreHost";
+			this.buttonRestoreHost.Size = new System.Drawing.Size(29, 23);
+			this.buttonRestoreHost.TabIndex = 2;
+			this.buttonRestoreHost.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.buttonRestoreHost, "Restore the host url");
+			this.buttonRestoreHost.UseVisualStyleBackColor = true;
+			this.buttonRestoreHost.Click += new System.EventHandler(this.ButtonRestoreHost_Click);
+			this.buttonRestoreHost.Enter += new System.EventHandler(this.ButtonRestoreHost_Enter);
+			this.buttonRestoreHost.Leave += new System.EventHandler(this.ButtonRestoreHost_Leave);
+			this.buttonRestoreHost.MouseEnter += new System.EventHandler(this.ButtonRestoreHost_MouseEnter);
+			this.buttonRestoreHost.MouseLeave += new System.EventHandler(this.ButtonRestoreHost_MouseLeave);
+			// 
+			// buttonDefaultSettings
+			// 
+			this.buttonDefaultSettings.AccessibleDescription = "Restore the settings to default";
+			this.buttonDefaultSettings.AccessibleName = "Restore the settings to default";
+			this.buttonDefaultSettings.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.buttonDefaultSettings.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
+			this.buttonDefaultSettings.Location = new System.Drawing.Point(223, 305);
+			this.buttonDefaultSettings.Name = "buttonDefaultSettings";
+			this.buttonDefaultSettings.Size = new System.Drawing.Size(111, 23);
+			this.buttonDefaultSettings.TabIndex = 9;
+			this.buttonDefaultSettings.Text = "&Default settings";
+			this.buttonDefaultSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.buttonDefaultSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.buttonDefaultSettings, "Default settings");
+			this.buttonDefaultSettings.UseVisualStyleBackColor = true;
+			this.buttonDefaultSettings.Click += new System.EventHandler(this.ButtonDefaultSettings_Click);
+			this.buttonDefaultSettings.Enter += new System.EventHandler(this.ButtonDefaultSettings_Enter);
+			this.buttonDefaultSettings.Leave += new System.EventHandler(this.ButtonDefaultSettings_Leave);
+			this.buttonDefaultSettings.MouseEnter += new System.EventHandler(this.ButtonDefaultSettings_MouseEnter);
+			this.buttonDefaultSettings.MouseLeave += new System.EventHandler(this.ButtonDefaultSettings_MouseLeave);
+			// 
+			// buttonRestoreTychoDirectory
+			// 
+			this.buttonRestoreTychoDirectory.AccessibleDescription = "Restore the Tycho catalog directory";
+			this.buttonRestoreTychoDirectory.AccessibleName = "Restore the Tycho catalog directory";
+			this.buttonRestoreTychoDirectory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.buttonRestoreTychoDirectory.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
+			this.buttonRestoreTychoDirectory.Location = new System.Drawing.Point(336, 37);
+			this.buttonRestoreTychoDirectory.Name = "buttonRestoreTychoDirectory";
+			this.buttonRestoreTychoDirectory.Size = new System.Drawing.Size(29, 23);
+			this.buttonRestoreTychoDirectory.TabIndex = 5;
+			this.buttonRestoreTychoDirectory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.buttonRestoreTychoDirectory, "Restore Tycho catalog directory");
+			this.buttonRestoreTychoDirectory.UseVisualStyleBackColor = true;
+			this.buttonRestoreTychoDirectory.Click += new System.EventHandler(this.ButtonRestoreTychoDirectory_Click);
+			this.buttonRestoreTychoDirectory.Enter += new System.EventHandler(this.ButtonRestoreTychoDirectory_Enter);
+			this.buttonRestoreTychoDirectory.Leave += new System.EventHandler(this.ButtonRestoreTychoDirectory_Leave);
+			this.buttonRestoreTychoDirectory.MouseEnter += new System.EventHandler(this.ButtonRestoreTychoDirectory_MouseEnter);
+			this.buttonRestoreTychoDirectory.MouseLeave += new System.EventHandler(this.ButtonRestoreTychoDirectory_MouseLeave);
+			// 
+			// buttonRestoreHipparcosDirectory
+			// 
+			this.buttonRestoreHipparcosDirectory.AccessibleDescription = "Restore the Hipparcos catalog directory";
+			this.buttonRestoreHipparcosDirectory.AccessibleName = "Restore the Hipparcos catalog directory";
+			this.buttonRestoreHipparcosDirectory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.buttonRestoreHipparcosDirectory.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
+			this.buttonRestoreHipparcosDirectory.Location = new System.Drawing.Point(336, 11);
+			this.buttonRestoreHipparcosDirectory.Name = "buttonRestoreHipparcosDirectory";
+			this.buttonRestoreHipparcosDirectory.Size = new System.Drawing.Size(29, 23);
+			this.buttonRestoreHipparcosDirectory.TabIndex = 2;
+			this.buttonRestoreHipparcosDirectory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.toolTip.SetToolTip(this.buttonRestoreHipparcosDirectory, "Restore the Hipparcos catalog directory");
+			this.buttonRestoreHipparcosDirectory.UseVisualStyleBackColor = true;
+			this.buttonRestoreHipparcosDirectory.Click += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_Click);
+			this.buttonRestoreHipparcosDirectory.Enter += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_Enter);
+			this.buttonRestoreHipparcosDirectory.Leave += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_Leave);
+			this.buttonRestoreHipparcosDirectory.MouseEnter += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_MouseEnter);
+			this.buttonRestoreHipparcosDirectory.MouseLeave += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_MouseLeave);
+			// 
+			// toolStripContainer
+			// 
+			this.toolStripContainer.AccessibleDescription = "Group the toolstrip container";
+			this.toolStripContainer.AccessibleName = "container grouping";
+			this.toolStripContainer.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			// 
+			// toolStripContainer.BottomToolStripPanel
+			// 
+			this.toolStripContainer.BottomToolStripPanel.AccessibleDescription = "lower part of the container";
+			this.toolStripContainer.BottomToolStripPanel.AccessibleName = "lower part of the container";
+			this.toolStripContainer.BottomToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
+			this.toolStripContainer.BottomToolStripPanel.Controls.Add(this.statusStrip);
+			// 
+			// toolStripContainer.ContentPanel
+			// 
+			this.toolStripContainer.ContentPanel.AccessibleDescription = "content panel of the container";
+			this.toolStripContainer.ContentPanel.AccessibleName = "content panel of the container";
+			this.toolStripContainer.ContentPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
+			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBoxHost);
+			this.toolStripContainer.ContentPanel.Controls.Add(this.buttonDefaultSettings);
+			this.toolStripContainer.ContentPanel.Controls.Add(this.buttonCancel);
+			this.toolStripContainer.ContentPanel.Controls.Add(this.buttonApply);
+			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBox1);
+			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBoxCatalogDirectories);
+			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBoxHoverEffect);
+			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBoxCopyMethod);
+			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBoxDataTableStyle);
+			this.toolStripContainer.ContentPanel.Controls.Add(this.groupBoxQuickDownload);
+			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(396, 341);
+			this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+			// 
+			// toolStripContainer.LeftToolStripPanel
+			// 
+			this.toolStripContainer.LeftToolStripPanel.AccessibleDescription = "left part of the container";
+			this.toolStripContainer.LeftToolStripPanel.AccessibleName = "left part of the container";
+			this.toolStripContainer.LeftToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
+			this.toolStripContainer.Location = new System.Drawing.Point(0, 0);
+			this.toolStripContainer.Name = "toolStripContainer";
+			// 
+			// toolStripContainer.RightToolStripPanel
+			// 
+			this.toolStripContainer.RightToolStripPanel.AccessibleDescription = "right part of the container";
+			this.toolStripContainer.RightToolStripPanel.AccessibleName = "right part of the container";
+			this.toolStripContainer.RightToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
+			this.toolStripContainer.Size = new System.Drawing.Size(396, 363);
+			this.toolStripContainer.TabIndex = 0;
+			this.toolStripContainer.Text = "toolStripContainer";
+			// 
+			// toolStripContainer.TopToolStripPanel
+			// 
+			this.toolStripContainer.TopToolStripPanel.AccessibleDescription = "upper part of the container";
+			this.toolStripContainer.TopToolStripPanel.AccessibleName = "upper part of the container";
+			this.toolStripContainer.TopToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
+			// 
+			// groupBoxHost
+			// 
+			this.groupBoxHost.AccessibleDescription = "Group the host setting";
+			this.groupBoxHost.AccessibleName = "Group the host setting";
+			this.groupBoxHost.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			this.groupBoxHost.Controls.Add(this.buttonRestoreHost);
+			this.groupBoxHost.Controls.Add(this.labelHost);
+			this.groupBoxHost.Controls.Add(this.textBoxHost);
+			this.groupBoxHost.Location = new System.Drawing.Point(12, 130);
+			this.groupBoxHost.Name = "groupBoxHost";
+			this.groupBoxHost.Size = new System.Drawing.Size(371, 41);
+			this.groupBoxHost.TabIndex = 4;
+			this.groupBoxHost.TabStop = false;
+			this.groupBoxHost.Text = "Host name";
+			// 
 			// groupBox1
 			// 
 			this.groupBox1.AccessibleDescription = "Group the start position setting";
@@ -597,26 +522,96 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Start position";
 			// 
-			// buttonDefaultSettings
+			// groupBoxCatalogDirectories
 			// 
-			this.buttonDefaultSettings.AccessibleDescription = "Restore the settings to default";
-			this.buttonDefaultSettings.AccessibleName = "Restore the settings to default";
-			this.buttonDefaultSettings.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonDefaultSettings.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
-			this.buttonDefaultSettings.Location = new System.Drawing.Point(223, 280);
-			this.buttonDefaultSettings.Name = "buttonDefaultSettings";
-			this.buttonDefaultSettings.Size = new System.Drawing.Size(111, 23);
-			this.buttonDefaultSettings.TabIndex = 8;
-			this.buttonDefaultSettings.Text = "&Default settings";
-			this.buttonDefaultSettings.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.buttonDefaultSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.toolTip.SetToolTip(this.buttonDefaultSettings, "Default settings");
-			this.buttonDefaultSettings.UseVisualStyleBackColor = true;
-			this.buttonDefaultSettings.Click += new System.EventHandler(this.ButtonDefaultSettings_Click);
-			this.buttonDefaultSettings.Enter += new System.EventHandler(this.ButtonDefaultSettings_Enter);
-			this.buttonDefaultSettings.Leave += new System.EventHandler(this.ButtonDefaultSettings_Leave);
-			this.buttonDefaultSettings.MouseEnter += new System.EventHandler(this.ButtonDefaultSettings_MouseEnter);
-			this.buttonDefaultSettings.MouseLeave += new System.EventHandler(this.ButtonDefaultSettings_MouseLeave);
+			this.groupBoxCatalogDirectories.AccessibleDescription = "Group the catalog directories setting";
+			this.groupBoxCatalogDirectories.AccessibleName = "Group the catalog directories setting";
+			this.groupBoxCatalogDirectories.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			this.groupBoxCatalogDirectories.Controls.Add(this.buttonRestoreTychoDirectory);
+			this.groupBoxCatalogDirectories.Controls.Add(this.buttonRestoreHipparcosDirectory);
+			this.groupBoxCatalogDirectories.Controls.Add(this.textBoxTychoDirectory);
+			this.groupBoxCatalogDirectories.Controls.Add(this.labelTychoDirectory);
+			this.groupBoxCatalogDirectories.Controls.Add(this.textBoxHipparcosDirectory);
+			this.groupBoxCatalogDirectories.Controls.Add(this.labelHipparcosDirectory);
+			this.groupBoxCatalogDirectories.Location = new System.Drawing.Point(12, 230);
+			this.groupBoxCatalogDirectories.Name = "groupBoxCatalogDirectories";
+			this.groupBoxCatalogDirectories.Size = new System.Drawing.Size(371, 69);
+			this.groupBoxCatalogDirectories.TabIndex = 6;
+			this.groupBoxCatalogDirectories.TabStop = false;
+			this.groupBoxCatalogDirectories.Text = "Catalog directories";
+			// 
+			// groupBoxHoverEffect
+			// 
+			this.groupBoxHoverEffect.AccessibleDescription = "Group the hover effect setting";
+			this.groupBoxHoverEffect.AccessibleName = "Hover effect grouping";
+			this.groupBoxHoverEffect.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			this.groupBoxHoverEffect.Controls.Add(this.checkBoxEnableHoverEffect);
+			this.groupBoxHoverEffect.Location = new System.Drawing.Point(12, 12);
+			this.groupBoxHoverEffect.Name = "groupBoxHoverEffect";
+			this.groupBoxHoverEffect.Size = new System.Drawing.Size(182, 53);
+			this.groupBoxHoverEffect.TabIndex = 0;
+			this.groupBoxHoverEffect.TabStop = false;
+			this.groupBoxHoverEffect.Text = "Hover effect";
+			// 
+			// groupBoxCopyMethod
+			// 
+			this.groupBoxCopyMethod.AccessibleDescription = "Group the copy method setting";
+			this.groupBoxCopyMethod.AccessibleName = "Copy method grouping";
+			this.groupBoxCopyMethod.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			this.groupBoxCopyMethod.Controls.Add(this.checkBoxEnableDoubleClickCopy);
+			this.groupBoxCopyMethod.Location = new System.Drawing.Point(12, 71);
+			this.groupBoxCopyMethod.Name = "groupBoxCopyMethod";
+			this.groupBoxCopyMethod.Size = new System.Drawing.Size(182, 53);
+			this.groupBoxCopyMethod.TabIndex = 2;
+			this.groupBoxCopyMethod.TabStop = false;
+			this.groupBoxCopyMethod.Text = "Copy method";
+			// 
+			// groupBoxDataTableStyle
+			// 
+			this.groupBoxDataTableStyle.AccessibleDescription = "Group the data table style setting";
+			this.groupBoxDataTableStyle.AccessibleName = "Data table style grouping";
+			this.groupBoxDataTableStyle.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			this.groupBoxDataTableStyle.Controls.Add(this.comboBoxDataTableStyle);
+			this.groupBoxDataTableStyle.Controls.Add(this.labelDataTableStyle);
+			this.groupBoxDataTableStyle.Location = new System.Drawing.Point(201, 71);
+			this.groupBoxDataTableStyle.Name = "groupBoxDataTableStyle";
+			this.groupBoxDataTableStyle.Size = new System.Drawing.Size(182, 53);
+			this.groupBoxDataTableStyle.TabIndex = 3;
+			this.groupBoxDataTableStyle.TabStop = false;
+			this.groupBoxDataTableStyle.Text = "Data table style";
+			// 
+			// groupBoxQuickDownload
+			// 
+			this.groupBoxQuickDownload.AccessibleDescription = "Group the quick download setting";
+			this.groupBoxQuickDownload.AccessibleName = "Group the quick download setting";
+			this.groupBoxQuickDownload.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			this.groupBoxQuickDownload.Controls.Add(this.checkBoxEnableQuickDownload);
+			this.groupBoxQuickDownload.Location = new System.Drawing.Point(12, 177);
+			this.groupBoxQuickDownload.Name = "groupBoxQuickDownload";
+			this.groupBoxQuickDownload.Size = new System.Drawing.Size(371, 47);
+			this.groupBoxQuickDownload.TabIndex = 5;
+			this.groupBoxQuickDownload.TabStop = false;
+			this.groupBoxQuickDownload.Text = "Quick download";
+			// 
+			// checkBoxEnableDoubleClickCopy
+			// 
+			this.checkBoxEnableDoubleClickCopy.AccessibleDescription = "Check to enable double-click copy methode";
+			this.checkBoxEnableDoubleClickCopy.AccessibleName = "Enable double-click copy method";
+			this.checkBoxEnableDoubleClickCopy.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
+			this.checkBoxEnableDoubleClickCopy.AutoSize = true;
+			this.checkBoxEnableDoubleClickCopy.Checked = true;
+			this.checkBoxEnableDoubleClickCopy.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.checkBoxEnableDoubleClickCopy.Location = new System.Drawing.Point(9, 21);
+			this.checkBoxEnableDoubleClickCopy.Name = "checkBoxEnableDoubleClickCopy";
+			this.checkBoxEnableDoubleClickCopy.Size = new System.Drawing.Size(145, 17);
+			this.checkBoxEnableDoubleClickCopy.TabIndex = 0;
+			this.checkBoxEnableDoubleClickCopy.Text = "Enable double-click &copy";
+			this.toolTip.SetToolTip(this.checkBoxEnableDoubleClickCopy, "Check to enable hover effect");
+			this.checkBoxEnableDoubleClickCopy.UseVisualStyleBackColor = true;
+			this.checkBoxEnableDoubleClickCopy.Enter += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_Enter);
+			this.checkBoxEnableDoubleClickCopy.Leave += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_Leave);
+			this.checkBoxEnableDoubleClickCopy.MouseEnter += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_MouseEnter);
+			this.checkBoxEnableDoubleClickCopy.MouseLeave += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_MouseLeave);
 			// 
 			// OptionsForm
 			// 
@@ -627,7 +622,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CancelButton = this.buttonCancel;
-			this.ClientSize = new System.Drawing.Size(396, 333);
+			this.ClientSize = new System.Drawing.Size(396, 363);
 			this.Controls.Add(this.toolStripContainer);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -643,18 +638,20 @@
 			this.toolStripContainer.ContentPanel.ResumeLayout(false);
 			this.toolStripContainer.ResumeLayout(false);
 			this.toolStripContainer.PerformLayout();
+			this.groupBoxHost.ResumeLayout(false);
+			this.groupBoxHost.PerformLayout();
+			this.groupBox1.ResumeLayout(false);
+			this.groupBox1.PerformLayout();
 			this.groupBoxCatalogDirectories.ResumeLayout(false);
 			this.groupBoxCatalogDirectories.PerformLayout();
 			this.groupBoxHoverEffect.ResumeLayout(false);
 			this.groupBoxHoverEffect.PerformLayout();
-			this.groupBoxCopyDataMethod.ResumeLayout(false);
-			this.groupBoxCopyDataMethod.PerformLayout();
+			this.groupBoxCopyMethod.ResumeLayout(false);
+			this.groupBoxCopyMethod.PerformLayout();
 			this.groupBoxDataTableStyle.ResumeLayout(false);
 			this.groupBoxDataTableStyle.PerformLayout();
 			this.groupBoxQuickDownload.ResumeLayout(false);
 			this.groupBoxQuickDownload.PerformLayout();
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -676,9 +673,7 @@
 		private System.Windows.Forms.Label labelHost;
 		private System.Windows.Forms.GroupBox groupBoxHoverEffect;
 		private System.Windows.Forms.CheckBox checkBoxEnableHoverEffect;
-		private System.Windows.Forms.GroupBox groupBoxCopyDataMethod;
-		private System.Windows.Forms.ComboBox comboBoxCopyDataMethod;
-		private System.Windows.Forms.Label labelCopyDataMethod;
+		private System.Windows.Forms.GroupBox groupBoxCopyMethod;
 		private System.Windows.Forms.GroupBox groupBoxCatalogDirectories;
 		private System.Windows.Forms.TextBox textBoxTychoDirectory;
 		private System.Windows.Forms.Label labelTychoDirectory;
@@ -691,5 +686,7 @@
 		private System.Windows.Forms.ComboBox comboBoxStartPosition;
 		private System.Windows.Forms.Label labelStartPosition;
 		private System.Windows.Forms.Button buttonDefaultSettings;
+		private System.Windows.Forms.GroupBox groupBoxHost;
+		private System.Windows.Forms.CheckBox checkBoxEnableDoubleClickCopy;
 	}
 }

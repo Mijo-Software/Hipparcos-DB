@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hipparcos_DB.Properties;
+using System;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -6,6 +7,8 @@ namespace Hipparcos_DB
 {
 	partial class AboutBoxForm : Form
 	{
+		private readonly Settings settings = new Settings();
+
 		public AboutBoxForm()
 		{
 			InitializeComponent();
@@ -15,6 +18,12 @@ namespace Hipparcos_DB
 			labelCopyright.Text = AssemblyCopyright;
 			labelCompanyName.Text = AssemblyCompany;
 			textBoxDescription.Text = AssemblyDescription;
+			switch (settings.UserStartPosition)
+			{
+				case 0: StartPosition = FormStartPosition.CenterParent; break;
+				case 1: StartPosition = FormStartPosition.CenterScreen; break;
+				default: StartPosition = FormStartPosition.CenterParent; break;
+			}
 		}
 
 		private void SetStatusbar(string text)
@@ -36,6 +45,10 @@ namespace Hipparcos_DB
 			else if (sender is RadioButton)
 			{
 				SetStatusbar(text: ((RadioButton)sender).AccessibleDescription);
+			}
+			else if (sender is CheckBox)
+			{
+				SetStatusbar(text: ((CheckBox)sender).AccessibleDescription);
 			}
 			else if (sender is DateTimePicker)
 			{
