@@ -171,13 +171,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-full.ico" />
+    <None Include="Properties\fugue_gear_16px_shadowless.png" />
+    <None Include="Properties\fugue_arrow-curve-180-left_16px_shadowless.png" />
+    <None Include="Properties\fugue_arrow-000-medium_16px_shadowless.png" />
     <None Include="Properties\fugue_clipboard_16px_shadowless.png" />
-    <None Include="Properties\fugue_gear_16_shadowless.png" />
     <None Include="Properties\fugue_disk_16px_shadowless.png" />
     <None Include="Properties\fugue_arrow-270-small_16px_shadowless.png" />
     <None Include="Properties\fugue_arrow-270-medium_16px_shadowless.png" />
     <None Include="Properties\fugue_arrow-270_16px_shadowless.png" />
-    <None Include="Properties\fugue_arrow-curve-180-left_shadowless.png" />
     <None Include="Properties\fugue_door_16px_shadowless.png" />
     <None Include="Properties\fugue_application_16px_shadowless.png" />
     <None Include="Properties\fugue_information-button_16px_shadowless.png" />
@@ -187,7 +188,6 @@
     <None Include="Properties\fugue_control-double_16px_shadowless.png" />
     <None Include="Properties\fugue_control-180_16px_shadowless.png" />
     <None Include="Properties\fugue_control-double-180_16px_shadowless.png" />
-    <None Include="Properties\fugue_arrow-000-medium_16_shadowless.png" />
     <None Include="Properties\fugue_cross_16px_shadowless.png" />
     <None Include="Properties\fugue_tick-button_16px-shadowless.png" />
     <None Include="Properties\hipparcos1.jpg" />

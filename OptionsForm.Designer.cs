@@ -51,6 +51,7 @@
 			this.buttonDefaultSettings = new System.Windows.Forms.Button();
 			this.buttonRestoreTychoDirectory = new System.Windows.Forms.Button();
 			this.buttonRestoreHipparcosDirectory = new System.Windows.Forms.Button();
+			this.checkBoxEnableDoubleClickCopy = new System.Windows.Forms.CheckBox();
 			this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
 			this.groupBoxHost = new System.Windows.Forms.GroupBox();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -59,7 +60,6 @@
 			this.groupBoxCopyMethod = new System.Windows.Forms.GroupBox();
 			this.groupBoxDataTableStyle = new System.Windows.Forms.GroupBox();
 			this.groupBoxQuickDownload = new System.Windows.Forms.GroupBox();
-			this.checkBoxEnableDoubleClickCopy = new System.Windows.Forms.CheckBox();
 			this.statusStrip.SuspendLayout();
 			this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
 			this.toolStripContainer.ContentPanel.SuspendLayout();
@@ -366,7 +366,7 @@
 			this.buttonRestoreHost.AccessibleDescription = "Restore the host url";
 			this.buttonRestoreHost.AccessibleName = "Restore the host url";
 			this.buttonRestoreHost.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonRestoreHost.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
+			this.buttonRestoreHost.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_16px_shadowless;
 			this.buttonRestoreHost.Location = new System.Drawing.Point(334, 11);
 			this.buttonRestoreHost.Name = "buttonRestoreHost";
 			this.buttonRestoreHost.Size = new System.Drawing.Size(29, 23);
@@ -385,7 +385,7 @@
 			this.buttonDefaultSettings.AccessibleDescription = "Restore the settings to default";
 			this.buttonDefaultSettings.AccessibleName = "Restore the settings to default";
 			this.buttonDefaultSettings.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonDefaultSettings.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
+			this.buttonDefaultSettings.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_16px_shadowless;
 			this.buttonDefaultSettings.Location = new System.Drawing.Point(223, 305);
 			this.buttonDefaultSettings.Name = "buttonDefaultSettings";
 			this.buttonDefaultSettings.Size = new System.Drawing.Size(111, 23);
@@ -406,7 +406,7 @@
 			this.buttonRestoreTychoDirectory.AccessibleDescription = "Restore the Tycho catalog directory";
 			this.buttonRestoreTychoDirectory.AccessibleName = "Restore the Tycho catalog directory";
 			this.buttonRestoreTychoDirectory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonRestoreTychoDirectory.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
+			this.buttonRestoreTychoDirectory.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_16px_shadowless;
 			this.buttonRestoreTychoDirectory.Location = new System.Drawing.Point(336, 37);
 			this.buttonRestoreTychoDirectory.Name = "buttonRestoreTychoDirectory";
 			this.buttonRestoreTychoDirectory.Size = new System.Drawing.Size(29, 23);
@@ -425,7 +425,7 @@
 			this.buttonRestoreHipparcosDirectory.AccessibleDescription = "Restore the Hipparcos catalog directory";
 			this.buttonRestoreHipparcosDirectory.AccessibleName = "Restore the Hipparcos catalog directory";
 			this.buttonRestoreHipparcosDirectory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonRestoreHipparcosDirectory.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
+			this.buttonRestoreHipparcosDirectory.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_16px_shadowless;
 			this.buttonRestoreHipparcosDirectory.Location = new System.Drawing.Point(336, 11);
 			this.buttonRestoreHipparcosDirectory.Name = "buttonRestoreHipparcosDirectory";
 			this.buttonRestoreHipparcosDirectory.Size = new System.Drawing.Size(29, 23);
@@ -438,6 +438,26 @@
 			this.buttonRestoreHipparcosDirectory.Leave += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_Leave);
 			this.buttonRestoreHipparcosDirectory.MouseEnter += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_MouseEnter);
 			this.buttonRestoreHipparcosDirectory.MouseLeave += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_MouseLeave);
+			// 
+			// checkBoxEnableDoubleClickCopy
+			// 
+			this.checkBoxEnableDoubleClickCopy.AccessibleDescription = "Check to enable double-click copy methode";
+			this.checkBoxEnableDoubleClickCopy.AccessibleName = "Enable double-click copy method";
+			this.checkBoxEnableDoubleClickCopy.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
+			this.checkBoxEnableDoubleClickCopy.AutoSize = true;
+			this.checkBoxEnableDoubleClickCopy.Checked = true;
+			this.checkBoxEnableDoubleClickCopy.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.checkBoxEnableDoubleClickCopy.Location = new System.Drawing.Point(9, 21);
+			this.checkBoxEnableDoubleClickCopy.Name = "checkBoxEnableDoubleClickCopy";
+			this.checkBoxEnableDoubleClickCopy.Size = new System.Drawing.Size(145, 17);
+			this.checkBoxEnableDoubleClickCopy.TabIndex = 0;
+			this.checkBoxEnableDoubleClickCopy.Text = "Enable double-click &copy";
+			this.toolTip.SetToolTip(this.checkBoxEnableDoubleClickCopy, "Check to enable hover effect");
+			this.checkBoxEnableDoubleClickCopy.UseVisualStyleBackColor = true;
+			this.checkBoxEnableDoubleClickCopy.Enter += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_Enter);
+			this.checkBoxEnableDoubleClickCopy.Leave += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_Leave);
+			this.checkBoxEnableDoubleClickCopy.MouseEnter += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_MouseEnter);
+			this.checkBoxEnableDoubleClickCopy.MouseLeave += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_MouseLeave);
 			// 
 			// toolStripContainer
 			// 
@@ -592,26 +612,6 @@
 			this.groupBoxQuickDownload.TabIndex = 5;
 			this.groupBoxQuickDownload.TabStop = false;
 			this.groupBoxQuickDownload.Text = "Quick download";
-			// 
-			// checkBoxEnableDoubleClickCopy
-			// 
-			this.checkBoxEnableDoubleClickCopy.AccessibleDescription = "Check to enable double-click copy methode";
-			this.checkBoxEnableDoubleClickCopy.AccessibleName = "Enable double-click copy method";
-			this.checkBoxEnableDoubleClickCopy.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-			this.checkBoxEnableDoubleClickCopy.AutoSize = true;
-			this.checkBoxEnableDoubleClickCopy.Checked = true;
-			this.checkBoxEnableDoubleClickCopy.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.checkBoxEnableDoubleClickCopy.Location = new System.Drawing.Point(9, 21);
-			this.checkBoxEnableDoubleClickCopy.Name = "checkBoxEnableDoubleClickCopy";
-			this.checkBoxEnableDoubleClickCopy.Size = new System.Drawing.Size(145, 17);
-			this.checkBoxEnableDoubleClickCopy.TabIndex = 0;
-			this.checkBoxEnableDoubleClickCopy.Text = "Enable double-click &copy";
-			this.toolTip.SetToolTip(this.checkBoxEnableDoubleClickCopy, "Check to enable hover effect");
-			this.checkBoxEnableDoubleClickCopy.UseVisualStyleBackColor = true;
-			this.checkBoxEnableDoubleClickCopy.Enter += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_Enter);
-			this.checkBoxEnableDoubleClickCopy.Leave += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_Leave);
-			this.checkBoxEnableDoubleClickCopy.MouseEnter += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_MouseEnter);
-			this.checkBoxEnableDoubleClickCopy.MouseLeave += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_MouseLeave);
 			// 
 			// OptionsForm
 			// 

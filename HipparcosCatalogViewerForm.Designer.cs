@@ -2104,7 +2104,7 @@
 			this.toolStripButtonGoToIndex.AccessibleDescription = "Go to the index of the entered number";
 			this.toolStripButtonGoToIndex.AccessibleName = "Go to index";
 			this.toolStripButtonGoToIndex.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.toolStripButtonGoToIndex.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_000_medium_16_shadowless;
+			this.toolStripButtonGoToIndex.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_000_medium_16px_shadowless;
 			this.toolStripButtonGoToIndex.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonGoToIndex.Name = "toolStripButtonGoToIndex";
 			this.toolStripButtonGoToIndex.Size = new System.Drawing.Size(42, 22);

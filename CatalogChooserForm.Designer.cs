@@ -185,7 +185,7 @@
 			// 
 			resources.ApplyResources(this.buttonOptions, "buttonOptions");
 			this.buttonOptions.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonOptions.Image = global::Hipparcos_DB.Properties.Resources.fugue_gear_16_shadowless;
+			this.buttonOptions.Image = global::Hipparcos_DB.Properties.Resources.fugue_gear_16px_shadowless;
 			this.buttonOptions.Name = "buttonOptions";
 			this.toolTip.SetToolTip(this.buttonOptions, resources.GetString("buttonOptions.ToolTip"));
 			this.buttonOptions.UseVisualStyleBackColor = true;

@@ -396,7 +396,7 @@
 			this.toolStripButtonRestoreHost.AccessibleDescription = "Restore the name of the host";
 			this.toolStripButtonRestoreHost.AccessibleName = "Restore host";
 			this.toolStripButtonRestoreHost.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.toolStripButtonRestoreHost.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_shadowless;
+			this.toolStripButtonRestoreHost.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_16px_shadowless;
 			this.toolStripButtonRestoreHost.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButtonRestoreHost.Name = "toolStripButtonRestoreHost";
 			this.toolStripButtonRestoreHost.Size = new System.Drawing.Size(92, 22);
