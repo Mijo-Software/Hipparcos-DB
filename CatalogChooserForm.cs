@@ -1,5 +1,6 @@
 ﻿using Hipparcos_DB.Properties;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 
@@ -31,9 +32,45 @@ namespace Hipparcos_DB
 				"solar_t.dat.gz"
 			};
 
+		private readonly string[] filesTychoCatalog =
+			{
+				"h_dm_com.dat.gz",
+				"h_dm_cor.dat.gz",
+				"hd_notes.doc.gz",
+				"hg_notes.doc.gz",
+				"h_dm_cor.dat.gz",
+				"hip_dm_g.dat.gz",
+				"hip_dm_o.dat.gz",
+				"hip_dm_v.dat.gz",
+				"hip_dm_x.dat.gz",
+				"hip_main.dat.gz",
+				"hip_va_1.dat.gz",
+				"hip_va_2.dat.gz",
+				"hp_auth.doc.gz",
+				"hp_notes.doc.gz",
+				"hp_refs.doc.gz",
+				"solar_ha.dat.gz",
+				"solar_hp.dat.gz",
+				"solar_t.dat.gz",
+				"tyc_main.dat"
+			};
+
 		private string RemoveFileExtension(string filename)
 		{
 			return filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
+		}
+
+		private bool HasFileExtension(string filename, string extension)
+		{
+			return Path.GetExtension(path: filename).ToLower() == extension.ToLower();
+		}
+
+		private static void OpenExplorer(string path)
+		{
+			if (Directory.Exists(path: path))
+			{
+				Process.Start(fileName: @path);
+			}
 		}
 
 		public CatalogChooserForm()
@@ -46,7 +83,6 @@ namespace Hipparcos_DB
 				default: StartPosition = FormStartPosition.CenterParent; break;
 			}
 			*/
-			buttonDownloadTychoCatalog.Enabled = buttonOpenTychoCatalog.Enabled = false;
 		}
 
 		private void SetStatusbar(string text)
@@ -152,12 +188,6 @@ namespace Hipparcos_DB
 
 		#region Click event handlers
 
-		private void ButtonOpenTychoCatalog_Click(object sender, EventArgs e)
-		{
-			settings.Reload();
-			throw new NotImplementedException();
-		}
-
 		private void ButtonInfo_Click(object sender, EventArgs e)
 		{
 			settings.Reload();
@@ -198,6 +228,9 @@ namespace Hipparcos_DB
 			settings.Reload();
 			using (DownloaderForm downloaderForm = new DownloaderForm())
 			{
+				downloaderForm.SetHost(host: settings.UserHostName);
+				downloaderForm.SetHostUrls(files: filesTychoCatalog);
+				downloaderForm.SetCatalogDirectory(directory: settings.UserTychoCatalogDirectory);
 				downloaderForm.ShowDialog();
 			}
 		}
@@ -238,6 +271,66 @@ namespace Hipparcos_DB
 			}
 		}
 
+		private void ButtonOpenTychoCatalog_Click(object sender, EventArgs e)
+		{
+			settings.Reload();
+			bool allFilesFound = true;
+			foreach (string file in filesTychoCatalog)
+			{
+				if (allFilesFound)
+				{
+					if (HasFileExtension(filename: file, extension: ".gz"))
+					{
+						if (File.Exists(path: settings.UserTychoCatalogDirectory + RemoveFileExtension(filename: file)))
+						{
+							allFilesFound = true;
+						}
+						else
+						{
+							allFilesFound = false;
+						}
+					}
+					else
+					{
+						if (File.Exists(path: settings.UserTychoCatalogDirectory + file))
+						{
+							allFilesFound = true;
+						}
+						else
+						{
+							allFilesFound = false;
+						}
+					}
+				}
+			}
+			if (allFilesFound)
+			{
+				using (TychoCatalogViewerForm formTychoCatalogViewer = new TychoCatalogViewerForm())
+				{
+					formTychoCatalogViewer.ShowDialog();
+				}
+			}
+			else
+			{
+				MessageBox.Show(
+					owner: this,
+					text: "Some files are missing. Please use the download button to download all files.",
+					caption: "Missing files",
+					buttons: MessageBoxButtons.OK,
+					icon: MessageBoxIcon.Error);
+			}
+		}
+
+		private void ButtonOpenHipparcosDirectory_Click(object sender, EventArgs e)
+		{
+			OpenExplorer(path: Environment.CurrentDirectory + Path.DirectorySeparatorChar + settings.UserHipparcosCatalogDirectory);
+		}
+
+		private void ButtonOpenTychoDirectory_Click(object sender, EventArgs e)
+		{
+			OpenExplorer(path: Environment.CurrentDirectory + Path.DirectorySeparatorChar + settings.UserTychoCatalogDirectory);
+		}
+
 		#endregion
 
 		#region Enter event handlers
@@ -267,6 +360,16 @@ namespace Hipparcos_DB
 			SetStatusbar(sender: sender, e: e);
 		}
 
+		private void ButtonOpenHipparcosDirectory_Enter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
+		private void ButtonOpenTychoDirectory_Enter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
 		#endregion
 
 		#region MouseEnter event handlers
@@ -280,6 +383,7 @@ namespace Hipparcos_DB
 		{
 			SetStatusbar(sender: sender, e: e);
 		}
+
 		private void ButtonInfo_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(sender: sender, e: e);
@@ -291,6 +395,16 @@ namespace Hipparcos_DB
 		}
 
 		private void ButtonExit_MouseEnter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
+		private void ButtonOpenHipparcosDirectory_MouseEnter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
+		private void ButtonOpenTychoDirectory_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(sender: sender, e: e);
 		}
@@ -319,6 +433,16 @@ namespace Hipparcos_DB
 		}
 
 		private void ButtonExit_Leave(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+		}
+
+		private void ButtonOpenHipparcosDirectory_Leave(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+		}
+
+		private void ButtonOpenTychoDirectory_Leave(object sender, EventArgs e)
 		{
 			ClearStatusbar();
 		}
@@ -352,6 +476,18 @@ namespace Hipparcos_DB
 			ClearStatusbar();
 		}
 
+		private void ButtonOpenHipparcosDirectory_MouseLeave(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+		}
+
+		private void ButtonOpenTychoDirectory_MouseLeave(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+		}
+
+
 		#endregion
+
 	}
 }

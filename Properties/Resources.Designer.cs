@@ -233,6 +233,16 @@ namespace Hipparcos_DB.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fugue_folder_open_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_folder-open_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fugue_gear_16px_shadowless {
             get {
                 object obj = ResourceManager.GetObject("fugue_gear_16px_shadowless", resourceCulture);
@@ -276,6 +286,36 @@ namespace Hipparcos_DB.Properties {
         internal static System.Drawing.Bitmap fugue_pencil_16px_shadowless {
             get {
                 object obj = ResourceManager.GetObject("fugue_pencil_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fugue_table_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_table_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fugue_table_paint_can_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_table-paint-can_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fugue_table_select_row_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_table-select-row_16px_shadowless", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

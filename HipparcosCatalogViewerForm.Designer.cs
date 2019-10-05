@@ -122,6 +122,9 @@
 			this.toolStripTextBoxGoToIndex = new System.Windows.Forms.ToolStripTextBox();
 			this.toolStripLabelMaxIndex = new System.Windows.Forms.ToolStripLabel();
 			this.toolStripButtonGoToIndex = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparatorOptions = new System.Windows.Forms.ToolStripSeparator();
+			this.toolStripButtonChangeDataTableStyle = new System.Windows.Forms.ToolStripButton();
+			this.toolStripButtonChangeHoverEffect = new System.Windows.Forms.ToolStripButton();
 			this.statusStrip = new System.Windows.Forms.StatusStrip();
 			this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
 			this.progressBar = new System.Windows.Forms.ToolStripProgressBar();
@@ -1950,7 +1953,10 @@
             this.toolStripLabelGoToIndexDesc,
             this.toolStripTextBoxGoToIndex,
             this.toolStripLabelMaxIndex,
-            this.toolStripButtonGoToIndex});
+            this.toolStripButtonGoToIndex,
+            this.toolStripSeparatorOptions,
+            this.toolStripButtonChangeDataTableStyle,
+            this.toolStripButtonChangeHoverEffect});
 			this.toolStrip.Location = new System.Drawing.Point(0, 24);
 			this.toolStrip.Name = "toolStrip";
 			this.toolStrip.Size = new System.Drawing.Size(844, 25);
@@ -2089,15 +2095,18 @@
 			this.toolStripTextBoxGoToIndex.Enter += new System.EventHandler(this.ToolStripTextBoxGoToIndex_Enter);
 			this.toolStripTextBoxGoToIndex.Leave += new System.EventHandler(this.ToolStripTextBoxGoToIndex_Leave);
 			this.toolStripTextBoxGoToIndex.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ToolStripTextBoxGotoIndex_KeyPress);
+			this.toolStripTextBoxGoToIndex.MouseEnter += new System.EventHandler(this.ToolStripTextBoxGoToIndex_MouseEnter);
+			this.toolStripTextBoxGoToIndex.MouseLeave += new System.EventHandler(this.ToolStripTextBoxGoToIndex_MouseLeave);
 			// 
 			// toolStripLabelMaxIndex
 			// 
 			this.toolStripLabelMaxIndex.AccessibleDescription = "Show the maximal value of the entries";
 			this.toolStripLabelMaxIndex.AccessibleName = "Maximal value of entries";
 			this.toolStripLabelMaxIndex.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.toolStripLabelMaxIndex.AutoToolTip = true;
 			this.toolStripLabelMaxIndex.Name = "toolStripLabelMaxIndex";
-			this.toolStripLabelMaxIndex.Size = new System.Drawing.Size(30, 22);
-			this.toolStripLabelMaxIndex.Text = "/999";
+			this.toolStripLabelMaxIndex.Size = new System.Drawing.Size(39, 22);
+			this.toolStripLabelMaxIndex.Text = "of 999";
 			// 
 			// toolStripButtonGoToIndex
 			// 
@@ -2113,6 +2122,36 @@
 			this.toolStripButtonGoToIndex.Click += new System.EventHandler(this.ToolStripButtonGotoIndex_Click);
 			this.toolStripButtonGoToIndex.MouseEnter += new System.EventHandler(this.ToolStripButtonGoToIndex_MouseEnter);
 			this.toolStripButtonGoToIndex.MouseLeave += new System.EventHandler(this.ToolStripButtonGoToIndex_MouseLeave);
+			// 
+			// toolStripSeparatorOptions
+			// 
+			this.toolStripSeparatorOptions.AccessibleDescription = "Separate options from navigation";
+			this.toolStripSeparatorOptions.AccessibleName = "Separator";
+			this.toolStripSeparatorOptions.AccessibleRole = System.Windows.Forms.AccessibleRole.Separator;
+			this.toolStripSeparatorOptions.Name = "toolStripSeparatorOptions";
+			this.toolStripSeparatorOptions.Size = new System.Drawing.Size(6, 25);
+			// 
+			// toolStripButtonChangeDataTableStyle
+			// 
+			this.toolStripButtonChangeDataTableStyle.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripButtonChangeDataTableStyle.Image = global::Hipparcos_DB.Properties.Resources.fugue_table_paint_can_16px_shadowless;
+			this.toolStripButtonChangeDataTableStyle.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButtonChangeDataTableStyle.Name = "toolStripButtonChangeDataTableStyle";
+			this.toolStripButtonChangeDataTableStyle.Size = new System.Drawing.Size(23, 22);
+			this.toolStripButtonChangeDataTableStyle.Text = "Change data table style";
+			this.toolStripButtonChangeDataTableStyle.Click += new System.EventHandler(this.ToolStripButtonChangeDataTableStyle_Click);
+			// 
+			// toolStripButtonChangeHoverEffect
+			// 
+			this.toolStripButtonChangeHoverEffect.Checked = true;
+			this.toolStripButtonChangeHoverEffect.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.toolStripButtonChangeHoverEffect.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripButtonChangeHoverEffect.Image = global::Hipparcos_DB.Properties.Resources.fugue_table_select_row_16px_shadowless;
+			this.toolStripButtonChangeHoverEffect.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButtonChangeHoverEffect.Name = "toolStripButtonChangeHoverEffect";
+			this.toolStripButtonChangeHoverEffect.Size = new System.Drawing.Size(23, 22);
+			this.toolStripButtonChangeHoverEffect.Text = "Change hover effect";
+			this.toolStripButtonChangeHoverEffect.Click += new System.EventHandler(this.ToolStripButtonChangeHoverEffect_Click);
 			// 
 			// statusStrip
 			// 
@@ -4118,6 +4157,7 @@
 			this.Name = "HipparcosCatalogViewerForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Hipparcos Catalog Viewer";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HipparcosCatalogViewerForm_FormClosing);
 			this.Load += new System.EventHandler(this.HipparcosCatalogViewerForm_Load);
 			this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.HipparcosCatalogViewerForm_PreviewKeyDown);
 			this.contextMenuStripCopyData.ResumeLayout(false);
@@ -4312,5 +4352,8 @@
 		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemInfo;
 		private System.Windows.Forms.ContextMenuStrip contextMenuStripCopyData;
 		private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemCopyData;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparatorOptions;
+		private System.Windows.Forms.ToolStripButton toolStripButtonChangeDataTableStyle;
+		private System.Windows.Forms.ToolStripButton toolStripButtonChangeHoverEffect;
 	}
 }

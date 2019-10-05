@@ -36,6 +36,8 @@
 			this.labelTychoCatalog = new System.Windows.Forms.Label();
 			this.labelHipparcosCatalog = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
+			this.buttonOpenHipparcosDirectory = new System.Windows.Forms.Button();
+			this.buttonOptions = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.buttonInfo = new System.Windows.Forms.Button();
 			this.buttonDownloadTychoCatalog = new System.Windows.Forms.Button();
@@ -44,7 +46,7 @@
 			this.buttonOpenHipparcosCatalog = new System.Windows.Forms.Button();
 			this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
 			this.buttonExit = new System.Windows.Forms.Button();
-			this.buttonOptions = new System.Windows.Forms.Button();
+			this.buttonOpenTychoDirectory = new System.Windows.Forms.Button();
 			this.statusStripText.SuspendLayout();
 			this.groupBoxChooseCatalog.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,6 +67,8 @@
 			// 
 			resources.ApplyResources(this.groupBoxChooseCatalog, "groupBoxChooseCatalog");
 			this.groupBoxChooseCatalog.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+			this.groupBoxChooseCatalog.Controls.Add(this.buttonOpenTychoDirectory);
+			this.groupBoxChooseCatalog.Controls.Add(this.buttonOpenHipparcosDirectory);
 			this.groupBoxChooseCatalog.Controls.Add(this.buttonDownloadTychoCatalog);
 			this.groupBoxChooseCatalog.Controls.Add(this.buttonDownloadHipparcosCatalog);
 			this.groupBoxChooseCatalog.Controls.Add(this.labelTychoCatalog);
@@ -88,6 +92,34 @@
 			// 
 			resources.ApplyResources(this.label1, "label1");
 			this.label1.Name = "label1";
+			// 
+			// buttonOpenHipparcosDirectory
+			// 
+			resources.ApplyResources(this.buttonOpenHipparcosDirectory, "buttonOpenHipparcosDirectory");
+			this.buttonOpenHipparcosDirectory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.buttonOpenHipparcosDirectory.Image = global::Hipparcos_DB.Properties.Resources.fugue_folder_open_16px_shadowless;
+			this.buttonOpenHipparcosDirectory.Name = "buttonOpenHipparcosDirectory";
+			this.toolTip.SetToolTip(this.buttonOpenHipparcosDirectory, resources.GetString("buttonOpenHipparcosDirectory.ToolTip"));
+			this.buttonOpenHipparcosDirectory.UseVisualStyleBackColor = true;
+			this.buttonOpenHipparcosDirectory.Click += new System.EventHandler(this.ButtonOpenHipparcosDirectory_Click);
+			this.buttonOpenHipparcosDirectory.Enter += new System.EventHandler(this.ButtonOpenHipparcosDirectory_Enter);
+			this.buttonOpenHipparcosDirectory.Leave += new System.EventHandler(this.ButtonOpenHipparcosDirectory_Leave);
+			this.buttonOpenHipparcosDirectory.MouseEnter += new System.EventHandler(this.ButtonOpenHipparcosDirectory_MouseEnter);
+			this.buttonOpenHipparcosDirectory.MouseLeave += new System.EventHandler(this.ButtonOpenHipparcosDirectory_MouseLeave);
+			// 
+			// buttonOptions
+			// 
+			resources.ApplyResources(this.buttonOptions, "buttonOptions");
+			this.buttonOptions.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.buttonOptions.Image = global::Hipparcos_DB.Properties.Resources.fugue_gear_16px_shadowless;
+			this.buttonOptions.Name = "buttonOptions";
+			this.toolTip.SetToolTip(this.buttonOptions, resources.GetString("buttonOptions.ToolTip"));
+			this.buttonOptions.UseVisualStyleBackColor = true;
+			this.buttonOptions.Click += new System.EventHandler(this.ButtonOptions_Click);
+			this.buttonOptions.Enter += new System.EventHandler(this.ButtonOptions_Enter);
+			this.buttonOptions.Leave += new System.EventHandler(this.ButtonOptions_Leave);
+			this.buttonOptions.MouseEnter += new System.EventHandler(this.ButtonOptions_MouseEnter);
+			this.buttonOptions.MouseLeave += new System.EventHandler(this.ButtonOptions_MouseLeave);
 			// 
 			// pictureBox1
 			// 
@@ -181,19 +213,19 @@
 			this.buttonExit.MouseEnter += new System.EventHandler(this.ButtonExit_MouseEnter);
 			this.buttonExit.MouseLeave += new System.EventHandler(this.ButtonExit_MouseLeave);
 			// 
-			// buttonOptions
+			// buttonOpenTychoDirectory
 			// 
-			resources.ApplyResources(this.buttonOptions, "buttonOptions");
-			this.buttonOptions.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-			this.buttonOptions.Image = global::Hipparcos_DB.Properties.Resources.fugue_gear_16px_shadowless;
-			this.buttonOptions.Name = "buttonOptions";
-			this.toolTip.SetToolTip(this.buttonOptions, resources.GetString("buttonOptions.ToolTip"));
-			this.buttonOptions.UseVisualStyleBackColor = true;
-			this.buttonOptions.Click += new System.EventHandler(this.ButtonOptions_Click);
-			this.buttonOptions.Enter += new System.EventHandler(this.ButtonOptions_Enter);
-			this.buttonOptions.Leave += new System.EventHandler(this.ButtonOptions_Leave);
-			this.buttonOptions.MouseEnter += new System.EventHandler(this.ButtonOptions_MouseEnter);
-			this.buttonOptions.MouseLeave += new System.EventHandler(this.ButtonOptions_MouseLeave);
+			resources.ApplyResources(this.buttonOpenTychoDirectory, "buttonOpenTychoDirectory");
+			this.buttonOpenTychoDirectory.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.buttonOpenTychoDirectory.Image = global::Hipparcos_DB.Properties.Resources.fugue_folder_open_16px_shadowless;
+			this.buttonOpenTychoDirectory.Name = "buttonOpenTychoDirectory";
+			this.toolTip.SetToolTip(this.buttonOpenTychoDirectory, resources.GetString("buttonOpenTychoDirectory.ToolTip"));
+			this.buttonOpenTychoDirectory.UseVisualStyleBackColor = true;
+			this.buttonOpenTychoDirectory.Click += new System.EventHandler(this.ButtonOpenTychoDirectory_Click);
+			this.buttonOpenTychoDirectory.Enter += new System.EventHandler(this.ButtonOpenTychoDirectory_Enter);
+			this.buttonOpenTychoDirectory.Leave += new System.EventHandler(this.ButtonOpenTychoDirectory_Leave);
+			this.buttonOpenTychoDirectory.MouseEnter += new System.EventHandler(this.ButtonOpenTychoDirectory_MouseEnter);
+			this.buttonOpenTychoDirectory.MouseLeave += new System.EventHandler(this.ButtonOpenTychoDirectory_MouseLeave);
 			// 
 			// CatalogChooserForm
 			// 
@@ -237,6 +269,8 @@
 		private System.Windows.Forms.Label labelHipparcosCatalog;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button buttonOptions;
+		private System.Windows.Forms.Button buttonOpenHipparcosDirectory;
+		private System.Windows.Forms.Button buttonOpenTychoDirectory;
 	}
 }
 

@@ -443,7 +443,7 @@ namespace Hipparcos_DB
 		{
 			ClearStatusbar();
 		}
-		
+
 		#endregion
 
 		#region MouseLeave event handlers

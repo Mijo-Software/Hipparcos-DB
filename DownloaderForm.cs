@@ -218,6 +218,7 @@ namespace Hipparcos_DB
 		private void DownloaderForm_Load(object sender, EventArgs e)
 		{
 			ClearStatusbar();
+			labelFilesDownload.Text = string.Empty;
 			if (settings.UserEnableQuickDownload)
 			{
 				ToolStripButtonStartDownload_Click(sender: sender, e: e);
@@ -254,7 +255,7 @@ namespace Hipparcos_DB
 			{
 				Directory.CreateDirectory(path: GetCatalogDirectory());
 			}
-			progressBarDownloadFiles.Maximum = hostFiles.Length;
+			progressBarDownloadFiles.Maximum = hostFiles.Length * 3;
 			SetHost(host: toolStripTextBoxHost.Text);
 			backgroundWorker.RunWorkerAsync();
 		}
@@ -534,10 +535,12 @@ namespace Hipparcos_DB
 							fileArray = File.ReadAllBytes(path: downloadedFile);
 							labelDownloadStatus.Text = "[" + DateTime.Now.ToString() + "] Decompress: " + downloadedFile + " -> " + decompressedFile;
 							textBox.AppendText(text: labelDownloadStatus.Text + Environment.NewLine);
+							progressBarDownloadFiles.PerformStep();
 							File.WriteAllBytes(path: decompressedFile, bytes: Decompress(gzip: fileArray));
 							labelDownloadStatus.Text = "[" + DateTime.Now.ToString() + "] Delete: " + downloadedFile;
 							textBox.AppendText(text: labelDownloadStatus.Text + Environment.NewLine + Environment.NewLine);
 							File.Delete(path: downloadedFile);
+							progressBarDownloadFiles.PerformStep();
 						}
 						else
 						{

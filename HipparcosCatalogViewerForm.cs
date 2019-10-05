@@ -9,7 +9,7 @@ namespace Hipparcos_DB
 {
 	public partial class HipparcosCatalogViewerForm : Form
 	{
-		enum AstrophysicalElement
+		enum AstroElement
 		{
 			None = 0,
 			CatalogData,
@@ -198,6 +198,8 @@ namespace Hipparcos_DB
 			astrophysicalElement = 0,
 			index = 0,
 			maxIndex = 0;
+
+		#region Local methods
 
 		private string RemoveFileExtension(string filename)
 		{
@@ -390,7 +392,7 @@ namespace Hipparcos_DB
 			toolStripStatusLabelInfo.Text = string.Empty;
 			toolStripStatusLabelInfo.Visible = false;
 		}
-		
+
 		private void UpdateIndexLabel()
 		{
 			toolStripTextBoxGoToIndex.Text = index.ToString();
@@ -534,6 +536,10 @@ namespace Hipparcos_DB
 			aProp.SetValue(obj: control, value: true, index: null);
 		}
 
+		#endregion
+
+		#region Con- and destructor
+
 		public HipparcosCatalogViewerForm()
 		{
 			InitializeComponent();
@@ -551,16 +557,42 @@ namespace Hipparcos_DB
 			}
 		}
 
+		#endregion
+
+		#region Form* event handlers
+
 		private void HipparcosCatalogViewerForm_Load(object sender, EventArgs e)
 		{
 			ClearStatusbar();
+			switch (settings.UserEnableHoverEffect)
+			{
+				case true:
+				default:
+					toolStripButtonChangeHoverEffect.Checked = true;
+					toolStripButtonChangeHoverEffect.Image = Resources.fugue_table_select_row_16px_shadowless;
+					break;
+				case false:
+					toolStripButtonChangeHoverEffect.Checked = false;
+					toolStripButtonChangeHoverEffect.Image = Resources.fugue_table_16px_shadowless;
+					break;
+			}
+			switch (settings.UserDataTableStyle)
+			{
+				case 0:
+				default:
+					tableLayoutPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.OutsetDouble;
+					break;
+				case 1:
+					tableLayoutPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.InsetDouble;
+					break;
+			}
 			string dataFile = settings.UserHipparcosCatalogDirectory + "hip_main.dat";
 			if (File.Exists(path: dataFile))
 			{
 				catalogEntries = File.ReadAllLines(path: dataFile);
 				index = 1;
 				maxIndex = Convert.ToUInt32(value: catalogEntries.Length);
-				toolStripLabelMaxIndex.Text = "/" + maxIndex.ToString();
+				toolStripLabelMaxIndex.Text = "of " + maxIndex.ToString();
 				progressBar.Visible = false;
 				UpdateIndexLabel();
 				ShowEntriesOnIndex();
@@ -577,6 +609,13 @@ namespace Hipparcos_DB
 			}
 			SetDoubleBuffered(control: tableLayoutPanel);
 		}
+
+		private void HipparcosCatalogViewerForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			settings.Save();
+		}
+
+		#endregion
 
 		#region Click event handlers
 
@@ -650,162 +689,190 @@ namespace Hipparcos_DB
 		{
 			switch (astrophysicalElement)
 			{
-				case (uint)AstrophysicalElement.None: break;
-				case (uint)AstrophysicalElement.CatalogData: CopyToClipboard(text: labelCatalogData.Text); break;
-				case (uint)AstrophysicalElement.IdentifierData: CopyToClipboard(text: labelIdentifierData.Text); break;
-				case (uint)AstrophysicalElement.ProximityFlagData: CopyToClipboard(text: labelProximityFlagData.Text); break;
-				case (uint)AstrophysicalElement.RightAscensionData: CopyToClipboard(text: labelRightAscensionData.Text); break;
-				case (uint)AstrophysicalElement.DeclinationData: CopyToClipboard(text: labelDeclinationData.Text); break;
-				case (uint)AstrophysicalElement.MagnitudeJohnsonData: CopyToClipboard(text: labelMagnitudeJohnsonData.Text); break;
-				case (uint)AstrophysicalElement.CoarseVariabilityFlagData: CopyToClipboard(text: labelCoarseVariabilityFlagData.Text); break;
-				case (uint)AstrophysicalElement.SourceOfMagnitudeData: CopyToClipboard(text: labelSourceOfMagnitudeData.Text); break;
-				case (uint)AstrophysicalElement.AlphaData: CopyToClipboard(text: labelAlphaData.Text); break;
-				case (uint)AstrophysicalElement.DeltaData: CopyToClipboard(text: labelDeltaData.Text); break;
-				case (uint)AstrophysicalElement.ReferenceFlagForAstrometryData: CopyToClipboard(text: labelReferenceFlagForAstrometryData.Text); break;
-				case (uint)AstrophysicalElement.TrigonomicParallaxData: CopyToClipboard(text: labelTrigonomicParallaxData.Text); break;
-				case (uint)AstrophysicalElement.ProperMotionAlphaData: CopyToClipboard(text: labelProperMotionAlphaData.Text); break;
-				case (uint)AstrophysicalElement.ProperMotionDeltaData: CopyToClipboard(text: labelProperMotionDeltaData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorRightAscensionData: CopyToClipboard(text: labelStandardErrorRightAscensionData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorDeclinationData: CopyToClipboard(text: labelStandardErrorDeclinationData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorTrigonomicParallaxData: CopyToClipboard(text: labelStandardErrorTrigonomicParallaxData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorProperMotionRightAscensionData: CopyToClipboard(text: labelStandardErrorProperMotionRightAscensionData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorProperMotionDeclinationData: CopyToClipboard(text: labelStandardErrorProperMotionDeclinationData.Text); break;
-				case (uint)AstrophysicalElement.CorrelationDeclinationByRightAscensionData: CopyToClipboard(text: labelCorrelationDeclinationByRightAscensionData.Text); break;
-				case (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByRightAscensionData: CopyToClipboard(text: labelCorrelationTrigonomicParallaxByRightAscensionData.Text); break;
-				case (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByDeclinationData: CopyToClipboard(text: labelCorrelationTrigonomicParallaxByDeclinationData.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByRightAscensionData: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByRightAscensionData.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByDeclinationData: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByDeclinationData.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxData: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionData: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByRightAscensionData.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByDeclinationData: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByDeclinationData.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByTrigonomicParallaxData: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByProperMotionRightAscensionData: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Text); break;
-				case (uint)AstrophysicalElement.PercentageOfRejectedDataData: CopyToClipboard(text: labelPercentageOfRejectedDataData.Text); break;
-				case (uint)AstrophysicalElement.GoodnessOfFitParameterData: CopyToClipboard(text: labelGoodnessOfFitParameterData.Text); break;
-				case (uint)AstrophysicalElement.MeanBtMagnitudeData: CopyToClipboard(text: labelMeanBtMagnitudeData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorMeanBtMagnitudeData: CopyToClipboard(text: labelStandardErrorMeanBtMagnitudeData.Text); break;
-				case (uint)AstrophysicalElement.MeanVtMagnitudeData: CopyToClipboard(text: labelMeanVtMagnitudeData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorMeanVtMagnitudeData: CopyToClipboard(text: labelStandardErrorMeanVtMagnitudeData.Text); break;
-				case (uint)AstrophysicalElement.JohnsonBvColorData: CopyToClipboard(text: labelJohnsonBvColorData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorJohnsonBvColorData: CopyToClipboard(text: labelStandardErrorJohnsonBvColorData.Text); break;
-				case (uint)AstrophysicalElement.ReferenceFlagForBtAndVtMagnitudeData: CopyToClipboard(text: labelReferenceFlagForBtAndVtMagnitudeData.Text); break;
-				case (uint)AstrophysicalElement.SourceOfBvColorData: CopyToClipboard(text: labelSourceOfBvColorData.Text); break;
-				case (uint)AstrophysicalElement.ColorIndexInCousinsSystemData: CopyToClipboard(text: labelColorIndexInCousinsSystemData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorViData: CopyToClipboard(text: labelStandardErrorViData.Text); break;
-				case (uint)AstrophysicalElement.SourceOfViData: CopyToClipboard(text: labelSourceOfViData.Text); break;
-				case (uint)AstrophysicalElement.FlagForCombinedMagnitudesData: CopyToClipboard(text: labelFlagForCombinedMagnitudesData.Text); break;
-				case (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemData: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorMedianMagnitudeInHipparcosSystemData: CopyToClipboard(text: labelStandardErrorMedianMagnitudeInHipparcosSystemData.Text); break;
-				case (uint)AstrophysicalElement.ScatterMedianMagnitudeInHipparcosSystemData: CopyToClipboard(text: labelScatterMedianMagnitudeInHipparcosSystemData.Text); break;
-				case (uint)AstrophysicalElement.NumberObservationsForMedianMagnitudeInHipparcosSystemData: CopyToClipboard(text: labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Text); break;
-				case (uint)AstrophysicalElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemData: CopyToClipboard(text: labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Text); break;
-				case (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMaximumData: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemAtMaximumData.Text); break;
-				case (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMinimumData: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemAtMinimumData.Text); break;
-				case (uint)AstrophysicalElement.VariabilityPeriodData: CopyToClipboard(text: labelVariabilityPeriodData.Text); break;
-				case (uint)AstrophysicalElement.VariabilityTypeData: CopyToClipboard(text: labelVariabilityTypeData.Text); break;
-				case (uint)AstrophysicalElement.AdditionalDataAboutVariabilityData: CopyToClipboard(text: labelAdditionalDataAboutVariabilityData.Text); break;
-				case (uint)AstrophysicalElement.LightCurveAnnexData: CopyToClipboard(text: labelLightCurveAnnexData.Text); break;
-				case (uint)AstrophysicalElement.CcdmIdentifierData: CopyToClipboard(text: labelCcdmIdentifierData.Text); break;
-				case (uint)AstrophysicalElement.HistoricalStatusFlagData: CopyToClipboard(text: labelHistoricalStatusFlagData.Text); break;
-				case (uint)AstrophysicalElement.NumberEntriesWithSameCcdmData: CopyToClipboard(text: labelNumberEntriesWithSameCcdmData.Text); break;
-				case (uint)AstrophysicalElement.NumberComponentsInThisEntryData: CopyToClipboard(text: labelNumberComponentsInThisEntryData.Text); break;
-				case (uint)AstrophysicalElement.MultipleSystemsFlagData: CopyToClipboard(text: labelMultipleSystemsFlagData.Text); break;
-				case (uint)AstrophysicalElement.AstrometricSourceFlagData: CopyToClipboard(text: labelAstrometricSourceFlagData.Text); break;
-				case (uint)AstrophysicalElement.SolutionQualityData: CopyToClipboard(text: labelSolutionQualityData.Text); break;
-				case (uint)AstrophysicalElement.ComponentIdentifiersData: CopyToClipboard(text: labelComponentIdentifiersData.Text); break;
-				case (uint)AstrophysicalElement.PositionAngleBetweenComponentsData: CopyToClipboard(text: labelPositionAngleBetweenComponentsData.Text); break;
-				case (uint)AstrophysicalElement.AngularSeparationBetweenComponentsData: CopyToClipboard(text: labelAngularSeparationBetweenComponentsData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorRhoData: CopyToClipboard(text: labelStandardErrorRhoData.Text); break;
-				case (uint)AstrophysicalElement.MagnitudeDifferenceBetweenComponentsData: CopyToClipboard(text: labelMagnitudeDifferenceBetweenComponentsData.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorMagnitudeDifferenceBetweenComponentsData: CopyToClipboard(text: labelStandardErrorMagnitudeDifferenceBetweenComponentsData.Text); break;
-				case (uint)AstrophysicalElement.FlagIndicatingSurveyStarData: CopyToClipboard(text: labelFlagIndicatingSurveyStarData.Text); break;
-				case (uint)AstrophysicalElement.IdentificationChartData: CopyToClipboard(text: labelIdentificationChartData.Text); break;
-				case (uint)AstrophysicalElement.ExistenceOfNotesData: CopyToClipboard(text: labelExistenceOfNotesData.Text); break;
-				case (uint)AstrophysicalElement.HdNumberData: CopyToClipboard(text: labelHdNumberData.Text); break;
-				case (uint)AstrophysicalElement.BonnerDmData: CopyToClipboard(text: labelBonnerDmData.Text); break;
-				case (uint)AstrophysicalElement.CordobaDmData: CopyToClipboard(text: labelCordobaDmData.Text); break;
-				case (uint)AstrophysicalElement.CapePhotographicDmData: CopyToClipboard(text: labelCapePhotographicDmData.Text); break;
-				case (uint)AstrophysicalElement.ViUsedForReductionsData: CopyToClipboard(text: labelViUsedForReductionsData.Text); break;
-				case (uint)AstrophysicalElement.SpectralTypeData: CopyToClipboard(text: labelSpectralTypeData.Text); break;
-				case (uint)AstrophysicalElement.SourceOfSpectralTypeData: CopyToClipboard(text: labelSourceOfSpectralTypeData.Text); break;
-				case (uint)AstrophysicalElement.CatalogDesc: CopyToClipboard(text: labelCatalogDesc.Text); break;
-				case (uint)AstrophysicalElement.IdentifierDesc: CopyToClipboard(text: labelIdentifierDesc.Text); break; ;
-				case (uint)AstrophysicalElement.ProximityFlagDesc: CopyToClipboard(text: labelProximityFlagDesc.Text); break;
-				case (uint)AstrophysicalElement.RightAscensionDesc: CopyToClipboard(text: labelRightAscensionDesc.Text); break;
-				case (uint)AstrophysicalElement.DeclinationDesc: CopyToClipboard(text: labelDeclinationDesc.Text); break;
-				case (uint)AstrophysicalElement.MagnitudeJohnsonDesc: CopyToClipboard(text: labelMagnitudeJohnsonDesc.Text); break;
-				case (uint)AstrophysicalElement.CoarseVariabilityFlagDesc: CopyToClipboard(text: labelCoarseVariabilityFlagDesc.Text); break;
-				case (uint)AstrophysicalElement.SourceOfMagnitudeDesc: CopyToClipboard(text: labelSourceOfMagnitudeDesc.Text); break;
-				case (uint)AstrophysicalElement.AlphaDesc: CopyToClipboard(text: labelAlphaDesc.Text); break;
-				case (uint)AstrophysicalElement.DeltaDesc: CopyToClipboard(text: labelDeltaDesc.Text); break;
-				case (uint)AstrophysicalElement.ReferenceFlagForAstrometryDesc: CopyToClipboard(text: labelReferenceFlagForAstrometryDesc.Text); break;
-				case (uint)AstrophysicalElement.TrigonomicParallaxDesc: CopyToClipboard(text: labelTrigonomicParallaxDesc.Text); break;
-				case (uint)AstrophysicalElement.ProperMotionAlphaDesc: CopyToClipboard(text: labelProperMotionAlphaDesc.Text); break;
-				case (uint)AstrophysicalElement.ProperMotionDeltaDesc: CopyToClipboard(text: labelProperMotionDeltaDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorRightAscensionDesc: CopyToClipboard(text: labelStandardErrorRightAscensionDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorDeclinationDesc: CopyToClipboard(text: labelStandardErrorDeclinationDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorTrigonomicParallaxDesc: CopyToClipboard(text: labelStandardErrorTrigonomicParallaxDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorProperMotionRightAscensionDesc: CopyToClipboard(text: labelStandardErrorProperMotionRightAscensionDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorProperMotionDeclinationDesc: CopyToClipboard(text: labelStandardErrorProperMotionDeclinationDesc.Text); break;
-				case (uint)AstrophysicalElement.CorrelationDeclinationByRightAscensionDesc: CopyToClipboard(text: labelCorrelationDeclinationByRightAscensionDesc.Text); break;
-				case (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByRightAscensionDesc: CopyToClipboard(text: labelCorrelationTrigonomicParallaxByRightAscensionDesc.Text); break;
-				case (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByDeclinationDesc: CopyToClipboard(text: labelCorrelationTrigonomicParallaxByDeclinationDesc.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByRightAscensionDesc: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByDeclinationDesc: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByDeclinationDesc.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxDesc: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionDesc: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByRightAscensionDesc.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByDeclinationDesc: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByDeclinationDesc.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByTrigonomicParallaxDesc: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Text); break;
-				case (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByProperMotionRightAscensionDesc: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Text); break;
-				case (uint)AstrophysicalElement.PercentageOfRejectedDataDesc: CopyToClipboard(text: labelPercentageOfRejectedDataDesc.Text); break;
-				case (uint)AstrophysicalElement.GoodnessOfFitParameterDesc: CopyToClipboard(text: labelGoodnessOfFitParameterDesc.Text); break;
-				case (uint)AstrophysicalElement.MeanBtMagnitudeDesc: CopyToClipboard(text: labelMeanBtMagnitudeDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorMeanBtMagnitudeDesc: CopyToClipboard(text: labelStandardErrorMeanBtMagnitudeDesc.Text); break;
-				case (uint)AstrophysicalElement.MeanVtMagnitudeDesc: CopyToClipboard(text: labelMeanVtMagnitudeDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorMeanVtMagnitudeDesc: CopyToClipboard(text: labelStandardErrorMeanVtMagnitudeDesc.Text); break;
-				case (uint)AstrophysicalElement.JohnsonBvColorDesc: CopyToClipboard(text: labelJohnsonBvColorDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorJohnsonBvColorDesc: CopyToClipboard(text: labelStandardErrorJohnsonBvColorDesc.Text); break;
-				case (uint)AstrophysicalElement.ReferenceFlagForBtAndVtMagnitudeDesc: CopyToClipboard(text: labelReferenceFlagForBtAndVtMagnitudeDesc.Text); break;
-				case (uint)AstrophysicalElement.SourceOfBvColorDesc: CopyToClipboard(text: labelSourceOfBvColorDesc.Text); break;
-				case (uint)AstrophysicalElement.ColorIndexInCousinsSystemDesc: CopyToClipboard(text: labelColorIndexInCousinsSystemDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorViDesc: CopyToClipboard(text: labelStandardErrorViDesc.Text); break;
-				case (uint)AstrophysicalElement.SourceOfViDesc: CopyToClipboard(text: labelSourceOfViDesc.Text); break;
-				case (uint)AstrophysicalElement.FlagForCombinedMagnitudesDesc: CopyToClipboard(text: labelFlagForCombinedMagnitudesDesc.Text); break;
-				case (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemDesc: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorMedianMagnitudeInHipparcosSystemDesc: CopyToClipboard(text: labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Text); break;
-				case (uint)AstrophysicalElement.ScatterMedianMagnitudeInHipparcosSystemDesc: CopyToClipboard(text: labelScatterMedianMagnitudeInHipparcosSystemDesc.Text); break;
-				case (uint)AstrophysicalElement.NumberObservationsForMedianMagnitudeInHipparcosSystemDesc: CopyToClipboard(text: labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Text); break;
-				case (uint)AstrophysicalElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemDesc: CopyToClipboard(text: labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Text); break;
-				case (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMaximumDesc: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Text); break;
-				case (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMinimumDesc: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Text); break;
-				case (uint)AstrophysicalElement.VariabilityPeriodDesc: CopyToClipboard(text: labelVariabilityPeriodDesc.Text); break;
-				case (uint)AstrophysicalElement.VariabilityTypeDesc: CopyToClipboard(text: labelVariabilityTypeDesc.Text); break;
-				case (uint)AstrophysicalElement.AdditionalDataAboutVariabilityDesc: CopyToClipboard(text: labelAdditionalDataAboutVariabilityDesc.Text); break;
-				case (uint)AstrophysicalElement.LightCurveAnnexDesc: CopyToClipboard(text: labelLightCurveAnnexDesc.Text); break;
-				case (uint)AstrophysicalElement.CcdmIdentifierDesc: CopyToClipboard(text: labelCcdmIdentifierDesc.Text); break;
-				case (uint)AstrophysicalElement.HistoricalStatusFlagDesc: CopyToClipboard(text: labelHistoricalStatusFlagDesc.Text); break;
-				case (uint)AstrophysicalElement.NumberEntriesWithSameCcdmDesc: CopyToClipboard(text: labelNumberEntriesWithSameCcdmDesc.Text); break;
-				case (uint)AstrophysicalElement.NumberComponentsInThisEntryDesc: CopyToClipboard(text: labelNumberComponentsInThisEntryDesc.Text); break;
-				case (uint)AstrophysicalElement.MultipleSystemsFlagDesc: CopyToClipboard(text: labelMultipleSystemsFlagDesc.Text); break;
-				case (uint)AstrophysicalElement.AstrometricSourceFlagDesc: CopyToClipboard(text: labelAstrometricSourceFlagDesc.Text); break;
-				case (uint)AstrophysicalElement.SolutionQualityDesc: CopyToClipboard(text: labelSolutionQualityDesc.Text); break;
-				case (uint)AstrophysicalElement.ComponentIdentifiersDesc: CopyToClipboard(text: labelComponentIdentifiersDesc.Text); break;
-				case (uint)AstrophysicalElement.PositionAngleBetweenComponentsDesc: CopyToClipboard(text: labelPositionAngleBetweenComponentsDesc.Text); break;
-				case (uint)AstrophysicalElement.AngularSeparationBetweenComponentsDesc: CopyToClipboard(text: labelAngularSeparationBetweenComponentsDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorRhoDesc: CopyToClipboard(text: labelStandardErrorRhoDesc.Text); break;
-				case (uint)AstrophysicalElement.MagnitudeDifferenceBetweenComponentsDesc: CopyToClipboard(text: labelMagnitudeDifferenceBetweenComponentsDesc.Text); break;
-				case (uint)AstrophysicalElement.StandardErrorMagnitudeDifferenceBetweenComponentsDesc: CopyToClipboard(text: labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Text); break;
-				case (uint)AstrophysicalElement.FlagIndicatingSurveyStarDesc: CopyToClipboard(text: labelFlagIndicatingSurveyStarDesc.Text); break;
-				case (uint)AstrophysicalElement.IdentificationChartDesc: CopyToClipboard(text: labelIdentificationChartDesc.Text); break;
-				case (uint)AstrophysicalElement.ExistenceOfNotesDesc: CopyToClipboard(text: labelExistenceOfNotesDesc.Text); break;
-				case (uint)AstrophysicalElement.HdNumberDesc: CopyToClipboard(text: labelHdNumberDesc.Text); break;
-				case (uint)AstrophysicalElement.BonnerDmDesc: CopyToClipboard(text: labelBonnerDmDesc.Text); break;
-				case (uint)AstrophysicalElement.CordobaDmDesc: CopyToClipboard(text: labelCordobaDmDesc.Text); break;
-				case (uint)AstrophysicalElement.CapePhotographicDmDesc: CopyToClipboard(text: labelCapePhotographicDmDesc.Text); break;
-				case (uint)AstrophysicalElement.ViUsedForReductionsDesc: CopyToClipboard(text: labelViUsedForReductionsDesc.Text); break;
-				case (uint)AstrophysicalElement.SpectralTypeDesc: CopyToClipboard(text: labelSpectralTypeDesc.Text); break;
-				case (uint)AstrophysicalElement.SourceOfSpectralTypeDesc: CopyToClipboard(text: labelSourceOfSpectralTypeDesc.Text); break;
+				case (uint)AstroElement.None: break;
+				case (uint)AstroElement.CatalogData: CopyToClipboard(text: labelCatalogData.Text); break;
+				case (uint)AstroElement.IdentifierData: CopyToClipboard(text: labelIdentifierData.Text); break;
+				case (uint)AstroElement.ProximityFlagData: CopyToClipboard(text: labelProximityFlagData.Text); break;
+				case (uint)AstroElement.RightAscensionData: CopyToClipboard(text: labelRightAscensionData.Text); break;
+				case (uint)AstroElement.DeclinationData: CopyToClipboard(text: labelDeclinationData.Text); break;
+				case (uint)AstroElement.MagnitudeJohnsonData: CopyToClipboard(text: labelMagnitudeJohnsonData.Text); break;
+				case (uint)AstroElement.CoarseVariabilityFlagData: CopyToClipboard(text: labelCoarseVariabilityFlagData.Text); break;
+				case (uint)AstroElement.SourceOfMagnitudeData: CopyToClipboard(text: labelSourceOfMagnitudeData.Text); break;
+				case (uint)AstroElement.AlphaData: CopyToClipboard(text: labelAlphaData.Text); break;
+				case (uint)AstroElement.DeltaData: CopyToClipboard(text: labelDeltaData.Text); break;
+				case (uint)AstroElement.ReferenceFlagForAstrometryData: CopyToClipboard(text: labelReferenceFlagForAstrometryData.Text); break;
+				case (uint)AstroElement.TrigonomicParallaxData: CopyToClipboard(text: labelTrigonomicParallaxData.Text); break;
+				case (uint)AstroElement.ProperMotionAlphaData: CopyToClipboard(text: labelProperMotionAlphaData.Text); break;
+				case (uint)AstroElement.ProperMotionDeltaData: CopyToClipboard(text: labelProperMotionDeltaData.Text); break;
+				case (uint)AstroElement.StandardErrorRightAscensionData: CopyToClipboard(text: labelStandardErrorRightAscensionData.Text); break;
+				case (uint)AstroElement.StandardErrorDeclinationData: CopyToClipboard(text: labelStandardErrorDeclinationData.Text); break;
+				case (uint)AstroElement.StandardErrorTrigonomicParallaxData: CopyToClipboard(text: labelStandardErrorTrigonomicParallaxData.Text); break;
+				case (uint)AstroElement.StandardErrorProperMotionRightAscensionData: CopyToClipboard(text: labelStandardErrorProperMotionRightAscensionData.Text); break;
+				case (uint)AstroElement.StandardErrorProperMotionDeclinationData: CopyToClipboard(text: labelStandardErrorProperMotionDeclinationData.Text); break;
+				case (uint)AstroElement.CorrelationDeclinationByRightAscensionData: CopyToClipboard(text: labelCorrelationDeclinationByRightAscensionData.Text); break;
+				case (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionData: CopyToClipboard(text: labelCorrelationTrigonomicParallaxByRightAscensionData.Text); break;
+				case (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationData: CopyToClipboard(text: labelCorrelationTrigonomicParallaxByDeclinationData.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionData: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByRightAscensionData.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationData: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByDeclinationData.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxData: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByRightAscensionData.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationData: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByDeclinationData.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxData: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionDeclinationByProperMotionRightAscensionData: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Text); break;
+				case (uint)AstroElement.PercentageOfRejectedDataData: CopyToClipboard(text: labelPercentageOfRejectedDataData.Text); break;
+				case (uint)AstroElement.GoodnessOfFitParameterData: CopyToClipboard(text: labelGoodnessOfFitParameterData.Text); break;
+				case (uint)AstroElement.MeanBtMagnitudeData: CopyToClipboard(text: labelMeanBtMagnitudeData.Text); break;
+				case (uint)AstroElement.StandardErrorMeanBtMagnitudeData: CopyToClipboard(text: labelStandardErrorMeanBtMagnitudeData.Text); break;
+				case (uint)AstroElement.MeanVtMagnitudeData: CopyToClipboard(text: labelMeanVtMagnitudeData.Text); break;
+				case (uint)AstroElement.StandardErrorMeanVtMagnitudeData: CopyToClipboard(text: labelStandardErrorMeanVtMagnitudeData.Text); break;
+				case (uint)AstroElement.JohnsonBvColorData: CopyToClipboard(text: labelJohnsonBvColorData.Text); break;
+				case (uint)AstroElement.StandardErrorJohnsonBvColorData: CopyToClipboard(text: labelStandardErrorJohnsonBvColorData.Text); break;
+				case (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeData: CopyToClipboard(text: labelReferenceFlagForBtAndVtMagnitudeData.Text); break;
+				case (uint)AstroElement.SourceOfBvColorData: CopyToClipboard(text: labelSourceOfBvColorData.Text); break;
+				case (uint)AstroElement.ColorIndexInCousinsSystemData: CopyToClipboard(text: labelColorIndexInCousinsSystemData.Text); break;
+				case (uint)AstroElement.StandardErrorViData: CopyToClipboard(text: labelStandardErrorViData.Text); break;
+				case (uint)AstroElement.SourceOfViData: CopyToClipboard(text: labelSourceOfViData.Text); break;
+				case (uint)AstroElement.FlagForCombinedMagnitudesData: CopyToClipboard(text: labelFlagForCombinedMagnitudesData.Text); break;
+				case (uint)AstroElement.MedianMagnitudeInHipparcosSystemData: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemData.Text); break;
+				case (uint)AstroElement.StandardErrorMedianMagnitudeInHipparcosSystemData: CopyToClipboard(text: labelStandardErrorMedianMagnitudeInHipparcosSystemData.Text); break;
+				case (uint)AstroElement.ScatterMedianMagnitudeInHipparcosSystemData: CopyToClipboard(text: labelScatterMedianMagnitudeInHipparcosSystemData.Text); break;
+				case (uint)AstroElement.NumberObservationsForMedianMagnitudeInHipparcosSystemData: CopyToClipboard(text: labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Text); break;
+				case (uint)AstroElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemData: CopyToClipboard(text: labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Text); break;
+				case (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMaximumData: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemAtMaximumData.Text); break;
+				case (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMinimumData: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemAtMinimumData.Text); break;
+				case (uint)AstroElement.VariabilityPeriodData: CopyToClipboard(text: labelVariabilityPeriodData.Text); break;
+				case (uint)AstroElement.VariabilityTypeData: CopyToClipboard(text: labelVariabilityTypeData.Text); break;
+				case (uint)AstroElement.AdditionalDataAboutVariabilityData: CopyToClipboard(text: labelAdditionalDataAboutVariabilityData.Text); break;
+				case (uint)AstroElement.LightCurveAnnexData: CopyToClipboard(text: labelLightCurveAnnexData.Text); break;
+				case (uint)AstroElement.CcdmIdentifierData: CopyToClipboard(text: labelCcdmIdentifierData.Text); break;
+				case (uint)AstroElement.HistoricalStatusFlagData: CopyToClipboard(text: labelHistoricalStatusFlagData.Text); break;
+				case (uint)AstroElement.NumberEntriesWithSameCcdmData: CopyToClipboard(text: labelNumberEntriesWithSameCcdmData.Text); break;
+				case (uint)AstroElement.NumberComponentsInThisEntryData: CopyToClipboard(text: labelNumberComponentsInThisEntryData.Text); break;
+				case (uint)AstroElement.MultipleSystemsFlagData: CopyToClipboard(text: labelMultipleSystemsFlagData.Text); break;
+				case (uint)AstroElement.AstrometricSourceFlagData: CopyToClipboard(text: labelAstrometricSourceFlagData.Text); break;
+				case (uint)AstroElement.SolutionQualityData: CopyToClipboard(text: labelSolutionQualityData.Text); break;
+				case (uint)AstroElement.ComponentIdentifiersData: CopyToClipboard(text: labelComponentIdentifiersData.Text); break;
+				case (uint)AstroElement.PositionAngleBetweenComponentsData: CopyToClipboard(text: labelPositionAngleBetweenComponentsData.Text); break;
+				case (uint)AstroElement.AngularSeparationBetweenComponentsData: CopyToClipboard(text: labelAngularSeparationBetweenComponentsData.Text); break;
+				case (uint)AstroElement.StandardErrorRhoData: CopyToClipboard(text: labelStandardErrorRhoData.Text); break;
+				case (uint)AstroElement.MagnitudeDifferenceBetweenComponentsData: CopyToClipboard(text: labelMagnitudeDifferenceBetweenComponentsData.Text); break;
+				case (uint)AstroElement.StandardErrorMagnitudeDifferenceBetweenComponentsData: CopyToClipboard(text: labelStandardErrorMagnitudeDifferenceBetweenComponentsData.Text); break;
+				case (uint)AstroElement.FlagIndicatingSurveyStarData: CopyToClipboard(text: labelFlagIndicatingSurveyStarData.Text); break;
+				case (uint)AstroElement.IdentificationChartData: CopyToClipboard(text: labelIdentificationChartData.Text); break;
+				case (uint)AstroElement.ExistenceOfNotesData: CopyToClipboard(text: labelExistenceOfNotesData.Text); break;
+				case (uint)AstroElement.HdNumberData: CopyToClipboard(text: labelHdNumberData.Text); break;
+				case (uint)AstroElement.BonnerDmData: CopyToClipboard(text: labelBonnerDmData.Text); break;
+				case (uint)AstroElement.CordobaDmData: CopyToClipboard(text: labelCordobaDmData.Text); break;
+				case (uint)AstroElement.CapePhotographicDmData: CopyToClipboard(text: labelCapePhotographicDmData.Text); break;
+				case (uint)AstroElement.ViUsedForReductionsData: CopyToClipboard(text: labelViUsedForReductionsData.Text); break;
+				case (uint)AstroElement.SpectralTypeData: CopyToClipboard(text: labelSpectralTypeData.Text); break;
+				case (uint)AstroElement.SourceOfSpectralTypeData: CopyToClipboard(text: labelSourceOfSpectralTypeData.Text); break;
+				case (uint)AstroElement.CatalogDesc: CopyToClipboard(text: labelCatalogDesc.Text); break;
+				case (uint)AstroElement.IdentifierDesc: CopyToClipboard(text: labelIdentifierDesc.Text); break; ;
+				case (uint)AstroElement.ProximityFlagDesc: CopyToClipboard(text: labelProximityFlagDesc.Text); break;
+				case (uint)AstroElement.RightAscensionDesc: CopyToClipboard(text: labelRightAscensionDesc.Text); break;
+				case (uint)AstroElement.DeclinationDesc: CopyToClipboard(text: labelDeclinationDesc.Text); break;
+				case (uint)AstroElement.MagnitudeJohnsonDesc: CopyToClipboard(text: labelMagnitudeJohnsonDesc.Text); break;
+				case (uint)AstroElement.CoarseVariabilityFlagDesc: CopyToClipboard(text: labelCoarseVariabilityFlagDesc.Text); break;
+				case (uint)AstroElement.SourceOfMagnitudeDesc: CopyToClipboard(text: labelSourceOfMagnitudeDesc.Text); break;
+				case (uint)AstroElement.AlphaDesc: CopyToClipboard(text: labelAlphaDesc.Text); break;
+				case (uint)AstroElement.DeltaDesc: CopyToClipboard(text: labelDeltaDesc.Text); break;
+				case (uint)AstroElement.ReferenceFlagForAstrometryDesc: CopyToClipboard(text: labelReferenceFlagForAstrometryDesc.Text); break;
+				case (uint)AstroElement.TrigonomicParallaxDesc: CopyToClipboard(text: labelTrigonomicParallaxDesc.Text); break;
+				case (uint)AstroElement.ProperMotionAlphaDesc: CopyToClipboard(text: labelProperMotionAlphaDesc.Text); break;
+				case (uint)AstroElement.ProperMotionDeltaDesc: CopyToClipboard(text: labelProperMotionDeltaDesc.Text); break;
+				case (uint)AstroElement.StandardErrorRightAscensionDesc: CopyToClipboard(text: labelStandardErrorRightAscensionDesc.Text); break;
+				case (uint)AstroElement.StandardErrorDeclinationDesc: CopyToClipboard(text: labelStandardErrorDeclinationDesc.Text); break;
+				case (uint)AstroElement.StandardErrorTrigonomicParallaxDesc: CopyToClipboard(text: labelStandardErrorTrigonomicParallaxDesc.Text); break;
+				case (uint)AstroElement.StandardErrorProperMotionRightAscensionDesc: CopyToClipboard(text: labelStandardErrorProperMotionRightAscensionDesc.Text); break;
+				case (uint)AstroElement.StandardErrorProperMotionDeclinationDesc: CopyToClipboard(text: labelStandardErrorProperMotionDeclinationDesc.Text); break;
+				case (uint)AstroElement.CorrelationDeclinationByRightAscensionDesc: CopyToClipboard(text: labelCorrelationDeclinationByRightAscensionDesc.Text); break;
+				case (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionDesc: CopyToClipboard(text: labelCorrelationTrigonomicParallaxByRightAscensionDesc.Text); break;
+				case (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationDesc: CopyToClipboard(text: labelCorrelationTrigonomicParallaxByDeclinationDesc.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionDesc: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationDesc: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByDeclinationDesc.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxDesc: CopyToClipboard(text: labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByRightAscensionDesc.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationDesc: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByDeclinationDesc.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxDesc: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Text); break;
+				case (uint)AstroElement.CorrelationProperMotionDeclinationByProperMotionRightAscensionDesc: CopyToClipboard(text: labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Text); break;
+				case (uint)AstroElement.PercentageOfRejectedDataDesc: CopyToClipboard(text: labelPercentageOfRejectedDataDesc.Text); break;
+				case (uint)AstroElement.GoodnessOfFitParameterDesc: CopyToClipboard(text: labelGoodnessOfFitParameterDesc.Text); break;
+				case (uint)AstroElement.MeanBtMagnitudeDesc: CopyToClipboard(text: labelMeanBtMagnitudeDesc.Text); break;
+				case (uint)AstroElement.StandardErrorMeanBtMagnitudeDesc: CopyToClipboard(text: labelStandardErrorMeanBtMagnitudeDesc.Text); break;
+				case (uint)AstroElement.MeanVtMagnitudeDesc: CopyToClipboard(text: labelMeanVtMagnitudeDesc.Text); break;
+				case (uint)AstroElement.StandardErrorMeanVtMagnitudeDesc: CopyToClipboard(text: labelStandardErrorMeanVtMagnitudeDesc.Text); break;
+				case (uint)AstroElement.JohnsonBvColorDesc: CopyToClipboard(text: labelJohnsonBvColorDesc.Text); break;
+				case (uint)AstroElement.StandardErrorJohnsonBvColorDesc: CopyToClipboard(text: labelStandardErrorJohnsonBvColorDesc.Text); break;
+				case (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeDesc: CopyToClipboard(text: labelReferenceFlagForBtAndVtMagnitudeDesc.Text); break;
+				case (uint)AstroElement.SourceOfBvColorDesc: CopyToClipboard(text: labelSourceOfBvColorDesc.Text); break;
+				case (uint)AstroElement.ColorIndexInCousinsSystemDesc: CopyToClipboard(text: labelColorIndexInCousinsSystemDesc.Text); break;
+				case (uint)AstroElement.StandardErrorViDesc: CopyToClipboard(text: labelStandardErrorViDesc.Text); break;
+				case (uint)AstroElement.SourceOfViDesc: CopyToClipboard(text: labelSourceOfViDesc.Text); break;
+				case (uint)AstroElement.FlagForCombinedMagnitudesDesc: CopyToClipboard(text: labelFlagForCombinedMagnitudesDesc.Text); break;
+				case (uint)AstroElement.MedianMagnitudeInHipparcosSystemDesc: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemDesc.Text); break;
+				case (uint)AstroElement.StandardErrorMedianMagnitudeInHipparcosSystemDesc: CopyToClipboard(text: labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Text); break;
+				case (uint)AstroElement.ScatterMedianMagnitudeInHipparcosSystemDesc: CopyToClipboard(text: labelScatterMedianMagnitudeInHipparcosSystemDesc.Text); break;
+				case (uint)AstroElement.NumberObservationsForMedianMagnitudeInHipparcosSystemDesc: CopyToClipboard(text: labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Text); break;
+				case (uint)AstroElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemDesc: CopyToClipboard(text: labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Text); break;
+				case (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMaximumDesc: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Text); break;
+				case (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMinimumDesc: CopyToClipboard(text: labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Text); break;
+				case (uint)AstroElement.VariabilityPeriodDesc: CopyToClipboard(text: labelVariabilityPeriodDesc.Text); break;
+				case (uint)AstroElement.VariabilityTypeDesc: CopyToClipboard(text: labelVariabilityTypeDesc.Text); break;
+				case (uint)AstroElement.AdditionalDataAboutVariabilityDesc: CopyToClipboard(text: labelAdditionalDataAboutVariabilityDesc.Text); break;
+				case (uint)AstroElement.LightCurveAnnexDesc: CopyToClipboard(text: labelLightCurveAnnexDesc.Text); break;
+				case (uint)AstroElement.CcdmIdentifierDesc: CopyToClipboard(text: labelCcdmIdentifierDesc.Text); break;
+				case (uint)AstroElement.HistoricalStatusFlagDesc: CopyToClipboard(text: labelHistoricalStatusFlagDesc.Text); break;
+				case (uint)AstroElement.NumberEntriesWithSameCcdmDesc: CopyToClipboard(text: labelNumberEntriesWithSameCcdmDesc.Text); break;
+				case (uint)AstroElement.NumberComponentsInThisEntryDesc: CopyToClipboard(text: labelNumberComponentsInThisEntryDesc.Text); break;
+				case (uint)AstroElement.MultipleSystemsFlagDesc: CopyToClipboard(text: labelMultipleSystemsFlagDesc.Text); break;
+				case (uint)AstroElement.AstrometricSourceFlagDesc: CopyToClipboard(text: labelAstrometricSourceFlagDesc.Text); break;
+				case (uint)AstroElement.SolutionQualityDesc: CopyToClipboard(text: labelSolutionQualityDesc.Text); break;
+				case (uint)AstroElement.ComponentIdentifiersDesc: CopyToClipboard(text: labelComponentIdentifiersDesc.Text); break;
+				case (uint)AstroElement.PositionAngleBetweenComponentsDesc: CopyToClipboard(text: labelPositionAngleBetweenComponentsDesc.Text); break;
+				case (uint)AstroElement.AngularSeparationBetweenComponentsDesc: CopyToClipboard(text: labelAngularSeparationBetweenComponentsDesc.Text); break;
+				case (uint)AstroElement.StandardErrorRhoDesc: CopyToClipboard(text: labelStandardErrorRhoDesc.Text); break;
+				case (uint)AstroElement.MagnitudeDifferenceBetweenComponentsDesc: CopyToClipboard(text: labelMagnitudeDifferenceBetweenComponentsDesc.Text); break;
+				case (uint)AstroElement.StandardErrorMagnitudeDifferenceBetweenComponentsDesc: CopyToClipboard(text: labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Text); break;
+				case (uint)AstroElement.FlagIndicatingSurveyStarDesc: CopyToClipboard(text: labelFlagIndicatingSurveyStarDesc.Text); break;
+				case (uint)AstroElement.IdentificationChartDesc: CopyToClipboard(text: labelIdentificationChartDesc.Text); break;
+				case (uint)AstroElement.ExistenceOfNotesDesc: CopyToClipboard(text: labelExistenceOfNotesDesc.Text); break;
+				case (uint)AstroElement.HdNumberDesc: CopyToClipboard(text: labelHdNumberDesc.Text); break;
+				case (uint)AstroElement.BonnerDmDesc: CopyToClipboard(text: labelBonnerDmDesc.Text); break;
+				case (uint)AstroElement.CordobaDmDesc: CopyToClipboard(text: labelCordobaDmDesc.Text); break;
+				case (uint)AstroElement.CapePhotographicDmDesc: CopyToClipboard(text: labelCapePhotographicDmDesc.Text); break;
+				case (uint)AstroElement.ViUsedForReductionsDesc: CopyToClipboard(text: labelViUsedForReductionsDesc.Text); break;
+				case (uint)AstroElement.SpectralTypeDesc: CopyToClipboard(text: labelSpectralTypeDesc.Text); break;
+				case (uint)AstroElement.SourceOfSpectralTypeDesc: CopyToClipboard(text: labelSourceOfSpectralTypeDesc.Text); break;
 				default: break;
+			}
+		}
+
+		private void ToolStripButtonChangeDataTableStyle_Click(object sender, EventArgs e)
+		{
+			if (tableLayoutPanel.CellBorderStyle == TableLayoutPanelCellBorderStyle.InsetDouble)
+			{
+				tableLayoutPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.OutsetDouble;
+				settings.UserDataTableStyle = 0;
+			}
+			else if (tableLayoutPanel.CellBorderStyle == TableLayoutPanelCellBorderStyle.OutsetDouble)
+			{
+				tableLayoutPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.InsetDouble;
+				settings.UserDataTableStyle = 1;
+			}
+		}
+
+		private void ToolStripButtonChangeHoverEffect_Click(object sender, EventArgs e)
+		{
+			toolStripButtonChangeHoverEffect.Checked = !toolStripButtonChangeHoverEffect.Checked;
+			settings.UserEnableHoverEffect = !settings.UserEnableHoverEffect;
+			if (toolStripButtonChangeHoverEffect.Checked)
+			{
+				toolStripButtonChangeHoverEffect.Image = Resources.fugue_table_select_row_16px_shadowless;
+			}
+			else if (!toolStripButtonChangeHoverEffect.Checked)
+			{
+				toolStripButtonChangeHoverEffect.Image = Resources.fugue_table_16px_shadowless;
 			}
 		}
 
@@ -2051,7 +2118,7 @@ namespace Hipparcos_DB
 
 		private void LabelCatalogDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CatalogDesc;
+			astrophysicalElement = (uint)AstroElement.CatalogDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2061,7 +2128,7 @@ namespace Hipparcos_DB
 
 		private void LabelCatalogData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CatalogData;
+			astrophysicalElement = (uint)AstroElement.CatalogData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2071,7 +2138,7 @@ namespace Hipparcos_DB
 
 		private void LabelIdentifierDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.IdentifierDesc;
+			astrophysicalElement = (uint)AstroElement.IdentifierDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2081,7 +2148,7 @@ namespace Hipparcos_DB
 
 		private void LabelIdentifierData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.IdentifierData;
+			astrophysicalElement = (uint)AstroElement.IdentifierData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2091,7 +2158,7 @@ namespace Hipparcos_DB
 
 		private void LabelProximityFlagDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProximityFlagDesc;
+			astrophysicalElement = (uint)AstroElement.ProximityFlagDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2101,7 +2168,7 @@ namespace Hipparcos_DB
 
 		private void LabelProximityFlagData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProximityFlagData;
+			astrophysicalElement = (uint)AstroElement.ProximityFlagData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2111,7 +2178,7 @@ namespace Hipparcos_DB
 
 		private void LabelRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.RightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.RightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2121,7 +2188,7 @@ namespace Hipparcos_DB
 
 		private void LabelRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.RightAscensionData;
+			astrophysicalElement = (uint)AstroElement.RightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2131,7 +2198,7 @@ namespace Hipparcos_DB
 
 		private void LabelDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.DeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.DeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2141,7 +2208,7 @@ namespace Hipparcos_DB
 
 		private void LabelDeclinationData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.DeclinationData;
+			astrophysicalElement = (uint)AstroElement.DeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2151,7 +2218,7 @@ namespace Hipparcos_DB
 
 		private void LabelMagnitudeJohnsonDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MagnitudeJohnsonDesc;
+			astrophysicalElement = (uint)AstroElement.MagnitudeJohnsonDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2161,7 +2228,7 @@ namespace Hipparcos_DB
 
 		private void LabelMagnitudeJohnsonData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MagnitudeJohnsonData;
+			astrophysicalElement = (uint)AstroElement.MagnitudeJohnsonData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2171,7 +2238,7 @@ namespace Hipparcos_DB
 
 		private void LabelCoarseVariabilityFlagDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CoarseVariabilityFlagDesc;
+			astrophysicalElement = (uint)AstroElement.CoarseVariabilityFlagDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2181,7 +2248,7 @@ namespace Hipparcos_DB
 
 		private void LabelCoarseVariabilityFlagData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CoarseVariabilityFlagData;
+			astrophysicalElement = (uint)AstroElement.CoarseVariabilityFlagData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2191,7 +2258,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.SourceOfMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2201,7 +2268,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.SourceOfMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2211,17 +2278,17 @@ namespace Hipparcos_DB
 
 		private void LabelAlphaDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AlphaDesc;
+			astrophysicalElement = (uint)AstroElement.AlphaDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
 				labelAlphaDesc.BackColor = SystemColors.ControlLightLight;
-			}			
+			}
 		}
 
 		private void LabelAlphaData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AlphaData;
+			astrophysicalElement = (uint)AstroElement.AlphaData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2231,7 +2298,7 @@ namespace Hipparcos_DB
 
 		private void LabelDeltaDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.DeltaDesc;
+			astrophysicalElement = (uint)AstroElement.DeltaDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2241,7 +2308,7 @@ namespace Hipparcos_DB
 
 		private void LabelDeltaData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.DeltaData;
+			astrophysicalElement = (uint)AstroElement.DeltaData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2251,7 +2318,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForAstrometryDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForAstrometryDesc;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForAstrometryDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2261,7 +2328,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForAstrometryData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForAstrometryData;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForAstrometryData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2271,7 +2338,7 @@ namespace Hipparcos_DB
 
 		private void LabelTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.TrigonomicParallaxDesc;
+			astrophysicalElement = (uint)AstroElement.TrigonomicParallaxDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2281,7 +2348,7 @@ namespace Hipparcos_DB
 
 		private void LabelTrigonomicParallaxData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.TrigonomicParallaxData;
+			astrophysicalElement = (uint)AstroElement.TrigonomicParallaxData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2291,7 +2358,7 @@ namespace Hipparcos_DB
 
 		private void LabelProperMotionAlphaDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProperMotionAlphaDesc;
+			astrophysicalElement = (uint)AstroElement.ProperMotionAlphaDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2301,7 +2368,7 @@ namespace Hipparcos_DB
 
 		private void LabelProperMotionAlphaData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProperMotionAlphaData;
+			astrophysicalElement = (uint)AstroElement.ProperMotionAlphaData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2311,7 +2378,7 @@ namespace Hipparcos_DB
 
 		private void LabelProperMotionDeltaDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProperMotionDeltaDesc;
+			astrophysicalElement = (uint)AstroElement.ProperMotionDeltaDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2321,7 +2388,7 @@ namespace Hipparcos_DB
 
 		private void LabelProperMotionDeltaData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProperMotionDeltaData;
+			astrophysicalElement = (uint)AstroElement.ProperMotionDeltaData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2331,7 +2398,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2341,7 +2408,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2351,7 +2418,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorDeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorDeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2361,7 +2428,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorDeclinationData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorDeclinationData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorDeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2371,7 +2438,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorTrigonomicParallaxDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorTrigonomicParallaxDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2381,7 +2448,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorTrigonomicParallaxData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorTrigonomicParallaxData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorTrigonomicParallaxData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2391,7 +2458,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorProperMotionRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorProperMotionRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2401,7 +2468,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorProperMotionRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorProperMotionRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2411,7 +2478,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorProperMotionDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorProperMotionDeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionDeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2421,7 +2488,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorProperMotionDeclinationData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorProperMotionDeclinationData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionDeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2431,7 +2498,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationDeclinationByRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2441,7 +2508,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationDeclinationByRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2451,7 +2518,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2461,7 +2528,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2471,7 +2538,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByDeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2481,7 +2548,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationTrigonomicParallaxByDeclinationData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByDeclinationData;
+			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2491,7 +2558,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2501,7 +2568,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2511,7 +2578,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByDeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2521,7 +2588,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByDeclinationData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2531,7 +2598,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2541,7 +2608,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2551,7 +2618,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2561,7 +2628,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2571,7 +2638,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByDeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2581,7 +2648,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByDeclinationData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByDeclinationData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2591,7 +2658,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByTrigonomicParallaxDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2601,7 +2668,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByTrigonomicParallaxData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2611,7 +2678,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2621,7 +2688,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2631,7 +2698,7 @@ namespace Hipparcos_DB
 
 		private void LabelPercentageOfRejectedDataDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.PercentageOfRejectedDataDesc;
+			astrophysicalElement = (uint)AstroElement.PercentageOfRejectedDataDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2641,7 +2708,7 @@ namespace Hipparcos_DB
 
 		private void LabelPercentageOfRejectedDataData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.PercentageOfRejectedDataData;
+			astrophysicalElement = (uint)AstroElement.PercentageOfRejectedDataData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2651,7 +2718,7 @@ namespace Hipparcos_DB
 
 		private void LabelGoodnessOfFitParameterDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.GoodnessOfFitParameterDesc;
+			astrophysicalElement = (uint)AstroElement.GoodnessOfFitParameterDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2661,7 +2728,7 @@ namespace Hipparcos_DB
 
 		private void LabelGoodnessOfFitParameterData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.GoodnessOfFitParameterData;
+			astrophysicalElement = (uint)AstroElement.GoodnessOfFitParameterData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2671,7 +2738,7 @@ namespace Hipparcos_DB
 
 		private void LabelMeanBtMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MeanBtMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.MeanBtMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2681,7 +2748,7 @@ namespace Hipparcos_DB
 
 		private void LabelMeanBtMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MeanBtMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.MeanBtMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2691,7 +2758,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMeanBtMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMeanBtMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMeanBtMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2701,7 +2768,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMeanBtMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMeanBtMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMeanBtMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2711,7 +2778,7 @@ namespace Hipparcos_DB
 
 		private void LabelMeanVtMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MeanVtMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.MeanVtMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2721,7 +2788,7 @@ namespace Hipparcos_DB
 
 		private void LabelMeanVtMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MeanVtMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.MeanVtMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2731,7 +2798,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMeanVtMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMeanVtMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMeanVtMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2741,7 +2808,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMeanVtMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMeanVtMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMeanVtMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2751,7 +2818,7 @@ namespace Hipparcos_DB
 
 		private void LabelJohnsonBvColorDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.JohnsonBvColorDesc;
+			astrophysicalElement = (uint)AstroElement.JohnsonBvColorDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2761,7 +2828,7 @@ namespace Hipparcos_DB
 
 		private void LabelJohnsonBvColorData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.JohnsonBvColorData;
+			astrophysicalElement = (uint)AstroElement.JohnsonBvColorData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2771,7 +2838,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorJohnsonBvColorDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorJohnsonBvColorDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorJohnsonBvColorDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2781,7 +2848,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorJohnsonBvColorData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorJohnsonBvColorData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorJohnsonBvColorData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2791,7 +2858,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForBtAndVtMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2801,7 +2868,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForBtAndVtMagnitudeData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForBtAndVtMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2811,7 +2878,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfBvColorDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfBvColorDesc;
+			astrophysicalElement = (uint)AstroElement.SourceOfBvColorDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2821,7 +2888,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfBvColorData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfBvColorData;
+			astrophysicalElement = (uint)AstroElement.SourceOfBvColorData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2831,7 +2898,7 @@ namespace Hipparcos_DB
 
 		private void LabelColorIndexInCousinsSystemDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ColorIndexInCousinsSystemDesc;
+			astrophysicalElement = (uint)AstroElement.ColorIndexInCousinsSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2841,7 +2908,7 @@ namespace Hipparcos_DB
 
 		private void LabelColorIndexInCousinsSystemData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ColorIndexInCousinsSystemData;
+			astrophysicalElement = (uint)AstroElement.ColorIndexInCousinsSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2851,7 +2918,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorViDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorViDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorViDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2861,7 +2928,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorViData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorViData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorViData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2871,7 +2938,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfViDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfViDesc;
+			astrophysicalElement = (uint)AstroElement.SourceOfViDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2881,7 +2948,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfViData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfViData;
+			astrophysicalElement = (uint)AstroElement.SourceOfViData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2891,7 +2958,7 @@ namespace Hipparcos_DB
 
 		private void LabelFlagForCombinedMagnitudesDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.FlagForCombinedMagnitudesDesc;
+			astrophysicalElement = (uint)AstroElement.FlagForCombinedMagnitudesDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2901,7 +2968,7 @@ namespace Hipparcos_DB
 
 		private void LabelFlagForCombinedMagnitudesData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.FlagForCombinedMagnitudesData;
+			astrophysicalElement = (uint)AstroElement.FlagForCombinedMagnitudesData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2911,7 +2978,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemDesc;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2921,7 +2988,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemData;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2931,7 +2998,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMedianMagnitudeInHipparcosSystemDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMedianMagnitudeInHipparcosSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2941,7 +3008,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMedianMagnitudeInHipparcosSystemData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMedianMagnitudeInHipparcosSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2951,7 +3018,7 @@ namespace Hipparcos_DB
 
 		private void LabelScatterMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ScatterMedianMagnitudeInHipparcosSystemDesc;
+			astrophysicalElement = (uint)AstroElement.ScatterMedianMagnitudeInHipparcosSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2961,7 +3028,7 @@ namespace Hipparcos_DB
 
 		private void LabelScatterMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ScatterMedianMagnitudeInHipparcosSystemData;
+			astrophysicalElement = (uint)AstroElement.ScatterMedianMagnitudeInHipparcosSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2971,7 +3038,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberObservationsForMedianMagnitudeInHipparcosSystemDesc;
+			astrophysicalElement = (uint)AstroElement.NumberObservationsForMedianMagnitudeInHipparcosSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2981,7 +3048,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberObservationsForMedianMagnitudeInHipparcosSystemData;
+			astrophysicalElement = (uint)AstroElement.NumberObservationsForMedianMagnitudeInHipparcosSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -2991,7 +3058,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemDesc;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3001,7 +3068,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemData;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3011,7 +3078,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMaximumDesc;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMaximumDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3021,7 +3088,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMaximumData;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMaximumData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3031,7 +3098,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMinimumDesc;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMinimumDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3041,7 +3108,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMinimumData;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMinimumData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3051,7 +3118,7 @@ namespace Hipparcos_DB
 
 		private void LabelVariabilityPeriodDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.VariabilityPeriodDesc;
+			astrophysicalElement = (uint)AstroElement.VariabilityPeriodDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3061,7 +3128,7 @@ namespace Hipparcos_DB
 
 		private void LabelVariabilityPeriodData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.VariabilityPeriodData;
+			astrophysicalElement = (uint)AstroElement.VariabilityPeriodData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3071,7 +3138,7 @@ namespace Hipparcos_DB
 
 		private void LabelVariabilityTypeDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.VariabilityTypeDesc;
+			astrophysicalElement = (uint)AstroElement.VariabilityTypeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3081,7 +3148,7 @@ namespace Hipparcos_DB
 
 		private void LabelVariabilityTypeData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.VariabilityTypeData;
+			astrophysicalElement = (uint)AstroElement.VariabilityTypeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3091,7 +3158,7 @@ namespace Hipparcos_DB
 
 		private void LabelAdditionalDataAboutVariabilityDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AdditionalDataAboutVariabilityDesc;
+			astrophysicalElement = (uint)AstroElement.AdditionalDataAboutVariabilityDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3101,7 +3168,7 @@ namespace Hipparcos_DB
 
 		private void LabelAdditionalDataAboutVariabilityData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AdditionalDataAboutVariabilityData;
+			astrophysicalElement = (uint)AstroElement.AdditionalDataAboutVariabilityData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3111,7 +3178,7 @@ namespace Hipparcos_DB
 
 		private void LabelLightCurveAnnexDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.LightCurveAnnexDesc;
+			astrophysicalElement = (uint)AstroElement.LightCurveAnnexDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3121,7 +3188,7 @@ namespace Hipparcos_DB
 
 		private void LabelLightCurveAnnexData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.LightCurveAnnexData;
+			astrophysicalElement = (uint)AstroElement.LightCurveAnnexData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3131,7 +3198,7 @@ namespace Hipparcos_DB
 
 		private void LabelCcdmIdentifierDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CcdmIdentifierDesc;
+			astrophysicalElement = (uint)AstroElement.CcdmIdentifierDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3141,7 +3208,7 @@ namespace Hipparcos_DB
 
 		private void LabelCcdmIdentifierData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CcdmIdentifierData;
+			astrophysicalElement = (uint)AstroElement.CcdmIdentifierData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3151,7 +3218,7 @@ namespace Hipparcos_DB
 
 		private void LabelHistoricalStatusFlagDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.HistoricalStatusFlagDesc;
+			astrophysicalElement = (uint)AstroElement.HistoricalStatusFlagDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3161,7 +3228,7 @@ namespace Hipparcos_DB
 
 		private void LabelHistoricalStatusFlagData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.HistoricalStatusFlagData;
+			astrophysicalElement = (uint)AstroElement.HistoricalStatusFlagData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3171,7 +3238,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberEntriesWithSameCcdmDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberEntriesWithSameCcdmDesc;
+			astrophysicalElement = (uint)AstroElement.NumberEntriesWithSameCcdmDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3181,7 +3248,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberEntriesWithSameCcdmData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberEntriesWithSameCcdmData;
+			astrophysicalElement = (uint)AstroElement.NumberEntriesWithSameCcdmData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3191,7 +3258,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberComponentsInThisEntryDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberComponentsInThisEntryDesc;
+			astrophysicalElement = (uint)AstroElement.NumberComponentsInThisEntryDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3201,7 +3268,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberComponentsInThisEntryData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberComponentsInThisEntryData;
+			astrophysicalElement = (uint)AstroElement.NumberComponentsInThisEntryData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3211,7 +3278,7 @@ namespace Hipparcos_DB
 
 		private void LabelMultipleSystemsFlagDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MultipleSystemsFlagDesc;
+			astrophysicalElement = (uint)AstroElement.MultipleSystemsFlagDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3221,7 +3288,7 @@ namespace Hipparcos_DB
 
 		private void LabelMultipleSystemsFlagData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MultipleSystemsFlagData;
+			astrophysicalElement = (uint)AstroElement.MultipleSystemsFlagData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3231,7 +3298,7 @@ namespace Hipparcos_DB
 
 		private void LabelAstrometricSourceFlagDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AstrometricSourceFlagDesc;
+			astrophysicalElement = (uint)AstroElement.AstrometricSourceFlagDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3241,7 +3308,7 @@ namespace Hipparcos_DB
 
 		private void LabelAstrometricSourceFlagData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AstrometricSourceFlagData;
+			astrophysicalElement = (uint)AstroElement.AstrometricSourceFlagData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3251,7 +3318,7 @@ namespace Hipparcos_DB
 
 		private void LabelSolutionQualityDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SolutionQualityDesc;
+			astrophysicalElement = (uint)AstroElement.SolutionQualityDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3261,7 +3328,7 @@ namespace Hipparcos_DB
 
 		private void LabelSolutionQualityData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SolutionQualityData;
+			astrophysicalElement = (uint)AstroElement.SolutionQualityData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3271,7 +3338,7 @@ namespace Hipparcos_DB
 
 		private void LabelComponentIdentifiersDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ComponentIdentifiersDesc;
+			astrophysicalElement = (uint)AstroElement.ComponentIdentifiersDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3281,7 +3348,7 @@ namespace Hipparcos_DB
 
 		private void LabelComponentIdentifiersData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ComponentIdentifiersData;
+			astrophysicalElement = (uint)AstroElement.ComponentIdentifiersData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3291,7 +3358,7 @@ namespace Hipparcos_DB
 
 		private void LabelPositionAngleBetweenComponentsDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.PositionAngleBetweenComponentsDesc;
+			astrophysicalElement = (uint)AstroElement.PositionAngleBetweenComponentsDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3301,7 +3368,7 @@ namespace Hipparcos_DB
 
 		private void LabelPositionAngleBetweenComponentsData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.PositionAngleBetweenComponentsData;
+			astrophysicalElement = (uint)AstroElement.PositionAngleBetweenComponentsData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3311,7 +3378,7 @@ namespace Hipparcos_DB
 
 		private void LabelAngularSeparationBetweenComponentsDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AngularSeparationBetweenComponentsDesc;
+			astrophysicalElement = (uint)AstroElement.AngularSeparationBetweenComponentsDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3321,7 +3388,7 @@ namespace Hipparcos_DB
 
 		private void LabelAngularSeparationBetweenComponentsData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AngularSeparationBetweenComponentsData;
+			astrophysicalElement = (uint)AstroElement.AngularSeparationBetweenComponentsData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3331,7 +3398,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorRhoDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorRhoDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorRhoDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3341,7 +3408,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorRhoData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorRhoData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorRhoData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3351,7 +3418,7 @@ namespace Hipparcos_DB
 
 		private void LabelMagnitudeDifferenceBetweenComponentsDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MagnitudeDifferenceBetweenComponentsDesc;
+			astrophysicalElement = (uint)AstroElement.MagnitudeDifferenceBetweenComponentsDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3361,7 +3428,7 @@ namespace Hipparcos_DB
 
 		private void LabelMagnitudeDifferenceBetweenComponentsData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MagnitudeDifferenceBetweenComponentsData;
+			astrophysicalElement = (uint)AstroElement.MagnitudeDifferenceBetweenComponentsData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3371,7 +3438,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMagnitudeDifferenceBetweenComponentsDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMagnitudeDifferenceBetweenComponentsDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3381,7 +3448,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMagnitudeDifferenceBetweenComponentsData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMagnitudeDifferenceBetweenComponentsData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3391,7 +3458,7 @@ namespace Hipparcos_DB
 
 		private void LabelFlagIndicatingSurveyStarDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.FlagIndicatingSurveyStarDesc;
+			astrophysicalElement = (uint)AstroElement.FlagIndicatingSurveyStarDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3401,7 +3468,7 @@ namespace Hipparcos_DB
 
 		private void LabelFlagIndicatingSurveyStarData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.FlagIndicatingSurveyStarData;
+			astrophysicalElement = (uint)AstroElement.FlagIndicatingSurveyStarData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3411,7 +3478,7 @@ namespace Hipparcos_DB
 
 		private void LabelIdentificationChartDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.IdentificationChartDesc;
+			astrophysicalElement = (uint)AstroElement.IdentificationChartDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3421,7 +3488,7 @@ namespace Hipparcos_DB
 
 		private void LabelIdentificationChartData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.IdentificationChartData;
+			astrophysicalElement = (uint)AstroElement.IdentificationChartData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3431,7 +3498,7 @@ namespace Hipparcos_DB
 
 		private void LabelExistenceOfNotesDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ExistenceOfNotesDesc;
+			astrophysicalElement = (uint)AstroElement.ExistenceOfNotesDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3441,7 +3508,7 @@ namespace Hipparcos_DB
 
 		private void LabelExistenceOfNotesData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ExistenceOfNotesData;
+			astrophysicalElement = (uint)AstroElement.ExistenceOfNotesData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3451,7 +3518,7 @@ namespace Hipparcos_DB
 
 		private void LabelHdNumberDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.HdNumberDesc;
+			astrophysicalElement = (uint)AstroElement.HdNumberDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3461,7 +3528,7 @@ namespace Hipparcos_DB
 
 		private void LabelHdNumberData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.HdNumberData;
+			astrophysicalElement = (uint)AstroElement.HdNumberData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3471,7 +3538,7 @@ namespace Hipparcos_DB
 
 		private void LabelBonnerDmDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.BonnerDmDesc;
+			astrophysicalElement = (uint)AstroElement.BonnerDmDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3481,7 +3548,7 @@ namespace Hipparcos_DB
 
 		private void LabelBonnerDmData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.BonnerDmData;
+			astrophysicalElement = (uint)AstroElement.BonnerDmData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3491,7 +3558,7 @@ namespace Hipparcos_DB
 
 		private void LabelCordobaDmDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CordobaDmDesc;
+			astrophysicalElement = (uint)AstroElement.CordobaDmDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3501,7 +3568,7 @@ namespace Hipparcos_DB
 
 		private void LabelCordobaDmData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CordobaDmData;
+			astrophysicalElement = (uint)AstroElement.CordobaDmData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3511,7 +3578,7 @@ namespace Hipparcos_DB
 
 		private void LabelCapePhotographicDmDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CapePhotographicDmDesc;
+			astrophysicalElement = (uint)AstroElement.CapePhotographicDmDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3521,7 +3588,7 @@ namespace Hipparcos_DB
 
 		private void LabelCapePhotographicDmData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CapePhotographicDmData;
+			astrophysicalElement = (uint)AstroElement.CapePhotographicDmData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3531,7 +3598,7 @@ namespace Hipparcos_DB
 
 		private void LabelViUsedForReductionsDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ViUsedForReductionsDesc;
+			astrophysicalElement = (uint)AstroElement.ViUsedForReductionsDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3541,7 +3608,7 @@ namespace Hipparcos_DB
 
 		private void LabelViUsedForReductionsData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ViUsedForReductionsData;
+			astrophysicalElement = (uint)AstroElement.ViUsedForReductionsData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3551,7 +3618,7 @@ namespace Hipparcos_DB
 
 		private void LabelSpectralTypeDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SpectralTypeDesc;
+			astrophysicalElement = (uint)AstroElement.SpectralTypeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3561,7 +3628,7 @@ namespace Hipparcos_DB
 
 		private void LabelSpectralTypeData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SpectralTypeData;
+			astrophysicalElement = (uint)AstroElement.SpectralTypeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3571,7 +3638,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfSpectralTypeDesc_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfSpectralTypeDesc;
+			astrophysicalElement = (uint)AstroElement.SourceOfSpectralTypeDesc;
 			SetStatusbar(sender: sender, e: e); SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3581,7 +3648,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfSpectralTypeData_Enter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfSpectralTypeData;
+			astrophysicalElement = (uint)AstroElement.SourceOfSpectralTypeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3640,7 +3707,7 @@ namespace Hipparcos_DB
 
 		private void LabelCatalogDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CatalogDesc;
+			astrophysicalElement = (uint)AstroElement.CatalogDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3650,7 +3717,7 @@ namespace Hipparcos_DB
 
 		private void LabelCatalogData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CatalogData;
+			astrophysicalElement = (uint)AstroElement.CatalogData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3660,7 +3727,7 @@ namespace Hipparcos_DB
 
 		private void LabelIdentifierDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.IdentifierDesc;
+			astrophysicalElement = (uint)AstroElement.IdentifierDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3670,7 +3737,7 @@ namespace Hipparcos_DB
 
 		private void LabelIdentifierData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.IdentifierData;
+			astrophysicalElement = (uint)AstroElement.IdentifierData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3680,7 +3747,7 @@ namespace Hipparcos_DB
 
 		private void LabelProximityFlagDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProximityFlagDesc;
+			astrophysicalElement = (uint)AstroElement.ProximityFlagDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3690,7 +3757,7 @@ namespace Hipparcos_DB
 
 		private void LabelProximityFlagData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProximityFlagData;
+			astrophysicalElement = (uint)AstroElement.ProximityFlagData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3700,7 +3767,7 @@ namespace Hipparcos_DB
 
 		private void LabelRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.RightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.RightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3710,7 +3777,7 @@ namespace Hipparcos_DB
 
 		private void LabelRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.RightAscensionData;
+			astrophysicalElement = (uint)AstroElement.RightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3720,7 +3787,7 @@ namespace Hipparcos_DB
 
 		private void LabelDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.DeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.DeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3730,7 +3797,7 @@ namespace Hipparcos_DB
 
 		private void LabelDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.DeclinationData;
+			astrophysicalElement = (uint)AstroElement.DeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3740,7 +3807,7 @@ namespace Hipparcos_DB
 
 		private void LabelMagnitudeJohnsonDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MagnitudeJohnsonDesc;
+			astrophysicalElement = (uint)AstroElement.MagnitudeJohnsonDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3750,7 +3817,7 @@ namespace Hipparcos_DB
 
 		private void LabelMagnitudeJohnsonData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MagnitudeJohnsonData;
+			astrophysicalElement = (uint)AstroElement.MagnitudeJohnsonData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3760,7 +3827,7 @@ namespace Hipparcos_DB
 
 		private void LabelCoarseVariabilityFlagDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CoarseVariabilityFlagDesc;
+			astrophysicalElement = (uint)AstroElement.CoarseVariabilityFlagDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3770,7 +3837,7 @@ namespace Hipparcos_DB
 
 		private void LabelCoarseVariabilityFlagData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CoarseVariabilityFlagData;
+			astrophysicalElement = (uint)AstroElement.CoarseVariabilityFlagData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3780,7 +3847,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.SourceOfMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3790,7 +3857,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.SourceOfMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3800,7 +3867,7 @@ namespace Hipparcos_DB
 
 		private void LabelAlphaDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AlphaDesc;
+			astrophysicalElement = (uint)AstroElement.AlphaDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3810,7 +3877,7 @@ namespace Hipparcos_DB
 
 		private void LabelAlphaData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AlphaData;
+			astrophysicalElement = (uint)AstroElement.AlphaData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3820,7 +3887,7 @@ namespace Hipparcos_DB
 
 		private void LabelDeltaDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.DeltaDesc;
+			astrophysicalElement = (uint)AstroElement.DeltaDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3830,7 +3897,7 @@ namespace Hipparcos_DB
 
 		private void LabelDeltaData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.DeltaData;
+			astrophysicalElement = (uint)AstroElement.DeltaData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3840,7 +3907,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForAstrometryDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForAstrometryDesc;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForAstrometryDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3850,7 +3917,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForAstrometryData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForAstrometryData;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForAstrometryData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3860,7 +3927,7 @@ namespace Hipparcos_DB
 
 		private void LabelTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.TrigonomicParallaxDesc;
+			astrophysicalElement = (uint)AstroElement.TrigonomicParallaxDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3870,7 +3937,7 @@ namespace Hipparcos_DB
 
 		private void LabelTrigonomicParallaxData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.TrigonomicParallaxData;
+			astrophysicalElement = (uint)AstroElement.TrigonomicParallaxData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3880,7 +3947,7 @@ namespace Hipparcos_DB
 
 		private void LabelProperMotionAlphaDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProperMotionAlphaDesc;
+			astrophysicalElement = (uint)AstroElement.ProperMotionAlphaDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3890,7 +3957,7 @@ namespace Hipparcos_DB
 
 		private void LabelProperMotionAlphaData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProperMotionAlphaData;
+			astrophysicalElement = (uint)AstroElement.ProperMotionAlphaData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3900,7 +3967,7 @@ namespace Hipparcos_DB
 
 		private void LabelProperMotionDeltaDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProperMotionDeltaDesc;
+			astrophysicalElement = (uint)AstroElement.ProperMotionDeltaDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3910,7 +3977,7 @@ namespace Hipparcos_DB
 
 		private void LabelProperMotionDeltaData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ProperMotionDeltaData;
+			astrophysicalElement = (uint)AstroElement.ProperMotionDeltaData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3920,7 +3987,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3930,7 +3997,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3940,7 +4007,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorDeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorDeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3950,7 +4017,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorDeclinationData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorDeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3960,7 +4027,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorTrigonomicParallaxDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorTrigonomicParallaxDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3970,7 +4037,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorTrigonomicParallaxData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorTrigonomicParallaxData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorTrigonomicParallaxData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3980,7 +4047,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorProperMotionRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorProperMotionRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -3990,7 +4057,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorProperMotionRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorProperMotionRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4000,7 +4067,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorProperMotionDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorProperMotionDeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionDeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4010,7 +4077,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorProperMotionDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorProperMotionDeclinationData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionDeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4020,7 +4087,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationDeclinationByRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationDeclinationByRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationDeclinationByRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4030,7 +4097,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationDeclinationByRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationDeclinationByRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.CorrelationDeclinationByRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4040,7 +4107,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4050,7 +4117,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4060,7 +4127,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByDeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4070,7 +4137,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationTrigonomicParallaxByDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationTrigonomicParallaxByDeclinationData;
+			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4080,7 +4147,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4090,7 +4157,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4100,7 +4167,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByDeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4110,7 +4177,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByDeclinationData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4120,7 +4187,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4130,7 +4197,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4140,7 +4207,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4150,7 +4217,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4160,7 +4227,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByDeclinationDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4170,7 +4237,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByDeclinationData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByDeclinationData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4180,7 +4247,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByTrigonomicParallaxDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4190,7 +4257,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByTrigonomicParallaxData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4200,7 +4267,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4210,7 +4277,7 @@ namespace Hipparcos_DB
 
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CorrelationProperMotionDeclinationByRightAscensionData;
+			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4220,7 +4287,7 @@ namespace Hipparcos_DB
 
 		private void LabelPercentageOfRejectedDataDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.PercentageOfRejectedDataDesc;
+			astrophysicalElement = (uint)AstroElement.PercentageOfRejectedDataDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4230,7 +4297,7 @@ namespace Hipparcos_DB
 
 		private void LabelPercentageOfRejectedDataData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.PercentageOfRejectedDataData;
+			astrophysicalElement = (uint)AstroElement.PercentageOfRejectedDataData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4240,7 +4307,7 @@ namespace Hipparcos_DB
 
 		private void LabelGoodnessOfFitParameterDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.GoodnessOfFitParameterDesc;
+			astrophysicalElement = (uint)AstroElement.GoodnessOfFitParameterDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4250,7 +4317,7 @@ namespace Hipparcos_DB
 
 		private void LabelGoodnessOfFitParameterData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.GoodnessOfFitParameterData;
+			astrophysicalElement = (uint)AstroElement.GoodnessOfFitParameterData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4260,7 +4327,7 @@ namespace Hipparcos_DB
 
 		private void LabelMeanBtMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MeanBtMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.MeanBtMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4270,7 +4337,7 @@ namespace Hipparcos_DB
 
 		private void LabelMeanBtMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MeanBtMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.MeanBtMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4280,7 +4347,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMeanBtMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMeanBtMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMeanBtMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4290,7 +4357,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMeanBtMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMeanBtMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMeanBtMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4300,7 +4367,7 @@ namespace Hipparcos_DB
 
 		private void LabelMeanVtMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMeanVtMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMeanVtMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4310,7 +4377,7 @@ namespace Hipparcos_DB
 
 		private void LabelMeanVtMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMeanVtMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMeanVtMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4320,7 +4387,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMeanVtMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMeanVtMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMeanVtMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4330,7 +4397,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMeanVtMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMeanVtMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMeanVtMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4340,7 +4407,7 @@ namespace Hipparcos_DB
 
 		private void LabelJohnsonBvColorDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.JohnsonBvColorDesc;
+			astrophysicalElement = (uint)AstroElement.JohnsonBvColorDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4350,7 +4417,7 @@ namespace Hipparcos_DB
 
 		private void LabelJohnsonBvColorData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.JohnsonBvColorData;
+			astrophysicalElement = (uint)AstroElement.JohnsonBvColorData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4360,7 +4427,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorJohnsonBvColorDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorJohnsonBvColorDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorJohnsonBvColorDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4370,7 +4437,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorJohnsonBvColorData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorJohnsonBvColorData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorJohnsonBvColorData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4380,7 +4447,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForBtAndVtMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4390,7 +4457,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfBvColorData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForBtAndVtMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4400,7 +4467,7 @@ namespace Hipparcos_DB
 
 		private void LabelColorIndexInCousinsSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ColorIndexInCousinsSystemDesc;
+			astrophysicalElement = (uint)AstroElement.ColorIndexInCousinsSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4410,7 +4477,7 @@ namespace Hipparcos_DB
 
 		private void LabelColorIndexInCousinsSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ColorIndexInCousinsSystemData;
+			astrophysicalElement = (uint)AstroElement.ColorIndexInCousinsSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4420,7 +4487,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorViDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorViDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorViDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4430,7 +4497,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorViData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorViData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorViData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4440,7 +4507,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfViDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfViDesc;
+			astrophysicalElement = (uint)AstroElement.SourceOfViDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4450,7 +4517,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfViData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfSpectralTypeDesc;
+			astrophysicalElement = (uint)AstroElement.SourceOfSpectralTypeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4460,7 +4527,7 @@ namespace Hipparcos_DB
 
 		private void LabelFlagForCombinedMagnitudesDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.FlagForCombinedMagnitudesDesc;
+			astrophysicalElement = (uint)AstroElement.FlagForCombinedMagnitudesDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4470,7 +4537,7 @@ namespace Hipparcos_DB
 
 		private void LabelFlagForCombinedMagnitudesData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.FlagForCombinedMagnitudesData;
+			astrophysicalElement = (uint)AstroElement.FlagForCombinedMagnitudesData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4480,7 +4547,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemDesc;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4490,7 +4557,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemData;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4500,7 +4567,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMedianMagnitudeInHipparcosSystemDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMedianMagnitudeInHipparcosSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4510,7 +4577,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMedianMagnitudeInHipparcosSystemData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMedianMagnitudeInHipparcosSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4520,7 +4587,7 @@ namespace Hipparcos_DB
 
 		private void LabelScatterMedianMagnitudeInHipparcosSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ScatterMedianMagnitudeInHipparcosSystemDesc;
+			astrophysicalElement = (uint)AstroElement.ScatterMedianMagnitudeInHipparcosSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4530,7 +4597,7 @@ namespace Hipparcos_DB
 
 		private void LabelScatterMedianMagnitudeInHipparcosSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ScatterMedianMagnitudeInHipparcosSystemData;
+			astrophysicalElement = (uint)AstroElement.ScatterMedianMagnitudeInHipparcosSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4540,7 +4607,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberObservationsForMedianMagnitudeInHipparcosSystemDesc;
+			astrophysicalElement = (uint)AstroElement.NumberObservationsForMedianMagnitudeInHipparcosSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4550,7 +4617,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberObservationsForMedianMagnitudeInHipparcosSystemData;
+			astrophysicalElement = (uint)AstroElement.NumberObservationsForMedianMagnitudeInHipparcosSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4560,7 +4627,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemDesc;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4570,7 +4637,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemData;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4580,7 +4647,7 @@ namespace Hipparcos_DB
 
 		private void LabelReferenceFlagForBtAndVtMagnitudeData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForBtAndVtMagnitudeDesc;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4590,7 +4657,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfBvColorDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ReferenceFlagForBtAndVtMagnitudeData;
+			astrophysicalElement = (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4600,7 +4667,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMaximumDesc;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMaximumDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4610,7 +4677,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMaximumData;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMaximumData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4620,7 +4687,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMinimumDesc;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMinimumDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4630,7 +4697,7 @@ namespace Hipparcos_DB
 
 		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MedianMagnitudeInHipparcosSystemAtMinimumData;
+			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMinimumData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4640,7 +4707,7 @@ namespace Hipparcos_DB
 
 		private void LabelVariabilityPeriodDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.VariabilityTypeData;
+			astrophysicalElement = (uint)AstroElement.VariabilityTypeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4650,7 +4717,7 @@ namespace Hipparcos_DB
 
 		private void LabelVariabilityPeriodData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.VariabilityPeriodData;
+			astrophysicalElement = (uint)AstroElement.VariabilityPeriodData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4660,7 +4727,7 @@ namespace Hipparcos_DB
 
 		private void LabelVariabilityTypeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.VariabilityTypeDesc;
+			astrophysicalElement = (uint)AstroElement.VariabilityTypeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4670,7 +4737,7 @@ namespace Hipparcos_DB
 
 		private void LabelVariabilityTypeData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.VariabilityTypeData;
+			astrophysicalElement = (uint)AstroElement.VariabilityTypeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4680,7 +4747,7 @@ namespace Hipparcos_DB
 
 		private void LabelAdditionalDataAboutVariabilityDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AdditionalDataAboutVariabilityDesc;
+			astrophysicalElement = (uint)AstroElement.AdditionalDataAboutVariabilityDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4690,7 +4757,7 @@ namespace Hipparcos_DB
 
 		private void LabelAdditionalDataAboutVariabilityData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AdditionalDataAboutVariabilityData;
+			astrophysicalElement = (uint)AstroElement.AdditionalDataAboutVariabilityData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4700,7 +4767,7 @@ namespace Hipparcos_DB
 
 		private void LabelLightCurveAnnexDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.LightCurveAnnexDesc;
+			astrophysicalElement = (uint)AstroElement.LightCurveAnnexDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4710,7 +4777,7 @@ namespace Hipparcos_DB
 
 		private void LabelLightCurveAnnexData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.LightCurveAnnexData;
+			astrophysicalElement = (uint)AstroElement.LightCurveAnnexData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4720,7 +4787,7 @@ namespace Hipparcos_DB
 
 		private void LabelCcdmIdentifierDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CcdmIdentifierDesc;
+			astrophysicalElement = (uint)AstroElement.CcdmIdentifierDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4730,7 +4797,7 @@ namespace Hipparcos_DB
 
 		private void LabelCcdmIdentifierData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CcdmIdentifierData;
+			astrophysicalElement = (uint)AstroElement.CcdmIdentifierData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4740,7 +4807,7 @@ namespace Hipparcos_DB
 
 		private void LabelHistoricalStatusFlagDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.HistoricalStatusFlagDesc;
+			astrophysicalElement = (uint)AstroElement.HistoricalStatusFlagDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4750,7 +4817,7 @@ namespace Hipparcos_DB
 
 		private void LabelHistoricalStatusFlagData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.HistoricalStatusFlagData;
+			astrophysicalElement = (uint)AstroElement.HistoricalStatusFlagData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4760,7 +4827,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberEntriesWithSameCcdmDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberEntriesWithSameCcdmDesc;
+			astrophysicalElement = (uint)AstroElement.NumberEntriesWithSameCcdmDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4770,7 +4837,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberEntriesWithSameCcdmData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberEntriesWithSameCcdmData;
+			astrophysicalElement = (uint)AstroElement.NumberEntriesWithSameCcdmData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4780,7 +4847,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberComponentsInThisEntryDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberComponentsInThisEntryDesc;
+			astrophysicalElement = (uint)AstroElement.NumberComponentsInThisEntryDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4790,7 +4857,7 @@ namespace Hipparcos_DB
 
 		private void LabelNumberComponentsInThisEntryData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.NumberComponentsInThisEntryData;
+			astrophysicalElement = (uint)AstroElement.NumberComponentsInThisEntryData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4800,7 +4867,7 @@ namespace Hipparcos_DB
 
 		private void LabelMultipleSystemsFlagDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MultipleSystemsFlagDesc;
+			astrophysicalElement = (uint)AstroElement.MultipleSystemsFlagDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4810,7 +4877,7 @@ namespace Hipparcos_DB
 
 		private void LabelMultipleSystemsFlagData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MultipleSystemsFlagData;
+			astrophysicalElement = (uint)AstroElement.MultipleSystemsFlagData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4820,7 +4887,7 @@ namespace Hipparcos_DB
 
 		private void LabelAstrometricSourceFlagDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AstrometricSourceFlagDesc;
+			astrophysicalElement = (uint)AstroElement.AstrometricSourceFlagDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4830,7 +4897,7 @@ namespace Hipparcos_DB
 
 		private void LabelAstrometricSourceFlagData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AstrometricSourceFlagData;
+			astrophysicalElement = (uint)AstroElement.AstrometricSourceFlagData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4840,7 +4907,7 @@ namespace Hipparcos_DB
 
 		private void LabelSolutionQualityDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SolutionQualityDesc;
+			astrophysicalElement = (uint)AstroElement.SolutionQualityDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4850,7 +4917,7 @@ namespace Hipparcos_DB
 
 		private void LabelSolutionQualityData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SolutionQualityData;
+			astrophysicalElement = (uint)AstroElement.SolutionQualityData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4860,7 +4927,7 @@ namespace Hipparcos_DB
 
 		private void LabelComponentIdentifiersDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ComponentIdentifiersDesc;
+			astrophysicalElement = (uint)AstroElement.ComponentIdentifiersDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4870,7 +4937,7 @@ namespace Hipparcos_DB
 
 		private void LabelComponentIdentifiersData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ComponentIdentifiersData;
+			astrophysicalElement = (uint)AstroElement.ComponentIdentifiersData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4880,7 +4947,7 @@ namespace Hipparcos_DB
 
 		private void LabelPositionAngleBetweenComponentsDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.PositionAngleBetweenComponentsDesc;
+			astrophysicalElement = (uint)AstroElement.PositionAngleBetweenComponentsDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4890,7 +4957,7 @@ namespace Hipparcos_DB
 
 		private void LabelPositionAngleBetweenComponentsData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.PositionAngleBetweenComponentsData;
+			astrophysicalElement = (uint)AstroElement.PositionAngleBetweenComponentsData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4900,7 +4967,7 @@ namespace Hipparcos_DB
 
 		private void LabelAngularSeparationBetweenComponentsDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AngularSeparationBetweenComponentsDesc;
+			astrophysicalElement = (uint)AstroElement.AngularSeparationBetweenComponentsDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4910,7 +4977,7 @@ namespace Hipparcos_DB
 
 		private void LabelAngularSeparationBetweenComponentsData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.AngularSeparationBetweenComponentsData;
+			astrophysicalElement = (uint)AstroElement.AngularSeparationBetweenComponentsData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4920,7 +4987,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorRhoDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorRhoDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorRhoDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4930,7 +4997,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorRhoData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorRhoData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorRhoData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4940,7 +5007,7 @@ namespace Hipparcos_DB
 
 		private void LabelMagnitudeDifferenceBetweenComponentsDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MagnitudeDifferenceBetweenComponentsDesc;
+			astrophysicalElement = (uint)AstroElement.MagnitudeDifferenceBetweenComponentsDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4950,7 +5017,7 @@ namespace Hipparcos_DB
 
 		private void LabelMagnitudeDifferenceBetweenComponentsData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.MagnitudeDifferenceBetweenComponentsData;
+			astrophysicalElement = (uint)AstroElement.MagnitudeDifferenceBetweenComponentsData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4960,7 +5027,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMagnitudeDifferenceBetweenComponentsDesc;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMagnitudeDifferenceBetweenComponentsDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4970,7 +5037,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.StandardErrorMagnitudeDifferenceBetweenComponentsData;
+			astrophysicalElement = (uint)AstroElement.StandardErrorMagnitudeDifferenceBetweenComponentsData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4980,7 +5047,7 @@ namespace Hipparcos_DB
 
 		private void LabelFlagIndicatingSurveyStarDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.FlagIndicatingSurveyStarDesc;
+			astrophysicalElement = (uint)AstroElement.FlagIndicatingSurveyStarDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -4990,7 +5057,7 @@ namespace Hipparcos_DB
 
 		private void LabelFlagIndicatingSurveyStarData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.FlagIndicatingSurveyStarData;
+			astrophysicalElement = (uint)AstroElement.FlagIndicatingSurveyStarData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5000,7 +5067,7 @@ namespace Hipparcos_DB
 
 		private void LabelIdentificationChartDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.IdentificationChartDesc;
+			astrophysicalElement = (uint)AstroElement.IdentificationChartDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5010,7 +5077,7 @@ namespace Hipparcos_DB
 
 		private void LabelIdentificationChartData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.IdentificationChartData;
+			astrophysicalElement = (uint)AstroElement.IdentificationChartData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5020,7 +5087,7 @@ namespace Hipparcos_DB
 
 		private void LabelExistenceOfNotesDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ExistenceOfNotesDesc;
+			astrophysicalElement = (uint)AstroElement.ExistenceOfNotesDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5030,7 +5097,7 @@ namespace Hipparcos_DB
 
 		private void LabelExistenceOfNotesData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ExistenceOfNotesData;
+			astrophysicalElement = (uint)AstroElement.ExistenceOfNotesData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5040,7 +5107,7 @@ namespace Hipparcos_DB
 
 		private void LabelHdNumberDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.HdNumberDesc;
+			astrophysicalElement = (uint)AstroElement.HdNumberDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5050,7 +5117,7 @@ namespace Hipparcos_DB
 
 		private void LabelHdNumberData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.HdNumberData;
+			astrophysicalElement = (uint)AstroElement.HdNumberData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5060,7 +5127,7 @@ namespace Hipparcos_DB
 
 		private void LabelBonnerDmDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.BonnerDmDesc;
+			astrophysicalElement = (uint)AstroElement.BonnerDmDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5070,7 +5137,7 @@ namespace Hipparcos_DB
 
 		private void LabelBonnerDmData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.BonnerDmData;
+			astrophysicalElement = (uint)AstroElement.BonnerDmData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5080,7 +5147,7 @@ namespace Hipparcos_DB
 
 		private void LabelCordobaDmDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CordobaDmDesc;
+			astrophysicalElement = (uint)AstroElement.CordobaDmDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5090,7 +5157,7 @@ namespace Hipparcos_DB
 
 		private void LabelCordobaDmData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CordobaDmData;
+			astrophysicalElement = (uint)AstroElement.CordobaDmData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5100,7 +5167,7 @@ namespace Hipparcos_DB
 
 		private void LabelCapePhotographicDmDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CapePhotographicDmDesc;
+			astrophysicalElement = (uint)AstroElement.CapePhotographicDmDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5110,7 +5177,7 @@ namespace Hipparcos_DB
 
 		private void LabelCapePhotographicDmData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.CapePhotographicDmData;
+			astrophysicalElement = (uint)AstroElement.CapePhotographicDmData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5120,7 +5187,7 @@ namespace Hipparcos_DB
 
 		private void LabelViUsedForReductionsDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ViUsedForReductionsDesc;
+			astrophysicalElement = (uint)AstroElement.ViUsedForReductionsDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5130,7 +5197,7 @@ namespace Hipparcos_DB
 
 		private void LabelViUsedForReductionsData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.ViUsedForReductionsData;
+			astrophysicalElement = (uint)AstroElement.ViUsedForReductionsData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5140,7 +5207,7 @@ namespace Hipparcos_DB
 
 		private void LabelSpectralTypeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SpectralTypeDesc;
+			astrophysicalElement = (uint)AstroElement.SpectralTypeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5150,7 +5217,7 @@ namespace Hipparcos_DB
 
 		private void LabelSpectralTypeData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SpectralTypeData;
+			astrophysicalElement = (uint)AstroElement.SpectralTypeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5160,7 +5227,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfSpectralTypeDesc_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfSpectralTypeDesc;
+			astrophysicalElement = (uint)AstroElement.SourceOfSpectralTypeDesc;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5170,7 +5237,7 @@ namespace Hipparcos_DB
 
 		private void LabelSourceOfSpectralTypeData_MouseEnter(object sender, EventArgs e)
 		{
-			astrophysicalElement = (uint)AstrophysicalElement.SourceOfSpectralTypeData;
+			astrophysicalElement = (uint)AstroElement.SourceOfSpectralTypeData;
 			SetStatusbar(sender: sender, e: e);
 			if (settings.UserEnableHoverEffect)
 			{
@@ -5179,6 +5246,11 @@ namespace Hipparcos_DB
 		}
 
 		private void ToolStripButtonGoToIndex_MouseEnter(object sender, EventArgs e)
+		{
+			SetStatusbar(sender: sender, e: e);
+		}
+
+		private void ToolStripTextBoxGoToIndex_MouseEnter(object sender, EventArgs e)
 		{
 			SetStatusbar(sender: sender, e: e);
 		}
@@ -8010,12 +8082,17 @@ namespace Hipparcos_DB
 
 		private void ToolStripButtonGoToIndex_MouseLeave(object sender, EventArgs e)
 		{
+
+		}
+
+		private void ToolStripTextBoxGoToIndex_MouseLeave(object sender, EventArgs e)
+		{
 			ClearStatusbar();
 		}
 
 		#endregion
 
-		#region KeyPress event handlers
+		#region Key* event handlers
 
 		private void ToolStripTextBoxGotoIndex_KeyPress(object sender, KeyPressEventArgs e)
 		{
@@ -8067,6 +8144,6 @@ namespace Hipparcos_DB
 			}
 		}
 
-		#endregion	
+		#endregion
 	}
 }
