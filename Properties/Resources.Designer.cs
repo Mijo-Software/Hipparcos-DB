@@ -83,6 +83,16 @@ namespace Hipparcos_DB.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fugue_arrow_090_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_arrow-090_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fugue_arrow_270_16px_shadowless {
             get {
                 object obj = ResourceManager.GetObject("fugue_arrow_270_16px_shadowless", resourceCulture);
@@ -116,6 +126,26 @@ namespace Hipparcos_DB.Properties {
         internal static System.Drawing.Bitmap fugue_arrow_curve_180_left_16px_shadowless {
             get {
                 object obj = ResourceManager.GetObject("fugue_arrow_curve_180_left_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fugue_arrow_stop_090_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_arrow-stop-090_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fugue_arrow_stop_270_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_arrow-stop-270_16px_shadowless", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,6 +243,16 @@ namespace Hipparcos_DB.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fugue_disk_small_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_disk-small_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fugue_door_16px_shadowless {
             get {
                 object obj = ResourceManager.GetObject("fugue_door_16px_shadowless", resourceCulture);
@@ -226,6 +266,26 @@ namespace Hipparcos_DB.Properties {
         internal static System.Drawing.Bitmap fugue_drive_download_16px_shadowless {
             get {
                 object obj = ResourceManager.GetObject("fugue_drive-download_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fugue_exclamation__frame_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_exclamation--frame_16px_shadowless", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fugue_exclamation_16px_shadowless {
+            get {
+                object obj = ResourceManager.GetObject("fugue_exclamation_16px_shadowless", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

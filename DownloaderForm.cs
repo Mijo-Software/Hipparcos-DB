@@ -15,8 +15,7 @@ namespace Hipparcos_DB
 		private string host, catalogDirectory;
 
 		private string[] hostFiles;
-
-		long ticks;
+		private long ticks;
 
 		public void SetHostUrls(string[] files)
 		{
@@ -53,7 +52,7 @@ namespace Hipparcos_DB
 			return filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
 		}
 
-		static byte[] Decompress(byte[] gzip)
+		private static byte[] Decompress(byte[] gzip)
 		{
 			// Create a GZIP stream with decompression mode.
 			// ... Then create a buffer and write into while reading from the GZIP stream.

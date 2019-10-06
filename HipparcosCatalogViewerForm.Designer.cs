@@ -2133,6 +2133,9 @@
 			// 
 			// toolStripButtonChangeDataTableStyle
 			// 
+			this.toolStripButtonChangeDataTableStyle.AccessibleDescription = "Change the data table style";
+			this.toolStripButtonChangeDataTableStyle.AccessibleName = "Change data table style";
+			this.toolStripButtonChangeDataTableStyle.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
 			this.toolStripButtonChangeDataTableStyle.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.toolStripButtonChangeDataTableStyle.Image = global::Hipparcos_DB.Properties.Resources.fugue_table_paint_can_16px_shadowless;
 			this.toolStripButtonChangeDataTableStyle.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -2140,9 +2143,14 @@
 			this.toolStripButtonChangeDataTableStyle.Size = new System.Drawing.Size(23, 22);
 			this.toolStripButtonChangeDataTableStyle.Text = "Change data table style";
 			this.toolStripButtonChangeDataTableStyle.Click += new System.EventHandler(this.ToolStripButtonChangeDataTableStyle_Click);
+			this.toolStripButtonChangeDataTableStyle.MouseEnter += new System.EventHandler(this.ToolStripButtonChangeDataTableStyle_MouseEnter);
+			this.toolStripButtonChangeDataTableStyle.MouseLeave += new System.EventHandler(this.ToolStripButtonChangeDataTableStyle_MouseLeave);
 			// 
 			// toolStripButtonChangeHoverEffect
 			// 
+			this.toolStripButtonChangeHoverEffect.AccessibleDescription = "Change the hover effect the data table";
+			this.toolStripButtonChangeHoverEffect.AccessibleName = "Change hover effect";
+			this.toolStripButtonChangeHoverEffect.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
 			this.toolStripButtonChangeHoverEffect.Checked = true;
 			this.toolStripButtonChangeHoverEffect.CheckState = System.Windows.Forms.CheckState.Checked;
 			this.toolStripButtonChangeHoverEffect.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -2152,6 +2160,8 @@
 			this.toolStripButtonChangeHoverEffect.Size = new System.Drawing.Size(23, 22);
 			this.toolStripButtonChangeHoverEffect.Text = "Change hover effect";
 			this.toolStripButtonChangeHoverEffect.Click += new System.EventHandler(this.ToolStripButtonChangeHoverEffect_Click);
+			this.toolStripButtonChangeHoverEffect.MouseEnter += new System.EventHandler(this.ToolStripButtonChangeHoverEffect_MouseEnter);
+			this.toolStripButtonChangeHoverEffect.MouseLeave += new System.EventHandler(this.ToolStripButtonChangeHoverEffect_MouseLeave);
 			// 
 			// statusStrip
 			// 
@@ -2226,6 +2236,9 @@
 			// 
 			// toolStripMenuItemInfo
 			// 
+			this.toolStripMenuItemInfo.AccessibleDescription = "Open the info window";
+			this.toolStripMenuItemInfo.AccessibleName = "Info";
+			this.toolStripMenuItemInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuItem;
 			this.toolStripMenuItemInfo.AutoToolTip = true;
 			this.toolStripMenuItemInfo.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_16px_shadowless;
 			this.toolStripMenuItemInfo.Name = "toolStripMenuItemInfo";

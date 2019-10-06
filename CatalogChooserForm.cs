@@ -55,15 +55,11 @@ namespace Hipparcos_DB
 				"tyc_main.dat"
 			};
 
-		private string RemoveFileExtension(string filename)
-		{
-			return filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
-		}
+		#region Local methods
 
-		private bool HasFileExtension(string filename, string extension)
-		{
-			return Path.GetExtension(path: filename).ToLower() == extension.ToLower();
-		}
+		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
+
+		private bool HasFileExtension(string filename, string extension) => Path.GetExtension(path: filename).ToLower() == extension.ToLower();
 
 		private static void OpenExplorer(string path)
 		{
@@ -71,18 +67,6 @@ namespace Hipparcos_DB
 			{
 				Process.Start(fileName: @path);
 			}
-		}
-
-		public CatalogChooserForm()
-		{
-			InitializeComponent();
-			/*switch (settings.UserStartPosition)
-			{
-				case 0: StartPosition = FormStartPosition.CenterParent; break;
-				case 1: StartPosition = FormStartPosition.CenterScreen; break;
-				default: StartPosition = FormStartPosition.CenterParent; break;
-			}
-			*/
 		}
 
 		private void SetStatusbar(string text)
@@ -181,10 +165,29 @@ namespace Hipparcos_DB
 			toolStripStatusLabelInfo.Visible = false;
 		}
 
-		private void CatalogChooserForm_Load(object sender, EventArgs e)
+		#endregion
+
+		#region Con- and Destructor
+
+		public CatalogChooserForm()
 		{
-			ClearStatusbar();
+			InitializeComponent();
+			/*switch (settings.UserStartPosition)
+			{
+				case 0: StartPosition = FormStartPosition.CenterParent; break;
+				case 1: StartPosition = FormStartPosition.CenterScreen; break;
+				default: StartPosition = FormStartPosition.CenterParent; break;
+			}
+			*/
 		}
+
+		#endregion
+
+		#region Form* event handlers
+
+		private void CatalogChooserForm_Load(object sender, EventArgs e) => ClearStatusbar();
+
+		#endregion
 
 		#region Click event handlers
 
@@ -206,10 +209,7 @@ namespace Hipparcos_DB
 			}
 		}
 
-		private void ButtonExit_Click(object sender, EventArgs e)
-		{
-			Close();
-		}
+		private void ButtonExit_Click(object sender, EventArgs e) => Close();
 
 		private void ButtonDownloadHipparcosCatalog_Click(object sender, EventArgs e)
 		{
@@ -321,173 +321,82 @@ namespace Hipparcos_DB
 			}
 		}
 
-		private void ButtonOpenHipparcosDirectory_Click(object sender, EventArgs e)
-		{
-			OpenExplorer(path: Environment.CurrentDirectory + Path.DirectorySeparatorChar + settings.UserHipparcosCatalogDirectory);
-		}
+		private void ButtonOpenHipparcosDirectory_Click(object sender, EventArgs e) => OpenExplorer(path: Environment.CurrentDirectory + Path.DirectorySeparatorChar + settings.UserHipparcosCatalogDirectory);
 
-		private void ButtonOpenTychoDirectory_Click(object sender, EventArgs e)
-		{
-			OpenExplorer(path: Environment.CurrentDirectory + Path.DirectorySeparatorChar + settings.UserTychoCatalogDirectory);
-		}
+		private void ButtonOpenTychoDirectory_Click(object sender, EventArgs e) => OpenExplorer(path: Environment.CurrentDirectory + Path.DirectorySeparatorChar + settings.UserTychoCatalogDirectory);
 
 		#endregion
 
 		#region Enter event handlers
 
-		private void ButtonOpenHipparcosCatalog_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonOpenHipparcosCatalog_Enter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonOpenTychoCatalog_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonOpenTychoCatalog_Enter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonInfo_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonInfo_Enter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonOptions_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonOptions_Enter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonExit_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonExit_Enter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonOpenHipparcosDirectory_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonOpenHipparcosDirectory_Enter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonOpenTychoDirectory_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonOpenTychoDirectory_Enter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
 		#endregion
 
 		#region MouseEnter event handlers
 
-		private void ButtonOpenHipparcosCatalog_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonOpenHipparcosCatalog_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonOpenTychoCatalog_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonOpenTychoCatalog_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonInfo_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonInfo_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonOptions_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonOptions_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonExit_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonExit_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonOpenHipparcosDirectory_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonOpenHipparcosDirectory_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ButtonOpenTychoDirectory_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ButtonOpenTychoDirectory_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
 		#endregion
 
 		#region Leave event handlers
 
-		private void ButtonOpenHipparcosCatalog_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonOpenHipparcosCatalog_Leave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void ButtonOpenTychoCatalog_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-		private void ButtonInfo_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonOpenTychoCatalog_Leave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void ButtonOptions_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonInfo_Leave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void ButtonExit_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonOptions_Leave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void ButtonOpenHipparcosDirectory_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonExit_Leave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void ButtonOpenTychoDirectory_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonOpenHipparcosDirectory_Leave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void ButtonOpenTychoDirectory_Leave(object sender, EventArgs e) => ClearStatusbar();
 
 		#endregion
 
 		#region MouseLeave event handlers
 
-		private void ButtonOpenHipparcosCatalog_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonOpenHipparcosCatalog_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void ButtonOpenTychoCatalog_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonOpenTychoCatalog_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void ButtonInfo_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonInfo_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void ButtonOptions_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonOptions_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void ButtonExit_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonExit_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void ButtonOpenHipparcosDirectory_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ButtonOpenHipparcosDirectory_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void ButtonOpenTychoDirectory_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
+		private void ButtonOpenTychoDirectory_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
 		#endregion
-
 	}
 }

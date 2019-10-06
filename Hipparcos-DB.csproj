@@ -121,6 +121,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\SubsetCatalogExporterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\SubsetCatalogExporterForm.Designer.cs">
+      <DependentUpon>SubsetCatalogExporterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TychoCatalogViewerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     <Compile Include="AboutBoxForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <EmbeddedResource Include="Properties\SubsetCatalogExporterForm.resx">
+      <DependentUpon>SubsetCatalogExporterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TychoCatalogViewerForm.resx">
       <DependentUpon>TychoCatalogViewerForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +189,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-full.ico" />
+    <None Include="Properties\fugue_disk-small_16px_shadowless.png" />
+    <None Include="Properties\fugue_exclamation--frame_16px_shadowless.png" />
+    <None Include="Properties\fugue_exclamation_16px_shadowless.png" />
+    <None Include="Properties\fugue_arrow-stop-270_16px_shadowless.png" />
+    <None Include="Properties\fugue_arrow-stop-090_16px_shadowless.png" />
+    <None Include="Properties\fugue_arrow-090_16px_shadowless.png" />
     <None Include="Properties\fugue_table_16px_shadowless.png" />
     <None Include="Properties\fugue_folder-open_16px_shadowless.png" />
     <None Include="Properties\fugue_table-select-row_16px_shadowless.png" />

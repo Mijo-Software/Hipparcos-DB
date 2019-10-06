@@ -9,7 +9,7 @@ namespace Hipparcos_DB
 {
 	public partial class HipparcosCatalogViewerForm : Form
 	{
-		enum AstroElement
+		private enum AstroElement
 		{
 			None = 0,
 			CatalogData,
@@ -201,10 +201,7 @@ namespace Hipparcos_DB
 
 		#region Local methods
 
-		private string RemoveFileExtension(string filename)
-		{
-			return filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
-		}
+		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
 
 		private void CopyToClipboard(string text)
 		{
@@ -393,10 +390,29 @@ namespace Hipparcos_DB
 			toolStripStatusLabelInfo.Visible = false;
 		}
 
-		private void UpdateIndexLabel()
+		private void SetColorSelfAndClearStatusbar(ref Label labelSelf, Color color)
 		{
-			toolStripTextBoxGoToIndex.Text = index.ToString();
+			ClearStatusbar();
+			if (settings.UserEnableHoverEffect)
+			{
+				SetColorSelf(labelSelf: ref labelSelf, color: color);
+			}
 		}
+
+		private void SetColorSelfAndNeighbourAndClearStatusbar(ref Label labelSelf, ref Label labelNeighbour, Color color)
+		{
+			ClearStatusbar();
+			if (settings.UserEnableHoverEffect)
+			{
+				SetColorSelfAndNeighbour(labelSelf: ref labelSelf, labelNeighbour: ref labelNeighbour, color: color);
+			}
+		}
+
+		private void SetColorSelf(ref Label labelSelf, Color color) => labelSelf.BackColor = color;
+
+		private void SetColorSelfAndNeighbour(ref Label labelSelf, ref Label labelNeighbour, Color color) => labelSelf.BackColor = labelNeighbour.BackColor = color;
+
+		private void UpdateIndexLabel() => toolStripTextBoxGoToIndex.Text = index.ToString();
 
 		private void CheckIndexMinimum()
 		{
@@ -610,10 +626,7 @@ namespace Hipparcos_DB
 			SetDoubleBuffered(control: tableLayoutPanel);
 		}
 
-		private void HipparcosCatalogViewerForm_FormClosing(object sender, FormClosingEventArgs e)
-		{
-			settings.Save();
-		}
+		private void HipparcosCatalogViewerForm_FormClosing(object sender, FormClosingEventArgs e) => settings.Save();
 
 		#endregion
 
@@ -672,10 +685,7 @@ namespace Hipparcos_DB
 			ShowEntriesOnIndex();
 		}
 
-		private void ToolStripButtonGotoIndex_Click(object sender, EventArgs e)
-		{
-			GoToIndex();
-		}
+		private void ToolStripButtonGotoIndex_Click(object sender, EventArgs e) => GoToIndex();
 
 		private void ToolStripMenuItemInfo_Click(object sender, EventArgs e)
 		{
@@ -3656,54 +3666,27 @@ namespace Hipparcos_DB
 			}
 		}
 
-		private void ToolStripTextBoxGoToIndex_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ToolStripTextBoxGoToIndex_Enter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
 		#endregion
 
 		#region MouseEnter event handlers
 
-		private void MenuitemClose_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void MenuitemClose_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ToolStripMenuItemInfo_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ToolStripMenuItemInfo_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ToolStripButtonStepToBegin_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ToolStripButtonStepToBegin_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ToolStripButtonStepFastBackward_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ToolStripButtonStepFastBackward_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ToolStripButtonStepBackward_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ToolStripButtonStepBackward_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ToolStripButtonStepForward_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ToolStripButtonStepForward_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ToolStripButtonStepFastForward_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ToolStripButtonStepFastForward_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ToolStripButtonStepToEnd_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ToolStripButtonStepToEnd_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
 		private void LabelCatalogDesc_MouseEnter(object sender, EventArgs e)
 		{
@@ -5245,2850 +5228,663 @@ namespace Hipparcos_DB
 			}
 		}
 
-		private void ToolStripButtonGoToIndex_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ToolStripButtonGoToIndex_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void ToolStripTextBoxGoToIndex_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void ToolStripTextBoxGoToIndex_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
+
+		private void ToolStripButtonChangeDataTableStyle_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
+
+		private void ToolStripButtonChangeHoverEffect_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
 		#endregion
 
 		#region Leave event handlers
 
-		private void LabelCatalogDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCatalogDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCatalogData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCatalogData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelIdentifierDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentifierDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelIdentifierData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentifierData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProximityFlagDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProximityFlagDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProximityFlagData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProximityFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelRightAscensionDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelRightAscensionDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelRightAscensionData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelDeclinationDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelDeclinationDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelDeclinationData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMagnitudeJohnsonDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeJohnsonDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMagnitudeJohnsonData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeJohnsonData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCoarseVariabilityFlagDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCoarseVariabilityFlagDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCoarseVariabilityFlagData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCoarseVariabilityFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfMagnitudeDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfMagnitudeDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfMagnitudeData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAlphaDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAlphaDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAlphaData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAlphaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelDeltaDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelDeltaDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelDeltaData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelDeltaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForAstrometryDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForAstrometryDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForAstrometryData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForAstrometryData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelTrigonomicParallaxDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelTrigonomicParallaxDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelTrigonomicParallaxData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProperMotionAlphaDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionAlphaDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProperMotionAlphaData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionAlphaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProperMotionDeltaDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionDeltaDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProperMotionDeltaData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionDeltaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorRightAscensionDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRightAscensionDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorRightAscensionData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorDeclinationDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorDeclinationDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorDeclinationData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCatalogDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorTrigonomicParallaxDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorTrigonomicParallaxData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionRightAscensionDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionRightAscensionDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionRightAscensionData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionDeclinationDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionDeclinationDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionDeclinationData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationDeclinationByRightAscensionDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationDeclinationByRightAscensionDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationDeclinationByRightAscensionData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationDeclinationByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByRightAscensionDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByDeclinationDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByDeclinationData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByRightAscensionDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByDeclinationDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByRightAscensionDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByDeclinationDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByDeclinationData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelPercentageOfRejectedDataDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPercentageOfRejectedDataDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelPercentageOfRejectedDataData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPercentageOfRejectedDataData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelGoodnessOfFitParameterDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelGoodnessOfFitParameterDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelGoodnessOfFitParameterData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelGoodnessOfFitParameterData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMeanBtMagnitudeDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanBtMagnitudeDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMeanBtMagnitudeData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanBtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMeanBtMagnitudeDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanBtMagnitudeDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMeanBtMagnitudeData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanBtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMeanVtMagnitudeDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanVtMagnitudeDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMeanVtMagnitudeData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanVtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMeanVtMagnitudeDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanVtMagnitudeDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMeanVtMagnitudeData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanVtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelJohnsonBvColorDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelJohnsonBvColorDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelJohnsonBvColorData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelJohnsonBvColorData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorJohnsonBvColorDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorJohnsonBvColorDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorJohnsonBvColorData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorJohnsonBvColorData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForBtAndVtMagnitudeDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForBtAndVtMagnitudeData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForBtAndVtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfBvColorDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfBvColorDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfBvColorData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfBvColorData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelColorIndexInCousinsSystemDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelColorIndexInCousinsSystemDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelColorIndexInCousinsSystemData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelColorIndexInCousinsSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorViDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorViDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorViData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorViData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfViDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfViDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfViData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfViData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelFlagForCombinedMagnitudesDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagForCombinedMagnitudesDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelFlagForCombinedMagnitudesData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagForCombinedMagnitudesData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelScatterMedianMagnitudeInHipparcosSystemDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelScatterMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelScatterMedianMagnitudeInHipparcosSystemData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelScatterMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMaximumData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMinimumData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelVariabilityPeriodDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityPeriodDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelVariabilityPeriodData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityPeriodData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelVariabilityTypeDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityTypeDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelVariabilityTypeData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityTypeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAdditionalDataAboutVariabilityDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAdditionalDataAboutVariabilityDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAdditionalDataAboutVariabilityData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAdditionalDataAboutVariabilityData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelLightCurveAnnexDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelLightCurveAnnexDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelLightCurveAnnexData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelLightCurveAnnexData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCcdmIdentifierDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCcdmIdentifierDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCcdmIdentifierData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCcdmIdentifierData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelHistoricalStatusFlagDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHistoricalStatusFlagDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelHistoricalStatusFlagData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHistoricalStatusFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberEntriesWithSameCcdmDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberEntriesWithSameCcdmDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberEntriesWithSameCcdmData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberEntriesWithSameCcdmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberComponentsInThisEntryDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberComponentsInThisEntryDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberComponentsInThisEntryData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberComponentsInThisEntryData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMultipleSystemsFlagDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMultipleSystemsFlagDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMultipleSystemsFlagData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMultipleSystemsFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAstrometricSourceFlagDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAstrometricSourceFlagDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAstrometricSourceFlagData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAstrometricSourceFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSolutionQualityDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSolutionQualityDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSolutionQualityData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSolutionQualityData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelComponentIdentifiersDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelComponentIdentifiersDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelComponentIdentifiersData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelComponentIdentifiersData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelPositionAngleBetweenComponentsDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPositionAngleBetweenComponentsDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelPositionAngleBetweenComponentsData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPositionAngleBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAngularSeparationBetweenComponentsDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAngularSeparationBetweenComponentsDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAngularSeparationBetweenComponentsData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAngularSeparationBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorRhoDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRhoDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorRhoData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRhoData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMagnitudeDifferenceBetweenComponentsDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeDifferenceBetweenComponentsDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMagnitudeDifferenceBetweenComponentsData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelFlagIndicatingSurveyStarDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagIndicatingSurveyStarDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelFlagIndicatingSurveyStarData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagIndicatingSurveyStarData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelIdentificationChartDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentificationChartDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelIdentificationChartData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentificationChartData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelExistenceOfNotesDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelExistenceOfNotesDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelExistenceOfNotesData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelExistenceOfNotesData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelHdNumberDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHdNumberDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelHdNumberData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHdNumberData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelBonnerDmDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelBonnerDmDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelBonnerDmData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelBonnerDmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCordobaDmDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCordobaDmDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCordobaDmData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCordobaDmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCapePhotographicDmDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCapePhotographicDmDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCapePhotographicDmData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCapePhotographicDmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelViUsedForReductionsDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelViUsedForReductionsDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelViUsedForReductionsData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelViUsedForReductionsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSpectralTypeDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSpectralTypeDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSpectralTypeData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSpectralTypeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfSpectralTypeDesc_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfSpectralTypeDesc.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfSpectralTypeData_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfSpectralTypeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void ToolStripTextBoxGoToIndex_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void LabelCatalogDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCatalogData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelIdentifierDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelIdentifierData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelProximityFlagDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelProximityFlagData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelRightAscensionDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelRightAscensionData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelDeclinationDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelDeclinationData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMagnitudeJohnsonDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMagnitudeJohnsonData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCoarseVariabilityFlagDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCoarseVariabilityFlagData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSourceOfMagnitudeDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSourceOfMagnitudeData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelAlphaDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelAlphaData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelDeltaDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelDeltaData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForAstrometryDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForAstrometryData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelTrigonomicParallaxDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelTrigonomicParallaxData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelProperMotionAlphaDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelProperMotionAlphaData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelProperMotionDeltaDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelProperMotionDeltaData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorRightAscensionDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorRightAscensionData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorDeclinationDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorDeclinationData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorTrigonomicParallaxDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorTrigonomicParallaxData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorProperMotionRightAscensionDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorProperMotionRightAscensionData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorProperMotionDeclinationDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorProperMotionDeclinationData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationDeclinationByRightAscensionDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationDeclinationByRightAscensionData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationTrigonomicParallaxByDeclinationData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByDeclinationData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelPercentageOfRejectedDataDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelPercentageOfRejectedDataData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelGoodnessOfFitParameterDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelGoodnessOfFitParameterData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMeanBtMagnitudeDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMeanBtMagnitudeData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorMeanBtMagnitudeDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorMeanBtMagnitudeData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMeanVtMagnitudeDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMeanVtMagnitudeData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorMeanVtMagnitudeDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorMeanVtMagnitudeData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelJohnsonBvColorDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelJohnsonBvColorData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorJohnsonBvColorDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorJohnsonBvColorData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForBtAndVtMagnitudeData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSourceOfBvColorDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSourceOfBvColorData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelColorIndexInCousinsSystemDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelColorIndexInCousinsSystemData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorViDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorViData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSourceOfViDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSourceOfViData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelFlagForCombinedMagnitudesDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelFlagForCombinedMagnitudesData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelScatterMedianMagnitudeInHipparcosSystemDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelScatterMedianMagnitudeInHipparcosSystemData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelVariabilityPeriodDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelVariabilityPeriodData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelVariabilityTypeDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelVariabilityTypeData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelAdditionalDataAboutVariabilityDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelAdditionalDataAboutVariabilityData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelLightCurveAnnexDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelLightCurveAnnexData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCcdmIdentifierDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCcdmIdentifierData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelHistoricalStatusFlagDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelHistoricalStatusFlagData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelNumberEntriesWithSameCcdmDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelNumberEntriesWithSameCcdmData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelNumberComponentsInThisEntryDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelNumberComponentsInThisEntryData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMultipleSystemsFlagDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMultipleSystemsFlagData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelAstrometricSourceFlagDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelAstrometricSourceFlagData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSolutionQualityDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSolutionQualityData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelComponentIdentifiersDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelComponentIdentifiersData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelPositionAngleBetweenComponentsDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelPositionAngleBetweenComponentsData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelAngularSeparationBetweenComponentsDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelAngularSeparationBetweenComponentsData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorRhoDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorRhoData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMagnitudeDifferenceBetweenComponentsDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelMagnitudeDifferenceBetweenComponentsData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelFlagIndicatingSurveyStarDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelFlagIndicatingSurveyStarData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelIdentificationChartDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelIdentificationChartData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelExistenceOfNotesDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelExistenceOfNotesData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelHdNumberDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelHdNumberData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelBonnerDmDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelBonnerDmData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCordobaDmDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCordobaDmData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCapePhotographicDmDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelCapePhotographicDmData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelViUsedForReductionsDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelViUsedForReductionsData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSpectralTypeDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSpectralTypeData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSourceOfSpectralTypeDesc_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void LabelSourceOfSpectralTypeData_Leave(object sender, EventArgs e) => SetColorSelfAndClearStatusbar(labelSelf: ref labelCatalogDesc, color: SystemColors.Control);
+
+		private void ToolStripTextBoxGoToIndex_Leave(object sender, EventArgs e) => ClearStatusbar();
 
 		#endregion
 
 		#region MouseLeave event handlers
 
-		private void MenuitemClose_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripMenuItemInfo_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripButtonStepToBegin_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripButtonStepFastBackward_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripButtonStepBackward_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripButtonStepForward_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripButtonStepFastForward_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripButtonStepToEnd_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void LabelCatalogDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCatalogDesc.BackColor = labelCatalogData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCatalogData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCatalogDesc.BackColor = labelCatalogData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelIdentifierDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentifierDesc.BackColor = labelIdentifierData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelIdentifierData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentifierDesc.BackColor = labelIdentifierData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProximityFlagDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProximityFlagDesc.BackColor = labelProximityFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProximityFlagData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProximityFlagDesc.BackColor = labelProximityFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelRightAscensionDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelRightAscensionDesc.BackColor = labelRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelRightAscensionData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelRightAscensionDesc.BackColor = labelRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelDeclinationDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelDeclinationDesc.BackColor = labelDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelDeclinationData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelDeclinationDesc.BackColor = labelDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMagnitudeJohnsonDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeJohnsonDesc.BackColor = labelMagnitudeJohnsonData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMagnitudeJohnsonData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeJohnsonDesc.BackColor = labelMagnitudeJohnsonData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCoarseVariabilityFlagDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCoarseVariabilityFlagDesc.BackColor = labelCoarseVariabilityFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCoarseVariabilityFlagData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCoarseVariabilityFlagDesc.BackColor = labelCoarseVariabilityFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfMagnitudeDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfMagnitudeDesc.BackColor = labelSourceOfMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfMagnitudeData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfMagnitudeDesc.BackColor = labelSourceOfMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAlphaDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAlphaDesc.BackColor = labelAlphaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAlphaData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAlphaDesc.BackColor = labelAlphaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelDeltaDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelDeltaDesc.BackColor = labelDeltaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelDeltaData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelDeltaDesc.BackColor = labelDeltaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForAstrometryDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForAstrometryDesc.BackColor = labelReferenceFlagForAstrometryData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForAstrometryData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForAstrometryDesc.BackColor = labelReferenceFlagForAstrometryData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelTrigonomicParallaxDesc.BackColor = labelTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelTrigonomicParallaxData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelTrigonomicParallaxDesc.BackColor = labelTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProperMotionAlphaDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionAlphaDesc.BackColor = labelProperMotionAlphaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProperMotionAlphaData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionAlphaDesc.BackColor = labelProperMotionAlphaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProperMotionDeltaDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionDeltaDesc.BackColor = labelProperMotionDeltaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelProperMotionDeltaData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionDeltaDesc.BackColor = labelProperMotionDeltaData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorRightAscensionDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRightAscensionDesc.BackColor = labelStandardErrorRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorRightAscensionData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRightAscensionDesc.BackColor = labelStandardErrorRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorDeclinationDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorDeclinationDesc.BackColor = labelStandardErrorDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorDeclinationData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorDeclinationDesc.BackColor = labelStandardErrorDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorTrigonomicParallaxDesc.BackColor = labelStandardErrorTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorTrigonomicParallaxData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorTrigonomicParallaxDesc.BackColor = labelStandardErrorTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionRightAscensionDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionRightAscensionDesc.BackColor = labelStandardErrorProperMotionRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionRightAscensionData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionRightAscensionDesc.BackColor = labelStandardErrorProperMotionRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionDeclinationDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionDeclinationDesc.BackColor = labelStandardErrorProperMotionDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionDeclinationData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionDeclinationDesc.BackColor = labelStandardErrorProperMotionDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationDeclinationByRightAscensionDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationDeclinationByRightAscensionDesc.BackColor = labelCorrelationDeclinationByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationDeclinationByRightAscensionData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationDeclinationByRightAscensionDesc.BackColor = labelCorrelationDeclinationByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByRightAscensionDesc.BackColor = labelCorrelationTrigonomicParallaxByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByRightAscensionDesc.BackColor = labelCorrelationTrigonomicParallaxByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByDeclinationDesc.BackColor = labelCorrelationTrigonomicParallaxByDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByDeclinationData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByDeclinationDesc.BackColor = labelCorrelationTrigonomicParallaxByDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByRightAscensionDesc.BackColor = labelCorrelationProperMotionRightAscensionByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByRightAscensionDesc.BackColor = labelCorrelationProperMotionRightAscensionByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByDeclinationDesc.BackColor = labelCorrelationProperMotionRightAscensionByDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByDeclinationDesc.BackColor = labelCorrelationProperMotionRightAscensionByDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.BackColor = labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.BackColor = labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByRightAscensionDesc.BackColor = labelCorrelationProperMotionDeclinationByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByRightAscensionDesc.BackColor = labelCorrelationProperMotionDeclinationByRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByDeclinationDesc.BackColor = labelCorrelationProperMotionDeclinationByDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByDeclinationData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByDeclinationDesc.BackColor = labelCorrelationProperMotionDeclinationByDeclinationData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.BackColor = labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.BackColor = labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.BackColor = labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.BackColor = labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelPercentageOfRejectedDataDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPercentageOfRejectedDataDesc.BackColor = labelPercentageOfRejectedDataData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelPercentageOfRejectedDataData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPercentageOfRejectedDataDesc.BackColor = labelPercentageOfRejectedDataData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelGoodnessOfFitParameterDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelGoodnessOfFitParameterDesc.BackColor = labelGoodnessOfFitParameterData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelGoodnessOfFitParameterData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelGoodnessOfFitParameterDesc.BackColor = labelGoodnessOfFitParameterData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMeanBtMagnitudeDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanBtMagnitudeDesc.BackColor = labelMeanBtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMeanBtMagnitudeData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanBtMagnitudeDesc.BackColor = labelMeanBtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMeanBtMagnitudeDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanBtMagnitudeDesc.BackColor = labelStandardErrorMeanBtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMeanBtMagnitudeData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanBtMagnitudeDesc.BackColor = labelStandardErrorMeanBtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMeanVtMagnitudeDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanVtMagnitudeDesc.BackColor = labelMeanVtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMeanVtMagnitudeData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanVtMagnitudeDesc.BackColor = labelMeanVtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMeanVtMagnitudeDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanVtMagnitudeDesc.BackColor = labelStandardErrorMeanVtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMeanVtMagnitudeData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanVtMagnitudeDesc.BackColor = labelStandardErrorMeanVtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelJohnsonBvColorDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelJohnsonBvColorDesc.BackColor = labelJohnsonBvColorData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelJohnsonBvColorData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelJohnsonBvColorDesc.BackColor = labelJohnsonBvColorData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorJohnsonBvColorDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorJohnsonBvColorDesc.BackColor = labelStandardErrorJohnsonBvColorData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorJohnsonBvColorData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorJohnsonBvColorDesc.BackColor = labelStandardErrorJohnsonBvColorData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForBtAndVtMagnitudeDesc.BackColor = labelReferenceFlagForBtAndVtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForBtAndVtMagnitudeData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForBtAndVtMagnitudeDesc.BackColor = labelReferenceFlagForBtAndVtMagnitudeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfBvColorDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfBvColorDesc.BackColor = labelSourceOfBvColorData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfBvColorData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfBvColorDesc.BackColor = labelSourceOfBvColorData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelColorIndexInCousinsSystemDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelColorIndexInCousinsSystemDesc.BackColor = labelColorIndexInCousinsSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelColorIndexInCousinsSystemData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelColorIndexInCousinsSystemDesc.BackColor = labelColorIndexInCousinsSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorViDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorViDesc.BackColor = labelStandardErrorViData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorViData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorViDesc.BackColor = labelStandardErrorViData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfViDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfViDesc.BackColor = labelSourceOfViData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfViData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfViDesc.BackColor = labelSourceOfViData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelFlagForCombinedMagnitudesDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagForCombinedMagnitudesDesc.BackColor = labelFlagForCombinedMagnitudesData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelFlagForCombinedMagnitudesData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagForCombinedMagnitudesDesc.BackColor = labelFlagForCombinedMagnitudesData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemDesc.BackColor = labelMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemDesc.BackColor = labelMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.BackColor = labelStandardErrorMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.BackColor = labelStandardErrorMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelScatterMedianMagnitudeInHipparcosSystemDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelScatterMedianMagnitudeInHipparcosSystemDesc.BackColor = labelScatterMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelScatterMedianMagnitudeInHipparcosSystemData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelScatterMedianMagnitudeInHipparcosSystemDesc.BackColor = labelScatterMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.BackColor = labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.BackColor = labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.BackColor = labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.BackColor = labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.BackColor = labelMedianMagnitudeInHipparcosSystemAtMaximumData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.BackColor = labelMedianMagnitudeInHipparcosSystemAtMaximumData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.BackColor = labelMedianMagnitudeInHipparcosSystemAtMinimumData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.BackColor = labelMedianMagnitudeInHipparcosSystemAtMinimumData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelVariabilityPeriodDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityPeriodDesc.BackColor = labelVariabilityPeriodData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelVariabilityPeriodData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityPeriodDesc.BackColor = labelVariabilityPeriodData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelVariabilityTypeDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityTypeDesc.BackColor = labelVariabilityTypeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelVariabilityTypeData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityTypeDesc.BackColor = labelVariabilityTypeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAdditionalDataAboutVariabilityDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAdditionalDataAboutVariabilityDesc.BackColor = labelAdditionalDataAboutVariabilityData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAdditionalDataAboutVariabilityData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAdditionalDataAboutVariabilityDesc.BackColor = labelAdditionalDataAboutVariabilityData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelLightCurveAnnexDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelLightCurveAnnexDesc.BackColor = labelLightCurveAnnexData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelLightCurveAnnexData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelLightCurveAnnexDesc.BackColor = labelLightCurveAnnexData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCcdmIdentifierDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCcdmIdentifierDesc.BackColor = labelCcdmIdentifierData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCcdmIdentifierData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCcdmIdentifierDesc.BackColor = labelCcdmIdentifierData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelHistoricalStatusFlagDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHistoricalStatusFlagDesc.BackColor = labelHistoricalStatusFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelHistoricalStatusFlagData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHistoricalStatusFlagDesc.BackColor = labelHistoricalStatusFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberEntriesWithSameCcdmDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberEntriesWithSameCcdmDesc.BackColor = labelNumberEntriesWithSameCcdmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberEntriesWithSameCcdmData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberEntriesWithSameCcdmDesc.BackColor = labelNumberEntriesWithSameCcdmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberComponentsInThisEntryDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberComponentsInThisEntryDesc.BackColor = labelNumberComponentsInThisEntryData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelNumberComponentsInThisEntryData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberComponentsInThisEntryDesc.BackColor = labelNumberComponentsInThisEntryData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMultipleSystemsFlagDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMultipleSystemsFlagDesc.BackColor = labelMultipleSystemsFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMultipleSystemsFlagData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMultipleSystemsFlagDesc.BackColor = labelMultipleSystemsFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAstrometricSourceFlagDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAstrometricSourceFlagDesc.BackColor = labelAstrometricSourceFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAstrometricSourceFlagData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAstrometricSourceFlagDesc.BackColor = labelAstrometricSourceFlagData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSolutionQualityDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSolutionQualityDesc.BackColor = labelSolutionQualityData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSolutionQualityData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSolutionQualityDesc.BackColor = labelSolutionQualityData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelComponentIdentifiersDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelComponentIdentifiersDesc.BackColor = labelComponentIdentifiersData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelComponentIdentifiersData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelComponentIdentifiersDesc.BackColor = labelComponentIdentifiersData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelPositionAngleBetweenComponentsDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPositionAngleBetweenComponentsDesc.BackColor = labelPositionAngleBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelPositionAngleBetweenComponentsData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPositionAngleBetweenComponentsDesc.BackColor = labelPositionAngleBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAngularSeparationBetweenComponentsDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAngularSeparationBetweenComponentsDesc.BackColor = labelAngularSeparationBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelAngularSeparationBetweenComponentsData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAngularSeparationBetweenComponentsDesc.BackColor = labelAngularSeparationBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorRhoDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRhoDesc.BackColor = labelStandardErrorRhoData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorRhoData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRhoDesc.BackColor = labelStandardErrorRhoData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMagnitudeDifferenceBetweenComponentsDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeDifferenceBetweenComponentsDesc.BackColor = labelMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelMagnitudeDifferenceBetweenComponentsData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeDifferenceBetweenComponentsDesc.BackColor = labelMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.BackColor = labelStandardErrorMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.BackColor = labelStandardErrorMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelFlagIndicatingSurveyStarDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagIndicatingSurveyStarDesc.BackColor = labelFlagIndicatingSurveyStarData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelFlagIndicatingSurveyStarData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagIndicatingSurveyStarDesc.BackColor = labelFlagIndicatingSurveyStarData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelIdentificationChartDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentificationChartDesc.BackColor = labelIdentificationChartData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelIdentificationChartData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentificationChartDesc.BackColor = labelIdentificationChartData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelExistenceOfNotesDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelExistenceOfNotesDesc.BackColor = labelExistenceOfNotesData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelExistenceOfNotesData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelExistenceOfNotesDesc.BackColor = labelExistenceOfNotesData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelHdNumberDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHdNumberDesc.BackColor = labelHdNumberData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelHdNumberData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHdNumberDesc.BackColor = labelHdNumberData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelBonnerDmDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelBonnerDmDesc.BackColor = labelBonnerDmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelBonnerDmData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelBonnerDmDesc.BackColor = labelBonnerDmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCordobaDmDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCordobaDmDesc.BackColor = labelCordobaDmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCordobaDmData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCordobaDmDesc.BackColor = labelCordobaDmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCapePhotographicDmDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCapePhotographicDmDesc.BackColor = labelCapePhotographicDmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelCapePhotographicDmData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCapePhotographicDmDesc.BackColor = labelCapePhotographicDmData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelViUsedForReductionsDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelViUsedForReductionsDesc.BackColor = labelViUsedForReductionsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelViUsedForReductionsData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelViUsedForReductionsDesc.BackColor = labelViUsedForReductionsData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSpectralTypeDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSpectralTypeDesc.BackColor = labelSpectralTypeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSpectralTypeData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSpectralTypeDesc.BackColor = labelSpectralTypeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfSpectralTypeDesc_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfSpectralTypeDesc.BackColor = labelSourceOfSpectralTypeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void LabelSourceOfSpectralTypeData_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfSpectralTypeDesc.BackColor = labelSourceOfSpectralTypeData.BackColor = SystemColors.Control;
-			}
-		}
-
-		private void ToolStripButtonGoToIndex_MouseLeave(object sender, EventArgs e)
-		{
-
-		}
-
-		private void ToolStripTextBoxGoToIndex_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void MenuitemClose_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void ToolStripMenuItemInfo_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void ToolStripButtonStepToBegin_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void ToolStripButtonStepFastBackward_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void ToolStripButtonStepBackward_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void ToolStripButtonStepForward_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void ToolStripButtonStepFastForward_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void ToolStripButtonStepToEnd_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void LabelCatalogDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCatalogDesc, labelNeighbour: ref labelCatalogData, color: SystemColors.Control);
+
+		private void LabelCatalogData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCatalogDesc, labelNeighbour: ref labelCatalogData, color: SystemColors.Control);
+
+		private void LabelIdentifierDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelIdentifierDesc, labelNeighbour: ref labelIdentifierData, color: SystemColors.Control);
+
+		private void LabelIdentifierData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelIdentifierDesc, labelNeighbour: ref labelIdentifierData, color: SystemColors.Control);
+
+		private void LabelProximityFlagDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProximityFlagDesc, labelNeighbour: ref labelProximityFlagData, color: SystemColors.Control);
+
+		private void LabelProximityFlagData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProximityFlagDesc, labelNeighbour: ref labelProximityFlagData, color: SystemColors.Control);
+
+		private void LabelRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelRightAscensionDesc, labelNeighbour: ref labelRightAscensionData, color: SystemColors.Control);
+
+		private void LabelRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelRightAscensionDesc, labelNeighbour: ref labelRightAscensionData, color: SystemColors.Control);
+
+		private void LabelDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelDeclinationDesc, labelNeighbour: ref labelDeclinationData, color: SystemColors.Control);
+
+		private void LabelDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelDeclinationDesc, labelNeighbour: ref labelDeclinationData, color: SystemColors.Control);
+
+		private void LabelMagnitudeJohnsonDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbour: ref labelMagnitudeJohnsonData, color: SystemColors.Control);
+
+		private void LabelMagnitudeJohnsonData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbour: ref labelMagnitudeJohnsonData, color: SystemColors.Control);
+
+		private void LabelCoarseVariabilityFlagDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCoarseVariabilityFlagDesc, labelNeighbour: ref labelCoarseVariabilityFlagData, color: SystemColors.Control);
+
+		private void LabelCoarseVariabilityFlagData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCoarseVariabilityFlagDesc, labelNeighbour: ref labelCoarseVariabilityFlagData, color: SystemColors.Control);
+
+		private void LabelSourceOfMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbour: ref labelSourceOfMagnitudeData, color: SystemColors.Control);
+
+		private void LabelSourceOfMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbour: ref labelSourceOfMagnitudeData, color: SystemColors.Control);
+
+		private void LabelAlphaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAlphaDesc, labelNeighbour: ref labelAlphaData, color: SystemColors.Control);
+
+		private void LabelAlphaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAlphaDesc, labelNeighbour: ref labelAlphaData, color: SystemColors.Control);
+
+		private void LabelDeltaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelDeltaDesc, labelNeighbour: ref labelDeltaData, color: SystemColors.Control);
+
+		private void LabelDeltaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelDeltaDesc, labelNeighbour: ref labelDeltaData, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForAstrometryDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbour: ref labelReferenceFlagForAstrometryData, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForAstrometryData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbour: ref labelReferenceFlagForAstrometryData, color: SystemColors.Control);
+
+		private void LabelTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbour: ref labelTrigonomicParallaxData, color: SystemColors.Control);
+
+		private void LabelTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbour: ref labelTrigonomicParallaxData, color: SystemColors.Control);
+
+		private void LabelProperMotionAlphaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProperMotionAlphaDesc, labelNeighbour: ref labelProperMotionAlphaData, color: SystemColors.Control);
+
+		private void LabelProperMotionAlphaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProperMotionAlphaDesc, labelNeighbour: ref labelProperMotionAlphaData, color: SystemColors.Control);
+
+		private void LabelProperMotionDeltaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProperMotionDeltaDesc, labelNeighbour: ref labelProperMotionDeltaData, color: SystemColors.Control);
+
+		private void LabelProperMotionDeltaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProperMotionDeltaDesc, labelNeighbour: ref labelProperMotionDeltaData, color: SystemColors.Control);
+
+		private void LabelStandardErrorRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.Control);
+
+		private void LabelStandardErrorRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.Control);
+
+		private void LabelStandardErrorDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorDeclinationDesc, labelNeighbour: ref labelStandardErrorDeclinationData, color: SystemColors.Control);
+
+		private void LabelStandardErrorDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorDeclinationDesc, labelNeighbour: ref labelStandardErrorDeclinationData, color: SystemColors.Control);
+
+		private void LabelStandardErrorTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, labelNeighbour: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.Control);
+
+		private void LabelStandardErrorTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, labelNeighbour: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.Control);
+
+		private void LabelStandardErrorProperMotionRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionRightAscensionDesc, labelNeighbour: ref labelStandardErrorProperMotionRightAscensionData, color: SystemColors.Control);
+
+		private void LabelStandardErrorProperMotionRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionRightAscensionDesc, labelNeighbour: ref labelStandardErrorProperMotionRightAscensionData, color: SystemColors.Control);
+
+		private void LabelStandardErrorProperMotionDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbour: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.Control);
+
+		private void LabelStandardErrorProperMotionDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbour: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.Control);
+		
+		private void LabelCorrelationDeclinationByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.Control);
+
+		private void LabelCorrelationDeclinationByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.Control);
+
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByRightAscensionData, color: SystemColors.Control);
+
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByRightAscensionData, color: SystemColors.Control);
+
+		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByDeclinationData, color: SystemColors.Control);
+
+		private void LabelCorrelationTrigonomicParallaxByDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByDeclinationData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByRightAscensionData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByRightAscensionData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByDeclinationData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByDeclinationData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByRightAscensionData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByRightAscensionData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.Control);
+
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.Control);
+
+		private void LabelPercentageOfRejectedDataDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelPercentageOfRejectedDataDesc, labelNeighbour: ref labelPercentageOfRejectedDataData, color: SystemColors.Control);
+
+		private void LabelPercentageOfRejectedDataData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelPercentageOfRejectedDataDesc, labelNeighbour: ref labelPercentageOfRejectedDataData, color: SystemColors.Control);
+
+		private void LabelGoodnessOfFitParameterDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelGoodnessOfFitParameterDesc, labelNeighbour: ref labelGoodnessOfFitParameterData, color: SystemColors.Control);
+
+		private void LabelGoodnessOfFitParameterData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelGoodnessOfFitParameterDesc, labelNeighbour: ref labelGoodnessOfFitParameterData, color: SystemColors.Control);
+
+		private void LabelMeanBtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMeanBtMagnitudeDesc, labelNeighbour: ref labelMeanBtMagnitudeData, color: SystemColors.Control);
+
+		private void LabelMeanBtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMeanBtMagnitudeDesc, labelNeighbour: ref labelMeanBtMagnitudeData, color: SystemColors.Control);
+
+		private void LabelStandardErrorMeanBtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.Control);
+
+		private void LabelStandardErrorMeanBtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.Control);
+
+		private void LabelMeanVtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMeanVtMagnitudeDesc, labelNeighbour: ref labelMeanVtMagnitudeData, color: SystemColors.Control);
+
+		private void LabelMeanVtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMeanVtMagnitudeDesc, labelNeighbour: ref labelMeanVtMagnitudeData, color: SystemColors.Control);
+
+		private void LabelStandardErrorMeanVtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMeanVtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanVtMagnitudeData, color: SystemColors.Control);
+
+		private void LabelStandardErrorMeanVtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMeanVtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanVtMagnitudeData, color: SystemColors.Control);
+
+		private void LabelJohnsonBvColorDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelJohnsonBvColorDesc, labelNeighbour: ref labelJohnsonBvColorData, color: SystemColors.Control);
+
+		private void LabelJohnsonBvColorData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelJohnsonBvColorDesc, labelNeighbour: ref labelJohnsonBvColorData, color: SystemColors.Control);
+
+		private void LabelStandardErrorJohnsonBvColorDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorJohnsonBvColorDesc, labelNeighbour: ref labelStandardErrorJohnsonBvColorData, color: SystemColors.Control);
+
+		private void LabelStandardErrorJohnsonBvColorData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorJohnsonBvColorDesc, labelNeighbour: ref labelStandardErrorJohnsonBvColorData, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelReferenceFlagForBtAndVtMagnitudeDesc, labelNeighbour: ref labelReferenceFlagForBtAndVtMagnitudeData, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForBtAndVtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelReferenceFlagForBtAndVtMagnitudeDesc, labelNeighbour: ref labelReferenceFlagForBtAndVtMagnitudeData, color: SystemColors.Control);
+
+		private void LabelSourceOfBvColorDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfBvColorDesc, labelNeighbour: ref labelSourceOfBvColorData, color: SystemColors.Control);
+
+		private void LabelSourceOfBvColorData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfBvColorDesc, labelNeighbour: ref labelSourceOfBvColorData, color: SystemColors.Control);
+
+		private void LabelColorIndexInCousinsSystemDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelColorIndexInCousinsSystemDesc, labelNeighbour: ref labelColorIndexInCousinsSystemData, color: SystemColors.Control);
+
+		private void LabelColorIndexInCousinsSystemData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelColorIndexInCousinsSystemDesc, labelNeighbour: ref labelColorIndexInCousinsSystemData, color: SystemColors.Control);
+
+		private void LabelStandardErrorViDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorViDesc, labelNeighbour: ref labelStandardErrorViData, color: SystemColors.Control);
+
+		private void LabelStandardErrorViData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorViDesc, labelNeighbour: ref labelStandardErrorViData, color: SystemColors.Control);
+
+		private void LabelSourceOfViDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfViDesc, labelNeighbour: ref labelSourceOfViData, color: SystemColors.Control);
+
+		private void LabelSourceOfViData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfViDesc, labelNeighbour: ref labelSourceOfViData, color: SystemColors.Control);
+
+		private void LabelFlagForCombinedMagnitudesDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelFlagForCombinedMagnitudesDesc, labelNeighbour: ref labelFlagForCombinedMagnitudesData, color: SystemColors.Control);
+
+		private void LabelFlagForCombinedMagnitudesData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelFlagForCombinedMagnitudesDesc, labelNeighbour: ref labelFlagForCombinedMagnitudesData, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMedianMagnitudeInHipparcosSystemDesc, labelNeighbour: ref labelMedianMagnitudeInHipparcosSystemData, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMedianMagnitudeInHipparcosSystemDesc, labelNeighbour: ref labelMedianMagnitudeInHipparcosSystemData, color: SystemColors.Control);
+
+		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMedianMagnitudeInHipparcosSystemDesc, labelNeighbour: ref labelStandardErrorMedianMagnitudeInHipparcosSystemData, color: SystemColors.Control);
+
+		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMedianMagnitudeInHipparcosSystemDesc, labelNeighbour: ref labelStandardErrorMedianMagnitudeInHipparcosSystemData, color: SystemColors.Control);
+
+		private void LabelScatterMedianMagnitudeInHipparcosSystemDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelScatterMedianMagnitudeInHipparcosSystemDesc, labelNeighbour: ref labelScatterMedianMagnitudeInHipparcosSystemData, color: SystemColors.Control);
+
+		private void LabelScatterMedianMagnitudeInHipparcosSystemData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelScatterMedianMagnitudeInHipparcosSystemDesc, labelNeighbour: ref labelScatterMedianMagnitudeInHipparcosSystemData, color: SystemColors.Control);
+
+		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc, labelNeighbour: ref labelNumberObservationsForMedianMagnitudeInHipparcosSystemData, color: SystemColors.Control);
+
+		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc, labelNeighbour: ref labelNumberObservationsForMedianMagnitudeInHipparcosSystemData, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc, labelNeighbour: ref labelReferenceFlagForMedianMagnitudeInHipparcosSystemData, color: SystemColors.Control);
+
+		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc, labelNeighbour: ref labelReferenceFlagForMedianMagnitudeInHipparcosSystemData, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMedianMagnitudeInHipparcosSystemAtMaximumDesc, labelNeighbour: ref labelMedianMagnitudeInHipparcosSystemAtMaximumData, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMedianMagnitudeInHipparcosSystemAtMaximumDesc, labelNeighbour: ref labelMedianMagnitudeInHipparcosSystemAtMaximumData, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMedianMagnitudeInHipparcosSystemAtMinimumDesc, labelNeighbour: ref labelMedianMagnitudeInHipparcosSystemAtMinimumData, color: SystemColors.Control);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMedianMagnitudeInHipparcosSystemAtMinimumDesc, labelNeighbour: ref labelMedianMagnitudeInHipparcosSystemAtMinimumData, color: SystemColors.Control);
+
+		private void LabelVariabilityPeriodDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelVariabilityPeriodDesc, labelNeighbour: ref labelVariabilityPeriodData, color: SystemColors.Control);
+
+		private void LabelVariabilityPeriodData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelVariabilityPeriodDesc, labelNeighbour: ref labelVariabilityPeriodData, color: SystemColors.Control);
+
+		private void LabelVariabilityTypeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelVariabilityTypeDesc, labelNeighbour: ref labelVariabilityTypeData, color: SystemColors.Control);
+
+		private void LabelVariabilityTypeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelVariabilityTypeDesc, labelNeighbour: ref labelVariabilityTypeData, color: SystemColors.Control);
+
+		private void LabelAdditionalDataAboutVariabilityDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAdditionalDataAboutVariabilityDesc, labelNeighbour: ref labelAdditionalDataAboutVariabilityData, color: SystemColors.Control);
+
+		private void LabelAdditionalDataAboutVariabilityData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAdditionalDataAboutVariabilityDesc, labelNeighbour: ref labelAdditionalDataAboutVariabilityData, color: SystemColors.Control);
+
+		private void LabelLightCurveAnnexDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelLightCurveAnnexDesc, labelNeighbour: ref labelLightCurveAnnexData, color: SystemColors.Control);
+
+		private void LabelLightCurveAnnexData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelLightCurveAnnexDesc, labelNeighbour: ref labelLightCurveAnnexData, color: SystemColors.Control);
+
+		private void LabelCcdmIdentifierDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCcdmIdentifierDesc, labelNeighbour: ref labelCcdmIdentifierData, color: SystemColors.Control);
+
+		private void LabelCcdmIdentifierData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCcdmIdentifierDesc, labelNeighbour: ref labelCcdmIdentifierData, color: SystemColors.Control);
+
+		private void LabelHistoricalStatusFlagDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelHistoricalStatusFlagDesc, labelNeighbour: ref labelHistoricalStatusFlagData, color: SystemColors.Control);
+
+		private void LabelHistoricalStatusFlagData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelHistoricalStatusFlagDesc, labelNeighbour: ref labelHistoricalStatusFlagData, color: SystemColors.Control);
+
+		private void LabelNumberEntriesWithSameCcdmDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNumberEntriesWithSameCcdmDesc, labelNeighbour: ref labelNumberEntriesWithSameCcdmData, color: SystemColors.Control);
+
+		private void LabelNumberEntriesWithSameCcdmData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNumberEntriesWithSameCcdmDesc, labelNeighbour: ref labelNumberEntriesWithSameCcdmData, color: SystemColors.Control);
+
+		private void LabelNumberComponentsInThisEntryDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNumberComponentsInThisEntryDesc, labelNeighbour: ref labelNumberComponentsInThisEntryData, color: SystemColors.Control);
+
+		private void LabelNumberComponentsInThisEntryData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNumberComponentsInThisEntryDesc, labelNeighbour: ref labelNumberComponentsInThisEntryData, color: SystemColors.Control);
+
+		private void LabelMultipleSystemsFlagDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMultipleSystemsFlagDesc, labelNeighbour: ref labelMultipleSystemsFlagData, color: SystemColors.Control);
+
+		private void LabelMultipleSystemsFlagData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMultipleSystemsFlagDesc, labelNeighbour: ref labelMultipleSystemsFlagData, color: SystemColors.Control);
+
+		private void LabelAstrometricSourceFlagDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAstrometricSourceFlagDesc, labelNeighbour: ref labelAstrometricSourceFlagData, color: SystemColors.Control);
+
+		private void LabelAstrometricSourceFlagData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAstrometricSourceFlagDesc, labelNeighbour: ref labelAstrometricSourceFlagData, color: SystemColors.Control);
+
+		private void LabelSolutionQualityDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSolutionQualityDesc, labelNeighbour: ref labelSolutionQualityData, color: SystemColors.Control);
+
+		private void LabelSolutionQualityData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSolutionQualityDesc, labelNeighbour: ref labelSolutionQualityData, color: SystemColors.Control);
+
+		private void LabelComponentIdentifiersDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelComponentIdentifiersDesc, labelNeighbour: ref labelComponentIdentifiersData, color: SystemColors.Control);
+
+		private void LabelComponentIdentifiersData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelComponentIdentifiersDesc, labelNeighbour: ref labelComponentIdentifiersData, color: SystemColors.Control);
+
+		private void LabelPositionAngleBetweenComponentsDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelPositionAngleBetweenComponentsDesc, labelNeighbour: ref labelPositionAngleBetweenComponentsData, color: SystemColors.Control);
+
+		private void LabelPositionAngleBetweenComponentsData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelPositionAngleBetweenComponentsDesc, labelNeighbour: ref labelPositionAngleBetweenComponentsData, color: SystemColors.Control);
+
+		private void LabelAngularSeparationBetweenComponentsDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAngularSeparationBetweenComponentsDesc, labelNeighbour: ref labelAngularSeparationBetweenComponentsData, color: SystemColors.Control);
+
+		private void LabelAngularSeparationBetweenComponentsData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAngularSeparationBetweenComponentsDesc, labelNeighbour: ref labelAngularSeparationBetweenComponentsData, color: SystemColors.Control);
+
+		private void LabelStandardErrorRhoDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorRhoDesc, labelNeighbour: ref labelStandardErrorRhoData, color: SystemColors.Control);
+
+		private void LabelStandardErrorRhoData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorRhoDesc, labelNeighbour: ref labelStandardErrorRhoData, color: SystemColors.Control);
+
+		private void LabelMagnitudeDifferenceBetweenComponentsDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMagnitudeDifferenceBetweenComponentsDesc, labelNeighbour: ref labelMagnitudeDifferenceBetweenComponentsData, color: SystemColors.Control);
+
+		private void LabelMagnitudeDifferenceBetweenComponentsData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMagnitudeDifferenceBetweenComponentsDesc, labelNeighbour: ref labelMagnitudeDifferenceBetweenComponentsData, color: SystemColors.Control);
+
+		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc, labelNeighbour: ref labelStandardErrorMagnitudeDifferenceBetweenComponentsData, color: SystemColors.Control);
+
+		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc, labelNeighbour: ref labelStandardErrorMagnitudeDifferenceBetweenComponentsData, color: SystemColors.Control);
+
+		private void LabelFlagIndicatingSurveyStarDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelFlagIndicatingSurveyStarDesc, labelNeighbour: ref labelFlagIndicatingSurveyStarData, color: SystemColors.Control);
+
+		private void LabelFlagIndicatingSurveyStarData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelFlagIndicatingSurveyStarDesc, labelNeighbour: ref labelFlagIndicatingSurveyStarData, color: SystemColors.Control);
+
+		private void LabelIdentificationChartDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelIdentificationChartDesc, labelNeighbour: ref labelIdentificationChartData, color: SystemColors.Control);
+
+		private void LabelIdentificationChartData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelIdentificationChartDesc, labelNeighbour: ref labelIdentificationChartData, color: SystemColors.Control);
+
+		private void LabelExistenceOfNotesDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelExistenceOfNotesDesc, labelNeighbour: ref labelExistenceOfNotesData, color: SystemColors.Control);
+
+		private void LabelExistenceOfNotesData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelExistenceOfNotesDesc, labelNeighbour: ref labelExistenceOfNotesData, color: SystemColors.Control);
+
+		private void LabelHdNumberDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelHdNumberDesc, labelNeighbour: ref labelHdNumberData, color: SystemColors.Control);
+
+		private void LabelHdNumberData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelHdNumberDesc, labelNeighbour: ref labelHdNumberData, color: SystemColors.Control);
+
+		private void LabelBonnerDmDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelBonnerDmDesc, labelNeighbour: ref labelBonnerDmData, color: SystemColors.Control);
+
+		private void LabelBonnerDmData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelBonnerDmDesc, labelNeighbour: ref labelBonnerDmData, color: SystemColors.Control);
+
+		private void LabelCordobaDmDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCordobaDmDesc, labelNeighbour: ref labelCordobaDmData, color: SystemColors.Control);
+
+		private void LabelCordobaDmData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCordobaDmDesc, labelNeighbour: ref labelCordobaDmData, color: SystemColors.Control);
+
+		private void LabelCapePhotographicDmDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCapePhotographicDmDesc, labelNeighbour: ref labelCapePhotographicDmData, color: SystemColors.Control);
+
+		private void LabelCapePhotographicDmData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCapePhotographicDmDesc, labelNeighbour: ref labelCapePhotographicDmData, color: SystemColors.Control);
+
+		private void LabelViUsedForReductionsDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelViUsedForReductionsDesc, labelNeighbour: ref labelViUsedForReductionsData, color: SystemColors.Control);
+
+		private void LabelViUsedForReductionsData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelViUsedForReductionsDesc, labelNeighbour: ref labelViUsedForReductionsData, color: SystemColors.Control);
+
+		private void LabelSpectralTypeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSpectralTypeDesc, labelNeighbour: ref labelSpectralTypeData, color: SystemColors.Control);
+
+		private void LabelSpectralTypeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSpectralTypeDesc, labelNeighbour: ref labelSpectralTypeData, color: SystemColors.Control);
+
+		private void LabelSourceOfSpectralTypeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfSpectralTypeDesc, labelNeighbour: ref labelSourceOfSpectralTypeData, color: SystemColors.Control);
+
+		private void LabelSourceOfSpectralTypeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfSpectralTypeDesc, labelNeighbour: ref labelSourceOfSpectralTypeData, color: SystemColors.Control);
+
+		private void ToolStripButtonGoToIndex_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void ToolStripTextBoxGoToIndex_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void ToolStripButtonChangeDataTableStyle_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
+		private void ToolStripButtonChangeHoverEffect_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
 		#endregion
 

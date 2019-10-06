@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace Hipparcos_DB
 {
-	partial class AboutBoxForm : Form
+	internal partial class AboutBoxForm : Form
 	{
 		private readonly Settings settings = new Settings();
 
