@@ -107,6 +107,12 @@
     <Compile Include="DownloaderForm.Designer.cs">
       <DependentUpon>DownloaderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="HipparcosCatalogFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HipparcosCatalogFilterForm.Designer.cs">
+      <DependentUpon>HipparcosCatalogFilterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HipparcosCatalogViewerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,10 +127,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\SubsetCatalogExporterForm.cs">
+    <Compile Include="SubsetCatalogExporterForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Properties\SubsetCatalogExporterForm.Designer.cs">
+    <Compile Include="SubsetCatalogExporterForm.Designer.cs">
       <DependentUpon>SubsetCatalogExporterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TychoCatalogViewerForm.cs">
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DownloaderForm.resx">
       <DependentUpon>DownloaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HipparcosCatalogFilterForm.resx">
+      <DependentUpon>HipparcosCatalogFilterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HipparcosCatalogViewerForm.resx">
       <DependentUpon>HipparcosCatalogViewerForm.cs</DependentUpon>
@@ -163,7 +172,7 @@
     <Compile Include="AboutBoxForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <EmbeddedResource Include="Properties\SubsetCatalogExporterForm.resx">
+    <EmbeddedResource Include="SubsetCatalogExporterForm.resx">
       <DependentUpon>SubsetCatalogExporterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TychoCatalogViewerForm.resx">
@@ -189,6 +198,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo-full.ico" />
+    <None Include="Properties\fugue_funnel_16px_shadowless.png" />
     <None Include="Properties\fugue_disk-small_16px_shadowless.png" />
     <None Include="Properties\fugue_exclamation--frame_16px_shadowless.png" />
     <None Include="Properties\fugue_exclamation_16px_shadowless.png" />
