@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Xamarin.Forms.4.2.0.848062\build\Xamarin.Forms.props" Condition="Exists('packages\Xamarin.Forms.4.2.0.848062\build\Xamarin.Forms.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -27,6 +28,8 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -133,6 +136,12 @@
     <Compile Include="SubsetCatalogExporterForm.Designer.cs">
       <DependentUpon>SubsetCatalogExporterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TychoCatalogFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TychoCatalogFilterForm.Designer.cs">
+      <DependentUpon>TychoCatalogFilterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TychoCatalogViewerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +183,9 @@
     </Compile>
     <EmbeddedResource Include="SubsetCatalogExporterForm.resx">
       <DependentUpon>SubsetCatalogExporterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TychoCatalogFilterForm.resx">
+      <DependentUpon>TychoCatalogFilterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TychoCatalogViewerForm.resx">
       <DependentUpon>TychoCatalogViewerForm.cs</DependentUpon>
