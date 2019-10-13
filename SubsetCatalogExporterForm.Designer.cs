@@ -96,7 +96,7 @@
 			this.listBox2.Location = new System.Drawing.Point(277, 12);
 			this.listBox2.Name = "listBox2";
 			this.listBox2.Size = new System.Drawing.Size(211, 329);
-			this.listBox2.TabIndex = 6;
+			this.listBox2.TabIndex = 5;
 			this.listBox2.Enter += new System.EventHandler(this.ListBox2_Enter);
 			this.listBox2.Leave += new System.EventHandler(this.ListBox2_Leave);
 			this.listBox2.MouseEnter += new System.EventHandler(this.ListBox2_MouseEnter);
@@ -108,7 +108,7 @@
 			this.buttonMoveItemToBottom.Location = new System.Drawing.Point(494, 178);
 			this.buttonMoveItemToBottom.Name = "buttonMoveItemToBottom";
 			this.buttonMoveItemToBottom.Size = new System.Drawing.Size(42, 23);
-			this.buttonMoveItemToBottom.TabIndex = 10;
+			this.buttonMoveItemToBottom.TabIndex = 9;
 			this.buttonMoveItemToBottom.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.buttonMoveItemToBottom.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.toolTip.SetToolTip(this.buttonMoveItemToBottom, "Move to bottom");
@@ -125,7 +125,7 @@
 			this.buttonMoveitemOnTop.Location = new System.Drawing.Point(494, 91);
 			this.buttonMoveitemOnTop.Name = "buttonMoveitemOnTop";
 			this.buttonMoveitemOnTop.Size = new System.Drawing.Size(42, 23);
-			this.buttonMoveitemOnTop.TabIndex = 7;
+			this.buttonMoveitemOnTop.TabIndex = 6;
 			this.buttonMoveitemOnTop.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.buttonMoveitemOnTop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.toolTip.SetToolTip(this.buttonMoveitemOnTop, "Move on top");
@@ -142,7 +142,7 @@
 			this.buttonMoveitemDown.Location = new System.Drawing.Point(494, 149);
 			this.buttonMoveitemDown.Name = "buttonMoveitemDown";
 			this.buttonMoveitemDown.Size = new System.Drawing.Size(42, 23);
-			this.buttonMoveitemDown.TabIndex = 9;
+			this.buttonMoveitemDown.TabIndex = 8;
 			this.buttonMoveitemDown.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.buttonMoveitemDown.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.toolTip.SetToolTip(this.buttonMoveitemDown, "Move down");
@@ -159,7 +159,7 @@
 			this.buttonMoveItemUp.Location = new System.Drawing.Point(494, 120);
 			this.buttonMoveItemUp.Name = "buttonMoveItemUp";
 			this.buttonMoveItemUp.Size = new System.Drawing.Size(42, 23);
-			this.buttonMoveItemUp.TabIndex = 8;
+			this.buttonMoveItemUp.TabIndex = 7;
 			this.buttonMoveItemUp.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.buttonMoveItemUp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.toolTip.SetToolTip(this.buttonMoveItemUp, "Move up");
@@ -324,7 +324,7 @@
 			this.labelList1.Location = new System.Drawing.Point(12, 344);
 			this.labelList1.Name = "labelList1";
 			this.labelList1.Size = new System.Drawing.Size(88, 21);
-			this.labelList1.TabIndex = 5;
+			this.labelList1.TabIndex = 10;
 			this.labelList1.Text = "List is empty!";
 			this.labelList1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.labelList1.Enter += new System.EventHandler(this.LabelList1_Enter);

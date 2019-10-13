@@ -5645,7 +5645,7 @@ namespace Hipparcos_DB
 		private void LabelStandardErrorProperMotionDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbour: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.Control);
 
 		private void LabelStandardErrorProperMotionDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbour: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.Control);
-		
+
 		private void LabelCorrelationDeclinationByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.Control);
 
 		private void LabelCorrelationDeclinationByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.Control);

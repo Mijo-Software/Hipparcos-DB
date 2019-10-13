@@ -152,62 +152,62 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax = new System.Windows.Forms.Label();
 			this.labelCorrelationProperMotionDeclinationByDeclinationMax = new System.Windows.Forms.Label();
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax = new System.Windows.Forms.Label();
-			this.label57 = new System.Windows.Forms.Label();
-			this.label58 = new System.Windows.Forms.Label();
-			this.label59 = new System.Windows.Forms.Label();
-			this.label60 = new System.Windows.Forms.Label();
-			this.label61 = new System.Windows.Forms.Label();
-			this.label62 = new System.Windows.Forms.Label();
-			this.label63 = new System.Windows.Forms.Label();
-			this.label64 = new System.Windows.Forms.Label();
-			this.label65 = new System.Windows.Forms.Label();
-			this.label66 = new System.Windows.Forms.Label();
-			this.label67 = new System.Windows.Forms.Label();
-			this.label68 = new System.Windows.Forms.Label();
-			this.label69 = new System.Windows.Forms.Label();
-			this.label70 = new System.Windows.Forms.Label();
-			this.label71 = new System.Windows.Forms.Label();
-			this.label72 = new System.Windows.Forms.Label();
-			this.label73 = new System.Windows.Forms.Label();
-			this.label74 = new System.Windows.Forms.Label();
-			this.label75 = new System.Windows.Forms.Label();
-			this.label76 = new System.Windows.Forms.Label();
-			this.label77 = new System.Windows.Forms.Label();
-			this.label78 = new System.Windows.Forms.Label();
-			this.label79 = new System.Windows.Forms.Label();
-			this.label80 = new System.Windows.Forms.Label();
-			this.label81 = new System.Windows.Forms.Label();
-			this.label82 = new System.Windows.Forms.Label();
-			this.label83 = new System.Windows.Forms.Label();
-			this.label84 = new System.Windows.Forms.Label();
-			this.label85 = new System.Windows.Forms.Label();
-			this.label86 = new System.Windows.Forms.Label();
-			this.label87 = new System.Windows.Forms.Label();
-			this.label88 = new System.Windows.Forms.Label();
-			this.label89 = new System.Windows.Forms.Label();
-			this.label90 = new System.Windows.Forms.Label();
-			this.label91 = new System.Windows.Forms.Label();
-			this.label92 = new System.Windows.Forms.Label();
-			this.label93 = new System.Windows.Forms.Label();
-			this.label94 = new System.Windows.Forms.Label();
-			this.label95 = new System.Windows.Forms.Label();
-			this.label96 = new System.Windows.Forms.Label();
-			this.label97 = new System.Windows.Forms.Label();
-			this.label98 = new System.Windows.Forms.Label();
-			this.label99 = new System.Windows.Forms.Label();
-			this.label100 = new System.Windows.Forms.Label();
-			this.label101 = new System.Windows.Forms.Label();
-			this.label102 = new System.Windows.Forms.Label();
-			this.label103 = new System.Windows.Forms.Label();
-			this.label104 = new System.Windows.Forms.Label();
-			this.label105 = new System.Windows.Forms.Label();
-			this.label106 = new System.Windows.Forms.Label();
-			this.label107 = new System.Windows.Forms.Label();
-			this.label108 = new System.Windows.Forms.Label();
-			this.label109 = new System.Windows.Forms.Label();
-			this.label110 = new System.Windows.Forms.Label();
-			this.label111 = new System.Windows.Forms.Label();
-			this.label112 = new System.Windows.Forms.Label();
+			this.labelNumberOfTransitsForAstrometryMin = new System.Windows.Forms.Label();
+			this.labelGoodnessOfFitParameterMin = new System.Windows.Forms.Label();
+			this.labelHipparcosNumberMin = new System.Windows.Forms.Label();
+			this.labelMeanBtMagnitudeMin = new System.Windows.Forms.Label();
+			this.labelStandardErrorMeanBtMagnitudeMin = new System.Windows.Forms.Label();
+			this.labelMeanVtMagnitudeMin = new System.Windows.Forms.Label();
+			this.labelStandardErrorMeanVtMagnitudeMin = new System.Windows.Forms.Label();
+			this.labelSourceOfPhotometryMin = new System.Windows.Forms.Label();
+			this.labelJohnsonBvColorMin = new System.Windows.Forms.Label();
+			this.labelStandardErrorJohnsonBvColorMin = new System.Windows.Forms.Label();
+			this.labelAstrometricQualityFlagMin = new System.Windows.Forms.Label();
+			this.labelSignalToNoiseRatioOfTheStarImageMin = new System.Windows.Forms.Label();
+			this.labelSourceOfAstrometricDataMin = new System.Windows.Forms.Label();
+			this.labelNumberOfTransitsForPhotometryMin = new System.Windows.Forms.Label();
+			this.labelEstimateOfVtmagScatterMin = new System.Windows.Forms.Label();
+			this.labelVtmagAtMaximumMin = new System.Windows.Forms.Label();
+			this.labelVtmagAtMinimumMin = new System.Windows.Forms.Label();
+			this.labelKnownVariabilityFromGcvsNsvMin = new System.Windows.Forms.Label();
+			this.labelVariabilityFromTychoMin = new System.Windows.Forms.Label();
+			this.labelDuplicityFromTychoMin = new System.Windows.Forms.Label();
+			this.labelEpochPhotometryInAnnexMin = new System.Windows.Forms.Label();
+			this.labelCcdmComponentIdentifier = new System.Windows.Forms.Label();
+			this.labelPpmAndSupplementMin = new System.Windows.Forms.Label();
+			this.labelHdNumberMin = new System.Windows.Forms.Label();
+			this.labelBonnerDmMin = new System.Windows.Forms.Label();
+			this.labelCordobaDmMin = new System.Windows.Forms.Label();
+			this.labelCapePhotographicDmMin = new System.Windows.Forms.Label();
+			this.labelNotesMin = new System.Windows.Forms.Label();
+			this.labelNumberOfTransitsForAstrometryMax = new System.Windows.Forms.Label();
+			this.labelGoodnessOfFitParameterMax = new System.Windows.Forms.Label();
+			this.labelHipparcosNumberMax = new System.Windows.Forms.Label();
+			this.labelMeanBtMagnitudeMax = new System.Windows.Forms.Label();
+			this.labelStandardErrorMeanBtMagnitudeMax = new System.Windows.Forms.Label();
+			this.labelMeanVtMagnitudeMax = new System.Windows.Forms.Label();
+			this.labelStandardErrorMeanVtMagnitudeMax = new System.Windows.Forms.Label();
+			this.labelSourceOfPhotometryMax = new System.Windows.Forms.Label();
+			this.labelJohnsonBvColorMax = new System.Windows.Forms.Label();
+			this.labelStandardErrorJohnsonBvColorMax = new System.Windows.Forms.Label();
+			this.labelAstrometricQualityFlagMax = new System.Windows.Forms.Label();
+			this.labelSignalToNoiseRatioOfTheStarImageMax = new System.Windows.Forms.Label();
+			this.labelSourceOfAstrometricDataMax = new System.Windows.Forms.Label();
+			this.labelNumberOfTransitsForPhotometryMax = new System.Windows.Forms.Label();
+			this.labelEstimateOfVtmagScatterMax = new System.Windows.Forms.Label();
+			this.labelVtmagAtMaximumMax = new System.Windows.Forms.Label();
+			this.labelVtmagAtMinimumMax = new System.Windows.Forms.Label();
+			this.labelKnownVariabilityFromGcvsNsvMax = new System.Windows.Forms.Label();
+			this.labelVariabilityFromTychoMax = new System.Windows.Forms.Label();
+			this.labelDuplicityFromTychoMax = new System.Windows.Forms.Label();
+			this.labelEpochPhotometryInAnnexMax = new System.Windows.Forms.Label();
+			this.labelCcdmComponentIdentifierMax = new System.Windows.Forms.Label();
+			this.labelPpmAndSupplementMax = new System.Windows.Forms.Label();
+			this.labelHdNumberMax = new System.Windows.Forms.Label();
+			this.labelNotesMax = new System.Windows.Forms.Label();
+			this.labelCapePhotographicDmMax = new System.Windows.Forms.Label();
+			this.labelCordobaDmMax = new System.Windows.Forms.Label();
+			this.labelBonnerDmMax = new System.Windows.Forms.Label();
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin = new System.Windows.Forms.TextBox();
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin = new System.Windows.Forms.TextBox();
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin = new System.Windows.Forms.TextBox();
@@ -240,7 +240,7 @@
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax = new System.Windows.Forms.TextBox();
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax = new System.Windows.Forms.TextBox();
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax = new System.Windows.Forms.TextBox();
-			this.textBox33 = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax = new System.Windows.Forms.TextBox();
 			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax = new System.Windows.Forms.TextBox();
 			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax = new System.Windows.Forms.TextBox();
 			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax = new System.Windows.Forms.TextBox();
@@ -264,62 +264,62 @@
 			this.textBoxRightAscensionMax = new System.Windows.Forms.TextBox();
 			this.textBoxProximityFlagMax = new System.Windows.Forms.TextBox();
 			this.textBoxIdentifierMax = new System.Windows.Forms.TextBox();
-			this.textBox57 = new System.Windows.Forms.TextBox();
-			this.textBox58 = new System.Windows.Forms.TextBox();
-			this.textBox59 = new System.Windows.Forms.TextBox();
-			this.textBox60 = new System.Windows.Forms.TextBox();
-			this.textBox61 = new System.Windows.Forms.TextBox();
-			this.textBox62 = new System.Windows.Forms.TextBox();
-			this.textBox63 = new System.Windows.Forms.TextBox();
-			this.textBox64 = new System.Windows.Forms.TextBox();
-			this.textBox65 = new System.Windows.Forms.TextBox();
-			this.textBox66 = new System.Windows.Forms.TextBox();
-			this.textBox67 = new System.Windows.Forms.TextBox();
-			this.textBox68 = new System.Windows.Forms.TextBox();
-			this.textBox69 = new System.Windows.Forms.TextBox();
-			this.textBox70 = new System.Windows.Forms.TextBox();
-			this.textBox71 = new System.Windows.Forms.TextBox();
-			this.textBox72 = new System.Windows.Forms.TextBox();
-			this.textBox73 = new System.Windows.Forms.TextBox();
-			this.textBox74 = new System.Windows.Forms.TextBox();
-			this.textBox75 = new System.Windows.Forms.TextBox();
-			this.textBox76 = new System.Windows.Forms.TextBox();
-			this.textBox77 = new System.Windows.Forms.TextBox();
-			this.textBox78 = new System.Windows.Forms.TextBox();
-			this.textBox79 = new System.Windows.Forms.TextBox();
-			this.textBox80 = new System.Windows.Forms.TextBox();
-			this.textBox81 = new System.Windows.Forms.TextBox();
-			this.textBox82 = new System.Windows.Forms.TextBox();
-			this.textBox83 = new System.Windows.Forms.TextBox();
-			this.textBox84 = new System.Windows.Forms.TextBox();
-			this.textBox85 = new System.Windows.Forms.TextBox();
-			this.textBox86 = new System.Windows.Forms.TextBox();
-			this.textBox87 = new System.Windows.Forms.TextBox();
-			this.textBox88 = new System.Windows.Forms.TextBox();
-			this.textBox89 = new System.Windows.Forms.TextBox();
-			this.textBox90 = new System.Windows.Forms.TextBox();
-			this.textBox91 = new System.Windows.Forms.TextBox();
-			this.textBox92 = new System.Windows.Forms.TextBox();
-			this.textBox93 = new System.Windows.Forms.TextBox();
-			this.textBox94 = new System.Windows.Forms.TextBox();
-			this.textBox95 = new System.Windows.Forms.TextBox();
-			this.textBox96 = new System.Windows.Forms.TextBox();
-			this.textBox97 = new System.Windows.Forms.TextBox();
-			this.textBox98 = new System.Windows.Forms.TextBox();
-			this.textBox99 = new System.Windows.Forms.TextBox();
-			this.textBox100 = new System.Windows.Forms.TextBox();
-			this.textBox101 = new System.Windows.Forms.TextBox();
-			this.textBox102 = new System.Windows.Forms.TextBox();
-			this.textBox103 = new System.Windows.Forms.TextBox();
-			this.textBox104 = new System.Windows.Forms.TextBox();
-			this.textBox105 = new System.Windows.Forms.TextBox();
-			this.textBox106 = new System.Windows.Forms.TextBox();
-			this.textBox107 = new System.Windows.Forms.TextBox();
-			this.textBox108 = new System.Windows.Forms.TextBox();
-			this.textBox109 = new System.Windows.Forms.TextBox();
-			this.textBox110 = new System.Windows.Forms.TextBox();
-			this.textBox111 = new System.Windows.Forms.TextBox();
-			this.textBox112 = new System.Windows.Forms.TextBox();
+			this.textBoxNotesMin = new System.Windows.Forms.TextBox();
+			this.textBoxCapePhotographicDmMin = new System.Windows.Forms.TextBox();
+			this.textBoxCordobaDmMin = new System.Windows.Forms.TextBox();
+			this.textBoxBonnerDmMin = new System.Windows.Forms.TextBox();
+			this.textBoxHdNumberMin = new System.Windows.Forms.TextBox();
+			this.textBoxPpmAndSupplementMin = new System.Windows.Forms.TextBox();
+			this.textBoxCcdmComponentIdentifierMin = new System.Windows.Forms.TextBox();
+			this.textBoxEpochPhotometryInAnnexMin = new System.Windows.Forms.TextBox();
+			this.textBoxDuplicityFromTychoMin = new System.Windows.Forms.TextBox();
+			this.textBoxVariabilityFromTychoMin = new System.Windows.Forms.TextBox();
+			this.textBoxKnownVariabilityFromGcvsNsvMin = new System.Windows.Forms.TextBox();
+			this.textBoxVtmagAtMinimumMin = new System.Windows.Forms.TextBox();
+			this.textBoxVtmagAtMaximumMin = new System.Windows.Forms.TextBox();
+			this.textBoxEstimateOfVtmagScatterMin = new System.Windows.Forms.TextBox();
+			this.textBoxNumberOfTransitsForPhotometryMin = new System.Windows.Forms.TextBox();
+			this.textBoxSourceOfAstrometricDataMin = new System.Windows.Forms.TextBox();
+			this.textBoxSignalToNoiseRatioOfTheStarImageMin = new System.Windows.Forms.TextBox();
+			this.textBoxAstrometricQualityFlagMin = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorJohnsonBvColorMin = new System.Windows.Forms.TextBox();
+			this.textBoxJohnsonBvColorMin = new System.Windows.Forms.TextBox();
+			this.textBoxSourceOfPhotometryMin = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorMeanVtMagnitudeMin = new System.Windows.Forms.TextBox();
+			this.textBoxMeanVtMagnitudeMin = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorMeanBtMagnitudeMin = new System.Windows.Forms.TextBox();
+			this.textBoxMeanBtMagnitudeMin = new System.Windows.Forms.TextBox();
+			this.textBoxHipparcosNumberMin = new System.Windows.Forms.TextBox();
+			this.textBoxGoodnessOfFitParameterMin = new System.Windows.Forms.TextBox();
+			this.textBoxNumberOfTransitsForAstrometryMin = new System.Windows.Forms.TextBox();
+			this.textBoxNotesmax = new System.Windows.Forms.TextBox();
+			this.textBoxCapePhotographicDmMax = new System.Windows.Forms.TextBox();
+			this.textBoxCordobaDmMax = new System.Windows.Forms.TextBox();
+			this.textBoxBonnerDmMax = new System.Windows.Forms.TextBox();
+			this.textBoxHdNumberMax = new System.Windows.Forms.TextBox();
+			this.textBoxPpmAndSupplementMax = new System.Windows.Forms.TextBox();
+			this.textBoxCcdmComponentIdentifierMax = new System.Windows.Forms.TextBox();
+			this.textBoxEpochPhotometryInAnnexMax = new System.Windows.Forms.TextBox();
+			this.textBoxDuplicityFromTychoMax = new System.Windows.Forms.TextBox();
+			this.textBoxVariabilityFromTychoMax = new System.Windows.Forms.TextBox();
+			this.textBoxKnownVariabilityFromGcvsNsvMax = new System.Windows.Forms.TextBox();
+			this.textBoxVtmagAtMinimumMax = new System.Windows.Forms.TextBox();
+			this.textBoxVtmagAtMaximumMax = new System.Windows.Forms.TextBox();
+			this.textBoxEstimateOfVtmagScatterMax = new System.Windows.Forms.TextBox();
+			this.textBoxNumberOfTransitsForPhotometryMax = new System.Windows.Forms.TextBox();
+			this.textBoxSourceOfAstrometricDataMax = new System.Windows.Forms.TextBox();
+			this.textBoxSignalToNoiseRatioOfTheStarImageMax = new System.Windows.Forms.TextBox();
+			this.textBoxAstrometricQualityFlagMax = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorJohnsonBvColorMax = new System.Windows.Forms.TextBox();
+			this.textBoxJohnsonBvColorMax = new System.Windows.Forms.TextBox();
+			this.textBoxSourceOfPhotometryMax = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorMeanVtMagnitudeMax = new System.Windows.Forms.TextBox();
+			this.textBoxMeanVtMagnitudeMax = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorMeanBtMagnitudeMax = new System.Windows.Forms.TextBox();
+			this.textBoxMeanBtMagnitudeMax = new System.Windows.Forms.TextBox();
+			this.textBoxHipparcosNumberMax = new System.Windows.Forms.TextBox();
+			this.textBoxGoodnessOfFitParameterMax = new System.Windows.Forms.TextBox();
+			this.textBoxNumberOfTransitsForAstrometryMax = new System.Windows.Forms.TextBox();
 			this.toolStrip.SuspendLayout();
 			this.statusStrip.SuspendLayout();
 			this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
@@ -1461,62 +1461,62 @@
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax, 3, 25);
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByDeclinationMax, 3, 26);
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax, 3, 27);
-			this.tableLayoutPanel.Controls.Add(this.label57, 6, 0);
-			this.tableLayoutPanel.Controls.Add(this.label58, 6, 1);
-			this.tableLayoutPanel.Controls.Add(this.label59, 6, 2);
-			this.tableLayoutPanel.Controls.Add(this.label60, 6, 3);
-			this.tableLayoutPanel.Controls.Add(this.label61, 6, 4);
-			this.tableLayoutPanel.Controls.Add(this.label62, 6, 5);
-			this.tableLayoutPanel.Controls.Add(this.label63, 6, 6);
-			this.tableLayoutPanel.Controls.Add(this.label64, 6, 7);
-			this.tableLayoutPanel.Controls.Add(this.label65, 6, 8);
-			this.tableLayoutPanel.Controls.Add(this.label66, 6, 9);
-			this.tableLayoutPanel.Controls.Add(this.label67, 6, 10);
-			this.tableLayoutPanel.Controls.Add(this.label68, 6, 11);
-			this.tableLayoutPanel.Controls.Add(this.label69, 6, 12);
-			this.tableLayoutPanel.Controls.Add(this.label70, 6, 13);
-			this.tableLayoutPanel.Controls.Add(this.label71, 6, 14);
-			this.tableLayoutPanel.Controls.Add(this.label72, 6, 15);
-			this.tableLayoutPanel.Controls.Add(this.label73, 6, 16);
-			this.tableLayoutPanel.Controls.Add(this.label74, 6, 17);
-			this.tableLayoutPanel.Controls.Add(this.label75, 6, 18);
-			this.tableLayoutPanel.Controls.Add(this.label76, 6, 19);
-			this.tableLayoutPanel.Controls.Add(this.label77, 6, 20);
-			this.tableLayoutPanel.Controls.Add(this.label78, 6, 21);
-			this.tableLayoutPanel.Controls.Add(this.label79, 6, 22);
-			this.tableLayoutPanel.Controls.Add(this.label80, 6, 23);
-			this.tableLayoutPanel.Controls.Add(this.label81, 6, 24);
-			this.tableLayoutPanel.Controls.Add(this.label82, 6, 25);
-			this.tableLayoutPanel.Controls.Add(this.label83, 6, 26);
-			this.tableLayoutPanel.Controls.Add(this.label84, 6, 27);
-			this.tableLayoutPanel.Controls.Add(this.label85, 8, 0);
-			this.tableLayoutPanel.Controls.Add(this.label86, 8, 1);
-			this.tableLayoutPanel.Controls.Add(this.label87, 8, 2);
-			this.tableLayoutPanel.Controls.Add(this.label88, 8, 3);
-			this.tableLayoutPanel.Controls.Add(this.label89, 8, 4);
-			this.tableLayoutPanel.Controls.Add(this.label90, 8, 5);
-			this.tableLayoutPanel.Controls.Add(this.label91, 8, 6);
-			this.tableLayoutPanel.Controls.Add(this.label92, 8, 7);
-			this.tableLayoutPanel.Controls.Add(this.label93, 8, 8);
-			this.tableLayoutPanel.Controls.Add(this.label94, 8, 9);
-			this.tableLayoutPanel.Controls.Add(this.label95, 8, 10);
-			this.tableLayoutPanel.Controls.Add(this.label96, 8, 11);
-			this.tableLayoutPanel.Controls.Add(this.label97, 8, 12);
-			this.tableLayoutPanel.Controls.Add(this.label98, 8, 13);
-			this.tableLayoutPanel.Controls.Add(this.label99, 8, 14);
-			this.tableLayoutPanel.Controls.Add(this.label100, 8, 15);
-			this.tableLayoutPanel.Controls.Add(this.label101, 8, 16);
-			this.tableLayoutPanel.Controls.Add(this.label102, 8, 17);
-			this.tableLayoutPanel.Controls.Add(this.label103, 8, 18);
-			this.tableLayoutPanel.Controls.Add(this.label104, 8, 19);
-			this.tableLayoutPanel.Controls.Add(this.label105, 8, 20);
-			this.tableLayoutPanel.Controls.Add(this.label106, 8, 21);
-			this.tableLayoutPanel.Controls.Add(this.label107, 8, 22);
-			this.tableLayoutPanel.Controls.Add(this.label108, 8, 23);
-			this.tableLayoutPanel.Controls.Add(this.label109, 8, 27);
-			this.tableLayoutPanel.Controls.Add(this.label110, 8, 26);
-			this.tableLayoutPanel.Controls.Add(this.label111, 8, 25);
-			this.tableLayoutPanel.Controls.Add(this.label112, 8, 24);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberOfTransitsForAstrometryMin, 6, 0);
+			this.tableLayoutPanel.Controls.Add(this.labelGoodnessOfFitParameterMin, 6, 1);
+			this.tableLayoutPanel.Controls.Add(this.labelHipparcosNumberMin, 6, 2);
+			this.tableLayoutPanel.Controls.Add(this.labelMeanBtMagnitudeMin, 6, 3);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanBtMagnitudeMin, 6, 4);
+			this.tableLayoutPanel.Controls.Add(this.labelMeanVtMagnitudeMin, 6, 5);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanVtMagnitudeMin, 6, 6);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfPhotometryMin, 6, 7);
+			this.tableLayoutPanel.Controls.Add(this.labelJohnsonBvColorMin, 6, 8);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorJohnsonBvColorMin, 6, 9);
+			this.tableLayoutPanel.Controls.Add(this.labelAstrometricQualityFlagMin, 6, 10);
+			this.tableLayoutPanel.Controls.Add(this.labelSignalToNoiseRatioOfTheStarImageMin, 6, 11);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfAstrometricDataMin, 6, 12);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberOfTransitsForPhotometryMin, 6, 13);
+			this.tableLayoutPanel.Controls.Add(this.labelEstimateOfVtmagScatterMin, 6, 14);
+			this.tableLayoutPanel.Controls.Add(this.labelVtmagAtMaximumMin, 6, 15);
+			this.tableLayoutPanel.Controls.Add(this.labelVtmagAtMinimumMin, 6, 16);
+			this.tableLayoutPanel.Controls.Add(this.labelKnownVariabilityFromGcvsNsvMin, 6, 17);
+			this.tableLayoutPanel.Controls.Add(this.labelVariabilityFromTychoMin, 6, 18);
+			this.tableLayoutPanel.Controls.Add(this.labelDuplicityFromTychoMin, 6, 19);
+			this.tableLayoutPanel.Controls.Add(this.labelEpochPhotometryInAnnexMin, 6, 20);
+			this.tableLayoutPanel.Controls.Add(this.labelCcdmComponentIdentifier, 6, 21);
+			this.tableLayoutPanel.Controls.Add(this.labelPpmAndSupplementMin, 6, 22);
+			this.tableLayoutPanel.Controls.Add(this.labelHdNumberMin, 6, 23);
+			this.tableLayoutPanel.Controls.Add(this.labelBonnerDmMin, 6, 24);
+			this.tableLayoutPanel.Controls.Add(this.labelCordobaDmMin, 6, 25);
+			this.tableLayoutPanel.Controls.Add(this.labelCapePhotographicDmMin, 6, 26);
+			this.tableLayoutPanel.Controls.Add(this.labelNotesMin, 6, 27);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberOfTransitsForAstrometryMax, 8, 0);
+			this.tableLayoutPanel.Controls.Add(this.labelGoodnessOfFitParameterMax, 8, 1);
+			this.tableLayoutPanel.Controls.Add(this.labelHipparcosNumberMax, 8, 2);
+			this.tableLayoutPanel.Controls.Add(this.labelMeanBtMagnitudeMax, 8, 3);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanBtMagnitudeMax, 8, 4);
+			this.tableLayoutPanel.Controls.Add(this.labelMeanVtMagnitudeMax, 8, 5);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanVtMagnitudeMax, 8, 6);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfPhotometryMax, 8, 7);
+			this.tableLayoutPanel.Controls.Add(this.labelJohnsonBvColorMax, 8, 8);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorJohnsonBvColorMax, 8, 9);
+			this.tableLayoutPanel.Controls.Add(this.labelAstrometricQualityFlagMax, 8, 10);
+			this.tableLayoutPanel.Controls.Add(this.labelSignalToNoiseRatioOfTheStarImageMax, 8, 11);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfAstrometricDataMax, 8, 12);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberOfTransitsForPhotometryMax, 8, 13);
+			this.tableLayoutPanel.Controls.Add(this.labelEstimateOfVtmagScatterMax, 8, 14);
+			this.tableLayoutPanel.Controls.Add(this.labelVtmagAtMaximumMax, 8, 15);
+			this.tableLayoutPanel.Controls.Add(this.labelVtmagAtMinimumMax, 8, 16);
+			this.tableLayoutPanel.Controls.Add(this.labelKnownVariabilityFromGcvsNsvMax, 8, 17);
+			this.tableLayoutPanel.Controls.Add(this.labelVariabilityFromTychoMax, 8, 18);
+			this.tableLayoutPanel.Controls.Add(this.labelDuplicityFromTychoMax, 8, 19);
+			this.tableLayoutPanel.Controls.Add(this.labelEpochPhotometryInAnnexMax, 8, 20);
+			this.tableLayoutPanel.Controls.Add(this.labelCcdmComponentIdentifierMax, 8, 21);
+			this.tableLayoutPanel.Controls.Add(this.labelPpmAndSupplementMax, 8, 22);
+			this.tableLayoutPanel.Controls.Add(this.labelHdNumberMax, 8, 23);
+			this.tableLayoutPanel.Controls.Add(this.labelNotesMax, 8, 27);
+			this.tableLayoutPanel.Controls.Add(this.labelCapePhotographicDmMax, 8, 26);
+			this.tableLayoutPanel.Controls.Add(this.labelCordobaDmMax, 8, 25);
+			this.tableLayoutPanel.Controls.Add(this.labelBonnerDmMax, 8, 24);
 			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin, 2, 27);
 			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByDeclinationMin, 2, 26);
 			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin, 2, 25);
@@ -1549,7 +1549,7 @@
 			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax, 4, 27);
 			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByDeclinationMax, 4, 26);
 			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax, 4, 25);
-			this.tableLayoutPanel.Controls.Add(this.textBox33, 4, 24);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax, 4, 24);
 			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax, 4, 23);
 			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax, 4, 22);
 			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax, 4, 21);
@@ -1573,62 +1573,62 @@
 			this.tableLayoutPanel.Controls.Add(this.textBoxRightAscensionMax, 4, 3);
 			this.tableLayoutPanel.Controls.Add(this.textBoxProximityFlagMax, 4, 2);
 			this.tableLayoutPanel.Controls.Add(this.textBoxIdentifierMax, 4, 1);
-			this.tableLayoutPanel.Controls.Add(this.textBox57, 7, 27);
-			this.tableLayoutPanel.Controls.Add(this.textBox58, 7, 26);
-			this.tableLayoutPanel.Controls.Add(this.textBox59, 7, 25);
-			this.tableLayoutPanel.Controls.Add(this.textBox60, 7, 24);
-			this.tableLayoutPanel.Controls.Add(this.textBox61, 7, 23);
-			this.tableLayoutPanel.Controls.Add(this.textBox62, 7, 22);
-			this.tableLayoutPanel.Controls.Add(this.textBox63, 7, 21);
-			this.tableLayoutPanel.Controls.Add(this.textBox64, 7, 20);
-			this.tableLayoutPanel.Controls.Add(this.textBox65, 7, 19);
-			this.tableLayoutPanel.Controls.Add(this.textBox66, 7, 18);
-			this.tableLayoutPanel.Controls.Add(this.textBox67, 7, 17);
-			this.tableLayoutPanel.Controls.Add(this.textBox68, 7, 16);
-			this.tableLayoutPanel.Controls.Add(this.textBox69, 7, 15);
-			this.tableLayoutPanel.Controls.Add(this.textBox70, 7, 14);
-			this.tableLayoutPanel.Controls.Add(this.textBox71, 7, 13);
-			this.tableLayoutPanel.Controls.Add(this.textBox72, 7, 12);
-			this.tableLayoutPanel.Controls.Add(this.textBox73, 7, 11);
-			this.tableLayoutPanel.Controls.Add(this.textBox74, 7, 10);
-			this.tableLayoutPanel.Controls.Add(this.textBox75, 7, 9);
-			this.tableLayoutPanel.Controls.Add(this.textBox76, 7, 8);
-			this.tableLayoutPanel.Controls.Add(this.textBox77, 7, 7);
-			this.tableLayoutPanel.Controls.Add(this.textBox78, 7, 6);
-			this.tableLayoutPanel.Controls.Add(this.textBox79, 7, 5);
-			this.tableLayoutPanel.Controls.Add(this.textBox80, 7, 4);
-			this.tableLayoutPanel.Controls.Add(this.textBox81, 7, 3);
-			this.tableLayoutPanel.Controls.Add(this.textBox82, 7, 2);
-			this.tableLayoutPanel.Controls.Add(this.textBox83, 7, 1);
-			this.tableLayoutPanel.Controls.Add(this.textBox84, 7, 0);
-			this.tableLayoutPanel.Controls.Add(this.textBox85, 9, 27);
-			this.tableLayoutPanel.Controls.Add(this.textBox86, 9, 26);
-			this.tableLayoutPanel.Controls.Add(this.textBox87, 9, 25);
-			this.tableLayoutPanel.Controls.Add(this.textBox88, 9, 24);
-			this.tableLayoutPanel.Controls.Add(this.textBox89, 9, 23);
-			this.tableLayoutPanel.Controls.Add(this.textBox90, 9, 22);
-			this.tableLayoutPanel.Controls.Add(this.textBox91, 9, 21);
-			this.tableLayoutPanel.Controls.Add(this.textBox92, 9, 20);
-			this.tableLayoutPanel.Controls.Add(this.textBox93, 9, 19);
-			this.tableLayoutPanel.Controls.Add(this.textBox94, 9, 18);
-			this.tableLayoutPanel.Controls.Add(this.textBox95, 9, 17);
-			this.tableLayoutPanel.Controls.Add(this.textBox96, 9, 16);
-			this.tableLayoutPanel.Controls.Add(this.textBox97, 9, 15);
-			this.tableLayoutPanel.Controls.Add(this.textBox98, 9, 14);
-			this.tableLayoutPanel.Controls.Add(this.textBox99, 9, 13);
-			this.tableLayoutPanel.Controls.Add(this.textBox100, 9, 12);
-			this.tableLayoutPanel.Controls.Add(this.textBox101, 9, 11);
-			this.tableLayoutPanel.Controls.Add(this.textBox102, 9, 10);
-			this.tableLayoutPanel.Controls.Add(this.textBox103, 9, 9);
-			this.tableLayoutPanel.Controls.Add(this.textBox104, 9, 8);
-			this.tableLayoutPanel.Controls.Add(this.textBox105, 9, 7);
-			this.tableLayoutPanel.Controls.Add(this.textBox106, 9, 6);
-			this.tableLayoutPanel.Controls.Add(this.textBox107, 9, 5);
-			this.tableLayoutPanel.Controls.Add(this.textBox108, 9, 4);
-			this.tableLayoutPanel.Controls.Add(this.textBox109, 9, 3);
-			this.tableLayoutPanel.Controls.Add(this.textBox110, 9, 2);
-			this.tableLayoutPanel.Controls.Add(this.textBox111, 9, 1);
-			this.tableLayoutPanel.Controls.Add(this.textBox112, 9, 0);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNotesMin, 7, 27);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCapePhotographicDmMin, 7, 26);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCordobaDmMin, 7, 25);
+			this.tableLayoutPanel.Controls.Add(this.textBoxBonnerDmMin, 7, 24);
+			this.tableLayoutPanel.Controls.Add(this.textBoxHdNumberMin, 7, 23);
+			this.tableLayoutPanel.Controls.Add(this.textBoxPpmAndSupplementMin, 7, 22);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCcdmComponentIdentifierMin, 7, 21);
+			this.tableLayoutPanel.Controls.Add(this.textBoxEpochPhotometryInAnnexMin, 7, 20);
+			this.tableLayoutPanel.Controls.Add(this.textBoxDuplicityFromTychoMin, 7, 19);
+			this.tableLayoutPanel.Controls.Add(this.textBoxVariabilityFromTychoMin, 7, 18);
+			this.tableLayoutPanel.Controls.Add(this.textBoxKnownVariabilityFromGcvsNsvMin, 7, 17);
+			this.tableLayoutPanel.Controls.Add(this.textBoxVtmagAtMinimumMin, 7, 16);
+			this.tableLayoutPanel.Controls.Add(this.textBoxVtmagAtMaximumMin, 7, 15);
+			this.tableLayoutPanel.Controls.Add(this.textBoxEstimateOfVtmagScatterMin, 7, 14);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNumberOfTransitsForPhotometryMin, 7, 13);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfAstrometricDataMin, 7, 12);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSignalToNoiseRatioOfTheStarImageMin, 7, 11);
+			this.tableLayoutPanel.Controls.Add(this.textBoxAstrometricQualityFlagMin, 7, 10);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorJohnsonBvColorMin, 7, 9);
+			this.tableLayoutPanel.Controls.Add(this.textBoxJohnsonBvColorMin, 7, 8);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfPhotometryMin, 7, 7);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMeanVtMagnitudeMin, 7, 6);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMeanVtMagnitudeMin, 7, 5);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMeanBtMagnitudeMin, 7, 4);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMeanBtMagnitudeMin, 7, 3);
+			this.tableLayoutPanel.Controls.Add(this.textBoxHipparcosNumberMin, 7, 2);
+			this.tableLayoutPanel.Controls.Add(this.textBoxGoodnessOfFitParameterMin, 7, 1);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNumberOfTransitsForAstrometryMin, 7, 0);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNotesmax, 9, 27);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCapePhotographicDmMax, 9, 26);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCordobaDmMax, 9, 25);
+			this.tableLayoutPanel.Controls.Add(this.textBoxBonnerDmMax, 9, 24);
+			this.tableLayoutPanel.Controls.Add(this.textBoxHdNumberMax, 9, 23);
+			this.tableLayoutPanel.Controls.Add(this.textBoxPpmAndSupplementMax, 9, 22);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCcdmComponentIdentifierMax, 9, 21);
+			this.tableLayoutPanel.Controls.Add(this.textBoxEpochPhotometryInAnnexMax, 9, 20);
+			this.tableLayoutPanel.Controls.Add(this.textBoxDuplicityFromTychoMax, 9, 19);
+			this.tableLayoutPanel.Controls.Add(this.textBoxVariabilityFromTychoMax, 9, 18);
+			this.tableLayoutPanel.Controls.Add(this.textBoxKnownVariabilityFromGcvsNsvMax, 9, 17);
+			this.tableLayoutPanel.Controls.Add(this.textBoxVtmagAtMinimumMax, 9, 16);
+			this.tableLayoutPanel.Controls.Add(this.textBoxVtmagAtMaximumMax, 9, 15);
+			this.tableLayoutPanel.Controls.Add(this.textBoxEstimateOfVtmagScatterMax, 9, 14);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNumberOfTransitsForPhotometryMax, 9, 13);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfAstrometricDataMax, 9, 12);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSignalToNoiseRatioOfTheStarImageMax, 9, 11);
+			this.tableLayoutPanel.Controls.Add(this.textBoxAstrometricQualityFlagMax, 9, 10);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorJohnsonBvColorMax, 9, 9);
+			this.tableLayoutPanel.Controls.Add(this.textBoxJohnsonBvColorMax, 9, 8);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfPhotometryMax, 9, 7);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMeanVtMagnitudeMax, 9, 6);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMeanVtMagnitudeMax, 9, 5);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMeanBtMagnitudeMax, 9, 4);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMeanBtMagnitudeMax, 9, 3);
+			this.tableLayoutPanel.Controls.Add(this.textBoxHipparcosNumberMax, 9, 2);
+			this.tableLayoutPanel.Controls.Add(this.textBoxGoodnessOfFitParameterMax, 9, 1);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNumberOfTransitsForAstrometryMax, 9, 0);
 			this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel.Name = "tableLayoutPanel";
@@ -2392,733 +2392,733 @@
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Text = "max.:";
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
-			// label57
-			// 
-			this.label57.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label57.AutoSize = true;
-			this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label57.Location = new System.Drawing.Point(590, 0);
-			this.label57.Margin = new System.Windows.Forms.Padding(0);
-			this.label57.Name = "label57";
-			this.label57.Size = new System.Drawing.Size(35, 18);
-			this.label57.TabIndex = 6;
-			this.label57.Text = "min.:";
-			this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label58
-			// 
-			this.label58.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label58.AutoSize = true;
-			this.label58.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label58.Location = new System.Drawing.Point(590, 18);
-			this.label58.Margin = new System.Windows.Forms.Padding(0);
-			this.label58.Name = "label58";
-			this.label58.Size = new System.Drawing.Size(35, 18);
-			this.label58.TabIndex = 16;
-			this.label58.Text = "min.:";
-			this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label59
-			// 
-			this.label59.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label59.AutoSize = true;
-			this.label59.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label59.Location = new System.Drawing.Point(590, 36);
-			this.label59.Margin = new System.Windows.Forms.Padding(0);
-			this.label59.Name = "label59";
-			this.label59.Size = new System.Drawing.Size(35, 18);
-			this.label59.TabIndex = 26;
-			this.label59.Text = "min.:";
-			this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label60
-			// 
-			this.label60.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label60.AutoSize = true;
-			this.label60.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label60.Location = new System.Drawing.Point(590, 54);
-			this.label60.Margin = new System.Windows.Forms.Padding(0);
-			this.label60.Name = "label60";
-			this.label60.Size = new System.Drawing.Size(35, 18);
-			this.label60.TabIndex = 36;
-			this.label60.Text = "min.:";
-			this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label61
-			// 
-			this.label61.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label61.AutoSize = true;
-			this.label61.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label61.Location = new System.Drawing.Point(590, 72);
-			this.label61.Margin = new System.Windows.Forms.Padding(0);
-			this.label61.Name = "label61";
-			this.label61.Size = new System.Drawing.Size(35, 18);
-			this.label61.TabIndex = 46;
-			this.label61.Text = "min.:";
-			this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label62
-			// 
-			this.label62.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label62.AutoSize = true;
-			this.label62.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label62.Location = new System.Drawing.Point(590, 90);
-			this.label62.Margin = new System.Windows.Forms.Padding(0);
-			this.label62.Name = "label62";
-			this.label62.Size = new System.Drawing.Size(35, 18);
-			this.label62.TabIndex = 56;
-			this.label62.Text = "min.:";
-			this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label63
-			// 
-			this.label63.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label63.AutoSize = true;
-			this.label63.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label63.Location = new System.Drawing.Point(590, 108);
-			this.label63.Margin = new System.Windows.Forms.Padding(0);
-			this.label63.Name = "label63";
-			this.label63.Size = new System.Drawing.Size(35, 18);
-			this.label63.TabIndex = 77;
-			this.label63.Text = "min.:";
-			this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label64
-			// 
-			this.label64.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label64.AutoSize = true;
-			this.label64.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label64.Location = new System.Drawing.Point(590, 126);
-			this.label64.Margin = new System.Windows.Forms.Padding(0);
-			this.label64.Name = "label64";
-			this.label64.Size = new System.Drawing.Size(35, 18);
-			this.label64.TabIndex = 87;
-			this.label64.Text = "min.:";
-			this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label65
-			// 
-			this.label65.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label65.AutoSize = true;
-			this.label65.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label65.Location = new System.Drawing.Point(590, 144);
-			this.label65.Margin = new System.Windows.Forms.Padding(0);
-			this.label65.Name = "label65";
-			this.label65.Size = new System.Drawing.Size(35, 18);
-			this.label65.TabIndex = 97;
-			this.label65.Text = "min.:";
-			this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label66
-			// 
-			this.label66.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label66.AutoSize = true;
-			this.label66.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label66.Location = new System.Drawing.Point(590, 162);
-			this.label66.Margin = new System.Windows.Forms.Padding(0);
-			this.label66.Name = "label66";
-			this.label66.Size = new System.Drawing.Size(35, 18);
-			this.label66.TabIndex = 107;
-			this.label66.Text = "min.:";
-			this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label67
-			// 
-			this.label67.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label67.AutoSize = true;
-			this.label67.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label67.Location = new System.Drawing.Point(590, 180);
-			this.label67.Margin = new System.Windows.Forms.Padding(0);
-			this.label67.Name = "label67";
-			this.label67.Size = new System.Drawing.Size(35, 18);
-			this.label67.TabIndex = 117;
-			this.label67.Text = "min.:";
-			this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label68
-			// 
-			this.label68.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label68.AutoSize = true;
-			this.label68.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label68.Location = new System.Drawing.Point(590, 198);
-			this.label68.Margin = new System.Windows.Forms.Padding(0);
-			this.label68.Name = "label68";
-			this.label68.Size = new System.Drawing.Size(35, 18);
-			this.label68.TabIndex = 127;
-			this.label68.Text = "min.:";
-			this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label69
-			// 
-			this.label69.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label69.AutoSize = true;
-			this.label69.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label69.Location = new System.Drawing.Point(590, 216);
-			this.label69.Margin = new System.Windows.Forms.Padding(0);
-			this.label69.Name = "label69";
-			this.label69.Size = new System.Drawing.Size(35, 18);
-			this.label69.TabIndex = 137;
-			this.label69.Text = "min.:";
-			this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label70
-			// 
-			this.label70.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label70.AutoSize = true;
-			this.label70.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label70.Location = new System.Drawing.Point(590, 234);
-			this.label70.Margin = new System.Windows.Forms.Padding(0);
-			this.label70.Name = "label70";
-			this.label70.Size = new System.Drawing.Size(35, 18);
-			this.label70.TabIndex = 147;
-			this.label70.Text = "min.:";
-			this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label71
-			// 
-			this.label71.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label71.AutoSize = true;
-			this.label71.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label71.Location = new System.Drawing.Point(590, 252);
-			this.label71.Margin = new System.Windows.Forms.Padding(0);
-			this.label71.Name = "label71";
-			this.label71.Size = new System.Drawing.Size(35, 18);
-			this.label71.TabIndex = 157;
-			this.label71.Text = "min.:";
-			this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label72
-			// 
-			this.label72.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label72.AutoSize = true;
-			this.label72.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label72.Location = new System.Drawing.Point(590, 270);
-			this.label72.Margin = new System.Windows.Forms.Padding(0);
-			this.label72.Name = "label72";
-			this.label72.Size = new System.Drawing.Size(35, 18);
-			this.label72.TabIndex = 167;
-			this.label72.Text = "min.:";
-			this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label73
-			// 
-			this.label73.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label73.AutoSize = true;
-			this.label73.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label73.Location = new System.Drawing.Point(590, 288);
-			this.label73.Margin = new System.Windows.Forms.Padding(0);
-			this.label73.Name = "label73";
-			this.label73.Size = new System.Drawing.Size(35, 18);
-			this.label73.TabIndex = 177;
-			this.label73.Text = "min.:";
-			this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label74
-			// 
-			this.label74.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label74.AutoSize = true;
-			this.label74.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label74.Location = new System.Drawing.Point(590, 306);
-			this.label74.Margin = new System.Windows.Forms.Padding(0);
-			this.label74.Name = "label74";
-			this.label74.Size = new System.Drawing.Size(35, 18);
-			this.label74.TabIndex = 187;
-			this.label74.Text = "min.:";
-			this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label75
-			// 
-			this.label75.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label75.AutoSize = true;
-			this.label75.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label75.Location = new System.Drawing.Point(590, 324);
-			this.label75.Margin = new System.Windows.Forms.Padding(0);
-			this.label75.Name = "label75";
-			this.label75.Size = new System.Drawing.Size(35, 18);
-			this.label75.TabIndex = 197;
-			this.label75.Text = "min.:";
-			this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label76
-			// 
-			this.label76.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label76.AutoSize = true;
-			this.label76.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label76.Location = new System.Drawing.Point(590, 342);
-			this.label76.Margin = new System.Windows.Forms.Padding(0);
-			this.label76.Name = "label76";
-			this.label76.Size = new System.Drawing.Size(35, 18);
-			this.label76.TabIndex = 214;
-			this.label76.Text = "min.:";
-			this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label77
-			// 
-			this.label77.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label77.AutoSize = true;
-			this.label77.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label77.Location = new System.Drawing.Point(590, 360);
-			this.label77.Margin = new System.Windows.Forms.Padding(0);
-			this.label77.Name = "label77";
-			this.label77.Size = new System.Drawing.Size(35, 18);
-			this.label77.TabIndex = 224;
-			this.label77.Text = "min.:";
-			this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label78
-			// 
-			this.label78.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label78.AutoSize = true;
-			this.label78.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label78.Location = new System.Drawing.Point(590, 378);
-			this.label78.Margin = new System.Windows.Forms.Padding(0);
-			this.label78.Name = "label78";
-			this.label78.Size = new System.Drawing.Size(35, 18);
-			this.label78.TabIndex = 235;
-			this.label78.Text = "min.:";
-			this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label79
-			// 
-			this.label79.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label79.AutoSize = true;
-			this.label79.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label79.Location = new System.Drawing.Point(590, 396);
-			this.label79.Margin = new System.Windows.Forms.Padding(0);
-			this.label79.Name = "label79";
-			this.label79.Size = new System.Drawing.Size(35, 18);
-			this.label79.TabIndex = 245;
-			this.label79.Text = "min.:";
-			this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label80
-			// 
-			this.label80.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label80.AutoSize = true;
-			this.label80.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label80.Location = new System.Drawing.Point(590, 414);
-			this.label80.Margin = new System.Windows.Forms.Padding(0);
-			this.label80.Name = "label80";
-			this.label80.Size = new System.Drawing.Size(35, 18);
-			this.label80.TabIndex = 255;
-			this.label80.Text = "min.:";
-			this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label81
-			// 
-			this.label81.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label81.AutoSize = true;
-			this.label81.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label81.Location = new System.Drawing.Point(590, 432);
-			this.label81.Margin = new System.Windows.Forms.Padding(0);
-			this.label81.Name = "label81";
-			this.label81.Size = new System.Drawing.Size(35, 18);
-			this.label81.TabIndex = 265;
-			this.label81.Text = "min.:";
-			this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label82
-			// 
-			this.label82.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label82.AutoSize = true;
-			this.label82.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label82.Location = new System.Drawing.Point(590, 450);
-			this.label82.Margin = new System.Windows.Forms.Padding(0);
-			this.label82.Name = "label82";
-			this.label82.Size = new System.Drawing.Size(35, 18);
-			this.label82.TabIndex = 276;
-			this.label82.Text = "min.:";
-			this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label83
-			// 
-			this.label83.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label83.AutoSize = true;
-			this.label83.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label83.Location = new System.Drawing.Point(590, 468);
-			this.label83.Margin = new System.Windows.Forms.Padding(0);
-			this.label83.Name = "label83";
-			this.label83.Size = new System.Drawing.Size(35, 18);
-			this.label83.TabIndex = 7;
-			this.label83.Text = "min.:";
-			this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label84
-			// 
-			this.label84.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label84.AutoSize = true;
-			this.label84.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label84.Location = new System.Drawing.Point(590, 486);
-			this.label84.Margin = new System.Windows.Forms.Padding(0);
-			this.label84.Name = "label84";
-			this.label84.Size = new System.Drawing.Size(35, 19);
-			this.label84.TabIndex = 17;
-			this.label84.Text = "min.:";
-			this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label85
-			// 
-			this.label85.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label85.AutoSize = true;
-			this.label85.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label85.Location = new System.Drawing.Point(675, 0);
-			this.label85.Margin = new System.Windows.Forms.Padding(0);
-			this.label85.Name = "label85";
-			this.label85.Size = new System.Drawing.Size(35, 18);
-			this.label85.TabIndex = 8;
-			this.label85.Text = "max.:";
-			this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label86
-			// 
-			this.label86.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label86.AutoSize = true;
-			this.label86.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label86.Location = new System.Drawing.Point(675, 18);
-			this.label86.Margin = new System.Windows.Forms.Padding(0);
-			this.label86.Name = "label86";
-			this.label86.Size = new System.Drawing.Size(35, 18);
-			this.label86.TabIndex = 18;
-			this.label86.Text = "max.:";
-			this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label87
-			// 
-			this.label87.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label87.AutoSize = true;
-			this.label87.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label87.Location = new System.Drawing.Point(675, 36);
-			this.label87.Margin = new System.Windows.Forms.Padding(0);
-			this.label87.Name = "label87";
-			this.label87.Size = new System.Drawing.Size(35, 18);
-			this.label87.TabIndex = 28;
-			this.label87.Text = "max.:";
-			this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label88
-			// 
-			this.label88.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label88.AutoSize = true;
-			this.label88.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label88.Location = new System.Drawing.Point(675, 54);
-			this.label88.Margin = new System.Windows.Forms.Padding(0);
-			this.label88.Name = "label88";
-			this.label88.Size = new System.Drawing.Size(35, 18);
-			this.label88.TabIndex = 38;
-			this.label88.Text = "max.:";
-			this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label89
-			// 
-			this.label89.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label89.AutoSize = true;
-			this.label89.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label89.Location = new System.Drawing.Point(675, 72);
-			this.label89.Margin = new System.Windows.Forms.Padding(0);
-			this.label89.Name = "label89";
-			this.label89.Size = new System.Drawing.Size(35, 18);
-			this.label89.TabIndex = 48;
-			this.label89.Text = "max.:";
-			this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label90
-			// 
-			this.label90.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label90.AutoSize = true;
-			this.label90.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label90.Location = new System.Drawing.Point(675, 90);
-			this.label90.Margin = new System.Windows.Forms.Padding(0);
-			this.label90.Name = "label90";
-			this.label90.Size = new System.Drawing.Size(35, 18);
-			this.label90.TabIndex = 58;
-			this.label90.Text = "max.:";
-			this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label91
-			// 
-			this.label91.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label91.AutoSize = true;
-			this.label91.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label91.Location = new System.Drawing.Point(675, 108);
-			this.label91.Margin = new System.Windows.Forms.Padding(0);
-			this.label91.Name = "label91";
-			this.label91.Size = new System.Drawing.Size(35, 18);
-			this.label91.TabIndex = 79;
-			this.label91.Text = "max.:";
-			this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label92
-			// 
-			this.label92.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label92.AutoSize = true;
-			this.label92.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label92.Location = new System.Drawing.Point(675, 126);
-			this.label92.Margin = new System.Windows.Forms.Padding(0);
-			this.label92.Name = "label92";
-			this.label92.Size = new System.Drawing.Size(35, 18);
-			this.label92.TabIndex = 89;
-			this.label92.Text = "max.:";
-			this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label93
-			// 
-			this.label93.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label93.AutoSize = true;
-			this.label93.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label93.Location = new System.Drawing.Point(675, 144);
-			this.label93.Margin = new System.Windows.Forms.Padding(0);
-			this.label93.Name = "label93";
-			this.label93.Size = new System.Drawing.Size(35, 18);
-			this.label93.TabIndex = 99;
-			this.label93.Text = "max.:";
-			this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label94
-			// 
-			this.label94.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label94.AutoSize = true;
-			this.label94.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label94.Location = new System.Drawing.Point(675, 162);
-			this.label94.Margin = new System.Windows.Forms.Padding(0);
-			this.label94.Name = "label94";
-			this.label94.Size = new System.Drawing.Size(35, 18);
-			this.label94.TabIndex = 109;
-			this.label94.Text = "max.:";
-			this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label95
-			// 
-			this.label95.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label95.AutoSize = true;
-			this.label95.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label95.Location = new System.Drawing.Point(675, 180);
-			this.label95.Margin = new System.Windows.Forms.Padding(0);
-			this.label95.Name = "label95";
-			this.label95.Size = new System.Drawing.Size(35, 18);
-			this.label95.TabIndex = 119;
-			this.label95.Text = "max.:";
-			this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label96
-			// 
-			this.label96.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label96.AutoSize = true;
-			this.label96.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label96.Location = new System.Drawing.Point(675, 198);
-			this.label96.Margin = new System.Windows.Forms.Padding(0);
-			this.label96.Name = "label96";
-			this.label96.Size = new System.Drawing.Size(35, 18);
-			this.label96.TabIndex = 129;
-			this.label96.Text = "max.:";
-			this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label97
-			// 
-			this.label97.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label97.AutoSize = true;
-			this.label97.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label97.Location = new System.Drawing.Point(675, 216);
-			this.label97.Margin = new System.Windows.Forms.Padding(0);
-			this.label97.Name = "label97";
-			this.label97.Size = new System.Drawing.Size(35, 18);
-			this.label97.TabIndex = 139;
-			this.label97.Text = "max.:";
-			this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label98
-			// 
-			this.label98.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label98.AutoSize = true;
-			this.label98.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label98.Location = new System.Drawing.Point(675, 234);
-			this.label98.Margin = new System.Windows.Forms.Padding(0);
-			this.label98.Name = "label98";
-			this.label98.Size = new System.Drawing.Size(35, 18);
-			this.label98.TabIndex = 149;
-			this.label98.Text = "max.:";
-			this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label99
-			// 
-			this.label99.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label99.AutoSize = true;
-			this.label99.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label99.Location = new System.Drawing.Point(675, 252);
-			this.label99.Margin = new System.Windows.Forms.Padding(0);
-			this.label99.Name = "label99";
-			this.label99.Size = new System.Drawing.Size(35, 18);
-			this.label99.TabIndex = 159;
-			this.label99.Text = "max.:";
-			this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label100
-			// 
-			this.label100.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label100.AutoSize = true;
-			this.label100.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label100.Location = new System.Drawing.Point(675, 270);
-			this.label100.Margin = new System.Windows.Forms.Padding(0);
-			this.label100.Name = "label100";
-			this.label100.Size = new System.Drawing.Size(35, 18);
-			this.label100.TabIndex = 169;
-			this.label100.Text = "max.:";
-			this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label101
-			// 
-			this.label101.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label101.AutoSize = true;
-			this.label101.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label101.Location = new System.Drawing.Point(675, 288);
-			this.label101.Margin = new System.Windows.Forms.Padding(0);
-			this.label101.Name = "label101";
-			this.label101.Size = new System.Drawing.Size(35, 18);
-			this.label101.TabIndex = 179;
-			this.label101.Text = "max.:";
-			this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label102
-			// 
-			this.label102.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label102.AutoSize = true;
-			this.label102.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label102.Location = new System.Drawing.Point(675, 306);
-			this.label102.Margin = new System.Windows.Forms.Padding(0);
-			this.label102.Name = "label102";
-			this.label102.Size = new System.Drawing.Size(35, 18);
-			this.label102.TabIndex = 189;
-			this.label102.Text = "max.:";
-			this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label103
-			// 
-			this.label103.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label103.AutoSize = true;
-			this.label103.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label103.Location = new System.Drawing.Point(675, 324);
-			this.label103.Margin = new System.Windows.Forms.Padding(0);
-			this.label103.Name = "label103";
-			this.label103.Size = new System.Drawing.Size(35, 18);
-			this.label103.TabIndex = 199;
-			this.label103.Text = "max.:";
-			this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label104
-			// 
-			this.label104.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label104.AutoSize = true;
-			this.label104.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label104.Location = new System.Drawing.Point(675, 342);
-			this.label104.Margin = new System.Windows.Forms.Padding(0);
-			this.label104.Name = "label104";
-			this.label104.Size = new System.Drawing.Size(35, 18);
-			this.label104.TabIndex = 216;
-			this.label104.Text = "max.:";
-			this.label104.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label105
-			// 
-			this.label105.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label105.AutoSize = true;
-			this.label105.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label105.Location = new System.Drawing.Point(675, 360);
-			this.label105.Margin = new System.Windows.Forms.Padding(0);
-			this.label105.Name = "label105";
-			this.label105.Size = new System.Drawing.Size(35, 18);
-			this.label105.TabIndex = 226;
-			this.label105.Text = "max.:";
-			this.label105.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label106
-			// 
-			this.label106.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label106.AutoSize = true;
-			this.label106.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label106.Location = new System.Drawing.Point(675, 378);
-			this.label106.Margin = new System.Windows.Forms.Padding(0);
-			this.label106.Name = "label106";
-			this.label106.Size = new System.Drawing.Size(35, 18);
-			this.label106.TabIndex = 237;
-			this.label106.Text = "max.:";
-			this.label106.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label107
-			// 
-			this.label107.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label107.AutoSize = true;
-			this.label107.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label107.Location = new System.Drawing.Point(675, 396);
-			this.label107.Margin = new System.Windows.Forms.Padding(0);
-			this.label107.Name = "label107";
-			this.label107.Size = new System.Drawing.Size(35, 18);
-			this.label107.TabIndex = 247;
-			this.label107.Text = "max.:";
-			this.label107.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label108
-			// 
-			this.label108.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label108.AutoSize = true;
-			this.label108.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label108.Location = new System.Drawing.Point(675, 414);
-			this.label108.Margin = new System.Windows.Forms.Padding(0);
-			this.label108.Name = "label108";
-			this.label108.Size = new System.Drawing.Size(35, 18);
-			this.label108.TabIndex = 257;
-			this.label108.Text = "max.:";
-			this.label108.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label109
-			// 
-			this.label109.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label109.AutoSize = true;
-			this.label109.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label109.Location = new System.Drawing.Point(675, 486);
-			this.label109.Margin = new System.Windows.Forms.Padding(0);
-			this.label109.Name = "label109";
-			this.label109.Size = new System.Drawing.Size(35, 19);
-			this.label109.TabIndex = 19;
-			this.label109.Text = "max.:";
-			this.label109.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label110
-			// 
-			this.label110.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label110.AutoSize = true;
-			this.label110.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label110.Location = new System.Drawing.Point(675, 468);
-			this.label110.Margin = new System.Windows.Forms.Padding(0);
-			this.label110.Name = "label110";
-			this.label110.Size = new System.Drawing.Size(35, 18);
-			this.label110.TabIndex = 9;
-			this.label110.Text = "max.:";
-			this.label110.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label111
-			// 
-			this.label111.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label111.AutoSize = true;
-			this.label111.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label111.Location = new System.Drawing.Point(675, 450);
-			this.label111.Margin = new System.Windows.Forms.Padding(0);
-			this.label111.Name = "label111";
-			this.label111.Size = new System.Drawing.Size(35, 18);
-			this.label111.TabIndex = 279;
-			this.label111.Text = "max.:";
-			this.label111.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// label112
-			// 
-			this.label112.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label112.AutoSize = true;
-			this.label112.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label112.Location = new System.Drawing.Point(675, 432);
-			this.label112.Margin = new System.Windows.Forms.Padding(0);
-			this.label112.Name = "label112";
-			this.label112.Size = new System.Drawing.Size(35, 18);
-			this.label112.TabIndex = 267;
-			this.label112.Text = "max.:";
-			this.label112.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// labelNumberOfTransitsForAstrometryMin
+			// 
+			this.labelNumberOfTransitsForAstrometryMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNumberOfTransitsForAstrometryMin.AutoSize = true;
+			this.labelNumberOfTransitsForAstrometryMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberOfTransitsForAstrometryMin.Location = new System.Drawing.Point(590, 0);
+			this.labelNumberOfTransitsForAstrometryMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNumberOfTransitsForAstrometryMin.Name = "labelNumberOfTransitsForAstrometryMin";
+			this.labelNumberOfTransitsForAstrometryMin.Size = new System.Drawing.Size(35, 18);
+			this.labelNumberOfTransitsForAstrometryMin.TabIndex = 6;
+			this.labelNumberOfTransitsForAstrometryMin.Text = "min.:";
+			this.labelNumberOfTransitsForAstrometryMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelGoodnessOfFitParameterMin
+			// 
+			this.labelGoodnessOfFitParameterMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelGoodnessOfFitParameterMin.AutoSize = true;
+			this.labelGoodnessOfFitParameterMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelGoodnessOfFitParameterMin.Location = new System.Drawing.Point(590, 18);
+			this.labelGoodnessOfFitParameterMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelGoodnessOfFitParameterMin.Name = "labelGoodnessOfFitParameterMin";
+			this.labelGoodnessOfFitParameterMin.Size = new System.Drawing.Size(35, 18);
+			this.labelGoodnessOfFitParameterMin.TabIndex = 16;
+			this.labelGoodnessOfFitParameterMin.Text = "min.:";
+			this.labelGoodnessOfFitParameterMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelHipparcosNumberMin
+			// 
+			this.labelHipparcosNumberMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelHipparcosNumberMin.AutoSize = true;
+			this.labelHipparcosNumberMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelHipparcosNumberMin.Location = new System.Drawing.Point(590, 36);
+			this.labelHipparcosNumberMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelHipparcosNumberMin.Name = "labelHipparcosNumberMin";
+			this.labelHipparcosNumberMin.Size = new System.Drawing.Size(35, 18);
+			this.labelHipparcosNumberMin.TabIndex = 26;
+			this.labelHipparcosNumberMin.Text = "min.:";
+			this.labelHipparcosNumberMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelMeanBtMagnitudeMin
+			// 
+			this.labelMeanBtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMeanBtMagnitudeMin.AutoSize = true;
+			this.labelMeanBtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMeanBtMagnitudeMin.Location = new System.Drawing.Point(590, 54);
+			this.labelMeanBtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMeanBtMagnitudeMin.Name = "labelMeanBtMagnitudeMin";
+			this.labelMeanBtMagnitudeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelMeanBtMagnitudeMin.TabIndex = 36;
+			this.labelMeanBtMagnitudeMin.Text = "min.:";
+			this.labelMeanBtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelStandardErrorMeanBtMagnitudeMin
+			// 
+			this.labelStandardErrorMeanBtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorMeanBtMagnitudeMin.AutoSize = true;
+			this.labelStandardErrorMeanBtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMeanBtMagnitudeMin.Location = new System.Drawing.Point(590, 72);
+			this.labelStandardErrorMeanBtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMeanBtMagnitudeMin.Name = "labelStandardErrorMeanBtMagnitudeMin";
+			this.labelStandardErrorMeanBtMagnitudeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMeanBtMagnitudeMin.TabIndex = 46;
+			this.labelStandardErrorMeanBtMagnitudeMin.Text = "min.:";
+			this.labelStandardErrorMeanBtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelMeanVtMagnitudeMin
+			// 
+			this.labelMeanVtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMeanVtMagnitudeMin.AutoSize = true;
+			this.labelMeanVtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMeanVtMagnitudeMin.Location = new System.Drawing.Point(590, 90);
+			this.labelMeanVtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMeanVtMagnitudeMin.Name = "labelMeanVtMagnitudeMin";
+			this.labelMeanVtMagnitudeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelMeanVtMagnitudeMin.TabIndex = 56;
+			this.labelMeanVtMagnitudeMin.Text = "min.:";
+			this.labelMeanVtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelStandardErrorMeanVtMagnitudeMin
+			// 
+			this.labelStandardErrorMeanVtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorMeanVtMagnitudeMin.AutoSize = true;
+			this.labelStandardErrorMeanVtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMeanVtMagnitudeMin.Location = new System.Drawing.Point(590, 108);
+			this.labelStandardErrorMeanVtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMeanVtMagnitudeMin.Name = "labelStandardErrorMeanVtMagnitudeMin";
+			this.labelStandardErrorMeanVtMagnitudeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMeanVtMagnitudeMin.TabIndex = 77;
+			this.labelStandardErrorMeanVtMagnitudeMin.Text = "min.:";
+			this.labelStandardErrorMeanVtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelSourceOfPhotometryMin
+			// 
+			this.labelSourceOfPhotometryMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSourceOfPhotometryMin.AutoSize = true;
+			this.labelSourceOfPhotometryMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfPhotometryMin.Location = new System.Drawing.Point(590, 126);
+			this.labelSourceOfPhotometryMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfPhotometryMin.Name = "labelSourceOfPhotometryMin";
+			this.labelSourceOfPhotometryMin.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfPhotometryMin.TabIndex = 87;
+			this.labelSourceOfPhotometryMin.Text = "min.:";
+			this.labelSourceOfPhotometryMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelJohnsonBvColorMin
+			// 
+			this.labelJohnsonBvColorMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelJohnsonBvColorMin.AutoSize = true;
+			this.labelJohnsonBvColorMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelJohnsonBvColorMin.Location = new System.Drawing.Point(590, 144);
+			this.labelJohnsonBvColorMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelJohnsonBvColorMin.Name = "labelJohnsonBvColorMin";
+			this.labelJohnsonBvColorMin.Size = new System.Drawing.Size(35, 18);
+			this.labelJohnsonBvColorMin.TabIndex = 97;
+			this.labelJohnsonBvColorMin.Text = "min.:";
+			this.labelJohnsonBvColorMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelStandardErrorJohnsonBvColorMin
+			// 
+			this.labelStandardErrorJohnsonBvColorMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorJohnsonBvColorMin.AutoSize = true;
+			this.labelStandardErrorJohnsonBvColorMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorJohnsonBvColorMin.Location = new System.Drawing.Point(590, 162);
+			this.labelStandardErrorJohnsonBvColorMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorJohnsonBvColorMin.Name = "labelStandardErrorJohnsonBvColorMin";
+			this.labelStandardErrorJohnsonBvColorMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorJohnsonBvColorMin.TabIndex = 107;
+			this.labelStandardErrorJohnsonBvColorMin.Text = "min.:";
+			this.labelStandardErrorJohnsonBvColorMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelAstrometricQualityFlagMin
+			// 
+			this.labelAstrometricQualityFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelAstrometricQualityFlagMin.AutoSize = true;
+			this.labelAstrometricQualityFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelAstrometricQualityFlagMin.Location = new System.Drawing.Point(590, 180);
+			this.labelAstrometricQualityFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelAstrometricQualityFlagMin.Name = "labelAstrometricQualityFlagMin";
+			this.labelAstrometricQualityFlagMin.Size = new System.Drawing.Size(35, 18);
+			this.labelAstrometricQualityFlagMin.TabIndex = 117;
+			this.labelAstrometricQualityFlagMin.Text = "min.:";
+			this.labelAstrometricQualityFlagMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelSignalToNoiseRatioOfTheStarImageMin
+			// 
+			this.labelSignalToNoiseRatioOfTheStarImageMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSignalToNoiseRatioOfTheStarImageMin.AutoSize = true;
+			this.labelSignalToNoiseRatioOfTheStarImageMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSignalToNoiseRatioOfTheStarImageMin.Location = new System.Drawing.Point(590, 198);
+			this.labelSignalToNoiseRatioOfTheStarImageMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSignalToNoiseRatioOfTheStarImageMin.Name = "labelSignalToNoiseRatioOfTheStarImageMin";
+			this.labelSignalToNoiseRatioOfTheStarImageMin.Size = new System.Drawing.Size(35, 18);
+			this.labelSignalToNoiseRatioOfTheStarImageMin.TabIndex = 127;
+			this.labelSignalToNoiseRatioOfTheStarImageMin.Text = "min.:";
+			this.labelSignalToNoiseRatioOfTheStarImageMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelSourceOfAstrometricDataMin
+			// 
+			this.labelSourceOfAstrometricDataMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSourceOfAstrometricDataMin.AutoSize = true;
+			this.labelSourceOfAstrometricDataMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfAstrometricDataMin.Location = new System.Drawing.Point(590, 216);
+			this.labelSourceOfAstrometricDataMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfAstrometricDataMin.Name = "labelSourceOfAstrometricDataMin";
+			this.labelSourceOfAstrometricDataMin.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfAstrometricDataMin.TabIndex = 137;
+			this.labelSourceOfAstrometricDataMin.Text = "min.:";
+			this.labelSourceOfAstrometricDataMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelNumberOfTransitsForPhotometryMin
+			// 
+			this.labelNumberOfTransitsForPhotometryMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNumberOfTransitsForPhotometryMin.AutoSize = true;
+			this.labelNumberOfTransitsForPhotometryMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberOfTransitsForPhotometryMin.Location = new System.Drawing.Point(590, 234);
+			this.labelNumberOfTransitsForPhotometryMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNumberOfTransitsForPhotometryMin.Name = "labelNumberOfTransitsForPhotometryMin";
+			this.labelNumberOfTransitsForPhotometryMin.Size = new System.Drawing.Size(35, 18);
+			this.labelNumberOfTransitsForPhotometryMin.TabIndex = 147;
+			this.labelNumberOfTransitsForPhotometryMin.Text = "min.:";
+			this.labelNumberOfTransitsForPhotometryMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelEstimateOfVtmagScatterMin
+			// 
+			this.labelEstimateOfVtmagScatterMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelEstimateOfVtmagScatterMin.AutoSize = true;
+			this.labelEstimateOfVtmagScatterMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelEstimateOfVtmagScatterMin.Location = new System.Drawing.Point(590, 252);
+			this.labelEstimateOfVtmagScatterMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelEstimateOfVtmagScatterMin.Name = "labelEstimateOfVtmagScatterMin";
+			this.labelEstimateOfVtmagScatterMin.Size = new System.Drawing.Size(35, 18);
+			this.labelEstimateOfVtmagScatterMin.TabIndex = 157;
+			this.labelEstimateOfVtmagScatterMin.Text = "min.:";
+			this.labelEstimateOfVtmagScatterMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelVtmagAtMaximumMin
+			// 
+			this.labelVtmagAtMaximumMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelVtmagAtMaximumMin.AutoSize = true;
+			this.labelVtmagAtMaximumMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelVtmagAtMaximumMin.Location = new System.Drawing.Point(590, 270);
+			this.labelVtmagAtMaximumMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelVtmagAtMaximumMin.Name = "labelVtmagAtMaximumMin";
+			this.labelVtmagAtMaximumMin.Size = new System.Drawing.Size(35, 18);
+			this.labelVtmagAtMaximumMin.TabIndex = 167;
+			this.labelVtmagAtMaximumMin.Text = "min.:";
+			this.labelVtmagAtMaximumMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelVtmagAtMinimumMin
+			// 
+			this.labelVtmagAtMinimumMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelVtmagAtMinimumMin.AutoSize = true;
+			this.labelVtmagAtMinimumMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelVtmagAtMinimumMin.Location = new System.Drawing.Point(590, 288);
+			this.labelVtmagAtMinimumMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelVtmagAtMinimumMin.Name = "labelVtmagAtMinimumMin";
+			this.labelVtmagAtMinimumMin.Size = new System.Drawing.Size(35, 18);
+			this.labelVtmagAtMinimumMin.TabIndex = 177;
+			this.labelVtmagAtMinimumMin.Text = "min.:";
+			this.labelVtmagAtMinimumMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelKnownVariabilityFromGcvsNsvMin
+			// 
+			this.labelKnownVariabilityFromGcvsNsvMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelKnownVariabilityFromGcvsNsvMin.AutoSize = true;
+			this.labelKnownVariabilityFromGcvsNsvMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelKnownVariabilityFromGcvsNsvMin.Location = new System.Drawing.Point(590, 306);
+			this.labelKnownVariabilityFromGcvsNsvMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelKnownVariabilityFromGcvsNsvMin.Name = "labelKnownVariabilityFromGcvsNsvMin";
+			this.labelKnownVariabilityFromGcvsNsvMin.Size = new System.Drawing.Size(35, 18);
+			this.labelKnownVariabilityFromGcvsNsvMin.TabIndex = 187;
+			this.labelKnownVariabilityFromGcvsNsvMin.Text = "min.:";
+			this.labelKnownVariabilityFromGcvsNsvMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelVariabilityFromTychoMin
+			// 
+			this.labelVariabilityFromTychoMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelVariabilityFromTychoMin.AutoSize = true;
+			this.labelVariabilityFromTychoMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelVariabilityFromTychoMin.Location = new System.Drawing.Point(590, 324);
+			this.labelVariabilityFromTychoMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelVariabilityFromTychoMin.Name = "labelVariabilityFromTychoMin";
+			this.labelVariabilityFromTychoMin.Size = new System.Drawing.Size(35, 18);
+			this.labelVariabilityFromTychoMin.TabIndex = 197;
+			this.labelVariabilityFromTychoMin.Text = "min.:";
+			this.labelVariabilityFromTychoMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelDuplicityFromTychoMin
+			// 
+			this.labelDuplicityFromTychoMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelDuplicityFromTychoMin.AutoSize = true;
+			this.labelDuplicityFromTychoMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelDuplicityFromTychoMin.Location = new System.Drawing.Point(590, 342);
+			this.labelDuplicityFromTychoMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelDuplicityFromTychoMin.Name = "labelDuplicityFromTychoMin";
+			this.labelDuplicityFromTychoMin.Size = new System.Drawing.Size(35, 18);
+			this.labelDuplicityFromTychoMin.TabIndex = 214;
+			this.labelDuplicityFromTychoMin.Text = "min.:";
+			this.labelDuplicityFromTychoMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelEpochPhotometryInAnnexMin
+			// 
+			this.labelEpochPhotometryInAnnexMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelEpochPhotometryInAnnexMin.AutoSize = true;
+			this.labelEpochPhotometryInAnnexMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelEpochPhotometryInAnnexMin.Location = new System.Drawing.Point(590, 360);
+			this.labelEpochPhotometryInAnnexMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelEpochPhotometryInAnnexMin.Name = "labelEpochPhotometryInAnnexMin";
+			this.labelEpochPhotometryInAnnexMin.Size = new System.Drawing.Size(35, 18);
+			this.labelEpochPhotometryInAnnexMin.TabIndex = 224;
+			this.labelEpochPhotometryInAnnexMin.Text = "min.:";
+			this.labelEpochPhotometryInAnnexMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelCcdmComponentIdentifier
+			// 
+			this.labelCcdmComponentIdentifier.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCcdmComponentIdentifier.AutoSize = true;
+			this.labelCcdmComponentIdentifier.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCcdmComponentIdentifier.Location = new System.Drawing.Point(590, 378);
+			this.labelCcdmComponentIdentifier.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCcdmComponentIdentifier.Name = "labelCcdmComponentIdentifier";
+			this.labelCcdmComponentIdentifier.Size = new System.Drawing.Size(35, 18);
+			this.labelCcdmComponentIdentifier.TabIndex = 235;
+			this.labelCcdmComponentIdentifier.Text = "min.:";
+			this.labelCcdmComponentIdentifier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelPpmAndSupplementMin
+			// 
+			this.labelPpmAndSupplementMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelPpmAndSupplementMin.AutoSize = true;
+			this.labelPpmAndSupplementMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelPpmAndSupplementMin.Location = new System.Drawing.Point(590, 396);
+			this.labelPpmAndSupplementMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelPpmAndSupplementMin.Name = "labelPpmAndSupplementMin";
+			this.labelPpmAndSupplementMin.Size = new System.Drawing.Size(35, 18);
+			this.labelPpmAndSupplementMin.TabIndex = 245;
+			this.labelPpmAndSupplementMin.Text = "min.:";
+			this.labelPpmAndSupplementMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelHdNumberMin
+			// 
+			this.labelHdNumberMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelHdNumberMin.AutoSize = true;
+			this.labelHdNumberMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelHdNumberMin.Location = new System.Drawing.Point(590, 414);
+			this.labelHdNumberMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelHdNumberMin.Name = "labelHdNumberMin";
+			this.labelHdNumberMin.Size = new System.Drawing.Size(35, 18);
+			this.labelHdNumberMin.TabIndex = 255;
+			this.labelHdNumberMin.Text = "min.:";
+			this.labelHdNumberMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelBonnerDmMin
+			// 
+			this.labelBonnerDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelBonnerDmMin.AutoSize = true;
+			this.labelBonnerDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelBonnerDmMin.Location = new System.Drawing.Point(590, 432);
+			this.labelBonnerDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelBonnerDmMin.Name = "labelBonnerDmMin";
+			this.labelBonnerDmMin.Size = new System.Drawing.Size(35, 18);
+			this.labelBonnerDmMin.TabIndex = 265;
+			this.labelBonnerDmMin.Text = "min.:";
+			this.labelBonnerDmMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelCordobaDmMin
+			// 
+			this.labelCordobaDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCordobaDmMin.AutoSize = true;
+			this.labelCordobaDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCordobaDmMin.Location = new System.Drawing.Point(590, 450);
+			this.labelCordobaDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCordobaDmMin.Name = "labelCordobaDmMin";
+			this.labelCordobaDmMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCordobaDmMin.TabIndex = 276;
+			this.labelCordobaDmMin.Text = "min.:";
+			this.labelCordobaDmMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelCapePhotographicDmMin
+			// 
+			this.labelCapePhotographicDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCapePhotographicDmMin.AutoSize = true;
+			this.labelCapePhotographicDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCapePhotographicDmMin.Location = new System.Drawing.Point(590, 468);
+			this.labelCapePhotographicDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCapePhotographicDmMin.Name = "labelCapePhotographicDmMin";
+			this.labelCapePhotographicDmMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCapePhotographicDmMin.TabIndex = 7;
+			this.labelCapePhotographicDmMin.Text = "min.:";
+			this.labelCapePhotographicDmMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelNotesMin
+			// 
+			this.labelNotesMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNotesMin.AutoSize = true;
+			this.labelNotesMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNotesMin.Location = new System.Drawing.Point(590, 486);
+			this.labelNotesMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNotesMin.Name = "labelNotesMin";
+			this.labelNotesMin.Size = new System.Drawing.Size(35, 19);
+			this.labelNotesMin.TabIndex = 17;
+			this.labelNotesMin.Text = "min.:";
+			this.labelNotesMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelNumberOfTransitsForAstrometryMax
+			// 
+			this.labelNumberOfTransitsForAstrometryMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNumberOfTransitsForAstrometryMax.AutoSize = true;
+			this.labelNumberOfTransitsForAstrometryMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberOfTransitsForAstrometryMax.Location = new System.Drawing.Point(675, 0);
+			this.labelNumberOfTransitsForAstrometryMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNumberOfTransitsForAstrometryMax.Name = "labelNumberOfTransitsForAstrometryMax";
+			this.labelNumberOfTransitsForAstrometryMax.Size = new System.Drawing.Size(35, 18);
+			this.labelNumberOfTransitsForAstrometryMax.TabIndex = 8;
+			this.labelNumberOfTransitsForAstrometryMax.Text = "max.:";
+			this.labelNumberOfTransitsForAstrometryMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelGoodnessOfFitParameterMax
+			// 
+			this.labelGoodnessOfFitParameterMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelGoodnessOfFitParameterMax.AutoSize = true;
+			this.labelGoodnessOfFitParameterMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelGoodnessOfFitParameterMax.Location = new System.Drawing.Point(675, 18);
+			this.labelGoodnessOfFitParameterMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelGoodnessOfFitParameterMax.Name = "labelGoodnessOfFitParameterMax";
+			this.labelGoodnessOfFitParameterMax.Size = new System.Drawing.Size(35, 18);
+			this.labelGoodnessOfFitParameterMax.TabIndex = 18;
+			this.labelGoodnessOfFitParameterMax.Text = "max.:";
+			this.labelGoodnessOfFitParameterMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelHipparcosNumberMax
+			// 
+			this.labelHipparcosNumberMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelHipparcosNumberMax.AutoSize = true;
+			this.labelHipparcosNumberMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelHipparcosNumberMax.Location = new System.Drawing.Point(675, 36);
+			this.labelHipparcosNumberMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelHipparcosNumberMax.Name = "labelHipparcosNumberMax";
+			this.labelHipparcosNumberMax.Size = new System.Drawing.Size(35, 18);
+			this.labelHipparcosNumberMax.TabIndex = 28;
+			this.labelHipparcosNumberMax.Text = "max.:";
+			this.labelHipparcosNumberMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelMeanBtMagnitudeMax
+			// 
+			this.labelMeanBtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMeanBtMagnitudeMax.AutoSize = true;
+			this.labelMeanBtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMeanBtMagnitudeMax.Location = new System.Drawing.Point(675, 54);
+			this.labelMeanBtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMeanBtMagnitudeMax.Name = "labelMeanBtMagnitudeMax";
+			this.labelMeanBtMagnitudeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelMeanBtMagnitudeMax.TabIndex = 38;
+			this.labelMeanBtMagnitudeMax.Text = "max.:";
+			this.labelMeanBtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelStandardErrorMeanBtMagnitudeMax
+			// 
+			this.labelStandardErrorMeanBtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorMeanBtMagnitudeMax.AutoSize = true;
+			this.labelStandardErrorMeanBtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMeanBtMagnitudeMax.Location = new System.Drawing.Point(675, 72);
+			this.labelStandardErrorMeanBtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMeanBtMagnitudeMax.Name = "labelStandardErrorMeanBtMagnitudeMax";
+			this.labelStandardErrorMeanBtMagnitudeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMeanBtMagnitudeMax.TabIndex = 48;
+			this.labelStandardErrorMeanBtMagnitudeMax.Text = "max.:";
+			this.labelStandardErrorMeanBtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelMeanVtMagnitudeMax
+			// 
+			this.labelMeanVtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMeanVtMagnitudeMax.AutoSize = true;
+			this.labelMeanVtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMeanVtMagnitudeMax.Location = new System.Drawing.Point(675, 90);
+			this.labelMeanVtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMeanVtMagnitudeMax.Name = "labelMeanVtMagnitudeMax";
+			this.labelMeanVtMagnitudeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelMeanVtMagnitudeMax.TabIndex = 58;
+			this.labelMeanVtMagnitudeMax.Text = "max.:";
+			this.labelMeanVtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelStandardErrorMeanVtMagnitudeMax
+			// 
+			this.labelStandardErrorMeanVtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorMeanVtMagnitudeMax.AutoSize = true;
+			this.labelStandardErrorMeanVtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMeanVtMagnitudeMax.Location = new System.Drawing.Point(675, 108);
+			this.labelStandardErrorMeanVtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMeanVtMagnitudeMax.Name = "labelStandardErrorMeanVtMagnitudeMax";
+			this.labelStandardErrorMeanVtMagnitudeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMeanVtMagnitudeMax.TabIndex = 79;
+			this.labelStandardErrorMeanVtMagnitudeMax.Text = "max.:";
+			this.labelStandardErrorMeanVtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelSourceOfPhotometryMax
+			// 
+			this.labelSourceOfPhotometryMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSourceOfPhotometryMax.AutoSize = true;
+			this.labelSourceOfPhotometryMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfPhotometryMax.Location = new System.Drawing.Point(675, 126);
+			this.labelSourceOfPhotometryMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfPhotometryMax.Name = "labelSourceOfPhotometryMax";
+			this.labelSourceOfPhotometryMax.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfPhotometryMax.TabIndex = 89;
+			this.labelSourceOfPhotometryMax.Text = "max.:";
+			this.labelSourceOfPhotometryMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelJohnsonBvColorMax
+			// 
+			this.labelJohnsonBvColorMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelJohnsonBvColorMax.AutoSize = true;
+			this.labelJohnsonBvColorMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelJohnsonBvColorMax.Location = new System.Drawing.Point(675, 144);
+			this.labelJohnsonBvColorMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelJohnsonBvColorMax.Name = "labelJohnsonBvColorMax";
+			this.labelJohnsonBvColorMax.Size = new System.Drawing.Size(35, 18);
+			this.labelJohnsonBvColorMax.TabIndex = 99;
+			this.labelJohnsonBvColorMax.Text = "max.:";
+			this.labelJohnsonBvColorMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelStandardErrorJohnsonBvColorMax
+			// 
+			this.labelStandardErrorJohnsonBvColorMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorJohnsonBvColorMax.AutoSize = true;
+			this.labelStandardErrorJohnsonBvColorMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorJohnsonBvColorMax.Location = new System.Drawing.Point(675, 162);
+			this.labelStandardErrorJohnsonBvColorMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorJohnsonBvColorMax.Name = "labelStandardErrorJohnsonBvColorMax";
+			this.labelStandardErrorJohnsonBvColorMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorJohnsonBvColorMax.TabIndex = 109;
+			this.labelStandardErrorJohnsonBvColorMax.Text = "max.:";
+			this.labelStandardErrorJohnsonBvColorMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelAstrometricQualityFlagMax
+			// 
+			this.labelAstrometricQualityFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelAstrometricQualityFlagMax.AutoSize = true;
+			this.labelAstrometricQualityFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelAstrometricQualityFlagMax.Location = new System.Drawing.Point(675, 180);
+			this.labelAstrometricQualityFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelAstrometricQualityFlagMax.Name = "labelAstrometricQualityFlagMax";
+			this.labelAstrometricQualityFlagMax.Size = new System.Drawing.Size(35, 18);
+			this.labelAstrometricQualityFlagMax.TabIndex = 119;
+			this.labelAstrometricQualityFlagMax.Text = "max.:";
+			this.labelAstrometricQualityFlagMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelSignalToNoiseRatioOfTheStarImageMax
+			// 
+			this.labelSignalToNoiseRatioOfTheStarImageMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSignalToNoiseRatioOfTheStarImageMax.AutoSize = true;
+			this.labelSignalToNoiseRatioOfTheStarImageMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSignalToNoiseRatioOfTheStarImageMax.Location = new System.Drawing.Point(675, 198);
+			this.labelSignalToNoiseRatioOfTheStarImageMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSignalToNoiseRatioOfTheStarImageMax.Name = "labelSignalToNoiseRatioOfTheStarImageMax";
+			this.labelSignalToNoiseRatioOfTheStarImageMax.Size = new System.Drawing.Size(35, 18);
+			this.labelSignalToNoiseRatioOfTheStarImageMax.TabIndex = 129;
+			this.labelSignalToNoiseRatioOfTheStarImageMax.Text = "max.:";
+			this.labelSignalToNoiseRatioOfTheStarImageMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelSourceOfAstrometricDataMax
+			// 
+			this.labelSourceOfAstrometricDataMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSourceOfAstrometricDataMax.AutoSize = true;
+			this.labelSourceOfAstrometricDataMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfAstrometricDataMax.Location = new System.Drawing.Point(675, 216);
+			this.labelSourceOfAstrometricDataMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfAstrometricDataMax.Name = "labelSourceOfAstrometricDataMax";
+			this.labelSourceOfAstrometricDataMax.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfAstrometricDataMax.TabIndex = 139;
+			this.labelSourceOfAstrometricDataMax.Text = "max.:";
+			this.labelSourceOfAstrometricDataMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelNumberOfTransitsForPhotometryMax
+			// 
+			this.labelNumberOfTransitsForPhotometryMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNumberOfTransitsForPhotometryMax.AutoSize = true;
+			this.labelNumberOfTransitsForPhotometryMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberOfTransitsForPhotometryMax.Location = new System.Drawing.Point(675, 234);
+			this.labelNumberOfTransitsForPhotometryMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNumberOfTransitsForPhotometryMax.Name = "labelNumberOfTransitsForPhotometryMax";
+			this.labelNumberOfTransitsForPhotometryMax.Size = new System.Drawing.Size(35, 18);
+			this.labelNumberOfTransitsForPhotometryMax.TabIndex = 149;
+			this.labelNumberOfTransitsForPhotometryMax.Text = "max.:";
+			this.labelNumberOfTransitsForPhotometryMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelEstimateOfVtmagScatterMax
+			// 
+			this.labelEstimateOfVtmagScatterMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelEstimateOfVtmagScatterMax.AutoSize = true;
+			this.labelEstimateOfVtmagScatterMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelEstimateOfVtmagScatterMax.Location = new System.Drawing.Point(675, 252);
+			this.labelEstimateOfVtmagScatterMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelEstimateOfVtmagScatterMax.Name = "labelEstimateOfVtmagScatterMax";
+			this.labelEstimateOfVtmagScatterMax.Size = new System.Drawing.Size(35, 18);
+			this.labelEstimateOfVtmagScatterMax.TabIndex = 159;
+			this.labelEstimateOfVtmagScatterMax.Text = "max.:";
+			this.labelEstimateOfVtmagScatterMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelVtmagAtMaximumMax
+			// 
+			this.labelVtmagAtMaximumMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelVtmagAtMaximumMax.AutoSize = true;
+			this.labelVtmagAtMaximumMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelVtmagAtMaximumMax.Location = new System.Drawing.Point(675, 270);
+			this.labelVtmagAtMaximumMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelVtmagAtMaximumMax.Name = "labelVtmagAtMaximumMax";
+			this.labelVtmagAtMaximumMax.Size = new System.Drawing.Size(35, 18);
+			this.labelVtmagAtMaximumMax.TabIndex = 169;
+			this.labelVtmagAtMaximumMax.Text = "max.:";
+			this.labelVtmagAtMaximumMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelVtmagAtMinimumMax
+			// 
+			this.labelVtmagAtMinimumMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelVtmagAtMinimumMax.AutoSize = true;
+			this.labelVtmagAtMinimumMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelVtmagAtMinimumMax.Location = new System.Drawing.Point(675, 288);
+			this.labelVtmagAtMinimumMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelVtmagAtMinimumMax.Name = "labelVtmagAtMinimumMax";
+			this.labelVtmagAtMinimumMax.Size = new System.Drawing.Size(35, 18);
+			this.labelVtmagAtMinimumMax.TabIndex = 179;
+			this.labelVtmagAtMinimumMax.Text = "max.:";
+			this.labelVtmagAtMinimumMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelKnownVariabilityFromGcvsNsvMax
+			// 
+			this.labelKnownVariabilityFromGcvsNsvMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelKnownVariabilityFromGcvsNsvMax.AutoSize = true;
+			this.labelKnownVariabilityFromGcvsNsvMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelKnownVariabilityFromGcvsNsvMax.Location = new System.Drawing.Point(675, 306);
+			this.labelKnownVariabilityFromGcvsNsvMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelKnownVariabilityFromGcvsNsvMax.Name = "labelKnownVariabilityFromGcvsNsvMax";
+			this.labelKnownVariabilityFromGcvsNsvMax.Size = new System.Drawing.Size(35, 18);
+			this.labelKnownVariabilityFromGcvsNsvMax.TabIndex = 189;
+			this.labelKnownVariabilityFromGcvsNsvMax.Text = "max.:";
+			this.labelKnownVariabilityFromGcvsNsvMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelVariabilityFromTychoMax
+			// 
+			this.labelVariabilityFromTychoMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelVariabilityFromTychoMax.AutoSize = true;
+			this.labelVariabilityFromTychoMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelVariabilityFromTychoMax.Location = new System.Drawing.Point(675, 324);
+			this.labelVariabilityFromTychoMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelVariabilityFromTychoMax.Name = "labelVariabilityFromTychoMax";
+			this.labelVariabilityFromTychoMax.Size = new System.Drawing.Size(35, 18);
+			this.labelVariabilityFromTychoMax.TabIndex = 199;
+			this.labelVariabilityFromTychoMax.Text = "max.:";
+			this.labelVariabilityFromTychoMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelDuplicityFromTychoMax
+			// 
+			this.labelDuplicityFromTychoMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelDuplicityFromTychoMax.AutoSize = true;
+			this.labelDuplicityFromTychoMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelDuplicityFromTychoMax.Location = new System.Drawing.Point(675, 342);
+			this.labelDuplicityFromTychoMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelDuplicityFromTychoMax.Name = "labelDuplicityFromTychoMax";
+			this.labelDuplicityFromTychoMax.Size = new System.Drawing.Size(35, 18);
+			this.labelDuplicityFromTychoMax.TabIndex = 216;
+			this.labelDuplicityFromTychoMax.Text = "max.:";
+			this.labelDuplicityFromTychoMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelEpochPhotometryInAnnexMax
+			// 
+			this.labelEpochPhotometryInAnnexMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelEpochPhotometryInAnnexMax.AutoSize = true;
+			this.labelEpochPhotometryInAnnexMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelEpochPhotometryInAnnexMax.Location = new System.Drawing.Point(675, 360);
+			this.labelEpochPhotometryInAnnexMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelEpochPhotometryInAnnexMax.Name = "labelEpochPhotometryInAnnexMax";
+			this.labelEpochPhotometryInAnnexMax.Size = new System.Drawing.Size(35, 18);
+			this.labelEpochPhotometryInAnnexMax.TabIndex = 226;
+			this.labelEpochPhotometryInAnnexMax.Text = "max.:";
+			this.labelEpochPhotometryInAnnexMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelCcdmComponentIdentifierMax
+			// 
+			this.labelCcdmComponentIdentifierMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCcdmComponentIdentifierMax.AutoSize = true;
+			this.labelCcdmComponentIdentifierMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCcdmComponentIdentifierMax.Location = new System.Drawing.Point(675, 378);
+			this.labelCcdmComponentIdentifierMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCcdmComponentIdentifierMax.Name = "labelCcdmComponentIdentifierMax";
+			this.labelCcdmComponentIdentifierMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCcdmComponentIdentifierMax.TabIndex = 237;
+			this.labelCcdmComponentIdentifierMax.Text = "max.:";
+			this.labelCcdmComponentIdentifierMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelPpmAndSupplementMax
+			// 
+			this.labelPpmAndSupplementMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelPpmAndSupplementMax.AutoSize = true;
+			this.labelPpmAndSupplementMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelPpmAndSupplementMax.Location = new System.Drawing.Point(675, 396);
+			this.labelPpmAndSupplementMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelPpmAndSupplementMax.Name = "labelPpmAndSupplementMax";
+			this.labelPpmAndSupplementMax.Size = new System.Drawing.Size(35, 18);
+			this.labelPpmAndSupplementMax.TabIndex = 247;
+			this.labelPpmAndSupplementMax.Text = "max.:";
+			this.labelPpmAndSupplementMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelHdNumberMax
+			// 
+			this.labelHdNumberMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelHdNumberMax.AutoSize = true;
+			this.labelHdNumberMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelHdNumberMax.Location = new System.Drawing.Point(675, 414);
+			this.labelHdNumberMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelHdNumberMax.Name = "labelHdNumberMax";
+			this.labelHdNumberMax.Size = new System.Drawing.Size(35, 18);
+			this.labelHdNumberMax.TabIndex = 257;
+			this.labelHdNumberMax.Text = "max.:";
+			this.labelHdNumberMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelNotesMax
+			// 
+			this.labelNotesMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNotesMax.AutoSize = true;
+			this.labelNotesMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNotesMax.Location = new System.Drawing.Point(675, 486);
+			this.labelNotesMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNotesMax.Name = "labelNotesMax";
+			this.labelNotesMax.Size = new System.Drawing.Size(35, 19);
+			this.labelNotesMax.TabIndex = 19;
+			this.labelNotesMax.Text = "max.:";
+			this.labelNotesMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelCapePhotographicDmMax
+			// 
+			this.labelCapePhotographicDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCapePhotographicDmMax.AutoSize = true;
+			this.labelCapePhotographicDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCapePhotographicDmMax.Location = new System.Drawing.Point(675, 468);
+			this.labelCapePhotographicDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCapePhotographicDmMax.Name = "labelCapePhotographicDmMax";
+			this.labelCapePhotographicDmMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCapePhotographicDmMax.TabIndex = 9;
+			this.labelCapePhotographicDmMax.Text = "max.:";
+			this.labelCapePhotographicDmMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelCordobaDmMax
+			// 
+			this.labelCordobaDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCordobaDmMax.AutoSize = true;
+			this.labelCordobaDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCordobaDmMax.Location = new System.Drawing.Point(675, 450);
+			this.labelCordobaDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCordobaDmMax.Name = "labelCordobaDmMax";
+			this.labelCordobaDmMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCordobaDmMax.TabIndex = 279;
+			this.labelCordobaDmMax.Text = "max.:";
+			this.labelCordobaDmMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			// 
+			// labelBonnerDmMax
+			// 
+			this.labelBonnerDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelBonnerDmMax.AutoSize = true;
+			this.labelBonnerDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelBonnerDmMax.Location = new System.Drawing.Point(675, 432);
+			this.labelBonnerDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelBonnerDmMax.Name = "labelBonnerDmMax";
+			this.labelBonnerDmMax.Size = new System.Drawing.Size(35, 18);
+			this.labelBonnerDmMax.TabIndex = 267;
+			this.labelBonnerDmMax.Text = "max.:";
+			this.labelBonnerDmMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin
 			// 
@@ -3472,16 +3472,16 @@
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.TabIndex = 274;
 			// 
-			// textBox33
+			// textBoxCorrelationProperMotionDeclinationByRightAscensionMax
 			// 
-			this.textBox33.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox33.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox33.Location = new System.Drawing.Point(330, 432);
-			this.textBox33.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox33.Name = "textBox33";
-			this.textBox33.Size = new System.Drawing.Size(50, 18);
-			this.textBox33.TabIndex = 263;
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Location = new System.Drawing.Point(330, 432);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Name = "textBoxCorrelationProperMotionDeclinationByRightAscensionMax";
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.TabIndex = 263;
 			// 
 			// textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax
 			// 
@@ -3736,621 +3736,621 @@
 			this.textBoxIdentifierMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxIdentifierMax.TabIndex = 14;
 			// 
-			// textBox57
-			// 
-			this.textBox57.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox57.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox57.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox57.Location = new System.Drawing.Point(625, 486);
-			this.textBox57.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox57.Name = "textBox57";
-			this.textBox57.Size = new System.Drawing.Size(50, 18);
-			this.textBox57.TabIndex = 18;
-			// 
-			// textBox58
-			// 
-			this.textBox58.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox58.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox58.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox58.Location = new System.Drawing.Point(625, 468);
-			this.textBox58.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox58.Name = "textBox58";
-			this.textBox58.Size = new System.Drawing.Size(50, 18);
-			this.textBox58.TabIndex = 8;
-			// 
-			// textBox59
-			// 
-			this.textBox59.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox59.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox59.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox59.Location = new System.Drawing.Point(625, 450);
-			this.textBox59.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox59.Name = "textBox59";
-			this.textBox59.Size = new System.Drawing.Size(50, 18);
-			this.textBox59.TabIndex = 277;
-			// 
-			// textBox60
-			// 
-			this.textBox60.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox60.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox60.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox60.Location = new System.Drawing.Point(625, 432);
-			this.textBox60.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox60.Name = "textBox60";
-			this.textBox60.Size = new System.Drawing.Size(50, 18);
-			this.textBox60.TabIndex = 266;
-			// 
-			// textBox61
-			// 
-			this.textBox61.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox61.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox61.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox61.Location = new System.Drawing.Point(625, 414);
-			this.textBox61.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox61.Name = "textBox61";
-			this.textBox61.Size = new System.Drawing.Size(50, 18);
-			this.textBox61.TabIndex = 256;
-			// 
-			// textBox62
-			// 
-			this.textBox62.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox62.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox62.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox62.Location = new System.Drawing.Point(625, 396);
-			this.textBox62.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox62.Name = "textBox62";
-			this.textBox62.Size = new System.Drawing.Size(50, 18);
-			this.textBox62.TabIndex = 246;
-			// 
-			// textBox63
-			// 
-			this.textBox63.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox63.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox63.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox63.Location = new System.Drawing.Point(625, 378);
-			this.textBox63.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox63.Name = "textBox63";
-			this.textBox63.Size = new System.Drawing.Size(50, 18);
-			this.textBox63.TabIndex = 236;
-			// 
-			// textBox64
-			// 
-			this.textBox64.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox64.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox64.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox64.Location = new System.Drawing.Point(625, 360);
-			this.textBox64.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox64.Name = "textBox64";
-			this.textBox64.Size = new System.Drawing.Size(50, 18);
-			this.textBox64.TabIndex = 225;
-			// 
-			// textBox65
-			// 
-			this.textBox65.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox65.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox65.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox65.Location = new System.Drawing.Point(625, 342);
-			this.textBox65.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox65.Name = "textBox65";
-			this.textBox65.Size = new System.Drawing.Size(50, 18);
-			this.textBox65.TabIndex = 215;
-			// 
-			// textBox66
-			// 
-			this.textBox66.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox66.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox66.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox66.Location = new System.Drawing.Point(625, 324);
-			this.textBox66.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox66.Name = "textBox66";
-			this.textBox66.Size = new System.Drawing.Size(50, 18);
-			this.textBox66.TabIndex = 198;
-			// 
-			// textBox67
-			// 
-			this.textBox67.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox67.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox67.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox67.Location = new System.Drawing.Point(625, 306);
-			this.textBox67.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox67.Name = "textBox67";
-			this.textBox67.Size = new System.Drawing.Size(50, 18);
-			this.textBox67.TabIndex = 188;
-			// 
-			// textBox68
-			// 
-			this.textBox68.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox68.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox68.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox68.Location = new System.Drawing.Point(625, 288);
-			this.textBox68.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox68.Name = "textBox68";
-			this.textBox68.Size = new System.Drawing.Size(50, 18);
-			this.textBox68.TabIndex = 178;
-			// 
-			// textBox69
-			// 
-			this.textBox69.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox69.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox69.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox69.Location = new System.Drawing.Point(625, 270);
-			this.textBox69.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox69.Name = "textBox69";
-			this.textBox69.Size = new System.Drawing.Size(50, 18);
-			this.textBox69.TabIndex = 168;
-			// 
-			// textBox70
-			// 
-			this.textBox70.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox70.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox70.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox70.Location = new System.Drawing.Point(625, 252);
-			this.textBox70.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox70.Name = "textBox70";
-			this.textBox70.Size = new System.Drawing.Size(50, 18);
-			this.textBox70.TabIndex = 158;
-			// 
-			// textBox71
-			// 
-			this.textBox71.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox71.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox71.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox71.Location = new System.Drawing.Point(625, 234);
-			this.textBox71.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox71.Name = "textBox71";
-			this.textBox71.Size = new System.Drawing.Size(50, 18);
-			this.textBox71.TabIndex = 148;
-			// 
-			// textBox72
-			// 
-			this.textBox72.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox72.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox72.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox72.Location = new System.Drawing.Point(625, 216);
-			this.textBox72.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox72.Name = "textBox72";
-			this.textBox72.Size = new System.Drawing.Size(50, 18);
-			this.textBox72.TabIndex = 138;
-			// 
-			// textBox73
-			// 
-			this.textBox73.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox73.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox73.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox73.Location = new System.Drawing.Point(625, 198);
-			this.textBox73.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox73.Name = "textBox73";
-			this.textBox73.Size = new System.Drawing.Size(50, 18);
-			this.textBox73.TabIndex = 128;
-			// 
-			// textBox74
-			// 
-			this.textBox74.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox74.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox74.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox74.Location = new System.Drawing.Point(625, 180);
-			this.textBox74.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox74.Name = "textBox74";
-			this.textBox74.Size = new System.Drawing.Size(50, 18);
-			this.textBox74.TabIndex = 118;
-			// 
-			// textBox75
-			// 
-			this.textBox75.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox75.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox75.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox75.Location = new System.Drawing.Point(625, 162);
-			this.textBox75.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox75.Name = "textBox75";
-			this.textBox75.Size = new System.Drawing.Size(50, 18);
-			this.textBox75.TabIndex = 108;
-			// 
-			// textBox76
-			// 
-			this.textBox76.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox76.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox76.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox76.Location = new System.Drawing.Point(625, 144);
-			this.textBox76.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox76.Name = "textBox76";
-			this.textBox76.Size = new System.Drawing.Size(50, 18);
-			this.textBox76.TabIndex = 98;
-			// 
-			// textBox77
-			// 
-			this.textBox77.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox77.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox77.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox77.Location = new System.Drawing.Point(625, 126);
-			this.textBox77.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox77.Name = "textBox77";
-			this.textBox77.Size = new System.Drawing.Size(50, 18);
-			this.textBox77.TabIndex = 88;
-			// 
-			// textBox78
-			// 
-			this.textBox78.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox78.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox78.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox78.Location = new System.Drawing.Point(625, 108);
-			this.textBox78.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox78.Name = "textBox78";
-			this.textBox78.Size = new System.Drawing.Size(50, 18);
-			this.textBox78.TabIndex = 78;
-			// 
-			// textBox79
-			// 
-			this.textBox79.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox79.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox79.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox79.Location = new System.Drawing.Point(625, 90);
-			this.textBox79.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox79.Name = "textBox79";
-			this.textBox79.Size = new System.Drawing.Size(50, 18);
-			this.textBox79.TabIndex = 57;
-			// 
-			// textBox80
-			// 
-			this.textBox80.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox80.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox80.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox80.Location = new System.Drawing.Point(625, 72);
-			this.textBox80.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox80.Name = "textBox80";
-			this.textBox80.Size = new System.Drawing.Size(50, 18);
-			this.textBox80.TabIndex = 47;
-			// 
-			// textBox81
-			// 
-			this.textBox81.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox81.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox81.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox81.Location = new System.Drawing.Point(625, 54);
-			this.textBox81.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox81.Name = "textBox81";
-			this.textBox81.Size = new System.Drawing.Size(50, 18);
-			this.textBox81.TabIndex = 37;
-			// 
-			// textBox82
-			// 
-			this.textBox82.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox82.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox82.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox82.Location = new System.Drawing.Point(625, 36);
-			this.textBox82.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox82.Name = "textBox82";
-			this.textBox82.Size = new System.Drawing.Size(50, 18);
-			this.textBox82.TabIndex = 27;
-			// 
-			// textBox83
-			// 
-			this.textBox83.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox83.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox83.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox83.Location = new System.Drawing.Point(625, 18);
-			this.textBox83.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox83.Name = "textBox83";
-			this.textBox83.Size = new System.Drawing.Size(50, 18);
-			this.textBox83.TabIndex = 17;
-			// 
-			// textBox84
-			// 
-			this.textBox84.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox84.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox84.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox84.Location = new System.Drawing.Point(625, 0);
-			this.textBox84.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox84.Name = "textBox84";
-			this.textBox84.Size = new System.Drawing.Size(50, 18);
-			this.textBox84.TabIndex = 7;
-			// 
-			// textBox85
-			// 
-			this.textBox85.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox85.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox85.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox85.Location = new System.Drawing.Point(710, 486);
-			this.textBox85.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox85.Name = "textBox85";
-			this.textBox85.Size = new System.Drawing.Size(50, 18);
-			this.textBox85.TabIndex = 20;
-			// 
-			// textBox86
-			// 
-			this.textBox86.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox86.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox86.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox86.Location = new System.Drawing.Point(710, 468);
-			this.textBox86.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox86.Name = "textBox86";
-			this.textBox86.Size = new System.Drawing.Size(50, 18);
-			this.textBox86.TabIndex = 10;
-			// 
-			// textBox87
-			// 
-			this.textBox87.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox87.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox87.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox87.Location = new System.Drawing.Point(710, 450);
-			this.textBox87.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox87.Name = "textBox87";
-			this.textBox87.Size = new System.Drawing.Size(50, 18);
-			this.textBox87.TabIndex = 0;
-			// 
-			// textBox88
-			// 
-			this.textBox88.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox88.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox88.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox88.Location = new System.Drawing.Point(710, 432);
-			this.textBox88.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox88.Name = "textBox88";
-			this.textBox88.Size = new System.Drawing.Size(50, 18);
-			this.textBox88.TabIndex = 268;
-			// 
-			// textBox89
-			// 
-			this.textBox89.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox89.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox89.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox89.Location = new System.Drawing.Point(710, 414);
-			this.textBox89.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox89.Name = "textBox89";
-			this.textBox89.Size = new System.Drawing.Size(50, 18);
-			this.textBox89.TabIndex = 258;
-			// 
-			// textBox90
-			// 
-			this.textBox90.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox90.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox90.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox90.Location = new System.Drawing.Point(710, 396);
-			this.textBox90.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox90.Name = "textBox90";
-			this.textBox90.Size = new System.Drawing.Size(50, 18);
-			this.textBox90.TabIndex = 248;
-			// 
-			// textBox91
-			// 
-			this.textBox91.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox91.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox91.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox91.Location = new System.Drawing.Point(710, 378);
-			this.textBox91.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox91.Name = "textBox91";
-			this.textBox91.Size = new System.Drawing.Size(50, 18);
-			this.textBox91.TabIndex = 238;
-			// 
-			// textBox92
-			// 
-			this.textBox92.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox92.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox92.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox92.Location = new System.Drawing.Point(710, 360);
-			this.textBox92.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox92.Name = "textBox92";
-			this.textBox92.Size = new System.Drawing.Size(50, 18);
-			this.textBox92.TabIndex = 227;
-			// 
-			// textBox93
-			// 
-			this.textBox93.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox93.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox93.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox93.Location = new System.Drawing.Point(710, 342);
-			this.textBox93.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox93.Name = "textBox93";
-			this.textBox93.Size = new System.Drawing.Size(50, 18);
-			this.textBox93.TabIndex = 217;
-			// 
-			// textBox94
-			// 
-			this.textBox94.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox94.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox94.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox94.Location = new System.Drawing.Point(710, 324);
-			this.textBox94.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox94.Name = "textBox94";
-			this.textBox94.Size = new System.Drawing.Size(50, 18);
-			this.textBox94.TabIndex = 200;
-			// 
-			// textBox95
-			// 
-			this.textBox95.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox95.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox95.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox95.Location = new System.Drawing.Point(710, 306);
-			this.textBox95.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox95.Name = "textBox95";
-			this.textBox95.Size = new System.Drawing.Size(50, 18);
-			this.textBox95.TabIndex = 190;
-			// 
-			// textBox96
-			// 
-			this.textBox96.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox96.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox96.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox96.Location = new System.Drawing.Point(710, 288);
-			this.textBox96.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox96.Name = "textBox96";
-			this.textBox96.Size = new System.Drawing.Size(50, 18);
-			this.textBox96.TabIndex = 180;
-			// 
-			// textBox97
-			// 
-			this.textBox97.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox97.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox97.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox97.Location = new System.Drawing.Point(710, 270);
-			this.textBox97.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox97.Name = "textBox97";
-			this.textBox97.Size = new System.Drawing.Size(50, 18);
-			this.textBox97.TabIndex = 170;
-			// 
-			// textBox98
-			// 
-			this.textBox98.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox98.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox98.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox98.Location = new System.Drawing.Point(710, 252);
-			this.textBox98.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox98.Name = "textBox98";
-			this.textBox98.Size = new System.Drawing.Size(50, 18);
-			this.textBox98.TabIndex = 160;
-			// 
-			// textBox99
-			// 
-			this.textBox99.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox99.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox99.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox99.Location = new System.Drawing.Point(710, 234);
-			this.textBox99.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox99.Name = "textBox99";
-			this.textBox99.Size = new System.Drawing.Size(50, 18);
-			this.textBox99.TabIndex = 150;
-			// 
-			// textBox100
-			// 
-			this.textBox100.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox100.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox100.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox100.Location = new System.Drawing.Point(710, 216);
-			this.textBox100.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox100.Name = "textBox100";
-			this.textBox100.Size = new System.Drawing.Size(50, 18);
-			this.textBox100.TabIndex = 140;
-			// 
-			// textBox101
-			// 
-			this.textBox101.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox101.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox101.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox101.Location = new System.Drawing.Point(710, 198);
-			this.textBox101.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox101.Name = "textBox101";
-			this.textBox101.Size = new System.Drawing.Size(50, 18);
-			this.textBox101.TabIndex = 130;
-			// 
-			// textBox102
-			// 
-			this.textBox102.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox102.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox102.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox102.Location = new System.Drawing.Point(710, 180);
-			this.textBox102.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox102.Name = "textBox102";
-			this.textBox102.Size = new System.Drawing.Size(50, 18);
-			this.textBox102.TabIndex = 120;
-			// 
-			// textBox103
-			// 
-			this.textBox103.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox103.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox103.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox103.Location = new System.Drawing.Point(710, 162);
-			this.textBox103.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox103.Name = "textBox103";
-			this.textBox103.Size = new System.Drawing.Size(50, 18);
-			this.textBox103.TabIndex = 110;
-			// 
-			// textBox104
-			// 
-			this.textBox104.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox104.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox104.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox104.Location = new System.Drawing.Point(710, 144);
-			this.textBox104.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox104.Name = "textBox104";
-			this.textBox104.Size = new System.Drawing.Size(50, 18);
-			this.textBox104.TabIndex = 100;
-			// 
-			// textBox105
-			// 
-			this.textBox105.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox105.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox105.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox105.Location = new System.Drawing.Point(710, 126);
-			this.textBox105.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox105.Name = "textBox105";
-			this.textBox105.Size = new System.Drawing.Size(50, 18);
-			this.textBox105.TabIndex = 90;
-			// 
-			// textBox106
-			// 
-			this.textBox106.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox106.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox106.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox106.Location = new System.Drawing.Point(710, 108);
-			this.textBox106.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox106.Name = "textBox106";
-			this.textBox106.Size = new System.Drawing.Size(50, 18);
-			this.textBox106.TabIndex = 80;
-			// 
-			// textBox107
-			// 
-			this.textBox107.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox107.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox107.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox107.Location = new System.Drawing.Point(710, 90);
-			this.textBox107.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox107.Name = "textBox107";
-			this.textBox107.Size = new System.Drawing.Size(50, 18);
-			this.textBox107.TabIndex = 59;
-			// 
-			// textBox108
-			// 
-			this.textBox108.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox108.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox108.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox108.Location = new System.Drawing.Point(710, 72);
-			this.textBox108.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox108.Name = "textBox108";
-			this.textBox108.Size = new System.Drawing.Size(50, 18);
-			this.textBox108.TabIndex = 49;
-			// 
-			// textBox109
-			// 
-			this.textBox109.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox109.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox109.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox109.Location = new System.Drawing.Point(710, 54);
-			this.textBox109.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox109.Name = "textBox109";
-			this.textBox109.Size = new System.Drawing.Size(50, 18);
-			this.textBox109.TabIndex = 39;
-			// 
-			// textBox110
-			// 
-			this.textBox110.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox110.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox110.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox110.Location = new System.Drawing.Point(710, 36);
-			this.textBox110.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox110.Name = "textBox110";
-			this.textBox110.Size = new System.Drawing.Size(50, 18);
-			this.textBox110.TabIndex = 29;
-			// 
-			// textBox111
-			// 
-			this.textBox111.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox111.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox111.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox111.Location = new System.Drawing.Point(710, 18);
-			this.textBox111.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox111.Name = "textBox111";
-			this.textBox111.Size = new System.Drawing.Size(50, 18);
-			this.textBox111.TabIndex = 19;
-			// 
-			// textBox112
-			// 
-			this.textBox112.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox112.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox112.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox112.Location = new System.Drawing.Point(710, 0);
-			this.textBox112.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox112.Name = "textBox112";
-			this.textBox112.Size = new System.Drawing.Size(50, 18);
-			this.textBox112.TabIndex = 9;
+			// textBoxNotesMin
+			// 
+			this.textBoxNotesMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNotesMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNotesMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNotesMin.Location = new System.Drawing.Point(625, 486);
+			this.textBoxNotesMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNotesMin.Name = "textBoxNotesMin";
+			this.textBoxNotesMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNotesMin.TabIndex = 18;
+			// 
+			// textBoxCapePhotographicDmMin
+			// 
+			this.textBoxCapePhotographicDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCapePhotographicDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCapePhotographicDmMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCapePhotographicDmMin.Location = new System.Drawing.Point(625, 468);
+			this.textBoxCapePhotographicDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCapePhotographicDmMin.Name = "textBoxCapePhotographicDmMin";
+			this.textBoxCapePhotographicDmMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCapePhotographicDmMin.TabIndex = 8;
+			// 
+			// textBoxCordobaDmMin
+			// 
+			this.textBoxCordobaDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCordobaDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCordobaDmMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCordobaDmMin.Location = new System.Drawing.Point(625, 450);
+			this.textBoxCordobaDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCordobaDmMin.Name = "textBoxCordobaDmMin";
+			this.textBoxCordobaDmMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCordobaDmMin.TabIndex = 277;
+			// 
+			// textBoxBonnerDmMin
+			// 
+			this.textBoxBonnerDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxBonnerDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxBonnerDmMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxBonnerDmMin.Location = new System.Drawing.Point(625, 432);
+			this.textBoxBonnerDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxBonnerDmMin.Name = "textBoxBonnerDmMin";
+			this.textBoxBonnerDmMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxBonnerDmMin.TabIndex = 266;
+			// 
+			// textBoxHdNumberMin
+			// 
+			this.textBoxHdNumberMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxHdNumberMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxHdNumberMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxHdNumberMin.Location = new System.Drawing.Point(625, 414);
+			this.textBoxHdNumberMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxHdNumberMin.Name = "textBoxHdNumberMin";
+			this.textBoxHdNumberMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxHdNumberMin.TabIndex = 256;
+			// 
+			// textBoxPpmAndSupplementMin
+			// 
+			this.textBoxPpmAndSupplementMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxPpmAndSupplementMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxPpmAndSupplementMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxPpmAndSupplementMin.Location = new System.Drawing.Point(625, 396);
+			this.textBoxPpmAndSupplementMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxPpmAndSupplementMin.Name = "textBoxPpmAndSupplementMin";
+			this.textBoxPpmAndSupplementMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxPpmAndSupplementMin.TabIndex = 246;
+			// 
+			// textBoxCcdmComponentIdentifierMin
+			// 
+			this.textBoxCcdmComponentIdentifierMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCcdmComponentIdentifierMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCcdmComponentIdentifierMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCcdmComponentIdentifierMin.Location = new System.Drawing.Point(625, 378);
+			this.textBoxCcdmComponentIdentifierMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCcdmComponentIdentifierMin.Name = "textBoxCcdmComponentIdentifierMin";
+			this.textBoxCcdmComponentIdentifierMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCcdmComponentIdentifierMin.TabIndex = 236;
+			// 
+			// textBoxEpochPhotometryInAnnexMin
+			// 
+			this.textBoxEpochPhotometryInAnnexMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxEpochPhotometryInAnnexMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxEpochPhotometryInAnnexMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxEpochPhotometryInAnnexMin.Location = new System.Drawing.Point(625, 360);
+			this.textBoxEpochPhotometryInAnnexMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxEpochPhotometryInAnnexMin.Name = "textBoxEpochPhotometryInAnnexMin";
+			this.textBoxEpochPhotometryInAnnexMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxEpochPhotometryInAnnexMin.TabIndex = 225;
+			// 
+			// textBoxDuplicityFromTychoMin
+			// 
+			this.textBoxDuplicityFromTychoMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxDuplicityFromTychoMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxDuplicityFromTychoMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxDuplicityFromTychoMin.Location = new System.Drawing.Point(625, 342);
+			this.textBoxDuplicityFromTychoMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxDuplicityFromTychoMin.Name = "textBoxDuplicityFromTychoMin";
+			this.textBoxDuplicityFromTychoMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxDuplicityFromTychoMin.TabIndex = 215;
+			// 
+			// textBoxVariabilityFromTychoMin
+			// 
+			this.textBoxVariabilityFromTychoMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxVariabilityFromTychoMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxVariabilityFromTychoMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxVariabilityFromTychoMin.Location = new System.Drawing.Point(625, 324);
+			this.textBoxVariabilityFromTychoMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxVariabilityFromTychoMin.Name = "textBoxVariabilityFromTychoMin";
+			this.textBoxVariabilityFromTychoMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxVariabilityFromTychoMin.TabIndex = 198;
+			// 
+			// textBoxKnownVariabilityFromGcvsNsvMin
+			// 
+			this.textBoxKnownVariabilityFromGcvsNsvMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxKnownVariabilityFromGcvsNsvMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxKnownVariabilityFromGcvsNsvMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxKnownVariabilityFromGcvsNsvMin.Location = new System.Drawing.Point(625, 306);
+			this.textBoxKnownVariabilityFromGcvsNsvMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxKnownVariabilityFromGcvsNsvMin.Name = "textBoxKnownVariabilityFromGcvsNsvMin";
+			this.textBoxKnownVariabilityFromGcvsNsvMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxKnownVariabilityFromGcvsNsvMin.TabIndex = 188;
+			// 
+			// textBoxVtmagAtMinimumMin
+			// 
+			this.textBoxVtmagAtMinimumMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxVtmagAtMinimumMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxVtmagAtMinimumMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxVtmagAtMinimumMin.Location = new System.Drawing.Point(625, 288);
+			this.textBoxVtmagAtMinimumMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxVtmagAtMinimumMin.Name = "textBoxVtmagAtMinimumMin";
+			this.textBoxVtmagAtMinimumMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxVtmagAtMinimumMin.TabIndex = 178;
+			// 
+			// textBoxVtmagAtMaximumMin
+			// 
+			this.textBoxVtmagAtMaximumMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxVtmagAtMaximumMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxVtmagAtMaximumMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxVtmagAtMaximumMin.Location = new System.Drawing.Point(625, 270);
+			this.textBoxVtmagAtMaximumMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxVtmagAtMaximumMin.Name = "textBoxVtmagAtMaximumMin";
+			this.textBoxVtmagAtMaximumMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxVtmagAtMaximumMin.TabIndex = 168;
+			// 
+			// textBoxEstimateOfVtmagScatterMin
+			// 
+			this.textBoxEstimateOfVtmagScatterMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxEstimateOfVtmagScatterMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxEstimateOfVtmagScatterMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxEstimateOfVtmagScatterMin.Location = new System.Drawing.Point(625, 252);
+			this.textBoxEstimateOfVtmagScatterMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxEstimateOfVtmagScatterMin.Name = "textBoxEstimateOfVtmagScatterMin";
+			this.textBoxEstimateOfVtmagScatterMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxEstimateOfVtmagScatterMin.TabIndex = 158;
+			// 
+			// textBoxNumberOfTransitsForPhotometryMin
+			// 
+			this.textBoxNumberOfTransitsForPhotometryMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNumberOfTransitsForPhotometryMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNumberOfTransitsForPhotometryMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNumberOfTransitsForPhotometryMin.Location = new System.Drawing.Point(625, 234);
+			this.textBoxNumberOfTransitsForPhotometryMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNumberOfTransitsForPhotometryMin.Name = "textBoxNumberOfTransitsForPhotometryMin";
+			this.textBoxNumberOfTransitsForPhotometryMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNumberOfTransitsForPhotometryMin.TabIndex = 148;
+			// 
+			// textBoxSourceOfAstrometricDataMin
+			// 
+			this.textBoxSourceOfAstrometricDataMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfAstrometricDataMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfAstrometricDataMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfAstrometricDataMin.Location = new System.Drawing.Point(625, 216);
+			this.textBoxSourceOfAstrometricDataMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfAstrometricDataMin.Name = "textBoxSourceOfAstrometricDataMin";
+			this.textBoxSourceOfAstrometricDataMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfAstrometricDataMin.TabIndex = 138;
+			// 
+			// textBoxSignalToNoiseRatioOfTheStarImageMin
+			// 
+			this.textBoxSignalToNoiseRatioOfTheStarImageMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSignalToNoiseRatioOfTheStarImageMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSignalToNoiseRatioOfTheStarImageMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSignalToNoiseRatioOfTheStarImageMin.Location = new System.Drawing.Point(625, 198);
+			this.textBoxSignalToNoiseRatioOfTheStarImageMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSignalToNoiseRatioOfTheStarImageMin.Name = "textBoxSignalToNoiseRatioOfTheStarImageMin";
+			this.textBoxSignalToNoiseRatioOfTheStarImageMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSignalToNoiseRatioOfTheStarImageMin.TabIndex = 128;
+			// 
+			// textBoxAstrometricQualityFlagMin
+			// 
+			this.textBoxAstrometricQualityFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxAstrometricQualityFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxAstrometricQualityFlagMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxAstrometricQualityFlagMin.Location = new System.Drawing.Point(625, 180);
+			this.textBoxAstrometricQualityFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxAstrometricQualityFlagMin.Name = "textBoxAstrometricQualityFlagMin";
+			this.textBoxAstrometricQualityFlagMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxAstrometricQualityFlagMin.TabIndex = 118;
+			// 
+			// textBoxStandardErrorJohnsonBvColorMin
+			// 
+			this.textBoxStandardErrorJohnsonBvColorMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorJohnsonBvColorMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorJohnsonBvColorMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorJohnsonBvColorMin.Location = new System.Drawing.Point(625, 162);
+			this.textBoxStandardErrorJohnsonBvColorMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorJohnsonBvColorMin.Name = "textBoxStandardErrorJohnsonBvColorMin";
+			this.textBoxStandardErrorJohnsonBvColorMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorJohnsonBvColorMin.TabIndex = 108;
+			// 
+			// textBoxJohnsonBvColorMin
+			// 
+			this.textBoxJohnsonBvColorMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxJohnsonBvColorMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxJohnsonBvColorMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxJohnsonBvColorMin.Location = new System.Drawing.Point(625, 144);
+			this.textBoxJohnsonBvColorMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxJohnsonBvColorMin.Name = "textBoxJohnsonBvColorMin";
+			this.textBoxJohnsonBvColorMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxJohnsonBvColorMin.TabIndex = 98;
+			// 
+			// textBoxSourceOfPhotometryMin
+			// 
+			this.textBoxSourceOfPhotometryMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfPhotometryMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfPhotometryMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfPhotometryMin.Location = new System.Drawing.Point(625, 126);
+			this.textBoxSourceOfPhotometryMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfPhotometryMin.Name = "textBoxSourceOfPhotometryMin";
+			this.textBoxSourceOfPhotometryMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfPhotometryMin.TabIndex = 88;
+			// 
+			// textBoxStandardErrorMeanVtMagnitudeMin
+			// 
+			this.textBoxStandardErrorMeanVtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Location = new System.Drawing.Point(625, 108);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Name = "textBoxStandardErrorMeanVtMagnitudeMin";
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.TabIndex = 78;
+			// 
+			// textBoxMeanVtMagnitudeMin
+			// 
+			this.textBoxMeanVtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMeanVtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMeanVtMagnitudeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMeanVtMagnitudeMin.Location = new System.Drawing.Point(625, 90);
+			this.textBoxMeanVtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMeanVtMagnitudeMin.Name = "textBoxMeanVtMagnitudeMin";
+			this.textBoxMeanVtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMeanVtMagnitudeMin.TabIndex = 57;
+			// 
+			// textBoxStandardErrorMeanBtMagnitudeMin
+			// 
+			this.textBoxStandardErrorMeanBtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Location = new System.Drawing.Point(625, 72);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Name = "textBoxStandardErrorMeanBtMagnitudeMin";
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.TabIndex = 47;
+			// 
+			// textBoxMeanBtMagnitudeMin
+			// 
+			this.textBoxMeanBtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMeanBtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMeanBtMagnitudeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMeanBtMagnitudeMin.Location = new System.Drawing.Point(625, 54);
+			this.textBoxMeanBtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMeanBtMagnitudeMin.Name = "textBoxMeanBtMagnitudeMin";
+			this.textBoxMeanBtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMeanBtMagnitudeMin.TabIndex = 37;
+			// 
+			// textBoxHipparcosNumberMin
+			// 
+			this.textBoxHipparcosNumberMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxHipparcosNumberMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxHipparcosNumberMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxHipparcosNumberMin.Location = new System.Drawing.Point(625, 36);
+			this.textBoxHipparcosNumberMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxHipparcosNumberMin.Name = "textBoxHipparcosNumberMin";
+			this.textBoxHipparcosNumberMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxHipparcosNumberMin.TabIndex = 27;
+			// 
+			// textBoxGoodnessOfFitParameterMin
+			// 
+			this.textBoxGoodnessOfFitParameterMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxGoodnessOfFitParameterMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxGoodnessOfFitParameterMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxGoodnessOfFitParameterMin.Location = new System.Drawing.Point(625, 18);
+			this.textBoxGoodnessOfFitParameterMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxGoodnessOfFitParameterMin.Name = "textBoxGoodnessOfFitParameterMin";
+			this.textBoxGoodnessOfFitParameterMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxGoodnessOfFitParameterMin.TabIndex = 17;
+			// 
+			// textBoxNumberOfTransitsForAstrometryMin
+			// 
+			this.textBoxNumberOfTransitsForAstrometryMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNumberOfTransitsForAstrometryMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNumberOfTransitsForAstrometryMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNumberOfTransitsForAstrometryMin.Location = new System.Drawing.Point(625, 0);
+			this.textBoxNumberOfTransitsForAstrometryMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNumberOfTransitsForAstrometryMin.Name = "textBoxNumberOfTransitsForAstrometryMin";
+			this.textBoxNumberOfTransitsForAstrometryMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNumberOfTransitsForAstrometryMin.TabIndex = 7;
+			// 
+			// textBoxNotesmax
+			// 
+			this.textBoxNotesmax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNotesmax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNotesmax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNotesmax.Location = new System.Drawing.Point(710, 486);
+			this.textBoxNotesmax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNotesmax.Name = "textBoxNotesmax";
+			this.textBoxNotesmax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNotesmax.TabIndex = 20;
+			// 
+			// textBoxCapePhotographicDmMax
+			// 
+			this.textBoxCapePhotographicDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCapePhotographicDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCapePhotographicDmMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCapePhotographicDmMax.Location = new System.Drawing.Point(710, 468);
+			this.textBoxCapePhotographicDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCapePhotographicDmMax.Name = "textBoxCapePhotographicDmMax";
+			this.textBoxCapePhotographicDmMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCapePhotographicDmMax.TabIndex = 10;
+			// 
+			// textBoxCordobaDmMax
+			// 
+			this.textBoxCordobaDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCordobaDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCordobaDmMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCordobaDmMax.Location = new System.Drawing.Point(710, 450);
+			this.textBoxCordobaDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCordobaDmMax.Name = "textBoxCordobaDmMax";
+			this.textBoxCordobaDmMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCordobaDmMax.TabIndex = 0;
+			// 
+			// textBoxBonnerDmMax
+			// 
+			this.textBoxBonnerDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxBonnerDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxBonnerDmMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxBonnerDmMax.Location = new System.Drawing.Point(710, 432);
+			this.textBoxBonnerDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxBonnerDmMax.Name = "textBoxBonnerDmMax";
+			this.textBoxBonnerDmMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxBonnerDmMax.TabIndex = 268;
+			// 
+			// textBoxHdNumberMax
+			// 
+			this.textBoxHdNumberMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxHdNumberMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxHdNumberMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxHdNumberMax.Location = new System.Drawing.Point(710, 414);
+			this.textBoxHdNumberMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxHdNumberMax.Name = "textBoxHdNumberMax";
+			this.textBoxHdNumberMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxHdNumberMax.TabIndex = 258;
+			// 
+			// textBoxPpmAndSupplementMax
+			// 
+			this.textBoxPpmAndSupplementMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxPpmAndSupplementMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxPpmAndSupplementMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxPpmAndSupplementMax.Location = new System.Drawing.Point(710, 396);
+			this.textBoxPpmAndSupplementMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxPpmAndSupplementMax.Name = "textBoxPpmAndSupplementMax";
+			this.textBoxPpmAndSupplementMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxPpmAndSupplementMax.TabIndex = 248;
+			// 
+			// textBoxCcdmComponentIdentifierMax
+			// 
+			this.textBoxCcdmComponentIdentifierMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCcdmComponentIdentifierMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCcdmComponentIdentifierMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCcdmComponentIdentifierMax.Location = new System.Drawing.Point(710, 378);
+			this.textBoxCcdmComponentIdentifierMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCcdmComponentIdentifierMax.Name = "textBoxCcdmComponentIdentifierMax";
+			this.textBoxCcdmComponentIdentifierMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCcdmComponentIdentifierMax.TabIndex = 238;
+			// 
+			// textBoxEpochPhotometryInAnnexMax
+			// 
+			this.textBoxEpochPhotometryInAnnexMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxEpochPhotometryInAnnexMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxEpochPhotometryInAnnexMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxEpochPhotometryInAnnexMax.Location = new System.Drawing.Point(710, 360);
+			this.textBoxEpochPhotometryInAnnexMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxEpochPhotometryInAnnexMax.Name = "textBoxEpochPhotometryInAnnexMax";
+			this.textBoxEpochPhotometryInAnnexMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxEpochPhotometryInAnnexMax.TabIndex = 227;
+			// 
+			// textBoxDuplicityFromTychoMax
+			// 
+			this.textBoxDuplicityFromTychoMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxDuplicityFromTychoMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxDuplicityFromTychoMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxDuplicityFromTychoMax.Location = new System.Drawing.Point(710, 342);
+			this.textBoxDuplicityFromTychoMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxDuplicityFromTychoMax.Name = "textBoxDuplicityFromTychoMax";
+			this.textBoxDuplicityFromTychoMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxDuplicityFromTychoMax.TabIndex = 217;
+			// 
+			// textBoxVariabilityFromTychoMax
+			// 
+			this.textBoxVariabilityFromTychoMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxVariabilityFromTychoMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxVariabilityFromTychoMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxVariabilityFromTychoMax.Location = new System.Drawing.Point(710, 324);
+			this.textBoxVariabilityFromTychoMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxVariabilityFromTychoMax.Name = "textBoxVariabilityFromTychoMax";
+			this.textBoxVariabilityFromTychoMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxVariabilityFromTychoMax.TabIndex = 200;
+			// 
+			// textBoxKnownVariabilityFromGcvsNsvMax
+			// 
+			this.textBoxKnownVariabilityFromGcvsNsvMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxKnownVariabilityFromGcvsNsvMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxKnownVariabilityFromGcvsNsvMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxKnownVariabilityFromGcvsNsvMax.Location = new System.Drawing.Point(710, 306);
+			this.textBoxKnownVariabilityFromGcvsNsvMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxKnownVariabilityFromGcvsNsvMax.Name = "textBoxKnownVariabilityFromGcvsNsvMax";
+			this.textBoxKnownVariabilityFromGcvsNsvMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxKnownVariabilityFromGcvsNsvMax.TabIndex = 190;
+			// 
+			// textBoxVtmagAtMinimumMax
+			// 
+			this.textBoxVtmagAtMinimumMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxVtmagAtMinimumMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxVtmagAtMinimumMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxVtmagAtMinimumMax.Location = new System.Drawing.Point(710, 288);
+			this.textBoxVtmagAtMinimumMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxVtmagAtMinimumMax.Name = "textBoxVtmagAtMinimumMax";
+			this.textBoxVtmagAtMinimumMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxVtmagAtMinimumMax.TabIndex = 180;
+			// 
+			// textBoxVtmagAtMaximumMax
+			// 
+			this.textBoxVtmagAtMaximumMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxVtmagAtMaximumMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxVtmagAtMaximumMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxVtmagAtMaximumMax.Location = new System.Drawing.Point(710, 270);
+			this.textBoxVtmagAtMaximumMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxVtmagAtMaximumMax.Name = "textBoxVtmagAtMaximumMax";
+			this.textBoxVtmagAtMaximumMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxVtmagAtMaximumMax.TabIndex = 170;
+			// 
+			// textBoxEstimateOfVtmagScatterMax
+			// 
+			this.textBoxEstimateOfVtmagScatterMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxEstimateOfVtmagScatterMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxEstimateOfVtmagScatterMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxEstimateOfVtmagScatterMax.Location = new System.Drawing.Point(710, 252);
+			this.textBoxEstimateOfVtmagScatterMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxEstimateOfVtmagScatterMax.Name = "textBoxEstimateOfVtmagScatterMax";
+			this.textBoxEstimateOfVtmagScatterMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxEstimateOfVtmagScatterMax.TabIndex = 160;
+			// 
+			// textBoxNumberOfTransitsForPhotometryMax
+			// 
+			this.textBoxNumberOfTransitsForPhotometryMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNumberOfTransitsForPhotometryMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNumberOfTransitsForPhotometryMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNumberOfTransitsForPhotometryMax.Location = new System.Drawing.Point(710, 234);
+			this.textBoxNumberOfTransitsForPhotometryMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNumberOfTransitsForPhotometryMax.Name = "textBoxNumberOfTransitsForPhotometryMax";
+			this.textBoxNumberOfTransitsForPhotometryMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNumberOfTransitsForPhotometryMax.TabIndex = 150;
+			// 
+			// textBoxSourceOfAstrometricDataMax
+			// 
+			this.textBoxSourceOfAstrometricDataMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfAstrometricDataMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfAstrometricDataMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfAstrometricDataMax.Location = new System.Drawing.Point(710, 216);
+			this.textBoxSourceOfAstrometricDataMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfAstrometricDataMax.Name = "textBoxSourceOfAstrometricDataMax";
+			this.textBoxSourceOfAstrometricDataMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfAstrometricDataMax.TabIndex = 140;
+			// 
+			// textBoxSignalToNoiseRatioOfTheStarImageMax
+			// 
+			this.textBoxSignalToNoiseRatioOfTheStarImageMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSignalToNoiseRatioOfTheStarImageMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSignalToNoiseRatioOfTheStarImageMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSignalToNoiseRatioOfTheStarImageMax.Location = new System.Drawing.Point(710, 198);
+			this.textBoxSignalToNoiseRatioOfTheStarImageMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSignalToNoiseRatioOfTheStarImageMax.Name = "textBoxSignalToNoiseRatioOfTheStarImageMax";
+			this.textBoxSignalToNoiseRatioOfTheStarImageMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSignalToNoiseRatioOfTheStarImageMax.TabIndex = 130;
+			// 
+			// textBoxAstrometricQualityFlagMax
+			// 
+			this.textBoxAstrometricQualityFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxAstrometricQualityFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxAstrometricQualityFlagMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxAstrometricQualityFlagMax.Location = new System.Drawing.Point(710, 180);
+			this.textBoxAstrometricQualityFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxAstrometricQualityFlagMax.Name = "textBoxAstrometricQualityFlagMax";
+			this.textBoxAstrometricQualityFlagMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxAstrometricQualityFlagMax.TabIndex = 120;
+			// 
+			// textBoxStandardErrorJohnsonBvColorMax
+			// 
+			this.textBoxStandardErrorJohnsonBvColorMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorJohnsonBvColorMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorJohnsonBvColorMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorJohnsonBvColorMax.Location = new System.Drawing.Point(710, 162);
+			this.textBoxStandardErrorJohnsonBvColorMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorJohnsonBvColorMax.Name = "textBoxStandardErrorJohnsonBvColorMax";
+			this.textBoxStandardErrorJohnsonBvColorMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorJohnsonBvColorMax.TabIndex = 110;
+			// 
+			// textBoxJohnsonBvColorMax
+			// 
+			this.textBoxJohnsonBvColorMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxJohnsonBvColorMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxJohnsonBvColorMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxJohnsonBvColorMax.Location = new System.Drawing.Point(710, 144);
+			this.textBoxJohnsonBvColorMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxJohnsonBvColorMax.Name = "textBoxJohnsonBvColorMax";
+			this.textBoxJohnsonBvColorMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxJohnsonBvColorMax.TabIndex = 100;
+			// 
+			// textBoxSourceOfPhotometryMax
+			// 
+			this.textBoxSourceOfPhotometryMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfPhotometryMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfPhotometryMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfPhotometryMax.Location = new System.Drawing.Point(710, 126);
+			this.textBoxSourceOfPhotometryMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfPhotometryMax.Name = "textBoxSourceOfPhotometryMax";
+			this.textBoxSourceOfPhotometryMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfPhotometryMax.TabIndex = 90;
+			// 
+			// textBoxStandardErrorMeanVtMagnitudeMax
+			// 
+			this.textBoxStandardErrorMeanVtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Location = new System.Drawing.Point(710, 108);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Name = "textBoxStandardErrorMeanVtMagnitudeMax";
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.TabIndex = 80;
+			// 
+			// textBoxMeanVtMagnitudeMax
+			// 
+			this.textBoxMeanVtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMeanVtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMeanVtMagnitudeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMeanVtMagnitudeMax.Location = new System.Drawing.Point(710, 90);
+			this.textBoxMeanVtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMeanVtMagnitudeMax.Name = "textBoxMeanVtMagnitudeMax";
+			this.textBoxMeanVtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMeanVtMagnitudeMax.TabIndex = 59;
+			// 
+			// textBoxStandardErrorMeanBtMagnitudeMax
+			// 
+			this.textBoxStandardErrorMeanBtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Location = new System.Drawing.Point(710, 72);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Name = "textBoxStandardErrorMeanBtMagnitudeMax";
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.TabIndex = 49;
+			// 
+			// textBoxMeanBtMagnitudeMax
+			// 
+			this.textBoxMeanBtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMeanBtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMeanBtMagnitudeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMeanBtMagnitudeMax.Location = new System.Drawing.Point(710, 54);
+			this.textBoxMeanBtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMeanBtMagnitudeMax.Name = "textBoxMeanBtMagnitudeMax";
+			this.textBoxMeanBtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMeanBtMagnitudeMax.TabIndex = 39;
+			// 
+			// textBoxHipparcosNumberMax
+			// 
+			this.textBoxHipparcosNumberMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxHipparcosNumberMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxHipparcosNumberMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxHipparcosNumberMax.Location = new System.Drawing.Point(710, 36);
+			this.textBoxHipparcosNumberMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxHipparcosNumberMax.Name = "textBoxHipparcosNumberMax";
+			this.textBoxHipparcosNumberMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxHipparcosNumberMax.TabIndex = 29;
+			// 
+			// textBoxGoodnessOfFitParameterMax
+			// 
+			this.textBoxGoodnessOfFitParameterMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxGoodnessOfFitParameterMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxGoodnessOfFitParameterMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxGoodnessOfFitParameterMax.Location = new System.Drawing.Point(710, 18);
+			this.textBoxGoodnessOfFitParameterMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxGoodnessOfFitParameterMax.Name = "textBoxGoodnessOfFitParameterMax";
+			this.textBoxGoodnessOfFitParameterMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxGoodnessOfFitParameterMax.TabIndex = 19;
+			// 
+			// textBoxNumberOfTransitsForAstrometryMax
+			// 
+			this.textBoxNumberOfTransitsForAstrometryMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNumberOfTransitsForAstrometryMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNumberOfTransitsForAstrometryMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNumberOfTransitsForAstrometryMax.Location = new System.Drawing.Point(710, 0);
+			this.textBoxNumberOfTransitsForAstrometryMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNumberOfTransitsForAstrometryMax.Name = "textBoxNumberOfTransitsForAstrometryMax";
+			this.textBoxNumberOfTransitsForAstrometryMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNumberOfTransitsForAstrometryMax.TabIndex = 9;
 			// 
 			// TychoCatalogFilterForm
 			// 
@@ -4509,62 +4509,62 @@
 		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax;
 		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByDeclinationMax;
 		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax;
-		private System.Windows.Forms.Label label57;
-		private System.Windows.Forms.Label label58;
-		private System.Windows.Forms.Label label59;
-		private System.Windows.Forms.Label label60;
-		private System.Windows.Forms.Label label61;
-		private System.Windows.Forms.Label label62;
-		private System.Windows.Forms.Label label63;
-		private System.Windows.Forms.Label label64;
-		private System.Windows.Forms.Label label65;
-		private System.Windows.Forms.Label label66;
-		private System.Windows.Forms.Label label67;
-		private System.Windows.Forms.Label label68;
-		private System.Windows.Forms.Label label69;
-		private System.Windows.Forms.Label label70;
-		private System.Windows.Forms.Label label71;
-		private System.Windows.Forms.Label label72;
-		private System.Windows.Forms.Label label73;
-		private System.Windows.Forms.Label label74;
-		private System.Windows.Forms.Label label75;
-		private System.Windows.Forms.Label label76;
-		private System.Windows.Forms.Label label77;
-		private System.Windows.Forms.Label label78;
-		private System.Windows.Forms.Label label79;
-		private System.Windows.Forms.Label label80;
-		private System.Windows.Forms.Label label81;
-		private System.Windows.Forms.Label label82;
-		private System.Windows.Forms.Label label83;
-		private System.Windows.Forms.Label label84;
-		private System.Windows.Forms.Label label85;
-		private System.Windows.Forms.Label label86;
-		private System.Windows.Forms.Label label87;
-		private System.Windows.Forms.Label label88;
-		private System.Windows.Forms.Label label89;
-		private System.Windows.Forms.Label label90;
-		private System.Windows.Forms.Label label91;
-		private System.Windows.Forms.Label label92;
-		private System.Windows.Forms.Label label93;
-		private System.Windows.Forms.Label label94;
-		private System.Windows.Forms.Label label95;
-		private System.Windows.Forms.Label label96;
-		private System.Windows.Forms.Label label97;
-		private System.Windows.Forms.Label label98;
-		private System.Windows.Forms.Label label99;
-		private System.Windows.Forms.Label label100;
-		private System.Windows.Forms.Label label101;
-		private System.Windows.Forms.Label label102;
-		private System.Windows.Forms.Label label103;
-		private System.Windows.Forms.Label label104;
-		private System.Windows.Forms.Label label105;
-		private System.Windows.Forms.Label label106;
-		private System.Windows.Forms.Label label107;
-		private System.Windows.Forms.Label label108;
-		private System.Windows.Forms.Label label109;
-		private System.Windows.Forms.Label label110;
-		private System.Windows.Forms.Label label111;
-		private System.Windows.Forms.Label label112;
+		private System.Windows.Forms.Label labelNumberOfTransitsForAstrometryMin;
+		private System.Windows.Forms.Label labelGoodnessOfFitParameterMin;
+		private System.Windows.Forms.Label labelHipparcosNumberMin;
+		private System.Windows.Forms.Label labelMeanBtMagnitudeMin;
+		private System.Windows.Forms.Label labelStandardErrorMeanBtMagnitudeMin;
+		private System.Windows.Forms.Label labelMeanVtMagnitudeMin;
+		private System.Windows.Forms.Label labelStandardErrorMeanVtMagnitudeMin;
+		private System.Windows.Forms.Label labelSourceOfPhotometryMin;
+		private System.Windows.Forms.Label labelJohnsonBvColorMin;
+		private System.Windows.Forms.Label labelStandardErrorJohnsonBvColorMin;
+		private System.Windows.Forms.Label labelAstrometricQualityFlagMin;
+		private System.Windows.Forms.Label labelSignalToNoiseRatioOfTheStarImageMin;
+		private System.Windows.Forms.Label labelSourceOfAstrometricDataMin;
+		private System.Windows.Forms.Label labelNumberOfTransitsForPhotometryMin;
+		private System.Windows.Forms.Label labelEstimateOfVtmagScatterMin;
+		private System.Windows.Forms.Label labelVtmagAtMaximumMin;
+		private System.Windows.Forms.Label labelVtmagAtMinimumMin;
+		private System.Windows.Forms.Label labelKnownVariabilityFromGcvsNsvMin;
+		private System.Windows.Forms.Label labelVariabilityFromTychoMin;
+		private System.Windows.Forms.Label labelDuplicityFromTychoMin;
+		private System.Windows.Forms.Label labelEpochPhotometryInAnnexMin;
+		private System.Windows.Forms.Label labelCcdmComponentIdentifier;
+		private System.Windows.Forms.Label labelPpmAndSupplementMin;
+		private System.Windows.Forms.Label labelHdNumberMin;
+		private System.Windows.Forms.Label labelBonnerDmMin;
+		private System.Windows.Forms.Label labelCordobaDmMin;
+		private System.Windows.Forms.Label labelCapePhotographicDmMin;
+		private System.Windows.Forms.Label labelNotesMin;
+		private System.Windows.Forms.Label labelNumberOfTransitsForAstrometryMax;
+		private System.Windows.Forms.Label labelGoodnessOfFitParameterMax;
+		private System.Windows.Forms.Label labelHipparcosNumberMax;
+		private System.Windows.Forms.Label labelMeanBtMagnitudeMax;
+		private System.Windows.Forms.Label labelStandardErrorMeanBtMagnitudeMax;
+		private System.Windows.Forms.Label labelMeanVtMagnitudeMax;
+		private System.Windows.Forms.Label labelStandardErrorMeanVtMagnitudeMax;
+		private System.Windows.Forms.Label labelSourceOfPhotometryMax;
+		private System.Windows.Forms.Label labelJohnsonBvColorMax;
+		private System.Windows.Forms.Label labelStandardErrorJohnsonBvColorMax;
+		private System.Windows.Forms.Label labelAstrometricQualityFlagMax;
+		private System.Windows.Forms.Label labelSignalToNoiseRatioOfTheStarImageMax;
+		private System.Windows.Forms.Label labelSourceOfAstrometricDataMax;
+		private System.Windows.Forms.Label labelNumberOfTransitsForPhotometryMax;
+		private System.Windows.Forms.Label labelEstimateOfVtmagScatterMax;
+		private System.Windows.Forms.Label labelVtmagAtMaximumMax;
+		private System.Windows.Forms.Label labelVtmagAtMinimumMax;
+		private System.Windows.Forms.Label labelKnownVariabilityFromGcvsNsvMax;
+		private System.Windows.Forms.Label labelVariabilityFromTychoMax;
+		private System.Windows.Forms.Label labelDuplicityFromTychoMax;
+		private System.Windows.Forms.Label labelEpochPhotometryInAnnexMax;
+		private System.Windows.Forms.Label labelCcdmComponentIdentifierMax;
+		private System.Windows.Forms.Label labelPpmAndSupplementMax;
+		private System.Windows.Forms.Label labelHdNumberMax;
+		private System.Windows.Forms.Label labelNotesMax;
+		private System.Windows.Forms.Label labelCapePhotographicDmMax;
+		private System.Windows.Forms.Label labelCordobaDmMax;
+		private System.Windows.Forms.Label labelBonnerDmMax;
 		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByDeclinationMin;
 		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin;
 		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByRightAscensionMin;
@@ -4595,7 +4595,7 @@
 		private System.Windows.Forms.TextBox textBoxCatalogMax;
 		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByDeclinationMax;
 		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax;
-		private System.Windows.Forms.TextBox textBox33;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByRightAscensionMax;
 		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax;
 		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionRightAscensionByDeclinationMax;
 		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionRightAscensionByRightAscensionMax;
@@ -4619,63 +4619,63 @@
 		private System.Windows.Forms.TextBox textBoxRightAscensionMax;
 		private System.Windows.Forms.TextBox textBoxProximityFlagMax;
 		private System.Windows.Forms.TextBox textBoxIdentifierMax;
-		private System.Windows.Forms.TextBox textBox58;
-		private System.Windows.Forms.TextBox textBox59;
-		private System.Windows.Forms.TextBox textBox60;
-		private System.Windows.Forms.TextBox textBox61;
-		private System.Windows.Forms.TextBox textBox62;
-		private System.Windows.Forms.TextBox textBox63;
-		private System.Windows.Forms.TextBox textBox64;
-		private System.Windows.Forms.TextBox textBox65;
-		private System.Windows.Forms.TextBox textBox66;
-		private System.Windows.Forms.TextBox textBox67;
-		private System.Windows.Forms.TextBox textBox68;
-		private System.Windows.Forms.TextBox textBox69;
-		private System.Windows.Forms.TextBox textBox70;
-		private System.Windows.Forms.TextBox textBox71;
-		private System.Windows.Forms.TextBox textBox72;
-		private System.Windows.Forms.TextBox textBox73;
-		private System.Windows.Forms.TextBox textBox74;
-		private System.Windows.Forms.TextBox textBox75;
-		private System.Windows.Forms.TextBox textBox76;
-		private System.Windows.Forms.TextBox textBox77;
-		private System.Windows.Forms.TextBox textBox78;
-		private System.Windows.Forms.TextBox textBox79;
-		private System.Windows.Forms.TextBox textBox80;
-		private System.Windows.Forms.TextBox textBox81;
-		private System.Windows.Forms.TextBox textBox82;
-		private System.Windows.Forms.TextBox textBox83;
-		private System.Windows.Forms.TextBox textBox84;
-		private System.Windows.Forms.TextBox textBox86;
-		private System.Windows.Forms.TextBox textBox87;
-		private System.Windows.Forms.TextBox textBox88;
-		private System.Windows.Forms.TextBox textBox89;
-		private System.Windows.Forms.TextBox textBox90;
-		private System.Windows.Forms.TextBox textBox91;
-		private System.Windows.Forms.TextBox textBox92;
-		private System.Windows.Forms.TextBox textBox93;
-		private System.Windows.Forms.TextBox textBox94;
-		private System.Windows.Forms.TextBox textBox95;
-		private System.Windows.Forms.TextBox textBox96;
-		private System.Windows.Forms.TextBox textBox97;
-		private System.Windows.Forms.TextBox textBox98;
-		private System.Windows.Forms.TextBox textBox99;
-		private System.Windows.Forms.TextBox textBox100;
-		private System.Windows.Forms.TextBox textBox101;
-		private System.Windows.Forms.TextBox textBox102;
-		private System.Windows.Forms.TextBox textBox103;
-		private System.Windows.Forms.TextBox textBox104;
-		private System.Windows.Forms.TextBox textBox105;
-		private System.Windows.Forms.TextBox textBox106;
-		private System.Windows.Forms.TextBox textBox107;
-		private System.Windows.Forms.TextBox textBox108;
-		private System.Windows.Forms.TextBox textBox109;
-		private System.Windows.Forms.TextBox textBox110;
-		private System.Windows.Forms.TextBox textBox111;
-		private System.Windows.Forms.TextBox textBox112;
+		private System.Windows.Forms.TextBox textBoxCapePhotographicDmMin;
+		private System.Windows.Forms.TextBox textBoxCordobaDmMin;
+		private System.Windows.Forms.TextBox textBoxBonnerDmMin;
+		private System.Windows.Forms.TextBox textBoxHdNumberMin;
+		private System.Windows.Forms.TextBox textBoxPpmAndSupplementMin;
+		private System.Windows.Forms.TextBox textBoxCcdmComponentIdentifierMin;
+		private System.Windows.Forms.TextBox textBoxEpochPhotometryInAnnexMin;
+		private System.Windows.Forms.TextBox textBoxDuplicityFromTychoMin;
+		private System.Windows.Forms.TextBox textBoxVariabilityFromTychoMin;
+		private System.Windows.Forms.TextBox textBoxKnownVariabilityFromGcvsNsvMin;
+		private System.Windows.Forms.TextBox textBoxVtmagAtMinimumMin;
+		private System.Windows.Forms.TextBox textBoxVtmagAtMaximumMin;
+		private System.Windows.Forms.TextBox textBoxEstimateOfVtmagScatterMin;
+		private System.Windows.Forms.TextBox textBoxNumberOfTransitsForPhotometryMin;
+		private System.Windows.Forms.TextBox textBoxSourceOfAstrometricDataMin;
+		private System.Windows.Forms.TextBox textBoxSignalToNoiseRatioOfTheStarImageMin;
+		private System.Windows.Forms.TextBox textBoxAstrometricQualityFlagMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorJohnsonBvColorMin;
+		private System.Windows.Forms.TextBox textBoxJohnsonBvColorMin;
+		private System.Windows.Forms.TextBox textBoxSourceOfPhotometryMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMeanVtMagnitudeMin;
+		private System.Windows.Forms.TextBox textBoxMeanVtMagnitudeMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMeanBtMagnitudeMin;
+		private System.Windows.Forms.TextBox textBoxMeanBtMagnitudeMin;
+		private System.Windows.Forms.TextBox textBoxHipparcosNumberMin;
+		private System.Windows.Forms.TextBox textBoxGoodnessOfFitParameterMin;
+		private System.Windows.Forms.TextBox textBoxNumberOfTransitsForAstrometryMin;
+		private System.Windows.Forms.TextBox textBoxCapePhotographicDmMax;
+		private System.Windows.Forms.TextBox textBoxCordobaDmMax;
+		private System.Windows.Forms.TextBox textBoxBonnerDmMax;
+		private System.Windows.Forms.TextBox textBoxHdNumberMax;
+		private System.Windows.Forms.TextBox textBoxPpmAndSupplementMax;
+		private System.Windows.Forms.TextBox textBoxCcdmComponentIdentifierMax;
+		private System.Windows.Forms.TextBox textBoxEpochPhotometryInAnnexMax;
+		private System.Windows.Forms.TextBox textBoxDuplicityFromTychoMax;
+		private System.Windows.Forms.TextBox textBoxVariabilityFromTychoMax;
+		private System.Windows.Forms.TextBox textBoxKnownVariabilityFromGcvsNsvMax;
+		private System.Windows.Forms.TextBox textBoxVtmagAtMinimumMax;
+		private System.Windows.Forms.TextBox textBoxVtmagAtMaximumMax;
+		private System.Windows.Forms.TextBox textBoxEstimateOfVtmagScatterMax;
+		private System.Windows.Forms.TextBox textBoxNumberOfTransitsForPhotometryMax;
+		private System.Windows.Forms.TextBox textBoxSourceOfAstrometricDataMax;
+		private System.Windows.Forms.TextBox textBoxSignalToNoiseRatioOfTheStarImageMax;
+		private System.Windows.Forms.TextBox textBoxAstrometricQualityFlagMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorJohnsonBvColorMax;
+		private System.Windows.Forms.TextBox textBoxJohnsonBvColorMax;
+		private System.Windows.Forms.TextBox textBoxSourceOfPhotometryMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMeanVtMagnitudeMax;
+		private System.Windows.Forms.TextBox textBoxMeanVtMagnitudeMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMeanBtMagnitudeMax;
+		private System.Windows.Forms.TextBox textBoxMeanBtMagnitudeMax;
+		private System.Windows.Forms.TextBox textBoxHipparcosNumberMax;
+		private System.Windows.Forms.TextBox textBoxGoodnessOfFitParameterMax;
+		private System.Windows.Forms.TextBox textBoxNumberOfTransitsForAstrometryMax;
 		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin;
 		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax;
-		private System.Windows.Forms.TextBox textBox57;
-		private System.Windows.Forms.TextBox textBox85;
+		private System.Windows.Forms.TextBox textBoxNotesMin;
+		private System.Windows.Forms.TextBox textBoxNotesmax;
 	}
 }

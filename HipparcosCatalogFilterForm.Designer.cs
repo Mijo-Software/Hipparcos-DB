@@ -115,7 +115,7 @@
 			this.toolStripButtonApplyFilterSettings = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonCancel = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonRestoreToDefault = new System.Windows.Forms.ToolStripButton();
-			this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+			this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
 			this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.labelSourceOfSpectralTypemax = new System.Windows.Forms.Label();
 			this.textBoxSourceOfSpectralTypeMax = new System.Windows.Forms.TextBox();
@@ -427,10 +427,10 @@
 			this.labelPercentageOfRejectedDataMax = new System.Windows.Forms.Label();
 			this.statusStrip.SuspendLayout();
 			this.toolStrip.SuspendLayout();
-			this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
-			this.toolStripContainer1.ContentPanel.SuspendLayout();
-			this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
-			this.toolStripContainer1.SuspendLayout();
+			this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
+			this.toolStripContainer.ContentPanel.SuspendLayout();
+			this.toolStripContainer.TopToolStripPanel.SuspendLayout();
+			this.toolStripContainer.SuspendLayout();
 			this.tableLayoutPanel.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -2065,28 +2065,28 @@
 			this.toolStripButtonRestoreToDefault.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
 			this.toolStripButtonRestoreToDefault.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
 			// 
-			// toolStripContainer1
+			// toolStripContainer
 			// 
 			// 
-			// toolStripContainer1.BottomToolStripPanel
+			// toolStripContainer.BottomToolStripPanel
 			// 
-			this.toolStripContainer1.BottomToolStripPanel.Controls.Add(this.statusStrip);
+			this.toolStripContainer.BottomToolStripPanel.Controls.Add(this.statusStrip);
 			// 
-			// toolStripContainer1.ContentPanel
+			// toolStripContainer.ContentPanel
 			// 
-			this.toolStripContainer1.ContentPanel.AutoScroll = true;
-			this.toolStripContainer1.ContentPanel.Controls.Add(this.tableLayoutPanel);
-			this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(758, 702);
-			this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
-			this.toolStripContainer1.Name = "toolStripContainer1";
-			this.toolStripContainer1.Size = new System.Drawing.Size(758, 749);
-			this.toolStripContainer1.TabIndex = 7;
-			this.toolStripContainer1.Text = "toolStripContainer1";
+			this.toolStripContainer.ContentPanel.AutoScroll = true;
+			this.toolStripContainer.ContentPanel.Controls.Add(this.tableLayoutPanel);
+			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(758, 702);
+			this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.toolStripContainer.Location = new System.Drawing.Point(0, 0);
+			this.toolStripContainer.Name = "toolStripContainer";
+			this.toolStripContainer.Size = new System.Drawing.Size(758, 749);
+			this.toolStripContainer.TabIndex = 7;
+			this.toolStripContainer.Text = "toolStripContainer1";
 			// 
-			// toolStripContainer1.TopToolStripPanel
+			// toolStripContainer.TopToolStripPanel
 			// 
-			this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip);
+			this.toolStripContainer.TopToolStripPanel.Controls.Add(this.toolStrip);
 			// 
 			// tableLayoutPanel
 			// 
@@ -7704,7 +7704,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(758, 749);
-			this.Controls.Add(this.toolStripContainer1);
+			this.Controls.Add(this.toolStripContainer);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
@@ -7716,13 +7716,13 @@
 			this.statusStrip.PerformLayout();
 			this.toolStrip.ResumeLayout(false);
 			this.toolStrip.PerformLayout();
-			this.toolStripContainer1.BottomToolStripPanel.ResumeLayout(false);
-			this.toolStripContainer1.BottomToolStripPanel.PerformLayout();
-			this.toolStripContainer1.ContentPanel.ResumeLayout(false);
-			this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
-			this.toolStripContainer1.TopToolStripPanel.PerformLayout();
-			this.toolStripContainer1.ResumeLayout(false);
-			this.toolStripContainer1.PerformLayout();
+			this.toolStripContainer.BottomToolStripPanel.ResumeLayout(false);
+			this.toolStripContainer.BottomToolStripPanel.PerformLayout();
+			this.toolStripContainer.ContentPanel.ResumeLayout(false);
+			this.toolStripContainer.TopToolStripPanel.ResumeLayout(false);
+			this.toolStripContainer.TopToolStripPanel.PerformLayout();
+			this.toolStripContainer.ResumeLayout(false);
+			this.toolStripContainer.PerformLayout();
 			this.tableLayoutPanel.ResumeLayout(false);
 			this.tableLayoutPanel.PerformLayout();
 			this.ResumeLayout(false);
@@ -7736,7 +7736,7 @@
 		private System.Windows.Forms.ToolStripProgressBar progressBar;
 		private System.Windows.Forms.StatusStrip statusStrip;
 		private System.Windows.Forms.ToolStrip toolStrip;
-		private System.Windows.Forms.ToolStripContainer toolStripContainer1;
+		private System.Windows.Forms.ToolStripContainer toolStripContainer;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
 		private System.Windows.Forms.TextBox textBoxSourceOfBvColorMin;
 		private System.Windows.Forms.TextBox textBoxReferenceFlagForBtAndVtMagnitudeMax;
