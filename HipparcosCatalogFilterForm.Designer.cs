@@ -110,321 +110,321 @@
 			this.labelCatalogDesc = new System.Windows.Forms.Label();
 			this.progressBar = new System.Windows.Forms.ToolStripProgressBar();
 			this.statusStrip = new System.Windows.Forms.StatusStrip();
-			this.toolStrip = new System.Windows.Forms.ToolStrip();
-			this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
-			this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-			this.label115 = new System.Windows.Forms.Label();
-			this.textBox154 = new System.Windows.Forms.TextBox();
-			this.label114 = new System.Windows.Forms.Label();
-			this.textBox153 = new System.Windows.Forms.TextBox();
-			this.label113 = new System.Windows.Forms.Label();
-			this.textBox152 = new System.Windows.Forms.TextBox();
-			this.label112 = new System.Windows.Forms.Label();
-			this.textBox151 = new System.Windows.Forms.TextBox();
-			this.label111 = new System.Windows.Forms.Label();
-			this.textBox150 = new System.Windows.Forms.TextBox();
-			this.label110 = new System.Windows.Forms.Label();
-			this.textBox149 = new System.Windows.Forms.TextBox();
-			this.label109 = new System.Windows.Forms.Label();
-			this.textBox148 = new System.Windows.Forms.TextBox();
-			this.label108 = new System.Windows.Forms.Label();
-			this.textBox147 = new System.Windows.Forms.TextBox();
-			this.label107 = new System.Windows.Forms.Label();
-			this.textBox146 = new System.Windows.Forms.TextBox();
-			this.label106 = new System.Windows.Forms.Label();
-			this.textBox145 = new System.Windows.Forms.TextBox();
-			this.label105 = new System.Windows.Forms.Label();
-			this.textBox144 = new System.Windows.Forms.TextBox();
-			this.label104 = new System.Windows.Forms.Label();
-			this.textBox143 = new System.Windows.Forms.TextBox();
-			this.label103 = new System.Windows.Forms.Label();
-			this.textBox142 = new System.Windows.Forms.TextBox();
-			this.label102 = new System.Windows.Forms.Label();
-			this.textBox141 = new System.Windows.Forms.TextBox();
-			this.label101 = new System.Windows.Forms.Label();
-			this.textBox140 = new System.Windows.Forms.TextBox();
-			this.label100 = new System.Windows.Forms.Label();
-			this.textBox139 = new System.Windows.Forms.TextBox();
-			this.label99 = new System.Windows.Forms.Label();
-			this.textBox138 = new System.Windows.Forms.TextBox();
-			this.label98 = new System.Windows.Forms.Label();
-			this.textBox137 = new System.Windows.Forms.TextBox();
-			this.label97 = new System.Windows.Forms.Label();
-			this.textBox136 = new System.Windows.Forms.TextBox();
-			this.label96 = new System.Windows.Forms.Label();
-			this.textBox135 = new System.Windows.Forms.TextBox();
-			this.label95 = new System.Windows.Forms.Label();
-			this.textBox134 = new System.Windows.Forms.TextBox();
-			this.label94 = new System.Windows.Forms.Label();
-			this.textBox133 = new System.Windows.Forms.TextBox();
-			this.label93 = new System.Windows.Forms.Label();
-			this.textBox132 = new System.Windows.Forms.TextBox();
-			this.label92 = new System.Windows.Forms.Label();
-			this.textBox131 = new System.Windows.Forms.TextBox();
-			this.label91 = new System.Windows.Forms.Label();
-			this.textBox130 = new System.Windows.Forms.TextBox();
-			this.label90 = new System.Windows.Forms.Label();
-			this.textBox129 = new System.Windows.Forms.TextBox();
-			this.label89 = new System.Windows.Forms.Label();
-			this.textBox128 = new System.Windows.Forms.TextBox();
-			this.label88 = new System.Windows.Forms.Label();
-			this.textBox127 = new System.Windows.Forms.TextBox();
-			this.label87 = new System.Windows.Forms.Label();
-			this.textBox126 = new System.Windows.Forms.TextBox();
-			this.label86 = new System.Windows.Forms.Label();
-			this.textBox125 = new System.Windows.Forms.TextBox();
-			this.label85 = new System.Windows.Forms.Label();
-			this.textBox124 = new System.Windows.Forms.TextBox();
-			this.label84 = new System.Windows.Forms.Label();
-			this.textBox123 = new System.Windows.Forms.TextBox();
-			this.label83 = new System.Windows.Forms.Label();
-			this.textBox122 = new System.Windows.Forms.TextBox();
-			this.label82 = new System.Windows.Forms.Label();
-			this.textBox121 = new System.Windows.Forms.TextBox();
-			this.label81 = new System.Windows.Forms.Label();
-			this.textBox120 = new System.Windows.Forms.TextBox();
-			this.label80 = new System.Windows.Forms.Label();
-			this.textBox119 = new System.Windows.Forms.TextBox();
-			this.label79 = new System.Windows.Forms.Label();
-			this.textBox118 = new System.Windows.Forms.TextBox();
-			this.label78 = new System.Windows.Forms.Label();
-			this.textBox117 = new System.Windows.Forms.TextBox();
-			this.label77 = new System.Windows.Forms.Label();
-			this.textBox114 = new System.Windows.Forms.TextBox();
-			this.label76 = new System.Windows.Forms.Label();
-			this.textBox111 = new System.Windows.Forms.TextBox();
-			this.label75 = new System.Windows.Forms.Label();
-			this.textBox109 = new System.Windows.Forms.TextBox();
-			this.label74 = new System.Windows.Forms.Label();
-			this.textBox108 = new System.Windows.Forms.TextBox();
-			this.label73 = new System.Windows.Forms.Label();
-			this.textBox106 = new System.Windows.Forms.TextBox();
-			this.label72 = new System.Windows.Forms.Label();
-			this.textBox103 = new System.Windows.Forms.TextBox();
-			this.label71 = new System.Windows.Forms.Label();
-			this.textBox100 = new System.Windows.Forms.TextBox();
-			this.label70 = new System.Windows.Forms.Label();
-			this.textBox97 = new System.Windows.Forms.TextBox();
-			this.label69 = new System.Windows.Forms.Label();
-			this.textBox94 = new System.Windows.Forms.TextBox();
-			this.label68 = new System.Windows.Forms.Label();
-			this.textBox91 = new System.Windows.Forms.TextBox();
-			this.label67 = new System.Windows.Forms.Label();
-			this.textBox88 = new System.Windows.Forms.TextBox();
-			this.label66 = new System.Windows.Forms.Label();
-			this.textBox85 = new System.Windows.Forms.TextBox();
-			this.label65 = new System.Windows.Forms.Label();
-			this.textBox82 = new System.Windows.Forms.TextBox();
-			this.label64 = new System.Windows.Forms.Label();
-			this.textBox79 = new System.Windows.Forms.TextBox();
-			this.label63 = new System.Windows.Forms.Label();
-			this.textBox76 = new System.Windows.Forms.TextBox();
-			this.label62 = new System.Windows.Forms.Label();
-			this.textBox73 = new System.Windows.Forms.TextBox();
-			this.label61 = new System.Windows.Forms.Label();
-			this.textBox70 = new System.Windows.Forms.TextBox();
-			this.label60 = new System.Windows.Forms.Label();
-			this.textBox67 = new System.Windows.Forms.TextBox();
-			this.label59 = new System.Windows.Forms.Label();
-			this.textBox64 = new System.Windows.Forms.TextBox();
-			this.label58 = new System.Windows.Forms.Label();
-			this.textBox61 = new System.Windows.Forms.TextBox();
-			this.label57 = new System.Windows.Forms.Label();
-			this.textBox58 = new System.Windows.Forms.TextBox();
-			this.label56 = new System.Windows.Forms.Label();
-			this.textBox55 = new System.Windows.Forms.TextBox();
-			this.label55 = new System.Windows.Forms.Label();
-			this.textBox52 = new System.Windows.Forms.TextBox();
-			this.label54 = new System.Windows.Forms.Label();
-			this.textBox49 = new System.Windows.Forms.TextBox();
-			this.label53 = new System.Windows.Forms.Label();
-			this.textBox46 = new System.Windows.Forms.TextBox();
-			this.label52 = new System.Windows.Forms.Label();
-			this.textBox43 = new System.Windows.Forms.TextBox();
-			this.label51 = new System.Windows.Forms.Label();
-			this.textBox40 = new System.Windows.Forms.TextBox();
-			this.label50 = new System.Windows.Forms.Label();
-			this.textBox37 = new System.Windows.Forms.TextBox();
-			this.label49 = new System.Windows.Forms.Label();
-			this.textBox34 = new System.Windows.Forms.TextBox();
-			this.label48 = new System.Windows.Forms.Label();
-			this.textBox31 = new System.Windows.Forms.TextBox();
-			this.label47 = new System.Windows.Forms.Label();
-			this.textBox28 = new System.Windows.Forms.TextBox();
-			this.label46 = new System.Windows.Forms.Label();
-			this.textBox25 = new System.Windows.Forms.TextBox();
-			this.label45 = new System.Windows.Forms.Label();
-			this.textBox22 = new System.Windows.Forms.TextBox();
-			this.label44 = new System.Windows.Forms.Label();
-			this.textBox19 = new System.Windows.Forms.TextBox();
-			this.label43 = new System.Windows.Forms.Label();
-			this.textBox16 = new System.Windows.Forms.TextBox();
-			this.label42 = new System.Windows.Forms.Label();
-			this.textBox13 = new System.Windows.Forms.TextBox();
-			this.label41 = new System.Windows.Forms.Label();
-			this.textBox10 = new System.Windows.Forms.TextBox();
-			this.label40 = new System.Windows.Forms.Label();
-			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.textBox116 = new System.Windows.Forms.TextBox();
-			this.textBox115 = new System.Windows.Forms.TextBox();
-			this.textBox112 = new System.Windows.Forms.TextBox();
-			this.textBox113 = new System.Windows.Forms.TextBox();
-			this.textBox110 = new System.Windows.Forms.TextBox();
-			this.textBox107 = new System.Windows.Forms.TextBox();
-			this.textBox104 = new System.Windows.Forms.TextBox();
-			this.textBox105 = new System.Windows.Forms.TextBox();
-			this.textBox102 = new System.Windows.Forms.TextBox();
-			this.textBox101 = new System.Windows.Forms.TextBox();
-			this.textBox98 = new System.Windows.Forms.TextBox();
-			this.textBox99 = new System.Windows.Forms.TextBox();
-			this.textBox96 = new System.Windows.Forms.TextBox();
-			this.textBox95 = new System.Windows.Forms.TextBox();
-			this.textBox93 = new System.Windows.Forms.TextBox();
-			this.textBox90 = new System.Windows.Forms.TextBox();
-			this.textBox92 = new System.Windows.Forms.TextBox();
-			this.textBox87 = new System.Windows.Forms.TextBox();
-			this.textBox89 = new System.Windows.Forms.TextBox();
-			this.textBox84 = new System.Windows.Forms.TextBox();
-			this.textBox86 = new System.Windows.Forms.TextBox();
-			this.textBox81 = new System.Windows.Forms.TextBox();
-			this.textBox83 = new System.Windows.Forms.TextBox();
-			this.textBox78 = new System.Windows.Forms.TextBox();
-			this.textBox80 = new System.Windows.Forms.TextBox();
-			this.textBox75 = new System.Windows.Forms.TextBox();
-			this.textBox77 = new System.Windows.Forms.TextBox();
-			this.textBox72 = new System.Windows.Forms.TextBox();
-			this.textBox74 = new System.Windows.Forms.TextBox();
-			this.textBox69 = new System.Windows.Forms.TextBox();
-			this.textBox71 = new System.Windows.Forms.TextBox();
-			this.textBox68 = new System.Windows.Forms.TextBox();
-			this.textBox66 = new System.Windows.Forms.TextBox();
-			this.textBox65 = new System.Windows.Forms.TextBox();
-			this.textBox63 = new System.Windows.Forms.TextBox();
-			this.textBox62 = new System.Windows.Forms.TextBox();
-			this.textBox60 = new System.Windows.Forms.TextBox();
-			this.textBox59 = new System.Windows.Forms.TextBox();
-			this.textBox57 = new System.Windows.Forms.TextBox();
-			this.textBox56 = new System.Windows.Forms.TextBox();
-			this.textBox54 = new System.Windows.Forms.TextBox();
-			this.textBox53 = new System.Windows.Forms.TextBox();
-			this.textBox51 = new System.Windows.Forms.TextBox();
-			this.textBox50 = new System.Windows.Forms.TextBox();
-			this.textBox48 = new System.Windows.Forms.TextBox();
-			this.textBox47 = new System.Windows.Forms.TextBox();
-			this.textBox45 = new System.Windows.Forms.TextBox();
-			this.textBox44 = new System.Windows.Forms.TextBox();
-			this.textBox42 = new System.Windows.Forms.TextBox();
-			this.textBox41 = new System.Windows.Forms.TextBox();
-			this.textBox39 = new System.Windows.Forms.TextBox();
-			this.textBox38 = new System.Windows.Forms.TextBox();
-			this.textBox36 = new System.Windows.Forms.TextBox();
-			this.textBox35 = new System.Windows.Forms.TextBox();
-			this.textBox33 = new System.Windows.Forms.TextBox();
-			this.textBox32 = new System.Windows.Forms.TextBox();
-			this.textBox30 = new System.Windows.Forms.TextBox();
-			this.textBox29 = new System.Windows.Forms.TextBox();
-			this.textBox27 = new System.Windows.Forms.TextBox();
-			this.textBox26 = new System.Windows.Forms.TextBox();
-			this.textBox24 = new System.Windows.Forms.TextBox();
-			this.textBox23 = new System.Windows.Forms.TextBox();
-			this.textBox21 = new System.Windows.Forms.TextBox();
-			this.textBox20 = new System.Windows.Forms.TextBox();
-			this.textBox18 = new System.Windows.Forms.TextBox();
-			this.textBox17 = new System.Windows.Forms.TextBox();
-			this.textBox15 = new System.Windows.Forms.TextBox();
-			this.textBox14 = new System.Windows.Forms.TextBox();
-			this.textBox12 = new System.Windows.Forms.TextBox();
-			this.textBox11 = new System.Windows.Forms.TextBox();
-			this.textBox9 = new System.Windows.Forms.TextBox();
-			this.textBox8 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.labelSourceOfBvColorData = new System.Windows.Forms.Label();
-			this.labelReferenceFlagForBtAndVtMagnitudeData = new System.Windows.Forms.Label();
-			this.labelStandardErrorJohnsonBvColorData = new System.Windows.Forms.Label();
-			this.labelJohnsonBvColorData = new System.Windows.Forms.Label();
-			this.labelStandardErrorMeanVtMagnitudeData = new System.Windows.Forms.Label();
-			this.labelMeanVtMagnitudeData = new System.Windows.Forms.Label();
-			this.labelStandardErrorMeanBtMagnitudeData = new System.Windows.Forms.Label();
-			this.labelMeanBtMagnitudeData = new System.Windows.Forms.Label();
-			this.labelGoodnessOfFitParameterData = new System.Windows.Forms.Label();
-			this.labelPercentageOfRejectedDataData = new System.Windows.Forms.Label();
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData = new System.Windows.Forms.Label();
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData = new System.Windows.Forms.Label();
-			this.labelCorrelationProperMotionDeclinationByDeclinationData = new System.Windows.Forms.Label();
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData = new System.Windows.Forms.Label();
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData = new System.Windows.Forms.Label();
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData = new System.Windows.Forms.Label();
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData = new System.Windows.Forms.Label();
-			this.labelCorrelationTrigonomicParallaxByDeclinationData = new System.Windows.Forms.Label();
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData = new System.Windows.Forms.Label();
-			this.labelCorrelationDeclinationByRightAscensionData = new System.Windows.Forms.Label();
-			this.labelStandardErrorProperMotionDeclinationData = new System.Windows.Forms.Label();
-			this.labelStandardErrorProperMotionRightAscensionData = new System.Windows.Forms.Label();
-			this.labelStandardErrorTrigonomicParallaxData = new System.Windows.Forms.Label();
-			this.labelStandardErrorDeclinationData = new System.Windows.Forms.Label();
-			this.labelStandardErrorRightAscensionData = new System.Windows.Forms.Label();
-			this.labelProperMotionDeltaData = new System.Windows.Forms.Label();
-			this.labelProperMotionAlphaData = new System.Windows.Forms.Label();
-			this.labelTrigonomicParallaxData = new System.Windows.Forms.Label();
-			this.labelReferenceFlagForAstrometryData = new System.Windows.Forms.Label();
-			this.labelDeltaData = new System.Windows.Forms.Label();
-			this.labelAlphaData = new System.Windows.Forms.Label();
-			this.labelSourceOfMagnitudeData = new System.Windows.Forms.Label();
-			this.labelCoarseVariabilityFlagData = new System.Windows.Forms.Label();
-			this.labelMagnitudeJohnsonData = new System.Windows.Forms.Label();
-			this.labelDeclinationData = new System.Windows.Forms.Label();
-			this.labelRightAscensionData = new System.Windows.Forms.Label();
-			this.labelProximityFlagData = new System.Windows.Forms.Label();
-			this.labelIdentifierData = new System.Windows.Forms.Label();
-			this.labelCatalogData = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.label12 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.label14 = new System.Windows.Forms.Label();
-			this.label15 = new System.Windows.Forms.Label();
-			this.label16 = new System.Windows.Forms.Label();
-			this.label17 = new System.Windows.Forms.Label();
-			this.label18 = new System.Windows.Forms.Label();
-			this.label19 = new System.Windows.Forms.Label();
-			this.label20 = new System.Windows.Forms.Label();
-			this.label21 = new System.Windows.Forms.Label();
-			this.label22 = new System.Windows.Forms.Label();
-			this.label23 = new System.Windows.Forms.Label();
-			this.label24 = new System.Windows.Forms.Label();
-			this.label25 = new System.Windows.Forms.Label();
-			this.label26 = new System.Windows.Forms.Label();
-			this.label27 = new System.Windows.Forms.Label();
-			this.label28 = new System.Windows.Forms.Label();
-			this.label29 = new System.Windows.Forms.Label();
-			this.label30 = new System.Windows.Forms.Label();
-			this.label31 = new System.Windows.Forms.Label();
-			this.label32 = new System.Windows.Forms.Label();
-			this.label33 = new System.Windows.Forms.Label();
-			this.label34 = new System.Windows.Forms.Label();
-			this.label35 = new System.Windows.Forms.Label();
-			this.label36 = new System.Windows.Forms.Label();
-			this.label37 = new System.Windows.Forms.Label();
-			this.label38 = new System.Windows.Forms.Label();
-			this.label39 = new System.Windows.Forms.Label();
 			this.toolStripStatusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
+			this.toolStrip = new System.Windows.Forms.ToolStrip();
 			this.toolStripButtonApplyFilterSettings = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonCancel = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButtonRestoreToDefault = new System.Windows.Forms.ToolStripButton();
+			this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+			this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+			this.labelSourceOfSpectralTypemax = new System.Windows.Forms.Label();
+			this.textBoxSourceOfSpectralTypeMax = new System.Windows.Forms.TextBox();
+			this.labelSourceOfSpectralTypeMin = new System.Windows.Forms.Label();
+			this.textBoxSourceOfSpectralTypeMin = new System.Windows.Forms.TextBox();
+			this.labelSpectralTypeMax = new System.Windows.Forms.Label();
+			this.textBoxSpectralTypeMax = new System.Windows.Forms.TextBox();
+			this.labelSpectralTypeMin = new System.Windows.Forms.Label();
+			this.textBoxSpectralTypeMin = new System.Windows.Forms.TextBox();
+			this.labelViUsedForReductionsMax = new System.Windows.Forms.Label();
+			this.textBoxViUsedForReductionsmax = new System.Windows.Forms.TextBox();
+			this.labelViUsedForReductionsMin = new System.Windows.Forms.Label();
+			this.textBoxViUsedForReductionsMin = new System.Windows.Forms.TextBox();
+			this.labelCapePhotographicDmMax = new System.Windows.Forms.Label();
+			this.textBoxCapePhotographicDmMax = new System.Windows.Forms.TextBox();
+			this.labelCapePhotographicDmMin = new System.Windows.Forms.Label();
+			this.textBoxCapePhotographicDmMin = new System.Windows.Forms.TextBox();
+			this.labelCordobaDmMax = new System.Windows.Forms.Label();
+			this.textBoxCordobaDmMax = new System.Windows.Forms.TextBox();
+			this.labelCordobaDmMin = new System.Windows.Forms.Label();
+			this.textBoxCordobaDmMin = new System.Windows.Forms.TextBox();
+			this.labelBonnerDmMax = new System.Windows.Forms.Label();
+			this.textBoxBonnerDmMax = new System.Windows.Forms.TextBox();
+			this.labelBonnerDmMin = new System.Windows.Forms.Label();
+			this.textBoxBonnerDmMin = new System.Windows.Forms.TextBox();
+			this.labelHdNumberMax = new System.Windows.Forms.Label();
+			this.textBoxHdNumberMax = new System.Windows.Forms.TextBox();
+			this.labelHdNumberMin = new System.Windows.Forms.Label();
+			this.textBoxHdNumberMin = new System.Windows.Forms.TextBox();
+			this.labelExistenceOfNotesMax = new System.Windows.Forms.Label();
+			this.textBoxExistenceOfNotesMax = new System.Windows.Forms.TextBox();
+			this.labelExistenceOfNotesMin = new System.Windows.Forms.Label();
+			this.textBoxExistenceOfNotesmin = new System.Windows.Forms.TextBox();
+			this.labelIdentificationChartMax = new System.Windows.Forms.Label();
+			this.textBoxIdentificationChartMax = new System.Windows.Forms.TextBox();
+			this.labelIdentificationChartMin = new System.Windows.Forms.Label();
+			this.textBoxIdentificationChartMin = new System.Windows.Forms.TextBox();
+			this.labelFlagIndicatingSurveyStarMax = new System.Windows.Forms.Label();
+			this.textBoxFlagIndicatingSurveyStarMax = new System.Windows.Forms.TextBox();
+			this.labelFlagIndicatingSurveyStarMin = new System.Windows.Forms.Label();
+			this.textBoxFlagIndicatingSurveyStarMin = new System.Windows.Forms.TextBox();
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax = new System.Windows.Forms.Label();
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax = new System.Windows.Forms.TextBox();
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin = new System.Windows.Forms.Label();
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin = new System.Windows.Forms.TextBox();
+			this.labelMagnitudeDifferenceBetweenComponentsMax = new System.Windows.Forms.Label();
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax = new System.Windows.Forms.TextBox();
+			this.labelMagnitudeDifferenceBetweenComponentsMin = new System.Windows.Forms.Label();
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin = new System.Windows.Forms.TextBox();
+			this.labelStandardErrorRhoMax = new System.Windows.Forms.Label();
+			this.textBoxStandardErrorRhoMax = new System.Windows.Forms.TextBox();
+			this.labelStandardErrorRhoMin = new System.Windows.Forms.Label();
+			this.textBoxStandardErrorRhoMin = new System.Windows.Forms.TextBox();
+			this.labelAngularSeparationBetweenComponentsMax = new System.Windows.Forms.Label();
+			this.textBoxAngularSeparationBetweenComponentsMax = new System.Windows.Forms.TextBox();
+			this.labelAngularSeparationBetweenComponentsMin = new System.Windows.Forms.Label();
+			this.textBoxAngularSeparationBetweenComponentsMin = new System.Windows.Forms.TextBox();
+			this.labelPositionAngleBetweenComponentsMax = new System.Windows.Forms.Label();
+			this.textBoxPositionAngleBetweenComponentsMax = new System.Windows.Forms.TextBox();
+			this.labelPositionAngleBetweenComponentsMin = new System.Windows.Forms.Label();
+			this.textBoxPositionAngleBetweenComponentsMin = new System.Windows.Forms.TextBox();
+			this.labelComponentIdentifiersMax = new System.Windows.Forms.Label();
+			this.textBoxComponentIdentifiersMax = new System.Windows.Forms.TextBox();
+			this.labelComponentIdentifiersMin = new System.Windows.Forms.Label();
+			this.textBoxComponentIdentifiersMin = new System.Windows.Forms.TextBox();
+			this.labelSolutionQualityMax = new System.Windows.Forms.Label();
+			this.textBoxSolutionQualityMax = new System.Windows.Forms.TextBox();
+			this.labelSolutionQualityMin = new System.Windows.Forms.Label();
+			this.textBoxSolutionQualityMin = new System.Windows.Forms.TextBox();
+			this.labelAstrometricSourceFlagMax = new System.Windows.Forms.Label();
+			this.textBoxAstrometricSourceFlagMax = new System.Windows.Forms.TextBox();
+			this.labelAstrometricSourceFlagMin = new System.Windows.Forms.Label();
+			this.textBoxAstrometricSourceFlagMin = new System.Windows.Forms.TextBox();
+			this.labelMultipleSystemsFlagMax = new System.Windows.Forms.Label();
+			this.textBoxMultipleSystemsFlagMax = new System.Windows.Forms.TextBox();
+			this.labelMultipleSystemsFlagMin = new System.Windows.Forms.Label();
+			this.textBoxMultipleSystemsFlagMin = new System.Windows.Forms.TextBox();
+			this.labelNumberComponentsInThisEntryMax = new System.Windows.Forms.Label();
+			this.textBoxNumberComponentsInThisEntryMax = new System.Windows.Forms.TextBox();
+			this.labelNumberComponentsInThisEntryMin = new System.Windows.Forms.Label();
+			this.textBoxNumberComponentsInThisEntryMin = new System.Windows.Forms.TextBox();
+			this.labelNumberEntriesWithSameCcdmMax = new System.Windows.Forms.Label();
+			this.textBoxNumberEntriesWithSameCcdmMax = new System.Windows.Forms.TextBox();
+			this.labelNumberEntriesWithSameCcdm = new System.Windows.Forms.Label();
+			this.textBoxNumberEntriesWithSameCcdmMin = new System.Windows.Forms.TextBox();
+			this.labelHistoricalStatusFlagMax = new System.Windows.Forms.Label();
+			this.textBoxHistoricalStatusFlagMax = new System.Windows.Forms.TextBox();
+			this.labelHistoricalStatusFlagMin = new System.Windows.Forms.Label();
+			this.textBoxHistoricalStatusFlagMin = new System.Windows.Forms.TextBox();
+			this.labelCcdmIdentifierMax = new System.Windows.Forms.Label();
+			this.textBoxCcdmIdentifierMax = new System.Windows.Forms.TextBox();
+			this.labelCcdmIdentifierMin = new System.Windows.Forms.Label();
+			this.textBoxCcdmIdentifierMin = new System.Windows.Forms.TextBox();
+			this.labelLightCurveAnnexMax = new System.Windows.Forms.Label();
+			this.textBoxLightCurveAnnexMax = new System.Windows.Forms.TextBox();
+			this.labelLightCurveAnnexMin = new System.Windows.Forms.Label();
+			this.textBoxLightCurveAnnexMin = new System.Windows.Forms.TextBox();
+			this.labelAdditionalDataAboutVariabilityMax = new System.Windows.Forms.Label();
+			this.textBoxAdditionalDataAboutVariabilityMax = new System.Windows.Forms.TextBox();
+			this.labelAdditionalDataAboutVariabilityMin = new System.Windows.Forms.Label();
+			this.textBoxAdditionalDataAboutVariabilityMin = new System.Windows.Forms.TextBox();
+			this.labelVariabilityTypeMax = new System.Windows.Forms.Label();
+			this.textBoxVariabilityTypeMax = new System.Windows.Forms.TextBox();
+			this.labelVariabilityTypeMin = new System.Windows.Forms.Label();
+			this.textBoxVariabilityTypeMin = new System.Windows.Forms.TextBox();
+			this.labelVariabilityPeriodMax = new System.Windows.Forms.Label();
+			this.textBoxVariabilityPeriodMax = new System.Windows.Forms.TextBox();
+			this.labelVariabilityPeriodMin = new System.Windows.Forms.Label();
+			this.textBoxVariabilityPeriodMin = new System.Windows.Forms.TextBox();
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax = new System.Windows.Forms.Label();
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax = new System.Windows.Forms.TextBox();
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin = new System.Windows.Forms.Label();
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin = new System.Windows.Forms.TextBox();
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax = new System.Windows.Forms.Label();
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax = new System.Windows.Forms.TextBox();
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin = new System.Windows.Forms.Label();
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin = new System.Windows.Forms.TextBox();
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax = new System.Windows.Forms.Label();
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax = new System.Windows.Forms.TextBox();
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin = new System.Windows.Forms.Label();
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin = new System.Windows.Forms.TextBox();
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax = new System.Windows.Forms.Label();
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax = new System.Windows.Forms.TextBox();
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin = new System.Windows.Forms.Label();
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin = new System.Windows.Forms.TextBox();
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax = new System.Windows.Forms.Label();
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax = new System.Windows.Forms.TextBox();
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin = new System.Windows.Forms.Label();
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin = new System.Windows.Forms.TextBox();
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax = new System.Windows.Forms.Label();
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax = new System.Windows.Forms.TextBox();
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin = new System.Windows.Forms.Label();
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin = new System.Windows.Forms.TextBox();
+			this.labelMedianMagnitudeInHipparcosSystemMax = new System.Windows.Forms.Label();
+			this.textBoxMedianMagnitudeInHipparcosSystemMax = new System.Windows.Forms.TextBox();
+			this.labelMedianMagnitudeInHipparcosSystemMin = new System.Windows.Forms.Label();
+			this.textBoxMedianMagnitudeInHipparcosSystemMin = new System.Windows.Forms.TextBox();
+			this.labelFlagForCombinedMagnitudesMax = new System.Windows.Forms.Label();
+			this.textBoxFlagForCombinedMagnitudesMax = new System.Windows.Forms.TextBox();
+			this.labelFlagForCombinedMagnitudesMin = new System.Windows.Forms.Label();
+			this.textBoxFlagForCombinedMagnitudesMin = new System.Windows.Forms.TextBox();
+			this.labelSourceOfViMax = new System.Windows.Forms.Label();
+			this.textBoxSourceOfViMax = new System.Windows.Forms.TextBox();
+			this.labelSourceOfViMin = new System.Windows.Forms.Label();
+			this.textBoxSourceOfViMin = new System.Windows.Forms.TextBox();
+			this.labelStandardErrorViMax = new System.Windows.Forms.Label();
+			this.textBoxStandardErrorViMax = new System.Windows.Forms.TextBox();
+			this.labelStandardErrorViMin = new System.Windows.Forms.Label();
+			this.textBoxStandardErrorViMin = new System.Windows.Forms.TextBox();
+			this.labelColorIndexInCousinsSystemMax = new System.Windows.Forms.Label();
+			this.textBoxColorIndexInCousinsSystemMax = new System.Windows.Forms.TextBox();
+			this.labelColorIndexInCousinsSystemMin = new System.Windows.Forms.Label();
+			this.textBoxColorIndexInCousinsSystemMin = new System.Windows.Forms.TextBox();
+			this.textBoxSourceOfBvColorMin = new System.Windows.Forms.TextBox();
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorJohnsonBvColorMax = new System.Windows.Forms.TextBox();
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorJohnsonBvColorMin = new System.Windows.Forms.TextBox();
+			this.textBoxJohnsonBvColorMax = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorMeanVtMagnitudeMax = new System.Windows.Forms.TextBox();
+			this.textBoxJohnsonBvColorMin = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorMeanVtMagnitudeMin = new System.Windows.Forms.TextBox();
+			this.textBoxMeanVtMagnitudeMax = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorMeanBtMagnitudeMax = new System.Windows.Forms.TextBox();
+			this.textBoxMeanVtMagnitudeMin = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorMeanBtMagnitudeMin = new System.Windows.Forms.TextBox();
+			this.textBoxMeanBtMagnitudeMax = new System.Windows.Forms.TextBox();
+			this.textBoxMeanBtMagnitudeMin = new System.Windows.Forms.TextBox();
+			this.textBoxGoodnessOfFitParameterMin = new System.Windows.Forms.TextBox();
+			this.textBoxGoodnessOfFitParameterMax = new System.Windows.Forms.TextBox();
+			this.textBoxPercentageOfRejectedDataMin = new System.Windows.Forms.TextBox();
+			this.textBoxPercentageOfRejectedDataMax = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationDeclinationByRightAscensionMax = new System.Windows.Forms.TextBox();
+			this.textBoxCorrelationDeclinationByRightAscensionMin = new System.Windows.Forms.TextBox();
+			this.textBoxlStandardErrorProperMotionDeclinationMax = new System.Windows.Forms.TextBox();
+			this.textBoxlStandardErrorProperMotionDeclinationMin = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorProperMotionRightAscensionMax = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorProperMotionRightAscensionMin = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorTrigonomicParallaxMax = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorTrigonomicParallaxMin = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorDeclinationMax = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorDeclinationMin = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorRightAscensionMax = new System.Windows.Forms.TextBox();
+			this.textBoxStandardErrorRightAscensionMin = new System.Windows.Forms.TextBox();
+			this.textBoxProperMotionDeltaMax = new System.Windows.Forms.TextBox();
+			this.textBoxProperMotionDeltaMin = new System.Windows.Forms.TextBox();
+			this.textBoxProperMotionAlphaMax = new System.Windows.Forms.TextBox();
+			this.textBoxProperMotionAlphaMin = new System.Windows.Forms.TextBox();
+			this.textBoxTrigonomicParallaxMax = new System.Windows.Forms.TextBox();
+			this.textBoxTrigonomicParallaxMin = new System.Windows.Forms.TextBox();
+			this.textBoxReferenceFlagForAstrometryMax = new System.Windows.Forms.TextBox();
+			this.textBoxReferenceFlagForAstrometryMin = new System.Windows.Forms.TextBox();
+			this.textBoxDeltaMax = new System.Windows.Forms.TextBox();
+			this.textBoxDeltaMin = new System.Windows.Forms.TextBox();
+			this.textBoxlAlphaMax = new System.Windows.Forms.TextBox();
+			this.textBoxlAlphaMin = new System.Windows.Forms.TextBox();
+			this.textBoxSourceOfMagnitudeMax = new System.Windows.Forms.TextBox();
+			this.textBoxSourceOfMagnitudeMin = new System.Windows.Forms.TextBox();
+			this.textBoxCoarseVariabilityFlagMax = new System.Windows.Forms.TextBox();
+			this.textBoxCoarseVariabilityFlagMin = new System.Windows.Forms.TextBox();
+			this.textBoxMagnitudeJohnsonMax = new System.Windows.Forms.TextBox();
+			this.textBoxMagnitudeJohnsonMin = new System.Windows.Forms.TextBox();
+			this.textBoxDeclinationMax = new System.Windows.Forms.TextBox();
+			this.textBoxDeclinationMin = new System.Windows.Forms.TextBox();
+			this.textBox11 = new System.Windows.Forms.TextBox();
+			this.textBoxRightAscensionMax = new System.Windows.Forms.TextBox();
+			this.textBoxProximityFlagMax = new System.Windows.Forms.TextBox();
+			this.textBoxProximityFlagMin = new System.Windows.Forms.TextBox();
+			this.textBoxIdentifierMax = new System.Windows.Forms.TextBox();
+			this.textBoxIdentifierMin = new System.Windows.Forms.TextBox();
+			this.textBoxlCatalogMax = new System.Windows.Forms.TextBox();
+			this.labellCatalogMax = new System.Windows.Forms.Label();
+			this.labelSourceOfBvColorMin = new System.Windows.Forms.Label();
+			this.labelReferenceFlagForBtAndVtMagnitudeMin = new System.Windows.Forms.Label();
+			this.labelStandardErrorJohnsonBvColorMin = new System.Windows.Forms.Label();
+			this.labelJohnsonBvColorMin = new System.Windows.Forms.Label();
+			this.labelStandardErrorMeanVtMagnitudeMin = new System.Windows.Forms.Label();
+			this.labelMeanVtMagnitudeMin = new System.Windows.Forms.Label();
+			this.labelStandardErrorMeanBtMagnitudeMin = new System.Windows.Forms.Label();
+			this.labelMeanBtMagnitudeMin = new System.Windows.Forms.Label();
+			this.labelGoodnessOfFitParameterMin = new System.Windows.Forms.Label();
+			this.labelPercentageOfRejectedDataMin = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin = new System.Windows.Forms.Label();
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin = new System.Windows.Forms.Label();
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin = new System.Windows.Forms.Label();
+			this.labelCorrelationDeclinationByRightAscensionMin = new System.Windows.Forms.Label();
+			this.labelStandardErrorProperMotionDeclinationmMin = new System.Windows.Forms.Label();
+			this.labelStandardErrorProperMotionRightAscensionMin = new System.Windows.Forms.Label();
+			this.labelStandardErrorTrigonomicParallaxMin = new System.Windows.Forms.Label();
+			this.labelStandardErrorDeclinationMin = new System.Windows.Forms.Label();
+			this.labelStandardErrorRightAscensionMin = new System.Windows.Forms.Label();
+			this.labelProperMotionDeltaMin = new System.Windows.Forms.Label();
+			this.labelProperMotionAlphaMin = new System.Windows.Forms.Label();
+			this.labelTrigonomicParallaxMin = new System.Windows.Forms.Label();
+			this.labelReferenceFlagForAstrometryMin = new System.Windows.Forms.Label();
+			this.labelDeltaMin = new System.Windows.Forms.Label();
+			this.labelAlphaMin = new System.Windows.Forms.Label();
+			this.labelSourceOfMagnitudeMin = new System.Windows.Forms.Label();
+			this.labelCoarseVariabilityFlagMin = new System.Windows.Forms.Label();
+			this.labelMagnitudeJohnsonMin = new System.Windows.Forms.Label();
+			this.labelDeclinationMin = new System.Windows.Forms.Label();
+			this.labelRightAscensionMin = new System.Windows.Forms.Label();
+			this.labelProximityFlagMin = new System.Windows.Forms.Label();
+			this.labelIdentifierMin = new System.Windows.Forms.Label();
+			this.labelCatalogMin = new System.Windows.Forms.Label();
+			this.textBoxlCatalogMin = new System.Windows.Forms.TextBox();
+			this.textBoxSourceOfBvColorMax = new System.Windows.Forms.TextBox();
+			this.labelIdentifierMax = new System.Windows.Forms.Label();
+			this.labelProximityFlagMax = new System.Windows.Forms.Label();
+			this.labelRightAscensionMax = new System.Windows.Forms.Label();
+			this.labelDeclinationMax = new System.Windows.Forms.Label();
+			this.labelMagnitudeJohnsonMax = new System.Windows.Forms.Label();
+			this.labelCoarseVariabilityFlagMax = new System.Windows.Forms.Label();
+			this.labelSourceOfMagnitudeMax = new System.Windows.Forms.Label();
+			this.labellAlphaMax = new System.Windows.Forms.Label();
+			this.labelDeltaMax = new System.Windows.Forms.Label();
+			this.label1ReferenceFlagForAstrometryMax = new System.Windows.Forms.Label();
+			this.labelTrigonomicParallaxMax = new System.Windows.Forms.Label();
+			this.labelProperMotionAlphaMax = new System.Windows.Forms.Label();
+			this.labelProperMotionDeltaMax = new System.Windows.Forms.Label();
+			this.labelStandardErrorRightAscensionMax = new System.Windows.Forms.Label();
+			this.labelStandardErrorDeclinationMax = new System.Windows.Forms.Label();
+			this.labelStandardErrorTrigonomicParallaxMax = new System.Windows.Forms.Label();
+			this.labelStandardErrorProperMotionRightAscensionMax = new System.Windows.Forms.Label();
+			this.labellStandardErrorProperMotionDeclinationMax = new System.Windows.Forms.Label();
+			this.labelCorrelationDeclinationByRightAscensionMax = new System.Windows.Forms.Label();
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax = new System.Windows.Forms.Label();
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax = new System.Windows.Forms.Label();
+			this.labelSourceOfBvColorMax = new System.Windows.Forms.Label();
+			this.labelReferenceFlagForBtAndVtMagnitudeMax = new System.Windows.Forms.Label();
+			this.labelStandardErrorJohnsonBvColorMax = new System.Windows.Forms.Label();
+			this.labelJohnsonBvColorMax = new System.Windows.Forms.Label();
+			this.labelStandardErrorMeanVtMagnitudeMax = new System.Windows.Forms.Label();
+			this.labelMeanVtMagnitudeMax = new System.Windows.Forms.Label();
+			this.labelStandardErrorMeanBtMagnitudeMax = new System.Windows.Forms.Label();
+			this.labelMeanBtMagnitudeMax = new System.Windows.Forms.Label();
+			this.labelGoodnessOfFitParameterMax = new System.Windows.Forms.Label();
+			this.labelPercentageOfRejectedDataMax = new System.Windows.Forms.Label();
 			this.statusStrip.SuspendLayout();
 			this.toolStrip.SuspendLayout();
 			this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
@@ -2000,6 +2000,18 @@
 			this.statusStrip.TabIndex = 0;
 			this.statusStrip.Text = "statusStrip";
 			// 
+			// toolStripStatusLabelInfo
+			// 
+			this.toolStripStatusLabelInfo.AccessibleDescription = "text with some information";
+			this.toolStripStatusLabelInfo.AccessibleName = "information text";
+			this.toolStripStatusLabelInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.toolStripStatusLabelInfo.AutoToolTip = true;
+			this.toolStripStatusLabelInfo.DoubleClickEnabled = true;
+			this.toolStripStatusLabelInfo.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_white_16px_shadowless;
+			this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
+			this.toolStripStatusLabelInfo.Size = new System.Drawing.Size(66, 17);
+			this.toolStripStatusLabelInfo.Text = "info text";
+			// 
 			// toolStrip
 			// 
 			this.toolStrip.AccessibleDescription = "Contents some download options";
@@ -2016,6 +2028,42 @@
 			this.toolStrip.Size = new System.Drawing.Size(758, 25);
 			this.toolStrip.Stretch = true;
 			this.toolStrip.TabIndex = 0;
+			// 
+			// toolStripButtonApplyFilterSettings
+			// 
+			this.toolStripButtonApplyFilterSettings.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.toolStripButtonApplyFilterSettings.Image = global::Hipparcos_DB.Properties.Resources.fugue_tick_button_16px_shadowless;
+			this.toolStripButtonApplyFilterSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButtonApplyFilterSettings.Name = "toolStripButtonApplyFilterSettings";
+			this.toolStripButtonApplyFilterSettings.Size = new System.Drawing.Size(129, 22);
+			this.toolStripButtonApplyFilterSettings.Text = "&Apply filter settings";
+			this.toolStripButtonApplyFilterSettings.Click += new System.EventHandler(this.ToolStripButtonApplyFilterSettings_Click);
+			this.toolStripButtonApplyFilterSettings.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.toolStripButtonApplyFilterSettings.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// toolStripButtonCancel
+			// 
+			this.toolStripButtonCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.toolStripButtonCancel.Image = global::Hipparcos_DB.Properties.Resources.fugue_cross_16px_shadowless;
+			this.toolStripButtonCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButtonCancel.Name = "toolStripButtonCancel";
+			this.toolStripButtonCancel.Size = new System.Drawing.Size(63, 22);
+			this.toolStripButtonCancel.Text = "&Cancel";
+			this.toolStripButtonCancel.Click += new System.EventHandler(this.ToolStripButtonCancel_Click);
+			this.toolStripButtonCancel.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.toolStripButtonCancel.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// toolStripButtonRestoreToDefault
+			// 
+			this.toolStripButtonRestoreToDefault.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.toolStripButtonRestoreToDefault.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_16px_shadowless;
+			this.toolStripButtonRestoreToDefault.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButtonRestoreToDefault.Name = "toolStripButtonRestoreToDefault";
+			this.toolStripButtonRestoreToDefault.Size = new System.Drawing.Size(120, 22);
+			this.toolStripButtonRestoreToDefault.Text = "Restore to default";
+			this.toolStripButtonRestoreToDefault.Click += new System.EventHandler(this.ToolStripButtonRestoreToDefault_Click);
+			this.toolStripButtonRestoreToDefault.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.toolStripButtonRestoreToDefault.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
 			// 
 			// toolStripContainer1
 			// 
@@ -2056,273 +2104,273 @@
 			this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
 			this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
 			this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-			this.tableLayoutPanel.Controls.Add(this.label115, 8, 37);
-			this.tableLayoutPanel.Controls.Add(this.textBox154, 9, 37);
-			this.tableLayoutPanel.Controls.Add(this.label114, 6, 37);
-			this.tableLayoutPanel.Controls.Add(this.textBox153, 7, 37);
-			this.tableLayoutPanel.Controls.Add(this.label113, 8, 36);
-			this.tableLayoutPanel.Controls.Add(this.textBox152, 9, 36);
-			this.tableLayoutPanel.Controls.Add(this.label112, 6, 36);
-			this.tableLayoutPanel.Controls.Add(this.textBox151, 7, 36);
-			this.tableLayoutPanel.Controls.Add(this.label111, 8, 35);
-			this.tableLayoutPanel.Controls.Add(this.textBox150, 9, 35);
-			this.tableLayoutPanel.Controls.Add(this.label110, 6, 35);
-			this.tableLayoutPanel.Controls.Add(this.textBox149, 7, 35);
-			this.tableLayoutPanel.Controls.Add(this.label109, 8, 34);
-			this.tableLayoutPanel.Controls.Add(this.textBox148, 9, 34);
-			this.tableLayoutPanel.Controls.Add(this.label108, 6, 34);
-			this.tableLayoutPanel.Controls.Add(this.textBox147, 7, 34);
-			this.tableLayoutPanel.Controls.Add(this.label107, 8, 33);
-			this.tableLayoutPanel.Controls.Add(this.textBox146, 9, 33);
-			this.tableLayoutPanel.Controls.Add(this.label106, 6, 33);
-			this.tableLayoutPanel.Controls.Add(this.textBox145, 7, 33);
-			this.tableLayoutPanel.Controls.Add(this.label105, 8, 32);
-			this.tableLayoutPanel.Controls.Add(this.textBox144, 9, 32);
-			this.tableLayoutPanel.Controls.Add(this.label104, 6, 32);
-			this.tableLayoutPanel.Controls.Add(this.textBox143, 7, 32);
-			this.tableLayoutPanel.Controls.Add(this.label103, 8, 31);
-			this.tableLayoutPanel.Controls.Add(this.textBox142, 9, 31);
-			this.tableLayoutPanel.Controls.Add(this.label102, 6, 31);
-			this.tableLayoutPanel.Controls.Add(this.textBox141, 7, 31);
-			this.tableLayoutPanel.Controls.Add(this.label101, 8, 30);
-			this.tableLayoutPanel.Controls.Add(this.textBox140, 9, 30);
-			this.tableLayoutPanel.Controls.Add(this.label100, 6, 30);
-			this.tableLayoutPanel.Controls.Add(this.textBox139, 7, 30);
-			this.tableLayoutPanel.Controls.Add(this.label99, 8, 29);
-			this.tableLayoutPanel.Controls.Add(this.textBox138, 9, 29);
-			this.tableLayoutPanel.Controls.Add(this.label98, 6, 29);
-			this.tableLayoutPanel.Controls.Add(this.textBox137, 7, 29);
-			this.tableLayoutPanel.Controls.Add(this.label97, 8, 28);
-			this.tableLayoutPanel.Controls.Add(this.textBox136, 9, 28);
-			this.tableLayoutPanel.Controls.Add(this.label96, 6, 28);
-			this.tableLayoutPanel.Controls.Add(this.textBox135, 7, 28);
-			this.tableLayoutPanel.Controls.Add(this.label95, 8, 27);
-			this.tableLayoutPanel.Controls.Add(this.textBox134, 9, 27);
-			this.tableLayoutPanel.Controls.Add(this.label94, 6, 27);
-			this.tableLayoutPanel.Controls.Add(this.textBox133, 7, 27);
-			this.tableLayoutPanel.Controls.Add(this.label93, 8, 26);
-			this.tableLayoutPanel.Controls.Add(this.textBox132, 9, 26);
-			this.tableLayoutPanel.Controls.Add(this.label92, 6, 26);
-			this.tableLayoutPanel.Controls.Add(this.textBox131, 7, 26);
-			this.tableLayoutPanel.Controls.Add(this.label91, 8, 25);
-			this.tableLayoutPanel.Controls.Add(this.textBox130, 9, 25);
-			this.tableLayoutPanel.Controls.Add(this.label90, 6, 25);
-			this.tableLayoutPanel.Controls.Add(this.textBox129, 7, 25);
-			this.tableLayoutPanel.Controls.Add(this.label89, 8, 24);
-			this.tableLayoutPanel.Controls.Add(this.textBox128, 9, 24);
-			this.tableLayoutPanel.Controls.Add(this.label88, 6, 24);
-			this.tableLayoutPanel.Controls.Add(this.textBox127, 7, 24);
-			this.tableLayoutPanel.Controls.Add(this.label87, 8, 23);
-			this.tableLayoutPanel.Controls.Add(this.textBox126, 9, 23);
-			this.tableLayoutPanel.Controls.Add(this.label86, 6, 23);
-			this.tableLayoutPanel.Controls.Add(this.textBox125, 7, 23);
-			this.tableLayoutPanel.Controls.Add(this.label85, 8, 22);
-			this.tableLayoutPanel.Controls.Add(this.textBox124, 9, 22);
-			this.tableLayoutPanel.Controls.Add(this.label84, 6, 22);
-			this.tableLayoutPanel.Controls.Add(this.textBox123, 7, 22);
-			this.tableLayoutPanel.Controls.Add(this.label83, 8, 21);
-			this.tableLayoutPanel.Controls.Add(this.textBox122, 9, 21);
-			this.tableLayoutPanel.Controls.Add(this.label82, 6, 21);
-			this.tableLayoutPanel.Controls.Add(this.textBox121, 7, 21);
-			this.tableLayoutPanel.Controls.Add(this.label81, 8, 20);
-			this.tableLayoutPanel.Controls.Add(this.textBox120, 9, 20);
-			this.tableLayoutPanel.Controls.Add(this.label80, 6, 20);
-			this.tableLayoutPanel.Controls.Add(this.textBox119, 7, 20);
-			this.tableLayoutPanel.Controls.Add(this.label79, 8, 19);
-			this.tableLayoutPanel.Controls.Add(this.textBox118, 9, 19);
-			this.tableLayoutPanel.Controls.Add(this.label78, 6, 19);
-			this.tableLayoutPanel.Controls.Add(this.textBox117, 7, 19);
-			this.tableLayoutPanel.Controls.Add(this.label77, 8, 18);
-			this.tableLayoutPanel.Controls.Add(this.textBox114, 9, 18);
-			this.tableLayoutPanel.Controls.Add(this.label76, 6, 18);
-			this.tableLayoutPanel.Controls.Add(this.textBox111, 7, 18);
-			this.tableLayoutPanel.Controls.Add(this.label75, 8, 17);
-			this.tableLayoutPanel.Controls.Add(this.textBox109, 9, 17);
-			this.tableLayoutPanel.Controls.Add(this.label74, 6, 17);
-			this.tableLayoutPanel.Controls.Add(this.textBox108, 7, 17);
-			this.tableLayoutPanel.Controls.Add(this.label73, 8, 16);
-			this.tableLayoutPanel.Controls.Add(this.textBox106, 9, 16);
-			this.tableLayoutPanel.Controls.Add(this.label72, 6, 16);
-			this.tableLayoutPanel.Controls.Add(this.textBox103, 7, 16);
-			this.tableLayoutPanel.Controls.Add(this.label71, 8, 15);
-			this.tableLayoutPanel.Controls.Add(this.textBox100, 9, 15);
-			this.tableLayoutPanel.Controls.Add(this.label70, 6, 15);
-			this.tableLayoutPanel.Controls.Add(this.textBox97, 7, 15);
-			this.tableLayoutPanel.Controls.Add(this.label69, 8, 14);
-			this.tableLayoutPanel.Controls.Add(this.textBox94, 9, 14);
-			this.tableLayoutPanel.Controls.Add(this.label68, 6, 14);
-			this.tableLayoutPanel.Controls.Add(this.textBox91, 7, 14);
-			this.tableLayoutPanel.Controls.Add(this.label67, 8, 13);
-			this.tableLayoutPanel.Controls.Add(this.textBox88, 9, 13);
-			this.tableLayoutPanel.Controls.Add(this.label66, 6, 13);
-			this.tableLayoutPanel.Controls.Add(this.textBox85, 7, 13);
-			this.tableLayoutPanel.Controls.Add(this.label65, 8, 12);
-			this.tableLayoutPanel.Controls.Add(this.textBox82, 9, 12);
-			this.tableLayoutPanel.Controls.Add(this.label64, 6, 12);
-			this.tableLayoutPanel.Controls.Add(this.textBox79, 7, 12);
-			this.tableLayoutPanel.Controls.Add(this.label63, 8, 11);
-			this.tableLayoutPanel.Controls.Add(this.textBox76, 9, 11);
-			this.tableLayoutPanel.Controls.Add(this.label62, 6, 11);
-			this.tableLayoutPanel.Controls.Add(this.textBox73, 7, 11);
-			this.tableLayoutPanel.Controls.Add(this.label61, 8, 10);
-			this.tableLayoutPanel.Controls.Add(this.textBox70, 9, 10);
-			this.tableLayoutPanel.Controls.Add(this.label60, 6, 10);
-			this.tableLayoutPanel.Controls.Add(this.textBox67, 7, 10);
-			this.tableLayoutPanel.Controls.Add(this.label59, 8, 9);
-			this.tableLayoutPanel.Controls.Add(this.textBox64, 9, 9);
-			this.tableLayoutPanel.Controls.Add(this.label58, 6, 9);
-			this.tableLayoutPanel.Controls.Add(this.textBox61, 7, 9);
-			this.tableLayoutPanel.Controls.Add(this.label57, 8, 8);
-			this.tableLayoutPanel.Controls.Add(this.textBox58, 9, 8);
-			this.tableLayoutPanel.Controls.Add(this.label56, 6, 8);
-			this.tableLayoutPanel.Controls.Add(this.textBox55, 7, 8);
-			this.tableLayoutPanel.Controls.Add(this.label55, 8, 7);
-			this.tableLayoutPanel.Controls.Add(this.textBox52, 9, 7);
-			this.tableLayoutPanel.Controls.Add(this.label54, 6, 7);
-			this.tableLayoutPanel.Controls.Add(this.textBox49, 7, 7);
-			this.tableLayoutPanel.Controls.Add(this.label53, 8, 6);
-			this.tableLayoutPanel.Controls.Add(this.textBox46, 9, 6);
-			this.tableLayoutPanel.Controls.Add(this.label52, 6, 6);
-			this.tableLayoutPanel.Controls.Add(this.textBox43, 7, 6);
-			this.tableLayoutPanel.Controls.Add(this.label51, 8, 5);
-			this.tableLayoutPanel.Controls.Add(this.textBox40, 9, 5);
-			this.tableLayoutPanel.Controls.Add(this.label50, 6, 5);
-			this.tableLayoutPanel.Controls.Add(this.textBox37, 7, 5);
-			this.tableLayoutPanel.Controls.Add(this.label49, 8, 4);
-			this.tableLayoutPanel.Controls.Add(this.textBox34, 9, 4);
-			this.tableLayoutPanel.Controls.Add(this.label48, 6, 4);
-			this.tableLayoutPanel.Controls.Add(this.textBox31, 7, 4);
-			this.tableLayoutPanel.Controls.Add(this.label47, 8, 3);
-			this.tableLayoutPanel.Controls.Add(this.textBox28, 9, 3);
-			this.tableLayoutPanel.Controls.Add(this.label46, 6, 3);
-			this.tableLayoutPanel.Controls.Add(this.textBox25, 7, 3);
-			this.tableLayoutPanel.Controls.Add(this.label45, 8, 2);
-			this.tableLayoutPanel.Controls.Add(this.textBox22, 9, 2);
-			this.tableLayoutPanel.Controls.Add(this.label44, 6, 2);
-			this.tableLayoutPanel.Controls.Add(this.textBox19, 7, 2);
-			this.tableLayoutPanel.Controls.Add(this.label43, 8, 1);
-			this.tableLayoutPanel.Controls.Add(this.textBox16, 9, 1);
-			this.tableLayoutPanel.Controls.Add(this.label42, 6, 1);
-			this.tableLayoutPanel.Controls.Add(this.textBox13, 7, 1);
-			this.tableLayoutPanel.Controls.Add(this.label41, 8, 0);
-			this.tableLayoutPanel.Controls.Add(this.textBox10, 9, 0);
-			this.tableLayoutPanel.Controls.Add(this.label40, 6, 0);
-			this.tableLayoutPanel.Controls.Add(this.textBox7, 7, 0);
-			this.tableLayoutPanel.Controls.Add(this.textBox116, 2, 38);
-			this.tableLayoutPanel.Controls.Add(this.textBox115, 4, 37);
-			this.tableLayoutPanel.Controls.Add(this.textBox112, 4, 36);
-			this.tableLayoutPanel.Controls.Add(this.textBox113, 2, 37);
-			this.tableLayoutPanel.Controls.Add(this.textBox110, 2, 36);
-			this.tableLayoutPanel.Controls.Add(this.textBox107, 4, 35);
-			this.tableLayoutPanel.Controls.Add(this.textBox104, 4, 34);
-			this.tableLayoutPanel.Controls.Add(this.textBox105, 2, 35);
-			this.tableLayoutPanel.Controls.Add(this.textBox102, 2, 34);
-			this.tableLayoutPanel.Controls.Add(this.textBox101, 4, 33);
-			this.tableLayoutPanel.Controls.Add(this.textBox98, 4, 32);
-			this.tableLayoutPanel.Controls.Add(this.textBox99, 2, 33);
-			this.tableLayoutPanel.Controls.Add(this.textBox96, 2, 32);
-			this.tableLayoutPanel.Controls.Add(this.textBox95, 4, 31);
-			this.tableLayoutPanel.Controls.Add(this.textBox93, 2, 31);
-			this.tableLayoutPanel.Controls.Add(this.textBox90, 2, 30);
-			this.tableLayoutPanel.Controls.Add(this.textBox92, 4, 30);
-			this.tableLayoutPanel.Controls.Add(this.textBox87, 2, 29);
-			this.tableLayoutPanel.Controls.Add(this.textBox89, 4, 29);
-			this.tableLayoutPanel.Controls.Add(this.textBox84, 2, 28);
-			this.tableLayoutPanel.Controls.Add(this.textBox86, 4, 28);
-			this.tableLayoutPanel.Controls.Add(this.textBox81, 2, 27);
-			this.tableLayoutPanel.Controls.Add(this.textBox83, 4, 27);
-			this.tableLayoutPanel.Controls.Add(this.textBox78, 2, 26);
-			this.tableLayoutPanel.Controls.Add(this.textBox80, 4, 26);
-			this.tableLayoutPanel.Controls.Add(this.textBox75, 2, 25);
-			this.tableLayoutPanel.Controls.Add(this.textBox77, 4, 25);
-			this.tableLayoutPanel.Controls.Add(this.textBox72, 2, 24);
-			this.tableLayoutPanel.Controls.Add(this.textBox74, 4, 24);
-			this.tableLayoutPanel.Controls.Add(this.textBox69, 2, 23);
-			this.tableLayoutPanel.Controls.Add(this.textBox71, 4, 23);
-			this.tableLayoutPanel.Controls.Add(this.textBox68, 4, 22);
-			this.tableLayoutPanel.Controls.Add(this.textBox66, 2, 22);
-			this.tableLayoutPanel.Controls.Add(this.textBox65, 4, 21);
-			this.tableLayoutPanel.Controls.Add(this.textBox63, 2, 21);
-			this.tableLayoutPanel.Controls.Add(this.textBox62, 4, 20);
-			this.tableLayoutPanel.Controls.Add(this.textBox60, 2, 20);
-			this.tableLayoutPanel.Controls.Add(this.textBox59, 4, 19);
-			this.tableLayoutPanel.Controls.Add(this.textBox57, 2, 19);
-			this.tableLayoutPanel.Controls.Add(this.textBox56, 4, 18);
-			this.tableLayoutPanel.Controls.Add(this.textBox54, 2, 18);
-			this.tableLayoutPanel.Controls.Add(this.textBox53, 4, 17);
-			this.tableLayoutPanel.Controls.Add(this.textBox51, 2, 17);
-			this.tableLayoutPanel.Controls.Add(this.textBox50, 4, 16);
-			this.tableLayoutPanel.Controls.Add(this.textBox48, 2, 16);
-			this.tableLayoutPanel.Controls.Add(this.textBox47, 4, 15);
-			this.tableLayoutPanel.Controls.Add(this.textBox45, 2, 15);
-			this.tableLayoutPanel.Controls.Add(this.textBox44, 4, 14);
-			this.tableLayoutPanel.Controls.Add(this.textBox42, 2, 14);
-			this.tableLayoutPanel.Controls.Add(this.textBox41, 4, 13);
-			this.tableLayoutPanel.Controls.Add(this.textBox39, 2, 13);
-			this.tableLayoutPanel.Controls.Add(this.textBox38, 4, 12);
-			this.tableLayoutPanel.Controls.Add(this.textBox36, 2, 12);
-			this.tableLayoutPanel.Controls.Add(this.textBox35, 4, 11);
-			this.tableLayoutPanel.Controls.Add(this.textBox33, 2, 11);
-			this.tableLayoutPanel.Controls.Add(this.textBox32, 4, 10);
-			this.tableLayoutPanel.Controls.Add(this.textBox30, 2, 10);
-			this.tableLayoutPanel.Controls.Add(this.textBox29, 4, 9);
-			this.tableLayoutPanel.Controls.Add(this.textBox27, 2, 9);
-			this.tableLayoutPanel.Controls.Add(this.textBox26, 4, 8);
-			this.tableLayoutPanel.Controls.Add(this.textBox24, 2, 8);
-			this.tableLayoutPanel.Controls.Add(this.textBox23, 4, 7);
-			this.tableLayoutPanel.Controls.Add(this.textBox21, 2, 7);
-			this.tableLayoutPanel.Controls.Add(this.textBox20, 4, 6);
-			this.tableLayoutPanel.Controls.Add(this.textBox18, 2, 6);
-			this.tableLayoutPanel.Controls.Add(this.textBox17, 4, 5);
-			this.tableLayoutPanel.Controls.Add(this.textBox15, 2, 5);
-			this.tableLayoutPanel.Controls.Add(this.textBox14, 4, 4);
-			this.tableLayoutPanel.Controls.Add(this.textBox12, 2, 4);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfSpectralTypemax, 8, 37);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfSpectralTypeMax, 9, 37);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfSpectralTypeMin, 6, 37);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfSpectralTypeMin, 7, 37);
+			this.tableLayoutPanel.Controls.Add(this.labelSpectralTypeMax, 8, 36);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSpectralTypeMax, 9, 36);
+			this.tableLayoutPanel.Controls.Add(this.labelSpectralTypeMin, 6, 36);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSpectralTypeMin, 7, 36);
+			this.tableLayoutPanel.Controls.Add(this.labelViUsedForReductionsMax, 8, 35);
+			this.tableLayoutPanel.Controls.Add(this.textBoxViUsedForReductionsmax, 9, 35);
+			this.tableLayoutPanel.Controls.Add(this.labelViUsedForReductionsMin, 6, 35);
+			this.tableLayoutPanel.Controls.Add(this.textBoxViUsedForReductionsMin, 7, 35);
+			this.tableLayoutPanel.Controls.Add(this.labelCapePhotographicDmMax, 8, 34);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCapePhotographicDmMax, 9, 34);
+			this.tableLayoutPanel.Controls.Add(this.labelCapePhotographicDmMin, 6, 34);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCapePhotographicDmMin, 7, 34);
+			this.tableLayoutPanel.Controls.Add(this.labelCordobaDmMax, 8, 33);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCordobaDmMax, 9, 33);
+			this.tableLayoutPanel.Controls.Add(this.labelCordobaDmMin, 6, 33);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCordobaDmMin, 7, 33);
+			this.tableLayoutPanel.Controls.Add(this.labelBonnerDmMax, 8, 32);
+			this.tableLayoutPanel.Controls.Add(this.textBoxBonnerDmMax, 9, 32);
+			this.tableLayoutPanel.Controls.Add(this.labelBonnerDmMin, 6, 32);
+			this.tableLayoutPanel.Controls.Add(this.textBoxBonnerDmMin, 7, 32);
+			this.tableLayoutPanel.Controls.Add(this.labelHdNumberMax, 8, 31);
+			this.tableLayoutPanel.Controls.Add(this.textBoxHdNumberMax, 9, 31);
+			this.tableLayoutPanel.Controls.Add(this.labelHdNumberMin, 6, 31);
+			this.tableLayoutPanel.Controls.Add(this.textBoxHdNumberMin, 7, 31);
+			this.tableLayoutPanel.Controls.Add(this.labelExistenceOfNotesMax, 8, 30);
+			this.tableLayoutPanel.Controls.Add(this.textBoxExistenceOfNotesMax, 9, 30);
+			this.tableLayoutPanel.Controls.Add(this.labelExistenceOfNotesMin, 6, 30);
+			this.tableLayoutPanel.Controls.Add(this.textBoxExistenceOfNotesmin, 7, 30);
+			this.tableLayoutPanel.Controls.Add(this.labelIdentificationChartMax, 8, 29);
+			this.tableLayoutPanel.Controls.Add(this.textBoxIdentificationChartMax, 9, 29);
+			this.tableLayoutPanel.Controls.Add(this.labelIdentificationChartMin, 6, 29);
+			this.tableLayoutPanel.Controls.Add(this.textBoxIdentificationChartMin, 7, 29);
+			this.tableLayoutPanel.Controls.Add(this.labelFlagIndicatingSurveyStarMax, 8, 28);
+			this.tableLayoutPanel.Controls.Add(this.textBoxFlagIndicatingSurveyStarMax, 9, 28);
+			this.tableLayoutPanel.Controls.Add(this.labelFlagIndicatingSurveyStarMin, 6, 28);
+			this.tableLayoutPanel.Controls.Add(this.textBoxFlagIndicatingSurveyStarMin, 7, 28);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax, 8, 27);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax, 9, 27);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin, 6, 27);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin, 7, 27);
+			this.tableLayoutPanel.Controls.Add(this.labelMagnitudeDifferenceBetweenComponentsMax, 8, 26);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMagnitudeDifferenceBetweenComponentsMax, 9, 26);
+			this.tableLayoutPanel.Controls.Add(this.labelMagnitudeDifferenceBetweenComponentsMin, 6, 26);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMagnitudeDifferenceBetweenComponentsMin, 7, 26);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorRhoMax, 8, 25);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorRhoMax, 9, 25);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorRhoMin, 6, 25);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorRhoMin, 7, 25);
+			this.tableLayoutPanel.Controls.Add(this.labelAngularSeparationBetweenComponentsMax, 8, 24);
+			this.tableLayoutPanel.Controls.Add(this.textBoxAngularSeparationBetweenComponentsMax, 9, 24);
+			this.tableLayoutPanel.Controls.Add(this.labelAngularSeparationBetweenComponentsMin, 6, 24);
+			this.tableLayoutPanel.Controls.Add(this.textBoxAngularSeparationBetweenComponentsMin, 7, 24);
+			this.tableLayoutPanel.Controls.Add(this.labelPositionAngleBetweenComponentsMax, 8, 23);
+			this.tableLayoutPanel.Controls.Add(this.textBoxPositionAngleBetweenComponentsMax, 9, 23);
+			this.tableLayoutPanel.Controls.Add(this.labelPositionAngleBetweenComponentsMin, 6, 23);
+			this.tableLayoutPanel.Controls.Add(this.textBoxPositionAngleBetweenComponentsMin, 7, 23);
+			this.tableLayoutPanel.Controls.Add(this.labelComponentIdentifiersMax, 8, 22);
+			this.tableLayoutPanel.Controls.Add(this.textBoxComponentIdentifiersMax, 9, 22);
+			this.tableLayoutPanel.Controls.Add(this.labelComponentIdentifiersMin, 6, 22);
+			this.tableLayoutPanel.Controls.Add(this.textBoxComponentIdentifiersMin, 7, 22);
+			this.tableLayoutPanel.Controls.Add(this.labelSolutionQualityMax, 8, 21);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSolutionQualityMax, 9, 21);
+			this.tableLayoutPanel.Controls.Add(this.labelSolutionQualityMin, 6, 21);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSolutionQualityMin, 7, 21);
+			this.tableLayoutPanel.Controls.Add(this.labelAstrometricSourceFlagMax, 8, 20);
+			this.tableLayoutPanel.Controls.Add(this.textBoxAstrometricSourceFlagMax, 9, 20);
+			this.tableLayoutPanel.Controls.Add(this.labelAstrometricSourceFlagMin, 6, 20);
+			this.tableLayoutPanel.Controls.Add(this.textBoxAstrometricSourceFlagMin, 7, 20);
+			this.tableLayoutPanel.Controls.Add(this.labelMultipleSystemsFlagMax, 8, 19);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMultipleSystemsFlagMax, 9, 19);
+			this.tableLayoutPanel.Controls.Add(this.labelMultipleSystemsFlagMin, 6, 19);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMultipleSystemsFlagMin, 7, 19);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberComponentsInThisEntryMax, 8, 18);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNumberComponentsInThisEntryMax, 9, 18);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberComponentsInThisEntryMin, 6, 18);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNumberComponentsInThisEntryMin, 7, 18);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberEntriesWithSameCcdmMax, 8, 17);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNumberEntriesWithSameCcdmMax, 9, 17);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberEntriesWithSameCcdm, 6, 17);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNumberEntriesWithSameCcdmMin, 7, 17);
+			this.tableLayoutPanel.Controls.Add(this.labelHistoricalStatusFlagMax, 8, 16);
+			this.tableLayoutPanel.Controls.Add(this.textBoxHistoricalStatusFlagMax, 9, 16);
+			this.tableLayoutPanel.Controls.Add(this.labelHistoricalStatusFlagMin, 6, 16);
+			this.tableLayoutPanel.Controls.Add(this.textBoxHistoricalStatusFlagMin, 7, 16);
+			this.tableLayoutPanel.Controls.Add(this.labelCcdmIdentifierMax, 8, 15);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCcdmIdentifierMax, 9, 15);
+			this.tableLayoutPanel.Controls.Add(this.labelCcdmIdentifierMin, 6, 15);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCcdmIdentifierMin, 7, 15);
+			this.tableLayoutPanel.Controls.Add(this.labelLightCurveAnnexMax, 8, 14);
+			this.tableLayoutPanel.Controls.Add(this.textBoxLightCurveAnnexMax, 9, 14);
+			this.tableLayoutPanel.Controls.Add(this.labelLightCurveAnnexMin, 6, 14);
+			this.tableLayoutPanel.Controls.Add(this.textBoxLightCurveAnnexMin, 7, 14);
+			this.tableLayoutPanel.Controls.Add(this.labelAdditionalDataAboutVariabilityMax, 8, 13);
+			this.tableLayoutPanel.Controls.Add(this.textBoxAdditionalDataAboutVariabilityMax, 9, 13);
+			this.tableLayoutPanel.Controls.Add(this.labelAdditionalDataAboutVariabilityMin, 6, 13);
+			this.tableLayoutPanel.Controls.Add(this.textBoxAdditionalDataAboutVariabilityMin, 7, 13);
+			this.tableLayoutPanel.Controls.Add(this.labelVariabilityTypeMax, 8, 12);
+			this.tableLayoutPanel.Controls.Add(this.textBoxVariabilityTypeMax, 9, 12);
+			this.tableLayoutPanel.Controls.Add(this.labelVariabilityTypeMin, 6, 12);
+			this.tableLayoutPanel.Controls.Add(this.textBoxVariabilityTypeMin, 7, 12);
+			this.tableLayoutPanel.Controls.Add(this.labelVariabilityPeriodMax, 8, 11);
+			this.tableLayoutPanel.Controls.Add(this.textBoxVariabilityPeriodMax, 9, 11);
+			this.tableLayoutPanel.Controls.Add(this.labelVariabilityPeriodMin, 6, 11);
+			this.tableLayoutPanel.Controls.Add(this.textBoxVariabilityPeriodMin, 7, 11);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax, 8, 10);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax, 9, 10);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin, 6, 10);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin, 7, 10);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax, 8, 9);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax, 9, 9);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin, 6, 9);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin, 7, 9);
+			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax, 8, 8);
+			this.tableLayoutPanel.Controls.Add(this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax, 9, 8);
+			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin, 6, 8);
+			this.tableLayoutPanel.Controls.Add(this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin, 7, 8);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax, 8, 7);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax, 9, 7);
+			this.tableLayoutPanel.Controls.Add(this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin, 6, 7);
+			this.tableLayoutPanel.Controls.Add(this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin, 7, 7);
+			this.tableLayoutPanel.Controls.Add(this.labelScatterMedianMagnitudeInHipparcosSystemMax, 8, 6);
+			this.tableLayoutPanel.Controls.Add(this.textBoxScatterMedianMagnitudeInHipparcosSystemMax, 9, 6);
+			this.tableLayoutPanel.Controls.Add(this.labelScatterMedianMagnitudeInHipparcosSystemMin, 6, 6);
+			this.tableLayoutPanel.Controls.Add(this.textBoxScatterMedianMagnitudeInHipparcosSystemMin, 7, 6);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax, 8, 5);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax, 9, 5);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin, 6, 5);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin, 7, 5);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemMax, 8, 4);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMedianMagnitudeInHipparcosSystemMax, 9, 4);
+			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemMin, 6, 4);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMedianMagnitudeInHipparcosSystemMin, 7, 4);
+			this.tableLayoutPanel.Controls.Add(this.labelFlagForCombinedMagnitudesMax, 8, 3);
+			this.tableLayoutPanel.Controls.Add(this.textBoxFlagForCombinedMagnitudesMax, 9, 3);
+			this.tableLayoutPanel.Controls.Add(this.labelFlagForCombinedMagnitudesMin, 6, 3);
+			this.tableLayoutPanel.Controls.Add(this.textBoxFlagForCombinedMagnitudesMin, 7, 3);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfViMax, 8, 2);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfViMax, 9, 2);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfViMin, 6, 2);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfViMin, 7, 2);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorViMax, 8, 1);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorViMax, 9, 1);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorViMin, 6, 1);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorViMin, 7, 1);
+			this.tableLayoutPanel.Controls.Add(this.labelColorIndexInCousinsSystemMax, 8, 0);
+			this.tableLayoutPanel.Controls.Add(this.textBoxColorIndexInCousinsSystemMax, 9, 0);
+			this.tableLayoutPanel.Controls.Add(this.labelColorIndexInCousinsSystemMin, 6, 0);
+			this.tableLayoutPanel.Controls.Add(this.textBoxColorIndexInCousinsSystemMin, 7, 0);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfBvColorMin, 2, 38);
+			this.tableLayoutPanel.Controls.Add(this.textBoxReferenceFlagForBtAndVtMagnitudeMax, 4, 37);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorJohnsonBvColorMax, 4, 36);
+			this.tableLayoutPanel.Controls.Add(this.textBoxReferenceFlagForBtAndVtMagnitudeMin, 2, 37);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorJohnsonBvColorMin, 2, 36);
+			this.tableLayoutPanel.Controls.Add(this.textBoxJohnsonBvColorMax, 4, 35);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMeanVtMagnitudeMax, 4, 34);
+			this.tableLayoutPanel.Controls.Add(this.textBoxJohnsonBvColorMin, 2, 35);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMeanVtMagnitudeMin, 2, 34);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMeanVtMagnitudeMax, 4, 33);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMeanBtMagnitudeMax, 4, 32);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMeanVtMagnitudeMin, 2, 33);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorMeanBtMagnitudeMin, 2, 32);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMeanBtMagnitudeMax, 4, 31);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMeanBtMagnitudeMin, 2, 31);
+			this.tableLayoutPanel.Controls.Add(this.textBoxGoodnessOfFitParameterMin, 2, 30);
+			this.tableLayoutPanel.Controls.Add(this.textBoxGoodnessOfFitParameterMax, 4, 30);
+			this.tableLayoutPanel.Controls.Add(this.textBoxPercentageOfRejectedDataMin, 2, 29);
+			this.tableLayoutPanel.Controls.Add(this.textBoxPercentageOfRejectedDataMax, 4, 29);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin, 2, 28);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax, 4, 28);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin, 2, 27);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax, 4, 27);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByDeclinationMin, 2, 26);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByDeclinationMax, 4, 26);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin, 2, 25);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax, 4, 25);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin, 2, 24);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax, 4, 24);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin, 2, 23);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax, 4, 23);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax, 4, 22);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin, 2, 22);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationTrigonomicParallaxByDeclinationMax, 4, 21);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationTrigonomicParallaxByDeclinationMin, 2, 21);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax, 4, 20);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin, 2, 20);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationDeclinationByRightAscensionMax, 4, 19);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCorrelationDeclinationByRightAscensionMin, 2, 19);
+			this.tableLayoutPanel.Controls.Add(this.textBoxlStandardErrorProperMotionDeclinationMax, 4, 18);
+			this.tableLayoutPanel.Controls.Add(this.textBoxlStandardErrorProperMotionDeclinationMin, 2, 18);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorProperMotionRightAscensionMax, 4, 17);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorProperMotionRightAscensionMin, 2, 17);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorTrigonomicParallaxMax, 4, 16);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorTrigonomicParallaxMin, 2, 16);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorDeclinationMax, 4, 15);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorDeclinationMin, 2, 15);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorRightAscensionMax, 4, 14);
+			this.tableLayoutPanel.Controls.Add(this.textBoxStandardErrorRightAscensionMin, 2, 14);
+			this.tableLayoutPanel.Controls.Add(this.textBoxProperMotionDeltaMax, 4, 13);
+			this.tableLayoutPanel.Controls.Add(this.textBoxProperMotionDeltaMin, 2, 13);
+			this.tableLayoutPanel.Controls.Add(this.textBoxProperMotionAlphaMax, 4, 12);
+			this.tableLayoutPanel.Controls.Add(this.textBoxProperMotionAlphaMin, 2, 12);
+			this.tableLayoutPanel.Controls.Add(this.textBoxTrigonomicParallaxMax, 4, 11);
+			this.tableLayoutPanel.Controls.Add(this.textBoxTrigonomicParallaxMin, 2, 11);
+			this.tableLayoutPanel.Controls.Add(this.textBoxReferenceFlagForAstrometryMax, 4, 10);
+			this.tableLayoutPanel.Controls.Add(this.textBoxReferenceFlagForAstrometryMin, 2, 10);
+			this.tableLayoutPanel.Controls.Add(this.textBoxDeltaMax, 4, 9);
+			this.tableLayoutPanel.Controls.Add(this.textBoxDeltaMin, 2, 9);
+			this.tableLayoutPanel.Controls.Add(this.textBoxlAlphaMax, 4, 8);
+			this.tableLayoutPanel.Controls.Add(this.textBoxlAlphaMin, 2, 8);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfMagnitudeMax, 4, 7);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfMagnitudeMin, 2, 7);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCoarseVariabilityFlagMax, 4, 6);
+			this.tableLayoutPanel.Controls.Add(this.textBoxCoarseVariabilityFlagMin, 2, 6);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMagnitudeJohnsonMax, 4, 5);
+			this.tableLayoutPanel.Controls.Add(this.textBoxMagnitudeJohnsonMin, 2, 5);
+			this.tableLayoutPanel.Controls.Add(this.textBoxDeclinationMax, 4, 4);
+			this.tableLayoutPanel.Controls.Add(this.textBoxDeclinationMin, 2, 4);
 			this.tableLayoutPanel.Controls.Add(this.textBox11, 4, 3);
-			this.tableLayoutPanel.Controls.Add(this.textBox9, 2, 3);
-			this.tableLayoutPanel.Controls.Add(this.textBox8, 4, 2);
-			this.tableLayoutPanel.Controls.Add(this.textBox6, 2, 2);
-			this.tableLayoutPanel.Controls.Add(this.textBox5, 4, 1);
-			this.tableLayoutPanel.Controls.Add(this.textBox3, 2, 1);
-			this.tableLayoutPanel.Controls.Add(this.textBox2, 4, 0);
-			this.tableLayoutPanel.Controls.Add(this.label1, 3, 0);
-			this.tableLayoutPanel.Controls.Add(this.labelSourceOfBvColorData, 1, 38);
-			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForBtAndVtMagnitudeData, 1, 37);
-			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorJohnsonBvColorData, 1, 36);
-			this.tableLayoutPanel.Controls.Add(this.labelJohnsonBvColorData, 1, 35);
-			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanVtMagnitudeData, 1, 34);
-			this.tableLayoutPanel.Controls.Add(this.labelMeanVtMagnitudeData, 1, 33);
-			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanBtMagnitudeData, 1, 32);
-			this.tableLayoutPanel.Controls.Add(this.labelMeanBtMagnitudeData, 1, 31);
-			this.tableLayoutPanel.Controls.Add(this.labelGoodnessOfFitParameterData, 1, 30);
-			this.tableLayoutPanel.Controls.Add(this.labelPercentageOfRejectedDataData, 1, 29);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, 1, 28);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, 1, 27);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByDeclinationData, 1, 26);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByRightAscensionData, 1, 25);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, 1, 24);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByDeclinationData, 1, 23);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByRightAscensionData, 1, 22);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationTrigonomicParallaxByDeclinationData, 1, 21);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationTrigonomicParallaxByRightAscensionData, 1, 20);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationDeclinationByRightAscensionData, 1, 19);
-			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorProperMotionDeclinationData, 1, 18);
-			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorProperMotionRightAscensionData, 1, 17);
-			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorTrigonomicParallaxData, 1, 16);
-			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorDeclinationData, 1, 15);
-			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorRightAscensionData, 1, 14);
-			this.tableLayoutPanel.Controls.Add(this.labelProperMotionDeltaData, 1, 13);
-			this.tableLayoutPanel.Controls.Add(this.labelProperMotionAlphaData, 1, 12);
-			this.tableLayoutPanel.Controls.Add(this.labelTrigonomicParallaxData, 1, 11);
-			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForAstrometryData, 1, 10);
-			this.tableLayoutPanel.Controls.Add(this.labelDeltaData, 1, 9);
-			this.tableLayoutPanel.Controls.Add(this.labelAlphaData, 1, 8);
-			this.tableLayoutPanel.Controls.Add(this.labelSourceOfMagnitudeData, 1, 7);
-			this.tableLayoutPanel.Controls.Add(this.labelCoarseVariabilityFlagData, 1, 6);
-			this.tableLayoutPanel.Controls.Add(this.labelMagnitudeJohnsonData, 1, 5);
-			this.tableLayoutPanel.Controls.Add(this.labelDeclinationData, 1, 4);
-			this.tableLayoutPanel.Controls.Add(this.labelRightAscensionData, 1, 3);
-			this.tableLayoutPanel.Controls.Add(this.labelProximityFlagData, 1, 2);
-			this.tableLayoutPanel.Controls.Add(this.labelIdentifierData, 1, 1);
+			this.tableLayoutPanel.Controls.Add(this.textBoxRightAscensionMax, 2, 3);
+			this.tableLayoutPanel.Controls.Add(this.textBoxProximityFlagMax, 4, 2);
+			this.tableLayoutPanel.Controls.Add(this.textBoxProximityFlagMin, 2, 2);
+			this.tableLayoutPanel.Controls.Add(this.textBoxIdentifierMax, 4, 1);
+			this.tableLayoutPanel.Controls.Add(this.textBoxIdentifierMin, 2, 1);
+			this.tableLayoutPanel.Controls.Add(this.textBoxlCatalogMax, 4, 0);
+			this.tableLayoutPanel.Controls.Add(this.labellCatalogMax, 3, 0);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfBvColorMin, 1, 38);
+			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForBtAndVtMagnitudeMin, 1, 37);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorJohnsonBvColorMin, 1, 36);
+			this.tableLayoutPanel.Controls.Add(this.labelJohnsonBvColorMin, 1, 35);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanVtMagnitudeMin, 1, 34);
+			this.tableLayoutPanel.Controls.Add(this.labelMeanVtMagnitudeMin, 1, 33);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanBtMagnitudeMin, 1, 32);
+			this.tableLayoutPanel.Controls.Add(this.labelMeanBtMagnitudeMin, 1, 31);
+			this.tableLayoutPanel.Controls.Add(this.labelGoodnessOfFitParameterMin, 1, 30);
+			this.tableLayoutPanel.Controls.Add(this.labelPercentageOfRejectedDataMin, 1, 29);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin, 1, 28);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin, 1, 27);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByDeclinationMin, 1, 26);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByRightAscensionMin, 1, 25);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin, 1, 24);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByDeclinationMin, 1, 23);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByRightAscensionMin, 1, 22);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationTrigonomicParallaxByDeclinationMin, 1, 21);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationTrigonomicParallaxByRightAscensionMin, 1, 20);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationDeclinationByRightAscensionMin, 1, 19);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorProperMotionDeclinationmMin, 1, 18);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorProperMotionRightAscensionMin, 1, 17);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorTrigonomicParallaxMin, 1, 16);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorDeclinationMin, 1, 15);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorRightAscensionMin, 1, 14);
+			this.tableLayoutPanel.Controls.Add(this.labelProperMotionDeltaMin, 1, 13);
+			this.tableLayoutPanel.Controls.Add(this.labelProperMotionAlphaMin, 1, 12);
+			this.tableLayoutPanel.Controls.Add(this.labelTrigonomicParallaxMin, 1, 11);
+			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForAstrometryMin, 1, 10);
+			this.tableLayoutPanel.Controls.Add(this.labelDeltaMin, 1, 9);
+			this.tableLayoutPanel.Controls.Add(this.labelAlphaMin, 1, 8);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfMagnitudeMin, 1, 7);
+			this.tableLayoutPanel.Controls.Add(this.labelCoarseVariabilityFlagMin, 1, 6);
+			this.tableLayoutPanel.Controls.Add(this.labelMagnitudeJohnsonMin, 1, 5);
+			this.tableLayoutPanel.Controls.Add(this.labelDeclinationMin, 1, 4);
+			this.tableLayoutPanel.Controls.Add(this.labelRightAscensionMin, 1, 3);
+			this.tableLayoutPanel.Controls.Add(this.labelProximityFlagMin, 1, 2);
+			this.tableLayoutPanel.Controls.Add(this.labelIdentifierMin, 1, 1);
 			this.tableLayoutPanel.Controls.Add(this.labelCatalogDesc, 0, 0);
 			this.tableLayoutPanel.Controls.Add(this.labelSourceOfSpectralTypeDesc, 5, 37);
 			this.tableLayoutPanel.Controls.Add(this.labelHistoricalStatusFlagDesc, 5, 16);
@@ -2399,48 +2447,48 @@
 			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorJohnsonBvColorDesc, 0, 36);
 			this.tableLayoutPanel.Controls.Add(this.labelSourceOfBvColorDesc, 0, 38);
 			this.tableLayoutPanel.Controls.Add(this.labelMedianMagnitudeInHipparcosSystemDesc, 5, 4);
-			this.tableLayoutPanel.Controls.Add(this.labelCatalogData, 1, 0);
+			this.tableLayoutPanel.Controls.Add(this.labelCatalogMin, 1, 0);
 			this.tableLayoutPanel.Controls.Add(this.labelLightCurveAnnexDesc, 5, 14);
-			this.tableLayoutPanel.Controls.Add(this.textBox1, 2, 0);
-			this.tableLayoutPanel.Controls.Add(this.textBox4, 4, 38);
-			this.tableLayoutPanel.Controls.Add(this.label2, 3, 1);
-			this.tableLayoutPanel.Controls.Add(this.label3, 3, 2);
-			this.tableLayoutPanel.Controls.Add(this.label4, 3, 3);
-			this.tableLayoutPanel.Controls.Add(this.label5, 3, 4);
-			this.tableLayoutPanel.Controls.Add(this.label6, 3, 5);
-			this.tableLayoutPanel.Controls.Add(this.label7, 3, 6);
-			this.tableLayoutPanel.Controls.Add(this.label8, 3, 7);
-			this.tableLayoutPanel.Controls.Add(this.label9, 3, 8);
-			this.tableLayoutPanel.Controls.Add(this.label10, 3, 9);
-			this.tableLayoutPanel.Controls.Add(this.label11, 3, 10);
-			this.tableLayoutPanel.Controls.Add(this.label12, 3, 11);
-			this.tableLayoutPanel.Controls.Add(this.label13, 3, 12);
-			this.tableLayoutPanel.Controls.Add(this.label14, 3, 13);
-			this.tableLayoutPanel.Controls.Add(this.label15, 3, 14);
-			this.tableLayoutPanel.Controls.Add(this.label16, 3, 15);
-			this.tableLayoutPanel.Controls.Add(this.label17, 3, 16);
-			this.tableLayoutPanel.Controls.Add(this.label18, 3, 17);
-			this.tableLayoutPanel.Controls.Add(this.label19, 3, 18);
-			this.tableLayoutPanel.Controls.Add(this.label20, 3, 19);
-			this.tableLayoutPanel.Controls.Add(this.label21, 3, 20);
-			this.tableLayoutPanel.Controls.Add(this.label22, 3, 21);
-			this.tableLayoutPanel.Controls.Add(this.label23, 3, 22);
-			this.tableLayoutPanel.Controls.Add(this.label24, 3, 23);
-			this.tableLayoutPanel.Controls.Add(this.label25, 3, 24);
-			this.tableLayoutPanel.Controls.Add(this.label26, 3, 25);
-			this.tableLayoutPanel.Controls.Add(this.label27, 3, 26);
-			this.tableLayoutPanel.Controls.Add(this.label28, 3, 27);
-			this.tableLayoutPanel.Controls.Add(this.label29, 3, 28);
-			this.tableLayoutPanel.Controls.Add(this.label30, 3, 38);
-			this.tableLayoutPanel.Controls.Add(this.label31, 3, 37);
-			this.tableLayoutPanel.Controls.Add(this.label32, 3, 36);
-			this.tableLayoutPanel.Controls.Add(this.label33, 3, 35);
-			this.tableLayoutPanel.Controls.Add(this.label34, 3, 34);
-			this.tableLayoutPanel.Controls.Add(this.label35, 3, 33);
-			this.tableLayoutPanel.Controls.Add(this.label36, 3, 32);
-			this.tableLayoutPanel.Controls.Add(this.label37, 3, 31);
-			this.tableLayoutPanel.Controls.Add(this.label38, 3, 30);
-			this.tableLayoutPanel.Controls.Add(this.label39, 3, 29);
+			this.tableLayoutPanel.Controls.Add(this.textBoxlCatalogMin, 2, 0);
+			this.tableLayoutPanel.Controls.Add(this.textBoxSourceOfBvColorMax, 4, 38);
+			this.tableLayoutPanel.Controls.Add(this.labelIdentifierMax, 3, 1);
+			this.tableLayoutPanel.Controls.Add(this.labelProximityFlagMax, 3, 2);
+			this.tableLayoutPanel.Controls.Add(this.labelRightAscensionMax, 3, 3);
+			this.tableLayoutPanel.Controls.Add(this.labelDeclinationMax, 3, 4);
+			this.tableLayoutPanel.Controls.Add(this.labelMagnitudeJohnsonMax, 3, 5);
+			this.tableLayoutPanel.Controls.Add(this.labelCoarseVariabilityFlagMax, 3, 6);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfMagnitudeMax, 3, 7);
+			this.tableLayoutPanel.Controls.Add(this.labellAlphaMax, 3, 8);
+			this.tableLayoutPanel.Controls.Add(this.labelDeltaMax, 3, 9);
+			this.tableLayoutPanel.Controls.Add(this.label1ReferenceFlagForAstrometryMax, 3, 10);
+			this.tableLayoutPanel.Controls.Add(this.labelTrigonomicParallaxMax, 3, 11);
+			this.tableLayoutPanel.Controls.Add(this.labelProperMotionAlphaMax, 3, 12);
+			this.tableLayoutPanel.Controls.Add(this.labelProperMotionDeltaMax, 3, 13);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorRightAscensionMax, 3, 14);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorDeclinationMax, 3, 15);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorTrigonomicParallaxMax, 3, 16);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorProperMotionRightAscensionMax, 3, 17);
+			this.tableLayoutPanel.Controls.Add(this.labellStandardErrorProperMotionDeclinationMax, 3, 18);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationDeclinationByRightAscensionMax, 3, 19);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationTrigonomicParallaxByRightAscensionMax, 3, 20);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationTrigonomicParallaxByDeclinationMax, 3, 21);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByRightAscensionMax, 3, 22);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByDeclinationMax, 3, 23);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax, 3, 24);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByRightAscensionMax, 3, 25);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByDeclinationMax, 3, 26);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax, 3, 27);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax, 3, 28);
+			this.tableLayoutPanel.Controls.Add(this.labelSourceOfBvColorMax, 3, 38);
+			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForBtAndVtMagnitudeMax, 3, 37);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorJohnsonBvColorMax, 3, 36);
+			this.tableLayoutPanel.Controls.Add(this.labelJohnsonBvColorMax, 3, 35);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanVtMagnitudeMax, 3, 34);
+			this.tableLayoutPanel.Controls.Add(this.labelMeanVtMagnitudeMax, 3, 33);
+			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorMeanBtMagnitudeMax, 3, 32);
+			this.tableLayoutPanel.Controls.Add(this.labelMeanBtMagnitudeMax, 3, 31);
+			this.tableLayoutPanel.Controls.Add(this.labelGoodnessOfFitParameterMax, 3, 30);
+			this.tableLayoutPanel.Controls.Add(this.labelPercentageOfRejectedDataMax, 3, 29);
 			this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel.Name = "tableLayoutPanel";
@@ -2488,3624 +2536,3624 @@
 			this.tableLayoutPanel.TabIndex = 3;
 			this.tableLayoutPanel.TabStop = true;
 			// 
-			// label115
-			// 
-			this.label115.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label115.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label115.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label115.AutoSize = true;
-			this.label115.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label115.Location = new System.Drawing.Point(675, 666);
-			this.label115.Margin = new System.Windows.Forms.Padding(0);
-			this.label115.Name = "label115";
-			this.label115.Size = new System.Drawing.Size(35, 18);
-			this.label115.TabIndex = 20;
-			this.label115.Text = "max.:";
-			this.label115.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label115.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label115.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label115.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label115.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox154
-			// 
-			this.textBox154.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox154.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox154.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox154.Location = new System.Drawing.Point(710, 666);
-			this.textBox154.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox154.Name = "textBox154";
-			this.textBox154.Size = new System.Drawing.Size(50, 18);
-			this.textBox154.TabIndex = 21;
-			this.textBox154.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox154.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox154.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox154.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label114
-			// 
-			this.label114.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label114.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label114.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label114.AutoSize = true;
-			this.label114.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label114.Location = new System.Drawing.Point(590, 666);
-			this.label114.Margin = new System.Windows.Forms.Padding(0);
-			this.label114.Name = "label114";
-			this.label114.Size = new System.Drawing.Size(35, 18);
-			this.label114.TabIndex = 18;
-			this.label114.Text = "min.:";
-			this.label114.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label114.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label114.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label114.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label114.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox153
-			// 
-			this.textBox153.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox153.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox153.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox153.Location = new System.Drawing.Point(625, 666);
-			this.textBox153.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox153.Name = "textBox153";
-			this.textBox153.Size = new System.Drawing.Size(50, 18);
-			this.textBox153.TabIndex = 19;
-			this.textBox153.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox153.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox153.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox153.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label113
-			// 
-			this.label113.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label113.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label113.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label113.AutoSize = true;
-			this.label113.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label113.Location = new System.Drawing.Point(675, 648);
-			this.label113.Margin = new System.Windows.Forms.Padding(0);
-			this.label113.Name = "label113";
-			this.label113.Size = new System.Drawing.Size(35, 18);
-			this.label113.TabIndex = 10;
-			this.label113.Text = "max.:";
-			this.label113.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label113.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label113.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label113.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label113.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox152
-			// 
-			this.textBox152.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox152.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox152.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox152.Location = new System.Drawing.Point(710, 648);
-			this.textBox152.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox152.Name = "textBox152";
-			this.textBox152.Size = new System.Drawing.Size(50, 18);
-			this.textBox152.TabIndex = 11;
-			this.textBox152.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox152.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox152.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox152.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label112
-			// 
-			this.label112.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label112.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label112.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label112.AutoSize = true;
-			this.label112.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label112.Location = new System.Drawing.Point(590, 648);
-			this.label112.Margin = new System.Windows.Forms.Padding(0);
-			this.label112.Name = "label112";
-			this.label112.Size = new System.Drawing.Size(35, 18);
-			this.label112.TabIndex = 8;
-			this.label112.Text = "min.:";
-			this.label112.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label112.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label112.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label112.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label112.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox151
-			// 
-			this.textBox151.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox151.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox151.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox151.Location = new System.Drawing.Point(625, 648);
-			this.textBox151.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox151.Name = "textBox151";
-			this.textBox151.Size = new System.Drawing.Size(50, 18);
-			this.textBox151.TabIndex = 9;
-			this.textBox151.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox151.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox151.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox151.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label111
-			// 
-			this.label111.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label111.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label111.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label111.AutoSize = true;
-			this.label111.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label111.Location = new System.Drawing.Point(675, 630);
-			this.label111.Margin = new System.Windows.Forms.Padding(0);
-			this.label111.Name = "label111";
-			this.label111.Size = new System.Drawing.Size(35, 18);
-			this.label111.TabIndex = 0;
-			this.label111.Text = "max.:";
-			this.label111.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label111.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label111.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label111.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label111.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox150
-			// 
-			this.textBox150.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox150.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox150.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox150.Location = new System.Drawing.Point(710, 630);
-			this.textBox150.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox150.Name = "textBox150";
-			this.textBox150.Size = new System.Drawing.Size(50, 18);
-			this.textBox150.TabIndex = 1;
-			this.textBox150.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox150.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox150.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox150.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label110
-			// 
-			this.label110.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label110.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label110.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label110.AutoSize = true;
-			this.label110.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label110.Location = new System.Drawing.Point(590, 630);
-			this.label110.Margin = new System.Windows.Forms.Padding(0);
-			this.label110.Name = "label110";
-			this.label110.Size = new System.Drawing.Size(35, 18);
-			this.label110.TabIndex = 383;
-			this.label110.Text = "min.:";
-			this.label110.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label110.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label110.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label110.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label110.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox149
-			// 
-			this.textBox149.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox149.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox149.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox149.Location = new System.Drawing.Point(625, 630);
-			this.textBox149.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox149.Name = "textBox149";
-			this.textBox149.Size = new System.Drawing.Size(50, 18);
-			this.textBox149.TabIndex = 384;
-			this.textBox149.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox149.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox149.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox149.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label109
-			// 
-			this.label109.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label109.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label109.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label109.AutoSize = true;
-			this.label109.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label109.Location = new System.Drawing.Point(675, 612);
-			this.label109.Margin = new System.Windows.Forms.Padding(0);
-			this.label109.Name = "label109";
-			this.label109.Size = new System.Drawing.Size(35, 18);
-			this.label109.TabIndex = 375;
-			this.label109.Text = "max.:";
-			this.label109.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label109.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label109.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label109.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label109.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox148
-			// 
-			this.textBox148.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox148.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox148.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox148.Location = new System.Drawing.Point(710, 612);
-			this.textBox148.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox148.Name = "textBox148";
-			this.textBox148.Size = new System.Drawing.Size(50, 18);
-			this.textBox148.TabIndex = 376;
-			this.textBox148.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox148.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox148.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox148.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label108
-			// 
-			this.label108.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label108.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label108.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label108.AutoSize = true;
-			this.label108.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label108.Location = new System.Drawing.Point(590, 612);
-			this.label108.Margin = new System.Windows.Forms.Padding(0);
-			this.label108.Name = "label108";
-			this.label108.Size = new System.Drawing.Size(35, 18);
-			this.label108.TabIndex = 373;
-			this.label108.Text = "min.:";
-			this.label108.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label108.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label108.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label108.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label108.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox147
-			// 
-			this.textBox147.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox147.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox147.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox147.Location = new System.Drawing.Point(625, 612);
-			this.textBox147.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox147.Name = "textBox147";
-			this.textBox147.Size = new System.Drawing.Size(50, 18);
-			this.textBox147.TabIndex = 374;
-			this.textBox147.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox147.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox147.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox147.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label107
-			// 
-			this.label107.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label107.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label107.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label107.AutoSize = true;
-			this.label107.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label107.Location = new System.Drawing.Point(675, 594);
-			this.label107.Margin = new System.Windows.Forms.Padding(0);
-			this.label107.Name = "label107";
-			this.label107.Size = new System.Drawing.Size(35, 18);
-			this.label107.TabIndex = 365;
-			this.label107.Text = "max.:";
-			this.label107.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label107.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label107.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label107.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label107.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox146
-			// 
-			this.textBox146.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox146.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox146.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox146.Location = new System.Drawing.Point(710, 594);
-			this.textBox146.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox146.Name = "textBox146";
-			this.textBox146.Size = new System.Drawing.Size(50, 18);
-			this.textBox146.TabIndex = 366;
-			this.textBox146.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox146.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox146.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox146.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label106
-			// 
-			this.label106.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label106.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label106.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label106.AutoSize = true;
-			this.label106.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label106.Location = new System.Drawing.Point(590, 594);
-			this.label106.Margin = new System.Windows.Forms.Padding(0);
-			this.label106.Name = "label106";
-			this.label106.Size = new System.Drawing.Size(35, 18);
-			this.label106.TabIndex = 363;
-			this.label106.Text = "min.:";
-			this.label106.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label106.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label106.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label106.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label106.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox145
-			// 
-			this.textBox145.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox145.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox145.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox145.Location = new System.Drawing.Point(625, 594);
-			this.textBox145.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox145.Name = "textBox145";
-			this.textBox145.Size = new System.Drawing.Size(50, 18);
-			this.textBox145.TabIndex = 364;
-			this.textBox145.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox145.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox145.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox145.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label105
-			// 
-			this.label105.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label105.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label105.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label105.AutoSize = true;
-			this.label105.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label105.Location = new System.Drawing.Point(675, 576);
-			this.label105.Margin = new System.Windows.Forms.Padding(0);
-			this.label105.Name = "label105";
-			this.label105.Size = new System.Drawing.Size(35, 18);
-			this.label105.TabIndex = 355;
-			this.label105.Text = "max.:";
-			this.label105.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label105.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label105.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label105.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label105.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox144
-			// 
-			this.textBox144.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox144.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox144.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox144.Location = new System.Drawing.Point(710, 576);
-			this.textBox144.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox144.Name = "textBox144";
-			this.textBox144.Size = new System.Drawing.Size(50, 18);
-			this.textBox144.TabIndex = 356;
-			this.textBox144.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox144.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox144.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox144.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label104
-			// 
-			this.label104.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label104.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label104.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label104.AutoSize = true;
-			this.label104.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label104.Location = new System.Drawing.Point(590, 576);
-			this.label104.Margin = new System.Windows.Forms.Padding(0);
-			this.label104.Name = "label104";
-			this.label104.Size = new System.Drawing.Size(35, 18);
-			this.label104.TabIndex = 353;
-			this.label104.Text = "min.:";
-			this.label104.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label104.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label104.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label104.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label104.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox143
-			// 
-			this.textBox143.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox143.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox143.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox143.Location = new System.Drawing.Point(625, 576);
-			this.textBox143.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox143.Name = "textBox143";
-			this.textBox143.Size = new System.Drawing.Size(50, 18);
-			this.textBox143.TabIndex = 354;
-			this.textBox143.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox143.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox143.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox143.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label103
-			// 
-			this.label103.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label103.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label103.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label103.AutoSize = true;
-			this.label103.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label103.Location = new System.Drawing.Point(675, 558);
-			this.label103.Margin = new System.Windows.Forms.Padding(0);
-			this.label103.Name = "label103";
-			this.label103.Size = new System.Drawing.Size(35, 18);
-			this.label103.TabIndex = 345;
-			this.label103.Text = "max.:";
-			this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label103.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label103.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label103.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label103.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox142
-			// 
-			this.textBox142.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox142.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox142.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox142.Location = new System.Drawing.Point(710, 558);
-			this.textBox142.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox142.Name = "textBox142";
-			this.textBox142.Size = new System.Drawing.Size(50, 18);
-			this.textBox142.TabIndex = 346;
-			this.textBox142.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox142.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox142.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox142.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label102
-			// 
-			this.label102.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label102.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label102.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label102.AutoSize = true;
-			this.label102.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label102.Location = new System.Drawing.Point(590, 558);
-			this.label102.Margin = new System.Windows.Forms.Padding(0);
-			this.label102.Name = "label102";
-			this.label102.Size = new System.Drawing.Size(35, 18);
-			this.label102.TabIndex = 343;
-			this.label102.Text = "min.:";
-			this.label102.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label102.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label102.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label102.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label102.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox141
-			// 
-			this.textBox141.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox141.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox141.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox141.Location = new System.Drawing.Point(625, 558);
-			this.textBox141.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox141.Name = "textBox141";
-			this.textBox141.Size = new System.Drawing.Size(50, 18);
-			this.textBox141.TabIndex = 344;
-			this.textBox141.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox141.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox141.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox141.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label101
-			// 
-			this.label101.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label101.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label101.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label101.AutoSize = true;
-			this.label101.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label101.Location = new System.Drawing.Point(675, 540);
-			this.label101.Margin = new System.Windows.Forms.Padding(0);
-			this.label101.Name = "label101";
-			this.label101.Size = new System.Drawing.Size(35, 18);
-			this.label101.TabIndex = 335;
-			this.label101.Text = "max.:";
-			this.label101.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label101.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label101.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label101.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label101.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox140
-			// 
-			this.textBox140.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox140.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox140.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox140.Location = new System.Drawing.Point(710, 540);
-			this.textBox140.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox140.Name = "textBox140";
-			this.textBox140.Size = new System.Drawing.Size(50, 18);
-			this.textBox140.TabIndex = 336;
-			this.textBox140.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox140.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox140.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox140.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label100
-			// 
-			this.label100.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label100.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label100.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label100.AutoSize = true;
-			this.label100.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label100.Location = new System.Drawing.Point(590, 540);
-			this.label100.Margin = new System.Windows.Forms.Padding(0);
-			this.label100.Name = "label100";
-			this.label100.Size = new System.Drawing.Size(35, 18);
-			this.label100.TabIndex = 333;
-			this.label100.Text = "min.:";
-			this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label100.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label100.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label100.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label100.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox139
-			// 
-			this.textBox139.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox139.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox139.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox139.Location = new System.Drawing.Point(625, 540);
-			this.textBox139.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox139.Name = "textBox139";
-			this.textBox139.Size = new System.Drawing.Size(50, 18);
-			this.textBox139.TabIndex = 334;
-			this.textBox139.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox139.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox139.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox139.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label99
-			// 
-			this.label99.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label99.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label99.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label99.AutoSize = true;
-			this.label99.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label99.Location = new System.Drawing.Point(675, 522);
-			this.label99.Margin = new System.Windows.Forms.Padding(0);
-			this.label99.Name = "label99";
-			this.label99.Size = new System.Drawing.Size(35, 18);
-			this.label99.TabIndex = 325;
-			this.label99.Text = "max.:";
-			this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label99.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label99.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label99.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label99.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox138
-			// 
-			this.textBox138.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox138.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox138.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox138.Location = new System.Drawing.Point(710, 522);
-			this.textBox138.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox138.Name = "textBox138";
-			this.textBox138.Size = new System.Drawing.Size(50, 18);
-			this.textBox138.TabIndex = 326;
-			this.textBox138.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox138.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox138.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox138.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label98
-			// 
-			this.label98.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label98.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label98.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label98.AutoSize = true;
-			this.label98.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label98.Location = new System.Drawing.Point(590, 522);
-			this.label98.Margin = new System.Windows.Forms.Padding(0);
-			this.label98.Name = "label98";
-			this.label98.Size = new System.Drawing.Size(35, 18);
-			this.label98.TabIndex = 323;
-			this.label98.Text = "min.:";
-			this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label98.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label98.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label98.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label98.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox137
-			// 
-			this.textBox137.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox137.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox137.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox137.Location = new System.Drawing.Point(625, 522);
-			this.textBox137.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox137.Name = "textBox137";
-			this.textBox137.Size = new System.Drawing.Size(50, 18);
-			this.textBox137.TabIndex = 324;
-			this.textBox137.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox137.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox137.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox137.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label97
-			// 
-			this.label97.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label97.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label97.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label97.AutoSize = true;
-			this.label97.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label97.Location = new System.Drawing.Point(675, 504);
-			this.label97.Margin = new System.Windows.Forms.Padding(0);
-			this.label97.Name = "label97";
-			this.label97.Size = new System.Drawing.Size(35, 18);
-			this.label97.TabIndex = 315;
-			this.label97.Text = "max.:";
-			this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label97.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label97.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label97.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label97.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox136
-			// 
-			this.textBox136.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox136.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox136.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox136.Location = new System.Drawing.Point(710, 504);
-			this.textBox136.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox136.Name = "textBox136";
-			this.textBox136.Size = new System.Drawing.Size(50, 18);
-			this.textBox136.TabIndex = 316;
-			this.textBox136.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox136.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox136.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox136.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label96
-			// 
-			this.label96.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label96.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label96.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label96.AutoSize = true;
-			this.label96.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label96.Location = new System.Drawing.Point(590, 504);
-			this.label96.Margin = new System.Windows.Forms.Padding(0);
-			this.label96.Name = "label96";
-			this.label96.Size = new System.Drawing.Size(35, 18);
-			this.label96.TabIndex = 306;
-			this.label96.Text = "min.:";
-			this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label96.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label96.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label96.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label96.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox135
-			// 
-			this.textBox135.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox135.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox135.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox135.Location = new System.Drawing.Point(625, 504);
-			this.textBox135.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox135.Name = "textBox135";
-			this.textBox135.Size = new System.Drawing.Size(50, 18);
-			this.textBox135.TabIndex = 307;
-			this.textBox135.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox135.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox135.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox135.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label95
-			// 
-			this.label95.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label95.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label95.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label95.AutoSize = true;
-			this.label95.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label95.Location = new System.Drawing.Point(675, 486);
-			this.label95.Margin = new System.Windows.Forms.Padding(0);
-			this.label95.Name = "label95";
-			this.label95.Size = new System.Drawing.Size(35, 18);
-			this.label95.TabIndex = 298;
-			this.label95.Text = "max.:";
-			this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label95.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label95.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label95.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label95.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox134
-			// 
-			this.textBox134.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox134.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox134.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox134.Location = new System.Drawing.Point(710, 486);
-			this.textBox134.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox134.Name = "textBox134";
-			this.textBox134.Size = new System.Drawing.Size(50, 18);
-			this.textBox134.TabIndex = 299;
-			this.textBox134.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox134.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox134.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox134.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label94
-			// 
-			this.label94.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label94.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label94.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label94.AutoSize = true;
-			this.label94.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label94.Location = new System.Drawing.Point(590, 486);
-			this.label94.Margin = new System.Windows.Forms.Padding(0);
-			this.label94.Name = "label94";
-			this.label94.Size = new System.Drawing.Size(35, 18);
-			this.label94.TabIndex = 296;
-			this.label94.Text = "min.:";
-			this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label94.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label94.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label94.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label94.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox133
-			// 
-			this.textBox133.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox133.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox133.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox133.Location = new System.Drawing.Point(625, 486);
-			this.textBox133.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox133.Name = "textBox133";
-			this.textBox133.Size = new System.Drawing.Size(50, 18);
-			this.textBox133.TabIndex = 297;
-			this.textBox133.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox133.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox133.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox133.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label93
-			// 
-			this.label93.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label93.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label93.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label93.AutoSize = true;
-			this.label93.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label93.Location = new System.Drawing.Point(675, 468);
-			this.label93.Margin = new System.Windows.Forms.Padding(0);
-			this.label93.Name = "label93";
-			this.label93.Size = new System.Drawing.Size(35, 18);
-			this.label93.TabIndex = 288;
-			this.label93.Text = "max.:";
-			this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label93.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label93.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label93.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label93.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox132
-			// 
-			this.textBox132.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox132.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox132.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox132.Location = new System.Drawing.Point(710, 468);
-			this.textBox132.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox132.Name = "textBox132";
-			this.textBox132.Size = new System.Drawing.Size(50, 18);
-			this.textBox132.TabIndex = 289;
-			this.textBox132.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox132.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox132.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox132.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label92
-			// 
-			this.label92.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label92.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label92.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label92.AutoSize = true;
-			this.label92.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label92.Location = new System.Drawing.Point(590, 468);
-			this.label92.Margin = new System.Windows.Forms.Padding(0);
-			this.label92.Name = "label92";
-			this.label92.Size = new System.Drawing.Size(35, 18);
-			this.label92.TabIndex = 286;
-			this.label92.Text = "min.:";
-			this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label92.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label92.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label92.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label92.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox131
-			// 
-			this.textBox131.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox131.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox131.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox131.Location = new System.Drawing.Point(625, 468);
-			this.textBox131.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox131.Name = "textBox131";
-			this.textBox131.Size = new System.Drawing.Size(50, 18);
-			this.textBox131.TabIndex = 287;
-			this.textBox131.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox131.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox131.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox131.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label91
-			// 
-			this.label91.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label91.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label91.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label91.AutoSize = true;
-			this.label91.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label91.Location = new System.Drawing.Point(675, 450);
-			this.label91.Margin = new System.Windows.Forms.Padding(0);
-			this.label91.Name = "label91";
-			this.label91.Size = new System.Drawing.Size(35, 18);
-			this.label91.TabIndex = 278;
-			this.label91.Text = "max.:";
-			this.label91.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label91.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label91.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label91.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label91.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox130
-			// 
-			this.textBox130.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox130.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox130.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox130.Location = new System.Drawing.Point(710, 450);
-			this.textBox130.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox130.Name = "textBox130";
-			this.textBox130.Size = new System.Drawing.Size(50, 18);
-			this.textBox130.TabIndex = 279;
-			this.textBox130.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox130.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox130.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox130.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label90
-			// 
-			this.label90.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label90.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label90.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label90.AutoSize = true;
-			this.label90.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label90.Location = new System.Drawing.Point(590, 450);
-			this.label90.Margin = new System.Windows.Forms.Padding(0);
-			this.label90.Name = "label90";
-			this.label90.Size = new System.Drawing.Size(35, 18);
-			this.label90.TabIndex = 274;
-			this.label90.Text = "min.:";
-			this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label90.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label90.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label90.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label90.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox129
-			// 
-			this.textBox129.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox129.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox129.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox129.Location = new System.Drawing.Point(625, 450);
-			this.textBox129.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox129.Name = "textBox129";
-			this.textBox129.Size = new System.Drawing.Size(50, 18);
-			this.textBox129.TabIndex = 275;
-			this.textBox129.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox129.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox129.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox129.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label89
-			// 
-			this.label89.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label89.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label89.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label89.AutoSize = true;
-			this.label89.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label89.Location = new System.Drawing.Point(675, 432);
-			this.label89.Margin = new System.Windows.Forms.Padding(0);
-			this.label89.Name = "label89";
-			this.label89.Size = new System.Drawing.Size(35, 18);
-			this.label89.TabIndex = 266;
-			this.label89.Text = "max.:";
-			this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label89.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label89.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label89.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label89.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox128
-			// 
-			this.textBox128.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox128.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox128.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox128.Location = new System.Drawing.Point(710, 432);
-			this.textBox128.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox128.Name = "textBox128";
-			this.textBox128.Size = new System.Drawing.Size(50, 18);
-			this.textBox128.TabIndex = 267;
-			this.textBox128.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox128.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox128.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox128.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label88
-			// 
-			this.label88.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label88.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label88.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label88.AutoSize = true;
-			this.label88.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label88.Location = new System.Drawing.Point(590, 432);
-			this.label88.Margin = new System.Windows.Forms.Padding(0);
-			this.label88.Name = "label88";
-			this.label88.Size = new System.Drawing.Size(35, 18);
-			this.label88.TabIndex = 264;
-			this.label88.Text = "min.:";
-			this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label88.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label88.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label88.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label88.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox127
-			// 
-			this.textBox127.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox127.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox127.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox127.Location = new System.Drawing.Point(625, 432);
-			this.textBox127.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox127.Name = "textBox127";
-			this.textBox127.Size = new System.Drawing.Size(50, 18);
-			this.textBox127.TabIndex = 265;
-			this.textBox127.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox127.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox127.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox127.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label87
-			// 
-			this.label87.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label87.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label87.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label87.AutoSize = true;
-			this.label87.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label87.Location = new System.Drawing.Point(675, 414);
-			this.label87.Margin = new System.Windows.Forms.Padding(0);
-			this.label87.Name = "label87";
-			this.label87.Size = new System.Drawing.Size(35, 18);
-			this.label87.TabIndex = 256;
-			this.label87.Text = "max.:";
-			this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label87.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label87.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label87.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label87.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox126
-			// 
-			this.textBox126.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox126.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox126.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox126.Location = new System.Drawing.Point(710, 414);
-			this.textBox126.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox126.Name = "textBox126";
-			this.textBox126.Size = new System.Drawing.Size(50, 18);
-			this.textBox126.TabIndex = 257;
-			this.textBox126.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox126.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox126.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox126.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label86
-			// 
-			this.label86.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label86.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label86.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label86.AutoSize = true;
-			this.label86.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label86.Location = new System.Drawing.Point(590, 414);
-			this.label86.Margin = new System.Windows.Forms.Padding(0);
-			this.label86.Name = "label86";
-			this.label86.Size = new System.Drawing.Size(35, 18);
-			this.label86.TabIndex = 254;
-			this.label86.Text = "min.:";
-			this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label86.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label86.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label86.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label86.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox125
-			// 
-			this.textBox125.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox125.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox125.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox125.Location = new System.Drawing.Point(625, 414);
-			this.textBox125.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox125.Name = "textBox125";
-			this.textBox125.Size = new System.Drawing.Size(50, 18);
-			this.textBox125.TabIndex = 255;
-			this.textBox125.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox125.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox125.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox125.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label85
-			// 
-			this.label85.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label85.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label85.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label85.AutoSize = true;
-			this.label85.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label85.Location = new System.Drawing.Point(675, 396);
-			this.label85.Margin = new System.Windows.Forms.Padding(0);
-			this.label85.Name = "label85";
-			this.label85.Size = new System.Drawing.Size(35, 18);
-			this.label85.TabIndex = 246;
-			this.label85.Text = "max.:";
-			this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label85.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label85.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label85.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label85.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox124
-			// 
-			this.textBox124.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox124.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox124.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox124.Location = new System.Drawing.Point(710, 396);
-			this.textBox124.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox124.Name = "textBox124";
-			this.textBox124.Size = new System.Drawing.Size(50, 18);
-			this.textBox124.TabIndex = 247;
-			this.textBox124.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox124.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox124.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox124.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label84
-			// 
-			this.label84.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label84.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label84.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label84.AutoSize = true;
-			this.label84.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label84.Location = new System.Drawing.Point(590, 396);
-			this.label84.Margin = new System.Windows.Forms.Padding(0);
-			this.label84.Name = "label84";
-			this.label84.Size = new System.Drawing.Size(35, 18);
-			this.label84.TabIndex = 244;
-			this.label84.Text = "min.:";
-			this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label84.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label84.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label84.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label84.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox123
-			// 
-			this.textBox123.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox123.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox123.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox123.Location = new System.Drawing.Point(625, 396);
-			this.textBox123.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox123.Name = "textBox123";
-			this.textBox123.Size = new System.Drawing.Size(50, 18);
-			this.textBox123.TabIndex = 245;
-			this.textBox123.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox123.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox123.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox123.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label83
-			// 
-			this.label83.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label83.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label83.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label83.AutoSize = true;
-			this.label83.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label83.Location = new System.Drawing.Point(675, 378);
-			this.label83.Margin = new System.Windows.Forms.Padding(0);
-			this.label83.Name = "label83";
-			this.label83.Size = new System.Drawing.Size(35, 18);
-			this.label83.TabIndex = 236;
-			this.label83.Text = "max.:";
-			this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label83.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label83.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label83.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label83.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox122
-			// 
-			this.textBox122.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox122.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox122.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox122.Location = new System.Drawing.Point(710, 378);
-			this.textBox122.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox122.Name = "textBox122";
-			this.textBox122.Size = new System.Drawing.Size(50, 18);
-			this.textBox122.TabIndex = 237;
-			this.textBox122.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox122.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox122.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox122.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label82
-			// 
-			this.label82.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label82.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label82.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label82.AutoSize = true;
-			this.label82.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label82.Location = new System.Drawing.Point(590, 378);
-			this.label82.Margin = new System.Windows.Forms.Padding(0);
-			this.label82.Name = "label82";
-			this.label82.Size = new System.Drawing.Size(35, 18);
-			this.label82.TabIndex = 234;
-			this.label82.Text = "min.:";
-			this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label82.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label82.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label82.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label82.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox121
-			// 
-			this.textBox121.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox121.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox121.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox121.Location = new System.Drawing.Point(625, 378);
-			this.textBox121.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox121.Name = "textBox121";
-			this.textBox121.Size = new System.Drawing.Size(50, 18);
-			this.textBox121.TabIndex = 235;
-			this.textBox121.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox121.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox121.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox121.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label81
-			// 
-			this.label81.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label81.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label81.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label81.AutoSize = true;
-			this.label81.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label81.Location = new System.Drawing.Point(675, 360);
-			this.label81.Margin = new System.Windows.Forms.Padding(0);
-			this.label81.Name = "label81";
-			this.label81.Size = new System.Drawing.Size(35, 18);
-			this.label81.TabIndex = 226;
-			this.label81.Text = "max.:";
-			this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label81.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label81.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label81.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label81.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox120
-			// 
-			this.textBox120.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox120.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox120.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox120.Location = new System.Drawing.Point(710, 360);
-			this.textBox120.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox120.Name = "textBox120";
-			this.textBox120.Size = new System.Drawing.Size(50, 18);
-			this.textBox120.TabIndex = 227;
-			this.textBox120.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox120.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox120.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox120.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label80
-			// 
-			this.label80.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label80.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label80.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label80.AutoSize = true;
-			this.label80.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label80.Location = new System.Drawing.Point(590, 360);
-			this.label80.Margin = new System.Windows.Forms.Padding(0);
-			this.label80.Name = "label80";
-			this.label80.Size = new System.Drawing.Size(35, 18);
-			this.label80.TabIndex = 224;
-			this.label80.Text = "min.:";
-			this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label80.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label80.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label80.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label80.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox119
-			// 
-			this.textBox119.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox119.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox119.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox119.Location = new System.Drawing.Point(625, 360);
-			this.textBox119.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox119.Name = "textBox119";
-			this.textBox119.Size = new System.Drawing.Size(50, 18);
-			this.textBox119.TabIndex = 225;
-			this.textBox119.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox119.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox119.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox119.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label79
-			// 
-			this.label79.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label79.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label79.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label79.AutoSize = true;
-			this.label79.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label79.Location = new System.Drawing.Point(675, 342);
-			this.label79.Margin = new System.Windows.Forms.Padding(0);
-			this.label79.Name = "label79";
-			this.label79.Size = new System.Drawing.Size(35, 18);
-			this.label79.TabIndex = 216;
-			this.label79.Text = "max.:";
-			this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label79.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label79.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label79.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label79.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox118
-			// 
-			this.textBox118.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox118.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox118.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox118.Location = new System.Drawing.Point(710, 342);
-			this.textBox118.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox118.Name = "textBox118";
-			this.textBox118.Size = new System.Drawing.Size(50, 18);
-			this.textBox118.TabIndex = 217;
-			this.textBox118.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox118.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox118.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox118.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label78
-			// 
-			this.label78.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label78.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label78.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label78.AutoSize = true;
-			this.label78.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label78.Location = new System.Drawing.Point(590, 342);
-			this.label78.Margin = new System.Windows.Forms.Padding(0);
-			this.label78.Name = "label78";
-			this.label78.Size = new System.Drawing.Size(35, 18);
-			this.label78.TabIndex = 214;
-			this.label78.Text = "min.:";
-			this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label78.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label78.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label78.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label78.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox117
-			// 
-			this.textBox117.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox117.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox117.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox117.Location = new System.Drawing.Point(625, 342);
-			this.textBox117.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox117.Name = "textBox117";
-			this.textBox117.Size = new System.Drawing.Size(50, 18);
-			this.textBox117.TabIndex = 215;
-			this.textBox117.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox117.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox117.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox117.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label77
-			// 
-			this.label77.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label77.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label77.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label77.AutoSize = true;
-			this.label77.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label77.Location = new System.Drawing.Point(675, 324);
-			this.label77.Margin = new System.Windows.Forms.Padding(0);
-			this.label77.Name = "label77";
-			this.label77.Size = new System.Drawing.Size(35, 18);
-			this.label77.TabIndex = 206;
-			this.label77.Text = "max.:";
-			this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label77.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label77.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label77.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label77.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox114
-			// 
-			this.textBox114.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox114.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox114.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox114.Location = new System.Drawing.Point(710, 324);
-			this.textBox114.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox114.Name = "textBox114";
-			this.textBox114.Size = new System.Drawing.Size(50, 18);
-			this.textBox114.TabIndex = 207;
-			this.textBox114.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox114.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox114.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox114.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label76
-			// 
-			this.label76.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label76.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label76.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label76.AutoSize = true;
-			this.label76.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label76.Location = new System.Drawing.Point(590, 324);
-			this.label76.Margin = new System.Windows.Forms.Padding(0);
-			this.label76.Name = "label76";
-			this.label76.Size = new System.Drawing.Size(35, 18);
-			this.label76.TabIndex = 204;
-			this.label76.Text = "min.:";
-			this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label76.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label76.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label76.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label76.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox111
-			// 
-			this.textBox111.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox111.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox111.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox111.Location = new System.Drawing.Point(625, 324);
-			this.textBox111.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox111.Name = "textBox111";
-			this.textBox111.Size = new System.Drawing.Size(50, 18);
-			this.textBox111.TabIndex = 205;
-			this.textBox111.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox111.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox111.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox111.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label75
-			// 
-			this.label75.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label75.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label75.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label75.AutoSize = true;
-			this.label75.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label75.Location = new System.Drawing.Point(675, 306);
-			this.label75.Margin = new System.Windows.Forms.Padding(0);
-			this.label75.Name = "label75";
-			this.label75.Size = new System.Drawing.Size(35, 18);
-			this.label75.TabIndex = 196;
-			this.label75.Text = "max.:";
-			this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label75.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label75.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label75.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label75.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox109
-			// 
-			this.textBox109.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox109.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox109.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox109.Location = new System.Drawing.Point(710, 306);
-			this.textBox109.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox109.Name = "textBox109";
-			this.textBox109.Size = new System.Drawing.Size(50, 18);
-			this.textBox109.TabIndex = 197;
-			this.textBox109.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox109.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox109.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox109.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label74
-			// 
-			this.label74.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label74.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label74.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label74.AutoSize = true;
-			this.label74.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label74.Location = new System.Drawing.Point(590, 306);
-			this.label74.Margin = new System.Windows.Forms.Padding(0);
-			this.label74.Name = "label74";
-			this.label74.Size = new System.Drawing.Size(35, 18);
-			this.label74.TabIndex = 194;
-			this.label74.Text = "min.:";
-			this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label74.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label74.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label74.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label74.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox108
-			// 
-			this.textBox108.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox108.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox108.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox108.Location = new System.Drawing.Point(625, 306);
-			this.textBox108.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox108.Name = "textBox108";
-			this.textBox108.Size = new System.Drawing.Size(50, 18);
-			this.textBox108.TabIndex = 195;
-			this.textBox108.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox108.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox108.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox108.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label73
-			// 
-			this.label73.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label73.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label73.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label73.AutoSize = true;
-			this.label73.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label73.Location = new System.Drawing.Point(675, 288);
-			this.label73.Margin = new System.Windows.Forms.Padding(0);
-			this.label73.Name = "label73";
-			this.label73.Size = new System.Drawing.Size(35, 18);
-			this.label73.TabIndex = 186;
-			this.label73.Text = "max.:";
-			this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label73.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label73.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label73.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label73.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox106
-			// 
-			this.textBox106.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox106.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox106.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox106.Location = new System.Drawing.Point(710, 288);
-			this.textBox106.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox106.Name = "textBox106";
-			this.textBox106.Size = new System.Drawing.Size(50, 18);
-			this.textBox106.TabIndex = 187;
-			this.textBox106.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox106.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox106.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox106.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label72
-			// 
-			this.label72.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label72.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label72.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label72.AutoSize = true;
-			this.label72.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label72.Location = new System.Drawing.Point(590, 288);
-			this.label72.Margin = new System.Windows.Forms.Padding(0);
-			this.label72.Name = "label72";
-			this.label72.Size = new System.Drawing.Size(35, 18);
-			this.label72.TabIndex = 184;
-			this.label72.Text = "min.:";
-			this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label72.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label72.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label72.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label72.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox103
-			// 
-			this.textBox103.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox103.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox103.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox103.Location = new System.Drawing.Point(625, 288);
-			this.textBox103.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox103.Name = "textBox103";
-			this.textBox103.Size = new System.Drawing.Size(50, 18);
-			this.textBox103.TabIndex = 185;
-			this.textBox103.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox103.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox103.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox103.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label71
-			// 
-			this.label71.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label71.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label71.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label71.AutoSize = true;
-			this.label71.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label71.Location = new System.Drawing.Point(675, 270);
-			this.label71.Margin = new System.Windows.Forms.Padding(0);
-			this.label71.Name = "label71";
-			this.label71.Size = new System.Drawing.Size(35, 18);
-			this.label71.TabIndex = 176;
-			this.label71.Text = "max.:";
-			this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label71.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label71.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label71.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label71.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox100
-			// 
-			this.textBox100.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox100.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox100.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox100.Location = new System.Drawing.Point(710, 270);
-			this.textBox100.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox100.Name = "textBox100";
-			this.textBox100.Size = new System.Drawing.Size(50, 18);
-			this.textBox100.TabIndex = 177;
-			this.textBox100.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox100.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox100.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox100.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label70
-			// 
-			this.label70.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label70.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label70.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label70.AutoSize = true;
-			this.label70.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label70.Location = new System.Drawing.Point(590, 270);
-			this.label70.Margin = new System.Windows.Forms.Padding(0);
-			this.label70.Name = "label70";
-			this.label70.Size = new System.Drawing.Size(35, 18);
-			this.label70.TabIndex = 174;
-			this.label70.Text = "min.:";
-			this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label70.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label70.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label70.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label70.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox97
-			// 
-			this.textBox97.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox97.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox97.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox97.Location = new System.Drawing.Point(625, 270);
-			this.textBox97.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox97.Name = "textBox97";
-			this.textBox97.Size = new System.Drawing.Size(50, 18);
-			this.textBox97.TabIndex = 175;
-			this.textBox97.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox97.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox97.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox97.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label69
-			// 
-			this.label69.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label69.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label69.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label69.AutoSize = true;
-			this.label69.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label69.Location = new System.Drawing.Point(675, 252);
-			this.label69.Margin = new System.Windows.Forms.Padding(0);
-			this.label69.Name = "label69";
-			this.label69.Size = new System.Drawing.Size(35, 18);
-			this.label69.TabIndex = 166;
-			this.label69.Text = "max.:";
-			this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label69.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label69.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label69.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label69.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox94
-			// 
-			this.textBox94.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox94.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox94.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox94.Location = new System.Drawing.Point(710, 252);
-			this.textBox94.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox94.Name = "textBox94";
-			this.textBox94.Size = new System.Drawing.Size(50, 18);
-			this.textBox94.TabIndex = 167;
-			this.textBox94.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox94.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox94.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox94.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label68
-			// 
-			this.label68.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label68.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label68.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label68.AutoSize = true;
-			this.label68.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label68.Location = new System.Drawing.Point(590, 252);
-			this.label68.Margin = new System.Windows.Forms.Padding(0);
-			this.label68.Name = "label68";
-			this.label68.Size = new System.Drawing.Size(35, 18);
-			this.label68.TabIndex = 164;
-			this.label68.Text = "min.:";
-			this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label68.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label68.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label68.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label68.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox91
-			// 
-			this.textBox91.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox91.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox91.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox91.Location = new System.Drawing.Point(625, 252);
-			this.textBox91.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox91.Name = "textBox91";
-			this.textBox91.Size = new System.Drawing.Size(50, 18);
-			this.textBox91.TabIndex = 165;
-			this.textBox91.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox91.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox91.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox91.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label67
-			// 
-			this.label67.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label67.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label67.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label67.AutoSize = true;
-			this.label67.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label67.Location = new System.Drawing.Point(675, 234);
-			this.label67.Margin = new System.Windows.Forms.Padding(0);
-			this.label67.Name = "label67";
-			this.label67.Size = new System.Drawing.Size(35, 18);
-			this.label67.TabIndex = 156;
-			this.label67.Text = "max.:";
-			this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label67.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label67.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label67.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label67.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox88
-			// 
-			this.textBox88.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox88.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox88.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox88.Location = new System.Drawing.Point(710, 234);
-			this.textBox88.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox88.Name = "textBox88";
-			this.textBox88.Size = new System.Drawing.Size(50, 18);
-			this.textBox88.TabIndex = 157;
-			this.textBox88.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox88.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox88.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox88.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label66
-			// 
-			this.label66.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label66.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label66.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label66.AutoSize = true;
-			this.label66.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label66.Location = new System.Drawing.Point(590, 234);
-			this.label66.Margin = new System.Windows.Forms.Padding(0);
-			this.label66.Name = "label66";
-			this.label66.Size = new System.Drawing.Size(35, 18);
-			this.label66.TabIndex = 154;
-			this.label66.Text = "min.:";
-			this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label66.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label66.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label66.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label66.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox85
-			// 
-			this.textBox85.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox85.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox85.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox85.Location = new System.Drawing.Point(625, 234);
-			this.textBox85.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox85.Name = "textBox85";
-			this.textBox85.Size = new System.Drawing.Size(50, 18);
-			this.textBox85.TabIndex = 155;
-			this.textBox85.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox85.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox85.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox85.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label65
-			// 
-			this.label65.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label65.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label65.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label65.AutoSize = true;
-			this.label65.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label65.Location = new System.Drawing.Point(675, 216);
-			this.label65.Margin = new System.Windows.Forms.Padding(0);
-			this.label65.Name = "label65";
-			this.label65.Size = new System.Drawing.Size(35, 18);
-			this.label65.TabIndex = 146;
-			this.label65.Text = "max.:";
-			this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label65.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label65.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label65.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label65.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox82
-			// 
-			this.textBox82.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox82.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox82.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox82.Location = new System.Drawing.Point(710, 216);
-			this.textBox82.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox82.Name = "textBox82";
-			this.textBox82.Size = new System.Drawing.Size(50, 18);
-			this.textBox82.TabIndex = 147;
-			this.textBox82.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox82.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox82.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox82.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label64
-			// 
-			this.label64.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label64.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label64.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label64.AutoSize = true;
-			this.label64.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label64.Location = new System.Drawing.Point(590, 216);
-			this.label64.Margin = new System.Windows.Forms.Padding(0);
-			this.label64.Name = "label64";
-			this.label64.Size = new System.Drawing.Size(35, 18);
-			this.label64.TabIndex = 144;
-			this.label64.Text = "min.:";
-			this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label64.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label64.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label64.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label64.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox79
-			// 
-			this.textBox79.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox79.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox79.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox79.Location = new System.Drawing.Point(625, 216);
-			this.textBox79.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox79.Name = "textBox79";
-			this.textBox79.Size = new System.Drawing.Size(50, 18);
-			this.textBox79.TabIndex = 145;
-			this.textBox79.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox79.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox79.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox79.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label63
-			// 
-			this.label63.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label63.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label63.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label63.AutoSize = true;
-			this.label63.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label63.Location = new System.Drawing.Point(675, 198);
-			this.label63.Margin = new System.Windows.Forms.Padding(0);
-			this.label63.Name = "label63";
-			this.label63.Size = new System.Drawing.Size(35, 18);
-			this.label63.TabIndex = 136;
-			this.label63.Text = "max.:";
-			this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label63.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label63.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label63.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label63.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox76
-			// 
-			this.textBox76.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox76.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox76.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox76.Location = new System.Drawing.Point(710, 198);
-			this.textBox76.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox76.Name = "textBox76";
-			this.textBox76.Size = new System.Drawing.Size(50, 18);
-			this.textBox76.TabIndex = 137;
-			this.textBox76.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox76.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox76.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox76.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label62
-			// 
-			this.label62.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label62.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label62.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label62.AutoSize = true;
-			this.label62.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label62.Location = new System.Drawing.Point(590, 198);
-			this.label62.Margin = new System.Windows.Forms.Padding(0);
-			this.label62.Name = "label62";
-			this.label62.Size = new System.Drawing.Size(35, 18);
-			this.label62.TabIndex = 134;
-			this.label62.Text = "min.:";
-			this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label62.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label62.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label62.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label62.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox73
-			// 
-			this.textBox73.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox73.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox73.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox73.Location = new System.Drawing.Point(625, 198);
-			this.textBox73.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox73.Name = "textBox73";
-			this.textBox73.Size = new System.Drawing.Size(50, 18);
-			this.textBox73.TabIndex = 135;
-			this.textBox73.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox73.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox73.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox73.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label61
-			// 
-			this.label61.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label61.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label61.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label61.AutoSize = true;
-			this.label61.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label61.Location = new System.Drawing.Point(675, 180);
-			this.label61.Margin = new System.Windows.Forms.Padding(0);
-			this.label61.Name = "label61";
-			this.label61.Size = new System.Drawing.Size(35, 18);
-			this.label61.TabIndex = 126;
-			this.label61.Text = "max.:";
-			this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label61.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label61.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label61.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label61.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox70
-			// 
-			this.textBox70.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox70.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox70.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox70.Location = new System.Drawing.Point(710, 180);
-			this.textBox70.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox70.Name = "textBox70";
-			this.textBox70.Size = new System.Drawing.Size(50, 18);
-			this.textBox70.TabIndex = 127;
-			this.textBox70.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox70.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox70.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox70.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label60
-			// 
-			this.label60.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label60.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label60.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label60.AutoSize = true;
-			this.label60.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label60.Location = new System.Drawing.Point(590, 180);
-			this.label60.Margin = new System.Windows.Forms.Padding(0);
-			this.label60.Name = "label60";
-			this.label60.Size = new System.Drawing.Size(35, 18);
-			this.label60.TabIndex = 124;
-			this.label60.Text = "min.:";
-			this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label60.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label60.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label60.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label60.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox67
-			// 
-			this.textBox67.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox67.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox67.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox67.Location = new System.Drawing.Point(625, 180);
-			this.textBox67.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox67.Name = "textBox67";
-			this.textBox67.Size = new System.Drawing.Size(50, 18);
-			this.textBox67.TabIndex = 125;
-			this.textBox67.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox67.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox67.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox67.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label59
-			// 
-			this.label59.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label59.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label59.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label59.AutoSize = true;
-			this.label59.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label59.Location = new System.Drawing.Point(675, 162);
-			this.label59.Margin = new System.Windows.Forms.Padding(0);
-			this.label59.Name = "label59";
-			this.label59.Size = new System.Drawing.Size(35, 18);
-			this.label59.TabIndex = 116;
-			this.label59.Text = "max.:";
-			this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label59.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label59.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label59.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label59.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox64
-			// 
-			this.textBox64.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox64.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox64.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox64.Location = new System.Drawing.Point(710, 162);
-			this.textBox64.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox64.Name = "textBox64";
-			this.textBox64.Size = new System.Drawing.Size(50, 18);
-			this.textBox64.TabIndex = 117;
-			this.textBox64.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox64.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox64.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox64.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label58
-			// 
-			this.label58.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label58.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label58.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label58.AutoSize = true;
-			this.label58.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label58.Location = new System.Drawing.Point(590, 162);
-			this.label58.Margin = new System.Windows.Forms.Padding(0);
-			this.label58.Name = "label58";
-			this.label58.Size = new System.Drawing.Size(35, 18);
-			this.label58.TabIndex = 114;
-			this.label58.Text = "min.:";
-			this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label58.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label58.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label58.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label58.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox61
-			// 
-			this.textBox61.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox61.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox61.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox61.Location = new System.Drawing.Point(625, 162);
-			this.textBox61.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox61.Name = "textBox61";
-			this.textBox61.Size = new System.Drawing.Size(50, 18);
-			this.textBox61.TabIndex = 115;
-			this.textBox61.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox61.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox61.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox61.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label57
-			// 
-			this.label57.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label57.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label57.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label57.AutoSize = true;
-			this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label57.Location = new System.Drawing.Point(675, 144);
-			this.label57.Margin = new System.Windows.Forms.Padding(0);
-			this.label57.Name = "label57";
-			this.label57.Size = new System.Drawing.Size(35, 18);
-			this.label57.TabIndex = 106;
-			this.label57.Text = "max.:";
-			this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label57.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label57.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label57.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label57.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox58
-			// 
-			this.textBox58.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox58.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox58.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox58.Location = new System.Drawing.Point(710, 144);
-			this.textBox58.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox58.Name = "textBox58";
-			this.textBox58.Size = new System.Drawing.Size(50, 18);
-			this.textBox58.TabIndex = 107;
-			this.textBox58.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox58.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox58.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox58.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label56
-			// 
-			this.label56.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label56.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label56.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label56.AutoSize = true;
-			this.label56.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label56.Location = new System.Drawing.Point(590, 144);
-			this.label56.Margin = new System.Windows.Forms.Padding(0);
-			this.label56.Name = "label56";
-			this.label56.Size = new System.Drawing.Size(35, 18);
-			this.label56.TabIndex = 104;
-			this.label56.Text = "min.:";
-			this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label56.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label56.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label56.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label56.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox55
-			// 
-			this.textBox55.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox55.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox55.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox55.Location = new System.Drawing.Point(625, 144);
-			this.textBox55.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox55.Name = "textBox55";
-			this.textBox55.Size = new System.Drawing.Size(50, 18);
-			this.textBox55.TabIndex = 105;
-			this.textBox55.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox55.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox55.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox55.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label55
-			// 
-			this.label55.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label55.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label55.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label55.AutoSize = true;
-			this.label55.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label55.Location = new System.Drawing.Point(675, 126);
-			this.label55.Margin = new System.Windows.Forms.Padding(0);
-			this.label55.Name = "label55";
-			this.label55.Size = new System.Drawing.Size(35, 18);
-			this.label55.TabIndex = 96;
-			this.label55.Text = "max.:";
-			this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label55.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label55.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label55.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label55.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox52
-			// 
-			this.textBox52.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox52.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox52.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox52.Location = new System.Drawing.Point(710, 126);
-			this.textBox52.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox52.Name = "textBox52";
-			this.textBox52.Size = new System.Drawing.Size(50, 18);
-			this.textBox52.TabIndex = 97;
-			this.textBox52.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox52.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox52.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox52.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label54
-			// 
-			this.label54.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label54.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label54.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label54.AutoSize = true;
-			this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label54.Location = new System.Drawing.Point(590, 126);
-			this.label54.Margin = new System.Windows.Forms.Padding(0);
-			this.label54.Name = "label54";
-			this.label54.Size = new System.Drawing.Size(35, 18);
-			this.label54.TabIndex = 94;
-			this.label54.Text = "min.:";
-			this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label54.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label54.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label54.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label54.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox49
-			// 
-			this.textBox49.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox49.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox49.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox49.Location = new System.Drawing.Point(625, 126);
-			this.textBox49.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox49.Name = "textBox49";
-			this.textBox49.Size = new System.Drawing.Size(50, 18);
-			this.textBox49.TabIndex = 95;
-			this.textBox49.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox49.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox49.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox49.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label53
-			// 
-			this.label53.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label53.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label53.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label53.AutoSize = true;
-			this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label53.Location = new System.Drawing.Point(675, 108);
-			this.label53.Margin = new System.Windows.Forms.Padding(0);
-			this.label53.Name = "label53";
-			this.label53.Size = new System.Drawing.Size(35, 18);
-			this.label53.TabIndex = 86;
-			this.label53.Text = "max.:";
-			this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label53.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label53.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label53.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label53.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox46
-			// 
-			this.textBox46.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox46.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox46.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox46.Location = new System.Drawing.Point(710, 108);
-			this.textBox46.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox46.Name = "textBox46";
-			this.textBox46.Size = new System.Drawing.Size(50, 18);
-			this.textBox46.TabIndex = 87;
-			this.textBox46.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox46.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox46.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox46.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label52
-			// 
-			this.label52.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label52.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label52.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label52.AutoSize = true;
-			this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label52.Location = new System.Drawing.Point(590, 108);
-			this.label52.Margin = new System.Windows.Forms.Padding(0);
-			this.label52.Name = "label52";
-			this.label52.Size = new System.Drawing.Size(35, 18);
-			this.label52.TabIndex = 84;
-			this.label52.Text = "min.:";
-			this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label52.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label52.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label52.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label52.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox43
-			// 
-			this.textBox43.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox43.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox43.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox43.Location = new System.Drawing.Point(625, 108);
-			this.textBox43.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox43.Name = "textBox43";
-			this.textBox43.Size = new System.Drawing.Size(50, 18);
-			this.textBox43.TabIndex = 85;
-			this.textBox43.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox43.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox43.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox43.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label51
-			// 
-			this.label51.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label51.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label51.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label51.AutoSize = true;
-			this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label51.Location = new System.Drawing.Point(675, 90);
-			this.label51.Margin = new System.Windows.Forms.Padding(0);
-			this.label51.Name = "label51";
-			this.label51.Size = new System.Drawing.Size(35, 18);
-			this.label51.TabIndex = 69;
-			this.label51.Text = "max.:";
-			this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label51.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label51.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label51.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label51.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox40
-			// 
-			this.textBox40.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox40.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox40.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox40.Location = new System.Drawing.Point(710, 90);
-			this.textBox40.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox40.Name = "textBox40";
-			this.textBox40.Size = new System.Drawing.Size(50, 18);
-			this.textBox40.TabIndex = 70;
-			this.textBox40.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox40.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox40.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox40.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label50
-			// 
-			this.label50.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label50.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label50.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label50.AutoSize = true;
-			this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label50.Location = new System.Drawing.Point(590, 90);
-			this.label50.Margin = new System.Windows.Forms.Padding(0);
-			this.label50.Name = "label50";
-			this.label50.Size = new System.Drawing.Size(35, 18);
-			this.label50.TabIndex = 67;
-			this.label50.Text = "min.:";
-			this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label50.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label50.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label50.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label50.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox37
-			// 
-			this.textBox37.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox37.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox37.Location = new System.Drawing.Point(625, 90);
-			this.textBox37.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox37.Name = "textBox37";
-			this.textBox37.Size = new System.Drawing.Size(50, 18);
-			this.textBox37.TabIndex = 68;
-			this.textBox37.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox37.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox37.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox37.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label49
-			// 
-			this.label49.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label49.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label49.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label49.AutoSize = true;
-			this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label49.Location = new System.Drawing.Point(675, 72);
-			this.label49.Margin = new System.Windows.Forms.Padding(0);
-			this.label49.Name = "label49";
-			this.label49.Size = new System.Drawing.Size(35, 18);
-			this.label49.TabIndex = 59;
-			this.label49.Text = "max.:";
-			this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label49.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label49.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label49.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label49.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox34
-			// 
-			this.textBox34.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox34.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox34.Location = new System.Drawing.Point(710, 72);
-			this.textBox34.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox34.Name = "textBox34";
-			this.textBox34.Size = new System.Drawing.Size(50, 18);
-			this.textBox34.TabIndex = 60;
-			this.textBox34.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox34.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox34.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox34.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label48
-			// 
-			this.label48.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label48.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label48.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label48.AutoSize = true;
-			this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label48.Location = new System.Drawing.Point(590, 72);
-			this.label48.Margin = new System.Windows.Forms.Padding(0);
-			this.label48.Name = "label48";
-			this.label48.Size = new System.Drawing.Size(35, 18);
-			this.label48.TabIndex = 57;
-			this.label48.Text = "min.:";
-			this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label48.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label48.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label48.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label48.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox31
-			// 
-			this.textBox31.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox31.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox31.Location = new System.Drawing.Point(625, 72);
-			this.textBox31.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox31.Name = "textBox31";
-			this.textBox31.Size = new System.Drawing.Size(50, 18);
-			this.textBox31.TabIndex = 58;
-			this.textBox31.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox31.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox31.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox31.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label47
-			// 
-			this.label47.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label47.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label47.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label47.AutoSize = true;
-			this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label47.Location = new System.Drawing.Point(675, 54);
-			this.label47.Margin = new System.Windows.Forms.Padding(0);
-			this.label47.Name = "label47";
-			this.label47.Size = new System.Drawing.Size(35, 18);
-			this.label47.TabIndex = 38;
-			this.label47.Text = "max.:";
-			this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label47.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label47.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label47.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label47.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox28
-			// 
-			this.textBox28.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox28.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox28.Location = new System.Drawing.Point(710, 54);
-			this.textBox28.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox28.Name = "textBox28";
-			this.textBox28.Size = new System.Drawing.Size(50, 18);
-			this.textBox28.TabIndex = 39;
-			this.textBox28.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox28.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox28.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox28.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label46
-			// 
-			this.label46.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label46.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label46.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label46.AutoSize = true;
-			this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label46.Location = new System.Drawing.Point(590, 54);
-			this.label46.Margin = new System.Windows.Forms.Padding(0);
-			this.label46.Name = "label46";
-			this.label46.Size = new System.Drawing.Size(35, 18);
-			this.label46.TabIndex = 36;
-			this.label46.Text = "min.:";
-			this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label46.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label46.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label46.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label46.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox25
-			// 
-			this.textBox25.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox25.Location = new System.Drawing.Point(625, 54);
-			this.textBox25.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox25.Name = "textBox25";
-			this.textBox25.Size = new System.Drawing.Size(50, 18);
-			this.textBox25.TabIndex = 37;
-			this.textBox25.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox25.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox25.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox25.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label45
-			// 
-			this.label45.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label45.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label45.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label45.AutoSize = true;
-			this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label45.Location = new System.Drawing.Point(675, 36);
-			this.label45.Margin = new System.Windows.Forms.Padding(0);
-			this.label45.Name = "label45";
-			this.label45.Size = new System.Drawing.Size(35, 18);
-			this.label45.TabIndex = 28;
-			this.label45.Text = "max.:";
-			this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label45.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label45.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label45.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label45.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox22
-			// 
-			this.textBox22.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox22.Location = new System.Drawing.Point(710, 36);
-			this.textBox22.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox22.Name = "textBox22";
-			this.textBox22.Size = new System.Drawing.Size(50, 18);
-			this.textBox22.TabIndex = 29;
-			this.textBox22.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox22.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox22.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox22.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label44
-			// 
-			this.label44.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label44.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label44.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label44.AutoSize = true;
-			this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label44.Location = new System.Drawing.Point(590, 36);
-			this.label44.Margin = new System.Windows.Forms.Padding(0);
-			this.label44.Name = "label44";
-			this.label44.Size = new System.Drawing.Size(35, 18);
-			this.label44.TabIndex = 26;
-			this.label44.Text = "min.:";
-			this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label44.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label44.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label44.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label44.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox19
-			// 
-			this.textBox19.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox19.Location = new System.Drawing.Point(625, 36);
-			this.textBox19.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox19.Name = "textBox19";
-			this.textBox19.Size = new System.Drawing.Size(50, 18);
-			this.textBox19.TabIndex = 27;
-			this.textBox19.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox19.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox19.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox19.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label43
-			// 
-			this.label43.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label43.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label43.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label43.AutoSize = true;
-			this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label43.Location = new System.Drawing.Point(675, 18);
-			this.label43.Margin = new System.Windows.Forms.Padding(0);
-			this.label43.Name = "label43";
-			this.label43.Size = new System.Drawing.Size(35, 18);
-			this.label43.TabIndex = 18;
-			this.label43.Text = "max.:";
-			this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label43.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label43.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label43.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label43.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox16
-			// 
-			this.textBox16.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox16.Location = new System.Drawing.Point(710, 18);
-			this.textBox16.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox16.Name = "textBox16";
-			this.textBox16.Size = new System.Drawing.Size(50, 18);
-			this.textBox16.TabIndex = 19;
-			this.textBox16.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox16.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox16.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox16.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label42
-			// 
-			this.label42.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label42.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label42.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label42.AutoSize = true;
-			this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label42.Location = new System.Drawing.Point(590, 18);
-			this.label42.Margin = new System.Windows.Forms.Padding(0);
-			this.label42.Name = "label42";
-			this.label42.Size = new System.Drawing.Size(35, 18);
-			this.label42.TabIndex = 16;
-			this.label42.Text = "min.:";
-			this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label42.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label42.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label42.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label42.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox13
-			// 
-			this.textBox13.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox13.Location = new System.Drawing.Point(625, 18);
-			this.textBox13.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox13.Name = "textBox13";
-			this.textBox13.Size = new System.Drawing.Size(50, 18);
-			this.textBox13.TabIndex = 17;
-			this.textBox13.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox13.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox13.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox13.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label41
-			// 
-			this.label41.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label41.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label41.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label41.AutoSize = true;
-			this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label41.Location = new System.Drawing.Point(675, 0);
-			this.label41.Margin = new System.Windows.Forms.Padding(0);
-			this.label41.Name = "label41";
-			this.label41.Size = new System.Drawing.Size(35, 18);
-			this.label41.TabIndex = 8;
-			this.label41.Text = "max.:";
-			this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label41.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label41.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label41.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label41.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox10
-			// 
-			this.textBox10.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox10.Location = new System.Drawing.Point(710, 0);
-			this.textBox10.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox10.Name = "textBox10";
-			this.textBox10.Size = new System.Drawing.Size(50, 18);
-			this.textBox10.TabIndex = 9;
-			this.textBox10.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox10.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox10.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox10.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label40
-			// 
-			this.label40.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label40.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label40.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label40.AutoSize = true;
-			this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label40.Location = new System.Drawing.Point(590, 0);
-			this.label40.Margin = new System.Windows.Forms.Padding(0);
-			this.label40.Name = "label40";
-			this.label40.Size = new System.Drawing.Size(35, 18);
-			this.label40.TabIndex = 6;
-			this.label40.Text = "min.:";
-			this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.label40.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label40.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label40.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label40.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox7
-			// 
-			this.textBox7.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox7.Location = new System.Drawing.Point(625, 0);
-			this.textBox7.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(50, 18);
-			this.textBox7.TabIndex = 7;
-			this.textBox7.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox7.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox7.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox7.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox116
-			// 
-			this.textBox116.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox116.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox116.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox116.Location = new System.Drawing.Point(245, 684);
-			this.textBox116.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox116.Name = "textBox116";
-			this.textBox116.Size = new System.Drawing.Size(50, 18);
-			this.textBox116.TabIndex = 24;
-			this.textBox116.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox116.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox116.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox116.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox115
-			// 
-			this.textBox115.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox115.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox115.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox115.Location = new System.Drawing.Point(330, 666);
-			this.textBox115.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox115.Name = "textBox115";
-			this.textBox115.Size = new System.Drawing.Size(50, 18);
-			this.textBox115.TabIndex = 16;
-			this.textBox115.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox115.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox115.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox115.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox112
-			// 
-			this.textBox112.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox112.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox112.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox112.Location = new System.Drawing.Point(330, 648);
-			this.textBox112.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox112.Name = "textBox112";
-			this.textBox112.Size = new System.Drawing.Size(50, 18);
-			this.textBox112.TabIndex = 6;
-			this.textBox112.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox112.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox112.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox112.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox113
-			// 
-			this.textBox113.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox113.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox113.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox113.Location = new System.Drawing.Point(245, 666);
-			this.textBox113.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox113.Name = "textBox113";
-			this.textBox113.Size = new System.Drawing.Size(50, 18);
-			this.textBox113.TabIndex = 14;
-			this.textBox113.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox113.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox113.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox113.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox110
-			// 
-			this.textBox110.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox110.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox110.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox110.Location = new System.Drawing.Point(245, 648);
-			this.textBox110.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox110.Name = "textBox110";
-			this.textBox110.Size = new System.Drawing.Size(50, 18);
-			this.textBox110.TabIndex = 4;
-			this.textBox110.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox110.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox110.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox110.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox107
-			// 
-			this.textBox107.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox107.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox107.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox107.Location = new System.Drawing.Point(330, 630);
-			this.textBox107.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox107.Name = "textBox107";
-			this.textBox107.Size = new System.Drawing.Size(50, 18);
-			this.textBox107.TabIndex = 381;
-			this.textBox107.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox107.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox107.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox107.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox104
-			// 
-			this.textBox104.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox104.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox104.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox104.Location = new System.Drawing.Point(330, 612);
-			this.textBox104.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox104.Name = "textBox104";
-			this.textBox104.Size = new System.Drawing.Size(50, 18);
-			this.textBox104.TabIndex = 371;
-			this.textBox104.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox104.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox104.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox104.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox105
-			// 
-			this.textBox105.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox105.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox105.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox105.Location = new System.Drawing.Point(245, 630);
-			this.textBox105.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox105.Name = "textBox105";
-			this.textBox105.Size = new System.Drawing.Size(50, 18);
-			this.textBox105.TabIndex = 379;
-			this.textBox105.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox105.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox105.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox105.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox102
-			// 
-			this.textBox102.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox102.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox102.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox102.Location = new System.Drawing.Point(245, 612);
-			this.textBox102.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox102.Name = "textBox102";
-			this.textBox102.Size = new System.Drawing.Size(50, 18);
-			this.textBox102.TabIndex = 369;
-			this.textBox102.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox102.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox102.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox102.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox101
-			// 
-			this.textBox101.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox101.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox101.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox101.Location = new System.Drawing.Point(330, 594);
-			this.textBox101.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox101.Name = "textBox101";
-			this.textBox101.Size = new System.Drawing.Size(50, 18);
-			this.textBox101.TabIndex = 361;
-			this.textBox101.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox101.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox101.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox101.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox98
-			// 
-			this.textBox98.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox98.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox98.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox98.Location = new System.Drawing.Point(330, 576);
-			this.textBox98.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox98.Name = "textBox98";
-			this.textBox98.Size = new System.Drawing.Size(50, 18);
-			this.textBox98.TabIndex = 351;
-			this.textBox98.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox98.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox98.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox98.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox99
-			// 
-			this.textBox99.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox99.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox99.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox99.Location = new System.Drawing.Point(245, 594);
-			this.textBox99.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox99.Name = "textBox99";
-			this.textBox99.Size = new System.Drawing.Size(50, 18);
-			this.textBox99.TabIndex = 359;
-			this.textBox99.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox99.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox99.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox99.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox96
-			// 
-			this.textBox96.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox96.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox96.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox96.Location = new System.Drawing.Point(245, 576);
-			this.textBox96.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox96.Name = "textBox96";
-			this.textBox96.Size = new System.Drawing.Size(50, 18);
-			this.textBox96.TabIndex = 349;
-			this.textBox96.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox96.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox96.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox96.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox95
-			// 
-			this.textBox95.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox95.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox95.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox95.Location = new System.Drawing.Point(330, 558);
-			this.textBox95.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox95.Name = "textBox95";
-			this.textBox95.Size = new System.Drawing.Size(50, 18);
-			this.textBox95.TabIndex = 341;
-			this.textBox95.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox95.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox95.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox95.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox93
-			// 
-			this.textBox93.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox93.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox93.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox93.Location = new System.Drawing.Point(245, 558);
-			this.textBox93.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox93.Name = "textBox93";
-			this.textBox93.Size = new System.Drawing.Size(50, 18);
-			this.textBox93.TabIndex = 339;
-			this.textBox93.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox93.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox93.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox93.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox90
-			// 
-			this.textBox90.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox90.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox90.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox90.Location = new System.Drawing.Point(245, 540);
-			this.textBox90.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox90.Name = "textBox90";
-			this.textBox90.Size = new System.Drawing.Size(50, 18);
-			this.textBox90.TabIndex = 329;
-			this.textBox90.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox90.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox90.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox90.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox92
-			// 
-			this.textBox92.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox92.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox92.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox92.Location = new System.Drawing.Point(330, 540);
-			this.textBox92.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox92.Name = "textBox92";
-			this.textBox92.Size = new System.Drawing.Size(50, 18);
-			this.textBox92.TabIndex = 331;
-			this.textBox92.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox92.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox92.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox92.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox87
-			// 
-			this.textBox87.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox87.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox87.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox87.Location = new System.Drawing.Point(245, 522);
-			this.textBox87.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox87.Name = "textBox87";
-			this.textBox87.Size = new System.Drawing.Size(50, 18);
-			this.textBox87.TabIndex = 319;
-			this.textBox87.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox87.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox87.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox87.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox89
-			// 
-			this.textBox89.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox89.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox89.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox89.Location = new System.Drawing.Point(330, 522);
-			this.textBox89.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox89.Name = "textBox89";
-			this.textBox89.Size = new System.Drawing.Size(50, 18);
-			this.textBox89.TabIndex = 321;
-			this.textBox89.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox89.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox89.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox89.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox84
-			// 
-			this.textBox84.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox84.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox84.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox84.Location = new System.Drawing.Point(245, 504);
-			this.textBox84.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox84.Name = "textBox84";
-			this.textBox84.Size = new System.Drawing.Size(50, 18);
-			this.textBox84.TabIndex = 302;
-			this.textBox84.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox84.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox84.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox84.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox86
-			// 
-			this.textBox86.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox86.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox86.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox86.Location = new System.Drawing.Point(330, 504);
-			this.textBox86.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox86.Name = "textBox86";
-			this.textBox86.Size = new System.Drawing.Size(50, 18);
-			this.textBox86.TabIndex = 304;
-			this.textBox86.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox86.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox86.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox86.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox81
-			// 
-			this.textBox81.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox81.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox81.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox81.Location = new System.Drawing.Point(245, 486);
-			this.textBox81.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox81.Name = "textBox81";
-			this.textBox81.Size = new System.Drawing.Size(50, 18);
-			this.textBox81.TabIndex = 292;
-			this.textBox81.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox81.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox81.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox81.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox83
-			// 
-			this.textBox83.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox83.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox83.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox83.Location = new System.Drawing.Point(330, 486);
-			this.textBox83.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox83.Name = "textBox83";
-			this.textBox83.Size = new System.Drawing.Size(50, 18);
-			this.textBox83.TabIndex = 294;
-			this.textBox83.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox83.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox83.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox83.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox78
-			// 
-			this.textBox78.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox78.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox78.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox78.Location = new System.Drawing.Point(245, 468);
-			this.textBox78.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox78.Name = "textBox78";
-			this.textBox78.Size = new System.Drawing.Size(50, 18);
-			this.textBox78.TabIndex = 282;
-			this.textBox78.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox78.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox78.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox78.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox80
-			// 
-			this.textBox80.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox80.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox80.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox80.Location = new System.Drawing.Point(330, 468);
-			this.textBox80.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox80.Name = "textBox80";
-			this.textBox80.Size = new System.Drawing.Size(50, 18);
-			this.textBox80.TabIndex = 284;
-			this.textBox80.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox80.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox80.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox80.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox75
-			// 
-			this.textBox75.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox75.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox75.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox75.Location = new System.Drawing.Point(245, 450);
-			this.textBox75.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox75.Name = "textBox75";
-			this.textBox75.Size = new System.Drawing.Size(50, 18);
-			this.textBox75.TabIndex = 270;
-			this.textBox75.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox75.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox75.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox75.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox77
-			// 
-			this.textBox77.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox77.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox77.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox77.Location = new System.Drawing.Point(330, 450);
-			this.textBox77.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox77.Name = "textBox77";
-			this.textBox77.Size = new System.Drawing.Size(50, 18);
-			this.textBox77.TabIndex = 272;
-			this.textBox77.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox77.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox77.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox77.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox72
-			// 
-			this.textBox72.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox72.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox72.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox72.Location = new System.Drawing.Point(245, 432);
-			this.textBox72.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox72.Name = "textBox72";
-			this.textBox72.Size = new System.Drawing.Size(50, 18);
-			this.textBox72.TabIndex = 260;
-			this.textBox72.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox72.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox72.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox72.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox74
-			// 
-			this.textBox74.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox74.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox74.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox74.Location = new System.Drawing.Point(330, 432);
-			this.textBox74.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox74.Name = "textBox74";
-			this.textBox74.Size = new System.Drawing.Size(50, 18);
-			this.textBox74.TabIndex = 262;
-			this.textBox74.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox74.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox74.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox74.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox69
-			// 
-			this.textBox69.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox69.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox69.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox69.Location = new System.Drawing.Point(245, 414);
-			this.textBox69.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox69.Name = "textBox69";
-			this.textBox69.Size = new System.Drawing.Size(50, 18);
-			this.textBox69.TabIndex = 250;
-			this.textBox69.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox69.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox69.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox69.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox71
-			// 
-			this.textBox71.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox71.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox71.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox71.Location = new System.Drawing.Point(330, 414);
-			this.textBox71.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox71.Name = "textBox71";
-			this.textBox71.Size = new System.Drawing.Size(50, 18);
-			this.textBox71.TabIndex = 252;
-			this.textBox71.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox71.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox71.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox71.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox68
-			// 
-			this.textBox68.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox68.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox68.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox68.Location = new System.Drawing.Point(330, 396);
-			this.textBox68.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox68.Name = "textBox68";
-			this.textBox68.Size = new System.Drawing.Size(50, 18);
-			this.textBox68.TabIndex = 242;
-			this.textBox68.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox68.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox68.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox68.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox66
-			// 
-			this.textBox66.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox66.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox66.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox66.Location = new System.Drawing.Point(245, 396);
-			this.textBox66.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox66.Name = "textBox66";
-			this.textBox66.Size = new System.Drawing.Size(50, 18);
-			this.textBox66.TabIndex = 240;
-			this.textBox66.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox66.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox66.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox66.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox65
-			// 
-			this.textBox65.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox65.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox65.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox65.Location = new System.Drawing.Point(330, 378);
-			this.textBox65.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox65.Name = "textBox65";
-			this.textBox65.Size = new System.Drawing.Size(50, 18);
-			this.textBox65.TabIndex = 232;
-			this.textBox65.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox65.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox65.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox65.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox63
-			// 
-			this.textBox63.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox63.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox63.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox63.Location = new System.Drawing.Point(245, 378);
-			this.textBox63.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox63.Name = "textBox63";
-			this.textBox63.Size = new System.Drawing.Size(50, 18);
-			this.textBox63.TabIndex = 230;
-			this.textBox63.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox63.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox63.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox63.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox62
-			// 
-			this.textBox62.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox62.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox62.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox62.Location = new System.Drawing.Point(330, 360);
-			this.textBox62.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox62.Name = "textBox62";
-			this.textBox62.Size = new System.Drawing.Size(50, 18);
-			this.textBox62.TabIndex = 222;
-			this.textBox62.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox62.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox62.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox62.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox60
-			// 
-			this.textBox60.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox60.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox60.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox60.Location = new System.Drawing.Point(245, 360);
-			this.textBox60.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox60.Name = "textBox60";
-			this.textBox60.Size = new System.Drawing.Size(50, 18);
-			this.textBox60.TabIndex = 220;
-			this.textBox60.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox60.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox60.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox60.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox59
-			// 
-			this.textBox59.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox59.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox59.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox59.Location = new System.Drawing.Point(330, 342);
-			this.textBox59.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox59.Name = "textBox59";
-			this.textBox59.Size = new System.Drawing.Size(50, 18);
-			this.textBox59.TabIndex = 212;
-			this.textBox59.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox59.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox59.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox59.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox57
-			// 
-			this.textBox57.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox57.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox57.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox57.Location = new System.Drawing.Point(245, 342);
-			this.textBox57.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox57.Name = "textBox57";
-			this.textBox57.Size = new System.Drawing.Size(50, 18);
-			this.textBox57.TabIndex = 210;
-			this.textBox57.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox57.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox57.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox57.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox56
-			// 
-			this.textBox56.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox56.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox56.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox56.Location = new System.Drawing.Point(330, 324);
-			this.textBox56.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox56.Name = "textBox56";
-			this.textBox56.Size = new System.Drawing.Size(50, 18);
-			this.textBox56.TabIndex = 202;
-			this.textBox56.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox56.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox56.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox56.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox54
-			// 
-			this.textBox54.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox54.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox54.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox54.Location = new System.Drawing.Point(245, 324);
-			this.textBox54.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox54.Name = "textBox54";
-			this.textBox54.Size = new System.Drawing.Size(50, 18);
-			this.textBox54.TabIndex = 200;
-			this.textBox54.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox54.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox54.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox54.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox53
-			// 
-			this.textBox53.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox53.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox53.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox53.Location = new System.Drawing.Point(330, 306);
-			this.textBox53.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox53.Name = "textBox53";
-			this.textBox53.Size = new System.Drawing.Size(50, 18);
-			this.textBox53.TabIndex = 192;
-			this.textBox53.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox53.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox53.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox53.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox51
-			// 
-			this.textBox51.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox51.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox51.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox51.Location = new System.Drawing.Point(245, 306);
-			this.textBox51.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox51.Name = "textBox51";
-			this.textBox51.Size = new System.Drawing.Size(50, 18);
-			this.textBox51.TabIndex = 190;
-			this.textBox51.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox51.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox51.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox51.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox50
-			// 
-			this.textBox50.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox50.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox50.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox50.Location = new System.Drawing.Point(330, 288);
-			this.textBox50.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox50.Name = "textBox50";
-			this.textBox50.Size = new System.Drawing.Size(50, 18);
-			this.textBox50.TabIndex = 182;
-			this.textBox50.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox50.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox50.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox50.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox48
-			// 
-			this.textBox48.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox48.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox48.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox48.Location = new System.Drawing.Point(245, 288);
-			this.textBox48.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox48.Name = "textBox48";
-			this.textBox48.Size = new System.Drawing.Size(50, 18);
-			this.textBox48.TabIndex = 180;
-			this.textBox48.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox48.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox48.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox48.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox47
-			// 
-			this.textBox47.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox47.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox47.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox47.Location = new System.Drawing.Point(330, 270);
-			this.textBox47.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox47.Name = "textBox47";
-			this.textBox47.Size = new System.Drawing.Size(50, 18);
-			this.textBox47.TabIndex = 172;
-			this.textBox47.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox47.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox47.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox47.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox45
-			// 
-			this.textBox45.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox45.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox45.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox45.Location = new System.Drawing.Point(245, 270);
-			this.textBox45.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox45.Name = "textBox45";
-			this.textBox45.Size = new System.Drawing.Size(50, 18);
-			this.textBox45.TabIndex = 170;
-			this.textBox45.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox45.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox45.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox45.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox44
-			// 
-			this.textBox44.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox44.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox44.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox44.Location = new System.Drawing.Point(330, 252);
-			this.textBox44.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox44.Name = "textBox44";
-			this.textBox44.Size = new System.Drawing.Size(50, 18);
-			this.textBox44.TabIndex = 162;
-			this.textBox44.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox44.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox44.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox44.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox42
-			// 
-			this.textBox42.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox42.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox42.Location = new System.Drawing.Point(245, 252);
-			this.textBox42.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox42.Name = "textBox42";
-			this.textBox42.Size = new System.Drawing.Size(50, 18);
-			this.textBox42.TabIndex = 160;
-			this.textBox42.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox42.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox42.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox42.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox41
-			// 
-			this.textBox41.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox41.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox41.Location = new System.Drawing.Point(330, 234);
-			this.textBox41.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox41.Name = "textBox41";
-			this.textBox41.Size = new System.Drawing.Size(50, 18);
-			this.textBox41.TabIndex = 152;
-			this.textBox41.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox41.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox41.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox41.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox39
-			// 
-			this.textBox39.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox39.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox39.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox39.Location = new System.Drawing.Point(245, 234);
-			this.textBox39.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox39.Name = "textBox39";
-			this.textBox39.Size = new System.Drawing.Size(50, 18);
-			this.textBox39.TabIndex = 150;
-			this.textBox39.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox39.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox39.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox39.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox38
-			// 
-			this.textBox38.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox38.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox38.Location = new System.Drawing.Point(330, 216);
-			this.textBox38.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox38.Name = "textBox38";
-			this.textBox38.Size = new System.Drawing.Size(50, 18);
-			this.textBox38.TabIndex = 142;
-			this.textBox38.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox38.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox38.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox38.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox36
-			// 
-			this.textBox36.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox36.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox36.Location = new System.Drawing.Point(245, 216);
-			this.textBox36.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox36.Name = "textBox36";
-			this.textBox36.Size = new System.Drawing.Size(50, 18);
-			this.textBox36.TabIndex = 140;
-			this.textBox36.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox36.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox36.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox36.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox35
-			// 
-			this.textBox35.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox35.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox35.Location = new System.Drawing.Point(330, 198);
-			this.textBox35.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox35.Name = "textBox35";
-			this.textBox35.Size = new System.Drawing.Size(50, 18);
-			this.textBox35.TabIndex = 132;
-			this.textBox35.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox35.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox35.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox35.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox33
-			// 
-			this.textBox33.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox33.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox33.Location = new System.Drawing.Point(245, 198);
-			this.textBox33.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox33.Name = "textBox33";
-			this.textBox33.Size = new System.Drawing.Size(50, 18);
-			this.textBox33.TabIndex = 130;
-			this.textBox33.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox33.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox33.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox33.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox32
-			// 
-			this.textBox32.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox32.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox32.Location = new System.Drawing.Point(330, 180);
-			this.textBox32.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox32.Name = "textBox32";
-			this.textBox32.Size = new System.Drawing.Size(50, 18);
-			this.textBox32.TabIndex = 122;
-			this.textBox32.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox32.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox32.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox32.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox30
-			// 
-			this.textBox30.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox30.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox30.Location = new System.Drawing.Point(245, 180);
-			this.textBox30.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox30.Name = "textBox30";
-			this.textBox30.Size = new System.Drawing.Size(50, 18);
-			this.textBox30.TabIndex = 120;
-			this.textBox30.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox30.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox30.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox30.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox29
-			// 
-			this.textBox29.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox29.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox29.Location = new System.Drawing.Point(330, 162);
-			this.textBox29.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox29.Name = "textBox29";
-			this.textBox29.Size = new System.Drawing.Size(50, 18);
-			this.textBox29.TabIndex = 112;
-			this.textBox29.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox29.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox29.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox29.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox27
-			// 
-			this.textBox27.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox27.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox27.Location = new System.Drawing.Point(245, 162);
-			this.textBox27.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox27.Name = "textBox27";
-			this.textBox27.Size = new System.Drawing.Size(50, 18);
-			this.textBox27.TabIndex = 110;
-			this.textBox27.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox27.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox27.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox27.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox26
-			// 
-			this.textBox26.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox26.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox26.Location = new System.Drawing.Point(330, 144);
-			this.textBox26.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox26.Name = "textBox26";
-			this.textBox26.Size = new System.Drawing.Size(50, 18);
-			this.textBox26.TabIndex = 102;
-			this.textBox26.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox26.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox26.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox26.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox24
-			// 
-			this.textBox24.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox24.Location = new System.Drawing.Point(245, 144);
-			this.textBox24.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox24.Name = "textBox24";
-			this.textBox24.Size = new System.Drawing.Size(50, 18);
-			this.textBox24.TabIndex = 100;
-			this.textBox24.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox24.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox24.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox24.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox23
-			// 
-			this.textBox23.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox23.Location = new System.Drawing.Point(330, 126);
-			this.textBox23.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox23.Name = "textBox23";
-			this.textBox23.Size = new System.Drawing.Size(50, 18);
-			this.textBox23.TabIndex = 92;
-			this.textBox23.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox23.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox23.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox23.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox21
-			// 
-			this.textBox21.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox21.Location = new System.Drawing.Point(245, 126);
-			this.textBox21.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox21.Name = "textBox21";
-			this.textBox21.Size = new System.Drawing.Size(50, 18);
-			this.textBox21.TabIndex = 90;
-			this.textBox21.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox21.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox21.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox21.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox20
-			// 
-			this.textBox20.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox20.Location = new System.Drawing.Point(330, 108);
-			this.textBox20.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox20.Name = "textBox20";
-			this.textBox20.Size = new System.Drawing.Size(50, 18);
-			this.textBox20.TabIndex = 82;
-			this.textBox20.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox20.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox20.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox20.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox18
-			// 
-			this.textBox18.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox18.Location = new System.Drawing.Point(245, 108);
-			this.textBox18.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox18.Name = "textBox18";
-			this.textBox18.Size = new System.Drawing.Size(50, 18);
-			this.textBox18.TabIndex = 80;
-			this.textBox18.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox18.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox18.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox18.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox17
-			// 
-			this.textBox17.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox17.Location = new System.Drawing.Point(330, 90);
-			this.textBox17.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox17.Name = "textBox17";
-			this.textBox17.Size = new System.Drawing.Size(50, 18);
-			this.textBox17.TabIndex = 65;
-			this.textBox17.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox17.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox17.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox17.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox15
-			// 
-			this.textBox15.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox15.Location = new System.Drawing.Point(245, 90);
-			this.textBox15.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox15.Name = "textBox15";
-			this.textBox15.Size = new System.Drawing.Size(50, 18);
-			this.textBox15.TabIndex = 63;
-			this.textBox15.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox15.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox15.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox15.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox14
-			// 
-			this.textBox14.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox14.Location = new System.Drawing.Point(330, 72);
-			this.textBox14.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox14.Name = "textBox14";
-			this.textBox14.Size = new System.Drawing.Size(50, 18);
-			this.textBox14.TabIndex = 55;
-			this.textBox14.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox14.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox14.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox14.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox12
-			// 
-			this.textBox12.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox12.Location = new System.Drawing.Point(245, 72);
-			this.textBox12.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox12.Name = "textBox12";
-			this.textBox12.Size = new System.Drawing.Size(50, 18);
-			this.textBox12.TabIndex = 53;
-			this.textBox12.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox12.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox12.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox12.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// labelSourceOfSpectralTypemax
+			// 
+			this.labelSourceOfSpectralTypemax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelSourceOfSpectralTypemax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelSourceOfSpectralTypemax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSourceOfSpectralTypemax.AutoSize = true;
+			this.labelSourceOfSpectralTypemax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfSpectralTypemax.Location = new System.Drawing.Point(675, 666);
+			this.labelSourceOfSpectralTypemax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfSpectralTypemax.Name = "labelSourceOfSpectralTypemax";
+			this.labelSourceOfSpectralTypemax.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfSpectralTypemax.TabIndex = 20;
+			this.labelSourceOfSpectralTypemax.Text = "max.:";
+			this.labelSourceOfSpectralTypemax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSourceOfSpectralTypemax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfSpectralTypemax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSourceOfSpectralTypemax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSourceOfSpectralTypemax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSourceOfSpectralTypeMax
+			// 
+			this.textBoxSourceOfSpectralTypeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfSpectralTypeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfSpectralTypeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfSpectralTypeMax.Location = new System.Drawing.Point(710, 666);
+			this.textBoxSourceOfSpectralTypeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfSpectralTypeMax.Name = "textBoxSourceOfSpectralTypeMax";
+			this.textBoxSourceOfSpectralTypeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfSpectralTypeMax.TabIndex = 21;
+			this.textBoxSourceOfSpectralTypeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfSpectralTypeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSourceOfSpectralTypeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSourceOfSpectralTypeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelSourceOfSpectralTypeMin
+			// 
+			this.labelSourceOfSpectralTypeMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelSourceOfSpectralTypeMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelSourceOfSpectralTypeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSourceOfSpectralTypeMin.AutoSize = true;
+			this.labelSourceOfSpectralTypeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfSpectralTypeMin.Location = new System.Drawing.Point(590, 666);
+			this.labelSourceOfSpectralTypeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfSpectralTypeMin.Name = "labelSourceOfSpectralTypeMin";
+			this.labelSourceOfSpectralTypeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfSpectralTypeMin.TabIndex = 18;
+			this.labelSourceOfSpectralTypeMin.Text = "min.:";
+			this.labelSourceOfSpectralTypeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSourceOfSpectralTypeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfSpectralTypeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSourceOfSpectralTypeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSourceOfSpectralTypeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSourceOfSpectralTypeMin
+			// 
+			this.textBoxSourceOfSpectralTypeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfSpectralTypeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfSpectralTypeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfSpectralTypeMin.Location = new System.Drawing.Point(625, 666);
+			this.textBoxSourceOfSpectralTypeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfSpectralTypeMin.Name = "textBoxSourceOfSpectralTypeMin";
+			this.textBoxSourceOfSpectralTypeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfSpectralTypeMin.TabIndex = 19;
+			this.textBoxSourceOfSpectralTypeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfSpectralTypeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSourceOfSpectralTypeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSourceOfSpectralTypeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelSpectralTypeMax
+			// 
+			this.labelSpectralTypeMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelSpectralTypeMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelSpectralTypeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSpectralTypeMax.AutoSize = true;
+			this.labelSpectralTypeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSpectralTypeMax.Location = new System.Drawing.Point(675, 648);
+			this.labelSpectralTypeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSpectralTypeMax.Name = "labelSpectralTypeMax";
+			this.labelSpectralTypeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelSpectralTypeMax.TabIndex = 10;
+			this.labelSpectralTypeMax.Text = "max.:";
+			this.labelSpectralTypeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSpectralTypeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSpectralTypeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSpectralTypeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSpectralTypeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSpectralTypeMax
+			// 
+			this.textBoxSpectralTypeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSpectralTypeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSpectralTypeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSpectralTypeMax.Location = new System.Drawing.Point(710, 648);
+			this.textBoxSpectralTypeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSpectralTypeMax.Name = "textBoxSpectralTypeMax";
+			this.textBoxSpectralTypeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSpectralTypeMax.TabIndex = 11;
+			this.textBoxSpectralTypeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSpectralTypeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSpectralTypeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSpectralTypeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelSpectralTypeMin
+			// 
+			this.labelSpectralTypeMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelSpectralTypeMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelSpectralTypeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSpectralTypeMin.AutoSize = true;
+			this.labelSpectralTypeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSpectralTypeMin.Location = new System.Drawing.Point(590, 648);
+			this.labelSpectralTypeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSpectralTypeMin.Name = "labelSpectralTypeMin";
+			this.labelSpectralTypeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelSpectralTypeMin.TabIndex = 8;
+			this.labelSpectralTypeMin.Text = "min.:";
+			this.labelSpectralTypeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSpectralTypeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSpectralTypeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSpectralTypeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSpectralTypeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSpectralTypeMin
+			// 
+			this.textBoxSpectralTypeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSpectralTypeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSpectralTypeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSpectralTypeMin.Location = new System.Drawing.Point(625, 648);
+			this.textBoxSpectralTypeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSpectralTypeMin.Name = "textBoxSpectralTypeMin";
+			this.textBoxSpectralTypeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSpectralTypeMin.TabIndex = 9;
+			this.textBoxSpectralTypeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSpectralTypeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSpectralTypeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSpectralTypeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelViUsedForReductionsMax
+			// 
+			this.labelViUsedForReductionsMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelViUsedForReductionsMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelViUsedForReductionsMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelViUsedForReductionsMax.AutoSize = true;
+			this.labelViUsedForReductionsMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelViUsedForReductionsMax.Location = new System.Drawing.Point(675, 630);
+			this.labelViUsedForReductionsMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelViUsedForReductionsMax.Name = "labelViUsedForReductionsMax";
+			this.labelViUsedForReductionsMax.Size = new System.Drawing.Size(35, 18);
+			this.labelViUsedForReductionsMax.TabIndex = 0;
+			this.labelViUsedForReductionsMax.Text = "max.:";
+			this.labelViUsedForReductionsMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelViUsedForReductionsMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelViUsedForReductionsMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelViUsedForReductionsMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelViUsedForReductionsMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxViUsedForReductionsmax
+			// 
+			this.textBoxViUsedForReductionsmax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxViUsedForReductionsmax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxViUsedForReductionsmax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxViUsedForReductionsmax.Location = new System.Drawing.Point(710, 630);
+			this.textBoxViUsedForReductionsmax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxViUsedForReductionsmax.Name = "textBoxViUsedForReductionsmax";
+			this.textBoxViUsedForReductionsmax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxViUsedForReductionsmax.TabIndex = 1;
+			this.textBoxViUsedForReductionsmax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxViUsedForReductionsmax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxViUsedForReductionsmax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxViUsedForReductionsmax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelViUsedForReductionsMin
+			// 
+			this.labelViUsedForReductionsMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelViUsedForReductionsMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelViUsedForReductionsMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelViUsedForReductionsMin.AutoSize = true;
+			this.labelViUsedForReductionsMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelViUsedForReductionsMin.Location = new System.Drawing.Point(590, 630);
+			this.labelViUsedForReductionsMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelViUsedForReductionsMin.Name = "labelViUsedForReductionsMin";
+			this.labelViUsedForReductionsMin.Size = new System.Drawing.Size(35, 18);
+			this.labelViUsedForReductionsMin.TabIndex = 383;
+			this.labelViUsedForReductionsMin.Text = "min.:";
+			this.labelViUsedForReductionsMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelViUsedForReductionsMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelViUsedForReductionsMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelViUsedForReductionsMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelViUsedForReductionsMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxViUsedForReductionsMin
+			// 
+			this.textBoxViUsedForReductionsMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxViUsedForReductionsMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxViUsedForReductionsMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxViUsedForReductionsMin.Location = new System.Drawing.Point(625, 630);
+			this.textBoxViUsedForReductionsMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxViUsedForReductionsMin.Name = "textBoxViUsedForReductionsMin";
+			this.textBoxViUsedForReductionsMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxViUsedForReductionsMin.TabIndex = 384;
+			this.textBoxViUsedForReductionsMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxViUsedForReductionsMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxViUsedForReductionsMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxViUsedForReductionsMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCapePhotographicDmMax
+			// 
+			this.labelCapePhotographicDmMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelCapePhotographicDmMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelCapePhotographicDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCapePhotographicDmMax.AutoSize = true;
+			this.labelCapePhotographicDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCapePhotographicDmMax.Location = new System.Drawing.Point(675, 612);
+			this.labelCapePhotographicDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCapePhotographicDmMax.Name = "labelCapePhotographicDmMax";
+			this.labelCapePhotographicDmMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCapePhotographicDmMax.TabIndex = 375;
+			this.labelCapePhotographicDmMax.Text = "max.:";
+			this.labelCapePhotographicDmMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCapePhotographicDmMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCapePhotographicDmMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCapePhotographicDmMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCapePhotographicDmMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCapePhotographicDmMax
+			// 
+			this.textBoxCapePhotographicDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCapePhotographicDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCapePhotographicDmMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCapePhotographicDmMax.Location = new System.Drawing.Point(710, 612);
+			this.textBoxCapePhotographicDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCapePhotographicDmMax.Name = "textBoxCapePhotographicDmMax";
+			this.textBoxCapePhotographicDmMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCapePhotographicDmMax.TabIndex = 376;
+			this.textBoxCapePhotographicDmMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCapePhotographicDmMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCapePhotographicDmMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCapePhotographicDmMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCapePhotographicDmMin
+			// 
+			this.labelCapePhotographicDmMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelCapePhotographicDmMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelCapePhotographicDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCapePhotographicDmMin.AutoSize = true;
+			this.labelCapePhotographicDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCapePhotographicDmMin.Location = new System.Drawing.Point(590, 612);
+			this.labelCapePhotographicDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCapePhotographicDmMin.Name = "labelCapePhotographicDmMin";
+			this.labelCapePhotographicDmMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCapePhotographicDmMin.TabIndex = 373;
+			this.labelCapePhotographicDmMin.Text = "min.:";
+			this.labelCapePhotographicDmMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCapePhotographicDmMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCapePhotographicDmMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCapePhotographicDmMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCapePhotographicDmMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCapePhotographicDmMin
+			// 
+			this.textBoxCapePhotographicDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCapePhotographicDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCapePhotographicDmMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCapePhotographicDmMin.Location = new System.Drawing.Point(625, 612);
+			this.textBoxCapePhotographicDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCapePhotographicDmMin.Name = "textBoxCapePhotographicDmMin";
+			this.textBoxCapePhotographicDmMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCapePhotographicDmMin.TabIndex = 374;
+			this.textBoxCapePhotographicDmMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCapePhotographicDmMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCapePhotographicDmMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCapePhotographicDmMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCordobaDmMax
+			// 
+			this.labelCordobaDmMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelCordobaDmMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelCordobaDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCordobaDmMax.AutoSize = true;
+			this.labelCordobaDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCordobaDmMax.Location = new System.Drawing.Point(675, 594);
+			this.labelCordobaDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCordobaDmMax.Name = "labelCordobaDmMax";
+			this.labelCordobaDmMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCordobaDmMax.TabIndex = 365;
+			this.labelCordobaDmMax.Text = "max.:";
+			this.labelCordobaDmMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCordobaDmMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCordobaDmMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCordobaDmMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCordobaDmMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCordobaDmMax
+			// 
+			this.textBoxCordobaDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCordobaDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCordobaDmMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCordobaDmMax.Location = new System.Drawing.Point(710, 594);
+			this.textBoxCordobaDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCordobaDmMax.Name = "textBoxCordobaDmMax";
+			this.textBoxCordobaDmMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCordobaDmMax.TabIndex = 366;
+			this.textBoxCordobaDmMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCordobaDmMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCordobaDmMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCordobaDmMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCordobaDmMin
+			// 
+			this.labelCordobaDmMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelCordobaDmMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelCordobaDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCordobaDmMin.AutoSize = true;
+			this.labelCordobaDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCordobaDmMin.Location = new System.Drawing.Point(590, 594);
+			this.labelCordobaDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCordobaDmMin.Name = "labelCordobaDmMin";
+			this.labelCordobaDmMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCordobaDmMin.TabIndex = 363;
+			this.labelCordobaDmMin.Text = "min.:";
+			this.labelCordobaDmMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCordobaDmMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCordobaDmMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCordobaDmMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCordobaDmMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCordobaDmMin
+			// 
+			this.textBoxCordobaDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCordobaDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCordobaDmMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCordobaDmMin.Location = new System.Drawing.Point(625, 594);
+			this.textBoxCordobaDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCordobaDmMin.Name = "textBoxCordobaDmMin";
+			this.textBoxCordobaDmMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCordobaDmMin.TabIndex = 364;
+			this.textBoxCordobaDmMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCordobaDmMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCordobaDmMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCordobaDmMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelBonnerDmMax
+			// 
+			this.labelBonnerDmMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelBonnerDmMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelBonnerDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelBonnerDmMax.AutoSize = true;
+			this.labelBonnerDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelBonnerDmMax.Location = new System.Drawing.Point(675, 576);
+			this.labelBonnerDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelBonnerDmMax.Name = "labelBonnerDmMax";
+			this.labelBonnerDmMax.Size = new System.Drawing.Size(35, 18);
+			this.labelBonnerDmMax.TabIndex = 355;
+			this.labelBonnerDmMax.Text = "max.:";
+			this.labelBonnerDmMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelBonnerDmMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelBonnerDmMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelBonnerDmMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelBonnerDmMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxBonnerDmMax
+			// 
+			this.textBoxBonnerDmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxBonnerDmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxBonnerDmMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxBonnerDmMax.Location = new System.Drawing.Point(710, 576);
+			this.textBoxBonnerDmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxBonnerDmMax.Name = "textBoxBonnerDmMax";
+			this.textBoxBonnerDmMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxBonnerDmMax.TabIndex = 356;
+			this.textBoxBonnerDmMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxBonnerDmMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxBonnerDmMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxBonnerDmMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelBonnerDmMin
+			// 
+			this.labelBonnerDmMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelBonnerDmMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelBonnerDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelBonnerDmMin.AutoSize = true;
+			this.labelBonnerDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelBonnerDmMin.Location = new System.Drawing.Point(590, 576);
+			this.labelBonnerDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelBonnerDmMin.Name = "labelBonnerDmMin";
+			this.labelBonnerDmMin.Size = new System.Drawing.Size(35, 18);
+			this.labelBonnerDmMin.TabIndex = 353;
+			this.labelBonnerDmMin.Text = "min.:";
+			this.labelBonnerDmMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelBonnerDmMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelBonnerDmMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelBonnerDmMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelBonnerDmMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxBonnerDmMin
+			// 
+			this.textBoxBonnerDmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxBonnerDmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxBonnerDmMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxBonnerDmMin.Location = new System.Drawing.Point(625, 576);
+			this.textBoxBonnerDmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxBonnerDmMin.Name = "textBoxBonnerDmMin";
+			this.textBoxBonnerDmMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxBonnerDmMin.TabIndex = 354;
+			this.textBoxBonnerDmMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxBonnerDmMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxBonnerDmMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxBonnerDmMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelHdNumberMax
+			// 
+			this.labelHdNumberMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelHdNumberMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelHdNumberMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelHdNumberMax.AutoSize = true;
+			this.labelHdNumberMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelHdNumberMax.Location = new System.Drawing.Point(675, 558);
+			this.labelHdNumberMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelHdNumberMax.Name = "labelHdNumberMax";
+			this.labelHdNumberMax.Size = new System.Drawing.Size(35, 18);
+			this.labelHdNumberMax.TabIndex = 345;
+			this.labelHdNumberMax.Text = "max.:";
+			this.labelHdNumberMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelHdNumberMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelHdNumberMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelHdNumberMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelHdNumberMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxHdNumberMax
+			// 
+			this.textBoxHdNumberMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxHdNumberMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxHdNumberMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxHdNumberMax.Location = new System.Drawing.Point(710, 558);
+			this.textBoxHdNumberMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxHdNumberMax.Name = "textBoxHdNumberMax";
+			this.textBoxHdNumberMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxHdNumberMax.TabIndex = 346;
+			this.textBoxHdNumberMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxHdNumberMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxHdNumberMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxHdNumberMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelHdNumberMin
+			// 
+			this.labelHdNumberMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelHdNumberMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelHdNumberMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelHdNumberMin.AutoSize = true;
+			this.labelHdNumberMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelHdNumberMin.Location = new System.Drawing.Point(590, 558);
+			this.labelHdNumberMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelHdNumberMin.Name = "labelHdNumberMin";
+			this.labelHdNumberMin.Size = new System.Drawing.Size(35, 18);
+			this.labelHdNumberMin.TabIndex = 343;
+			this.labelHdNumberMin.Text = "min.:";
+			this.labelHdNumberMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelHdNumberMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelHdNumberMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelHdNumberMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelHdNumberMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxHdNumberMin
+			// 
+			this.textBoxHdNumberMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxHdNumberMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxHdNumberMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxHdNumberMin.Location = new System.Drawing.Point(625, 558);
+			this.textBoxHdNumberMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxHdNumberMin.Name = "textBoxHdNumberMin";
+			this.textBoxHdNumberMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxHdNumberMin.TabIndex = 344;
+			this.textBoxHdNumberMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxHdNumberMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxHdNumberMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxHdNumberMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelExistenceOfNotesMax
+			// 
+			this.labelExistenceOfNotesMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelExistenceOfNotesMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelExistenceOfNotesMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelExistenceOfNotesMax.AutoSize = true;
+			this.labelExistenceOfNotesMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelExistenceOfNotesMax.Location = new System.Drawing.Point(675, 540);
+			this.labelExistenceOfNotesMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelExistenceOfNotesMax.Name = "labelExistenceOfNotesMax";
+			this.labelExistenceOfNotesMax.Size = new System.Drawing.Size(35, 18);
+			this.labelExistenceOfNotesMax.TabIndex = 335;
+			this.labelExistenceOfNotesMax.Text = "max.:";
+			this.labelExistenceOfNotesMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelExistenceOfNotesMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelExistenceOfNotesMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelExistenceOfNotesMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelExistenceOfNotesMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxExistenceOfNotesMax
+			// 
+			this.textBoxExistenceOfNotesMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxExistenceOfNotesMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxExistenceOfNotesMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxExistenceOfNotesMax.Location = new System.Drawing.Point(710, 540);
+			this.textBoxExistenceOfNotesMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxExistenceOfNotesMax.Name = "textBoxExistenceOfNotesMax";
+			this.textBoxExistenceOfNotesMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxExistenceOfNotesMax.TabIndex = 336;
+			this.textBoxExistenceOfNotesMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxExistenceOfNotesMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxExistenceOfNotesMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxExistenceOfNotesMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelExistenceOfNotesMin
+			// 
+			this.labelExistenceOfNotesMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelExistenceOfNotesMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelExistenceOfNotesMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelExistenceOfNotesMin.AutoSize = true;
+			this.labelExistenceOfNotesMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelExistenceOfNotesMin.Location = new System.Drawing.Point(590, 540);
+			this.labelExistenceOfNotesMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelExistenceOfNotesMin.Name = "labelExistenceOfNotesMin";
+			this.labelExistenceOfNotesMin.Size = new System.Drawing.Size(35, 18);
+			this.labelExistenceOfNotesMin.TabIndex = 333;
+			this.labelExistenceOfNotesMin.Text = "min.:";
+			this.labelExistenceOfNotesMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelExistenceOfNotesMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelExistenceOfNotesMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelExistenceOfNotesMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelExistenceOfNotesMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxExistenceOfNotesmin
+			// 
+			this.textBoxExistenceOfNotesmin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxExistenceOfNotesmin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxExistenceOfNotesmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxExistenceOfNotesmin.Location = new System.Drawing.Point(625, 540);
+			this.textBoxExistenceOfNotesmin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxExistenceOfNotesmin.Name = "textBoxExistenceOfNotesmin";
+			this.textBoxExistenceOfNotesmin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxExistenceOfNotesmin.TabIndex = 334;
+			this.textBoxExistenceOfNotesmin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxExistenceOfNotesmin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxExistenceOfNotesmin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxExistenceOfNotesmin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelIdentificationChartMax
+			// 
+			this.labelIdentificationChartMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelIdentificationChartMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelIdentificationChartMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelIdentificationChartMax.AutoSize = true;
+			this.labelIdentificationChartMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelIdentificationChartMax.Location = new System.Drawing.Point(675, 522);
+			this.labelIdentificationChartMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelIdentificationChartMax.Name = "labelIdentificationChartMax";
+			this.labelIdentificationChartMax.Size = new System.Drawing.Size(35, 18);
+			this.labelIdentificationChartMax.TabIndex = 325;
+			this.labelIdentificationChartMax.Text = "max.:";
+			this.labelIdentificationChartMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelIdentificationChartMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelIdentificationChartMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelIdentificationChartMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelIdentificationChartMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxIdentificationChartMax
+			// 
+			this.textBoxIdentificationChartMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxIdentificationChartMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxIdentificationChartMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxIdentificationChartMax.Location = new System.Drawing.Point(710, 522);
+			this.textBoxIdentificationChartMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxIdentificationChartMax.Name = "textBoxIdentificationChartMax";
+			this.textBoxIdentificationChartMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxIdentificationChartMax.TabIndex = 326;
+			this.textBoxIdentificationChartMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxIdentificationChartMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxIdentificationChartMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxIdentificationChartMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelIdentificationChartMin
+			// 
+			this.labelIdentificationChartMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelIdentificationChartMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelIdentificationChartMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelIdentificationChartMin.AutoSize = true;
+			this.labelIdentificationChartMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelIdentificationChartMin.Location = new System.Drawing.Point(590, 522);
+			this.labelIdentificationChartMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelIdentificationChartMin.Name = "labelIdentificationChartMin";
+			this.labelIdentificationChartMin.Size = new System.Drawing.Size(35, 18);
+			this.labelIdentificationChartMin.TabIndex = 323;
+			this.labelIdentificationChartMin.Text = "min.:";
+			this.labelIdentificationChartMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelIdentificationChartMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelIdentificationChartMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelIdentificationChartMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelIdentificationChartMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxIdentificationChartMin
+			// 
+			this.textBoxIdentificationChartMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxIdentificationChartMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxIdentificationChartMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxIdentificationChartMin.Location = new System.Drawing.Point(625, 522);
+			this.textBoxIdentificationChartMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxIdentificationChartMin.Name = "textBoxIdentificationChartMin";
+			this.textBoxIdentificationChartMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxIdentificationChartMin.TabIndex = 324;
+			this.textBoxIdentificationChartMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxIdentificationChartMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxIdentificationChartMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxIdentificationChartMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelFlagIndicatingSurveyStarMax
+			// 
+			this.labelFlagIndicatingSurveyStarMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelFlagIndicatingSurveyStarMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelFlagIndicatingSurveyStarMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelFlagIndicatingSurveyStarMax.AutoSize = true;
+			this.labelFlagIndicatingSurveyStarMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelFlagIndicatingSurveyStarMax.Location = new System.Drawing.Point(675, 504);
+			this.labelFlagIndicatingSurveyStarMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelFlagIndicatingSurveyStarMax.Name = "labelFlagIndicatingSurveyStarMax";
+			this.labelFlagIndicatingSurveyStarMax.Size = new System.Drawing.Size(35, 18);
+			this.labelFlagIndicatingSurveyStarMax.TabIndex = 315;
+			this.labelFlagIndicatingSurveyStarMax.Text = "max.:";
+			this.labelFlagIndicatingSurveyStarMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelFlagIndicatingSurveyStarMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelFlagIndicatingSurveyStarMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelFlagIndicatingSurveyStarMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelFlagIndicatingSurveyStarMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxFlagIndicatingSurveyStarMax
+			// 
+			this.textBoxFlagIndicatingSurveyStarMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxFlagIndicatingSurveyStarMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxFlagIndicatingSurveyStarMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxFlagIndicatingSurveyStarMax.Location = new System.Drawing.Point(710, 504);
+			this.textBoxFlagIndicatingSurveyStarMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxFlagIndicatingSurveyStarMax.Name = "textBoxFlagIndicatingSurveyStarMax";
+			this.textBoxFlagIndicatingSurveyStarMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxFlagIndicatingSurveyStarMax.TabIndex = 316;
+			this.textBoxFlagIndicatingSurveyStarMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxFlagIndicatingSurveyStarMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxFlagIndicatingSurveyStarMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxFlagIndicatingSurveyStarMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelFlagIndicatingSurveyStarMin
+			// 
+			this.labelFlagIndicatingSurveyStarMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelFlagIndicatingSurveyStarMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelFlagIndicatingSurveyStarMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelFlagIndicatingSurveyStarMin.AutoSize = true;
+			this.labelFlagIndicatingSurveyStarMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelFlagIndicatingSurveyStarMin.Location = new System.Drawing.Point(590, 504);
+			this.labelFlagIndicatingSurveyStarMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelFlagIndicatingSurveyStarMin.Name = "labelFlagIndicatingSurveyStarMin";
+			this.labelFlagIndicatingSurveyStarMin.Size = new System.Drawing.Size(35, 18);
+			this.labelFlagIndicatingSurveyStarMin.TabIndex = 306;
+			this.labelFlagIndicatingSurveyStarMin.Text = "min.:";
+			this.labelFlagIndicatingSurveyStarMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelFlagIndicatingSurveyStarMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelFlagIndicatingSurveyStarMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelFlagIndicatingSurveyStarMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelFlagIndicatingSurveyStarMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxFlagIndicatingSurveyStarMin
+			// 
+			this.textBoxFlagIndicatingSurveyStarMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxFlagIndicatingSurveyStarMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxFlagIndicatingSurveyStarMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxFlagIndicatingSurveyStarMin.Location = new System.Drawing.Point(625, 504);
+			this.textBoxFlagIndicatingSurveyStarMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxFlagIndicatingSurveyStarMin.Name = "textBoxFlagIndicatingSurveyStarMin";
+			this.textBoxFlagIndicatingSurveyStarMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxFlagIndicatingSurveyStarMin.TabIndex = 307;
+			this.textBoxFlagIndicatingSurveyStarMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxFlagIndicatingSurveyStarMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxFlagIndicatingSurveyStarMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxFlagIndicatingSurveyStarMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorMagnitudeDifferenceBetweenComponentsMax
+			// 
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.AutoSize = true;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.Location = new System.Drawing.Point(675, 486);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.Name = "labelStandardErrorMagnitudeDifferenceBetweenComponentsMax";
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.TabIndex = 298;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.Text = "max.:";
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax
+			// 
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.Location = new System.Drawing.Point(710, 486);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.Name = "textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax";
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.TabIndex = 299;
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorMagnitudeDifferenceBetweenComponentsMin
+			// 
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.AutoSize = true;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.Location = new System.Drawing.Point(590, 486);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.Name = "labelStandardErrorMagnitudeDifferenceBetweenComponentsMin";
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.TabIndex = 296;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.Text = "min.:";
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin
+			// 
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.Location = new System.Drawing.Point(625, 486);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.Name = "textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin";
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.TabIndex = 297;
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMagnitudeDifferenceBetweenComponentsMax
+			// 
+			this.labelMagnitudeDifferenceBetweenComponentsMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelMagnitudeDifferenceBetweenComponentsMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelMagnitudeDifferenceBetweenComponentsMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMagnitudeDifferenceBetweenComponentsMax.AutoSize = true;
+			this.labelMagnitudeDifferenceBetweenComponentsMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMagnitudeDifferenceBetweenComponentsMax.Location = new System.Drawing.Point(675, 468);
+			this.labelMagnitudeDifferenceBetweenComponentsMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMagnitudeDifferenceBetweenComponentsMax.Name = "labelMagnitudeDifferenceBetweenComponentsMax";
+			this.labelMagnitudeDifferenceBetweenComponentsMax.Size = new System.Drawing.Size(35, 18);
+			this.labelMagnitudeDifferenceBetweenComponentsMax.TabIndex = 288;
+			this.labelMagnitudeDifferenceBetweenComponentsMax.Text = "max.:";
+			this.labelMagnitudeDifferenceBetweenComponentsMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMagnitudeDifferenceBetweenComponentsMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMagnitudeDifferenceBetweenComponentsMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMagnitudeDifferenceBetweenComponentsMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMagnitudeDifferenceBetweenComponentsMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMagnitudeDifferenceBetweenComponentsMax
+			// 
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.Location = new System.Drawing.Point(710, 468);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.Name = "textBoxMagnitudeDifferenceBetweenComponentsMax";
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.TabIndex = 289;
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMagnitudeDifferenceBetweenComponentsMin
+			// 
+			this.labelMagnitudeDifferenceBetweenComponentsMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelMagnitudeDifferenceBetweenComponentsMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelMagnitudeDifferenceBetweenComponentsMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMagnitudeDifferenceBetweenComponentsMin.AutoSize = true;
+			this.labelMagnitudeDifferenceBetweenComponentsMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMagnitudeDifferenceBetweenComponentsMin.Location = new System.Drawing.Point(590, 468);
+			this.labelMagnitudeDifferenceBetweenComponentsMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMagnitudeDifferenceBetweenComponentsMin.Name = "labelMagnitudeDifferenceBetweenComponentsMin";
+			this.labelMagnitudeDifferenceBetweenComponentsMin.Size = new System.Drawing.Size(35, 18);
+			this.labelMagnitudeDifferenceBetweenComponentsMin.TabIndex = 286;
+			this.labelMagnitudeDifferenceBetweenComponentsMin.Text = "min.:";
+			this.labelMagnitudeDifferenceBetweenComponentsMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMagnitudeDifferenceBetweenComponentsMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMagnitudeDifferenceBetweenComponentsMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMagnitudeDifferenceBetweenComponentsMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMagnitudeDifferenceBetweenComponentsMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMagnitudeDifferenceBetweenComponentsMin
+			// 
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.Location = new System.Drawing.Point(625, 468);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.Name = "textBoxMagnitudeDifferenceBetweenComponentsMin";
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.TabIndex = 287;
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMagnitudeDifferenceBetweenComponentsMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorRhoMax
+			// 
+			this.labelStandardErrorRhoMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorRhoMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorRhoMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorRhoMax.AutoSize = true;
+			this.labelStandardErrorRhoMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorRhoMax.Location = new System.Drawing.Point(675, 450);
+			this.labelStandardErrorRhoMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorRhoMax.Name = "labelStandardErrorRhoMax";
+			this.labelStandardErrorRhoMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorRhoMax.TabIndex = 278;
+			this.labelStandardErrorRhoMax.Text = "max.:";
+			this.labelStandardErrorRhoMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorRhoMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorRhoMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorRhoMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorRhoMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorRhoMax
+			// 
+			this.textBoxStandardErrorRhoMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorRhoMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorRhoMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorRhoMax.Location = new System.Drawing.Point(710, 450);
+			this.textBoxStandardErrorRhoMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorRhoMax.Name = "textBoxStandardErrorRhoMax";
+			this.textBoxStandardErrorRhoMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorRhoMax.TabIndex = 279;
+			this.textBoxStandardErrorRhoMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorRhoMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorRhoMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorRhoMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorRhoMin
+			// 
+			this.labelStandardErrorRhoMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorRhoMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorRhoMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorRhoMin.AutoSize = true;
+			this.labelStandardErrorRhoMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorRhoMin.Location = new System.Drawing.Point(590, 450);
+			this.labelStandardErrorRhoMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorRhoMin.Name = "labelStandardErrorRhoMin";
+			this.labelStandardErrorRhoMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorRhoMin.TabIndex = 274;
+			this.labelStandardErrorRhoMin.Text = "min.:";
+			this.labelStandardErrorRhoMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorRhoMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorRhoMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorRhoMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorRhoMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorRhoMin
+			// 
+			this.textBoxStandardErrorRhoMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorRhoMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorRhoMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorRhoMin.Location = new System.Drawing.Point(625, 450);
+			this.textBoxStandardErrorRhoMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorRhoMin.Name = "textBoxStandardErrorRhoMin";
+			this.textBoxStandardErrorRhoMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorRhoMin.TabIndex = 275;
+			this.textBoxStandardErrorRhoMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorRhoMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorRhoMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorRhoMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelAngularSeparationBetweenComponentsMax
+			// 
+			this.labelAngularSeparationBetweenComponentsMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelAngularSeparationBetweenComponentsMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelAngularSeparationBetweenComponentsMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelAngularSeparationBetweenComponentsMax.AutoSize = true;
+			this.labelAngularSeparationBetweenComponentsMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelAngularSeparationBetweenComponentsMax.Location = new System.Drawing.Point(675, 432);
+			this.labelAngularSeparationBetweenComponentsMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelAngularSeparationBetweenComponentsMax.Name = "labelAngularSeparationBetweenComponentsMax";
+			this.labelAngularSeparationBetweenComponentsMax.Size = new System.Drawing.Size(35, 18);
+			this.labelAngularSeparationBetweenComponentsMax.TabIndex = 266;
+			this.labelAngularSeparationBetweenComponentsMax.Text = "max.:";
+			this.labelAngularSeparationBetweenComponentsMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelAngularSeparationBetweenComponentsMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelAngularSeparationBetweenComponentsMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelAngularSeparationBetweenComponentsMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelAngularSeparationBetweenComponentsMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxAngularSeparationBetweenComponentsMax
+			// 
+			this.textBoxAngularSeparationBetweenComponentsMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxAngularSeparationBetweenComponentsMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxAngularSeparationBetweenComponentsMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxAngularSeparationBetweenComponentsMax.Location = new System.Drawing.Point(710, 432);
+			this.textBoxAngularSeparationBetweenComponentsMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxAngularSeparationBetweenComponentsMax.Name = "textBoxAngularSeparationBetweenComponentsMax";
+			this.textBoxAngularSeparationBetweenComponentsMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxAngularSeparationBetweenComponentsMax.TabIndex = 267;
+			this.textBoxAngularSeparationBetweenComponentsMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxAngularSeparationBetweenComponentsMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxAngularSeparationBetweenComponentsMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxAngularSeparationBetweenComponentsMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelAngularSeparationBetweenComponentsMin
+			// 
+			this.labelAngularSeparationBetweenComponentsMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelAngularSeparationBetweenComponentsMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelAngularSeparationBetweenComponentsMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelAngularSeparationBetweenComponentsMin.AutoSize = true;
+			this.labelAngularSeparationBetweenComponentsMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelAngularSeparationBetweenComponentsMin.Location = new System.Drawing.Point(590, 432);
+			this.labelAngularSeparationBetweenComponentsMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelAngularSeparationBetweenComponentsMin.Name = "labelAngularSeparationBetweenComponentsMin";
+			this.labelAngularSeparationBetweenComponentsMin.Size = new System.Drawing.Size(35, 18);
+			this.labelAngularSeparationBetweenComponentsMin.TabIndex = 264;
+			this.labelAngularSeparationBetweenComponentsMin.Text = "min.:";
+			this.labelAngularSeparationBetweenComponentsMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelAngularSeparationBetweenComponentsMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelAngularSeparationBetweenComponentsMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelAngularSeparationBetweenComponentsMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelAngularSeparationBetweenComponentsMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxAngularSeparationBetweenComponentsMin
+			// 
+			this.textBoxAngularSeparationBetweenComponentsMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxAngularSeparationBetweenComponentsMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxAngularSeparationBetweenComponentsMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxAngularSeparationBetweenComponentsMin.Location = new System.Drawing.Point(625, 432);
+			this.textBoxAngularSeparationBetweenComponentsMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxAngularSeparationBetweenComponentsMin.Name = "textBoxAngularSeparationBetweenComponentsMin";
+			this.textBoxAngularSeparationBetweenComponentsMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxAngularSeparationBetweenComponentsMin.TabIndex = 265;
+			this.textBoxAngularSeparationBetweenComponentsMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxAngularSeparationBetweenComponentsMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxAngularSeparationBetweenComponentsMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxAngularSeparationBetweenComponentsMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelPositionAngleBetweenComponentsMax
+			// 
+			this.labelPositionAngleBetweenComponentsMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelPositionAngleBetweenComponentsMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelPositionAngleBetweenComponentsMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelPositionAngleBetweenComponentsMax.AutoSize = true;
+			this.labelPositionAngleBetweenComponentsMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelPositionAngleBetweenComponentsMax.Location = new System.Drawing.Point(675, 414);
+			this.labelPositionAngleBetweenComponentsMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelPositionAngleBetweenComponentsMax.Name = "labelPositionAngleBetweenComponentsMax";
+			this.labelPositionAngleBetweenComponentsMax.Size = new System.Drawing.Size(35, 18);
+			this.labelPositionAngleBetweenComponentsMax.TabIndex = 256;
+			this.labelPositionAngleBetweenComponentsMax.Text = "max.:";
+			this.labelPositionAngleBetweenComponentsMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelPositionAngleBetweenComponentsMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelPositionAngleBetweenComponentsMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelPositionAngleBetweenComponentsMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelPositionAngleBetweenComponentsMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxPositionAngleBetweenComponentsMax
+			// 
+			this.textBoxPositionAngleBetweenComponentsMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxPositionAngleBetweenComponentsMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxPositionAngleBetweenComponentsMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxPositionAngleBetweenComponentsMax.Location = new System.Drawing.Point(710, 414);
+			this.textBoxPositionAngleBetweenComponentsMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxPositionAngleBetweenComponentsMax.Name = "textBoxPositionAngleBetweenComponentsMax";
+			this.textBoxPositionAngleBetweenComponentsMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxPositionAngleBetweenComponentsMax.TabIndex = 257;
+			this.textBoxPositionAngleBetweenComponentsMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxPositionAngleBetweenComponentsMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxPositionAngleBetweenComponentsMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxPositionAngleBetweenComponentsMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelPositionAngleBetweenComponentsMin
+			// 
+			this.labelPositionAngleBetweenComponentsMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelPositionAngleBetweenComponentsMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelPositionAngleBetweenComponentsMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelPositionAngleBetweenComponentsMin.AutoSize = true;
+			this.labelPositionAngleBetweenComponentsMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelPositionAngleBetweenComponentsMin.Location = new System.Drawing.Point(590, 414);
+			this.labelPositionAngleBetweenComponentsMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelPositionAngleBetweenComponentsMin.Name = "labelPositionAngleBetweenComponentsMin";
+			this.labelPositionAngleBetweenComponentsMin.Size = new System.Drawing.Size(35, 18);
+			this.labelPositionAngleBetweenComponentsMin.TabIndex = 254;
+			this.labelPositionAngleBetweenComponentsMin.Text = "min.:";
+			this.labelPositionAngleBetweenComponentsMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelPositionAngleBetweenComponentsMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelPositionAngleBetweenComponentsMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelPositionAngleBetweenComponentsMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelPositionAngleBetweenComponentsMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxPositionAngleBetweenComponentsMin
+			// 
+			this.textBoxPositionAngleBetweenComponentsMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxPositionAngleBetweenComponentsMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxPositionAngleBetweenComponentsMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxPositionAngleBetweenComponentsMin.Location = new System.Drawing.Point(625, 414);
+			this.textBoxPositionAngleBetweenComponentsMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxPositionAngleBetweenComponentsMin.Name = "textBoxPositionAngleBetweenComponentsMin";
+			this.textBoxPositionAngleBetweenComponentsMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxPositionAngleBetweenComponentsMin.TabIndex = 255;
+			this.textBoxPositionAngleBetweenComponentsMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxPositionAngleBetweenComponentsMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxPositionAngleBetweenComponentsMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxPositionAngleBetweenComponentsMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelComponentIdentifiersMax
+			// 
+			this.labelComponentIdentifiersMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelComponentIdentifiersMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelComponentIdentifiersMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelComponentIdentifiersMax.AutoSize = true;
+			this.labelComponentIdentifiersMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelComponentIdentifiersMax.Location = new System.Drawing.Point(675, 396);
+			this.labelComponentIdentifiersMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelComponentIdentifiersMax.Name = "labelComponentIdentifiersMax";
+			this.labelComponentIdentifiersMax.Size = new System.Drawing.Size(35, 18);
+			this.labelComponentIdentifiersMax.TabIndex = 246;
+			this.labelComponentIdentifiersMax.Text = "max.:";
+			this.labelComponentIdentifiersMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelComponentIdentifiersMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelComponentIdentifiersMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelComponentIdentifiersMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelComponentIdentifiersMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxComponentIdentifiersMax
+			// 
+			this.textBoxComponentIdentifiersMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxComponentIdentifiersMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxComponentIdentifiersMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxComponentIdentifiersMax.Location = new System.Drawing.Point(710, 396);
+			this.textBoxComponentIdentifiersMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxComponentIdentifiersMax.Name = "textBoxComponentIdentifiersMax";
+			this.textBoxComponentIdentifiersMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxComponentIdentifiersMax.TabIndex = 247;
+			this.textBoxComponentIdentifiersMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxComponentIdentifiersMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxComponentIdentifiersMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxComponentIdentifiersMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelComponentIdentifiersMin
+			// 
+			this.labelComponentIdentifiersMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelComponentIdentifiersMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelComponentIdentifiersMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelComponentIdentifiersMin.AutoSize = true;
+			this.labelComponentIdentifiersMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelComponentIdentifiersMin.Location = new System.Drawing.Point(590, 396);
+			this.labelComponentIdentifiersMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelComponentIdentifiersMin.Name = "labelComponentIdentifiersMin";
+			this.labelComponentIdentifiersMin.Size = new System.Drawing.Size(35, 18);
+			this.labelComponentIdentifiersMin.TabIndex = 244;
+			this.labelComponentIdentifiersMin.Text = "min.:";
+			this.labelComponentIdentifiersMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelComponentIdentifiersMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelComponentIdentifiersMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelComponentIdentifiersMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelComponentIdentifiersMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxComponentIdentifiersMin
+			// 
+			this.textBoxComponentIdentifiersMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxComponentIdentifiersMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxComponentIdentifiersMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxComponentIdentifiersMin.Location = new System.Drawing.Point(625, 396);
+			this.textBoxComponentIdentifiersMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxComponentIdentifiersMin.Name = "textBoxComponentIdentifiersMin";
+			this.textBoxComponentIdentifiersMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxComponentIdentifiersMin.TabIndex = 245;
+			this.textBoxComponentIdentifiersMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxComponentIdentifiersMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxComponentIdentifiersMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxComponentIdentifiersMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelSolutionQualityMax
+			// 
+			this.labelSolutionQualityMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelSolutionQualityMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelSolutionQualityMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSolutionQualityMax.AutoSize = true;
+			this.labelSolutionQualityMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSolutionQualityMax.Location = new System.Drawing.Point(675, 378);
+			this.labelSolutionQualityMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSolutionQualityMax.Name = "labelSolutionQualityMax";
+			this.labelSolutionQualityMax.Size = new System.Drawing.Size(35, 18);
+			this.labelSolutionQualityMax.TabIndex = 236;
+			this.labelSolutionQualityMax.Text = "max.:";
+			this.labelSolutionQualityMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSolutionQualityMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSolutionQualityMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSolutionQualityMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSolutionQualityMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSolutionQualityMax
+			// 
+			this.textBoxSolutionQualityMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSolutionQualityMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSolutionQualityMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSolutionQualityMax.Location = new System.Drawing.Point(710, 378);
+			this.textBoxSolutionQualityMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSolutionQualityMax.Name = "textBoxSolutionQualityMax";
+			this.textBoxSolutionQualityMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSolutionQualityMax.TabIndex = 237;
+			this.textBoxSolutionQualityMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSolutionQualityMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSolutionQualityMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSolutionQualityMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelSolutionQualityMin
+			// 
+			this.labelSolutionQualityMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelSolutionQualityMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelSolutionQualityMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSolutionQualityMin.AutoSize = true;
+			this.labelSolutionQualityMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSolutionQualityMin.Location = new System.Drawing.Point(590, 378);
+			this.labelSolutionQualityMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSolutionQualityMin.Name = "labelSolutionQualityMin";
+			this.labelSolutionQualityMin.Size = new System.Drawing.Size(35, 18);
+			this.labelSolutionQualityMin.TabIndex = 234;
+			this.labelSolutionQualityMin.Text = "min.:";
+			this.labelSolutionQualityMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSolutionQualityMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSolutionQualityMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSolutionQualityMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSolutionQualityMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSolutionQualityMin
+			// 
+			this.textBoxSolutionQualityMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSolutionQualityMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSolutionQualityMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSolutionQualityMin.Location = new System.Drawing.Point(625, 378);
+			this.textBoxSolutionQualityMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSolutionQualityMin.Name = "textBoxSolutionQualityMin";
+			this.textBoxSolutionQualityMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSolutionQualityMin.TabIndex = 235;
+			this.textBoxSolutionQualityMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSolutionQualityMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSolutionQualityMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSolutionQualityMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelAstrometricSourceFlagMax
+			// 
+			this.labelAstrometricSourceFlagMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelAstrometricSourceFlagMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelAstrometricSourceFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelAstrometricSourceFlagMax.AutoSize = true;
+			this.labelAstrometricSourceFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelAstrometricSourceFlagMax.Location = new System.Drawing.Point(675, 360);
+			this.labelAstrometricSourceFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelAstrometricSourceFlagMax.Name = "labelAstrometricSourceFlagMax";
+			this.labelAstrometricSourceFlagMax.Size = new System.Drawing.Size(35, 18);
+			this.labelAstrometricSourceFlagMax.TabIndex = 226;
+			this.labelAstrometricSourceFlagMax.Text = "max.:";
+			this.labelAstrometricSourceFlagMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelAstrometricSourceFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelAstrometricSourceFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelAstrometricSourceFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelAstrometricSourceFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxAstrometricSourceFlagMax
+			// 
+			this.textBoxAstrometricSourceFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxAstrometricSourceFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxAstrometricSourceFlagMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxAstrometricSourceFlagMax.Location = new System.Drawing.Point(710, 360);
+			this.textBoxAstrometricSourceFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxAstrometricSourceFlagMax.Name = "textBoxAstrometricSourceFlagMax";
+			this.textBoxAstrometricSourceFlagMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxAstrometricSourceFlagMax.TabIndex = 227;
+			this.textBoxAstrometricSourceFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxAstrometricSourceFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxAstrometricSourceFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxAstrometricSourceFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelAstrometricSourceFlagMin
+			// 
+			this.labelAstrometricSourceFlagMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelAstrometricSourceFlagMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelAstrometricSourceFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelAstrometricSourceFlagMin.AutoSize = true;
+			this.labelAstrometricSourceFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelAstrometricSourceFlagMin.Location = new System.Drawing.Point(590, 360);
+			this.labelAstrometricSourceFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelAstrometricSourceFlagMin.Name = "labelAstrometricSourceFlagMin";
+			this.labelAstrometricSourceFlagMin.Size = new System.Drawing.Size(35, 18);
+			this.labelAstrometricSourceFlagMin.TabIndex = 224;
+			this.labelAstrometricSourceFlagMin.Text = "min.:";
+			this.labelAstrometricSourceFlagMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelAstrometricSourceFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelAstrometricSourceFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelAstrometricSourceFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelAstrometricSourceFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxAstrometricSourceFlagMin
+			// 
+			this.textBoxAstrometricSourceFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxAstrometricSourceFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxAstrometricSourceFlagMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxAstrometricSourceFlagMin.Location = new System.Drawing.Point(625, 360);
+			this.textBoxAstrometricSourceFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxAstrometricSourceFlagMin.Name = "textBoxAstrometricSourceFlagMin";
+			this.textBoxAstrometricSourceFlagMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxAstrometricSourceFlagMin.TabIndex = 225;
+			this.textBoxAstrometricSourceFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxAstrometricSourceFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxAstrometricSourceFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxAstrometricSourceFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMultipleSystemsFlagMax
+			// 
+			this.labelMultipleSystemsFlagMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelMultipleSystemsFlagMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelMultipleSystemsFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMultipleSystemsFlagMax.AutoSize = true;
+			this.labelMultipleSystemsFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMultipleSystemsFlagMax.Location = new System.Drawing.Point(675, 342);
+			this.labelMultipleSystemsFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMultipleSystemsFlagMax.Name = "labelMultipleSystemsFlagMax";
+			this.labelMultipleSystemsFlagMax.Size = new System.Drawing.Size(35, 18);
+			this.labelMultipleSystemsFlagMax.TabIndex = 216;
+			this.labelMultipleSystemsFlagMax.Text = "max.:";
+			this.labelMultipleSystemsFlagMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMultipleSystemsFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMultipleSystemsFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMultipleSystemsFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMultipleSystemsFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMultipleSystemsFlagMax
+			// 
+			this.textBoxMultipleSystemsFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMultipleSystemsFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMultipleSystemsFlagMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMultipleSystemsFlagMax.Location = new System.Drawing.Point(710, 342);
+			this.textBoxMultipleSystemsFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMultipleSystemsFlagMax.Name = "textBoxMultipleSystemsFlagMax";
+			this.textBoxMultipleSystemsFlagMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMultipleSystemsFlagMax.TabIndex = 217;
+			this.textBoxMultipleSystemsFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMultipleSystemsFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMultipleSystemsFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMultipleSystemsFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMultipleSystemsFlagMin
+			// 
+			this.labelMultipleSystemsFlagMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelMultipleSystemsFlagMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelMultipleSystemsFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMultipleSystemsFlagMin.AutoSize = true;
+			this.labelMultipleSystemsFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMultipleSystemsFlagMin.Location = new System.Drawing.Point(590, 342);
+			this.labelMultipleSystemsFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMultipleSystemsFlagMin.Name = "labelMultipleSystemsFlagMin";
+			this.labelMultipleSystemsFlagMin.Size = new System.Drawing.Size(35, 18);
+			this.labelMultipleSystemsFlagMin.TabIndex = 214;
+			this.labelMultipleSystemsFlagMin.Text = "min.:";
+			this.labelMultipleSystemsFlagMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMultipleSystemsFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMultipleSystemsFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMultipleSystemsFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMultipleSystemsFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMultipleSystemsFlagMin
+			// 
+			this.textBoxMultipleSystemsFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMultipleSystemsFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMultipleSystemsFlagMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMultipleSystemsFlagMin.Location = new System.Drawing.Point(625, 342);
+			this.textBoxMultipleSystemsFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMultipleSystemsFlagMin.Name = "textBoxMultipleSystemsFlagMin";
+			this.textBoxMultipleSystemsFlagMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMultipleSystemsFlagMin.TabIndex = 215;
+			this.textBoxMultipleSystemsFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMultipleSystemsFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMultipleSystemsFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMultipleSystemsFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelNumberComponentsInThisEntryMax
+			// 
+			this.labelNumberComponentsInThisEntryMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelNumberComponentsInThisEntryMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelNumberComponentsInThisEntryMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNumberComponentsInThisEntryMax.AutoSize = true;
+			this.labelNumberComponentsInThisEntryMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberComponentsInThisEntryMax.Location = new System.Drawing.Point(675, 324);
+			this.labelNumberComponentsInThisEntryMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNumberComponentsInThisEntryMax.Name = "labelNumberComponentsInThisEntryMax";
+			this.labelNumberComponentsInThisEntryMax.Size = new System.Drawing.Size(35, 18);
+			this.labelNumberComponentsInThisEntryMax.TabIndex = 206;
+			this.labelNumberComponentsInThisEntryMax.Text = "max.:";
+			this.labelNumberComponentsInThisEntryMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelNumberComponentsInThisEntryMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelNumberComponentsInThisEntryMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelNumberComponentsInThisEntryMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelNumberComponentsInThisEntryMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxNumberComponentsInThisEntryMax
+			// 
+			this.textBoxNumberComponentsInThisEntryMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNumberComponentsInThisEntryMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNumberComponentsInThisEntryMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNumberComponentsInThisEntryMax.Location = new System.Drawing.Point(710, 324);
+			this.textBoxNumberComponentsInThisEntryMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNumberComponentsInThisEntryMax.Name = "textBoxNumberComponentsInThisEntryMax";
+			this.textBoxNumberComponentsInThisEntryMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNumberComponentsInThisEntryMax.TabIndex = 207;
+			this.textBoxNumberComponentsInThisEntryMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxNumberComponentsInThisEntryMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxNumberComponentsInThisEntryMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxNumberComponentsInThisEntryMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelNumberComponentsInThisEntryMin
+			// 
+			this.labelNumberComponentsInThisEntryMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelNumberComponentsInThisEntryMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelNumberComponentsInThisEntryMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNumberComponentsInThisEntryMin.AutoSize = true;
+			this.labelNumberComponentsInThisEntryMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberComponentsInThisEntryMin.Location = new System.Drawing.Point(590, 324);
+			this.labelNumberComponentsInThisEntryMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNumberComponentsInThisEntryMin.Name = "labelNumberComponentsInThisEntryMin";
+			this.labelNumberComponentsInThisEntryMin.Size = new System.Drawing.Size(35, 18);
+			this.labelNumberComponentsInThisEntryMin.TabIndex = 204;
+			this.labelNumberComponentsInThisEntryMin.Text = "min.:";
+			this.labelNumberComponentsInThisEntryMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelNumberComponentsInThisEntryMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelNumberComponentsInThisEntryMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelNumberComponentsInThisEntryMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelNumberComponentsInThisEntryMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxNumberComponentsInThisEntryMin
+			// 
+			this.textBoxNumberComponentsInThisEntryMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNumberComponentsInThisEntryMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNumberComponentsInThisEntryMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNumberComponentsInThisEntryMin.Location = new System.Drawing.Point(625, 324);
+			this.textBoxNumberComponentsInThisEntryMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNumberComponentsInThisEntryMin.Name = "textBoxNumberComponentsInThisEntryMin";
+			this.textBoxNumberComponentsInThisEntryMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNumberComponentsInThisEntryMin.TabIndex = 205;
+			this.textBoxNumberComponentsInThisEntryMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxNumberComponentsInThisEntryMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxNumberComponentsInThisEntryMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxNumberComponentsInThisEntryMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelNumberEntriesWithSameCcdmMax
+			// 
+			this.labelNumberEntriesWithSameCcdmMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelNumberEntriesWithSameCcdmMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelNumberEntriesWithSameCcdmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNumberEntriesWithSameCcdmMax.AutoSize = true;
+			this.labelNumberEntriesWithSameCcdmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberEntriesWithSameCcdmMax.Location = new System.Drawing.Point(675, 306);
+			this.labelNumberEntriesWithSameCcdmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNumberEntriesWithSameCcdmMax.Name = "labelNumberEntriesWithSameCcdmMax";
+			this.labelNumberEntriesWithSameCcdmMax.Size = new System.Drawing.Size(35, 18);
+			this.labelNumberEntriesWithSameCcdmMax.TabIndex = 196;
+			this.labelNumberEntriesWithSameCcdmMax.Text = "max.:";
+			this.labelNumberEntriesWithSameCcdmMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelNumberEntriesWithSameCcdmMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelNumberEntriesWithSameCcdmMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelNumberEntriesWithSameCcdmMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelNumberEntriesWithSameCcdmMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxNumberEntriesWithSameCcdmMax
+			// 
+			this.textBoxNumberEntriesWithSameCcdmMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNumberEntriesWithSameCcdmMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNumberEntriesWithSameCcdmMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNumberEntriesWithSameCcdmMax.Location = new System.Drawing.Point(710, 306);
+			this.textBoxNumberEntriesWithSameCcdmMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNumberEntriesWithSameCcdmMax.Name = "textBoxNumberEntriesWithSameCcdmMax";
+			this.textBoxNumberEntriesWithSameCcdmMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNumberEntriesWithSameCcdmMax.TabIndex = 197;
+			this.textBoxNumberEntriesWithSameCcdmMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxNumberEntriesWithSameCcdmMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxNumberEntriesWithSameCcdmMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxNumberEntriesWithSameCcdmMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelNumberEntriesWithSameCcdm
+			// 
+			this.labelNumberEntriesWithSameCcdm.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelNumberEntriesWithSameCcdm.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelNumberEntriesWithSameCcdm.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNumberEntriesWithSameCcdm.AutoSize = true;
+			this.labelNumberEntriesWithSameCcdm.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberEntriesWithSameCcdm.Location = new System.Drawing.Point(590, 306);
+			this.labelNumberEntriesWithSameCcdm.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNumberEntriesWithSameCcdm.Name = "labelNumberEntriesWithSameCcdm";
+			this.labelNumberEntriesWithSameCcdm.Size = new System.Drawing.Size(35, 18);
+			this.labelNumberEntriesWithSameCcdm.TabIndex = 194;
+			this.labelNumberEntriesWithSameCcdm.Text = "min.:";
+			this.labelNumberEntriesWithSameCcdm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelNumberEntriesWithSameCcdm.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelNumberEntriesWithSameCcdm.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelNumberEntriesWithSameCcdm.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelNumberEntriesWithSameCcdm.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxNumberEntriesWithSameCcdmMin
+			// 
+			this.textBoxNumberEntriesWithSameCcdmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNumberEntriesWithSameCcdmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNumberEntriesWithSameCcdmMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNumberEntriesWithSameCcdmMin.Location = new System.Drawing.Point(625, 306);
+			this.textBoxNumberEntriesWithSameCcdmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNumberEntriesWithSameCcdmMin.Name = "textBoxNumberEntriesWithSameCcdmMin";
+			this.textBoxNumberEntriesWithSameCcdmMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNumberEntriesWithSameCcdmMin.TabIndex = 195;
+			this.textBoxNumberEntriesWithSameCcdmMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxNumberEntriesWithSameCcdmMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxNumberEntriesWithSameCcdmMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxNumberEntriesWithSameCcdmMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelHistoricalStatusFlagMax
+			// 
+			this.labelHistoricalStatusFlagMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelHistoricalStatusFlagMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelHistoricalStatusFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelHistoricalStatusFlagMax.AutoSize = true;
+			this.labelHistoricalStatusFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelHistoricalStatusFlagMax.Location = new System.Drawing.Point(675, 288);
+			this.labelHistoricalStatusFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelHistoricalStatusFlagMax.Name = "labelHistoricalStatusFlagMax";
+			this.labelHistoricalStatusFlagMax.Size = new System.Drawing.Size(35, 18);
+			this.labelHistoricalStatusFlagMax.TabIndex = 186;
+			this.labelHistoricalStatusFlagMax.Text = "max.:";
+			this.labelHistoricalStatusFlagMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelHistoricalStatusFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelHistoricalStatusFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelHistoricalStatusFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelHistoricalStatusFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxHistoricalStatusFlagMax
+			// 
+			this.textBoxHistoricalStatusFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxHistoricalStatusFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxHistoricalStatusFlagMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxHistoricalStatusFlagMax.Location = new System.Drawing.Point(710, 288);
+			this.textBoxHistoricalStatusFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxHistoricalStatusFlagMax.Name = "textBoxHistoricalStatusFlagMax";
+			this.textBoxHistoricalStatusFlagMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxHistoricalStatusFlagMax.TabIndex = 187;
+			this.textBoxHistoricalStatusFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxHistoricalStatusFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxHistoricalStatusFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxHistoricalStatusFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelHistoricalStatusFlagMin
+			// 
+			this.labelHistoricalStatusFlagMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelHistoricalStatusFlagMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelHistoricalStatusFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelHistoricalStatusFlagMin.AutoSize = true;
+			this.labelHistoricalStatusFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelHistoricalStatusFlagMin.Location = new System.Drawing.Point(590, 288);
+			this.labelHistoricalStatusFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelHistoricalStatusFlagMin.Name = "labelHistoricalStatusFlagMin";
+			this.labelHistoricalStatusFlagMin.Size = new System.Drawing.Size(35, 18);
+			this.labelHistoricalStatusFlagMin.TabIndex = 184;
+			this.labelHistoricalStatusFlagMin.Text = "min.:";
+			this.labelHistoricalStatusFlagMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelHistoricalStatusFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelHistoricalStatusFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelHistoricalStatusFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelHistoricalStatusFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxHistoricalStatusFlagMin
+			// 
+			this.textBoxHistoricalStatusFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxHistoricalStatusFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxHistoricalStatusFlagMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxHistoricalStatusFlagMin.Location = new System.Drawing.Point(625, 288);
+			this.textBoxHistoricalStatusFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxHistoricalStatusFlagMin.Name = "textBoxHistoricalStatusFlagMin";
+			this.textBoxHistoricalStatusFlagMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxHistoricalStatusFlagMin.TabIndex = 185;
+			this.textBoxHistoricalStatusFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxHistoricalStatusFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxHistoricalStatusFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxHistoricalStatusFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCcdmIdentifierMax
+			// 
+			this.labelCcdmIdentifierMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelCcdmIdentifierMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelCcdmIdentifierMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCcdmIdentifierMax.AutoSize = true;
+			this.labelCcdmIdentifierMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCcdmIdentifierMax.Location = new System.Drawing.Point(675, 270);
+			this.labelCcdmIdentifierMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCcdmIdentifierMax.Name = "labelCcdmIdentifierMax";
+			this.labelCcdmIdentifierMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCcdmIdentifierMax.TabIndex = 176;
+			this.labelCcdmIdentifierMax.Text = "max.:";
+			this.labelCcdmIdentifierMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCcdmIdentifierMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCcdmIdentifierMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCcdmIdentifierMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCcdmIdentifierMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCcdmIdentifierMax
+			// 
+			this.textBoxCcdmIdentifierMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCcdmIdentifierMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCcdmIdentifierMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCcdmIdentifierMax.Location = new System.Drawing.Point(710, 270);
+			this.textBoxCcdmIdentifierMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCcdmIdentifierMax.Name = "textBoxCcdmIdentifierMax";
+			this.textBoxCcdmIdentifierMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCcdmIdentifierMax.TabIndex = 177;
+			this.textBoxCcdmIdentifierMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCcdmIdentifierMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCcdmIdentifierMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCcdmIdentifierMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCcdmIdentifierMin
+			// 
+			this.labelCcdmIdentifierMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelCcdmIdentifierMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelCcdmIdentifierMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCcdmIdentifierMin.AutoSize = true;
+			this.labelCcdmIdentifierMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCcdmIdentifierMin.Location = new System.Drawing.Point(590, 270);
+			this.labelCcdmIdentifierMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCcdmIdentifierMin.Name = "labelCcdmIdentifierMin";
+			this.labelCcdmIdentifierMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCcdmIdentifierMin.TabIndex = 174;
+			this.labelCcdmIdentifierMin.Text = "min.:";
+			this.labelCcdmIdentifierMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCcdmIdentifierMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCcdmIdentifierMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCcdmIdentifierMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCcdmIdentifierMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCcdmIdentifierMin
+			// 
+			this.textBoxCcdmIdentifierMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCcdmIdentifierMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCcdmIdentifierMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCcdmIdentifierMin.Location = new System.Drawing.Point(625, 270);
+			this.textBoxCcdmIdentifierMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCcdmIdentifierMin.Name = "textBoxCcdmIdentifierMin";
+			this.textBoxCcdmIdentifierMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCcdmIdentifierMin.TabIndex = 175;
+			this.textBoxCcdmIdentifierMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCcdmIdentifierMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCcdmIdentifierMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCcdmIdentifierMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelLightCurveAnnexMax
+			// 
+			this.labelLightCurveAnnexMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelLightCurveAnnexMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelLightCurveAnnexMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelLightCurveAnnexMax.AutoSize = true;
+			this.labelLightCurveAnnexMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelLightCurveAnnexMax.Location = new System.Drawing.Point(675, 252);
+			this.labelLightCurveAnnexMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelLightCurveAnnexMax.Name = "labelLightCurveAnnexMax";
+			this.labelLightCurveAnnexMax.Size = new System.Drawing.Size(35, 18);
+			this.labelLightCurveAnnexMax.TabIndex = 166;
+			this.labelLightCurveAnnexMax.Text = "max.:";
+			this.labelLightCurveAnnexMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelLightCurveAnnexMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelLightCurveAnnexMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelLightCurveAnnexMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelLightCurveAnnexMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxLightCurveAnnexMax
+			// 
+			this.textBoxLightCurveAnnexMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxLightCurveAnnexMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxLightCurveAnnexMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxLightCurveAnnexMax.Location = new System.Drawing.Point(710, 252);
+			this.textBoxLightCurveAnnexMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxLightCurveAnnexMax.Name = "textBoxLightCurveAnnexMax";
+			this.textBoxLightCurveAnnexMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxLightCurveAnnexMax.TabIndex = 167;
+			this.textBoxLightCurveAnnexMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxLightCurveAnnexMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxLightCurveAnnexMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxLightCurveAnnexMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelLightCurveAnnexMin
+			// 
+			this.labelLightCurveAnnexMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelLightCurveAnnexMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelLightCurveAnnexMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelLightCurveAnnexMin.AutoSize = true;
+			this.labelLightCurveAnnexMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelLightCurveAnnexMin.Location = new System.Drawing.Point(590, 252);
+			this.labelLightCurveAnnexMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelLightCurveAnnexMin.Name = "labelLightCurveAnnexMin";
+			this.labelLightCurveAnnexMin.Size = new System.Drawing.Size(35, 18);
+			this.labelLightCurveAnnexMin.TabIndex = 164;
+			this.labelLightCurveAnnexMin.Text = "min.:";
+			this.labelLightCurveAnnexMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelLightCurveAnnexMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelLightCurveAnnexMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelLightCurveAnnexMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelLightCurveAnnexMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxLightCurveAnnexMin
+			// 
+			this.textBoxLightCurveAnnexMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxLightCurveAnnexMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxLightCurveAnnexMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxLightCurveAnnexMin.Location = new System.Drawing.Point(625, 252);
+			this.textBoxLightCurveAnnexMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxLightCurveAnnexMin.Name = "textBoxLightCurveAnnexMin";
+			this.textBoxLightCurveAnnexMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxLightCurveAnnexMin.TabIndex = 165;
+			this.textBoxLightCurveAnnexMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxLightCurveAnnexMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxLightCurveAnnexMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxLightCurveAnnexMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelAdditionalDataAboutVariabilityMax
+			// 
+			this.labelAdditionalDataAboutVariabilityMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelAdditionalDataAboutVariabilityMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelAdditionalDataAboutVariabilityMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelAdditionalDataAboutVariabilityMax.AutoSize = true;
+			this.labelAdditionalDataAboutVariabilityMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelAdditionalDataAboutVariabilityMax.Location = new System.Drawing.Point(675, 234);
+			this.labelAdditionalDataAboutVariabilityMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelAdditionalDataAboutVariabilityMax.Name = "labelAdditionalDataAboutVariabilityMax";
+			this.labelAdditionalDataAboutVariabilityMax.Size = new System.Drawing.Size(35, 18);
+			this.labelAdditionalDataAboutVariabilityMax.TabIndex = 156;
+			this.labelAdditionalDataAboutVariabilityMax.Text = "max.:";
+			this.labelAdditionalDataAboutVariabilityMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelAdditionalDataAboutVariabilityMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelAdditionalDataAboutVariabilityMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelAdditionalDataAboutVariabilityMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelAdditionalDataAboutVariabilityMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxAdditionalDataAboutVariabilityMax
+			// 
+			this.textBoxAdditionalDataAboutVariabilityMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxAdditionalDataAboutVariabilityMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxAdditionalDataAboutVariabilityMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxAdditionalDataAboutVariabilityMax.Location = new System.Drawing.Point(710, 234);
+			this.textBoxAdditionalDataAboutVariabilityMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxAdditionalDataAboutVariabilityMax.Name = "textBoxAdditionalDataAboutVariabilityMax";
+			this.textBoxAdditionalDataAboutVariabilityMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxAdditionalDataAboutVariabilityMax.TabIndex = 157;
+			this.textBoxAdditionalDataAboutVariabilityMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxAdditionalDataAboutVariabilityMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxAdditionalDataAboutVariabilityMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxAdditionalDataAboutVariabilityMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelAdditionalDataAboutVariabilityMin
+			// 
+			this.labelAdditionalDataAboutVariabilityMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelAdditionalDataAboutVariabilityMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelAdditionalDataAboutVariabilityMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelAdditionalDataAboutVariabilityMin.AutoSize = true;
+			this.labelAdditionalDataAboutVariabilityMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelAdditionalDataAboutVariabilityMin.Location = new System.Drawing.Point(590, 234);
+			this.labelAdditionalDataAboutVariabilityMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelAdditionalDataAboutVariabilityMin.Name = "labelAdditionalDataAboutVariabilityMin";
+			this.labelAdditionalDataAboutVariabilityMin.Size = new System.Drawing.Size(35, 18);
+			this.labelAdditionalDataAboutVariabilityMin.TabIndex = 154;
+			this.labelAdditionalDataAboutVariabilityMin.Text = "min.:";
+			this.labelAdditionalDataAboutVariabilityMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelAdditionalDataAboutVariabilityMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelAdditionalDataAboutVariabilityMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelAdditionalDataAboutVariabilityMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelAdditionalDataAboutVariabilityMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxAdditionalDataAboutVariabilityMin
+			// 
+			this.textBoxAdditionalDataAboutVariabilityMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxAdditionalDataAboutVariabilityMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxAdditionalDataAboutVariabilityMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxAdditionalDataAboutVariabilityMin.Location = new System.Drawing.Point(625, 234);
+			this.textBoxAdditionalDataAboutVariabilityMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxAdditionalDataAboutVariabilityMin.Name = "textBoxAdditionalDataAboutVariabilityMin";
+			this.textBoxAdditionalDataAboutVariabilityMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxAdditionalDataAboutVariabilityMin.TabIndex = 155;
+			this.textBoxAdditionalDataAboutVariabilityMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxAdditionalDataAboutVariabilityMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxAdditionalDataAboutVariabilityMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxAdditionalDataAboutVariabilityMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelVariabilityTypeMax
+			// 
+			this.labelVariabilityTypeMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelVariabilityTypeMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelVariabilityTypeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelVariabilityTypeMax.AutoSize = true;
+			this.labelVariabilityTypeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelVariabilityTypeMax.Location = new System.Drawing.Point(675, 216);
+			this.labelVariabilityTypeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelVariabilityTypeMax.Name = "labelVariabilityTypeMax";
+			this.labelVariabilityTypeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelVariabilityTypeMax.TabIndex = 146;
+			this.labelVariabilityTypeMax.Text = "max.:";
+			this.labelVariabilityTypeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelVariabilityTypeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelVariabilityTypeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelVariabilityTypeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelVariabilityTypeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxVariabilityTypeMax
+			// 
+			this.textBoxVariabilityTypeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxVariabilityTypeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxVariabilityTypeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxVariabilityTypeMax.Location = new System.Drawing.Point(710, 216);
+			this.textBoxVariabilityTypeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxVariabilityTypeMax.Name = "textBoxVariabilityTypeMax";
+			this.textBoxVariabilityTypeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxVariabilityTypeMax.TabIndex = 147;
+			this.textBoxVariabilityTypeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxVariabilityTypeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxVariabilityTypeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxVariabilityTypeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelVariabilityTypeMin
+			// 
+			this.labelVariabilityTypeMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelVariabilityTypeMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelVariabilityTypeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelVariabilityTypeMin.AutoSize = true;
+			this.labelVariabilityTypeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelVariabilityTypeMin.Location = new System.Drawing.Point(590, 216);
+			this.labelVariabilityTypeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelVariabilityTypeMin.Name = "labelVariabilityTypeMin";
+			this.labelVariabilityTypeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelVariabilityTypeMin.TabIndex = 144;
+			this.labelVariabilityTypeMin.Text = "min.:";
+			this.labelVariabilityTypeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelVariabilityTypeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelVariabilityTypeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelVariabilityTypeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelVariabilityTypeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxVariabilityTypeMin
+			// 
+			this.textBoxVariabilityTypeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxVariabilityTypeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxVariabilityTypeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxVariabilityTypeMin.Location = new System.Drawing.Point(625, 216);
+			this.textBoxVariabilityTypeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxVariabilityTypeMin.Name = "textBoxVariabilityTypeMin";
+			this.textBoxVariabilityTypeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxVariabilityTypeMin.TabIndex = 145;
+			this.textBoxVariabilityTypeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxVariabilityTypeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxVariabilityTypeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxVariabilityTypeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelVariabilityPeriodMax
+			// 
+			this.labelVariabilityPeriodMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelVariabilityPeriodMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelVariabilityPeriodMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelVariabilityPeriodMax.AutoSize = true;
+			this.labelVariabilityPeriodMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelVariabilityPeriodMax.Location = new System.Drawing.Point(675, 198);
+			this.labelVariabilityPeriodMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelVariabilityPeriodMax.Name = "labelVariabilityPeriodMax";
+			this.labelVariabilityPeriodMax.Size = new System.Drawing.Size(35, 18);
+			this.labelVariabilityPeriodMax.TabIndex = 136;
+			this.labelVariabilityPeriodMax.Text = "max.:";
+			this.labelVariabilityPeriodMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelVariabilityPeriodMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelVariabilityPeriodMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelVariabilityPeriodMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelVariabilityPeriodMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxVariabilityPeriodMax
+			// 
+			this.textBoxVariabilityPeriodMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxVariabilityPeriodMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxVariabilityPeriodMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxVariabilityPeriodMax.Location = new System.Drawing.Point(710, 198);
+			this.textBoxVariabilityPeriodMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxVariabilityPeriodMax.Name = "textBoxVariabilityPeriodMax";
+			this.textBoxVariabilityPeriodMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxVariabilityPeriodMax.TabIndex = 137;
+			this.textBoxVariabilityPeriodMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxVariabilityPeriodMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxVariabilityPeriodMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxVariabilityPeriodMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelVariabilityPeriodMin
+			// 
+			this.labelVariabilityPeriodMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelVariabilityPeriodMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelVariabilityPeriodMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelVariabilityPeriodMin.AutoSize = true;
+			this.labelVariabilityPeriodMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelVariabilityPeriodMin.Location = new System.Drawing.Point(590, 198);
+			this.labelVariabilityPeriodMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelVariabilityPeriodMin.Name = "labelVariabilityPeriodMin";
+			this.labelVariabilityPeriodMin.Size = new System.Drawing.Size(35, 18);
+			this.labelVariabilityPeriodMin.TabIndex = 134;
+			this.labelVariabilityPeriodMin.Text = "min.:";
+			this.labelVariabilityPeriodMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelVariabilityPeriodMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelVariabilityPeriodMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelVariabilityPeriodMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelVariabilityPeriodMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxVariabilityPeriodMin
+			// 
+			this.textBoxVariabilityPeriodMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxVariabilityPeriodMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxVariabilityPeriodMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxVariabilityPeriodMin.Location = new System.Drawing.Point(625, 198);
+			this.textBoxVariabilityPeriodMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxVariabilityPeriodMin.Name = "textBoxVariabilityPeriodMin";
+			this.textBoxVariabilityPeriodMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxVariabilityPeriodMin.TabIndex = 135;
+			this.textBoxVariabilityPeriodMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxVariabilityPeriodMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxVariabilityPeriodMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxVariabilityPeriodMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMedianMagnitudeInHipparcosSystemAtMinimumMax
+			// 
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.Location = new System.Drawing.Point(675, 180);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.Name = "labelMedianMagnitudeInHipparcosSystemAtMinimumMax";
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.Size = new System.Drawing.Size(35, 18);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.TabIndex = 126;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.Text = "max.:";
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax
+			// 
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.Location = new System.Drawing.Point(710, 180);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.Name = "textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax";
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.TabIndex = 127;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMedianMagnitudeInHipparcosSystemAtMinimumMin
+			// 
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.Location = new System.Drawing.Point(590, 180);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.Name = "labelMedianMagnitudeInHipparcosSystemAtMinimumMin";
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.Size = new System.Drawing.Size(35, 18);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.TabIndex = 124;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.Text = "min.:";
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin
+			// 
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.Location = new System.Drawing.Point(625, 180);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.Name = "textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin";
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.TabIndex = 125;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMedianMagnitudeInHipparcosSystemAtMaximumMax
+			// 
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.Location = new System.Drawing.Point(675, 162);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.Name = "labelMedianMagnitudeInHipparcosSystemAtMaximumMax";
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.Size = new System.Drawing.Size(35, 18);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.TabIndex = 116;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.Text = "max.:";
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax
+			// 
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.Location = new System.Drawing.Point(710, 162);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.Name = "textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax";
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.TabIndex = 117;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMedianMagnitudeInHipparcosSystemAtMaximumMin
+			// 
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.Location = new System.Drawing.Point(590, 162);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.Name = "labelMedianMagnitudeInHipparcosSystemAtMaximumMin";
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.Size = new System.Drawing.Size(35, 18);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.TabIndex = 114;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.Text = "min.:";
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin
+			// 
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.Location = new System.Drawing.Point(625, 162);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.Name = "textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin";
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.TabIndex = 115;
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax
+			// 
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.AutoSize = true;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Location = new System.Drawing.Point(675, 144);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Name = "labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax";
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Size = new System.Drawing.Size(35, 18);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.TabIndex = 106;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Text = "max.:";
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax
+			// 
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Location = new System.Drawing.Point(710, 144);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Name = "textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax";
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.TabIndex = 107;
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin
+			// 
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.AutoSize = true;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Location = new System.Drawing.Point(590, 144);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Name = "labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin";
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Size = new System.Drawing.Size(35, 18);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.TabIndex = 104;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Text = "min.:";
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin
+			// 
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Location = new System.Drawing.Point(625, 144);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Name = "textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin";
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.TabIndex = 105;
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax
+			// 
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.AutoSize = true;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.Location = new System.Drawing.Point(675, 126);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.Name = "labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax";
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.Size = new System.Drawing.Size(35, 18);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.TabIndex = 96;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.Text = "max.:";
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax
+			// 
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.Location = new System.Drawing.Point(710, 126);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.Name = "textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax";
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.TabIndex = 97;
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin
+			// 
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.AutoSize = true;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Location = new System.Drawing.Point(590, 126);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Name = "labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin";
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Size = new System.Drawing.Size(35, 18);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.TabIndex = 94;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Text = "min.:";
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin
+			// 
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Location = new System.Drawing.Point(625, 126);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Name = "textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin";
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.TabIndex = 95;
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelScatterMedianMagnitudeInHipparcosSystemMax
+			// 
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.AutoSize = true;
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.Location = new System.Drawing.Point(675, 108);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.Name = "labelScatterMedianMagnitudeInHipparcosSystemMax";
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.Size = new System.Drawing.Size(35, 18);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.TabIndex = 86;
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.Text = "max.:";
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxScatterMedianMagnitudeInHipparcosSystemMax
+			// 
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.Location = new System.Drawing.Point(710, 108);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.Name = "textBoxScatterMedianMagnitudeInHipparcosSystemMax";
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.TabIndex = 87;
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelScatterMedianMagnitudeInHipparcosSystemMin
+			// 
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.AutoSize = true;
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.Location = new System.Drawing.Point(590, 108);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.Name = "labelScatterMedianMagnitudeInHipparcosSystemMin";
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.Size = new System.Drawing.Size(35, 18);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.TabIndex = 84;
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.Text = "min.:";
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelScatterMedianMagnitudeInHipparcosSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxScatterMedianMagnitudeInHipparcosSystemMin
+			// 
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.Location = new System.Drawing.Point(625, 108);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.Name = "textBoxScatterMedianMagnitudeInHipparcosSystemMin";
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.TabIndex = 85;
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxScatterMedianMagnitudeInHipparcosSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorMedianMagnitudeInHipparcosSystemMax
+			// 
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.AutoSize = true;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.Location = new System.Drawing.Point(675, 90);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.Name = "labelStandardErrorMedianMagnitudeInHipparcosSystemMax";
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.TabIndex = 69;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.Text = "max.:";
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax
+			// 
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.Location = new System.Drawing.Point(710, 90);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.Name = "textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax";
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.TabIndex = 70;
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorMedianMagnitudeInHipparcosSystemMin
+			// 
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.AutoSize = true;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.Location = new System.Drawing.Point(590, 90);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.Name = "labelStandardErrorMedianMagnitudeInHipparcosSystemMin";
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.TabIndex = 67;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.Text = "min.:";
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin
+			// 
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.Location = new System.Drawing.Point(625, 90);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.Name = "textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin";
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.TabIndex = 68;
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMedianMagnitudeInHipparcosSystemMax
+			// 
+			this.labelMedianMagnitudeInHipparcosSystemMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMedianMagnitudeInHipparcosSystemMax.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemMax.Location = new System.Drawing.Point(675, 72);
+			this.labelMedianMagnitudeInHipparcosSystemMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMedianMagnitudeInHipparcosSystemMax.Name = "labelMedianMagnitudeInHipparcosSystemMax";
+			this.labelMedianMagnitudeInHipparcosSystemMax.Size = new System.Drawing.Size(35, 18);
+			this.labelMedianMagnitudeInHipparcosSystemMax.TabIndex = 59;
+			this.labelMedianMagnitudeInHipparcosSystemMax.Text = "max.:";
+			this.labelMedianMagnitudeInHipparcosSystemMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMedianMagnitudeInHipparcosSystemMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMedianMagnitudeInHipparcosSystemMax
+			// 
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.Location = new System.Drawing.Point(710, 72);
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.Name = "textBoxMedianMagnitudeInHipparcosSystemMax";
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.TabIndex = 60;
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMedianMagnitudeInHipparcosSystemMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMedianMagnitudeInHipparcosSystemMin
+			// 
+			this.labelMedianMagnitudeInHipparcosSystemMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelMedianMagnitudeInHipparcosSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMedianMagnitudeInHipparcosSystemMin.AutoSize = true;
+			this.labelMedianMagnitudeInHipparcosSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMedianMagnitudeInHipparcosSystemMin.Location = new System.Drawing.Point(590, 72);
+			this.labelMedianMagnitudeInHipparcosSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMedianMagnitudeInHipparcosSystemMin.Name = "labelMedianMagnitudeInHipparcosSystemMin";
+			this.labelMedianMagnitudeInHipparcosSystemMin.Size = new System.Drawing.Size(35, 18);
+			this.labelMedianMagnitudeInHipparcosSystemMin.TabIndex = 57;
+			this.labelMedianMagnitudeInHipparcosSystemMin.Text = "min.:";
+			this.labelMedianMagnitudeInHipparcosSystemMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMedianMagnitudeInHipparcosSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMedianMagnitudeInHipparcosSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMedianMagnitudeInHipparcosSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMedianMagnitudeInHipparcosSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMedianMagnitudeInHipparcosSystemMin
+			// 
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.Location = new System.Drawing.Point(625, 72);
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.Name = "textBoxMedianMagnitudeInHipparcosSystemMin";
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.TabIndex = 58;
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMedianMagnitudeInHipparcosSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelFlagForCombinedMagnitudesMax
+			// 
+			this.labelFlagForCombinedMagnitudesMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelFlagForCombinedMagnitudesMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelFlagForCombinedMagnitudesMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelFlagForCombinedMagnitudesMax.AutoSize = true;
+			this.labelFlagForCombinedMagnitudesMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelFlagForCombinedMagnitudesMax.Location = new System.Drawing.Point(675, 54);
+			this.labelFlagForCombinedMagnitudesMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelFlagForCombinedMagnitudesMax.Name = "labelFlagForCombinedMagnitudesMax";
+			this.labelFlagForCombinedMagnitudesMax.Size = new System.Drawing.Size(35, 18);
+			this.labelFlagForCombinedMagnitudesMax.TabIndex = 38;
+			this.labelFlagForCombinedMagnitudesMax.Text = "max.:";
+			this.labelFlagForCombinedMagnitudesMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelFlagForCombinedMagnitudesMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelFlagForCombinedMagnitudesMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelFlagForCombinedMagnitudesMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelFlagForCombinedMagnitudesMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxFlagForCombinedMagnitudesMax
+			// 
+			this.textBoxFlagForCombinedMagnitudesMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxFlagForCombinedMagnitudesMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxFlagForCombinedMagnitudesMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxFlagForCombinedMagnitudesMax.Location = new System.Drawing.Point(710, 54);
+			this.textBoxFlagForCombinedMagnitudesMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxFlagForCombinedMagnitudesMax.Name = "textBoxFlagForCombinedMagnitudesMax";
+			this.textBoxFlagForCombinedMagnitudesMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxFlagForCombinedMagnitudesMax.TabIndex = 39;
+			this.textBoxFlagForCombinedMagnitudesMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxFlagForCombinedMagnitudesMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxFlagForCombinedMagnitudesMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxFlagForCombinedMagnitudesMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelFlagForCombinedMagnitudesMin
+			// 
+			this.labelFlagForCombinedMagnitudesMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelFlagForCombinedMagnitudesMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelFlagForCombinedMagnitudesMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelFlagForCombinedMagnitudesMin.AutoSize = true;
+			this.labelFlagForCombinedMagnitudesMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelFlagForCombinedMagnitudesMin.Location = new System.Drawing.Point(590, 54);
+			this.labelFlagForCombinedMagnitudesMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelFlagForCombinedMagnitudesMin.Name = "labelFlagForCombinedMagnitudesMin";
+			this.labelFlagForCombinedMagnitudesMin.Size = new System.Drawing.Size(35, 18);
+			this.labelFlagForCombinedMagnitudesMin.TabIndex = 36;
+			this.labelFlagForCombinedMagnitudesMin.Text = "min.:";
+			this.labelFlagForCombinedMagnitudesMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelFlagForCombinedMagnitudesMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelFlagForCombinedMagnitudesMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelFlagForCombinedMagnitudesMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelFlagForCombinedMagnitudesMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxFlagForCombinedMagnitudesMin
+			// 
+			this.textBoxFlagForCombinedMagnitudesMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxFlagForCombinedMagnitudesMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxFlagForCombinedMagnitudesMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxFlagForCombinedMagnitudesMin.Location = new System.Drawing.Point(625, 54);
+			this.textBoxFlagForCombinedMagnitudesMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxFlagForCombinedMagnitudesMin.Name = "textBoxFlagForCombinedMagnitudesMin";
+			this.textBoxFlagForCombinedMagnitudesMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxFlagForCombinedMagnitudesMin.TabIndex = 37;
+			this.textBoxFlagForCombinedMagnitudesMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxFlagForCombinedMagnitudesMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxFlagForCombinedMagnitudesMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxFlagForCombinedMagnitudesMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelSourceOfViMax
+			// 
+			this.labelSourceOfViMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelSourceOfViMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelSourceOfViMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSourceOfViMax.AutoSize = true;
+			this.labelSourceOfViMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfViMax.Location = new System.Drawing.Point(675, 36);
+			this.labelSourceOfViMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfViMax.Name = "labelSourceOfViMax";
+			this.labelSourceOfViMax.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfViMax.TabIndex = 28;
+			this.labelSourceOfViMax.Text = "max.:";
+			this.labelSourceOfViMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSourceOfViMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfViMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSourceOfViMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSourceOfViMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSourceOfViMax
+			// 
+			this.textBoxSourceOfViMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfViMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfViMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfViMax.Location = new System.Drawing.Point(710, 36);
+			this.textBoxSourceOfViMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfViMax.Name = "textBoxSourceOfViMax";
+			this.textBoxSourceOfViMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfViMax.TabIndex = 29;
+			this.textBoxSourceOfViMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfViMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSourceOfViMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSourceOfViMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelSourceOfViMin
+			// 
+			this.labelSourceOfViMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelSourceOfViMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelSourceOfViMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSourceOfViMin.AutoSize = true;
+			this.labelSourceOfViMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfViMin.Location = new System.Drawing.Point(590, 36);
+			this.labelSourceOfViMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfViMin.Name = "labelSourceOfViMin";
+			this.labelSourceOfViMin.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfViMin.TabIndex = 26;
+			this.labelSourceOfViMin.Text = "min.:";
+			this.labelSourceOfViMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSourceOfViMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfViMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSourceOfViMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSourceOfViMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSourceOfViMin
+			// 
+			this.textBoxSourceOfViMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfViMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfViMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfViMin.Location = new System.Drawing.Point(625, 36);
+			this.textBoxSourceOfViMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfViMin.Name = "textBoxSourceOfViMin";
+			this.textBoxSourceOfViMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfViMin.TabIndex = 27;
+			this.textBoxSourceOfViMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfViMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSourceOfViMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSourceOfViMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorViMax
+			// 
+			this.labelStandardErrorViMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorViMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorViMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorViMax.AutoSize = true;
+			this.labelStandardErrorViMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorViMax.Location = new System.Drawing.Point(675, 18);
+			this.labelStandardErrorViMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorViMax.Name = "labelStandardErrorViMax";
+			this.labelStandardErrorViMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorViMax.TabIndex = 18;
+			this.labelStandardErrorViMax.Text = "max.:";
+			this.labelStandardErrorViMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorViMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorViMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorViMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorViMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorViMax
+			// 
+			this.textBoxStandardErrorViMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorViMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorViMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorViMax.Location = new System.Drawing.Point(710, 18);
+			this.textBoxStandardErrorViMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorViMax.Name = "textBoxStandardErrorViMax";
+			this.textBoxStandardErrorViMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorViMax.TabIndex = 19;
+			this.textBoxStandardErrorViMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorViMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorViMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorViMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorViMin
+			// 
+			this.labelStandardErrorViMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorViMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelStandardErrorViMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorViMin.AutoSize = true;
+			this.labelStandardErrorViMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorViMin.Location = new System.Drawing.Point(590, 18);
+			this.labelStandardErrorViMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorViMin.Name = "labelStandardErrorViMin";
+			this.labelStandardErrorViMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorViMin.TabIndex = 16;
+			this.labelStandardErrorViMin.Text = "min.:";
+			this.labelStandardErrorViMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorViMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorViMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorViMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorViMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorViMin
+			// 
+			this.textBoxStandardErrorViMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorViMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorViMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorViMin.Location = new System.Drawing.Point(625, 18);
+			this.textBoxStandardErrorViMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorViMin.Name = "textBoxStandardErrorViMin";
+			this.textBoxStandardErrorViMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorViMin.TabIndex = 17;
+			this.textBoxStandardErrorViMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorViMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorViMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorViMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelColorIndexInCousinsSystemMax
+			// 
+			this.labelColorIndexInCousinsSystemMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelColorIndexInCousinsSystemMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelColorIndexInCousinsSystemMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelColorIndexInCousinsSystemMax.AutoSize = true;
+			this.labelColorIndexInCousinsSystemMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelColorIndexInCousinsSystemMax.Location = new System.Drawing.Point(675, 0);
+			this.labelColorIndexInCousinsSystemMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelColorIndexInCousinsSystemMax.Name = "labelColorIndexInCousinsSystemMax";
+			this.labelColorIndexInCousinsSystemMax.Size = new System.Drawing.Size(35, 18);
+			this.labelColorIndexInCousinsSystemMax.TabIndex = 8;
+			this.labelColorIndexInCousinsSystemMax.Text = "max.:";
+			this.labelColorIndexInCousinsSystemMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelColorIndexInCousinsSystemMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelColorIndexInCousinsSystemMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelColorIndexInCousinsSystemMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelColorIndexInCousinsSystemMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxColorIndexInCousinsSystemMax
+			// 
+			this.textBoxColorIndexInCousinsSystemMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxColorIndexInCousinsSystemMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxColorIndexInCousinsSystemMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxColorIndexInCousinsSystemMax.Location = new System.Drawing.Point(710, 0);
+			this.textBoxColorIndexInCousinsSystemMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxColorIndexInCousinsSystemMax.Name = "textBoxColorIndexInCousinsSystemMax";
+			this.textBoxColorIndexInCousinsSystemMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxColorIndexInCousinsSystemMax.TabIndex = 9;
+			this.textBoxColorIndexInCousinsSystemMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxColorIndexInCousinsSystemMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxColorIndexInCousinsSystemMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxColorIndexInCousinsSystemMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelColorIndexInCousinsSystemMin
+			// 
+			this.labelColorIndexInCousinsSystemMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelColorIndexInCousinsSystemMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelColorIndexInCousinsSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelColorIndexInCousinsSystemMin.AutoSize = true;
+			this.labelColorIndexInCousinsSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelColorIndexInCousinsSystemMin.Location = new System.Drawing.Point(590, 0);
+			this.labelColorIndexInCousinsSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelColorIndexInCousinsSystemMin.Name = "labelColorIndexInCousinsSystemMin";
+			this.labelColorIndexInCousinsSystemMin.Size = new System.Drawing.Size(35, 18);
+			this.labelColorIndexInCousinsSystemMin.TabIndex = 6;
+			this.labelColorIndexInCousinsSystemMin.Text = "min.:";
+			this.labelColorIndexInCousinsSystemMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelColorIndexInCousinsSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelColorIndexInCousinsSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelColorIndexInCousinsSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelColorIndexInCousinsSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxColorIndexInCousinsSystemMin
+			// 
+			this.textBoxColorIndexInCousinsSystemMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxColorIndexInCousinsSystemMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxColorIndexInCousinsSystemMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxColorIndexInCousinsSystemMin.Location = new System.Drawing.Point(625, 0);
+			this.textBoxColorIndexInCousinsSystemMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxColorIndexInCousinsSystemMin.Name = "textBoxColorIndexInCousinsSystemMin";
+			this.textBoxColorIndexInCousinsSystemMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxColorIndexInCousinsSystemMin.TabIndex = 7;
+			this.textBoxColorIndexInCousinsSystemMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxColorIndexInCousinsSystemMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxColorIndexInCousinsSystemMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxColorIndexInCousinsSystemMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSourceOfBvColorMin
+			// 
+			this.textBoxSourceOfBvColorMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfBvColorMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfBvColorMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfBvColorMin.Location = new System.Drawing.Point(245, 684);
+			this.textBoxSourceOfBvColorMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfBvColorMin.Name = "textBoxSourceOfBvColorMin";
+			this.textBoxSourceOfBvColorMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfBvColorMin.TabIndex = 24;
+			this.textBoxSourceOfBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSourceOfBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSourceOfBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxReferenceFlagForBtAndVtMagnitudeMax
+			// 
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Location = new System.Drawing.Point(330, 666);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Name = "textBoxReferenceFlagForBtAndVtMagnitudeMax";
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.TabIndex = 16;
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorJohnsonBvColorMax
+			// 
+			this.textBoxStandardErrorJohnsonBvColorMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorJohnsonBvColorMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorJohnsonBvColorMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorJohnsonBvColorMax.Location = new System.Drawing.Point(330, 648);
+			this.textBoxStandardErrorJohnsonBvColorMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorJohnsonBvColorMax.Name = "textBoxStandardErrorJohnsonBvColorMax";
+			this.textBoxStandardErrorJohnsonBvColorMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorJohnsonBvColorMax.TabIndex = 6;
+			this.textBoxStandardErrorJohnsonBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorJohnsonBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorJohnsonBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxReferenceFlagForBtAndVtMagnitudeMin
+			// 
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Location = new System.Drawing.Point(245, 666);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Name = "textBoxReferenceFlagForBtAndVtMagnitudeMin";
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.TabIndex = 14;
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorJohnsonBvColorMin
+			// 
+			this.textBoxStandardErrorJohnsonBvColorMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorJohnsonBvColorMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorJohnsonBvColorMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorJohnsonBvColorMin.Location = new System.Drawing.Point(245, 648);
+			this.textBoxStandardErrorJohnsonBvColorMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorJohnsonBvColorMin.Name = "textBoxStandardErrorJohnsonBvColorMin";
+			this.textBoxStandardErrorJohnsonBvColorMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorJohnsonBvColorMin.TabIndex = 4;
+			this.textBoxStandardErrorJohnsonBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorJohnsonBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorJohnsonBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxJohnsonBvColorMax
+			// 
+			this.textBoxJohnsonBvColorMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxJohnsonBvColorMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxJohnsonBvColorMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxJohnsonBvColorMax.Location = new System.Drawing.Point(330, 630);
+			this.textBoxJohnsonBvColorMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxJohnsonBvColorMax.Name = "textBoxJohnsonBvColorMax";
+			this.textBoxJohnsonBvColorMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxJohnsonBvColorMax.TabIndex = 381;
+			this.textBoxJohnsonBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxJohnsonBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxJohnsonBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorMeanVtMagnitudeMax
+			// 
+			this.textBoxStandardErrorMeanVtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Location = new System.Drawing.Point(330, 612);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Name = "textBoxStandardErrorMeanVtMagnitudeMax";
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.TabIndex = 371;
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxJohnsonBvColorMin
+			// 
+			this.textBoxJohnsonBvColorMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxJohnsonBvColorMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxJohnsonBvColorMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxJohnsonBvColorMin.Location = new System.Drawing.Point(245, 630);
+			this.textBoxJohnsonBvColorMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxJohnsonBvColorMin.Name = "textBoxJohnsonBvColorMin";
+			this.textBoxJohnsonBvColorMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxJohnsonBvColorMin.TabIndex = 379;
+			this.textBoxJohnsonBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxJohnsonBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxJohnsonBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorMeanVtMagnitudeMin
+			// 
+			this.textBoxStandardErrorMeanVtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Location = new System.Drawing.Point(245, 612);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Name = "textBoxStandardErrorMeanVtMagnitudeMin";
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.TabIndex = 369;
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMeanVtMagnitudeMax
+			// 
+			this.textBoxMeanVtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMeanVtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMeanVtMagnitudeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMeanVtMagnitudeMax.Location = new System.Drawing.Point(330, 594);
+			this.textBoxMeanVtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMeanVtMagnitudeMax.Name = "textBoxMeanVtMagnitudeMax";
+			this.textBoxMeanVtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMeanVtMagnitudeMax.TabIndex = 361;
+			this.textBoxMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMeanVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorMeanBtMagnitudeMax
+			// 
+			this.textBoxStandardErrorMeanBtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Location = new System.Drawing.Point(330, 576);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Name = "textBoxStandardErrorMeanBtMagnitudeMax";
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.TabIndex = 351;
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMeanVtMagnitudeMin
+			// 
+			this.textBoxMeanVtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMeanVtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMeanVtMagnitudeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMeanVtMagnitudeMin.Location = new System.Drawing.Point(245, 594);
+			this.textBoxMeanVtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMeanVtMagnitudeMin.Name = "textBoxMeanVtMagnitudeMin";
+			this.textBoxMeanVtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMeanVtMagnitudeMin.TabIndex = 359;
+			this.textBoxMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMeanVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorMeanBtMagnitudeMin
+			// 
+			this.textBoxStandardErrorMeanBtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Location = new System.Drawing.Point(245, 576);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Name = "textBoxStandardErrorMeanBtMagnitudeMin";
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.TabIndex = 349;
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMeanBtMagnitudeMax
+			// 
+			this.textBoxMeanBtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMeanBtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMeanBtMagnitudeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMeanBtMagnitudeMax.Location = new System.Drawing.Point(330, 558);
+			this.textBoxMeanBtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMeanBtMagnitudeMax.Name = "textBoxMeanBtMagnitudeMax";
+			this.textBoxMeanBtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMeanBtMagnitudeMax.TabIndex = 341;
+			this.textBoxMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanBtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMeanBtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMeanBtMagnitudeMin
+			// 
+			this.textBoxMeanBtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMeanBtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMeanBtMagnitudeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMeanBtMagnitudeMin.Location = new System.Drawing.Point(245, 558);
+			this.textBoxMeanBtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMeanBtMagnitudeMin.Name = "textBoxMeanBtMagnitudeMin";
+			this.textBoxMeanBtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMeanBtMagnitudeMin.TabIndex = 339;
+			this.textBoxMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanBtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMeanBtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxGoodnessOfFitParameterMin
+			// 
+			this.textBoxGoodnessOfFitParameterMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxGoodnessOfFitParameterMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxGoodnessOfFitParameterMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxGoodnessOfFitParameterMin.Location = new System.Drawing.Point(245, 540);
+			this.textBoxGoodnessOfFitParameterMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxGoodnessOfFitParameterMin.Name = "textBoxGoodnessOfFitParameterMin";
+			this.textBoxGoodnessOfFitParameterMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxGoodnessOfFitParameterMin.TabIndex = 329;
+			this.textBoxGoodnessOfFitParameterMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxGoodnessOfFitParameterMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxGoodnessOfFitParameterMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxGoodnessOfFitParameterMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxGoodnessOfFitParameterMax
+			// 
+			this.textBoxGoodnessOfFitParameterMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxGoodnessOfFitParameterMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxGoodnessOfFitParameterMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxGoodnessOfFitParameterMax.Location = new System.Drawing.Point(330, 540);
+			this.textBoxGoodnessOfFitParameterMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxGoodnessOfFitParameterMax.Name = "textBoxGoodnessOfFitParameterMax";
+			this.textBoxGoodnessOfFitParameterMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxGoodnessOfFitParameterMax.TabIndex = 331;
+			this.textBoxGoodnessOfFitParameterMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxGoodnessOfFitParameterMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxGoodnessOfFitParameterMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxGoodnessOfFitParameterMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxPercentageOfRejectedDataMin
+			// 
+			this.textBoxPercentageOfRejectedDataMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxPercentageOfRejectedDataMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxPercentageOfRejectedDataMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxPercentageOfRejectedDataMin.Location = new System.Drawing.Point(245, 522);
+			this.textBoxPercentageOfRejectedDataMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxPercentageOfRejectedDataMin.Name = "textBoxPercentageOfRejectedDataMin";
+			this.textBoxPercentageOfRejectedDataMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxPercentageOfRejectedDataMin.TabIndex = 319;
+			this.textBoxPercentageOfRejectedDataMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxPercentageOfRejectedDataMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxPercentageOfRejectedDataMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxPercentageOfRejectedDataMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxPercentageOfRejectedDataMax
+			// 
+			this.textBoxPercentageOfRejectedDataMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxPercentageOfRejectedDataMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxPercentageOfRejectedDataMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxPercentageOfRejectedDataMax.Location = new System.Drawing.Point(330, 522);
+			this.textBoxPercentageOfRejectedDataMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxPercentageOfRejectedDataMax.Name = "textBoxPercentageOfRejectedDataMax";
+			this.textBoxPercentageOfRejectedDataMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxPercentageOfRejectedDataMax.TabIndex = 321;
+			this.textBoxPercentageOfRejectedDataMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxPercentageOfRejectedDataMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxPercentageOfRejectedDataMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxPercentageOfRejectedDataMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin
+			// 
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Location = new System.Drawing.Point(245, 504);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Name = "textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin";
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.TabIndex = 302;
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax
+			// 
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Location = new System.Drawing.Point(330, 504);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Name = "textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax";
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.TabIndex = 304;
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin
+			// 
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Location = new System.Drawing.Point(245, 486);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Name = "textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin";
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.TabIndex = 292;
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax
+			// 
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Location = new System.Drawing.Point(330, 486);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Name = "textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax";
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.TabIndex = 294;
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionDeclinationByDeclinationMin
+			// 
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Location = new System.Drawing.Point(245, 468);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Name = "textBoxCorrelationProperMotionDeclinationByDeclinationMin";
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.TabIndex = 282;
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionDeclinationByDeclinationMax
+			// 
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Location = new System.Drawing.Point(330, 468);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Name = "textBoxCorrelationProperMotionDeclinationByDeclinationMax";
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.TabIndex = 284;
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionDeclinationByRightAscensionMin
+			// 
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Location = new System.Drawing.Point(245, 450);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Name = "textBoxCorrelationProperMotionDeclinationByRightAscensionMin";
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.TabIndex = 270;
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionDeclinationByRightAscensionMax
+			// 
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Location = new System.Drawing.Point(330, 450);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Name = "textBoxCorrelationProperMotionDeclinationByRightAscensionMax";
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.TabIndex = 272;
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin
+			// 
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Location = new System.Drawing.Point(245, 432);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Name = "textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin";
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.TabIndex = 260;
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax
+			// 
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Location = new System.Drawing.Point(330, 432);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Name = "textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax";
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.TabIndex = 262;
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionRightAscensionByDeclinationMin
+			// 
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Location = new System.Drawing.Point(245, 414);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Name = "textBoxCorrelationProperMotionRightAscensionByDeclinationMin";
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.TabIndex = 250;
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionRightAscensionByDeclinationMax
+			// 
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Location = new System.Drawing.Point(330, 414);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Name = "textBoxCorrelationProperMotionRightAscensionByDeclinationMax";
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.TabIndex = 252;
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionRightAscensionByRightAscensionMax
+			// 
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Location = new System.Drawing.Point(330, 396);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Name = "textBoxCorrelationProperMotionRightAscensionByRightAscensionMax";
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.TabIndex = 242;
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationProperMotionRightAscensionByRightAscensionMin
+			// 
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Location = new System.Drawing.Point(245, 396);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Name = "textBoxCorrelationProperMotionRightAscensionByRightAscensionMin";
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.TabIndex = 240;
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationTrigonomicParallaxByDeclinationMax
+			// 
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Location = new System.Drawing.Point(330, 378);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Name = "textBoxCorrelationTrigonomicParallaxByDeclinationMax";
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.TabIndex = 232;
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationTrigonomicParallaxByDeclinationMin
+			// 
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Location = new System.Drawing.Point(245, 378);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Name = "textBoxCorrelationTrigonomicParallaxByDeclinationMin";
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.TabIndex = 230;
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationTrigonomicParallaxByRightAscensionMax
+			// 
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Location = new System.Drawing.Point(330, 360);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Name = "textBoxCorrelationTrigonomicParallaxByRightAscensionMax";
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.TabIndex = 222;
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationTrigonomicParallaxByRightAscensionMin
+			// 
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Location = new System.Drawing.Point(245, 360);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Name = "textBoxCorrelationTrigonomicParallaxByRightAscensionMin";
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.TabIndex = 220;
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationDeclinationByRightAscensionMax
+			// 
+			this.textBoxCorrelationDeclinationByRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationDeclinationByRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationDeclinationByRightAscensionMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationDeclinationByRightAscensionMax.Location = new System.Drawing.Point(330, 342);
+			this.textBoxCorrelationDeclinationByRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationDeclinationByRightAscensionMax.Name = "textBoxCorrelationDeclinationByRightAscensionMax";
+			this.textBoxCorrelationDeclinationByRightAscensionMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationDeclinationByRightAscensionMax.TabIndex = 212;
+			this.textBoxCorrelationDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationDeclinationByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationDeclinationByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCorrelationDeclinationByRightAscensionMin
+			// 
+			this.textBoxCorrelationDeclinationByRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCorrelationDeclinationByRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCorrelationDeclinationByRightAscensionMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCorrelationDeclinationByRightAscensionMin.Location = new System.Drawing.Point(245, 342);
+			this.textBoxCorrelationDeclinationByRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCorrelationDeclinationByRightAscensionMin.Name = "textBoxCorrelationDeclinationByRightAscensionMin";
+			this.textBoxCorrelationDeclinationByRightAscensionMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCorrelationDeclinationByRightAscensionMin.TabIndex = 210;
+			this.textBoxCorrelationDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationDeclinationByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCorrelationDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCorrelationDeclinationByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxlStandardErrorProperMotionDeclinationMax
+			// 
+			this.textBoxlStandardErrorProperMotionDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxlStandardErrorProperMotionDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxlStandardErrorProperMotionDeclinationMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxlStandardErrorProperMotionDeclinationMax.Location = new System.Drawing.Point(330, 324);
+			this.textBoxlStandardErrorProperMotionDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxlStandardErrorProperMotionDeclinationMax.Name = "textBoxlStandardErrorProperMotionDeclinationMax";
+			this.textBoxlStandardErrorProperMotionDeclinationMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxlStandardErrorProperMotionDeclinationMax.TabIndex = 202;
+			this.textBoxlStandardErrorProperMotionDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlStandardErrorProperMotionDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxlStandardErrorProperMotionDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxlStandardErrorProperMotionDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxlStandardErrorProperMotionDeclinationMin
+			// 
+			this.textBoxlStandardErrorProperMotionDeclinationMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxlStandardErrorProperMotionDeclinationMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxlStandardErrorProperMotionDeclinationMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxlStandardErrorProperMotionDeclinationMin.Location = new System.Drawing.Point(245, 324);
+			this.textBoxlStandardErrorProperMotionDeclinationMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxlStandardErrorProperMotionDeclinationMin.Name = "textBoxlStandardErrorProperMotionDeclinationMin";
+			this.textBoxlStandardErrorProperMotionDeclinationMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxlStandardErrorProperMotionDeclinationMin.TabIndex = 200;
+			this.textBoxlStandardErrorProperMotionDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlStandardErrorProperMotionDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxlStandardErrorProperMotionDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxlStandardErrorProperMotionDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorProperMotionRightAscensionMax
+			// 
+			this.textBoxStandardErrorProperMotionRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorProperMotionRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorProperMotionRightAscensionMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorProperMotionRightAscensionMax.Location = new System.Drawing.Point(330, 306);
+			this.textBoxStandardErrorProperMotionRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorProperMotionRightAscensionMax.Name = "textBoxStandardErrorProperMotionRightAscensionMax";
+			this.textBoxStandardErrorProperMotionRightAscensionMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorProperMotionRightAscensionMax.TabIndex = 192;
+			this.textBoxStandardErrorProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorProperMotionRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorProperMotionRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorProperMotionRightAscensionMin
+			// 
+			this.textBoxStandardErrorProperMotionRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorProperMotionRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorProperMotionRightAscensionMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorProperMotionRightAscensionMin.Location = new System.Drawing.Point(245, 306);
+			this.textBoxStandardErrorProperMotionRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorProperMotionRightAscensionMin.Name = "textBoxStandardErrorProperMotionRightAscensionMin";
+			this.textBoxStandardErrorProperMotionRightAscensionMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorProperMotionRightAscensionMin.TabIndex = 190;
+			this.textBoxStandardErrorProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorProperMotionRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorProperMotionRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorTrigonomicParallaxMax
+			// 
+			this.textBoxStandardErrorTrigonomicParallaxMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorTrigonomicParallaxMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorTrigonomicParallaxMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorTrigonomicParallaxMax.Location = new System.Drawing.Point(330, 288);
+			this.textBoxStandardErrorTrigonomicParallaxMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorTrigonomicParallaxMax.Name = "textBoxStandardErrorTrigonomicParallaxMax";
+			this.textBoxStandardErrorTrigonomicParallaxMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorTrigonomicParallaxMax.TabIndex = 182;
+			this.textBoxStandardErrorTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorTrigonomicParallaxMin
+			// 
+			this.textBoxStandardErrorTrigonomicParallaxMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorTrigonomicParallaxMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorTrigonomicParallaxMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorTrigonomicParallaxMin.Location = new System.Drawing.Point(245, 288);
+			this.textBoxStandardErrorTrigonomicParallaxMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorTrigonomicParallaxMin.Name = "textBoxStandardErrorTrigonomicParallaxMin";
+			this.textBoxStandardErrorTrigonomicParallaxMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorTrigonomicParallaxMin.TabIndex = 180;
+			this.textBoxStandardErrorTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorDeclinationMax
+			// 
+			this.textBoxStandardErrorDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorDeclinationMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorDeclinationMax.Location = new System.Drawing.Point(330, 270);
+			this.textBoxStandardErrorDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorDeclinationMax.Name = "textBoxStandardErrorDeclinationMax";
+			this.textBoxStandardErrorDeclinationMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorDeclinationMax.TabIndex = 172;
+			this.textBoxStandardErrorDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorDeclinationMin
+			// 
+			this.textBoxStandardErrorDeclinationMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorDeclinationMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorDeclinationMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorDeclinationMin.Location = new System.Drawing.Point(245, 270);
+			this.textBoxStandardErrorDeclinationMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorDeclinationMin.Name = "textBoxStandardErrorDeclinationMin";
+			this.textBoxStandardErrorDeclinationMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorDeclinationMin.TabIndex = 170;
+			this.textBoxStandardErrorDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorRightAscensionMax
+			// 
+			this.textBoxStandardErrorRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorRightAscensionMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorRightAscensionMax.Location = new System.Drawing.Point(330, 252);
+			this.textBoxStandardErrorRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorRightAscensionMax.Name = "textBoxStandardErrorRightAscensionMax";
+			this.textBoxStandardErrorRightAscensionMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorRightAscensionMax.TabIndex = 162;
+			this.textBoxStandardErrorRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxStandardErrorRightAscensionMin
+			// 
+			this.textBoxStandardErrorRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxStandardErrorRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxStandardErrorRightAscensionMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxStandardErrorRightAscensionMin.Location = new System.Drawing.Point(245, 252);
+			this.textBoxStandardErrorRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxStandardErrorRightAscensionMin.Name = "textBoxStandardErrorRightAscensionMin";
+			this.textBoxStandardErrorRightAscensionMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxStandardErrorRightAscensionMin.TabIndex = 160;
+			this.textBoxStandardErrorRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxStandardErrorRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxStandardErrorRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxProperMotionDeltaMax
+			// 
+			this.textBoxProperMotionDeltaMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxProperMotionDeltaMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxProperMotionDeltaMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxProperMotionDeltaMax.Location = new System.Drawing.Point(330, 234);
+			this.textBoxProperMotionDeltaMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxProperMotionDeltaMax.Name = "textBoxProperMotionDeltaMax";
+			this.textBoxProperMotionDeltaMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxProperMotionDeltaMax.TabIndex = 152;
+			this.textBoxProperMotionDeltaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionDeltaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxProperMotionDeltaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxProperMotionDeltaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxProperMotionDeltaMin
+			// 
+			this.textBoxProperMotionDeltaMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxProperMotionDeltaMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxProperMotionDeltaMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxProperMotionDeltaMin.Location = new System.Drawing.Point(245, 234);
+			this.textBoxProperMotionDeltaMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxProperMotionDeltaMin.Name = "textBoxProperMotionDeltaMin";
+			this.textBoxProperMotionDeltaMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxProperMotionDeltaMin.TabIndex = 150;
+			this.textBoxProperMotionDeltaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionDeltaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxProperMotionDeltaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxProperMotionDeltaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxProperMotionAlphaMax
+			// 
+			this.textBoxProperMotionAlphaMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxProperMotionAlphaMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxProperMotionAlphaMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxProperMotionAlphaMax.Location = new System.Drawing.Point(330, 216);
+			this.textBoxProperMotionAlphaMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxProperMotionAlphaMax.Name = "textBoxProperMotionAlphaMax";
+			this.textBoxProperMotionAlphaMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxProperMotionAlphaMax.TabIndex = 142;
+			this.textBoxProperMotionAlphaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionAlphaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxProperMotionAlphaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxProperMotionAlphaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxProperMotionAlphaMin
+			// 
+			this.textBoxProperMotionAlphaMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxProperMotionAlphaMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxProperMotionAlphaMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxProperMotionAlphaMin.Location = new System.Drawing.Point(245, 216);
+			this.textBoxProperMotionAlphaMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxProperMotionAlphaMin.Name = "textBoxProperMotionAlphaMin";
+			this.textBoxProperMotionAlphaMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxProperMotionAlphaMin.TabIndex = 140;
+			this.textBoxProperMotionAlphaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionAlphaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxProperMotionAlphaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxProperMotionAlphaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxTrigonomicParallaxMax
+			// 
+			this.textBoxTrigonomicParallaxMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxTrigonomicParallaxMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxTrigonomicParallaxMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxTrigonomicParallaxMax.Location = new System.Drawing.Point(330, 198);
+			this.textBoxTrigonomicParallaxMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxTrigonomicParallaxMax.Name = "textBoxTrigonomicParallaxMax";
+			this.textBoxTrigonomicParallaxMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxTrigonomicParallaxMax.TabIndex = 132;
+			this.textBoxTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxTrigonomicParallaxMin
+			// 
+			this.textBoxTrigonomicParallaxMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxTrigonomicParallaxMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxTrigonomicParallaxMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxTrigonomicParallaxMin.Location = new System.Drawing.Point(245, 198);
+			this.textBoxTrigonomicParallaxMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxTrigonomicParallaxMin.Name = "textBoxTrigonomicParallaxMin";
+			this.textBoxTrigonomicParallaxMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxTrigonomicParallaxMin.TabIndex = 130;
+			this.textBoxTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxReferenceFlagForAstrometryMax
+			// 
+			this.textBoxReferenceFlagForAstrometryMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxReferenceFlagForAstrometryMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxReferenceFlagForAstrometryMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxReferenceFlagForAstrometryMax.Location = new System.Drawing.Point(330, 180);
+			this.textBoxReferenceFlagForAstrometryMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxReferenceFlagForAstrometryMax.Name = "textBoxReferenceFlagForAstrometryMax";
+			this.textBoxReferenceFlagForAstrometryMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxReferenceFlagForAstrometryMax.TabIndex = 122;
+			this.textBoxReferenceFlagForAstrometryMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForAstrometryMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxReferenceFlagForAstrometryMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxReferenceFlagForAstrometryMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxReferenceFlagForAstrometryMin
+			// 
+			this.textBoxReferenceFlagForAstrometryMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxReferenceFlagForAstrometryMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxReferenceFlagForAstrometryMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxReferenceFlagForAstrometryMin.Location = new System.Drawing.Point(245, 180);
+			this.textBoxReferenceFlagForAstrometryMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxReferenceFlagForAstrometryMin.Name = "textBoxReferenceFlagForAstrometryMin";
+			this.textBoxReferenceFlagForAstrometryMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxReferenceFlagForAstrometryMin.TabIndex = 120;
+			this.textBoxReferenceFlagForAstrometryMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForAstrometryMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxReferenceFlagForAstrometryMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxReferenceFlagForAstrometryMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxDeltaMax
+			// 
+			this.textBoxDeltaMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxDeltaMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxDeltaMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxDeltaMax.Location = new System.Drawing.Point(330, 162);
+			this.textBoxDeltaMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxDeltaMax.Name = "textBoxDeltaMax";
+			this.textBoxDeltaMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxDeltaMax.TabIndex = 112;
+			this.textBoxDeltaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeltaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxDeltaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxDeltaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxDeltaMin
+			// 
+			this.textBoxDeltaMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxDeltaMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxDeltaMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxDeltaMin.Location = new System.Drawing.Point(245, 162);
+			this.textBoxDeltaMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxDeltaMin.Name = "textBoxDeltaMin";
+			this.textBoxDeltaMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxDeltaMin.TabIndex = 110;
+			this.textBoxDeltaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeltaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxDeltaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxDeltaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxlAlphaMax
+			// 
+			this.textBoxlAlphaMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxlAlphaMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxlAlphaMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxlAlphaMax.Location = new System.Drawing.Point(330, 144);
+			this.textBoxlAlphaMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxlAlphaMax.Name = "textBoxlAlphaMax";
+			this.textBoxlAlphaMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxlAlphaMax.TabIndex = 102;
+			this.textBoxlAlphaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlAlphaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxlAlphaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxlAlphaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxlAlphaMin
+			// 
+			this.textBoxlAlphaMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxlAlphaMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxlAlphaMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxlAlphaMin.Location = new System.Drawing.Point(245, 144);
+			this.textBoxlAlphaMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxlAlphaMin.Name = "textBoxlAlphaMin";
+			this.textBoxlAlphaMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxlAlphaMin.TabIndex = 100;
+			this.textBoxlAlphaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlAlphaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxlAlphaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxlAlphaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSourceOfMagnitudeMax
+			// 
+			this.textBoxSourceOfMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfMagnitudeMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfMagnitudeMax.Location = new System.Drawing.Point(330, 126);
+			this.textBoxSourceOfMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfMagnitudeMax.Name = "textBoxSourceOfMagnitudeMax";
+			this.textBoxSourceOfMagnitudeMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfMagnitudeMax.TabIndex = 92;
+			this.textBoxSourceOfMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSourceOfMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSourceOfMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSourceOfMagnitudeMin
+			// 
+			this.textBoxSourceOfMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfMagnitudeMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfMagnitudeMin.Location = new System.Drawing.Point(245, 126);
+			this.textBoxSourceOfMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfMagnitudeMin.Name = "textBoxSourceOfMagnitudeMin";
+			this.textBoxSourceOfMagnitudeMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfMagnitudeMin.TabIndex = 90;
+			this.textBoxSourceOfMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSourceOfMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSourceOfMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCoarseVariabilityFlagMax
+			// 
+			this.textBoxCoarseVariabilityFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCoarseVariabilityFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCoarseVariabilityFlagMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCoarseVariabilityFlagMax.Location = new System.Drawing.Point(330, 108);
+			this.textBoxCoarseVariabilityFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCoarseVariabilityFlagMax.Name = "textBoxCoarseVariabilityFlagMax";
+			this.textBoxCoarseVariabilityFlagMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCoarseVariabilityFlagMax.TabIndex = 82;
+			this.textBoxCoarseVariabilityFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCoarseVariabilityFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCoarseVariabilityFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCoarseVariabilityFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxCoarseVariabilityFlagMin
+			// 
+			this.textBoxCoarseVariabilityFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxCoarseVariabilityFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxCoarseVariabilityFlagMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxCoarseVariabilityFlagMin.Location = new System.Drawing.Point(245, 108);
+			this.textBoxCoarseVariabilityFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxCoarseVariabilityFlagMin.Name = "textBoxCoarseVariabilityFlagMin";
+			this.textBoxCoarseVariabilityFlagMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxCoarseVariabilityFlagMin.TabIndex = 80;
+			this.textBoxCoarseVariabilityFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCoarseVariabilityFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxCoarseVariabilityFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxCoarseVariabilityFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMagnitudeJohnsonMax
+			// 
+			this.textBoxMagnitudeJohnsonMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMagnitudeJohnsonMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMagnitudeJohnsonMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMagnitudeJohnsonMax.Location = new System.Drawing.Point(330, 90);
+			this.textBoxMagnitudeJohnsonMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMagnitudeJohnsonMax.Name = "textBoxMagnitudeJohnsonMax";
+			this.textBoxMagnitudeJohnsonMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMagnitudeJohnsonMax.TabIndex = 65;
+			this.textBoxMagnitudeJohnsonMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMagnitudeJohnsonMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMagnitudeJohnsonMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMagnitudeJohnsonMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxMagnitudeJohnsonMin
+			// 
+			this.textBoxMagnitudeJohnsonMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxMagnitudeJohnsonMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxMagnitudeJohnsonMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxMagnitudeJohnsonMin.Location = new System.Drawing.Point(245, 90);
+			this.textBoxMagnitudeJohnsonMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxMagnitudeJohnsonMin.Name = "textBoxMagnitudeJohnsonMin";
+			this.textBoxMagnitudeJohnsonMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxMagnitudeJohnsonMin.TabIndex = 63;
+			this.textBoxMagnitudeJohnsonMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMagnitudeJohnsonMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxMagnitudeJohnsonMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxMagnitudeJohnsonMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxDeclinationMax
+			// 
+			this.textBoxDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxDeclinationMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxDeclinationMax.Location = new System.Drawing.Point(330, 72);
+			this.textBoxDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxDeclinationMax.Name = "textBoxDeclinationMax";
+			this.textBoxDeclinationMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxDeclinationMax.TabIndex = 55;
+			this.textBoxDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxDeclinationMin
+			// 
+			this.textBoxDeclinationMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxDeclinationMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxDeclinationMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxDeclinationMin.Location = new System.Drawing.Point(245, 72);
+			this.textBoxDeclinationMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxDeclinationMin.Name = "textBoxDeclinationMin";
+			this.textBoxDeclinationMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxDeclinationMin.TabIndex = 53;
+			this.textBoxDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
 			// 
 			// textBox11
 			// 
@@ -6122,1576 +6170,1531 @@
 			this.textBox11.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
 			this.textBox11.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
 			// 
-			// textBox9
-			// 
-			this.textBox9.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox9.Location = new System.Drawing.Point(245, 54);
-			this.textBox9.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox9.Name = "textBox9";
-			this.textBox9.Size = new System.Drawing.Size(50, 18);
-			this.textBox9.TabIndex = 32;
-			this.textBox9.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox9.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox9.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox9.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox8
-			// 
-			this.textBox8.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox8.Location = new System.Drawing.Point(330, 36);
-			this.textBox8.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox8.Name = "textBox8";
-			this.textBox8.Size = new System.Drawing.Size(50, 18);
-			this.textBox8.TabIndex = 24;
-			this.textBox8.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox8.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox8.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox8.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox6
-			// 
-			this.textBox6.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox6.Location = new System.Drawing.Point(245, 36);
-			this.textBox6.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(50, 18);
-			this.textBox6.TabIndex = 22;
-			this.textBox6.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox6.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox6.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox6.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox5
-			// 
-			this.textBox5.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox5.Location = new System.Drawing.Point(330, 18);
-			this.textBox5.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(50, 18);
-			this.textBox5.TabIndex = 14;
-			this.textBox5.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox5.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox5.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox5.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox3
-			// 
-			this.textBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox3.Location = new System.Drawing.Point(245, 18);
-			this.textBox3.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(50, 18);
-			this.textBox3.TabIndex = 12;
-			this.textBox3.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox3.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox3.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox3.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox2
-			// 
-			this.textBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox2.Location = new System.Drawing.Point(330, 0);
-			this.textBox2.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(50, 18);
-			this.textBox2.TabIndex = 4;
-			this.textBox2.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox2.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox2.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox2.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label1
-			// 
-			this.label1.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.label1.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.label1.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.label1.AutoSize = true;
-			this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label1.Location = new System.Drawing.Point(295, 0);
-			this.label1.Margin = new System.Windows.Forms.Padding(0);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(35, 18);
-			this.label1.TabIndex = 3;
-			this.label1.Text = "max.:";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label1.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label1.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label1.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label1.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelSourceOfBvColorData
-			// 
-			this.labelSourceOfBvColorData.AccessibleDescription = "Source of B-V from Ground or Tycho data";
-			this.labelSourceOfBvColorData.AccessibleName = "Source of B-V from Ground or Tycho data";
-			this.labelSourceOfBvColorData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelSourceOfBvColorData.AutoSize = true;
-			this.labelSourceOfBvColorData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelSourceOfBvColorData.Location = new System.Drawing.Point(210, 684);
-			this.labelSourceOfBvColorData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelSourceOfBvColorData.Name = "labelSourceOfBvColorData";
-			this.labelSourceOfBvColorData.Size = new System.Drawing.Size(35, 18);
-			this.labelSourceOfBvColorData.TabIndex = 23;
-			this.labelSourceOfBvColorData.Text = "min.:";
-			this.labelSourceOfBvColorData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelSourceOfBvColorData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelSourceOfBvColorData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelSourceOfBvColorData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelSourceOfBvColorData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelReferenceFlagForBtAndVtMagnitudeData
-			// 
-			this.labelReferenceFlagForBtAndVtMagnitudeData.AccessibleDescription = "Reference flag for BT and VTmag data";
-			this.labelReferenceFlagForBtAndVtMagnitudeData.AccessibleName = "Reference flag for BT and VTmag data";
-			this.labelReferenceFlagForBtAndVtMagnitudeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelReferenceFlagForBtAndVtMagnitudeData.AutoSize = true;
-			this.labelReferenceFlagForBtAndVtMagnitudeData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelReferenceFlagForBtAndVtMagnitudeData.Location = new System.Drawing.Point(210, 666);
-			this.labelReferenceFlagForBtAndVtMagnitudeData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelReferenceFlagForBtAndVtMagnitudeData.Name = "labelReferenceFlagForBtAndVtMagnitudeData";
-			this.labelReferenceFlagForBtAndVtMagnitudeData.Size = new System.Drawing.Size(35, 18);
-			this.labelReferenceFlagForBtAndVtMagnitudeData.TabIndex = 13;
-			this.labelReferenceFlagForBtAndVtMagnitudeData.Text = "min.:";
-			this.labelReferenceFlagForBtAndVtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelReferenceFlagForBtAndVtMagnitudeData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelReferenceFlagForBtAndVtMagnitudeData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelReferenceFlagForBtAndVtMagnitudeData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelReferenceFlagForBtAndVtMagnitudeData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelStandardErrorJohnsonBvColorData
-			// 
-			this.labelStandardErrorJohnsonBvColorData.AccessibleDescription = "Standard error on B-V data";
-			this.labelStandardErrorJohnsonBvColorData.AccessibleName = "Standard error on B-V data";
-			this.labelStandardErrorJohnsonBvColorData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelStandardErrorJohnsonBvColorData.AutoSize = true;
-			this.labelStandardErrorJohnsonBvColorData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelStandardErrorJohnsonBvColorData.Location = new System.Drawing.Point(210, 648);
-			this.labelStandardErrorJohnsonBvColorData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelStandardErrorJohnsonBvColorData.Name = "labelStandardErrorJohnsonBvColorData";
-			this.labelStandardErrorJohnsonBvColorData.Size = new System.Drawing.Size(35, 18);
-			this.labelStandardErrorJohnsonBvColorData.TabIndex = 3;
-			this.labelStandardErrorJohnsonBvColorData.Text = "min.:";
-			this.labelStandardErrorJohnsonBvColorData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorJohnsonBvColorData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelStandardErrorJohnsonBvColorData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorJohnsonBvColorData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelStandardErrorJohnsonBvColorData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelJohnsonBvColorData
-			// 
-			this.labelJohnsonBvColorData.AccessibleDescription = "Johnson B-V colour data";
-			this.labelJohnsonBvColorData.AccessibleName = "Johnson B-V colour data";
-			this.labelJohnsonBvColorData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelJohnsonBvColorData.AutoSize = true;
-			this.labelJohnsonBvColorData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelJohnsonBvColorData.Location = new System.Drawing.Point(210, 630);
-			this.labelJohnsonBvColorData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelJohnsonBvColorData.Name = "labelJohnsonBvColorData";
-			this.labelJohnsonBvColorData.Size = new System.Drawing.Size(35, 18);
-			this.labelJohnsonBvColorData.TabIndex = 378;
-			this.labelJohnsonBvColorData.Text = "min.:";
-			this.labelJohnsonBvColorData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelJohnsonBvColorData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelJohnsonBvColorData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelJohnsonBvColorData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelJohnsonBvColorData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelStandardErrorMeanVtMagnitudeData
-			// 
-			this.labelStandardErrorMeanVtMagnitudeData.AccessibleDescription = "Standard error on VTmag data";
-			this.labelStandardErrorMeanVtMagnitudeData.AccessibleName = "Standard error on VTmag data";
-			this.labelStandardErrorMeanVtMagnitudeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelStandardErrorMeanVtMagnitudeData.AutoSize = true;
-			this.labelStandardErrorMeanVtMagnitudeData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelStandardErrorMeanVtMagnitudeData.Location = new System.Drawing.Point(210, 612);
-			this.labelStandardErrorMeanVtMagnitudeData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelStandardErrorMeanVtMagnitudeData.Name = "labelStandardErrorMeanVtMagnitudeData";
-			this.labelStandardErrorMeanVtMagnitudeData.Size = new System.Drawing.Size(35, 18);
-			this.labelStandardErrorMeanVtMagnitudeData.TabIndex = 368;
-			this.labelStandardErrorMeanVtMagnitudeData.Text = "min.:";
-			this.labelStandardErrorMeanVtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorMeanVtMagnitudeData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelStandardErrorMeanVtMagnitudeData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorMeanVtMagnitudeData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelStandardErrorMeanVtMagnitudeData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelMeanVtMagnitudeData
-			// 
-			this.labelMeanVtMagnitudeData.AccessibleDescription = "Mean VT magnitude data";
-			this.labelMeanVtMagnitudeData.AccessibleName = "Mean VT magnitude data";
-			this.labelMeanVtMagnitudeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelMeanVtMagnitudeData.AutoSize = true;
-			this.labelMeanVtMagnitudeData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelMeanVtMagnitudeData.Location = new System.Drawing.Point(210, 594);
-			this.labelMeanVtMagnitudeData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelMeanVtMagnitudeData.Name = "labelMeanVtMagnitudeData";
-			this.labelMeanVtMagnitudeData.Size = new System.Drawing.Size(35, 18);
-			this.labelMeanVtMagnitudeData.TabIndex = 358;
-			this.labelMeanVtMagnitudeData.Text = "min.:";
-			this.labelMeanVtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelMeanVtMagnitudeData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelMeanVtMagnitudeData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMeanVtMagnitudeData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelMeanVtMagnitudeData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelStandardErrorMeanBtMagnitudeData
-			// 
-			this.labelStandardErrorMeanBtMagnitudeData.AccessibleDescription = "Standard error on BTmag data";
-			this.labelStandardErrorMeanBtMagnitudeData.AccessibleName = "Standard error on BTmag data";
-			this.labelStandardErrorMeanBtMagnitudeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelStandardErrorMeanBtMagnitudeData.AutoSize = true;
-			this.labelStandardErrorMeanBtMagnitudeData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelStandardErrorMeanBtMagnitudeData.Location = new System.Drawing.Point(210, 576);
-			this.labelStandardErrorMeanBtMagnitudeData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelStandardErrorMeanBtMagnitudeData.Name = "labelStandardErrorMeanBtMagnitudeData";
-			this.labelStandardErrorMeanBtMagnitudeData.Size = new System.Drawing.Size(35, 18);
-			this.labelStandardErrorMeanBtMagnitudeData.TabIndex = 348;
-			this.labelStandardErrorMeanBtMagnitudeData.Text = "min.:";
-			this.labelStandardErrorMeanBtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorMeanBtMagnitudeData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelStandardErrorMeanBtMagnitudeData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorMeanBtMagnitudeData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelStandardErrorMeanBtMagnitudeData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelMeanBtMagnitudeData
-			// 
-			this.labelMeanBtMagnitudeData.AccessibleDescription = "Mean BT magnitude data";
-			this.labelMeanBtMagnitudeData.AccessibleName = "Mean BT magnitude data";
-			this.labelMeanBtMagnitudeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelMeanBtMagnitudeData.AutoSize = true;
-			this.labelMeanBtMagnitudeData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelMeanBtMagnitudeData.Location = new System.Drawing.Point(210, 558);
-			this.labelMeanBtMagnitudeData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelMeanBtMagnitudeData.Name = "labelMeanBtMagnitudeData";
-			this.labelMeanBtMagnitudeData.Size = new System.Drawing.Size(35, 18);
-			this.labelMeanBtMagnitudeData.TabIndex = 338;
-			this.labelMeanBtMagnitudeData.Text = "min.:";
-			this.labelMeanBtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelMeanBtMagnitudeData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelMeanBtMagnitudeData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMeanBtMagnitudeData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelMeanBtMagnitudeData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelGoodnessOfFitParameterData
-			// 
-			this.labelGoodnessOfFitParameterData.AccessibleDescription = "Goodness-of-fit parameter data";
-			this.labelGoodnessOfFitParameterData.AccessibleName = "Goodness-of-fit parameter data";
-			this.labelGoodnessOfFitParameterData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelGoodnessOfFitParameterData.AutoSize = true;
-			this.labelGoodnessOfFitParameterData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelGoodnessOfFitParameterData.Location = new System.Drawing.Point(210, 540);
-			this.labelGoodnessOfFitParameterData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelGoodnessOfFitParameterData.Name = "labelGoodnessOfFitParameterData";
-			this.labelGoodnessOfFitParameterData.Size = new System.Drawing.Size(35, 18);
-			this.labelGoodnessOfFitParameterData.TabIndex = 328;
-			this.labelGoodnessOfFitParameterData.Text = "min.:";
-			this.labelGoodnessOfFitParameterData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelGoodnessOfFitParameterData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelGoodnessOfFitParameterData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelGoodnessOfFitParameterData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelGoodnessOfFitParameterData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelPercentageOfRejectedDataData
-			// 
-			this.labelPercentageOfRejectedDataData.AccessibleDescription = "Percentage of rejected data";
-			this.labelPercentageOfRejectedDataData.AccessibleName = "Percentage of rejected data";
-			this.labelPercentageOfRejectedDataData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelPercentageOfRejectedDataData.AutoSize = true;
-			this.labelPercentageOfRejectedDataData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelPercentageOfRejectedDataData.Location = new System.Drawing.Point(210, 522);
-			this.labelPercentageOfRejectedDataData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelPercentageOfRejectedDataData.Name = "labelPercentageOfRejectedDataData";
-			this.labelPercentageOfRejectedDataData.Size = new System.Drawing.Size(35, 18);
-			this.labelPercentageOfRejectedDataData.TabIndex = 318;
-			this.labelPercentageOfRejectedDataData.Text = "min.:";
-			this.labelPercentageOfRejectedDataData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelPercentageOfRejectedDataData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelPercentageOfRejectedDataData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelPercentageOfRejectedDataData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelPercentageOfRejectedDataData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData
-			// 
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.AccessibleDescription = "Correlation, pmDE/pmRA data";
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.AccessibleName = "Correlation, pmDE/pmRA data";
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.AutoSize = true;
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Location = new System.Drawing.Point(210, 504);
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Name = "labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData";
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Size = new System.Drawing.Size(35, 18);
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.TabIndex = 301;
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Text = "min.:";
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCorrelationProperMotionDeclinationByTrigonomicParallaxData
-			// 
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleDescription = "Correlation, pmDE/Plx data";
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleName = "Correlation, pmDE/Plx data";
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AutoSize = true;
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Location = new System.Drawing.Point(210, 486);
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Name = "labelCorrelationProperMotionDeclinationByTrigonomicParallaxData";
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Size = new System.Drawing.Size(35, 18);
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.TabIndex = 291;
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Text = "min.:";
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCorrelationProperMotionDeclinationByDeclinationData
-			// 
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleDescription = "Correlation, pmDE/DE data";
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleName = "Correlation, pmDE/DE data";
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.AutoSize = true;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Location = new System.Drawing.Point(210, 468);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Name = "labelCorrelationProperMotionDeclinationByDeclinationData";
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Size = new System.Drawing.Size(35, 18);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.TabIndex = 281;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Text = "min.:";
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCorrelationProperMotionDeclinationByRightAscensionData
-			// 
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.AccessibleDescription = "Correlation, pmDE/RA*cos(delta) data";
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.AccessibleName = "Correlation, pmDE/RA*cos(delta) data";
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.AutoSize = true;
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Location = new System.Drawing.Point(210, 450);
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Name = "labelCorrelationProperMotionDeclinationByRightAscensionData";
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Size = new System.Drawing.Size(35, 18);
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.TabIndex = 269;
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Text = "min.:";
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData
-			// 
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.AccessibleDescription = "Correlation, pmRA/Plx data";
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.AccessibleName = "Correlation, pmRA/Plx data";
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.AutoSize = true;
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Location = new System.Drawing.Point(210, 432);
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Name = "labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData";
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Size = new System.Drawing.Size(35, 18);
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.TabIndex = 259;
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Text = "min.:";
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCorrelationProperMotionRightAscensionByDeclinationData
-			// 
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.AccessibleDescription = "Correlation, pmRA/DE data";
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.AccessibleName = "Correlation, pmRA/DE data";
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.AutoSize = true;
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Location = new System.Drawing.Point(210, 414);
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Name = "labelCorrelationProperMotionRightAscensionByDeclinationData";
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Size = new System.Drawing.Size(35, 18);
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.TabIndex = 249;
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Text = "min.:";
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCorrelationProperMotionRightAscensionByRightAscensionData
-			// 
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.AccessibleDescription = "Correlation, pmRA/RA*cos(delta) data";
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.AccessibleName = "Correlation, pmRA/RA*cos(delta) data";
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.AutoSize = true;
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Location = new System.Drawing.Point(210, 396);
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Name = "labelCorrelationProperMotionRightAscensionByRightAscensionData";
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Size = new System.Drawing.Size(35, 18);
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.TabIndex = 239;
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Text = "min.:";
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCorrelationTrigonomicParallaxByDeclinationData
-			// 
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.AccessibleDescription = "Correlation, Plx/DE data";
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.AccessibleName = "Correlation, Plx/DE data";
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.AutoSize = true;
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.Location = new System.Drawing.Point(210, 378);
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.Name = "labelCorrelationTrigonomicParallaxByDeclinationData";
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.Size = new System.Drawing.Size(35, 18);
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.TabIndex = 229;
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.Text = "min.:";
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCorrelationTrigonomicParallaxByRightAscensionData
-			// 
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.AccessibleDescription = "Correlation, Plx/RA*cos(delta) data";
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.AccessibleName = "Correlation, Plx/RA*cos(delta) data";
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.AutoSize = true;
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Location = new System.Drawing.Point(210, 360);
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Name = "labelCorrelationTrigonomicParallaxByRightAscensionData";
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Size = new System.Drawing.Size(35, 18);
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.TabIndex = 219;
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Text = "min.:";
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCorrelationDeclinationByRightAscensionData
-			// 
-			this.labelCorrelationDeclinationByRightAscensionData.AccessibleDescription = "Correlation, DE/RA*cos(delta) data";
-			this.labelCorrelationDeclinationByRightAscensionData.AccessibleName = "Correlation, DE/RA*cos(delta) data";
-			this.labelCorrelationDeclinationByRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCorrelationDeclinationByRightAscensionData.AutoSize = true;
-			this.labelCorrelationDeclinationByRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCorrelationDeclinationByRightAscensionData.Location = new System.Drawing.Point(210, 342);
-			this.labelCorrelationDeclinationByRightAscensionData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCorrelationDeclinationByRightAscensionData.Name = "labelCorrelationDeclinationByRightAscensionData";
-			this.labelCorrelationDeclinationByRightAscensionData.Size = new System.Drawing.Size(35, 18);
-			this.labelCorrelationDeclinationByRightAscensionData.TabIndex = 209;
-			this.labelCorrelationDeclinationByRightAscensionData.Text = "min.:";
-			this.labelCorrelationDeclinationByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationDeclinationByRightAscensionData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCorrelationDeclinationByRightAscensionData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationDeclinationByRightAscensionData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCorrelationDeclinationByRightAscensionData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelStandardErrorProperMotionDeclinationData
-			// 
-			this.labelStandardErrorProperMotionDeclinationData.AccessibleDescription = "Standard error in pmDE data";
-			this.labelStandardErrorProperMotionDeclinationData.AccessibleName = "Standard error in pmDE data";
-			this.labelStandardErrorProperMotionDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelStandardErrorProperMotionDeclinationData.AutoSize = true;
-			this.labelStandardErrorProperMotionDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelStandardErrorProperMotionDeclinationData.Location = new System.Drawing.Point(210, 324);
-			this.labelStandardErrorProperMotionDeclinationData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelStandardErrorProperMotionDeclinationData.Name = "labelStandardErrorProperMotionDeclinationData";
-			this.labelStandardErrorProperMotionDeclinationData.Size = new System.Drawing.Size(35, 18);
-			this.labelStandardErrorProperMotionDeclinationData.TabIndex = 199;
-			this.labelStandardErrorProperMotionDeclinationData.Text = "min.:";
-			this.labelStandardErrorProperMotionDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorProperMotionDeclinationData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelStandardErrorProperMotionDeclinationData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorProperMotionDeclinationData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelStandardErrorProperMotionDeclinationData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelStandardErrorProperMotionRightAscensionData
-			// 
-			this.labelStandardErrorProperMotionRightAscensionData.AccessibleDescription = "Standard error in pmRA data";
-			this.labelStandardErrorProperMotionRightAscensionData.AccessibleName = "Standard error in pmRA data";
-			this.labelStandardErrorProperMotionRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelStandardErrorProperMotionRightAscensionData.AutoSize = true;
-			this.labelStandardErrorProperMotionRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelStandardErrorProperMotionRightAscensionData.Location = new System.Drawing.Point(210, 306);
-			this.labelStandardErrorProperMotionRightAscensionData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelStandardErrorProperMotionRightAscensionData.Name = "labelStandardErrorProperMotionRightAscensionData";
-			this.labelStandardErrorProperMotionRightAscensionData.Size = new System.Drawing.Size(35, 18);
-			this.labelStandardErrorProperMotionRightAscensionData.TabIndex = 189;
-			this.labelStandardErrorProperMotionRightAscensionData.Text = "min.:";
-			this.labelStandardErrorProperMotionRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorProperMotionRightAscensionData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelStandardErrorProperMotionRightAscensionData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorProperMotionRightAscensionData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelStandardErrorProperMotionRightAscensionData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelStandardErrorTrigonomicParallaxData
-			// 
-			this.labelStandardErrorTrigonomicParallaxData.AccessibleDescription = "Standard error in Plx data";
-			this.labelStandardErrorTrigonomicParallaxData.AccessibleName = "Standard error in Plx data";
-			this.labelStandardErrorTrigonomicParallaxData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelStandardErrorTrigonomicParallaxData.AutoSize = true;
-			this.labelStandardErrorTrigonomicParallaxData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelStandardErrorTrigonomicParallaxData.Location = new System.Drawing.Point(210, 288);
-			this.labelStandardErrorTrigonomicParallaxData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelStandardErrorTrigonomicParallaxData.Name = "labelStandardErrorTrigonomicParallaxData";
-			this.labelStandardErrorTrigonomicParallaxData.Size = new System.Drawing.Size(35, 18);
-			this.labelStandardErrorTrigonomicParallaxData.TabIndex = 179;
-			this.labelStandardErrorTrigonomicParallaxData.Text = "min.:";
-			this.labelStandardErrorTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorTrigonomicParallaxData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelStandardErrorTrigonomicParallaxData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelStandardErrorTrigonomicParallaxData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelStandardErrorDeclinationData
-			// 
-			this.labelStandardErrorDeclinationData.AccessibleDescription = "Standard error in DE data";
-			this.labelStandardErrorDeclinationData.AccessibleName = "Standard error in DE data";
-			this.labelStandardErrorDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelStandardErrorDeclinationData.AutoSize = true;
-			this.labelStandardErrorDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelStandardErrorDeclinationData.Location = new System.Drawing.Point(210, 270);
-			this.labelStandardErrorDeclinationData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelStandardErrorDeclinationData.Name = "labelStandardErrorDeclinationData";
-			this.labelStandardErrorDeclinationData.Size = new System.Drawing.Size(35, 18);
-			this.labelStandardErrorDeclinationData.TabIndex = 169;
-			this.labelStandardErrorDeclinationData.Text = "min.:";
-			this.labelStandardErrorDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorDeclinationData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelStandardErrorDeclinationData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorDeclinationData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelStandardErrorDeclinationData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelStandardErrorRightAscensionData
-			// 
-			this.labelStandardErrorRightAscensionData.AccessibleDescription = "Standard error in RA*cos(DEdeg) data";
-			this.labelStandardErrorRightAscensionData.AccessibleName = "Standard error in RA*cos(DEdeg) data";
-			this.labelStandardErrorRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelStandardErrorRightAscensionData.AutoSize = true;
-			this.labelStandardErrorRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelStandardErrorRightAscensionData.Location = new System.Drawing.Point(210, 252);
-			this.labelStandardErrorRightAscensionData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelStandardErrorRightAscensionData.Name = "labelStandardErrorRightAscensionData";
-			this.labelStandardErrorRightAscensionData.Size = new System.Drawing.Size(35, 18);
-			this.labelStandardErrorRightAscensionData.TabIndex = 159;
-			this.labelStandardErrorRightAscensionData.Text = "min.:";
-			this.labelStandardErrorRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorRightAscensionData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelStandardErrorRightAscensionData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorRightAscensionData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelStandardErrorRightAscensionData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelProperMotionDeltaData
-			// 
-			this.labelProperMotionDeltaData.AccessibleDescription = "Proper motion mu_delta, ICRS data";
-			this.labelProperMotionDeltaData.AccessibleName = "Proper motion mu_delta, ICRS data";
-			this.labelProperMotionDeltaData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelProperMotionDeltaData.AutoSize = true;
-			this.labelProperMotionDeltaData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelProperMotionDeltaData.Location = new System.Drawing.Point(210, 234);
-			this.labelProperMotionDeltaData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelProperMotionDeltaData.Name = "labelProperMotionDeltaData";
-			this.labelProperMotionDeltaData.Size = new System.Drawing.Size(35, 18);
-			this.labelProperMotionDeltaData.TabIndex = 149;
-			this.labelProperMotionDeltaData.Text = "min.:";
-			this.labelProperMotionDeltaData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelProperMotionDeltaData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelProperMotionDeltaData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProperMotionDeltaData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelProperMotionDeltaData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelProperMotionAlphaData
-			// 
-			this.labelProperMotionAlphaData.AccessibleDescription = "Proper motion mu_alpha.cos(delta), ICRS data";
-			this.labelProperMotionAlphaData.AccessibleName = "Proper motion mu_alpha.cos(delta), ICRS data";
-			this.labelProperMotionAlphaData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelProperMotionAlphaData.AutoSize = true;
-			this.labelProperMotionAlphaData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelProperMotionAlphaData.Location = new System.Drawing.Point(210, 216);
-			this.labelProperMotionAlphaData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelProperMotionAlphaData.Name = "labelProperMotionAlphaData";
-			this.labelProperMotionAlphaData.Size = new System.Drawing.Size(35, 18);
-			this.labelProperMotionAlphaData.TabIndex = 139;
-			this.labelProperMotionAlphaData.Text = "min.:";
-			this.labelProperMotionAlphaData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelProperMotionAlphaData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelProperMotionAlphaData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProperMotionAlphaData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelProperMotionAlphaData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelTrigonomicParallaxData
-			// 
-			this.labelTrigonomicParallaxData.AccessibleDescription = "Trigonometric parallax data";
-			this.labelTrigonomicParallaxData.AccessibleName = "Trigonometric parallax data";
-			this.labelTrigonomicParallaxData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelTrigonomicParallaxData.AutoSize = true;
-			this.labelTrigonomicParallaxData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelTrigonomicParallaxData.Location = new System.Drawing.Point(210, 198);
-			this.labelTrigonomicParallaxData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelTrigonomicParallaxData.Name = "labelTrigonomicParallaxData";
-			this.labelTrigonomicParallaxData.Size = new System.Drawing.Size(35, 18);
-			this.labelTrigonomicParallaxData.TabIndex = 129;
-			this.labelTrigonomicParallaxData.Text = "min.:";
-			this.labelTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelTrigonomicParallaxData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelTrigonomicParallaxData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelTrigonomicParallaxData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelReferenceFlagForAstrometryData
-			// 
-			this.labelReferenceFlagForAstrometryData.AccessibleDescription = "Reference flag for astrometry data";
-			this.labelReferenceFlagForAstrometryData.AccessibleName = "Reference flag for astrometry data";
-			this.labelReferenceFlagForAstrometryData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelReferenceFlagForAstrometryData.AutoSize = true;
-			this.labelReferenceFlagForAstrometryData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelReferenceFlagForAstrometryData.Location = new System.Drawing.Point(210, 180);
-			this.labelReferenceFlagForAstrometryData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelReferenceFlagForAstrometryData.Name = "labelReferenceFlagForAstrometryData";
-			this.labelReferenceFlagForAstrometryData.Size = new System.Drawing.Size(35, 18);
-			this.labelReferenceFlagForAstrometryData.TabIndex = 119;
-			this.labelReferenceFlagForAstrometryData.Text = "min.:";
-			this.labelReferenceFlagForAstrometryData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelReferenceFlagForAstrometryData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelReferenceFlagForAstrometryData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelReferenceFlagForAstrometryData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelReferenceFlagForAstrometryData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelDeltaData
-			// 
-			this.labelDeltaData.AccessibleDescription = "delta, degrees (ICRS, Epoch=J1991.25) data";
-			this.labelDeltaData.AccessibleName = "delta, degrees (ICRS, Epoch=J1991.25) data";
-			this.labelDeltaData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelDeltaData.AutoSize = true;
-			this.labelDeltaData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelDeltaData.Location = new System.Drawing.Point(210, 162);
-			this.labelDeltaData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelDeltaData.Name = "labelDeltaData";
-			this.labelDeltaData.Size = new System.Drawing.Size(35, 18);
-			this.labelDeltaData.TabIndex = 109;
-			this.labelDeltaData.Text = "min.:";
-			this.labelDeltaData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelDeltaData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelDeltaData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelDeltaData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelDeltaData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelAlphaData
-			// 
-			this.labelAlphaData.AccessibleDescription = "alpha, degrees (ICRS, Epoch=J1991.25) data";
-			this.labelAlphaData.AccessibleName = "alpha, degrees (ICRS, Epoch=J1991.25) data";
-			this.labelAlphaData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelAlphaData.AutoSize = true;
-			this.labelAlphaData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelAlphaData.Location = new System.Drawing.Point(210, 144);
-			this.labelAlphaData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelAlphaData.Name = "labelAlphaData";
-			this.labelAlphaData.Size = new System.Drawing.Size(35, 18);
-			this.labelAlphaData.TabIndex = 99;
-			this.labelAlphaData.Text = "min.:";
-			this.labelAlphaData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelAlphaData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelAlphaData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelAlphaData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelAlphaData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelSourceOfMagnitudeData
-			// 
-			this.labelSourceOfMagnitudeData.AccessibleDescription = "Source of magnitude data";
-			this.labelSourceOfMagnitudeData.AccessibleName = "Source of magnitude data";
-			this.labelSourceOfMagnitudeData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelSourceOfMagnitudeData.AutoSize = true;
-			this.labelSourceOfMagnitudeData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelSourceOfMagnitudeData.Location = new System.Drawing.Point(210, 126);
-			this.labelSourceOfMagnitudeData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelSourceOfMagnitudeData.Name = "labelSourceOfMagnitudeData";
-			this.labelSourceOfMagnitudeData.Size = new System.Drawing.Size(35, 18);
-			this.labelSourceOfMagnitudeData.TabIndex = 89;
-			this.labelSourceOfMagnitudeData.Text = "min.:";
-			this.labelSourceOfMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelSourceOfMagnitudeData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelSourceOfMagnitudeData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelSourceOfMagnitudeData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelSourceOfMagnitudeData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCoarseVariabilityFlagData
-			// 
-			this.labelCoarseVariabilityFlagData.AccessibleDescription = "Coarse variability flag data";
-			this.labelCoarseVariabilityFlagData.AccessibleName = "Coarse variability flag data";
-			this.labelCoarseVariabilityFlagData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCoarseVariabilityFlagData.AutoSize = true;
-			this.labelCoarseVariabilityFlagData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCoarseVariabilityFlagData.Location = new System.Drawing.Point(210, 108);
-			this.labelCoarseVariabilityFlagData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCoarseVariabilityFlagData.Name = "labelCoarseVariabilityFlagData";
-			this.labelCoarseVariabilityFlagData.Size = new System.Drawing.Size(35, 18);
-			this.labelCoarseVariabilityFlagData.TabIndex = 79;
-			this.labelCoarseVariabilityFlagData.Text = "min.:";
-			this.labelCoarseVariabilityFlagData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCoarseVariabilityFlagData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCoarseVariabilityFlagData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCoarseVariabilityFlagData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCoarseVariabilityFlagData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelMagnitudeJohnsonData
-			// 
-			this.labelMagnitudeJohnsonData.AccessibleDescription = "Magnitude in Johnson V data";
-			this.labelMagnitudeJohnsonData.AccessibleName = "Magnitude in Johnson V data";
-			this.labelMagnitudeJohnsonData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelMagnitudeJohnsonData.AutoSize = true;
-			this.labelMagnitudeJohnsonData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelMagnitudeJohnsonData.Location = new System.Drawing.Point(210, 90);
-			this.labelMagnitudeJohnsonData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelMagnitudeJohnsonData.Name = "labelMagnitudeJohnsonData";
-			this.labelMagnitudeJohnsonData.Size = new System.Drawing.Size(35, 18);
-			this.labelMagnitudeJohnsonData.TabIndex = 62;
-			this.labelMagnitudeJohnsonData.Text = "min.:";
-			this.labelMagnitudeJohnsonData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelMagnitudeJohnsonData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelMagnitudeJohnsonData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMagnitudeJohnsonData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelMagnitudeJohnsonData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelDeclinationData
-			// 
-			this.labelDeclinationData.AccessibleDescription = "Declination in deg \' \", ICRS (J1991.25) data";
-			this.labelDeclinationData.AccessibleName = "Declination in deg \' \", ICRS (J1991.25) data";
-			this.labelDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelDeclinationData.AutoSize = true;
-			this.labelDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelDeclinationData.Location = new System.Drawing.Point(210, 72);
-			this.labelDeclinationData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelDeclinationData.Name = "labelDeclinationData";
-			this.labelDeclinationData.Size = new System.Drawing.Size(35, 18);
-			this.labelDeclinationData.TabIndex = 52;
-			this.labelDeclinationData.Text = "min.:";
-			this.labelDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelDeclinationData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelDeclinationData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelDeclinationData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelDeclinationData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelRightAscensionData
-			// 
-			this.labelRightAscensionData.AccessibleDescription = "Right ascension in h m s, ICRS (J1991.25) data";
-			this.labelRightAscensionData.AccessibleName = "Right ascension in h m s, ICRS (J1991.25) data";
-			this.labelRightAscensionData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelRightAscensionData.AutoSize = true;
-			this.labelRightAscensionData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelRightAscensionData.Location = new System.Drawing.Point(210, 54);
-			this.labelRightAscensionData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelRightAscensionData.Name = "labelRightAscensionData";
-			this.labelRightAscensionData.Size = new System.Drawing.Size(35, 18);
-			this.labelRightAscensionData.TabIndex = 31;
-			this.labelRightAscensionData.Text = "min.:";
-			this.labelRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelRightAscensionData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelRightAscensionData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelRightAscensionData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelRightAscensionData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelProximityFlagData
-			// 
-			this.labelProximityFlagData.AccessibleDescription = "Proximity flag data";
-			this.labelProximityFlagData.AccessibleName = "Proximity flag data";
-			this.labelProximityFlagData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelProximityFlagData.AutoSize = true;
-			this.labelProximityFlagData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelProximityFlagData.Location = new System.Drawing.Point(210, 36);
-			this.labelProximityFlagData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelProximityFlagData.Name = "labelProximityFlagData";
-			this.labelProximityFlagData.Size = new System.Drawing.Size(35, 18);
-			this.labelProximityFlagData.TabIndex = 21;
-			this.labelProximityFlagData.Text = "min.:";
-			this.labelProximityFlagData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelProximityFlagData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelProximityFlagData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProximityFlagData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelProximityFlagData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelIdentifierData
-			// 
-			this.labelIdentifierData.AccessibleDescription = "Identifier (HIP number) data";
-			this.labelIdentifierData.AccessibleName = "Identifier (HIP number) data";
-			this.labelIdentifierData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelIdentifierData.AutoSize = true;
-			this.labelIdentifierData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelIdentifierData.Location = new System.Drawing.Point(210, 18);
-			this.labelIdentifierData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelIdentifierData.Name = "labelIdentifierData";
-			this.labelIdentifierData.Size = new System.Drawing.Size(35, 18);
-			this.labelIdentifierData.TabIndex = 11;
-			this.labelIdentifierData.Text = "min.:";
-			this.labelIdentifierData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelIdentifierData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelIdentifierData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelIdentifierData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelIdentifierData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelCatalogData
-			// 
-			this.labelCatalogData.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.labelCatalogData.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.labelCatalogData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCatalogData.AutoSize = true;
-			this.labelCatalogData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCatalogData.Location = new System.Drawing.Point(210, 0);
-			this.labelCatalogData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCatalogData.Name = "labelCatalogData";
-			this.labelCatalogData.Size = new System.Drawing.Size(35, 18);
-			this.labelCatalogData.TabIndex = 1;
-			this.labelCatalogData.Text = "min.:";
-			this.labelCatalogData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCatalogData.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCatalogData.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCatalogData.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelCatalogData.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox1
-			// 
-			this.textBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox1.Location = new System.Drawing.Point(245, 0);
-			this.textBox1.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(50, 18);
-			this.textBox1.TabIndex = 2;
-			this.textBox1.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox1.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox1.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox1.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// textBox4
-			// 
-			this.textBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
-			this.textBox4.Location = new System.Drawing.Point(330, 684);
-			this.textBox4.Margin = new System.Windows.Forms.Padding(0);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(50, 18);
-			this.textBox4.TabIndex = 26;
-			this.textBox4.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBox4.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox4.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox4.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label2
-			// 
-			this.label2.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label2.AutoSize = true;
-			this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label2.Location = new System.Drawing.Point(295, 18);
-			this.label2.Margin = new System.Windows.Forms.Padding(0);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(35, 18);
-			this.label2.TabIndex = 13;
-			this.label2.Text = "max.:";
-			this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label2.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label2.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label2.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label2.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label3
-			// 
-			this.label3.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label3.AutoSize = true;
-			this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label3.Location = new System.Drawing.Point(295, 36);
-			this.label3.Margin = new System.Windows.Forms.Padding(0);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(35, 18);
-			this.label3.TabIndex = 23;
-			this.label3.Text = "max.:";
-			this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label3.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label3.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label3.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label3.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label4
-			// 
-			this.label4.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label4.AutoSize = true;
-			this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label4.Location = new System.Drawing.Point(295, 54);
-			this.label4.Margin = new System.Windows.Forms.Padding(0);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(35, 18);
-			this.label4.TabIndex = 33;
-			this.label4.Text = "max.:";
-			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label4.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label4.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label4.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label4.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label5
-			// 
-			this.label5.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label5.AutoSize = true;
-			this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label5.Location = new System.Drawing.Point(295, 72);
-			this.label5.Margin = new System.Windows.Forms.Padding(0);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(35, 18);
-			this.label5.TabIndex = 54;
-			this.label5.Text = "max.:";
-			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label5.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label5.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label5.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label5.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label6
-			// 
-			this.label6.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label6.AutoSize = true;
-			this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label6.Location = new System.Drawing.Point(295, 90);
-			this.label6.Margin = new System.Windows.Forms.Padding(0);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(35, 18);
-			this.label6.TabIndex = 64;
-			this.label6.Text = "max.:";
-			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label6.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label6.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label6.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label6.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label7
-			// 
-			this.label7.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label7.AutoSize = true;
-			this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label7.Location = new System.Drawing.Point(295, 108);
-			this.label7.Margin = new System.Windows.Forms.Padding(0);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(35, 18);
-			this.label7.TabIndex = 81;
-			this.label7.Text = "max.:";
-			this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label7.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label7.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label7.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label7.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label8
-			// 
-			this.label8.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label8.AutoSize = true;
-			this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label8.Location = new System.Drawing.Point(295, 126);
-			this.label8.Margin = new System.Windows.Forms.Padding(0);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(35, 18);
-			this.label8.TabIndex = 91;
-			this.label8.Text = "max.:";
-			this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label8.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label8.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label8.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label8.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label9
-			// 
-			this.label9.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label9.AutoSize = true;
-			this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label9.Location = new System.Drawing.Point(295, 144);
-			this.label9.Margin = new System.Windows.Forms.Padding(0);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(35, 18);
-			this.label9.TabIndex = 101;
-			this.label9.Text = "max.:";
-			this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label9.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label9.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label9.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label9.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label10
-			// 
-			this.label10.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label10.AutoSize = true;
-			this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label10.Location = new System.Drawing.Point(295, 162);
-			this.label10.Margin = new System.Windows.Forms.Padding(0);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(35, 18);
-			this.label10.TabIndex = 111;
-			this.label10.Text = "max.:";
-			this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label10.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label10.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label10.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label10.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label11
-			// 
-			this.label11.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label11.AutoSize = true;
-			this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label11.Location = new System.Drawing.Point(295, 180);
-			this.label11.Margin = new System.Windows.Forms.Padding(0);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(35, 18);
-			this.label11.TabIndex = 121;
-			this.label11.Text = "max.:";
-			this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label11.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label11.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label11.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label11.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label12
-			// 
-			this.label12.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label12.AutoSize = true;
-			this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label12.Location = new System.Drawing.Point(295, 198);
-			this.label12.Margin = new System.Windows.Forms.Padding(0);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(35, 18);
-			this.label12.TabIndex = 131;
-			this.label12.Text = "max.:";
-			this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label12.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label12.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label12.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label12.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label13
-			// 
-			this.label13.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label13.AutoSize = true;
-			this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label13.Location = new System.Drawing.Point(295, 216);
-			this.label13.Margin = new System.Windows.Forms.Padding(0);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(35, 18);
-			this.label13.TabIndex = 141;
-			this.label13.Text = "max.:";
-			this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label13.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label13.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label13.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label13.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label14
-			// 
-			this.label14.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label14.AutoSize = true;
-			this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label14.Location = new System.Drawing.Point(295, 234);
-			this.label14.Margin = new System.Windows.Forms.Padding(0);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(35, 18);
-			this.label14.TabIndex = 151;
-			this.label14.Text = "max.:";
-			this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label14.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label14.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label14.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label14.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label15
-			// 
-			this.label15.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label15.AutoSize = true;
-			this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label15.Location = new System.Drawing.Point(295, 252);
-			this.label15.Margin = new System.Windows.Forms.Padding(0);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(35, 18);
-			this.label15.TabIndex = 161;
-			this.label15.Text = "max.:";
-			this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label15.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label15.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label15.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label15.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label16
-			// 
-			this.label16.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label16.AutoSize = true;
-			this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label16.Location = new System.Drawing.Point(295, 270);
-			this.label16.Margin = new System.Windows.Forms.Padding(0);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(35, 18);
-			this.label16.TabIndex = 171;
-			this.label16.Text = "max.:";
-			this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label16.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label16.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label16.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label16.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label17
-			// 
-			this.label17.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label17.AutoSize = true;
-			this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label17.Location = new System.Drawing.Point(295, 288);
-			this.label17.Margin = new System.Windows.Forms.Padding(0);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(35, 18);
-			this.label17.TabIndex = 181;
-			this.label17.Text = "max.:";
-			this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label17.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label17.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label17.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label17.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label18
-			// 
-			this.label18.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label18.AutoSize = true;
-			this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label18.Location = new System.Drawing.Point(295, 306);
-			this.label18.Margin = new System.Windows.Forms.Padding(0);
-			this.label18.Name = "label18";
-			this.label18.Size = new System.Drawing.Size(35, 18);
-			this.label18.TabIndex = 191;
-			this.label18.Text = "max.:";
-			this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label18.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label18.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label18.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label18.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label19
-			// 
-			this.label19.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label19.AutoSize = true;
-			this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label19.Location = new System.Drawing.Point(295, 324);
-			this.label19.Margin = new System.Windows.Forms.Padding(0);
-			this.label19.Name = "label19";
-			this.label19.Size = new System.Drawing.Size(35, 18);
-			this.label19.TabIndex = 201;
-			this.label19.Text = "max.:";
-			this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label19.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label19.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label19.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label19.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label20
-			// 
-			this.label20.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label20.AutoSize = true;
-			this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label20.Location = new System.Drawing.Point(295, 342);
-			this.label20.Margin = new System.Windows.Forms.Padding(0);
-			this.label20.Name = "label20";
-			this.label20.Size = new System.Drawing.Size(35, 18);
-			this.label20.TabIndex = 211;
-			this.label20.Text = "max.:";
-			this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label20.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label20.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label20.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label20.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label21
-			// 
-			this.label21.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label21.AutoSize = true;
-			this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label21.Location = new System.Drawing.Point(295, 360);
-			this.label21.Margin = new System.Windows.Forms.Padding(0);
-			this.label21.Name = "label21";
-			this.label21.Size = new System.Drawing.Size(35, 18);
-			this.label21.TabIndex = 221;
-			this.label21.Text = "max.:";
-			this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label21.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label21.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label21.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label21.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label22
-			// 
-			this.label22.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label22.AutoSize = true;
-			this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label22.Location = new System.Drawing.Point(295, 378);
-			this.label22.Margin = new System.Windows.Forms.Padding(0);
-			this.label22.Name = "label22";
-			this.label22.Size = new System.Drawing.Size(35, 18);
-			this.label22.TabIndex = 231;
-			this.label22.Text = "max.:";
-			this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label22.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label22.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label22.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label22.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label23
-			// 
-			this.label23.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label23.AutoSize = true;
-			this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label23.Location = new System.Drawing.Point(295, 396);
-			this.label23.Margin = new System.Windows.Forms.Padding(0);
-			this.label23.Name = "label23";
-			this.label23.Size = new System.Drawing.Size(35, 18);
-			this.label23.TabIndex = 241;
-			this.label23.Text = "max.:";
-			this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label23.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label23.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label23.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label23.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label24
-			// 
-			this.label24.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label24.AutoSize = true;
-			this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label24.Location = new System.Drawing.Point(295, 414);
-			this.label24.Margin = new System.Windows.Forms.Padding(0);
-			this.label24.Name = "label24";
-			this.label24.Size = new System.Drawing.Size(35, 18);
-			this.label24.TabIndex = 251;
-			this.label24.Text = "max.:";
-			this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label24.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label24.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label24.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label24.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label25
-			// 
-			this.label25.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label25.AutoSize = true;
-			this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label25.Location = new System.Drawing.Point(295, 432);
-			this.label25.Margin = new System.Windows.Forms.Padding(0);
-			this.label25.Name = "label25";
-			this.label25.Size = new System.Drawing.Size(35, 18);
-			this.label25.TabIndex = 261;
-			this.label25.Text = "max.:";
-			this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label25.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label25.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label25.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label25.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label26
-			// 
-			this.label26.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label26.AutoSize = true;
-			this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label26.Location = new System.Drawing.Point(295, 450);
-			this.label26.Margin = new System.Windows.Forms.Padding(0);
-			this.label26.Name = "label26";
-			this.label26.Size = new System.Drawing.Size(35, 18);
-			this.label26.TabIndex = 271;
-			this.label26.Text = "max.:";
-			this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label26.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label26.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label26.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label26.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label27
-			// 
-			this.label27.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label27.AutoSize = true;
-			this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label27.Location = new System.Drawing.Point(295, 468);
-			this.label27.Margin = new System.Windows.Forms.Padding(0);
-			this.label27.Name = "label27";
-			this.label27.Size = new System.Drawing.Size(35, 18);
-			this.label27.TabIndex = 283;
-			this.label27.Text = "max.:";
-			this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label27.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label27.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label27.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label27.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label28
-			// 
-			this.label28.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label28.AutoSize = true;
-			this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label28.Location = new System.Drawing.Point(295, 486);
-			this.label28.Margin = new System.Windows.Forms.Padding(0);
-			this.label28.Name = "label28";
-			this.label28.Size = new System.Drawing.Size(35, 18);
-			this.label28.TabIndex = 293;
-			this.label28.Text = "max.:";
-			this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label28.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label28.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label28.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label28.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label29
-			// 
-			this.label29.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label29.AutoSize = true;
-			this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label29.Location = new System.Drawing.Point(295, 504);
-			this.label29.Margin = new System.Windows.Forms.Padding(0);
-			this.label29.Name = "label29";
-			this.label29.Size = new System.Drawing.Size(35, 18);
-			this.label29.TabIndex = 303;
-			this.label29.Text = "max.:";
-			this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label29.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label29.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label29.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label29.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label30
-			// 
-			this.label30.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label30.AutoSize = true;
-			this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label30.Location = new System.Drawing.Point(295, 684);
-			this.label30.Margin = new System.Windows.Forms.Padding(0);
-			this.label30.Name = "label30";
-			this.label30.Size = new System.Drawing.Size(35, 18);
-			this.label30.TabIndex = 25;
-			this.label30.Text = "max.:";
-			this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label30.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label30.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label30.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label30.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label31
-			// 
-			this.label31.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label31.AutoSize = true;
-			this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label31.Location = new System.Drawing.Point(295, 666);
-			this.label31.Margin = new System.Windows.Forms.Padding(0);
-			this.label31.Name = "label31";
-			this.label31.Size = new System.Drawing.Size(35, 18);
-			this.label31.TabIndex = 15;
-			this.label31.Text = "max.:";
-			this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label31.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label31.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label31.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label31.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label32
-			// 
-			this.label32.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label32.AutoSize = true;
-			this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label32.Location = new System.Drawing.Point(295, 648);
-			this.label32.Margin = new System.Windows.Forms.Padding(0);
-			this.label32.Name = "label32";
-			this.label32.Size = new System.Drawing.Size(35, 18);
-			this.label32.TabIndex = 5;
-			this.label32.Text = "max.:";
-			this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label32.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label32.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label32.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label32.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label33
-			// 
-			this.label33.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label33.AutoSize = true;
-			this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label33.Location = new System.Drawing.Point(295, 630);
-			this.label33.Margin = new System.Windows.Forms.Padding(0);
-			this.label33.Name = "label33";
-			this.label33.Size = new System.Drawing.Size(35, 18);
-			this.label33.TabIndex = 380;
-			this.label33.Text = "max.:";
-			this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label33.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label33.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label33.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label33.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label34
-			// 
-			this.label34.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label34.AutoSize = true;
-			this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label34.Location = new System.Drawing.Point(295, 612);
-			this.label34.Margin = new System.Windows.Forms.Padding(0);
-			this.label34.Name = "label34";
-			this.label34.Size = new System.Drawing.Size(35, 18);
-			this.label34.TabIndex = 370;
-			this.label34.Text = "max.:";
-			this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label34.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label34.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label34.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label34.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label35
-			// 
-			this.label35.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label35.AutoSize = true;
-			this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label35.Location = new System.Drawing.Point(295, 594);
-			this.label35.Margin = new System.Windows.Forms.Padding(0);
-			this.label35.Name = "label35";
-			this.label35.Size = new System.Drawing.Size(35, 18);
-			this.label35.TabIndex = 360;
-			this.label35.Text = "max.:";
-			this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label35.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label35.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label35.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label35.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label36
-			// 
-			this.label36.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label36.AutoSize = true;
-			this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label36.Location = new System.Drawing.Point(295, 576);
-			this.label36.Margin = new System.Windows.Forms.Padding(0);
-			this.label36.Name = "label36";
-			this.label36.Size = new System.Drawing.Size(35, 18);
-			this.label36.TabIndex = 350;
-			this.label36.Text = "max.:";
-			this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label36.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label36.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label36.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label36.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label37
-			// 
-			this.label37.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label37.AutoSize = true;
-			this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label37.Location = new System.Drawing.Point(295, 558);
-			this.label37.Margin = new System.Windows.Forms.Padding(0);
-			this.label37.Name = "label37";
-			this.label37.Size = new System.Drawing.Size(35, 18);
-			this.label37.TabIndex = 340;
-			this.label37.Text = "max.:";
-			this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label37.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label37.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label37.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label37.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label38
-			// 
-			this.label38.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label38.AutoSize = true;
-			this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label38.Location = new System.Drawing.Point(295, 540);
-			this.label38.Margin = new System.Windows.Forms.Padding(0);
-			this.label38.Name = "label38";
-			this.label38.Size = new System.Drawing.Size(35, 18);
-			this.label38.TabIndex = 330;
-			this.label38.Text = "max.:";
-			this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label38.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label38.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label38.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label38.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// label39
-			// 
-			this.label39.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
-			this.label39.AutoSize = true;
-			this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label39.Location = new System.Drawing.Point(295, 522);
-			this.label39.Margin = new System.Windows.Forms.Padding(0);
-			this.label39.Name = "label39";
-			this.label39.Size = new System.Drawing.Size(35, 18);
-			this.label39.TabIndex = 320;
-			this.label39.Text = "max.:";
-			this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label39.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.label39.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label39.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.label39.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// toolStripStatusLabelInfo
-			// 
-			this.toolStripStatusLabelInfo.AccessibleDescription = "text with some information";
-			this.toolStripStatusLabelInfo.AccessibleName = "information text";
-			this.toolStripStatusLabelInfo.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.toolStripStatusLabelInfo.AutoToolTip = true;
-			this.toolStripStatusLabelInfo.DoubleClickEnabled = true;
-			this.toolStripStatusLabelInfo.Image = global::Hipparcos_DB.Properties.Resources.fugue_information_white_16px_shadowless;
-			this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
-			this.toolStripStatusLabelInfo.Size = new System.Drawing.Size(66, 17);
-			this.toolStripStatusLabelInfo.Text = "info text";
-			// 
-			// toolStripButtonApplyFilterSettings
-			// 
-			this.toolStripButtonApplyFilterSettings.Image = global::Hipparcos_DB.Properties.Resources.fugue_tick_button_16px_shadowless;
-			this.toolStripButtonApplyFilterSettings.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripButtonApplyFilterSettings.Name = "toolStripButtonApplyFilterSettings";
-			this.toolStripButtonApplyFilterSettings.Size = new System.Drawing.Size(129, 22);
-			this.toolStripButtonApplyFilterSettings.Text = "&Apply filter settings";
-			this.toolStripButtonApplyFilterSettings.Click += new System.EventHandler(this.ToolStripButtonApplyFilterSettings_Click);
-			this.toolStripButtonApplyFilterSettings.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.toolStripButtonApplyFilterSettings.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// toolStripButtonCancel
-			// 
-			this.toolStripButtonCancel.Image = global::Hipparcos_DB.Properties.Resources.fugue_cross_16px_shadowless;
-			this.toolStripButtonCancel.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripButtonCancel.Name = "toolStripButtonCancel";
-			this.toolStripButtonCancel.Size = new System.Drawing.Size(63, 22);
-			this.toolStripButtonCancel.Text = "&Cancel";
-			this.toolStripButtonCancel.Click += new System.EventHandler(this.ToolStripButtonCancel_Click);
-			this.toolStripButtonCancel.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.toolStripButtonCancel.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// toolStripButtonRestoreToDefault
-			// 
-			this.toolStripButtonRestoreToDefault.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_curve_180_left_16px_shadowless;
-			this.toolStripButtonRestoreToDefault.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.toolStripButtonRestoreToDefault.Name = "toolStripButtonRestoreToDefault";
-			this.toolStripButtonRestoreToDefault.Size = new System.Drawing.Size(120, 22);
-			this.toolStripButtonRestoreToDefault.Text = "Restore to default";
-			this.toolStripButtonRestoreToDefault.Click += new System.EventHandler(this.ToolStripButtonRestoreToDefault_Click);
-			this.toolStripButtonRestoreToDefault.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.toolStripButtonRestoreToDefault.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// textBoxRightAscensionMax
+			// 
+			this.textBoxRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxRightAscensionMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxRightAscensionMax.Location = new System.Drawing.Point(245, 54);
+			this.textBoxRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxRightAscensionMax.Name = "textBoxRightAscensionMax";
+			this.textBoxRightAscensionMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxRightAscensionMax.TabIndex = 32;
+			this.textBoxRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxProximityFlagMax
+			// 
+			this.textBoxProximityFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxProximityFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxProximityFlagMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxProximityFlagMax.Location = new System.Drawing.Point(330, 36);
+			this.textBoxProximityFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxProximityFlagMax.Name = "textBoxProximityFlagMax";
+			this.textBoxProximityFlagMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxProximityFlagMax.TabIndex = 24;
+			this.textBoxProximityFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProximityFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxProximityFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxProximityFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxProximityFlagMin
+			// 
+			this.textBoxProximityFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxProximityFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxProximityFlagMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxProximityFlagMin.Location = new System.Drawing.Point(245, 36);
+			this.textBoxProximityFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxProximityFlagMin.Name = "textBoxProximityFlagMin";
+			this.textBoxProximityFlagMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxProximityFlagMin.TabIndex = 22;
+			this.textBoxProximityFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProximityFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxProximityFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxProximityFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxIdentifierMax
+			// 
+			this.textBoxIdentifierMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxIdentifierMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxIdentifierMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxIdentifierMax.Location = new System.Drawing.Point(330, 18);
+			this.textBoxIdentifierMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxIdentifierMax.Name = "textBoxIdentifierMax";
+			this.textBoxIdentifierMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxIdentifierMax.TabIndex = 14;
+			this.textBoxIdentifierMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxIdentifierMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxIdentifierMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxIdentifierMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxIdentifierMin
+			// 
+			this.textBoxIdentifierMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxIdentifierMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxIdentifierMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxIdentifierMin.Location = new System.Drawing.Point(245, 18);
+			this.textBoxIdentifierMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxIdentifierMin.Name = "textBoxIdentifierMin";
+			this.textBoxIdentifierMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxIdentifierMin.TabIndex = 12;
+			this.textBoxIdentifierMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxIdentifierMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxIdentifierMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxIdentifierMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxlCatalogMax
+			// 
+			this.textBoxlCatalogMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxlCatalogMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxlCatalogMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxlCatalogMax.Location = new System.Drawing.Point(330, 0);
+			this.textBoxlCatalogMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxlCatalogMax.Name = "textBoxlCatalogMax";
+			this.textBoxlCatalogMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxlCatalogMax.TabIndex = 4;
+			this.textBoxlCatalogMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlCatalogMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxlCatalogMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxlCatalogMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labellCatalogMax
+			// 
+			this.labellCatalogMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labellCatalogMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labellCatalogMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labellCatalogMax.AutoSize = true;
+			this.labellCatalogMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labellCatalogMax.Location = new System.Drawing.Point(295, 0);
+			this.labellCatalogMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labellCatalogMax.Name = "labellCatalogMax";
+			this.labellCatalogMax.Size = new System.Drawing.Size(35, 18);
+			this.labellCatalogMax.TabIndex = 3;
+			this.labellCatalogMax.Text = "max.:";
+			this.labellCatalogMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labellCatalogMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labellCatalogMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labellCatalogMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labellCatalogMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelSourceOfBvColorMin
+			// 
+			this.labelSourceOfBvColorMin.AccessibleDescription = "Source of B-V from Ground or Tycho data";
+			this.labelSourceOfBvColorMin.AccessibleName = "Source of B-V from Ground or Tycho data";
+			this.labelSourceOfBvColorMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSourceOfBvColorMin.AutoSize = true;
+			this.labelSourceOfBvColorMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfBvColorMin.Location = new System.Drawing.Point(210, 684);
+			this.labelSourceOfBvColorMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfBvColorMin.Name = "labelSourceOfBvColorMin";
+			this.labelSourceOfBvColorMin.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfBvColorMin.TabIndex = 23;
+			this.labelSourceOfBvColorMin.Text = "min.:";
+			this.labelSourceOfBvColorMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSourceOfBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSourceOfBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSourceOfBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelReferenceFlagForBtAndVtMagnitudeMin
+			// 
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.AccessibleDescription = "Reference flag for BT and VTmag data";
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.AccessibleName = "Reference flag for BT and VTmag data";
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.AutoSize = true;
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.Location = new System.Drawing.Point(210, 666);
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.Name = "labelReferenceFlagForBtAndVtMagnitudeMin";
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.TabIndex = 13;
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.Text = "min.:";
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorJohnsonBvColorMin
+			// 
+			this.labelStandardErrorJohnsonBvColorMin.AccessibleDescription = "Standard error on B-V data";
+			this.labelStandardErrorJohnsonBvColorMin.AccessibleName = "Standard error on B-V data";
+			this.labelStandardErrorJohnsonBvColorMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorJohnsonBvColorMin.AutoSize = true;
+			this.labelStandardErrorJohnsonBvColorMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorJohnsonBvColorMin.Location = new System.Drawing.Point(210, 648);
+			this.labelStandardErrorJohnsonBvColorMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorJohnsonBvColorMin.Name = "labelStandardErrorJohnsonBvColorMin";
+			this.labelStandardErrorJohnsonBvColorMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorJohnsonBvColorMin.TabIndex = 3;
+			this.labelStandardErrorJohnsonBvColorMin.Text = "min.:";
+			this.labelStandardErrorJohnsonBvColorMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorJohnsonBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorJohnsonBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorJohnsonBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelJohnsonBvColorMin
+			// 
+			this.labelJohnsonBvColorMin.AccessibleDescription = "Johnson B-V colour data";
+			this.labelJohnsonBvColorMin.AccessibleName = "Johnson B-V colour data";
+			this.labelJohnsonBvColorMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelJohnsonBvColorMin.AutoSize = true;
+			this.labelJohnsonBvColorMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelJohnsonBvColorMin.Location = new System.Drawing.Point(210, 630);
+			this.labelJohnsonBvColorMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelJohnsonBvColorMin.Name = "labelJohnsonBvColorMin";
+			this.labelJohnsonBvColorMin.Size = new System.Drawing.Size(35, 18);
+			this.labelJohnsonBvColorMin.TabIndex = 378;
+			this.labelJohnsonBvColorMin.Text = "min.:";
+			this.labelJohnsonBvColorMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelJohnsonBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelJohnsonBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelJohnsonBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorMeanVtMagnitudeMin
+			// 
+			this.labelStandardErrorMeanVtMagnitudeMin.AccessibleDescription = "Standard error on VTmag data";
+			this.labelStandardErrorMeanVtMagnitudeMin.AccessibleName = "Standard error on VTmag data";
+			this.labelStandardErrorMeanVtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorMeanVtMagnitudeMin.AutoSize = true;
+			this.labelStandardErrorMeanVtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMeanVtMagnitudeMin.Location = new System.Drawing.Point(210, 612);
+			this.labelStandardErrorMeanVtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMeanVtMagnitudeMin.Name = "labelStandardErrorMeanVtMagnitudeMin";
+			this.labelStandardErrorMeanVtMagnitudeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMeanVtMagnitudeMin.TabIndex = 368;
+			this.labelStandardErrorMeanVtMagnitudeMin.Text = "min.:";
+			this.labelStandardErrorMeanVtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorMeanVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMeanVtMagnitudeMin
+			// 
+			this.labelMeanVtMagnitudeMin.AccessibleDescription = "Mean VT magnitude data";
+			this.labelMeanVtMagnitudeMin.AccessibleName = "Mean VT magnitude data";
+			this.labelMeanVtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMeanVtMagnitudeMin.AutoSize = true;
+			this.labelMeanVtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMeanVtMagnitudeMin.Location = new System.Drawing.Point(210, 594);
+			this.labelMeanVtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMeanVtMagnitudeMin.Name = "labelMeanVtMagnitudeMin";
+			this.labelMeanVtMagnitudeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelMeanVtMagnitudeMin.TabIndex = 358;
+			this.labelMeanVtMagnitudeMin.Text = "min.:";
+			this.labelMeanVtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMeanVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorMeanBtMagnitudeMin
+			// 
+			this.labelStandardErrorMeanBtMagnitudeMin.AccessibleDescription = "Standard error on BTmag data";
+			this.labelStandardErrorMeanBtMagnitudeMin.AccessibleName = "Standard error on BTmag data";
+			this.labelStandardErrorMeanBtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorMeanBtMagnitudeMin.AutoSize = true;
+			this.labelStandardErrorMeanBtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMeanBtMagnitudeMin.Location = new System.Drawing.Point(210, 576);
+			this.labelStandardErrorMeanBtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMeanBtMagnitudeMin.Name = "labelStandardErrorMeanBtMagnitudeMin";
+			this.labelStandardErrorMeanBtMagnitudeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMeanBtMagnitudeMin.TabIndex = 348;
+			this.labelStandardErrorMeanBtMagnitudeMin.Text = "min.:";
+			this.labelStandardErrorMeanBtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanBtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorMeanBtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMeanBtMagnitudeMin
+			// 
+			this.labelMeanBtMagnitudeMin.AccessibleDescription = "Mean BT magnitude data";
+			this.labelMeanBtMagnitudeMin.AccessibleName = "Mean BT magnitude data";
+			this.labelMeanBtMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMeanBtMagnitudeMin.AutoSize = true;
+			this.labelMeanBtMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMeanBtMagnitudeMin.Location = new System.Drawing.Point(210, 558);
+			this.labelMeanBtMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMeanBtMagnitudeMin.Name = "labelMeanBtMagnitudeMin";
+			this.labelMeanBtMagnitudeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelMeanBtMagnitudeMin.TabIndex = 338;
+			this.labelMeanBtMagnitudeMin.Text = "min.:";
+			this.labelMeanBtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanBtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMeanBtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelGoodnessOfFitParameterMin
+			// 
+			this.labelGoodnessOfFitParameterMin.AccessibleDescription = "Goodness-of-fit parameter data";
+			this.labelGoodnessOfFitParameterMin.AccessibleName = "Goodness-of-fit parameter data";
+			this.labelGoodnessOfFitParameterMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelGoodnessOfFitParameterMin.AutoSize = true;
+			this.labelGoodnessOfFitParameterMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelGoodnessOfFitParameterMin.Location = new System.Drawing.Point(210, 540);
+			this.labelGoodnessOfFitParameterMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelGoodnessOfFitParameterMin.Name = "labelGoodnessOfFitParameterMin";
+			this.labelGoodnessOfFitParameterMin.Size = new System.Drawing.Size(35, 18);
+			this.labelGoodnessOfFitParameterMin.TabIndex = 328;
+			this.labelGoodnessOfFitParameterMin.Text = "min.:";
+			this.labelGoodnessOfFitParameterMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelGoodnessOfFitParameterMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelGoodnessOfFitParameterMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelGoodnessOfFitParameterMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelGoodnessOfFitParameterMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelPercentageOfRejectedDataMin
+			// 
+			this.labelPercentageOfRejectedDataMin.AccessibleDescription = "Percentage of rejected data";
+			this.labelPercentageOfRejectedDataMin.AccessibleName = "Percentage of rejected data";
+			this.labelPercentageOfRejectedDataMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelPercentageOfRejectedDataMin.AutoSize = true;
+			this.labelPercentageOfRejectedDataMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelPercentageOfRejectedDataMin.Location = new System.Drawing.Point(210, 522);
+			this.labelPercentageOfRejectedDataMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelPercentageOfRejectedDataMin.Name = "labelPercentageOfRejectedDataMin";
+			this.labelPercentageOfRejectedDataMin.Size = new System.Drawing.Size(35, 18);
+			this.labelPercentageOfRejectedDataMin.TabIndex = 318;
+			this.labelPercentageOfRejectedDataMin.Text = "min.:";
+			this.labelPercentageOfRejectedDataMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelPercentageOfRejectedDataMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelPercentageOfRejectedDataMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelPercentageOfRejectedDataMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelPercentageOfRejectedDataMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin
+			// 
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.AccessibleDescription = "Correlation, pmDE/pmRA data";
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.AccessibleName = "Correlation, pmDE/pmRA data";
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Location = new System.Drawing.Point(210, 504);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Name = "labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin";
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.TabIndex = 301;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Text = "min.:";
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin
+			// 
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.AccessibleDescription = "Correlation, pmDE/Plx data";
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.AccessibleName = "Correlation, pmDE/Plx data";
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Location = new System.Drawing.Point(210, 486);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Name = "labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin";
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.TabIndex = 291;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Text = "min.:";
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionDeclinationByDeclinationMin
+			// 
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.AccessibleDescription = "Correlation, pmDE/DE data";
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.AccessibleName = "Correlation, pmDE/DE data";
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Location = new System.Drawing.Point(210, 468);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Name = "labelCorrelationProperMotionDeclinationByDeclinationMin";
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.TabIndex = 281;
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Text = "min.:";
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionDeclinationByRightAscensionMin
+			// 
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.AccessibleDescription = "Correlation, pmDE/RA*cos(delta) data";
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.AccessibleName = "Correlation, pmDE/RA*cos(delta) data";
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Location = new System.Drawing.Point(210, 450);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Name = "labelCorrelationProperMotionDeclinationByRightAscensionMin";
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.TabIndex = 269;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Text = "min.:";
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin
+			// 
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.AccessibleDescription = "Correlation, pmRA/Plx data";
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.AccessibleName = "Correlation, pmRA/Plx data";
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Location = new System.Drawing.Point(210, 432);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Name = "labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin";
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.TabIndex = 259;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Text = "min.:";
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionRightAscensionByDeclinationMin
+			// 
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.AccessibleDescription = "Correlation, pmRA/DE data";
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.AccessibleName = "Correlation, pmRA/DE data";
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Location = new System.Drawing.Point(210, 414);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Name = "labelCorrelationProperMotionRightAscensionByDeclinationMin";
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.TabIndex = 249;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Text = "min.:";
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionRightAscensionByRightAscensionMin
+			// 
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.AccessibleDescription = "Correlation, pmRA/RA*cos(delta) data";
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.AccessibleName = "Correlation, pmRA/RA*cos(delta) data";
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Location = new System.Drawing.Point(210, 396);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Name = "labelCorrelationProperMotionRightAscensionByRightAscensionMin";
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.TabIndex = 239;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Text = "min.:";
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationTrigonomicParallaxByDeclinationMin
+			// 
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.AccessibleDescription = "Correlation, Plx/DE data";
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.AccessibleName = "Correlation, Plx/DE data";
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.AutoSize = true;
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Location = new System.Drawing.Point(210, 378);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Name = "labelCorrelationTrigonomicParallaxByDeclinationMin";
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.TabIndex = 229;
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Text = "min.:";
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationTrigonomicParallaxByRightAscensionMin
+			// 
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.AccessibleDescription = "Correlation, Plx/RA*cos(delta) data";
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.AccessibleName = "Correlation, Plx/RA*cos(delta) data";
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.AutoSize = true;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Location = new System.Drawing.Point(210, 360);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Name = "labelCorrelationTrigonomicParallaxByRightAscensionMin";
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.TabIndex = 219;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Text = "min.:";
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationDeclinationByRightAscensionMin
+			// 
+			this.labelCorrelationDeclinationByRightAscensionMin.AccessibleDescription = "Correlation, DE/RA*cos(delta) data";
+			this.labelCorrelationDeclinationByRightAscensionMin.AccessibleName = "Correlation, DE/RA*cos(delta) data";
+			this.labelCorrelationDeclinationByRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCorrelationDeclinationByRightAscensionMin.AutoSize = true;
+			this.labelCorrelationDeclinationByRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationDeclinationByRightAscensionMin.Location = new System.Drawing.Point(210, 342);
+			this.labelCorrelationDeclinationByRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationDeclinationByRightAscensionMin.Name = "labelCorrelationDeclinationByRightAscensionMin";
+			this.labelCorrelationDeclinationByRightAscensionMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationDeclinationByRightAscensionMin.TabIndex = 209;
+			this.labelCorrelationDeclinationByRightAscensionMin.Text = "min.:";
+			this.labelCorrelationDeclinationByRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationDeclinationByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationDeclinationByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorProperMotionDeclinationmMin
+			// 
+			this.labelStandardErrorProperMotionDeclinationmMin.AccessibleDescription = "Standard error in pmDE data";
+			this.labelStandardErrorProperMotionDeclinationmMin.AccessibleName = "Standard error in pmDE data";
+			this.labelStandardErrorProperMotionDeclinationmMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorProperMotionDeclinationmMin.AutoSize = true;
+			this.labelStandardErrorProperMotionDeclinationmMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorProperMotionDeclinationmMin.Location = new System.Drawing.Point(210, 324);
+			this.labelStandardErrorProperMotionDeclinationmMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorProperMotionDeclinationmMin.Name = "labelStandardErrorProperMotionDeclinationmMin";
+			this.labelStandardErrorProperMotionDeclinationmMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorProperMotionDeclinationmMin.TabIndex = 199;
+			this.labelStandardErrorProperMotionDeclinationmMin.Text = "min.:";
+			this.labelStandardErrorProperMotionDeclinationmMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorProperMotionDeclinationmMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionDeclinationmMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorProperMotionDeclinationmMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorProperMotionDeclinationmMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorProperMotionRightAscensionMin
+			// 
+			this.labelStandardErrorProperMotionRightAscensionMin.AccessibleDescription = "Standard error in pmRA data";
+			this.labelStandardErrorProperMotionRightAscensionMin.AccessibleName = "Standard error in pmRA data";
+			this.labelStandardErrorProperMotionRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorProperMotionRightAscensionMin.AutoSize = true;
+			this.labelStandardErrorProperMotionRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorProperMotionRightAscensionMin.Location = new System.Drawing.Point(210, 306);
+			this.labelStandardErrorProperMotionRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorProperMotionRightAscensionMin.Name = "labelStandardErrorProperMotionRightAscensionMin";
+			this.labelStandardErrorProperMotionRightAscensionMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorProperMotionRightAscensionMin.TabIndex = 189;
+			this.labelStandardErrorProperMotionRightAscensionMin.Text = "min.:";
+			this.labelStandardErrorProperMotionRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorProperMotionRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorTrigonomicParallaxMin
+			// 
+			this.labelStandardErrorTrigonomicParallaxMin.AccessibleDescription = "Standard error in Plx data";
+			this.labelStandardErrorTrigonomicParallaxMin.AccessibleName = "Standard error in Plx data";
+			this.labelStandardErrorTrigonomicParallaxMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorTrigonomicParallaxMin.AutoSize = true;
+			this.labelStandardErrorTrigonomicParallaxMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorTrigonomicParallaxMin.Location = new System.Drawing.Point(210, 288);
+			this.labelStandardErrorTrigonomicParallaxMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorTrigonomicParallaxMin.Name = "labelStandardErrorTrigonomicParallaxMin";
+			this.labelStandardErrorTrigonomicParallaxMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorTrigonomicParallaxMin.TabIndex = 179;
+			this.labelStandardErrorTrigonomicParallaxMin.Text = "min.:";
+			this.labelStandardErrorTrigonomicParallaxMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorDeclinationMin
+			// 
+			this.labelStandardErrorDeclinationMin.AccessibleDescription = "Standard error in DE data";
+			this.labelStandardErrorDeclinationMin.AccessibleName = "Standard error in DE data";
+			this.labelStandardErrorDeclinationMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorDeclinationMin.AutoSize = true;
+			this.labelStandardErrorDeclinationMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorDeclinationMin.Location = new System.Drawing.Point(210, 270);
+			this.labelStandardErrorDeclinationMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorDeclinationMin.Name = "labelStandardErrorDeclinationMin";
+			this.labelStandardErrorDeclinationMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorDeclinationMin.TabIndex = 169;
+			this.labelStandardErrorDeclinationMin.Text = "min.:";
+			this.labelStandardErrorDeclinationMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorRightAscensionMin
+			// 
+			this.labelStandardErrorRightAscensionMin.AccessibleDescription = "Standard error in RA*cos(DEdeg) data";
+			this.labelStandardErrorRightAscensionMin.AccessibleName = "Standard error in RA*cos(DEdeg) data";
+			this.labelStandardErrorRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelStandardErrorRightAscensionMin.AutoSize = true;
+			this.labelStandardErrorRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorRightAscensionMin.Location = new System.Drawing.Point(210, 252);
+			this.labelStandardErrorRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorRightAscensionMin.Name = "labelStandardErrorRightAscensionMin";
+			this.labelStandardErrorRightAscensionMin.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorRightAscensionMin.TabIndex = 159;
+			this.labelStandardErrorRightAscensionMin.Text = "min.:";
+			this.labelStandardErrorRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelProperMotionDeltaMin
+			// 
+			this.labelProperMotionDeltaMin.AccessibleDescription = "Proper motion mu_delta, ICRS data";
+			this.labelProperMotionDeltaMin.AccessibleName = "Proper motion mu_delta, ICRS data";
+			this.labelProperMotionDeltaMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelProperMotionDeltaMin.AutoSize = true;
+			this.labelProperMotionDeltaMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelProperMotionDeltaMin.Location = new System.Drawing.Point(210, 234);
+			this.labelProperMotionDeltaMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelProperMotionDeltaMin.Name = "labelProperMotionDeltaMin";
+			this.labelProperMotionDeltaMin.Size = new System.Drawing.Size(35, 18);
+			this.labelProperMotionDeltaMin.TabIndex = 149;
+			this.labelProperMotionDeltaMin.Text = "min.:";
+			this.labelProperMotionDeltaMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelProperMotionDeltaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionDeltaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelProperMotionDeltaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelProperMotionDeltaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelProperMotionAlphaMin
+			// 
+			this.labelProperMotionAlphaMin.AccessibleDescription = "Proper motion mu_alpha.cos(delta), ICRS data";
+			this.labelProperMotionAlphaMin.AccessibleName = "Proper motion mu_alpha.cos(delta), ICRS data";
+			this.labelProperMotionAlphaMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelProperMotionAlphaMin.AutoSize = true;
+			this.labelProperMotionAlphaMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelProperMotionAlphaMin.Location = new System.Drawing.Point(210, 216);
+			this.labelProperMotionAlphaMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelProperMotionAlphaMin.Name = "labelProperMotionAlphaMin";
+			this.labelProperMotionAlphaMin.Size = new System.Drawing.Size(35, 18);
+			this.labelProperMotionAlphaMin.TabIndex = 139;
+			this.labelProperMotionAlphaMin.Text = "min.:";
+			this.labelProperMotionAlphaMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelProperMotionAlphaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionAlphaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelProperMotionAlphaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelProperMotionAlphaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelTrigonomicParallaxMin
+			// 
+			this.labelTrigonomicParallaxMin.AccessibleDescription = "Trigonometric parallax data";
+			this.labelTrigonomicParallaxMin.AccessibleName = "Trigonometric parallax data";
+			this.labelTrigonomicParallaxMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelTrigonomicParallaxMin.AutoSize = true;
+			this.labelTrigonomicParallaxMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelTrigonomicParallaxMin.Location = new System.Drawing.Point(210, 198);
+			this.labelTrigonomicParallaxMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelTrigonomicParallaxMin.Name = "labelTrigonomicParallaxMin";
+			this.labelTrigonomicParallaxMin.Size = new System.Drawing.Size(35, 18);
+			this.labelTrigonomicParallaxMin.TabIndex = 129;
+			this.labelTrigonomicParallaxMin.Text = "min.:";
+			this.labelTrigonomicParallaxMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelReferenceFlagForAstrometryMin
+			// 
+			this.labelReferenceFlagForAstrometryMin.AccessibleDescription = "Reference flag for astrometry data";
+			this.labelReferenceFlagForAstrometryMin.AccessibleName = "Reference flag for astrometry data";
+			this.labelReferenceFlagForAstrometryMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelReferenceFlagForAstrometryMin.AutoSize = true;
+			this.labelReferenceFlagForAstrometryMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelReferenceFlagForAstrometryMin.Location = new System.Drawing.Point(210, 180);
+			this.labelReferenceFlagForAstrometryMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelReferenceFlagForAstrometryMin.Name = "labelReferenceFlagForAstrometryMin";
+			this.labelReferenceFlagForAstrometryMin.Size = new System.Drawing.Size(35, 18);
+			this.labelReferenceFlagForAstrometryMin.TabIndex = 119;
+			this.labelReferenceFlagForAstrometryMin.Text = "min.:";
+			this.labelReferenceFlagForAstrometryMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelReferenceFlagForAstrometryMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForAstrometryMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelReferenceFlagForAstrometryMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelReferenceFlagForAstrometryMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelDeltaMin
+			// 
+			this.labelDeltaMin.AccessibleDescription = "delta, degrees (ICRS, Epoch=J1991.25) data";
+			this.labelDeltaMin.AccessibleName = "delta, degrees (ICRS, Epoch=J1991.25) data";
+			this.labelDeltaMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelDeltaMin.AutoSize = true;
+			this.labelDeltaMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelDeltaMin.Location = new System.Drawing.Point(210, 162);
+			this.labelDeltaMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelDeltaMin.Name = "labelDeltaMin";
+			this.labelDeltaMin.Size = new System.Drawing.Size(35, 18);
+			this.labelDeltaMin.TabIndex = 109;
+			this.labelDeltaMin.Text = "min.:";
+			this.labelDeltaMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelDeltaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeltaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelDeltaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelDeltaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelAlphaMin
+			// 
+			this.labelAlphaMin.AccessibleDescription = "alpha, degrees (ICRS, Epoch=J1991.25) data";
+			this.labelAlphaMin.AccessibleName = "alpha, degrees (ICRS, Epoch=J1991.25) data";
+			this.labelAlphaMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelAlphaMin.AutoSize = true;
+			this.labelAlphaMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelAlphaMin.Location = new System.Drawing.Point(210, 144);
+			this.labelAlphaMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelAlphaMin.Name = "labelAlphaMin";
+			this.labelAlphaMin.Size = new System.Drawing.Size(35, 18);
+			this.labelAlphaMin.TabIndex = 99;
+			this.labelAlphaMin.Text = "min.:";
+			this.labelAlphaMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelAlphaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelAlphaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelAlphaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelAlphaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelSourceOfMagnitudeMin
+			// 
+			this.labelSourceOfMagnitudeMin.AccessibleDescription = "Source of magnitude data";
+			this.labelSourceOfMagnitudeMin.AccessibleName = "Source of magnitude data";
+			this.labelSourceOfMagnitudeMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelSourceOfMagnitudeMin.AutoSize = true;
+			this.labelSourceOfMagnitudeMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfMagnitudeMin.Location = new System.Drawing.Point(210, 126);
+			this.labelSourceOfMagnitudeMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfMagnitudeMin.Name = "labelSourceOfMagnitudeMin";
+			this.labelSourceOfMagnitudeMin.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfMagnitudeMin.TabIndex = 89;
+			this.labelSourceOfMagnitudeMin.Text = "min.:";
+			this.labelSourceOfMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSourceOfMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSourceOfMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSourceOfMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCoarseVariabilityFlagMin
+			// 
+			this.labelCoarseVariabilityFlagMin.AccessibleDescription = "Coarse variability flag data";
+			this.labelCoarseVariabilityFlagMin.AccessibleName = "Coarse variability flag data";
+			this.labelCoarseVariabilityFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCoarseVariabilityFlagMin.AutoSize = true;
+			this.labelCoarseVariabilityFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCoarseVariabilityFlagMin.Location = new System.Drawing.Point(210, 108);
+			this.labelCoarseVariabilityFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCoarseVariabilityFlagMin.Name = "labelCoarseVariabilityFlagMin";
+			this.labelCoarseVariabilityFlagMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCoarseVariabilityFlagMin.TabIndex = 79;
+			this.labelCoarseVariabilityFlagMin.Text = "min.:";
+			this.labelCoarseVariabilityFlagMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCoarseVariabilityFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCoarseVariabilityFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCoarseVariabilityFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCoarseVariabilityFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMagnitudeJohnsonMin
+			// 
+			this.labelMagnitudeJohnsonMin.AccessibleDescription = "Magnitude in Johnson V data";
+			this.labelMagnitudeJohnsonMin.AccessibleName = "Magnitude in Johnson V data";
+			this.labelMagnitudeJohnsonMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelMagnitudeJohnsonMin.AutoSize = true;
+			this.labelMagnitudeJohnsonMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMagnitudeJohnsonMin.Location = new System.Drawing.Point(210, 90);
+			this.labelMagnitudeJohnsonMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMagnitudeJohnsonMin.Name = "labelMagnitudeJohnsonMin";
+			this.labelMagnitudeJohnsonMin.Size = new System.Drawing.Size(35, 18);
+			this.labelMagnitudeJohnsonMin.TabIndex = 62;
+			this.labelMagnitudeJohnsonMin.Text = "min.:";
+			this.labelMagnitudeJohnsonMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMagnitudeJohnsonMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMagnitudeJohnsonMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMagnitudeJohnsonMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMagnitudeJohnsonMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelDeclinationMin
+			// 
+			this.labelDeclinationMin.AccessibleDescription = "Declination in deg \' \", ICRS (J1991.25) data";
+			this.labelDeclinationMin.AccessibleName = "Declination in deg \' \", ICRS (J1991.25) data";
+			this.labelDeclinationMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelDeclinationMin.AutoSize = true;
+			this.labelDeclinationMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelDeclinationMin.Location = new System.Drawing.Point(210, 72);
+			this.labelDeclinationMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelDeclinationMin.Name = "labelDeclinationMin";
+			this.labelDeclinationMin.Size = new System.Drawing.Size(35, 18);
+			this.labelDeclinationMin.TabIndex = 52;
+			this.labelDeclinationMin.Text = "min.:";
+			this.labelDeclinationMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelRightAscensionMin
+			// 
+			this.labelRightAscensionMin.AccessibleDescription = "Right ascension in h m s, ICRS (J1991.25) data";
+			this.labelRightAscensionMin.AccessibleName = "Right ascension in h m s, ICRS (J1991.25) data";
+			this.labelRightAscensionMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelRightAscensionMin.AutoSize = true;
+			this.labelRightAscensionMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelRightAscensionMin.Location = new System.Drawing.Point(210, 54);
+			this.labelRightAscensionMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelRightAscensionMin.Name = "labelRightAscensionMin";
+			this.labelRightAscensionMin.Size = new System.Drawing.Size(35, 18);
+			this.labelRightAscensionMin.TabIndex = 31;
+			this.labelRightAscensionMin.Text = "min.:";
+			this.labelRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelProximityFlagMin
+			// 
+			this.labelProximityFlagMin.AccessibleDescription = "Proximity flag data";
+			this.labelProximityFlagMin.AccessibleName = "Proximity flag data";
+			this.labelProximityFlagMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelProximityFlagMin.AutoSize = true;
+			this.labelProximityFlagMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelProximityFlagMin.Location = new System.Drawing.Point(210, 36);
+			this.labelProximityFlagMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelProximityFlagMin.Name = "labelProximityFlagMin";
+			this.labelProximityFlagMin.Size = new System.Drawing.Size(35, 18);
+			this.labelProximityFlagMin.TabIndex = 21;
+			this.labelProximityFlagMin.Text = "min.:";
+			this.labelProximityFlagMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelProximityFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProximityFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelProximityFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelProximityFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelIdentifierMin
+			// 
+			this.labelIdentifierMin.AccessibleDescription = "Identifier (HIP number) data";
+			this.labelIdentifierMin.AccessibleName = "Identifier (HIP number) data";
+			this.labelIdentifierMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelIdentifierMin.AutoSize = true;
+			this.labelIdentifierMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelIdentifierMin.Location = new System.Drawing.Point(210, 18);
+			this.labelIdentifierMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelIdentifierMin.Name = "labelIdentifierMin";
+			this.labelIdentifierMin.Size = new System.Drawing.Size(35, 18);
+			this.labelIdentifierMin.TabIndex = 11;
+			this.labelIdentifierMin.Text = "min.:";
+			this.labelIdentifierMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelIdentifierMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelIdentifierMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelIdentifierMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelIdentifierMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCatalogMin
+			// 
+			this.labelCatalogMin.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelCatalogMin.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelCatalogMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCatalogMin.AutoSize = true;
+			this.labelCatalogMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCatalogMin.Location = new System.Drawing.Point(210, 0);
+			this.labelCatalogMin.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCatalogMin.Name = "labelCatalogMin";
+			this.labelCatalogMin.Size = new System.Drawing.Size(35, 18);
+			this.labelCatalogMin.TabIndex = 1;
+			this.labelCatalogMin.Text = "min.:";
+			this.labelCatalogMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCatalogMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCatalogMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCatalogMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCatalogMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxlCatalogMin
+			// 
+			this.textBoxlCatalogMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxlCatalogMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxlCatalogMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxlCatalogMin.Location = new System.Drawing.Point(245, 0);
+			this.textBoxlCatalogMin.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxlCatalogMin.Name = "textBoxlCatalogMin";
+			this.textBoxlCatalogMin.Size = new System.Drawing.Size(50, 18);
+			this.textBoxlCatalogMin.TabIndex = 2;
+			this.textBoxlCatalogMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlCatalogMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxlCatalogMin.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxlCatalogMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// textBoxSourceOfBvColorMax
+			// 
+			this.textBoxSourceOfBvColorMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.textBoxSourceOfBvColorMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxSourceOfBvColorMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+			this.textBoxSourceOfBvColorMax.Location = new System.Drawing.Point(330, 684);
+			this.textBoxSourceOfBvColorMax.Margin = new System.Windows.Forms.Padding(0);
+			this.textBoxSourceOfBvColorMax.Name = "textBoxSourceOfBvColorMax";
+			this.textBoxSourceOfBvColorMax.Size = new System.Drawing.Size(50, 18);
+			this.textBoxSourceOfBvColorMax.TabIndex = 26;
+			this.textBoxSourceOfBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxSourceOfBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.textBoxSourceOfBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelIdentifierMax
+			// 
+			this.labelIdentifierMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelIdentifierMax.AutoSize = true;
+			this.labelIdentifierMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelIdentifierMax.Location = new System.Drawing.Point(295, 18);
+			this.labelIdentifierMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelIdentifierMax.Name = "labelIdentifierMax";
+			this.labelIdentifierMax.Size = new System.Drawing.Size(35, 18);
+			this.labelIdentifierMax.TabIndex = 13;
+			this.labelIdentifierMax.Text = "max.:";
+			this.labelIdentifierMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelIdentifierMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelIdentifierMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelIdentifierMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelIdentifierMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelProximityFlagMax
+			// 
+			this.labelProximityFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelProximityFlagMax.AutoSize = true;
+			this.labelProximityFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelProximityFlagMax.Location = new System.Drawing.Point(295, 36);
+			this.labelProximityFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelProximityFlagMax.Name = "labelProximityFlagMax";
+			this.labelProximityFlagMax.Size = new System.Drawing.Size(35, 18);
+			this.labelProximityFlagMax.TabIndex = 23;
+			this.labelProximityFlagMax.Text = "max.:";
+			this.labelProximityFlagMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelProximityFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProximityFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelProximityFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelProximityFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelRightAscensionMax
+			// 
+			this.labelRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelRightAscensionMax.AutoSize = true;
+			this.labelRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelRightAscensionMax.Location = new System.Drawing.Point(295, 54);
+			this.labelRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelRightAscensionMax.Name = "labelRightAscensionMax";
+			this.labelRightAscensionMax.Size = new System.Drawing.Size(35, 18);
+			this.labelRightAscensionMax.TabIndex = 33;
+			this.labelRightAscensionMax.Text = "max.:";
+			this.labelRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelDeclinationMax
+			// 
+			this.labelDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelDeclinationMax.AutoSize = true;
+			this.labelDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelDeclinationMax.Location = new System.Drawing.Point(295, 72);
+			this.labelDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelDeclinationMax.Name = "labelDeclinationMax";
+			this.labelDeclinationMax.Size = new System.Drawing.Size(35, 18);
+			this.labelDeclinationMax.TabIndex = 54;
+			this.labelDeclinationMax.Text = "max.:";
+			this.labelDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMagnitudeJohnsonMax
+			// 
+			this.labelMagnitudeJohnsonMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelMagnitudeJohnsonMax.AutoSize = true;
+			this.labelMagnitudeJohnsonMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMagnitudeJohnsonMax.Location = new System.Drawing.Point(295, 90);
+			this.labelMagnitudeJohnsonMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMagnitudeJohnsonMax.Name = "labelMagnitudeJohnsonMax";
+			this.labelMagnitudeJohnsonMax.Size = new System.Drawing.Size(35, 18);
+			this.labelMagnitudeJohnsonMax.TabIndex = 64;
+			this.labelMagnitudeJohnsonMax.Text = "max.:";
+			this.labelMagnitudeJohnsonMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMagnitudeJohnsonMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMagnitudeJohnsonMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMagnitudeJohnsonMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMagnitudeJohnsonMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCoarseVariabilityFlagMax
+			// 
+			this.labelCoarseVariabilityFlagMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelCoarseVariabilityFlagMax.AutoSize = true;
+			this.labelCoarseVariabilityFlagMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCoarseVariabilityFlagMax.Location = new System.Drawing.Point(295, 108);
+			this.labelCoarseVariabilityFlagMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCoarseVariabilityFlagMax.Name = "labelCoarseVariabilityFlagMax";
+			this.labelCoarseVariabilityFlagMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCoarseVariabilityFlagMax.TabIndex = 81;
+			this.labelCoarseVariabilityFlagMax.Text = "max.:";
+			this.labelCoarseVariabilityFlagMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCoarseVariabilityFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCoarseVariabilityFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCoarseVariabilityFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCoarseVariabilityFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelSourceOfMagnitudeMax
+			// 
+			this.labelSourceOfMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelSourceOfMagnitudeMax.AutoSize = true;
+			this.labelSourceOfMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfMagnitudeMax.Location = new System.Drawing.Point(295, 126);
+			this.labelSourceOfMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfMagnitudeMax.Name = "labelSourceOfMagnitudeMax";
+			this.labelSourceOfMagnitudeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfMagnitudeMax.TabIndex = 91;
+			this.labelSourceOfMagnitudeMax.Text = "max.:";
+			this.labelSourceOfMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSourceOfMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSourceOfMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSourceOfMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labellAlphaMax
+			// 
+			this.labellAlphaMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labellAlphaMax.AutoSize = true;
+			this.labellAlphaMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labellAlphaMax.Location = new System.Drawing.Point(295, 144);
+			this.labellAlphaMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labellAlphaMax.Name = "labellAlphaMax";
+			this.labellAlphaMax.Size = new System.Drawing.Size(35, 18);
+			this.labellAlphaMax.TabIndex = 101;
+			this.labellAlphaMax.Text = "max.:";
+			this.labellAlphaMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labellAlphaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labellAlphaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labellAlphaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labellAlphaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelDeltaMax
+			// 
+			this.labelDeltaMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelDeltaMax.AutoSize = true;
+			this.labelDeltaMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelDeltaMax.Location = new System.Drawing.Point(295, 162);
+			this.labelDeltaMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelDeltaMax.Name = "labelDeltaMax";
+			this.labelDeltaMax.Size = new System.Drawing.Size(35, 18);
+			this.labelDeltaMax.TabIndex = 111;
+			this.labelDeltaMax.Text = "max.:";
+			this.labelDeltaMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelDeltaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeltaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelDeltaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelDeltaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// label1ReferenceFlagForAstrometryMax
+			// 
+			this.label1ReferenceFlagForAstrometryMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.label1ReferenceFlagForAstrometryMax.AutoSize = true;
+			this.label1ReferenceFlagForAstrometryMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label1ReferenceFlagForAstrometryMax.Location = new System.Drawing.Point(295, 180);
+			this.label1ReferenceFlagForAstrometryMax.Margin = new System.Windows.Forms.Padding(0);
+			this.label1ReferenceFlagForAstrometryMax.Name = "label1ReferenceFlagForAstrometryMax";
+			this.label1ReferenceFlagForAstrometryMax.Size = new System.Drawing.Size(35, 18);
+			this.label1ReferenceFlagForAstrometryMax.TabIndex = 121;
+			this.label1ReferenceFlagForAstrometryMax.Text = "max.:";
+			this.label1ReferenceFlagForAstrometryMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.label1ReferenceFlagForAstrometryMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.label1ReferenceFlagForAstrometryMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.label1ReferenceFlagForAstrometryMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.label1ReferenceFlagForAstrometryMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelTrigonomicParallaxMax
+			// 
+			this.labelTrigonomicParallaxMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelTrigonomicParallaxMax.AutoSize = true;
+			this.labelTrigonomicParallaxMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelTrigonomicParallaxMax.Location = new System.Drawing.Point(295, 198);
+			this.labelTrigonomicParallaxMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelTrigonomicParallaxMax.Name = "labelTrigonomicParallaxMax";
+			this.labelTrigonomicParallaxMax.Size = new System.Drawing.Size(35, 18);
+			this.labelTrigonomicParallaxMax.TabIndex = 131;
+			this.labelTrigonomicParallaxMax.Text = "max.:";
+			this.labelTrigonomicParallaxMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelProperMotionAlphaMax
+			// 
+			this.labelProperMotionAlphaMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelProperMotionAlphaMax.AutoSize = true;
+			this.labelProperMotionAlphaMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelProperMotionAlphaMax.Location = new System.Drawing.Point(295, 216);
+			this.labelProperMotionAlphaMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelProperMotionAlphaMax.Name = "labelProperMotionAlphaMax";
+			this.labelProperMotionAlphaMax.Size = new System.Drawing.Size(35, 18);
+			this.labelProperMotionAlphaMax.TabIndex = 141;
+			this.labelProperMotionAlphaMax.Text = "max.:";
+			this.labelProperMotionAlphaMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelProperMotionAlphaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionAlphaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelProperMotionAlphaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelProperMotionAlphaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelProperMotionDeltaMax
+			// 
+			this.labelProperMotionDeltaMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelProperMotionDeltaMax.AutoSize = true;
+			this.labelProperMotionDeltaMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelProperMotionDeltaMax.Location = new System.Drawing.Point(295, 234);
+			this.labelProperMotionDeltaMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelProperMotionDeltaMax.Name = "labelProperMotionDeltaMax";
+			this.labelProperMotionDeltaMax.Size = new System.Drawing.Size(35, 18);
+			this.labelProperMotionDeltaMax.TabIndex = 151;
+			this.labelProperMotionDeltaMax.Text = "max.:";
+			this.labelProperMotionDeltaMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelProperMotionDeltaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionDeltaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelProperMotionDeltaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelProperMotionDeltaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorRightAscensionMax
+			// 
+			this.labelStandardErrorRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelStandardErrorRightAscensionMax.AutoSize = true;
+			this.labelStandardErrorRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorRightAscensionMax.Location = new System.Drawing.Point(295, 252);
+			this.labelStandardErrorRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorRightAscensionMax.Name = "labelStandardErrorRightAscensionMax";
+			this.labelStandardErrorRightAscensionMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorRightAscensionMax.TabIndex = 161;
+			this.labelStandardErrorRightAscensionMax.Text = "max.:";
+			this.labelStandardErrorRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorDeclinationMax
+			// 
+			this.labelStandardErrorDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelStandardErrorDeclinationMax.AutoSize = true;
+			this.labelStandardErrorDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorDeclinationMax.Location = new System.Drawing.Point(295, 270);
+			this.labelStandardErrorDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorDeclinationMax.Name = "labelStandardErrorDeclinationMax";
+			this.labelStandardErrorDeclinationMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorDeclinationMax.TabIndex = 171;
+			this.labelStandardErrorDeclinationMax.Text = "max.:";
+			this.labelStandardErrorDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorTrigonomicParallaxMax
+			// 
+			this.labelStandardErrorTrigonomicParallaxMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelStandardErrorTrigonomicParallaxMax.AutoSize = true;
+			this.labelStandardErrorTrigonomicParallaxMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorTrigonomicParallaxMax.Location = new System.Drawing.Point(295, 288);
+			this.labelStandardErrorTrigonomicParallaxMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorTrigonomicParallaxMax.Name = "labelStandardErrorTrigonomicParallaxMax";
+			this.labelStandardErrorTrigonomicParallaxMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorTrigonomicParallaxMax.TabIndex = 181;
+			this.labelStandardErrorTrigonomicParallaxMax.Text = "max.:";
+			this.labelStandardErrorTrigonomicParallaxMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorProperMotionRightAscensionMax
+			// 
+			this.labelStandardErrorProperMotionRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelStandardErrorProperMotionRightAscensionMax.AutoSize = true;
+			this.labelStandardErrorProperMotionRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorProperMotionRightAscensionMax.Location = new System.Drawing.Point(295, 306);
+			this.labelStandardErrorProperMotionRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorProperMotionRightAscensionMax.Name = "labelStandardErrorProperMotionRightAscensionMax";
+			this.labelStandardErrorProperMotionRightAscensionMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorProperMotionRightAscensionMax.TabIndex = 191;
+			this.labelStandardErrorProperMotionRightAscensionMax.Text = "max.:";
+			this.labelStandardErrorProperMotionRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorProperMotionRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labellStandardErrorProperMotionDeclinationMax
+			// 
+			this.labellStandardErrorProperMotionDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labellStandardErrorProperMotionDeclinationMax.AutoSize = true;
+			this.labellStandardErrorProperMotionDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labellStandardErrorProperMotionDeclinationMax.Location = new System.Drawing.Point(295, 324);
+			this.labellStandardErrorProperMotionDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labellStandardErrorProperMotionDeclinationMax.Name = "labellStandardErrorProperMotionDeclinationMax";
+			this.labellStandardErrorProperMotionDeclinationMax.Size = new System.Drawing.Size(35, 18);
+			this.labellStandardErrorProperMotionDeclinationMax.TabIndex = 201;
+			this.labellStandardErrorProperMotionDeclinationMax.Text = "max.:";
+			this.labellStandardErrorProperMotionDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labellStandardErrorProperMotionDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labellStandardErrorProperMotionDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labellStandardErrorProperMotionDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labellStandardErrorProperMotionDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationDeclinationByRightAscensionMax
+			// 
+			this.labelCorrelationDeclinationByRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelCorrelationDeclinationByRightAscensionMax.AutoSize = true;
+			this.labelCorrelationDeclinationByRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationDeclinationByRightAscensionMax.Location = new System.Drawing.Point(295, 342);
+			this.labelCorrelationDeclinationByRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationDeclinationByRightAscensionMax.Name = "labelCorrelationDeclinationByRightAscensionMax";
+			this.labelCorrelationDeclinationByRightAscensionMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationDeclinationByRightAscensionMax.TabIndex = 211;
+			this.labelCorrelationDeclinationByRightAscensionMax.Text = "max.:";
+			this.labelCorrelationDeclinationByRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationDeclinationByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationDeclinationByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationTrigonomicParallaxByRightAscensionMax
+			// 
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.AutoSize = true;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Location = new System.Drawing.Point(295, 360);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Name = "labelCorrelationTrigonomicParallaxByRightAscensionMax";
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.TabIndex = 221;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Text = "max.:";
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationTrigonomicParallaxByDeclinationMax
+			// 
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.AutoSize = true;
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Location = new System.Drawing.Point(295, 378);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Name = "labelCorrelationTrigonomicParallaxByDeclinationMax";
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.TabIndex = 231;
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Text = "max.:";
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionRightAscensionByRightAscensionMax
+			// 
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Location = new System.Drawing.Point(295, 396);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Name = "labelCorrelationProperMotionRightAscensionByRightAscensionMax";
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.TabIndex = 241;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Text = "max.:";
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionRightAscensionByDeclinationMax
+			// 
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Location = new System.Drawing.Point(295, 414);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Name = "labelCorrelationProperMotionRightAscensionByDeclinationMax";
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.TabIndex = 251;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Text = "max.:";
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax
+			// 
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.AutoSize = true;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Location = new System.Drawing.Point(295, 432);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Name = "labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax";
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.TabIndex = 261;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Text = "max.:";
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionDeclinationByRightAscensionMax
+			// 
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Location = new System.Drawing.Point(295, 450);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Name = "labelCorrelationProperMotionDeclinationByRightAscensionMax";
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.TabIndex = 271;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Text = "max.:";
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionDeclinationByDeclinationMax
+			// 
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Location = new System.Drawing.Point(295, 468);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Name = "labelCorrelationProperMotionDeclinationByDeclinationMax";
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.TabIndex = 283;
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Text = "max.:";
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax
+			// 
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Location = new System.Drawing.Point(295, 486);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Name = "labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax";
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.TabIndex = 293;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Text = "max.:";
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax
+			// 
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Location = new System.Drawing.Point(295, 504);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Name = "labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax";
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.TabIndex = 303;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Text = "max.:";
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelSourceOfBvColorMax
+			// 
+			this.labelSourceOfBvColorMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelSourceOfBvColorMax.AutoSize = true;
+			this.labelSourceOfBvColorMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelSourceOfBvColorMax.Location = new System.Drawing.Point(295, 684);
+			this.labelSourceOfBvColorMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelSourceOfBvColorMax.Name = "labelSourceOfBvColorMax";
+			this.labelSourceOfBvColorMax.Size = new System.Drawing.Size(35, 18);
+			this.labelSourceOfBvColorMax.TabIndex = 25;
+			this.labelSourceOfBvColorMax.Text = "max.:";
+			this.labelSourceOfBvColorMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelSourceOfBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelSourceOfBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelSourceOfBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelReferenceFlagForBtAndVtMagnitudeMax
+			// 
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.AutoSize = true;
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.Location = new System.Drawing.Point(295, 666);
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.Name = "labelReferenceFlagForBtAndVtMagnitudeMax";
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.TabIndex = 15;
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.Text = "max.:";
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorJohnsonBvColorMax
+			// 
+			this.labelStandardErrorJohnsonBvColorMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelStandardErrorJohnsonBvColorMax.AutoSize = true;
+			this.labelStandardErrorJohnsonBvColorMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorJohnsonBvColorMax.Location = new System.Drawing.Point(295, 648);
+			this.labelStandardErrorJohnsonBvColorMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorJohnsonBvColorMax.Name = "labelStandardErrorJohnsonBvColorMax";
+			this.labelStandardErrorJohnsonBvColorMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorJohnsonBvColorMax.TabIndex = 5;
+			this.labelStandardErrorJohnsonBvColorMax.Text = "max.:";
+			this.labelStandardErrorJohnsonBvColorMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorJohnsonBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorJohnsonBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorJohnsonBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelJohnsonBvColorMax
+			// 
+			this.labelJohnsonBvColorMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelJohnsonBvColorMax.AutoSize = true;
+			this.labelJohnsonBvColorMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelJohnsonBvColorMax.Location = new System.Drawing.Point(295, 630);
+			this.labelJohnsonBvColorMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelJohnsonBvColorMax.Name = "labelJohnsonBvColorMax";
+			this.labelJohnsonBvColorMax.Size = new System.Drawing.Size(35, 18);
+			this.labelJohnsonBvColorMax.TabIndex = 380;
+			this.labelJohnsonBvColorMax.Text = "max.:";
+			this.labelJohnsonBvColorMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelJohnsonBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelJohnsonBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelJohnsonBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorMeanVtMagnitudeMax
+			// 
+			this.labelStandardErrorMeanVtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelStandardErrorMeanVtMagnitudeMax.AutoSize = true;
+			this.labelStandardErrorMeanVtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMeanVtMagnitudeMax.Location = new System.Drawing.Point(295, 612);
+			this.labelStandardErrorMeanVtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMeanVtMagnitudeMax.Name = "labelStandardErrorMeanVtMagnitudeMax";
+			this.labelStandardErrorMeanVtMagnitudeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMeanVtMagnitudeMax.TabIndex = 370;
+			this.labelStandardErrorMeanVtMagnitudeMax.Text = "max.:";
+			this.labelStandardErrorMeanVtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorMeanVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMeanVtMagnitudeMax
+			// 
+			this.labelMeanVtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelMeanVtMagnitudeMax.AutoSize = true;
+			this.labelMeanVtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMeanVtMagnitudeMax.Location = new System.Drawing.Point(295, 594);
+			this.labelMeanVtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMeanVtMagnitudeMax.Name = "labelMeanVtMagnitudeMax";
+			this.labelMeanVtMagnitudeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelMeanVtMagnitudeMax.TabIndex = 360;
+			this.labelMeanVtMagnitudeMax.Text = "max.:";
+			this.labelMeanVtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMeanVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelStandardErrorMeanBtMagnitudeMax
+			// 
+			this.labelStandardErrorMeanBtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelStandardErrorMeanBtMagnitudeMax.AutoSize = true;
+			this.labelStandardErrorMeanBtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelStandardErrorMeanBtMagnitudeMax.Location = new System.Drawing.Point(295, 576);
+			this.labelStandardErrorMeanBtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelStandardErrorMeanBtMagnitudeMax.Name = "labelStandardErrorMeanBtMagnitudeMax";
+			this.labelStandardErrorMeanBtMagnitudeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelStandardErrorMeanBtMagnitudeMax.TabIndex = 350;
+			this.labelStandardErrorMeanBtMagnitudeMax.Text = "max.:";
+			this.labelStandardErrorMeanBtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelStandardErrorMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanBtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStandardErrorMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelStandardErrorMeanBtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelMeanBtMagnitudeMax
+			// 
+			this.labelMeanBtMagnitudeMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelMeanBtMagnitudeMax.AutoSize = true;
+			this.labelMeanBtMagnitudeMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelMeanBtMagnitudeMax.Location = new System.Drawing.Point(295, 558);
+			this.labelMeanBtMagnitudeMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelMeanBtMagnitudeMax.Name = "labelMeanBtMagnitudeMax";
+			this.labelMeanBtMagnitudeMax.Size = new System.Drawing.Size(35, 18);
+			this.labelMeanBtMagnitudeMax.TabIndex = 340;
+			this.labelMeanBtMagnitudeMax.Text = "max.:";
+			this.labelMeanBtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanBtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelMeanBtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelGoodnessOfFitParameterMax
+			// 
+			this.labelGoodnessOfFitParameterMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelGoodnessOfFitParameterMax.AutoSize = true;
+			this.labelGoodnessOfFitParameterMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelGoodnessOfFitParameterMax.Location = new System.Drawing.Point(295, 540);
+			this.labelGoodnessOfFitParameterMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelGoodnessOfFitParameterMax.Name = "labelGoodnessOfFitParameterMax";
+			this.labelGoodnessOfFitParameterMax.Size = new System.Drawing.Size(35, 18);
+			this.labelGoodnessOfFitParameterMax.TabIndex = 330;
+			this.labelGoodnessOfFitParameterMax.Text = "max.:";
+			this.labelGoodnessOfFitParameterMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelGoodnessOfFitParameterMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelGoodnessOfFitParameterMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelGoodnessOfFitParameterMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelGoodnessOfFitParameterMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelPercentageOfRejectedDataMax
+			// 
+			this.labelPercentageOfRejectedDataMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
+			this.labelPercentageOfRejectedDataMax.AutoSize = true;
+			this.labelPercentageOfRejectedDataMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelPercentageOfRejectedDataMax.Location = new System.Drawing.Point(295, 522);
+			this.labelPercentageOfRejectedDataMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelPercentageOfRejectedDataMax.Name = "labelPercentageOfRejectedDataMax";
+			this.labelPercentageOfRejectedDataMax.Size = new System.Drawing.Size(35, 18);
+			this.labelPercentageOfRejectedDataMax.TabIndex = 320;
+			this.labelPercentageOfRejectedDataMax.Text = "max.:";
+			this.labelPercentageOfRejectedDataMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelPercentageOfRejectedDataMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelPercentageOfRejectedDataMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelPercentageOfRejectedDataMax.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelPercentageOfRejectedDataMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
 			// 
 			// HipparcosCatalogFilterForm
 			// 
@@ -7735,121 +7738,121 @@
 		private System.Windows.Forms.ToolStrip toolStrip;
 		private System.Windows.Forms.ToolStripContainer toolStripContainer1;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
-		private System.Windows.Forms.TextBox textBox116;
-		private System.Windows.Forms.TextBox textBox115;
-		private System.Windows.Forms.TextBox textBox112;
-		private System.Windows.Forms.TextBox textBox113;
-		private System.Windows.Forms.TextBox textBox110;
-		private System.Windows.Forms.TextBox textBox107;
-		private System.Windows.Forms.TextBox textBox104;
-		private System.Windows.Forms.TextBox textBox105;
-		private System.Windows.Forms.TextBox textBox102;
-		private System.Windows.Forms.TextBox textBox101;
-		private System.Windows.Forms.TextBox textBox98;
-		private System.Windows.Forms.TextBox textBox99;
-		private System.Windows.Forms.TextBox textBox96;
-		private System.Windows.Forms.TextBox textBox95;
-		private System.Windows.Forms.TextBox textBox93;
-		private System.Windows.Forms.TextBox textBox90;
-		private System.Windows.Forms.TextBox textBox92;
-		private System.Windows.Forms.TextBox textBox87;
-		private System.Windows.Forms.TextBox textBox89;
-		private System.Windows.Forms.TextBox textBox84;
-		private System.Windows.Forms.TextBox textBox86;
-		private System.Windows.Forms.TextBox textBox81;
-		private System.Windows.Forms.TextBox textBox83;
-		private System.Windows.Forms.TextBox textBox78;
-		private System.Windows.Forms.TextBox textBox80;
-		private System.Windows.Forms.TextBox textBox75;
-		private System.Windows.Forms.TextBox textBox77;
-		private System.Windows.Forms.TextBox textBox72;
-		private System.Windows.Forms.TextBox textBox74;
-		private System.Windows.Forms.TextBox textBox69;
-		private System.Windows.Forms.TextBox textBox71;
-		private System.Windows.Forms.TextBox textBox68;
-		private System.Windows.Forms.TextBox textBox66;
-		private System.Windows.Forms.TextBox textBox65;
-		private System.Windows.Forms.TextBox textBox63;
-		private System.Windows.Forms.TextBox textBox62;
-		private System.Windows.Forms.TextBox textBox60;
-		private System.Windows.Forms.TextBox textBox59;
-		private System.Windows.Forms.TextBox textBox57;
-		private System.Windows.Forms.TextBox textBox56;
-		private System.Windows.Forms.TextBox textBox54;
-		private System.Windows.Forms.TextBox textBox53;
-		private System.Windows.Forms.TextBox textBox51;
-		private System.Windows.Forms.TextBox textBox50;
-		private System.Windows.Forms.TextBox textBox48;
-		private System.Windows.Forms.TextBox textBox47;
-		private System.Windows.Forms.TextBox textBox45;
-		private System.Windows.Forms.TextBox textBox44;
-		private System.Windows.Forms.TextBox textBox42;
-		private System.Windows.Forms.TextBox textBox41;
-		private System.Windows.Forms.TextBox textBox39;
-		private System.Windows.Forms.TextBox textBox38;
-		private System.Windows.Forms.TextBox textBox36;
-		private System.Windows.Forms.TextBox textBox35;
-		private System.Windows.Forms.TextBox textBox33;
-		private System.Windows.Forms.TextBox textBox32;
-		private System.Windows.Forms.TextBox textBox30;
-		private System.Windows.Forms.TextBox textBox29;
-		private System.Windows.Forms.TextBox textBox27;
-		private System.Windows.Forms.TextBox textBox26;
-		private System.Windows.Forms.TextBox textBox24;
-		private System.Windows.Forms.TextBox textBox23;
-		private System.Windows.Forms.TextBox textBox21;
-		private System.Windows.Forms.TextBox textBox20;
-		private System.Windows.Forms.TextBox textBox18;
-		private System.Windows.Forms.TextBox textBox17;
-		private System.Windows.Forms.TextBox textBox15;
-		private System.Windows.Forms.TextBox textBox14;
-		private System.Windows.Forms.TextBox textBox12;
+		private System.Windows.Forms.TextBox textBoxSourceOfBvColorMin;
+		private System.Windows.Forms.TextBox textBoxReferenceFlagForBtAndVtMagnitudeMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorJohnsonBvColorMax;
+		private System.Windows.Forms.TextBox textBoxReferenceFlagForBtAndVtMagnitudeMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorJohnsonBvColorMin;
+		private System.Windows.Forms.TextBox textBoxJohnsonBvColorMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMeanVtMagnitudeMax;
+		private System.Windows.Forms.TextBox textBoxJohnsonBvColorMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMeanVtMagnitudeMin;
+		private System.Windows.Forms.TextBox textBoxMeanVtMagnitudeMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMeanBtMagnitudeMax;
+		private System.Windows.Forms.TextBox textBoxMeanVtMagnitudeMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMeanBtMagnitudeMin;
+		private System.Windows.Forms.TextBox textBoxMeanBtMagnitudeMax;
+		private System.Windows.Forms.TextBox textBoxMeanBtMagnitudeMin;
+		private System.Windows.Forms.TextBox textBoxGoodnessOfFitParameterMin;
+		private System.Windows.Forms.TextBox textBoxGoodnessOfFitParameterMax;
+		private System.Windows.Forms.TextBox textBoxPercentageOfRejectedDataMin;
+		private System.Windows.Forms.TextBox textBoxPercentageOfRejectedDataMax;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByDeclinationMin;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByDeclinationMax;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByRightAscensionMin;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionDeclinationByRightAscensionMax;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionRightAscensionByDeclinationMin;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionRightAscensionByDeclinationMax;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionRightAscensionByRightAscensionMax;
+		private System.Windows.Forms.TextBox textBoxCorrelationProperMotionRightAscensionByRightAscensionMin;
+		private System.Windows.Forms.TextBox textBoxCorrelationTrigonomicParallaxByDeclinationMax;
+		private System.Windows.Forms.TextBox textBoxCorrelationTrigonomicParallaxByDeclinationMin;
+		private System.Windows.Forms.TextBox textBoxCorrelationTrigonomicParallaxByRightAscensionMax;
+		private System.Windows.Forms.TextBox textBoxCorrelationTrigonomicParallaxByRightAscensionMin;
+		private System.Windows.Forms.TextBox textBoxCorrelationDeclinationByRightAscensionMax;
+		private System.Windows.Forms.TextBox textBoxCorrelationDeclinationByRightAscensionMin;
+		private System.Windows.Forms.TextBox textBoxlStandardErrorProperMotionDeclinationMax;
+		private System.Windows.Forms.TextBox textBoxlStandardErrorProperMotionDeclinationMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorProperMotionRightAscensionMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorProperMotionRightAscensionMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorTrigonomicParallaxMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorTrigonomicParallaxMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorDeclinationMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorDeclinationMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorRightAscensionMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorRightAscensionMin;
+		private System.Windows.Forms.TextBox textBoxProperMotionDeltaMax;
+		private System.Windows.Forms.TextBox textBoxProperMotionDeltaMin;
+		private System.Windows.Forms.TextBox textBoxProperMotionAlphaMax;
+		private System.Windows.Forms.TextBox textBoxProperMotionAlphaMin;
+		private System.Windows.Forms.TextBox textBoxTrigonomicParallaxMax;
+		private System.Windows.Forms.TextBox textBoxTrigonomicParallaxMin;
+		private System.Windows.Forms.TextBox textBoxReferenceFlagForAstrometryMax;
+		private System.Windows.Forms.TextBox textBoxReferenceFlagForAstrometryMin;
+		private System.Windows.Forms.TextBox textBoxDeltaMax;
+		private System.Windows.Forms.TextBox textBoxDeltaMin;
+		private System.Windows.Forms.TextBox textBoxlAlphaMax;
+		private System.Windows.Forms.TextBox textBoxlAlphaMin;
+		private System.Windows.Forms.TextBox textBoxSourceOfMagnitudeMax;
+		private System.Windows.Forms.TextBox textBoxSourceOfMagnitudeMin;
+		private System.Windows.Forms.TextBox textBoxCoarseVariabilityFlagMax;
+		private System.Windows.Forms.TextBox textBoxCoarseVariabilityFlagMin;
+		private System.Windows.Forms.TextBox textBoxMagnitudeJohnsonMax;
+		private System.Windows.Forms.TextBox textBoxMagnitudeJohnsonMin;
+		private System.Windows.Forms.TextBox textBoxDeclinationMax;
+		private System.Windows.Forms.TextBox textBoxDeclinationMin;
 		private System.Windows.Forms.TextBox textBox11;
-		private System.Windows.Forms.TextBox textBox9;
-		private System.Windows.Forms.TextBox textBox8;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label labelSourceOfBvColorData;
-		private System.Windows.Forms.Label labelReferenceFlagForBtAndVtMagnitudeData;
-		private System.Windows.Forms.Label labelStandardErrorJohnsonBvColorData;
-		private System.Windows.Forms.Label labelJohnsonBvColorData;
-		private System.Windows.Forms.Label labelStandardErrorMeanVtMagnitudeData;
-		private System.Windows.Forms.Label labelMeanVtMagnitudeData;
-		private System.Windows.Forms.Label labelStandardErrorMeanBtMagnitudeData;
-		private System.Windows.Forms.Label labelMeanBtMagnitudeData;
-		private System.Windows.Forms.Label labelGoodnessOfFitParameterData;
-		private System.Windows.Forms.Label labelPercentageOfRejectedDataData;
-		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData;
-		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByTrigonomicParallaxData;
-		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByDeclinationData;
-		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByRightAscensionData;
-		private System.Windows.Forms.Label labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData;
-		private System.Windows.Forms.Label labelCorrelationProperMotionRightAscensionByDeclinationData;
-		private System.Windows.Forms.Label labelCorrelationProperMotionRightAscensionByRightAscensionData;
-		private System.Windows.Forms.Label labelCorrelationTrigonomicParallaxByDeclinationData;
-		private System.Windows.Forms.Label labelCorrelationTrigonomicParallaxByRightAscensionData;
-		private System.Windows.Forms.Label labelCorrelationDeclinationByRightAscensionData;
-		private System.Windows.Forms.Label labelStandardErrorProperMotionDeclinationData;
-		private System.Windows.Forms.Label labelStandardErrorProperMotionRightAscensionData;
-		private System.Windows.Forms.Label labelStandardErrorTrigonomicParallaxData;
-		private System.Windows.Forms.Label labelStandardErrorDeclinationData;
-		private System.Windows.Forms.Label labelStandardErrorRightAscensionData;
-		private System.Windows.Forms.Label labelProperMotionDeltaData;
-		private System.Windows.Forms.Label labelProperMotionAlphaData;
-		private System.Windows.Forms.Label labelTrigonomicParallaxData;
-		private System.Windows.Forms.Label labelReferenceFlagForAstrometryData;
-		private System.Windows.Forms.Label labelDeltaData;
-		private System.Windows.Forms.Label labelAlphaData;
-		private System.Windows.Forms.Label labelSourceOfMagnitudeData;
-		private System.Windows.Forms.Label labelCoarseVariabilityFlagData;
-		private System.Windows.Forms.Label labelMagnitudeJohnsonData;
-		private System.Windows.Forms.Label labelDeclinationData;
-		private System.Windows.Forms.Label labelRightAscensionData;
-		private System.Windows.Forms.Label labelProximityFlagData;
-		private System.Windows.Forms.Label labelIdentifierData;
+		private System.Windows.Forms.TextBox textBoxRightAscensionMax;
+		private System.Windows.Forms.TextBox textBoxProximityFlagMax;
+		private System.Windows.Forms.TextBox textBoxProximityFlagMin;
+		private System.Windows.Forms.TextBox textBoxIdentifierMax;
+		private System.Windows.Forms.TextBox textBoxIdentifierMin;
+		private System.Windows.Forms.TextBox textBoxlCatalogMax;
+		private System.Windows.Forms.Label labellCatalogMax;
+		private System.Windows.Forms.Label labelSourceOfBvColorMin;
+		private System.Windows.Forms.Label labelReferenceFlagForBtAndVtMagnitudeMin;
+		private System.Windows.Forms.Label labelStandardErrorJohnsonBvColorMin;
+		private System.Windows.Forms.Label labelJohnsonBvColorMin;
+		private System.Windows.Forms.Label labelStandardErrorMeanVtMagnitudeMin;
+		private System.Windows.Forms.Label labelMeanVtMagnitudeMin;
+		private System.Windows.Forms.Label labelStandardErrorMeanBtMagnitudeMin;
+		private System.Windows.Forms.Label labelMeanBtMagnitudeMin;
+		private System.Windows.Forms.Label labelGoodnessOfFitParameterMin;
+		private System.Windows.Forms.Label labelPercentageOfRejectedDataMin;
+		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin;
+		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin;
+		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByDeclinationMin;
+		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByRightAscensionMin;
+		private System.Windows.Forms.Label labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin;
+		private System.Windows.Forms.Label labelCorrelationProperMotionRightAscensionByDeclinationMin;
+		private System.Windows.Forms.Label labelCorrelationProperMotionRightAscensionByRightAscensionMin;
+		private System.Windows.Forms.Label labelCorrelationTrigonomicParallaxByDeclinationMin;
+		private System.Windows.Forms.Label labelCorrelationTrigonomicParallaxByRightAscensionMin;
+		private System.Windows.Forms.Label labelCorrelationDeclinationByRightAscensionMin;
+		private System.Windows.Forms.Label labelStandardErrorProperMotionDeclinationmMin;
+		private System.Windows.Forms.Label labelStandardErrorProperMotionRightAscensionMin;
+		private System.Windows.Forms.Label labelStandardErrorTrigonomicParallaxMin;
+		private System.Windows.Forms.Label labelStandardErrorDeclinationMin;
+		private System.Windows.Forms.Label labelStandardErrorRightAscensionMin;
+		private System.Windows.Forms.Label labelProperMotionDeltaMin;
+		private System.Windows.Forms.Label labelProperMotionAlphaMin;
+		private System.Windows.Forms.Label labelTrigonomicParallaxMin;
+		private System.Windows.Forms.Label labelReferenceFlagForAstrometryMin;
+		private System.Windows.Forms.Label labelDeltaMin;
+		private System.Windows.Forms.Label labelAlphaMin;
+		private System.Windows.Forms.Label labelSourceOfMagnitudeMin;
+		private System.Windows.Forms.Label labelCoarseVariabilityFlagMin;
+		private System.Windows.Forms.Label labelMagnitudeJohnsonMin;
+		private System.Windows.Forms.Label labelDeclinationMin;
+		private System.Windows.Forms.Label labelRightAscensionMin;
+		private System.Windows.Forms.Label labelProximityFlagMin;
+		private System.Windows.Forms.Label labelIdentifierMin;
 		private System.Windows.Forms.Label labelCatalogDesc;
 		private System.Windows.Forms.Label labelSourceOfSpectralTypeDesc;
 		private System.Windows.Forms.Label labelHistoricalStatusFlagDesc;
@@ -7926,202 +7929,202 @@
 		private System.Windows.Forms.Label labelStandardErrorJohnsonBvColorDesc;
 		private System.Windows.Forms.Label labelSourceOfBvColorDesc;
 		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemDesc;
-		private System.Windows.Forms.Label labelCatalogData;
+		private System.Windows.Forms.Label labelCatalogMin;
 		private System.Windows.Forms.Label labelLightCurveAnnexDesc;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.Label label9;
-		private System.Windows.Forms.Label label10;
-		private System.Windows.Forms.Label label11;
-		private System.Windows.Forms.Label label12;
-		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.Label label14;
-		private System.Windows.Forms.Label label15;
-		private System.Windows.Forms.Label label16;
-		private System.Windows.Forms.Label label17;
-		private System.Windows.Forms.Label label18;
-		private System.Windows.Forms.Label label19;
-		private System.Windows.Forms.Label label20;
-		private System.Windows.Forms.Label label21;
-		private System.Windows.Forms.Label label22;
-		private System.Windows.Forms.Label label23;
-		private System.Windows.Forms.Label label24;
-		private System.Windows.Forms.Label label25;
-		private System.Windows.Forms.Label label26;
-		private System.Windows.Forms.Label label27;
-		private System.Windows.Forms.Label label28;
-		private System.Windows.Forms.Label label29;
-		private System.Windows.Forms.Label label30;
-		private System.Windows.Forms.Label label31;
-		private System.Windows.Forms.Label label32;
-		private System.Windows.Forms.Label label33;
-		private System.Windows.Forms.Label label34;
-		private System.Windows.Forms.Label label35;
-		private System.Windows.Forms.Label label36;
-		private System.Windows.Forms.Label label37;
-		private System.Windows.Forms.Label label38;
-		private System.Windows.Forms.Label label39;
+		private System.Windows.Forms.TextBox textBoxlCatalogMin;
+		private System.Windows.Forms.TextBox textBoxSourceOfBvColorMax;
+		private System.Windows.Forms.Label labelIdentifierMax;
+		private System.Windows.Forms.Label labelProximityFlagMax;
+		private System.Windows.Forms.Label labelRightAscensionMax;
+		private System.Windows.Forms.Label labelDeclinationMax;
+		private System.Windows.Forms.Label labelMagnitudeJohnsonMax;
+		private System.Windows.Forms.Label labelCoarseVariabilityFlagMax;
+		private System.Windows.Forms.Label labelSourceOfMagnitudeMax;
+		private System.Windows.Forms.Label labellAlphaMax;
+		private System.Windows.Forms.Label labelDeltaMax;
+		private System.Windows.Forms.Label label1ReferenceFlagForAstrometryMax;
+		private System.Windows.Forms.Label labelTrigonomicParallaxMax;
+		private System.Windows.Forms.Label labelProperMotionAlphaMax;
+		private System.Windows.Forms.Label labelProperMotionDeltaMax;
+		private System.Windows.Forms.Label labelStandardErrorRightAscensionMax;
+		private System.Windows.Forms.Label labelStandardErrorDeclinationMax;
+		private System.Windows.Forms.Label labelStandardErrorTrigonomicParallaxMax;
+		private System.Windows.Forms.Label labelStandardErrorProperMotionRightAscensionMax;
+		private System.Windows.Forms.Label labellStandardErrorProperMotionDeclinationMax;
+		private System.Windows.Forms.Label labelCorrelationDeclinationByRightAscensionMax;
+		private System.Windows.Forms.Label labelCorrelationTrigonomicParallaxByRightAscensionMax;
+		private System.Windows.Forms.Label labelCorrelationTrigonomicParallaxByDeclinationMax;
+		private System.Windows.Forms.Label labelCorrelationProperMotionRightAscensionByRightAscensionMax;
+		private System.Windows.Forms.Label labelCorrelationProperMotionRightAscensionByDeclinationMax;
+		private System.Windows.Forms.Label labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax;
+		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByRightAscensionMax;
+		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByDeclinationMax;
+		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax;
+		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax;
+		private System.Windows.Forms.Label labelSourceOfBvColorMax;
+		private System.Windows.Forms.Label labelReferenceFlagForBtAndVtMagnitudeMax;
+		private System.Windows.Forms.Label labelStandardErrorJohnsonBvColorMax;
+		private System.Windows.Forms.Label labelJohnsonBvColorMax;
+		private System.Windows.Forms.Label labelStandardErrorMeanVtMagnitudeMax;
+		private System.Windows.Forms.Label labelMeanVtMagnitudeMax;
+		private System.Windows.Forms.Label labelStandardErrorMeanBtMagnitudeMax;
+		private System.Windows.Forms.Label labelMeanBtMagnitudeMax;
+		private System.Windows.Forms.Label labelGoodnessOfFitParameterMax;
+		private System.Windows.Forms.Label labelPercentageOfRejectedDataMax;
 		private System.Windows.Forms.ToolStripButton toolStripButtonApplyFilterSettings;
 		private System.Windows.Forms.ToolStripButton toolStripButtonCancel;
-		private System.Windows.Forms.Label label115;
-		private System.Windows.Forms.TextBox textBox154;
-		private System.Windows.Forms.Label label114;
-		private System.Windows.Forms.TextBox textBox153;
-		private System.Windows.Forms.Label label113;
-		private System.Windows.Forms.TextBox textBox152;
-		private System.Windows.Forms.Label label112;
-		private System.Windows.Forms.TextBox textBox151;
-		private System.Windows.Forms.Label label111;
-		private System.Windows.Forms.TextBox textBox150;
-		private System.Windows.Forms.Label label110;
-		private System.Windows.Forms.TextBox textBox149;
-		private System.Windows.Forms.Label label109;
-		private System.Windows.Forms.TextBox textBox148;
-		private System.Windows.Forms.Label label108;
-		private System.Windows.Forms.TextBox textBox147;
-		private System.Windows.Forms.Label label107;
-		private System.Windows.Forms.TextBox textBox146;
-		private System.Windows.Forms.Label label106;
-		private System.Windows.Forms.TextBox textBox145;
-		private System.Windows.Forms.Label label105;
-		private System.Windows.Forms.TextBox textBox144;
-		private System.Windows.Forms.Label label104;
-		private System.Windows.Forms.TextBox textBox143;
-		private System.Windows.Forms.Label label103;
-		private System.Windows.Forms.TextBox textBox142;
-		private System.Windows.Forms.Label label102;
-		private System.Windows.Forms.TextBox textBox141;
-		private System.Windows.Forms.Label label101;
-		private System.Windows.Forms.TextBox textBox140;
-		private System.Windows.Forms.Label label100;
-		private System.Windows.Forms.TextBox textBox139;
-		private System.Windows.Forms.Label label99;
-		private System.Windows.Forms.TextBox textBox138;
-		private System.Windows.Forms.Label label98;
-		private System.Windows.Forms.TextBox textBox137;
-		private System.Windows.Forms.Label label97;
-		private System.Windows.Forms.TextBox textBox136;
-		private System.Windows.Forms.Label label96;
-		private System.Windows.Forms.TextBox textBox135;
-		private System.Windows.Forms.Label label95;
-		private System.Windows.Forms.TextBox textBox134;
-		private System.Windows.Forms.Label label94;
-		private System.Windows.Forms.TextBox textBox133;
-		private System.Windows.Forms.Label label93;
-		private System.Windows.Forms.TextBox textBox132;
-		private System.Windows.Forms.Label label92;
-		private System.Windows.Forms.TextBox textBox131;
-		private System.Windows.Forms.Label label91;
-		private System.Windows.Forms.TextBox textBox130;
-		private System.Windows.Forms.Label label90;
-		private System.Windows.Forms.TextBox textBox129;
-		private System.Windows.Forms.Label label89;
-		private System.Windows.Forms.TextBox textBox128;
-		private System.Windows.Forms.Label label88;
-		private System.Windows.Forms.TextBox textBox127;
-		private System.Windows.Forms.Label label87;
-		private System.Windows.Forms.TextBox textBox126;
-		private System.Windows.Forms.Label label86;
-		private System.Windows.Forms.TextBox textBox125;
-		private System.Windows.Forms.Label label85;
-		private System.Windows.Forms.TextBox textBox124;
-		private System.Windows.Forms.Label label84;
-		private System.Windows.Forms.TextBox textBox123;
-		private System.Windows.Forms.Label label83;
-		private System.Windows.Forms.TextBox textBox122;
-		private System.Windows.Forms.Label label82;
-		private System.Windows.Forms.TextBox textBox121;
-		private System.Windows.Forms.Label label81;
-		private System.Windows.Forms.TextBox textBox120;
-		private System.Windows.Forms.Label label80;
-		private System.Windows.Forms.TextBox textBox119;
-		private System.Windows.Forms.Label label79;
-		private System.Windows.Forms.TextBox textBox118;
-		private System.Windows.Forms.Label label78;
-		private System.Windows.Forms.TextBox textBox117;
-		private System.Windows.Forms.Label label77;
-		private System.Windows.Forms.TextBox textBox114;
-		private System.Windows.Forms.Label label76;
-		private System.Windows.Forms.TextBox textBox111;
-		private System.Windows.Forms.Label label75;
-		private System.Windows.Forms.TextBox textBox109;
-		private System.Windows.Forms.Label label74;
-		private System.Windows.Forms.TextBox textBox108;
-		private System.Windows.Forms.Label label73;
-		private System.Windows.Forms.TextBox textBox106;
-		private System.Windows.Forms.Label label72;
-		private System.Windows.Forms.TextBox textBox103;
-		private System.Windows.Forms.Label label71;
-		private System.Windows.Forms.TextBox textBox100;
-		private System.Windows.Forms.Label label70;
-		private System.Windows.Forms.TextBox textBox97;
-		private System.Windows.Forms.Label label69;
-		private System.Windows.Forms.TextBox textBox94;
-		private System.Windows.Forms.Label label68;
-		private System.Windows.Forms.TextBox textBox91;
-		private System.Windows.Forms.Label label67;
-		private System.Windows.Forms.TextBox textBox88;
-		private System.Windows.Forms.Label label66;
-		private System.Windows.Forms.TextBox textBox85;
-		private System.Windows.Forms.Label label65;
-		private System.Windows.Forms.TextBox textBox82;
-		private System.Windows.Forms.Label label64;
-		private System.Windows.Forms.TextBox textBox79;
-		private System.Windows.Forms.Label label63;
-		private System.Windows.Forms.TextBox textBox76;
-		private System.Windows.Forms.Label label62;
-		private System.Windows.Forms.TextBox textBox73;
-		private System.Windows.Forms.Label label61;
-		private System.Windows.Forms.TextBox textBox70;
-		private System.Windows.Forms.Label label60;
-		private System.Windows.Forms.TextBox textBox67;
-		private System.Windows.Forms.Label label59;
-		private System.Windows.Forms.TextBox textBox64;
-		private System.Windows.Forms.Label label58;
-		private System.Windows.Forms.TextBox textBox61;
-		private System.Windows.Forms.Label label57;
-		private System.Windows.Forms.TextBox textBox58;
-		private System.Windows.Forms.Label label56;
-		private System.Windows.Forms.TextBox textBox55;
-		private System.Windows.Forms.Label label55;
-		private System.Windows.Forms.TextBox textBox52;
-		private System.Windows.Forms.Label label54;
-		private System.Windows.Forms.TextBox textBox49;
-		private System.Windows.Forms.Label label53;
-		private System.Windows.Forms.TextBox textBox46;
-		private System.Windows.Forms.Label label52;
-		private System.Windows.Forms.TextBox textBox43;
-		private System.Windows.Forms.Label label51;
-		private System.Windows.Forms.TextBox textBox40;
-		private System.Windows.Forms.Label label50;
-		private System.Windows.Forms.TextBox textBox37;
-		private System.Windows.Forms.Label label49;
-		private System.Windows.Forms.TextBox textBox34;
-		private System.Windows.Forms.Label label48;
-		private System.Windows.Forms.TextBox textBox31;
-		private System.Windows.Forms.Label label47;
-		private System.Windows.Forms.TextBox textBox28;
-		private System.Windows.Forms.Label label46;
-		private System.Windows.Forms.TextBox textBox25;
-		private System.Windows.Forms.Label label45;
-		private System.Windows.Forms.TextBox textBox22;
-		private System.Windows.Forms.Label label44;
-		private System.Windows.Forms.TextBox textBox19;
-		private System.Windows.Forms.Label label43;
-		private System.Windows.Forms.TextBox textBox16;
-		private System.Windows.Forms.Label label42;
-		private System.Windows.Forms.TextBox textBox13;
-		private System.Windows.Forms.Label label41;
-		private System.Windows.Forms.TextBox textBox10;
-		private System.Windows.Forms.Label label40;
-		private System.Windows.Forms.TextBox textBox7;
+		private System.Windows.Forms.Label labelSourceOfSpectralTypemax;
+		private System.Windows.Forms.TextBox textBoxSourceOfSpectralTypeMax;
+		private System.Windows.Forms.Label labelSourceOfSpectralTypeMin;
+		private System.Windows.Forms.TextBox textBoxSourceOfSpectralTypeMin;
+		private System.Windows.Forms.Label labelSpectralTypeMax;
+		private System.Windows.Forms.TextBox textBoxSpectralTypeMax;
+		private System.Windows.Forms.Label labelSpectralTypeMin;
+		private System.Windows.Forms.TextBox textBoxSpectralTypeMin;
+		private System.Windows.Forms.Label labelViUsedForReductionsMax;
+		private System.Windows.Forms.TextBox textBoxViUsedForReductionsmax;
+		private System.Windows.Forms.Label labelViUsedForReductionsMin;
+		private System.Windows.Forms.TextBox textBoxViUsedForReductionsMin;
+		private System.Windows.Forms.Label labelCapePhotographicDmMax;
+		private System.Windows.Forms.TextBox textBoxCapePhotographicDmMax;
+		private System.Windows.Forms.Label labelCapePhotographicDmMin;
+		private System.Windows.Forms.TextBox textBoxCapePhotographicDmMin;
+		private System.Windows.Forms.Label labelCordobaDmMax;
+		private System.Windows.Forms.TextBox textBoxCordobaDmMax;
+		private System.Windows.Forms.Label labelCordobaDmMin;
+		private System.Windows.Forms.TextBox textBoxCordobaDmMin;
+		private System.Windows.Forms.Label labelBonnerDmMax;
+		private System.Windows.Forms.TextBox textBoxBonnerDmMax;
+		private System.Windows.Forms.Label labelBonnerDmMin;
+		private System.Windows.Forms.TextBox textBoxBonnerDmMin;
+		private System.Windows.Forms.Label labelHdNumberMax;
+		private System.Windows.Forms.TextBox textBoxHdNumberMax;
+		private System.Windows.Forms.Label labelHdNumberMin;
+		private System.Windows.Forms.TextBox textBoxHdNumberMin;
+		private System.Windows.Forms.Label labelExistenceOfNotesMax;
+		private System.Windows.Forms.TextBox textBoxExistenceOfNotesMax;
+		private System.Windows.Forms.Label labelExistenceOfNotesMin;
+		private System.Windows.Forms.TextBox textBoxExistenceOfNotesmin;
+		private System.Windows.Forms.Label labelIdentificationChartMax;
+		private System.Windows.Forms.TextBox textBoxIdentificationChartMax;
+		private System.Windows.Forms.Label labelIdentificationChartMin;
+		private System.Windows.Forms.TextBox textBoxIdentificationChartMin;
+		private System.Windows.Forms.Label labelFlagIndicatingSurveyStarMax;
+		private System.Windows.Forms.TextBox textBoxFlagIndicatingSurveyStarMax;
+		private System.Windows.Forms.Label labelFlagIndicatingSurveyStarMin;
+		private System.Windows.Forms.TextBox textBoxFlagIndicatingSurveyStarMin;
+		private System.Windows.Forms.Label labelStandardErrorMagnitudeDifferenceBetweenComponentsMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMax;
+		private System.Windows.Forms.Label labelStandardErrorMagnitudeDifferenceBetweenComponentsMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMagnitudeDifferenceBetweenComponentsMin;
+		private System.Windows.Forms.Label labelMagnitudeDifferenceBetweenComponentsMax;
+		private System.Windows.Forms.TextBox textBoxMagnitudeDifferenceBetweenComponentsMax;
+		private System.Windows.Forms.Label labelMagnitudeDifferenceBetweenComponentsMin;
+		private System.Windows.Forms.TextBox textBoxMagnitudeDifferenceBetweenComponentsMin;
+		private System.Windows.Forms.Label labelStandardErrorRhoMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorRhoMax;
+		private System.Windows.Forms.Label labelStandardErrorRhoMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorRhoMin;
+		private System.Windows.Forms.Label labelAngularSeparationBetweenComponentsMax;
+		private System.Windows.Forms.TextBox textBoxAngularSeparationBetweenComponentsMax;
+		private System.Windows.Forms.Label labelAngularSeparationBetweenComponentsMin;
+		private System.Windows.Forms.TextBox textBoxAngularSeparationBetweenComponentsMin;
+		private System.Windows.Forms.Label labelPositionAngleBetweenComponentsMax;
+		private System.Windows.Forms.TextBox textBoxPositionAngleBetweenComponentsMax;
+		private System.Windows.Forms.Label labelPositionAngleBetweenComponentsMin;
+		private System.Windows.Forms.TextBox textBoxPositionAngleBetweenComponentsMin;
+		private System.Windows.Forms.Label labelComponentIdentifiersMax;
+		private System.Windows.Forms.TextBox textBoxComponentIdentifiersMax;
+		private System.Windows.Forms.Label labelComponentIdentifiersMin;
+		private System.Windows.Forms.TextBox textBoxComponentIdentifiersMin;
+		private System.Windows.Forms.Label labelSolutionQualityMax;
+		private System.Windows.Forms.TextBox textBoxSolutionQualityMax;
+		private System.Windows.Forms.Label labelSolutionQualityMin;
+		private System.Windows.Forms.TextBox textBoxSolutionQualityMin;
+		private System.Windows.Forms.Label labelAstrometricSourceFlagMax;
+		private System.Windows.Forms.TextBox textBoxAstrometricSourceFlagMax;
+		private System.Windows.Forms.Label labelAstrometricSourceFlagMin;
+		private System.Windows.Forms.TextBox textBoxAstrometricSourceFlagMin;
+		private System.Windows.Forms.Label labelMultipleSystemsFlagMax;
+		private System.Windows.Forms.TextBox textBoxMultipleSystemsFlagMax;
+		private System.Windows.Forms.Label labelMultipleSystemsFlagMin;
+		private System.Windows.Forms.TextBox textBoxMultipleSystemsFlagMin;
+		private System.Windows.Forms.Label labelNumberComponentsInThisEntryMax;
+		private System.Windows.Forms.TextBox textBoxNumberComponentsInThisEntryMax;
+		private System.Windows.Forms.Label labelNumberComponentsInThisEntryMin;
+		private System.Windows.Forms.TextBox textBoxNumberComponentsInThisEntryMin;
+		private System.Windows.Forms.Label labelNumberEntriesWithSameCcdmMax;
+		private System.Windows.Forms.TextBox textBoxNumberEntriesWithSameCcdmMax;
+		private System.Windows.Forms.Label labelNumberEntriesWithSameCcdm;
+		private System.Windows.Forms.TextBox textBoxNumberEntriesWithSameCcdmMin;
+		private System.Windows.Forms.Label labelHistoricalStatusFlagMax;
+		private System.Windows.Forms.TextBox textBoxHistoricalStatusFlagMax;
+		private System.Windows.Forms.Label labelHistoricalStatusFlagMin;
+		private System.Windows.Forms.TextBox textBoxHistoricalStatusFlagMin;
+		private System.Windows.Forms.Label labelCcdmIdentifierMax;
+		private System.Windows.Forms.TextBox textBoxCcdmIdentifierMax;
+		private System.Windows.Forms.Label labelCcdmIdentifierMin;
+		private System.Windows.Forms.TextBox textBoxCcdmIdentifierMin;
+		private System.Windows.Forms.Label labelLightCurveAnnexMax;
+		private System.Windows.Forms.TextBox textBoxLightCurveAnnexMax;
+		private System.Windows.Forms.Label labelLightCurveAnnexMin;
+		private System.Windows.Forms.TextBox textBoxLightCurveAnnexMin;
+		private System.Windows.Forms.Label labelAdditionalDataAboutVariabilityMax;
+		private System.Windows.Forms.TextBox textBoxAdditionalDataAboutVariabilityMax;
+		private System.Windows.Forms.Label labelAdditionalDataAboutVariabilityMin;
+		private System.Windows.Forms.TextBox textBoxAdditionalDataAboutVariabilityMin;
+		private System.Windows.Forms.Label labelVariabilityTypeMax;
+		private System.Windows.Forms.TextBox textBoxVariabilityTypeMax;
+		private System.Windows.Forms.Label labelVariabilityTypeMin;
+		private System.Windows.Forms.TextBox textBoxVariabilityTypeMin;
+		private System.Windows.Forms.Label labelVariabilityPeriodMax;
+		private System.Windows.Forms.TextBox textBoxVariabilityPeriodMax;
+		private System.Windows.Forms.Label labelVariabilityPeriodMin;
+		private System.Windows.Forms.TextBox textBoxVariabilityPeriodMin;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemAtMinimumMax;
+		private System.Windows.Forms.TextBox textBoxMedianMagnitudeInHipparcosSystemAtMinimumMax;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemAtMinimumMin;
+		private System.Windows.Forms.TextBox textBoxMedianMagnitudeInHipparcosSystemAtMinimumMin;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemAtMaximumMax;
+		private System.Windows.Forms.TextBox textBoxMedianMagnitudeInHipparcosSystemAtMaximumMax;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemAtMaximumMin;
+		private System.Windows.Forms.TextBox textBoxMedianMagnitudeInHipparcosSystemAtMaximumMin;
+		private System.Windows.Forms.Label labelReferenceFlagForMedianMagnitudeInHipparcosSystemMax;
+		private System.Windows.Forms.TextBox textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMax;
+		private System.Windows.Forms.Label labelReferenceFlagForMedianMagnitudeInHipparcosSystemMin;
+		private System.Windows.Forms.TextBox textBoxReferenceFlagForMedianMagnitudeInHipparcosSystemMin;
+		private System.Windows.Forms.Label labelNumberObservationsForMedianMagnitudeInHipparcosSysteMax;
+		private System.Windows.Forms.TextBox textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMax;
+		private System.Windows.Forms.Label labelNumberObservationsForMedianMagnitudeInHipparcosSystemMin;
+		private System.Windows.Forms.TextBox textBoxNumberObservationsForMedianMagnitudeInHipparcosSystemMin;
+		private System.Windows.Forms.Label labelScatterMedianMagnitudeInHipparcosSystemMax;
+		private System.Windows.Forms.TextBox textBoxScatterMedianMagnitudeInHipparcosSystemMax;
+		private System.Windows.Forms.Label labelScatterMedianMagnitudeInHipparcosSystemMin;
+		private System.Windows.Forms.TextBox textBoxScatterMedianMagnitudeInHipparcosSystemMin;
+		private System.Windows.Forms.Label labelStandardErrorMedianMagnitudeInHipparcosSystemMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMedianMagnitudeInHipparcosSystemMax;
+		private System.Windows.Forms.Label labelStandardErrorMedianMagnitudeInHipparcosSystemMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorMedianMagnitudeInHipparcosSystemMin;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemMax;
+		private System.Windows.Forms.TextBox textBoxMedianMagnitudeInHipparcosSystemMax;
+		private System.Windows.Forms.Label labelMedianMagnitudeInHipparcosSystemMin;
+		private System.Windows.Forms.TextBox textBoxMedianMagnitudeInHipparcosSystemMin;
+		private System.Windows.Forms.Label labelFlagForCombinedMagnitudesMax;
+		private System.Windows.Forms.TextBox textBoxFlagForCombinedMagnitudesMax;
+		private System.Windows.Forms.Label labelFlagForCombinedMagnitudesMin;
+		private System.Windows.Forms.TextBox textBoxFlagForCombinedMagnitudesMin;
+		private System.Windows.Forms.Label labelSourceOfViMax;
+		private System.Windows.Forms.TextBox textBoxSourceOfViMax;
+		private System.Windows.Forms.Label labelSourceOfViMin;
+		private System.Windows.Forms.TextBox textBoxSourceOfViMin;
+		private System.Windows.Forms.Label labelStandardErrorViMax;
+		private System.Windows.Forms.TextBox textBoxStandardErrorViMax;
+		private System.Windows.Forms.Label labelStandardErrorViMin;
+		private System.Windows.Forms.TextBox textBoxStandardErrorViMin;
+		private System.Windows.Forms.Label labelColorIndexInCousinsSystemMax;
+		private System.Windows.Forms.TextBox textBoxColorIndexInCousinsSystemMax;
+		private System.Windows.Forms.Label labelColorIndexInCousinsSystemMin;
+		private System.Windows.Forms.TextBox textBoxColorIndexInCousinsSystemMin;
 		private System.Windows.Forms.ToolStripButton toolStripButtonRestoreToDefault;
 	}
 }
