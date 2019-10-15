@@ -399,6 +399,16 @@ namespace Hipparcos_DB
 			}
 		}
 
+		private void SetColorSelfAndNeighbourAndSetStatusbar(uint astroElemId, ref Label labelSelf, ref Label labelNeighbour, Color color, object sender, EventArgs e)
+		{
+			astrophysicalElement = astroElemId;
+			SetStatusbar(sender: sender, e: e);
+			if (settings.UserEnableHoverEffect)
+			{
+				SetColorSelfAndNeighbour(labelSelf: ref labelSelf, labelNeighbour: ref labelNeighbour, color: color);
+			}
+		}
+
 		private void SetColorSelfAndNeighbourAndClearStatusbar(ref Label labelSelf, ref Label labelNeighbour, Color color)
 		{
 			ClearStatusbar();
@@ -5048,185 +5058,41 @@ namespace Hipparcos_DB
 			}
 		}
 
-		private void LabelIdentificationChartDesc_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.IdentificationChartDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentificationChartDesc.BackColor = labelIdentificationChartData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelIdentificationChartDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.IdentificationChartDesc, labelSelf: ref labelIdentificationChartDesc, labelNeighbour: ref labelIdentificationChartData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelIdentificationChartData_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.IdentificationChartData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentificationChartDesc.BackColor = labelIdentificationChartData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelIdentificationChartData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.IdentificationChartData, labelSelf: ref labelIdentificationChartDesc, labelNeighbour: ref labelIdentificationChartData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelExistenceOfNotesDesc_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ExistenceOfNotesDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelExistenceOfNotesDesc.BackColor = labelExistenceOfNotesData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelExistenceOfNotesDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ExistenceOfNotesDesc, labelSelf: ref labelExistenceOfNotesDesc, labelNeighbour: ref labelExistenceOfNotesData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelExistenceOfNotesData_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ExistenceOfNotesData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelExistenceOfNotesDesc.BackColor = labelExistenceOfNotesData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelExistenceOfNotesData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ExistenceOfNotesData, labelSelf: ref labelExistenceOfNotesDesc, labelNeighbour: ref labelExistenceOfNotesData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelHdNumberDesc_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.HdNumberDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHdNumberDesc.BackColor = labelHdNumberData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelHdNumberDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.HdNumberDesc, labelSelf: ref labelHdNumberDesc, labelNeighbour: ref labelHdNumberData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelHdNumberData_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.HdNumberData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHdNumberDesc.BackColor = labelHdNumberData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelHdNumberData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.HdNumberData, labelSelf: ref labelHdNumberDesc, labelNeighbour: ref labelHdNumberData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelBonnerDmDesc_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.BonnerDmDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelBonnerDmDesc.BackColor = labelBonnerDmData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelBonnerDmDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.BonnerDmDesc, labelSelf: ref labelBonnerDmDesc, labelNeighbour: ref labelBonnerDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelBonnerDmData_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.BonnerDmData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelBonnerDmDesc.BackColor = labelBonnerDmData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelBonnerDmData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.BonnerDmData, labelSelf: ref labelBonnerDmDesc, labelNeighbour: ref labelBonnerDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCordobaDmDesc_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CordobaDmDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCordobaDmDesc.BackColor = labelCordobaDmData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelCordobaDmDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CordobaDmDesc, labelSelf: ref labelCordobaDmDesc, labelNeighbour: ref labelCordobaDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCordobaDmData_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CordobaDmData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCordobaDmDesc.BackColor = labelCordobaDmData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelCordobaDmData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CordobaDmData, labelSelf: ref labelCordobaDmDesc, labelNeighbour: ref labelCordobaDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCapePhotographicDmDesc_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CapePhotographicDmDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCapePhotographicDmDesc.BackColor = labelCapePhotographicDmData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelCapePhotographicDmDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CapePhotographicDmDesc, labelSelf: ref labelCapePhotographicDmDesc, labelNeighbour: ref labelCapePhotographicDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCapePhotographicDmData_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CapePhotographicDmData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCapePhotographicDmDesc.BackColor = labelCapePhotographicDmData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelCapePhotographicDmData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CapePhotographicDmData, labelSelf: ref labelCapePhotographicDmDesc, labelNeighbour: ref labelCapePhotographicDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelViUsedForReductionsDesc_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ViUsedForReductionsDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelViUsedForReductionsDesc.BackColor = labelViUsedForReductionsData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelViUsedForReductionsDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ViUsedForReductionsDesc, labelSelf: ref labelViUsedForReductionsDesc, labelNeighbour: ref labelViUsedForReductionsData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelViUsedForReductionsData_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ViUsedForReductionsData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelViUsedForReductionsDesc.BackColor = labelViUsedForReductionsData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelViUsedForReductionsData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ViUsedForReductionsData, labelSelf: ref labelViUsedForReductionsDesc, labelNeighbour: ref labelViUsedForReductionsData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSpectralTypeDesc_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SpectralTypeDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSpectralTypeDesc.BackColor = labelSpectralTypeData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelSpectralTypeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SpectralTypeDesc, labelSelf: ref labelSpectralTypeDesc, labelNeighbour: ref labelSpectralTypeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSpectralTypeData_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SpectralTypeData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSpectralTypeDesc.BackColor = labelSpectralTypeData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelSpectralTypeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SpectralTypeData, labelSelf: ref labelSpectralTypeDesc, labelNeighbour: ref labelSpectralTypeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSourceOfSpectralTypeDesc_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SourceOfSpectralTypeDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfSpectralTypeDesc.BackColor = labelSourceOfSpectralTypeData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelSourceOfSpectralTypeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfSpectralTypeDesc, labelSelf: ref labelSourceOfSpectralTypeDesc, labelNeighbour: ref labelSourceOfSpectralTypeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSourceOfSpectralTypeData_MouseEnter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SourceOfSpectralTypeData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfSpectralTypeDesc.BackColor = labelSourceOfSpectralTypeData.BackColor = SystemColors.ControlLight;
-			}
-		}
+		private void LabelSourceOfSpectralTypeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfSpectralTypeData, labelSelf: ref labelSourceOfSpectralTypeDesc, labelNeighbour: ref labelSourceOfSpectralTypeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void ToolStripButtonGoToIndex_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
