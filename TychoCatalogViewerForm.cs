@@ -2491,562 +2491,450 @@ namespace Hipparcos_DB
 
 		private void LabelCatalogDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCatalogData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelIdentifierDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelIdentifierData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelProximityFlagDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelProximityFlagData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelRightAscensionDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelRightAscensionData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelDeclinationDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelDeclinationData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelMagnitudeJohnsonDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelMagnitudeJohnsonData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelSourceOfMagnitudeDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelSourceOfMagnitudeData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelAlphaDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelAlphaData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelDeltaDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelDeltaData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelReferenceFlagForAstrometryDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelReferenceFlagForAstrometryData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelTrigonomicParallaxDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelProperMotionAlphaDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelProperMotionAlphaData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelProperMotionDeltaDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelProperMotionDeltaData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorRightAscensionDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorRightAscensionData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorDeclinationDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorDeclinationData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorTrigonomicParallaxDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorProperMotionRightAscensionDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorProperMotionRightAscensionData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorProperMotionDeclinationDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorProperMotionDeclinationData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationDeclinationByRightAscensionDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationDeclinationByRightAscensionData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationTrigonomicParallaxByDeclinationData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByDeclinationData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelNumberOfTransitsForAstrometryDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelNumberOfTransitsForAstrometryData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelGoodnessOfFitParameterDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelGoodnessOfFitParameterData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelHipparcosNumberDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelHipparcosNumberData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelMeanBtMagnitudeDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelMeanBtMagnitudeData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorMeanBtMagnitudeDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorMeanBtMagnitudeData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelMeanVtMagnitudeDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelMeanVtMagnitudeData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorMeanVtMagnitudeDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorMeanVtMagnitudeData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelSourceOfPhotometryDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelSourceOfPhotometryData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelJohnsonBvColorDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelJohnsonBvColorData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorJohnsonBvColorDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelStandardErrorJohnsonBvColorData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelAstrometricQualityFlagDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelAstrometricQualityFlagData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelSignalToNoiseRatioOfTheStarImageDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelSignalToNoiseRatioOfTheStarImageData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelSourceOfAstrometricDataDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelSourceOfAstrometricDataData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelNumberOfTransitsForPhotometryDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelNumberOfTransitsForPhotometryData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelEstimateOfVtmagScatterDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelEstimateOfVtmagScatterData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelVtmagAtMaximumDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelVtmagAtMaximumData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelVtmagAtMinimumDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelVtmagAtMinimumData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelKnownVariabilityFromGcvsNsvDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelKnownVariabilityFromGcvsNsvData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelVariabilityFromTychoDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelVariabilityFromTychoData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelDuplicityFromTychoDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelDuplicityFromTychoData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelEpochPhotometryInAnnexDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelEpochPhotometryInAnnexData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCcdmComponentIdentifierDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCcdmComponentIdentifierData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelPpmAndSupplementDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelPpmAndSupplementData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelHdNumberDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelHdNumberData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelBonnerDmDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelBonnerDmData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCordobaDmDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCordobaDmData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCapePhotographicDmDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelCapePhotographicDmData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelNotesDesc_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		private void LabelNotesData_DoubleClick(object sender, EventArgs e)
 		{
-
 		}
 
 		#endregion
@@ -3055,12 +2943,10 @@ namespace Hipparcos_DB
 
 		private void TychoCatalogViewerForm_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
 		{
-
 		}
 
 		private void ToolStripTextBoxGoToIndex_KeyPress(object sender, KeyPressEventArgs e)
 		{
-
 		}
 
 		#endregion

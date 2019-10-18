@@ -17,10 +17,9 @@ namespace Hipparcos_DB
 		private string[] hostFiles;
 		private long ticks;
 
-		public void SetHostUrls(string[] files)
-		{
-			hostFiles = files ?? throw new ArgumentNullException(paramName: nameof(files), message: "The name of the host files are null.");
-		}
+		#region Local methods
+
+		public void SetHostUrls(string[] files) => hostFiles = files ?? throw new ArgumentNullException(paramName: nameof(files), message: "The name of the host files are null.");
 
 		public void SetHost(string host)
 		{
@@ -32,25 +31,13 @@ namespace Hipparcos_DB
 			toolStripTextBoxHost.Text = host;
 		}
 
-		private string GetHost()
-		{
-			return host;
-		}
+		private string GetHost() => host;
 
-		public void SetCatalogDirectory(string directory)
-		{
-			catalogDirectory = directory;
-		}
+		public void SetCatalogDirectory(string directory) => catalogDirectory = directory;
 
-		private string GetCatalogDirectory()
-		{
-			return catalogDirectory;
-		}
+		private string GetCatalogDirectory() => catalogDirectory;
 
-		private string RemoveFileExtension(string filename)
-		{
-			return filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
-		}
+		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
 
 		private static byte[] Decompress(byte[] gzip)
 		{
@@ -201,6 +188,10 @@ namespace Hipparcos_DB
 		}
 		*/
 
+		#endregion
+
+		#region Don-/Destructor
+
 		public DownloaderForm()
 		{
 			InitializeComponent();
@@ -214,6 +205,10 @@ namespace Hipparcos_DB
 			toolStripButtonRestoreHost.Enabled = toolStripStatusLabelDownloadAnimation.Visible = toolStripButtonSaveLogging.Enabled = false;
 		}
 
+		#endregion
+
+		#region Form* event handler
+
 		private void DownloaderForm_Load(object sender, EventArgs e)
 		{
 			ClearStatusbar();
@@ -223,6 +218,10 @@ namespace Hipparcos_DB
 				ToolStripButtonStartDownload_Click(sender: sender, e: e);
 			}
 		}
+
+		#endregion
+
+		#region Click event handlers
 
 		private void ToolStripButtonEditHost_Click(object sender, EventArgs e)
 		{
@@ -241,8 +240,6 @@ namespace Hipparcos_DB
 				settings.Save();
 			}
 		}
-
-		#region Click event handlers
 
 		private void ToolStripButtonStartDownload_Click(object sender, EventArgs e)
 		{
@@ -265,218 +262,35 @@ namespace Hipparcos_DB
 			toolStripTextBoxHost.Text = GetHost();
 		}
 
-		private void ToolStripButtonSaveLogging_Click(object sender, EventArgs e)
-		{
-			saveFileDialog.ShowDialog();
-		}
+		private void ToolStripButtonSaveLogging_Click(object sender, EventArgs e) => saveFileDialog.ShowDialog();
 
 		#endregion
 
 		#region Enter event handlers
 
-		private void ToolStripTextBoxHost_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void LabelDownlaodStatus_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void LabelDownloadPercent_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void LabelFilesDownload_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void TextBox_Enter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void SetStatusbar_Enter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
 		#endregion
 
 		#region MouseEnter event handlers
 
-		private void ToolStripLabelHost_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void ToolStripTextBoxHost_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void ToolStripButtonEditHost_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void ToolStripButtonStartDownload_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void LabelDownlaodStatus_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void ProgressBarDownloadFile_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void LabelDownloadPercent_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void ProgressBarDownloadFiles_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void LabelFilesDownload_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void TextBox_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void ToolStripStatusLabel_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void ToolStripButtonRestoreHost_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void ToolStripStatusLabelDownloadAnimation_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
-
-		private void ToolStripButtonSaveLogging_MouseEnter(object sender, EventArgs e)
-		{
-			SetStatusbar(sender: sender, e: e);
-		}
+		private void SetStatusbar_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
 		#endregion
 
 		#region Leave event handlers
 
-		private void ToolStripTextBoxHost_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void LabelDownlaodStatus_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void LabelDownloadPercent_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void LabelFilesDownload_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void TextBox_Leave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ClearStatusbar_Leave(object sender, EventArgs e) => ClearStatusbar();
 
 		#endregion
 
 		#region MouseLeave event handlers
 
-		private void ToolStripLabelHost_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripTextBoxHost_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripButtonEditHost_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripButtonStartDownload_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void LabelDownlaodStatus_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ProgressBarDownloadFile_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void LabelDownloadPercent_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ProgressBarDownloadFiles_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void LabelFilesDownload_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void TextBox_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripButtonRestoreHost_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripStatusLabel_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripStatusLabelDownloadAnimation_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
-
-		private void ToolStripButtonSaveLogging_MouseLeave(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-		}
+		private void ClearStatusbar_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
 		#endregion
+
+		#region File* event handler
 
 		private void SaveFileDialog_FileOk(object sender, CancelEventArgs e)
 		{
@@ -503,6 +317,10 @@ namespace Hipparcos_DB
 					icon: MessageBoxIcon.Information);
 			}
 		}
+
+		#endregion
+
+		#region BackgroundWorker event handler
 
 		private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
 		{
@@ -577,7 +395,11 @@ namespace Hipparcos_DB
 						icon: MessageBoxIcon.Error);
 				}
 			}
-		}
+		}		
+
+		#endregion
+
+		#region Tick event handler
 
 		private void TimerDownloadAnimation_Tick(object sender, EventArgs e)
 		{
@@ -591,5 +413,7 @@ namespace Hipparcos_DB
 				toolStripStatusLabelDownloadAnimation.Image = Resources.fugue_arrow_270_small_16px_shadowless;
 			}
 		}
+
+		#endregion
 	}
 }

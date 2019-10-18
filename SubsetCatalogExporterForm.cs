@@ -5,7 +5,6 @@ namespace Hipparcos_DB.Properties
 {
 	public partial class SubsetCatalogExporterForm : Form
 	{
-
 		#region Local methods
 
 		#endregion
