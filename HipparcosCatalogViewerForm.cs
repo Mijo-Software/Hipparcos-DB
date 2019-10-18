@@ -390,6 +390,16 @@ namespace Hipparcos_DB
 			toolStripStatusLabelInfo.Visible = false;
 		}
 
+		private void SetColorSelfAndSetStatusbar(uint astroElemId, ref Label labelSelf, Color color, object sender, EventArgs e)
+		{
+			astrophysicalElement = astroElemId;
+			SetStatusbar(sender: sender, e: e);
+			if (settings.UserEnableHoverEffect)
+			{
+				SetColorSelf(labelSelf: ref labelSelf, color: color);
+			}
+		}
+
 		private void SetColorSelfAndClearStatusbar(ref Label labelSelf, Color color)
 		{
 			ClearStatusbar();
@@ -900,1231 +910,7 @@ namespace Hipparcos_DB
 
 		#region DoubleClick event handlers
 
-		private void LabelCatalogData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelIdentifierData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelProximityFlagData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelRightAscensionData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelDeclinationData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMagnitudeJohnsonData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCoarseVariabilityFlagData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSourceOfMagnitudeData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelAlphaData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelDeltaData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelProperMotionAlphaData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelProperMotionDeltaData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorRightAscensionData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorDeclinationData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorProperMotionRightAscensionData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorProperMotionDeclinationData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationDeclinationByRightAscensionData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByDeclinationData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByDeclinationData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelPercentageOfRejectedDataData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelGoodnessOfFitParameterData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMeanBtMagnitudeData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorMeanBtMagnitudeData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMeanVtMagnitudeData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorMeanVtMagnitudeData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelJohnsonBvColorData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorJohnsonBvColorData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelReferenceFlagForBtAndVtMagnitudeData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSourceOfBvColorData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelColorIndexInCousinsSystemData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorViData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSourceOfViData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelFlagForCombinedMagnitudesData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelScatterMedianMagnitudeInHipparcosSystemData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelVariabilityPeriodData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelVariabilityTypeData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelAdditionalDataAboutVariabilityData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelLightCurveAnnexData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCcdmIdentifierData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelHistoricalStatusFlagData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelNumberEntriesWithSameCcdmData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelNumberComponentsInThisEntryData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMultipleSystemsFlagData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelAstrometricSourceFlagData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSolutionQualityData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelComponentIdentifiersData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelPositionAngleBetweenComponentsData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelAngularSeparationBetweenComponentsData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorRhoData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMagnitudeDifferenceBetweenComponentsData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelFlagIndicatingSurveyStarData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelIdentificationChartData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelExistenceOfNotesData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelHdNumberData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelBonnerDmData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCordobaDmData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCapePhotographicDmData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelViUsedForReductionsData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSpectralTypeData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSourceOfSpectralTypeData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelReferenceFlagForAstrometryData_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCatalogDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelIdentifierDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelProximityFlagDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelRightAscensionDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelDeclinationDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMagnitudeJohnsonDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCoarseVariabilityFlagDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSourceOfMagnitudeDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelAlphaDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelDeltaDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelReferenceFlagForAstrometryDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelTrigonomicParallaxDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelProperMotionAlphaDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelProperMotionDeltaDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorRightAscensionDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorDeclinationDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorTrigonomicParallaxDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorProperMotionRightAscensionDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorProperMotionDeclinationDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationDeclinationByRightAscensionDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelPercentageOfRejectedDataDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelGoodnessOfFitParameterDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMeanBtMagnitudeDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorMeanBtMagnitudeDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMeanVtMagnitudeDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorMeanVtMagnitudeDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelJohnsonBvColorDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorJohnsonBvColorDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSourceOfBvColorDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelColorIndexInCousinsSystemDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorViDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSourceOfViDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelFlagForCombinedMagnitudesDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelScatterMedianMagnitudeInHipparcosSystemDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelVariabilityPeriodDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelVariabilityTypeDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelAdditionalDataAboutVariabilityDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelLightCurveAnnexDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCcdmIdentifierDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelHistoricalStatusFlagDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelNumberEntriesWithSameCcdmDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelNumberComponentsInThisEntryDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMultipleSystemsFlagDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelAstrometricSourceFlagDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSolutionQualityDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelComponentIdentifiersDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelPositionAngleBetweenComponentsDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelAngularSeparationBetweenComponentsDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorRhoDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelMagnitudeDifferenceBetweenComponentsDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelFlagIndicatingSurveyStarDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelIdentificationChartDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelExistenceOfNotesDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelHdNumberDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelBonnerDmDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCordobaDmDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelCapePhotographicDmDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelViUsedForReductionsDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSpectralTypeDesc_DoubleClick(object sender, EventArgs e)
-		{
-			if (settings.UserEnableCopyMethod)
-			{
-				CopyToClipboard(sender: sender, e: e);
-			}
-		}
-
-		private void LabelSourceOfSpectralTypeDesc_DoubleClick(object sender, EventArgs e)
+		private void CopyToClipboard_DoubleClick(object sender, EventArgs e)
 		{
 			if (settings.UserEnableCopyMethod)
 			{
@@ -2136,1545 +922,313 @@ namespace Hipparcos_DB
 
 		#region Enter event handlers
 
-		private void LabelCatalogDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CatalogDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCatalogDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCatalogData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CatalogData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCatalogData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelIdentifierDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.IdentifierDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentifierDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelIdentifierData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.IdentifierData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentifierData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelProximityFlagDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ProximityFlagDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProximityFlagDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelProximityFlagData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ProximityFlagData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProximityFlagData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelRightAscensionDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.RightAscensionDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelRightAscensionData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.RightAscensionData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelRightAscensionData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelDeclinationDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.DeclinationDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelDeclinationDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelDeclinationData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.DeclinationData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelDeclinationData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMagnitudeJohnsonDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MagnitudeJohnsonDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeJohnsonDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMagnitudeJohnsonData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MagnitudeJohnsonData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeJohnsonData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCoarseVariabilityFlagDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CoarseVariabilityFlagDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCoarseVariabilityFlagDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCoarseVariabilityFlagData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CoarseVariabilityFlagData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCoarseVariabilityFlagData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSourceOfMagnitudeDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SourceOfMagnitudeDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSourceOfMagnitudeData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SourceOfMagnitudeData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfMagnitudeData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelAlphaDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.AlphaDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAlphaDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelAlphaData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.AlphaData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAlphaData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelDeltaDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.DeltaDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCatalogDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelDeltaData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.DeltaData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelDeltaData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelReferenceFlagForAstrometryDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ReferenceFlagForAstrometryDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForAstrometryDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelReferenceFlagForAstrometryData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ReferenceFlagForAstrometryData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForAstrometryData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.TrigonomicParallaxDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelTrigonomicParallaxDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelTrigonomicParallaxData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.TrigonomicParallaxData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelTrigonomicParallaxData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelProperMotionAlphaDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ProperMotionAlphaDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionAlphaDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelProperMotionAlphaData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ProperMotionAlphaData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionAlphaData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelProperMotionDeltaDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ProperMotionDeltaDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionDeltaDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelProperMotionDeltaData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ProperMotionDeltaData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelProperMotionDeltaData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorRightAscensionDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorRightAscensionDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorRightAscensionData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorRightAscensionData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRightAscensionData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorDeclinationDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorDeclinationDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorDeclinationDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorDeclinationData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorDeclinationData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorDeclinationData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorTrigonomicParallaxDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorTrigonomicParallaxDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorTrigonomicParallaxData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorTrigonomicParallaxData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorTrigonomicParallaxData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionRightAscensionDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionRightAscensionDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionRightAscensionData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionRightAscensionData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionRightAscensionData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionDeclinationDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionDeclinationDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionDeclinationDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorProperMotionDeclinationData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorProperMotionDeclinationData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorProperMotionDeclinationData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationDeclinationByRightAscensionDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationDeclinationByRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationDeclinationByRightAscensionData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationDeclinationByRightAscensionData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByRightAscensionData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByDeclinationDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationTrigonomicParallaxByDeclinationData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationTrigonomicParallaxByDeclinationData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByRightAscensionData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByDeclinationDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByDeclinationData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByRightAscensionData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByDeclinationDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByDeclinationData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByDeclinationData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelPercentageOfRejectedDataDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.PercentageOfRejectedDataDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPercentageOfRejectedDataDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelPercentageOfRejectedDataData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.PercentageOfRejectedDataData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPercentageOfRejectedDataData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelGoodnessOfFitParameterDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.GoodnessOfFitParameterDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelGoodnessOfFitParameterDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelGoodnessOfFitParameterData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.GoodnessOfFitParameterData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelGoodnessOfFitParameterData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMeanBtMagnitudeDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MeanBtMagnitudeDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanBtMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMeanBtMagnitudeData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MeanBtMagnitudeData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanBtMagnitudeData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorMeanBtMagnitudeDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorMeanBtMagnitudeDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanBtMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorMeanBtMagnitudeData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorMeanBtMagnitudeData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanBtMagnitudeData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMeanVtMagnitudeDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MeanVtMagnitudeDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanVtMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMeanVtMagnitudeData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MeanVtMagnitudeData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMeanVtMagnitudeData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorMeanVtMagnitudeDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorMeanVtMagnitudeDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanVtMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorMeanVtMagnitudeData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorMeanVtMagnitudeData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMeanVtMagnitudeData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelJohnsonBvColorDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.JohnsonBvColorDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelJohnsonBvColorDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelJohnsonBvColorData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.JohnsonBvColorData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelJohnsonBvColorData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorJohnsonBvColorDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorJohnsonBvColorDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorJohnsonBvColorDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorJohnsonBvColorData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorJohnsonBvColorData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorJohnsonBvColorData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForBtAndVtMagnitudeDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelReferenceFlagForBtAndVtMagnitudeData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForBtAndVtMagnitudeData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSourceOfBvColorDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SourceOfBvColorDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfBvColorDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSourceOfBvColorData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SourceOfBvColorData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfBvColorData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelColorIndexInCousinsSystemDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ColorIndexInCousinsSystemDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelColorIndexInCousinsSystemDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelColorIndexInCousinsSystemData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ColorIndexInCousinsSystemData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelColorIndexInCousinsSystemData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorViDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorViDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorViDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorViData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorViData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorViData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSourceOfViDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SourceOfViDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfViDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSourceOfViData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SourceOfViData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfViData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelFlagForCombinedMagnitudesDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.FlagForCombinedMagnitudesDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagForCombinedMagnitudesDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelFlagForCombinedMagnitudesData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.FlagForCombinedMagnitudesData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagForCombinedMagnitudesData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorMedianMagnitudeInHipparcosSystemDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorMedianMagnitudeInHipparcosSystemData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelScatterMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ScatterMedianMagnitudeInHipparcosSystemDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelScatterMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelScatterMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ScatterMedianMagnitudeInHipparcosSystemData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelScatterMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.NumberObservationsForMedianMagnitudeInHipparcosSystemDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.NumberObservationsForMedianMagnitudeInHipparcosSystemData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMaximumDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMaximumData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMaximumData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMinimumDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMinimumData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMedianMagnitudeInHipparcosSystemAtMinimumData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelVariabilityPeriodDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.VariabilityPeriodDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityPeriodDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelVariabilityPeriodData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.VariabilityPeriodData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityPeriodData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelVariabilityTypeDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.VariabilityTypeDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityTypeDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelVariabilityTypeData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.VariabilityTypeData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelVariabilityTypeData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelAdditionalDataAboutVariabilityDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.AdditionalDataAboutVariabilityDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAdditionalDataAboutVariabilityDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelAdditionalDataAboutVariabilityData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.AdditionalDataAboutVariabilityData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAdditionalDataAboutVariabilityData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelLightCurveAnnexDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.LightCurveAnnexDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelLightCurveAnnexDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelLightCurveAnnexData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.LightCurveAnnexData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelLightCurveAnnexData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCcdmIdentifierDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CcdmIdentifierDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCcdmIdentifierDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCcdmIdentifierData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CcdmIdentifierData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCcdmIdentifierData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelHistoricalStatusFlagDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.HistoricalStatusFlagDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHistoricalStatusFlagDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelHistoricalStatusFlagData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.HistoricalStatusFlagData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHistoricalStatusFlagData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelNumberEntriesWithSameCcdmDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.NumberEntriesWithSameCcdmDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberEntriesWithSameCcdmDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelNumberEntriesWithSameCcdmData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.NumberEntriesWithSameCcdmData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberEntriesWithSameCcdmData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelNumberComponentsInThisEntryDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.NumberComponentsInThisEntryDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberComponentsInThisEntryDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelNumberComponentsInThisEntryData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.NumberComponentsInThisEntryData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelNumberComponentsInThisEntryData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMultipleSystemsFlagDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MultipleSystemsFlagDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMultipleSystemsFlagDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMultipleSystemsFlagData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MultipleSystemsFlagData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMultipleSystemsFlagData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelAstrometricSourceFlagDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.AstrometricSourceFlagDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAstrometricSourceFlagDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelAstrometricSourceFlagData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.AstrometricSourceFlagData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAstrometricSourceFlagData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSolutionQualityDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SolutionQualityDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSolutionQualityDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSolutionQualityData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SolutionQualityData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSolutionQualityData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelComponentIdentifiersDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ComponentIdentifiersDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelComponentIdentifiersDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelComponentIdentifiersData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ComponentIdentifiersData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelComponentIdentifiersData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelPositionAngleBetweenComponentsDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.PositionAngleBetweenComponentsDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPositionAngleBetweenComponentsDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelPositionAngleBetweenComponentsData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.PositionAngleBetweenComponentsData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelPositionAngleBetweenComponentsData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelAngularSeparationBetweenComponentsDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.AngularSeparationBetweenComponentsDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAngularSeparationBetweenComponentsDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelAngularSeparationBetweenComponentsData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.AngularSeparationBetweenComponentsData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelAngularSeparationBetweenComponentsData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorRhoDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorRhoDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRhoDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorRhoData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorRhoData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorRhoData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMagnitudeDifferenceBetweenComponentsDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MagnitudeDifferenceBetweenComponentsDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeDifferenceBetweenComponentsDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelMagnitudeDifferenceBetweenComponentsData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.MagnitudeDifferenceBetweenComponentsData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorMagnitudeDifferenceBetweenComponentsDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.StandardErrorMagnitudeDifferenceBetweenComponentsData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelStandardErrorMagnitudeDifferenceBetweenComponentsData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelFlagIndicatingSurveyStarDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.FlagIndicatingSurveyStarDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagIndicatingSurveyStarDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelFlagIndicatingSurveyStarData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.FlagIndicatingSurveyStarData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelFlagIndicatingSurveyStarData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelIdentificationChartDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.IdentificationChartDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentificationChartDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelIdentificationChartData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.IdentificationChartData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelIdentificationChartData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelExistenceOfNotesDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ExistenceOfNotesDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelExistenceOfNotesDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelExistenceOfNotesData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ExistenceOfNotesData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelExistenceOfNotesData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelHdNumberDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.HdNumberDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHdNumberDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelHdNumberData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.HdNumberData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelHdNumberData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelBonnerDmDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.BonnerDmDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelBonnerDmDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelBonnerDmData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.BonnerDmData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelBonnerDmData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCordobaDmDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CordobaDmDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCordobaDmDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCordobaDmData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CordobaDmData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCordobaDmData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCapePhotographicDmDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CapePhotographicDmDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCapePhotographicDmDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelCapePhotographicDmData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.CapePhotographicDmData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelCapePhotographicDmData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelViUsedForReductionsDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ViUsedForReductionsDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelViUsedForReductionsDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelViUsedForReductionsData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.ViUsedForReductionsData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelViUsedForReductionsData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSpectralTypeDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SpectralTypeDesc;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSpectralTypeDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSpectralTypeData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SpectralTypeData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSpectralTypeData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSourceOfSpectralTypeDesc_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SourceOfSpectralTypeDesc;
-			SetStatusbar(sender: sender, e: e); SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfSpectralTypeDesc.BackColor = SystemColors.ControlLightLight;
-			}
-		}
-
-		private void LabelSourceOfSpectralTypeData_Enter(object sender, EventArgs e)
-		{
-			astrophysicalElement = (uint)AstroElement.SourceOfSpectralTypeData;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
-			{
-				labelSourceOfSpectralTypeData.BackColor = SystemColors.ControlLightLight;
-			}
-		}
+		private void LabelCatalogDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CatalogDesc, labelSelf: ref labelCatalogDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCatalogData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CatalogData, labelSelf: ref labelCatalogData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelIdentifierDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.IdentifierDesc, labelSelf: ref labelIdentifierDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelIdentifierData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.IdentifierData, labelSelf: ref labelIdentifierData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelProximityFlagDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ProximityFlagDesc, labelSelf: ref labelProximityFlagDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelProximityFlagData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ProximityFlagData, labelSelf: ref labelProximityFlagData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelRightAscensionDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ProximityFlagData, labelSelf: ref labelRightAscensionDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelRightAscensionData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.RightAscensionData, labelSelf: ref labelRightAscensionData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelDeclinationDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.DeclinationDesc, labelSelf: ref labelDeclinationDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelDeclinationData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.DeclinationData, labelSelf: ref labelDeclinationData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMagnitudeJohnsonDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeJohnsonDesc, labelSelf: ref labelMagnitudeJohnsonDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMagnitudeJohnsonData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeJohnsonData, labelSelf: ref labelMagnitudeJohnsonData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCoarseVariabilityFlagDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CoarseVariabilityFlagDesc, labelSelf: ref labelCoarseVariabilityFlagDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCoarseVariabilityFlagData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CoarseVariabilityFlagData, labelSelf: ref labelCoarseVariabilityFlagData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSourceOfMagnitudeDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfMagnitudeDesc, labelSelf: ref labelSourceOfMagnitudeDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSourceOfMagnitudeData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfMagnitudeData, labelSelf: ref labelSourceOfMagnitudeData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelAlphaDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.AlphaDesc, labelSelf: ref labelAlphaDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelAlphaData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.AlphaData, labelSelf: ref labelAlphaData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelDeltaDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.DeltaDesc, labelSelf: ref labelCatalogDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelDeltaData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.DeltaData, labelSelf: ref labelDeltaData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelReferenceFlagForAstrometryDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForAstrometryDesc, labelSelf: ref labelReferenceFlagForAstrometryDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelReferenceFlagForAstrometryData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForAstrometryData, labelSelf: ref labelReferenceFlagForAstrometryData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelTrigonomicParallaxDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.TrigonomicParallaxDesc, labelSelf: ref labelTrigonomicParallaxDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelTrigonomicParallaxData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.TrigonomicParallaxData, labelSelf: ref labelTrigonomicParallaxData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelProperMotionAlphaDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionAlphaDesc, labelSelf: ref labelProperMotionAlphaDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelProperMotionAlphaData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionAlphaData, labelSelf: ref labelProperMotionAlphaData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelProperMotionDeltaDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionDeltaDesc, labelSelf: ref labelProperMotionDeltaDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelProperMotionDeltaData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionDeltaData, labelSelf: ref labelProperMotionDeltaData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorRightAscensionDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorRightAscensionDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorRightAscensionData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorRightAscensionData, labelSelf: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorDeclinationDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorDeclinationDesc, labelSelf: ref labelStandardErrorDeclinationDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorDeclinationData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorDeclinationData, labelSelf: ref labelStandardErrorDeclinationData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorTrigonomicParallaxDesc_Enter(object sender, EventArgs e) =>	SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorTrigonomicParallaxDesc, labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorTrigonomicParallaxData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorTrigonomicParallaxData, labelSelf: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorProperMotionRightAscensionDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionRightAscensionDesc, labelSelf: ref labelStandardErrorProperMotionRightAscensionDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorProperMotionRightAscensionData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionRightAscensionData, labelSelf: ref labelStandardErrorProperMotionRightAscensionData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorProperMotionDeclinationDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionDeclinationDesc, labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorProperMotionDeclinationData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionDeclinationData, labelSelf: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationDeclinationByRightAscensionDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc, labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationDeclinationByRightAscensionData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData, labelSelf: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionDesc, labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionData, labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationDesc, labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationTrigonomicParallaxByDeclinationData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationData, labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionDesc, labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionData, labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationDesc, labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationData, labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxData, labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData, labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionDeclinationByDeclinationData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationData, labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxData, labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData, labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelPercentageOfRejectedDataDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.PercentageOfRejectedDataDesc, labelSelf: ref labelPercentageOfRejectedDataDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelPercentageOfRejectedDataData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.PercentageOfRejectedDataData, labelSelf: ref labelPercentageOfRejectedDataData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelGoodnessOfFitParameterDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.GoodnessOfFitParameterDesc, labelSelf: ref labelGoodnessOfFitParameterDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelGoodnessOfFitParameterData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.GoodnessOfFitParameterData, labelSelf: ref labelGoodnessOfFitParameterData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMeanBtMagnitudeDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MeanBtMagnitudeDesc, labelSelf: ref labelMeanBtMagnitudeDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMeanBtMagnitudeData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MeanBtMagnitudeData, labelSelf: ref labelMeanBtMagnitudeData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorMeanBtMagnitudeDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanBtMagnitudeDesc, labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorMeanBtMagnitudeData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanBtMagnitudeData, labelSelf: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMeanVtMagnitudeDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MeanVtMagnitudeDesc, labelSelf: ref labelMeanVtMagnitudeDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMeanVtMagnitudeData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MeanVtMagnitudeData, labelSelf: ref labelMeanVtMagnitudeData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorMeanVtMagnitudeDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanVtMagnitudeDesc, labelSelf: ref labelStandardErrorMeanVtMagnitudeDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorMeanVtMagnitudeData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanVtMagnitudeData, labelSelf: ref labelStandardErrorMeanVtMagnitudeData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelJohnsonBvColorDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.JohnsonBvColorDesc, labelSelf: ref labelJohnsonBvColorDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelJohnsonBvColorData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.JohnsonBvColorData, labelSelf: ref labelJohnsonBvColorData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorJohnsonBvColorDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorJohnsonBvColorDesc, labelSelf: ref labelStandardErrorJohnsonBvColorDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorJohnsonBvColorData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorJohnsonBvColorData, labelSelf: ref labelStandardErrorJohnsonBvColorData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeDesc, labelSelf: ref labelReferenceFlagForBtAndVtMagnitudeDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelReferenceFlagForBtAndVtMagnitudeData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeData, labelSelf: ref labelReferenceFlagForBtAndVtMagnitudeData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSourceOfBvColorDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfBvColorDesc, labelSelf: ref labelSourceOfBvColorDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSourceOfBvColorData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfBvColorData, labelSelf: ref labelSourceOfBvColorData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelColorIndexInCousinsSystemDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ColorIndexInCousinsSystemDesc, labelSelf: ref labelColorIndexInCousinsSystemDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelColorIndexInCousinsSystemData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ColorIndexInCousinsSystemData, labelSelf: ref labelColorIndexInCousinsSystemData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorViDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorViDesc, labelSelf: ref labelStandardErrorViDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorViData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorViData, labelSelf: ref labelStandardErrorViData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSourceOfViDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfViDesc, labelSelf: ref labelSourceOfViDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSourceOfViData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfViData, labelSelf: ref labelSourceOfViData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelFlagForCombinedMagnitudesDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.FlagForCombinedMagnitudesDesc, labelSelf: ref labelFlagForCombinedMagnitudesDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelFlagForCombinedMagnitudesData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.FlagForCombinedMagnitudesData, labelSelf: ref labelFlagForCombinedMagnitudesData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MedianMagnitudeInHipparcosSystemDesc, labelSelf: ref labelMedianMagnitudeInHipparcosSystemDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MedianMagnitudeInHipparcosSystemData, labelSelf: ref labelMedianMagnitudeInHipparcosSystemData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMedianMagnitudeInHipparcosSystemDesc, labelSelf: ref labelStandardErrorMedianMagnitudeInHipparcosSystemDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMedianMagnitudeInHipparcosSystemData, labelSelf: ref labelStandardErrorMedianMagnitudeInHipparcosSystemData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelScatterMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ScatterMedianMagnitudeInHipparcosSystemDesc, labelSelf: ref labelScatterMedianMagnitudeInHipparcosSystemDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelScatterMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ScatterMedianMagnitudeInHipparcosSystemData, labelSelf: ref labelScatterMedianMagnitudeInHipparcosSystemData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.NumberObservationsForMedianMagnitudeInHipparcosSystemDesc, labelSelf: ref labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.NumberObservationsForMedianMagnitudeInHipparcosSystemData, labelSelf: ref labelNumberObservationsForMedianMagnitudeInHipparcosSystemData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemDesc, labelSelf: ref labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForMedianMagnitudeInHipparcosSystemData, labelSelf: ref labelReferenceFlagForMedianMagnitudeInHipparcosSystemData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMaximumDesc, labelSelf: ref labelCatalogDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMaximumData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMaximumData, labelSelf: ref labelMedianMagnitudeInHipparcosSystemAtMaximumData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMinimumDesc, labelSelf: ref labelMedianMagnitudeInHipparcosSystemAtMinimumDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMedianMagnitudeInHipparcosSystemAtMinimumData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MedianMagnitudeInHipparcosSystemAtMinimumData, labelSelf: ref labelMedianMagnitudeInHipparcosSystemAtMinimumData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelVariabilityPeriodDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.VariabilityPeriodDesc, labelSelf: ref labelVariabilityPeriodDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelVariabilityPeriodData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.VariabilityPeriodData, labelSelf: ref labelVariabilityPeriodData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelVariabilityTypeDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.VariabilityTypeDesc, labelSelf: ref labelVariabilityTypeDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelVariabilityTypeData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.VariabilityTypeData, labelSelf: ref labelVariabilityTypeData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelAdditionalDataAboutVariabilityDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.AdditionalDataAboutVariabilityDesc, labelSelf: ref labelAdditionalDataAboutVariabilityDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelAdditionalDataAboutVariabilityData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.AdditionalDataAboutVariabilityData, labelSelf: ref labelAdditionalDataAboutVariabilityData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelLightCurveAnnexDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.LightCurveAnnexDesc, labelSelf: ref labelLightCurveAnnexDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelLightCurveAnnexData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.LightCurveAnnexData, labelSelf: ref labelLightCurveAnnexData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCcdmIdentifierDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CcdmIdentifierDesc, labelSelf: ref labelCcdmIdentifierDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCcdmIdentifierData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CcdmIdentifierData, labelSelf: ref labelCatalogDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelHistoricalStatusFlagDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.HistoricalStatusFlagDesc, labelSelf: ref labelHistoricalStatusFlagDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelHistoricalStatusFlagData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.HistoricalStatusFlagData, labelSelf: ref labelHistoricalStatusFlagData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+		
+		private void LabelNumberEntriesWithSameCcdmDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.NumberEntriesWithSameCcdmDesc, labelSelf: ref labelNumberEntriesWithSameCcdmDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelNumberEntriesWithSameCcdmData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.NumberEntriesWithSameCcdmData, labelSelf: ref labelNumberEntriesWithSameCcdmData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelNumberComponentsInThisEntryDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.NumberComponentsInThisEntryDesc, labelSelf: ref labelNumberComponentsInThisEntryDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelNumberComponentsInThisEntryData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.NumberComponentsInThisEntryData, labelSelf: ref labelNumberComponentsInThisEntryData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMultipleSystemsFlagDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MultipleSystemsFlagDesc, labelSelf: ref labelMultipleSystemsFlagDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMultipleSystemsFlagData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MultipleSystemsFlagData, labelSelf: ref labelMultipleSystemsFlagData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelAstrometricSourceFlagDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.AstrometricSourceFlagDesc, labelSelf: ref labelAstrometricSourceFlagDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelAstrometricSourceFlagData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.AstrometricSourceFlagData, labelSelf: ref labelAstrometricSourceFlagData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSolutionQualityDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SolutionQualityDesc, labelSelf: ref labelSolutionQualityDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSolutionQualityData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SolutionQualityData, labelSelf: ref labelSolutionQualityData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelComponentIdentifiersDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ComponentIdentifiersDesc, labelSelf: ref labelComponentIdentifiersDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelComponentIdentifiersData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ComponentIdentifiersData, labelSelf: ref labelComponentIdentifiersData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelPositionAngleBetweenComponentsDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.PositionAngleBetweenComponentsDesc, labelSelf: ref labelPositionAngleBetweenComponentsDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelPositionAngleBetweenComponentsData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.PositionAngleBetweenComponentsData, labelSelf: ref labelPositionAngleBetweenComponentsData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelAngularSeparationBetweenComponentsDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.AngularSeparationBetweenComponentsDesc, labelSelf: ref labelAngularSeparationBetweenComponentsDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelAngularSeparationBetweenComponentsData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.AngularSeparationBetweenComponentsData, labelSelf: ref labelAngularSeparationBetweenComponentsData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorRhoDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorRhoDesc, labelSelf: ref labelStandardErrorRhoDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorRhoData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorRhoData, labelSelf: ref labelStandardErrorRhoData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMagnitudeDifferenceBetweenComponentsDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeDifferenceBetweenComponentsDesc, labelSelf: ref labelMagnitudeDifferenceBetweenComponentsDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelMagnitudeDifferenceBetweenComponentsData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeDifferenceBetweenComponentsData, labelSelf: ref labelMagnitudeDifferenceBetweenComponentsData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMagnitudeDifferenceBetweenComponentsDesc, labelSelf: ref labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMagnitudeDifferenceBetweenComponentsData, labelSelf: ref labelStandardErrorMagnitudeDifferenceBetweenComponentsData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelFlagIndicatingSurveyStarDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.FlagIndicatingSurveyStarDesc, labelSelf: ref labelFlagIndicatingSurveyStarDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelFlagIndicatingSurveyStarData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.FlagIndicatingSurveyStarData, labelSelf: ref labelFlagIndicatingSurveyStarData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelIdentificationChartDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.IdentificationChartDesc, labelSelf: ref labelIdentificationChartDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelIdentificationChartData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.IdentificationChartData, labelSelf: ref labelIdentificationChartData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelExistenceOfNotesDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ExistenceOfNotesDesc, labelSelf: ref labelExistenceOfNotesDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelExistenceOfNotesData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ExistenceOfNotesData, labelSelf: ref labelExistenceOfNotesData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelHdNumberDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.HdNumberDesc, labelSelf: ref labelHdNumberDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelHdNumberData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.HdNumberData, labelSelf: ref labelHdNumberData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelBonnerDmDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.BonnerDmDesc, labelSelf: ref labelBonnerDmDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelBonnerDmData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.BonnerDmData, labelSelf: ref labelBonnerDmData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCordobaDmDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CordobaDmDesc, labelSelf: ref labelCordobaDmDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCordobaDmData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CordobaDmData, labelSelf: ref labelCordobaDmData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCapePhotographicDmDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CapePhotographicDmDesc, labelSelf: ref labelCapePhotographicDmDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelCapePhotographicDmData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.CapePhotographicDmData, labelSelf: ref labelCapePhotographicDmData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelViUsedForReductionsDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ViUsedForReductionsDesc, labelSelf: ref labelViUsedForReductionsDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelViUsedForReductionsData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.ViUsedForReductionsData, labelSelf: ref labelViUsedForReductionsData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSpectralTypeDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SpectralTypeDesc, labelSelf: ref labelSpectralTypeDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSpectralTypeData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SpectralTypeData, labelSelf: ref labelSpectralTypeData, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSourceOfSpectralTypeDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfSpectralTypeDesc, labelSelf: ref labelSourceOfSpectralTypeDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+
+		private void LabelSourceOfSpectralTypeData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfSpectralTypeData, labelSelf: ref labelSourceOfSpectralTypeData, color: SystemColors.ControlLightLight, sender: sender, e: e);
 
 		private void ToolStripTextBoxGoToIndex_Enter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
@@ -3714,75 +1268,45 @@ namespace Hipparcos_DB
 
 		private void LabelRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.RightAscensionData, labelSelf: ref labelRightAscensionDesc, labelNeighbour: ref labelRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeclinationDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
-		{
-				labelDeclinationDesc.BackColor = labelDeclinationData.BackColor = SystemColors.ControlLight;
-		}
+		private void LabelDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeclinationDesc, labelSelf: ref labelDeclinationDesc, labelNeighbour: ref labelDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeclinationData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeclinationData, labelSelf: ref labelDeclinationDesc, labelNeighbour: ref labelDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelMagnitudeJohnsonDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeJohnsonDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
-		{
-				labelMagnitudeJohnsonDesc.BackColor = labelMagnitudeJohnsonData.BackColor = SystemColors.ControlLight;
-		}
+		private void LabelMagnitudeJohnsonDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeJohnsonDesc, labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbour: ref labelMagnitudeJohnsonData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelMagnitudeJohnsonData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeJohnsonData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelMagnitudeJohnsonData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeJohnsonData, labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbour: ref labelMagnitudeJohnsonData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCoarseVariabilityFlagDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CoarseVariabilityFlagDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
-		{
-				labelCoarseVariabilityFlagDesc.BackColor = labelCoarseVariabilityFlagData.BackColor = SystemColors.ControlLight;
-		}
+		private void LabelCoarseVariabilityFlagDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CoarseVariabilityFlagDesc, labelSelf: ref labelCoarseVariabilityFlagDesc, labelNeighbour: ref labelCoarseVariabilityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCoarseVariabilityFlagData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CoarseVariabilityFlagData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCoarseVariabilityFlagData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CoarseVariabilityFlagData, labelSelf: ref labelCoarseVariabilityFlagDesc, labelNeighbour: ref labelCoarseVariabilityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSourceOfMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfMagnitudeDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
-		{
-				labelSourceOfMagnitudeDesc.BackColor = labelSourceOfMagnitudeData.BackColor = SystemColors.ControlLight;
-		}
+		private void LabelSourceOfMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfMagnitudeDesc, labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbour: ref labelSourceOfMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSourceOfMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfMagnitudeData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelSourceOfMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfMagnitudeData, labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbour: ref labelSourceOfMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelAlphaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.AlphaDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
-		{
-				labelAlphaDesc.BackColor = labelAlphaData.BackColor = SystemColors.ControlLight;
-		}
+		private void LabelAlphaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.AlphaDesc, labelSelf: ref labelAlphaDesc, labelNeighbour: ref labelAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelAlphaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.AlphaData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelAlphaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.AlphaData, labelSelf: ref labelAlphaDesc, labelNeighbour: ref labelAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelDeltaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeltaDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
-		{
-				labelDeltaDesc.BackColor = labelDeltaData.BackColor = SystemColors.ControlLight;
-		}
+		private void LabelDeltaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeltaDesc, labelSelf: ref labelDeltaDesc, labelNeighbour: ref labelDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelDeltaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeltaData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelDeltaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeltaData, labelSelf: ref labelDeltaDesc, labelNeighbour: ref labelDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelReferenceFlagForAstrometryDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForAstrometryDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
-		{
-				labelReferenceFlagForAstrometryDesc.BackColor = labelReferenceFlagForAstrometryData.BackColor = SystemColors.ControlLight;
-		}
+		private void LabelReferenceFlagForAstrometryDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForAstrometryDesc, labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbour: ref labelReferenceFlagForAstrometryData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelReferenceFlagForAstrometryData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForAstrometryData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelReferenceFlagForAstrometryData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForAstrometryData, labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbour: ref labelReferenceFlagForAstrometryData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.TrigonomicParallaxDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
-		{
-				labelTrigonomicParallaxDesc.BackColor = labelTrigonomicParallaxData.BackColor = SystemColors.ControlLight;
-		}
+		private void LabelTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.TrigonomicParallaxDesc, labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbour: ref labelTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelTrigonomicParallaxData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.TrigonomicParallaxData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelTrigonomicParallaxData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.TrigonomicParallaxData, labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbour: ref labelTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelProperMotionAlphaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionAlphaDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
-		{
-				labelProperMotionAlphaDesc.BackColor = labelProperMotionAlphaData.BackColor = SystemColors.ControlLight;
-		}
+		private void LabelProperMotionAlphaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionAlphaDesc, labelSelf: ref labelProperMotionAlphaDesc, labelNeighbour: ref labelProperMotionAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelProperMotionAlphaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionAlphaData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelProperMotionAlphaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionAlphaData, labelSelf: ref labelProperMotionAlphaDesc, labelNeighbour: ref labelProperMotionAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelProperMotionDeltaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionDeltaDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
-		{
-				labelProperMotionDeltaDesc.BackColor = labelProperMotionDeltaData.BackColor = SystemColors.ControlLight;
-		}
+		private void LabelProperMotionDeltaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionDeltaDesc, labelSelf: ref labelProperMotionDeltaDesc, labelNeighbour: ref labelProperMotionDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelProperMotionDeltaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionDeltaData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelProperMotionDeltaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionDeltaData, labelSelf: ref labelProperMotionDeltaDesc, labelNeighbour: ref labelProperMotionDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelStandardErrorRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorRightAscensionDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 

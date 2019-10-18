@@ -232,7 +232,7 @@
 			this.labelIdentifierDesc.Text = "Identifier (HIP number)";
 			this.labelIdentifierDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelIdentifierDesc, "Identifier (HIP number)");
-			this.labelIdentifierDesc.DoubleClick += new System.EventHandler(this.LabelIdentifierDesc_DoubleClick);
+			this.labelIdentifierDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelIdentifierDesc.Enter += new System.EventHandler(this.LabelIdentifierDesc_Enter);
 			this.labelIdentifierDesc.Leave += new System.EventHandler(this.LabelIdentifierDesc_Leave);
 			this.labelIdentifierDesc.MouseEnter += new System.EventHandler(this.LabelIdentifierDesc_MouseEnter);
@@ -280,7 +280,7 @@
 			this.labelRightAscensionDesc.Text = "Right ascension in h m s, ICRS (J1991.25)";
 			this.labelRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelRightAscensionDesc, "Right ascension in h m s, ICRS (J1991.25)");
-			this.labelRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelRightAscensionDesc_DoubleClick);
+			this.labelRightAscensionDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelRightAscensionDesc.Enter += new System.EventHandler(this.LabelRightAscensionDesc_Enter);
 			this.labelRightAscensionDesc.Leave += new System.EventHandler(this.LabelRightAscensionDesc_Leave);
 			this.labelRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelRightAscensionDesc_MouseEnter);
@@ -302,7 +302,7 @@
 			this.labelDeclinationDesc.Text = "Declination in deg \' \", ICRS (J1991.25)";
 			this.labelDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelDeclinationDesc, "Declination in deg \' \", ICRS (J1991.25)");
-			this.labelDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelDeclinationDesc_DoubleClick);
+			this.labelDeclinationDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelDeclinationDesc.Enter += new System.EventHandler(this.LabelDeclinationDesc_Enter);
 			this.labelDeclinationDesc.Leave += new System.EventHandler(this.LabelDeclinationDesc_Leave);
 			this.labelDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelDeclinationDesc_MouseEnter);
@@ -324,7 +324,7 @@
 			this.labelMagnitudeJohnsonDesc.Text = "Magnitude in Johnson V";
 			this.labelMagnitudeJohnsonDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMagnitudeJohnsonDesc, "Magnitude in Johnson V");
-			this.labelMagnitudeJohnsonDesc.DoubleClick += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_DoubleClick);
+			this.labelMagnitudeJohnsonDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMagnitudeJohnsonDesc.Enter += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_Enter);
 			this.labelMagnitudeJohnsonDesc.Leave += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_Leave);
 			this.labelMagnitudeJohnsonDesc.MouseEnter += new System.EventHandler(this.LabelMagnitudeJohnsonDesc_MouseEnter);
@@ -346,7 +346,7 @@
 			this.labelSourceOfMagnitudeDesc.Text = "Source of magnitude";
 			this.labelSourceOfMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSourceOfMagnitudeDesc, "Source of magnitude");
-			this.labelSourceOfMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_DoubleClick);
+			this.labelSourceOfMagnitudeDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSourceOfMagnitudeDesc.Enter += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_Enter);
 			this.labelSourceOfMagnitudeDesc.Leave += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_Leave);
 			this.labelSourceOfMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfMagnitudeDesc_MouseEnter);
@@ -368,7 +368,7 @@
 			this.labelAlphaDesc.Text = "alpha, degrees (ICRS, Epoch=J1991.25)";
 			this.labelAlphaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelAlphaDesc, "alpha, degrees (ICRS, Epoch=J1991.25)");
-			this.labelAlphaDesc.DoubleClick += new System.EventHandler(this.LabelAlphaDesc_DoubleClick);
+			this.labelAlphaDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelAlphaDesc.Enter += new System.EventHandler(this.LabelAlphaDesc_Enter);
 			this.labelAlphaDesc.Leave += new System.EventHandler(this.LabelAlphaDesc_Leave);
 			this.labelAlphaDesc.MouseEnter += new System.EventHandler(this.LabelAlphaDesc_MouseEnter);
@@ -390,7 +390,7 @@
 			this.labelDeltaDesc.Text = "delta, degrees (ICRS, Epoch=J1991.25)";
 			this.labelDeltaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelDeltaDesc, "delta, degrees (ICRS, Epoch=J1991.25)");
-			this.labelDeltaDesc.DoubleClick += new System.EventHandler(this.LabelDeltaDesc_DoubleClick);
+			this.labelDeltaDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelDeltaDesc.Enter += new System.EventHandler(this.LabelDeltaDesc_Enter);
 			this.labelDeltaDesc.Leave += new System.EventHandler(this.LabelDeltaDesc_Leave);
 			this.labelDeltaDesc.MouseEnter += new System.EventHandler(this.LabelDeltaDesc_MouseEnter);
@@ -412,7 +412,7 @@
 			this.labelTrigonomicParallaxDesc.Text = "Trigonometric parallax";
 			this.labelTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelTrigonomicParallaxDesc, "Trigonometric parallax");
-			this.labelTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.LabelTrigonomicParallaxDesc_DoubleClick);
+			this.labelTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelTrigonomicParallaxDesc_Enter);
 			this.labelTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelTrigonomicParallaxDesc_Leave);
 			this.labelTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelTrigonomicParallaxDesc_MouseEnter);
@@ -434,7 +434,7 @@
 			this.labelProperMotionAlphaDesc.Text = "Proper motion mu_alpha.cos(delta), ICRS";
 			this.labelProperMotionAlphaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelProperMotionAlphaDesc, "Proper motion mu_alpha.cos(delta), ICRS");
-			this.labelProperMotionAlphaDesc.DoubleClick += new System.EventHandler(this.LabelProperMotionAlphaDesc_DoubleClick);
+			this.labelProperMotionAlphaDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelProperMotionAlphaDesc.Enter += new System.EventHandler(this.LabelProperMotionAlphaDesc_Enter);
 			this.labelProperMotionAlphaDesc.Leave += new System.EventHandler(this.LabelProperMotionAlphaDesc_Leave);
 			this.labelProperMotionAlphaDesc.MouseEnter += new System.EventHandler(this.LabelProperMotionAlphaDesc_MouseEnter);
@@ -456,7 +456,7 @@
 			this.labelProperMotionDeltaDesc.Text = "Proper motion mu_delta, ICRS";
 			this.labelProperMotionDeltaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelProperMotionDeltaDesc, "Proper motion mu_delta, ICRS");
-			this.labelProperMotionDeltaDesc.DoubleClick += new System.EventHandler(this.LabelProperMotionDeltaDesc_DoubleClick);
+			this.labelProperMotionDeltaDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelProperMotionDeltaDesc.Enter += new System.EventHandler(this.LabelProperMotionDeltaDesc_Enter);
 			this.labelProperMotionDeltaDesc.Leave += new System.EventHandler(this.LabelProperMotionDeltaDesc_Leave);
 			this.labelProperMotionDeltaDesc.MouseEnter += new System.EventHandler(this.LabelProperMotionDeltaDesc_MouseEnter);
@@ -478,7 +478,7 @@
 			this.labelStandardErrorRightAscensionDesc.Text = "Standard error in RA*cos(DEdeg)";
 			this.labelStandardErrorRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorRightAscensionDesc, "Standard error in RA*cos(DEdeg)");
-			this.labelStandardErrorRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_DoubleClick);
+			this.labelStandardErrorRightAscensionDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorRightAscensionDesc.Enter += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_Enter);
 			this.labelStandardErrorRightAscensionDesc.Leave += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_Leave);
 			this.labelStandardErrorRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorRightAscensionDesc_MouseEnter);
@@ -500,7 +500,7 @@
 			this.labelStandardErrorDeclinationDesc.Text = "Standard error in DE";
 			this.labelStandardErrorDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorDeclinationDesc, "Standard error in DE");
-			this.labelStandardErrorDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_DoubleClick);
+			this.labelStandardErrorDeclinationDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorDeclinationDesc.Enter += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_Enter);
 			this.labelStandardErrorDeclinationDesc.Leave += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_Leave);
 			this.labelStandardErrorDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorDeclinationDesc_MouseEnter);
@@ -522,7 +522,7 @@
 			this.labelStandardErrorTrigonomicParallaxDesc.Text = "Standard error in Plx";
 			this.labelStandardErrorTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorTrigonomicParallaxDesc, "Standard error in Plx");
-			this.labelStandardErrorTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_DoubleClick);
+			this.labelStandardErrorTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_Enter);
 			this.labelStandardErrorTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_Leave);
 			this.labelStandardErrorTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxDesc_MouseEnter);
@@ -544,7 +544,7 @@
 			this.labelStandardErrorProperMotionDeclinationDesc.Text = "Standard error in pmDE";
 			this.labelStandardErrorProperMotionDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorProperMotionDeclinationDesc, "Standard error in pmDE");
-			this.labelStandardErrorProperMotionDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_DoubleClick);
+			this.labelStandardErrorProperMotionDeclinationDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorProperMotionDeclinationDesc.Enter += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_Enter);
 			this.labelStandardErrorProperMotionDeclinationDesc.Leave += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_Leave);
 			this.labelStandardErrorProperMotionDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationDesc_MouseEnter);
@@ -566,7 +566,7 @@
 			this.labelStandardErrorProperMotionRightAscensionDesc.Text = "Standard error in pmRA";
 			this.labelStandardErrorProperMotionRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorProperMotionRightAscensionDesc, "Standard error in pmRA");
-			this.labelStandardErrorProperMotionRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_DoubleClick);
+			this.labelStandardErrorProperMotionRightAscensionDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorProperMotionRightAscensionDesc.Enter += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_Enter);
 			this.labelStandardErrorProperMotionRightAscensionDesc.Leave += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_Leave);
 			this.labelStandardErrorProperMotionRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionDesc_MouseEnter);
@@ -588,7 +588,7 @@
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Text = "Correlation, pmRA/RA*cos(delta)";
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc, "Correlation, pmRA/RA*cos(delta)");
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_DoubleClick);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Enter);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_Leave);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseEnter);
@@ -610,7 +610,7 @@
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Text = "Correlation, Plx/DE";
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationTrigonomicParallaxByDeclinationDesc, "Correlation, Plx/DE");
-			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_DoubleClick);
+			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Enter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_Enter);
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Leave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_Leave);
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseEnter);
@@ -632,7 +632,7 @@
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Text = "Correlation, Plx/RA*cos(delta)";
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationTrigonomicParallaxByRightAscensionDesc, "Correlation, Plx/RA*cos(delta)");
-			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_DoubleClick);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Enter);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_Leave);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseEnter);
@@ -654,7 +654,7 @@
 			this.labelCorrelationDeclinationByRightAscensionDesc.Text = "Correlation, DE/RA*cos(delta)";
 			this.labelCorrelationDeclinationByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationDeclinationByRightAscensionDesc, "Correlation, DE/RA*cos(delta)");
-			this.labelCorrelationDeclinationByRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_DoubleClick);
+			this.labelCorrelationDeclinationByRightAscensionDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationDeclinationByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_Enter);
 			this.labelCorrelationDeclinationByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_Leave);
 			this.labelCorrelationDeclinationByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionDesc_MouseEnter);
@@ -676,7 +676,7 @@
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Text = "Correlation, pmDE/RA*cos(delta)";
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByRightAscensionDesc, "Correlation, pmDE/RA*cos(delta)");
-			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_DoubleClick);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Enter);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_Leave);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseEnter);
@@ -698,7 +698,7 @@
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Text = "Correlation, pmRA/Plx";
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, "Correlation, pmRA/Plx");
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_DoubleClick);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Enter);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_Leave);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseEnter);
@@ -720,7 +720,7 @@
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Text = "Correlation, pmRA/DE";
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByDeclinationDesc, "Correlation, pmRA/DE");
-			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_DoubleClick);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Enter);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_Leave);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseEnter);
@@ -742,7 +742,7 @@
 			this.labelGoodnessOfFitParameterDesc.Text = "Goodness-of-fit parameter";
 			this.labelGoodnessOfFitParameterDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelGoodnessOfFitParameterDesc, "Goodness-of-fit parameter");
-			this.labelGoodnessOfFitParameterDesc.DoubleClick += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_DoubleClick);
+			this.labelGoodnessOfFitParameterDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelGoodnessOfFitParameterDesc.Enter += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_Enter);
 			this.labelGoodnessOfFitParameterDesc.Leave += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_Leave);
 			this.labelGoodnessOfFitParameterDesc.MouseEnter += new System.EventHandler(this.LabelGoodnessOfFitParameterDesc_MouseEnter);
@@ -764,7 +764,7 @@
 			this.labelPercentageOfRejectedDataDesc.Text = "Percentage of rejected data";
 			this.labelPercentageOfRejectedDataDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelPercentageOfRejectedDataDesc, "Percentage of rejected data");
-			this.labelPercentageOfRejectedDataDesc.DoubleClick += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_DoubleClick);
+			this.labelPercentageOfRejectedDataDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelPercentageOfRejectedDataDesc.Enter += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_Enter);
 			this.labelPercentageOfRejectedDataDesc.Leave += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_Leave);
 			this.labelPercentageOfRejectedDataDesc.MouseEnter += new System.EventHandler(this.LabelPercentageOfRejectedDataDesc_MouseEnter);
@@ -786,7 +786,7 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Text = "Correlation, pmDE/Plx";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, "Correlation, pmDE/Plx");
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_DoubleClick);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Enter);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_Leave);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseEnter);
@@ -808,7 +808,7 @@
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Text = "Correlation, pmDE/DE";
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByDeclinationDesc, "Correlation, pmDE/DE");
-			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_DoubleClick);
+			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_Enter);
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_Leave);
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseEnter);
@@ -830,7 +830,7 @@
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Text = "Correlation, pmDE/pmRA";
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, "Correlation, pmDE/pmRA");
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_DoubleClick);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Enter);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_Leave);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseEnter);
@@ -852,7 +852,7 @@
 			this.labelStandardErrorMeanBtMagnitudeDesc.Text = "Standard error on BTmag";
 			this.labelStandardErrorMeanBtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorMeanBtMagnitudeDesc, "Standard error on BTmag");
-			this.labelStandardErrorMeanBtMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_DoubleClick);
+			this.labelStandardErrorMeanBtMagnitudeDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorMeanBtMagnitudeDesc.Enter += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_Enter);
 			this.labelStandardErrorMeanBtMagnitudeDesc.Leave += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_Leave);
 			this.labelStandardErrorMeanBtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeDesc_MouseEnter);
@@ -874,7 +874,7 @@
 			this.labelMeanBtMagnitudeDesc.Text = "Mean BT magnitude";
 			this.labelMeanBtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMeanBtMagnitudeDesc, "Mean BT magnitude");
-			this.labelMeanBtMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_DoubleClick);
+			this.labelMeanBtMagnitudeDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMeanBtMagnitudeDesc.Enter += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_Enter);
 			this.labelMeanBtMagnitudeDesc.Leave += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_Leave);
 			this.labelMeanBtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelMeanBtMagnitudeDesc_MouseEnter);
@@ -896,7 +896,7 @@
 			this.labelStandardErrorViDesc.Text = "Standard error on V-I";
 			this.labelStandardErrorViDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorViDesc, "Standard error on V-I");
-			this.labelStandardErrorViDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorViDesc_DoubleClick);
+			this.labelStandardErrorViDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorViDesc.Enter += new System.EventHandler(this.LabelStandardErrorViDesc_Enter);
 			this.labelStandardErrorViDesc.Leave += new System.EventHandler(this.LabelStandardErrorViDesc_Leave);
 			this.labelStandardErrorViDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorViDesc_MouseEnter);
@@ -918,7 +918,7 @@
 			this.labelMeanVtMagnitudeDesc.Text = "Mean VT magnitude";
 			this.labelMeanVtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMeanVtMagnitudeDesc, "Mean VT magnitude");
-			this.labelMeanVtMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_DoubleClick);
+			this.labelMeanVtMagnitudeDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMeanVtMagnitudeDesc.Enter += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_Enter);
 			this.labelMeanVtMagnitudeDesc.Leave += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_Leave);
 			this.labelMeanVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelMeanVtMagnitudeDesc_MouseEnter);
@@ -940,7 +940,7 @@
 			this.labelColorIndexInCousinsSystemDesc.Text = "Color index in Cousins\' system";
 			this.labelColorIndexInCousinsSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelColorIndexInCousinsSystemDesc, "Color index in Cousins\' system");
-			this.labelColorIndexInCousinsSystemDesc.DoubleClick += new System.EventHandler(this.LabelColorIndexInCousinsSystemDesc_DoubleClick);
+			this.labelColorIndexInCousinsSystemDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelColorIndexInCousinsSystemDesc.Enter += new System.EventHandler(this.LabelColorIndexInCousinsSystemDesc_Enter);
 			this.labelColorIndexInCousinsSystemDesc.Leave += new System.EventHandler(this.LabelColorIndexInCousinsSystemDesc_Leave);
 			this.labelColorIndexInCousinsSystemDesc.MouseEnter += new System.EventHandler(this.LabelColorIndexInCousinsSystemDesc_MouseEnter);
@@ -962,7 +962,7 @@
 			this.labelSourceOfBvColorDesc.Text = "Source of B-V from Ground or Tycho";
 			this.labelSourceOfBvColorDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSourceOfBvColorDesc, "Source of B-V from Ground or Tycho");
-			this.labelSourceOfBvColorDesc.DoubleClick += new System.EventHandler(this.LabelSourceOfBvColorDesc_DoubleClick);
+			this.labelSourceOfBvColorDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSourceOfBvColorDesc.Enter += new System.EventHandler(this.LabelSourceOfBvColorDesc_Enter);
 			this.labelSourceOfBvColorDesc.Leave += new System.EventHandler(this.LabelSourceOfBvColorDesc_Leave);
 			this.labelSourceOfBvColorDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfBvColorDesc_MouseEnter);
@@ -984,7 +984,7 @@
 			this.labelStandardErrorJohnsonBvColorDesc.Text = "Standard error on B-V";
 			this.labelStandardErrorJohnsonBvColorDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorJohnsonBvColorDesc, "Standard error on B-V");
-			this.labelStandardErrorJohnsonBvColorDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorDesc_DoubleClick);
+			this.labelStandardErrorJohnsonBvColorDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorJohnsonBvColorDesc.Enter += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorDesc_Enter);
 			this.labelStandardErrorJohnsonBvColorDesc.Leave += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorDesc_Leave);
 			this.labelStandardErrorJohnsonBvColorDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorDesc_MouseEnter);
@@ -1006,7 +1006,7 @@
 			this.labelJohnsonBvColorDesc.Text = "Johnson B-V color";
 			this.labelJohnsonBvColorDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelJohnsonBvColorDesc, "Johnson B-V color");
-			this.labelJohnsonBvColorDesc.DoubleClick += new System.EventHandler(this.LabelJohnsonBvColorDesc_DoubleClick);
+			this.labelJohnsonBvColorDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelJohnsonBvColorDesc.Enter += new System.EventHandler(this.LabelJohnsonBvColorDesc_Enter);
 			this.labelJohnsonBvColorDesc.Leave += new System.EventHandler(this.LabelJohnsonBvColorDesc_Leave);
 			this.labelJohnsonBvColorDesc.MouseEnter += new System.EventHandler(this.LabelJohnsonBvColorDesc_MouseEnter);
@@ -1028,7 +1028,7 @@
 			this.labelStandardErrorMeanVtMagnitudeDesc.Text = "Standard error on VTmag";
 			this.labelStandardErrorMeanVtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorMeanVtMagnitudeDesc, "Standard error on VTmag");
-			this.labelStandardErrorMeanVtMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_DoubleClick);
+			this.labelStandardErrorMeanVtMagnitudeDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorMeanVtMagnitudeDesc.Enter += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_Enter);
 			this.labelStandardErrorMeanVtMagnitudeDesc.Leave += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_Leave);
 			this.labelStandardErrorMeanVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeDesc_MouseEnter);
@@ -1050,7 +1050,7 @@
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Text = "Number of observations for Hpmag";
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc, "Number of observations for Hpmag");
-			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_DoubleClick);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Enter);
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_Leave);
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
@@ -1072,7 +1072,7 @@
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Text = "Scatter on Hpmag";
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelScatterMedianMagnitudeInHipparcosSystemDesc, "Scatter on Hpmag");
-			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_DoubleClick);
+			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_Enter);
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_Leave);
 			this.labelScatterMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
@@ -1094,7 +1094,7 @@
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Text = "Standard error on Hpmag";
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc, "Standard error on Hpmag");
-			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_DoubleClick);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Enter);
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_Leave);
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
@@ -1116,7 +1116,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemDesc.Text = "Median magnitude in Hipparcos system";
 			this.labelMedianMagnitudeInHipparcosSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMedianMagnitudeInHipparcosSystemDesc, "Median magnitude in Hipparcos system");
-			this.labelMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_DoubleClick);
+			this.labelMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_Enter);
 			this.labelMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_Leave);
 			this.labelMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
@@ -1138,7 +1138,7 @@
 			this.labelSourceOfViDesc.Text = "Source of V-I";
 			this.labelSourceOfViDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSourceOfViDesc, "Source of V-I");
-			this.labelSourceOfViDesc.DoubleClick += new System.EventHandler(this.LabelSourceOfViDesc_DoubleClick);
+			this.labelSourceOfViDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSourceOfViDesc.Enter += new System.EventHandler(this.LabelSourceOfViDesc_Enter);
 			this.labelSourceOfViDesc.Leave += new System.EventHandler(this.LabelSourceOfViDesc_Leave);
 			this.labelSourceOfViDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfViDesc_MouseEnter);
@@ -1160,7 +1160,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Text = "Hpmag at maximum (5th percentile)";
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc, "Hpmag at maximum (5th percentile)");
-			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.DoubleClick += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_DoubleClick);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Enter);
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_Leave);
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumDesc.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumDesc_MouseEnter);
@@ -1182,7 +1182,7 @@
 			this.labelSolutionQualityDesc.Text = "Solution quality";
 			this.labelSolutionQualityDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSolutionQualityDesc, "Solution quality");
-			this.labelSolutionQualityDesc.DoubleClick += new System.EventHandler(this.LabelSolutionQualityDesc_DoubleClick);
+			this.labelSolutionQualityDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSolutionQualityDesc.Enter += new System.EventHandler(this.LabelSolutionQualityDesc_Enter);
 			this.labelSolutionQualityDesc.Leave += new System.EventHandler(this.LabelSolutionQualityDesc_Leave);
 			this.labelSolutionQualityDesc.MouseEnter += new System.EventHandler(this.LabelSolutionQualityDesc_MouseEnter);
@@ -1204,7 +1204,7 @@
 			this.labelAstrometricSourceFlagDesc.Text = "Astrometric source flag";
 			this.labelAstrometricSourceFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelAstrometricSourceFlagDesc, "Astrometric source flag");
-			this.labelAstrometricSourceFlagDesc.DoubleClick += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_DoubleClick);
+			this.labelAstrometricSourceFlagDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelAstrometricSourceFlagDesc.Enter += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_Enter);
 			this.labelAstrometricSourceFlagDesc.Leave += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_Leave);
 			this.labelAstrometricSourceFlagDesc.MouseEnter += new System.EventHandler(this.LabelAstrometricSourceFlagDesc_MouseEnter);
@@ -1226,7 +1226,7 @@
 			this.labelMultipleSystemsFlagDesc.Text = "Double/Multiple Systems flag";
 			this.labelMultipleSystemsFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMultipleSystemsFlagDesc, "Double/Multiple Systems flag");
-			this.labelMultipleSystemsFlagDesc.DoubleClick += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_DoubleClick);
+			this.labelMultipleSystemsFlagDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMultipleSystemsFlagDesc.Enter += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_Enter);
 			this.labelMultipleSystemsFlagDesc.Leave += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_Leave);
 			this.labelMultipleSystemsFlagDesc.MouseEnter += new System.EventHandler(this.LabelMultipleSystemsFlagDesc_MouseEnter);
@@ -1248,7 +1248,7 @@
 			this.labelNumberComponentsInThisEntryDesc.Text = "Number of components in this entry";
 			this.labelNumberComponentsInThisEntryDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelNumberComponentsInThisEntryDesc, "Number of components in this entry");
-			this.labelNumberComponentsInThisEntryDesc.DoubleClick += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_DoubleClick);
+			this.labelNumberComponentsInThisEntryDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelNumberComponentsInThisEntryDesc.Enter += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_Enter);
 			this.labelNumberComponentsInThisEntryDesc.Leave += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_Leave);
 			this.labelNumberComponentsInThisEntryDesc.MouseEnter += new System.EventHandler(this.LabelNumberComponentsInThisEntryDesc_MouseEnter);
@@ -1270,7 +1270,7 @@
 			this.labelNumberEntriesWithSameCcdmDesc.Text = "Number of entries with same CCDM";
 			this.labelNumberEntriesWithSameCcdmDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelNumberEntriesWithSameCcdmDesc, "Number of entries with same CCDM");
-			this.labelNumberEntriesWithSameCcdmDesc.DoubleClick += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_DoubleClick);
+			this.labelNumberEntriesWithSameCcdmDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelNumberEntriesWithSameCcdmDesc.Enter += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_Enter);
 			this.labelNumberEntriesWithSameCcdmDesc.Leave += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_Leave);
 			this.labelNumberEntriesWithSameCcdmDesc.MouseEnter += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmDesc_MouseEnter);
@@ -1292,7 +1292,7 @@
 			this.labelComponentIdentifiersDesc.Text = "Component identifiers";
 			this.labelComponentIdentifiersDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelComponentIdentifiersDesc, "Component identifiers");
-			this.labelComponentIdentifiersDesc.DoubleClick += new System.EventHandler(this.LabelComponentIdentifiersDesc_DoubleClick);
+			this.labelComponentIdentifiersDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelComponentIdentifiersDesc.Enter += new System.EventHandler(this.LabelComponentIdentifiersDesc_Enter);
 			this.labelComponentIdentifiersDesc.Leave += new System.EventHandler(this.LabelComponentIdentifiersDesc_Leave);
 			this.labelComponentIdentifiersDesc.MouseEnter += new System.EventHandler(this.LabelComponentIdentifiersDesc_MouseEnter);
@@ -1314,7 +1314,7 @@
 			this.labelLightCurveAnnexDesc.Text = "Light curve Annex";
 			this.labelLightCurveAnnexDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelLightCurveAnnexDesc, "Light curve Annex");
-			this.labelLightCurveAnnexDesc.DoubleClick += new System.EventHandler(this.LabelLightCurveAnnexDesc_DoubleClick);
+			this.labelLightCurveAnnexDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelLightCurveAnnexDesc.Enter += new System.EventHandler(this.LabelLightCurveAnnexDesc_Enter);
 			this.labelLightCurveAnnexDesc.Leave += new System.EventHandler(this.LabelLightCurveAnnexDesc_Leave);
 			this.labelLightCurveAnnexDesc.MouseEnter += new System.EventHandler(this.LabelLightCurveAnnexDesc_MouseEnter);
@@ -1336,7 +1336,7 @@
 			this.labelAdditionalDataAboutVariabilityDesc.Text = "Additional data about variability";
 			this.labelAdditionalDataAboutVariabilityDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelAdditionalDataAboutVariabilityDesc, "Additional data about variability");
-			this.labelAdditionalDataAboutVariabilityDesc.DoubleClick += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_DoubleClick);
+			this.labelAdditionalDataAboutVariabilityDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelAdditionalDataAboutVariabilityDesc.Enter += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_Enter);
 			this.labelAdditionalDataAboutVariabilityDesc.Leave += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_Leave);
 			this.labelAdditionalDataAboutVariabilityDesc.MouseEnter += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityDesc_MouseEnter);
@@ -1358,7 +1358,7 @@
 			this.labelVariabilityTypeDesc.Text = "Variability type";
 			this.labelVariabilityTypeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelVariabilityTypeDesc, "Variability type");
-			this.labelVariabilityTypeDesc.DoubleClick += new System.EventHandler(this.LabelVariabilityTypeDesc_DoubleClick);
+			this.labelVariabilityTypeDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelVariabilityTypeDesc.Enter += new System.EventHandler(this.LabelVariabilityTypeDesc_Enter);
 			this.labelVariabilityTypeDesc.Leave += new System.EventHandler(this.LabelVariabilityTypeDesc_Leave);
 			this.labelVariabilityTypeDesc.MouseEnter += new System.EventHandler(this.LabelVariabilityTypeDesc_MouseEnter);
@@ -1380,7 +1380,7 @@
 			this.labelVariabilityPeriodDesc.Text = "Variability period (days)";
 			this.labelVariabilityPeriodDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelVariabilityPeriodDesc, "Variability period (days)");
-			this.labelVariabilityPeriodDesc.DoubleClick += new System.EventHandler(this.LabelVariabilityPeriodDesc_DoubleClick);
+			this.labelVariabilityPeriodDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelVariabilityPeriodDesc.Enter += new System.EventHandler(this.LabelVariabilityPeriodDesc_Enter);
 			this.labelVariabilityPeriodDesc.Leave += new System.EventHandler(this.LabelVariabilityPeriodDesc_Leave);
 			this.labelVariabilityPeriodDesc.MouseEnter += new System.EventHandler(this.LabelVariabilityPeriodDesc_MouseEnter);
@@ -1402,7 +1402,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Text = "Hpmag at minimum (95th percentile)";
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc, "Hpmag at minimum (95th percentile)");
-			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.DoubleClick += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_DoubleClick);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Enter);
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_Leave);
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumDesc.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumDesc_MouseEnter);
@@ -1424,7 +1424,7 @@
 			this.labelCcdmIdentifierDesc.Text = "CCDM identifier";
 			this.labelCcdmIdentifierDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCcdmIdentifierDesc, "CCDM identifier");
-			this.labelCcdmIdentifierDesc.DoubleClick += new System.EventHandler(this.LabelCcdmIdentifierDesc_DoubleClick);
+			this.labelCcdmIdentifierDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCcdmIdentifierDesc.Enter += new System.EventHandler(this.LabelCcdmIdentifierDesc_Enter);
 			this.labelCcdmIdentifierDesc.Leave += new System.EventHandler(this.LabelCcdmIdentifierDesc_Leave);
 			this.labelCcdmIdentifierDesc.MouseEnter += new System.EventHandler(this.LabelCcdmIdentifierDesc_MouseEnter);
@@ -1446,7 +1446,7 @@
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Text = "Standard error on dHp";
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc, "Standard error on dHp");
-			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_DoubleClick);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Enter);
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_Leave);
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsDesc_MouseEnter);
@@ -1468,7 +1468,7 @@
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.Text = "Magnitude difference of components";
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMagnitudeDifferenceBetweenComponentsDesc, "Magnitude difference of components");
-			this.labelMagnitudeDifferenceBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_DoubleClick);
+			this.labelMagnitudeDifferenceBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_Enter);
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_Leave);
 			this.labelMagnitudeDifferenceBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsDesc_MouseEnter);
@@ -1490,7 +1490,7 @@
 			this.labelStandardErrorRhoDesc.Text = "Standard error on rho";
 			this.labelStandardErrorRhoDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorRhoDesc, "Standard error on rho");
-			this.labelStandardErrorRhoDesc.DoubleClick += new System.EventHandler(this.LabelStandardErrorRhoDesc_DoubleClick);
+			this.labelStandardErrorRhoDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorRhoDesc.Enter += new System.EventHandler(this.LabelStandardErrorRhoDesc_Enter);
 			this.labelStandardErrorRhoDesc.Leave += new System.EventHandler(this.LabelStandardErrorRhoDesc_Leave);
 			this.labelStandardErrorRhoDesc.MouseEnter += new System.EventHandler(this.LabelStandardErrorRhoDesc_MouseEnter);
@@ -1512,7 +1512,7 @@
 			this.labelAngularSeparationBetweenComponentsDesc.Text = "Angular separation between components";
 			this.labelAngularSeparationBetweenComponentsDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelAngularSeparationBetweenComponentsDesc, "Angular separation between components");
-			this.labelAngularSeparationBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_DoubleClick);
+			this.labelAngularSeparationBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelAngularSeparationBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_Enter);
 			this.labelAngularSeparationBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_Leave);
 			this.labelAngularSeparationBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsDesc_MouseEnter);
@@ -1534,7 +1534,7 @@
 			this.labelPositionAngleBetweenComponentsDesc.Text = "Position angle between components";
 			this.labelPositionAngleBetweenComponentsDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelPositionAngleBetweenComponentsDesc, "Position angle between components");
-			this.labelPositionAngleBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_DoubleClick);
+			this.labelPositionAngleBetweenComponentsDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelPositionAngleBetweenComponentsDesc.Enter += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_Enter);
 			this.labelPositionAngleBetweenComponentsDesc.Leave += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_Leave);
 			this.labelPositionAngleBetweenComponentsDesc.MouseEnter += new System.EventHandler(this.LabelPositionAngleBetweenComponentsDesc_MouseEnter);
@@ -1556,7 +1556,7 @@
 			this.labelFlagIndicatingSurveyStarDesc.Text = "Flag indicating a Survey Star";
 			this.labelFlagIndicatingSurveyStarDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelFlagIndicatingSurveyStarDesc, "Flag indicating a Survey Star");
-			this.labelFlagIndicatingSurveyStarDesc.DoubleClick += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_DoubleClick);
+			this.labelFlagIndicatingSurveyStarDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelFlagIndicatingSurveyStarDesc.Enter += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_Enter);
 			this.labelFlagIndicatingSurveyStarDesc.Leave += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_Leave);
 			this.labelFlagIndicatingSurveyStarDesc.MouseEnter += new System.EventHandler(this.LabelFlagIndicatingSurveyStarDesc_MouseEnter);
@@ -1578,7 +1578,7 @@
 			this.labelIdentificationChartDesc.Text = "Identification Chart";
 			this.labelIdentificationChartDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelIdentificationChartDesc, "Identification Chart");
-			this.labelIdentificationChartDesc.DoubleClick += new System.EventHandler(this.LabelIdentificationChartDesc_DoubleClick);
+			this.labelIdentificationChartDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelIdentificationChartDesc.Enter += new System.EventHandler(this.LabelIdentificationChartDesc_Enter);
 			this.labelIdentificationChartDesc.Leave += new System.EventHandler(this.LabelIdentificationChartDesc_Leave);
 			this.labelIdentificationChartDesc.MouseEnter += new System.EventHandler(this.LabelIdentificationChartDesc_MouseEnter);
@@ -1600,7 +1600,7 @@
 			this.labelExistenceOfNotesDesc.Text = "Existence of notes";
 			this.labelExistenceOfNotesDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelExistenceOfNotesDesc, "Existence of notes");
-			this.labelExistenceOfNotesDesc.DoubleClick += new System.EventHandler(this.LabelExistenceOfNotesDesc_DoubleClick);
+			this.labelExistenceOfNotesDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelExistenceOfNotesDesc.Enter += new System.EventHandler(this.LabelExistenceOfNotesDesc_Enter);
 			this.labelExistenceOfNotesDesc.Leave += new System.EventHandler(this.LabelExistenceOfNotesDesc_Leave);
 			this.labelExistenceOfNotesDesc.MouseEnter += new System.EventHandler(this.LabelExistenceOfNotesDesc_MouseEnter);
@@ -1622,7 +1622,7 @@
 			this.labelBonnerDmDesc.Text = "Bonner Durchmusterung (DM)";
 			this.labelBonnerDmDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelBonnerDmDesc, "Bonner Durchmusterung (DM)");
-			this.labelBonnerDmDesc.DoubleClick += new System.EventHandler(this.LabelBonnerDmDesc_DoubleClick);
+			this.labelBonnerDmDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelBonnerDmDesc.Enter += new System.EventHandler(this.LabelBonnerDmDesc_Enter);
 			this.labelBonnerDmDesc.Leave += new System.EventHandler(this.LabelBonnerDmDesc_Leave);
 			this.labelBonnerDmDesc.MouseEnter += new System.EventHandler(this.LabelBonnerDmDesc_MouseEnter);
@@ -1644,7 +1644,7 @@
 			this.labelHdNumberDesc.Text = "HD number";
 			this.labelHdNumberDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelHdNumberDesc, "HD number");
-			this.labelHdNumberDesc.DoubleClick += new System.EventHandler(this.LabelHdNumberDesc_DoubleClick);
+			this.labelHdNumberDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelHdNumberDesc.Enter += new System.EventHandler(this.LabelHdNumberDesc_Enter);
 			this.labelHdNumberDesc.Leave += new System.EventHandler(this.LabelHdNumberDesc_Leave);
 			this.labelHdNumberDesc.MouseEnter += new System.EventHandler(this.LabelHdNumberDesc_MouseEnter);
@@ -1666,7 +1666,7 @@
 			this.labelSpectralTypeDesc.Text = "Spectral type";
 			this.labelSpectralTypeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSpectralTypeDesc, "Spectral type");
-			this.labelSpectralTypeDesc.DoubleClick += new System.EventHandler(this.LabelSpectralTypeDesc_DoubleClick);
+			this.labelSpectralTypeDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSpectralTypeDesc.Enter += new System.EventHandler(this.LabelSpectralTypeDesc_Enter);
 			this.labelSpectralTypeDesc.Leave += new System.EventHandler(this.LabelSpectralTypeDesc_Leave);
 			this.labelSpectralTypeDesc.MouseEnter += new System.EventHandler(this.LabelSpectralTypeDesc_MouseEnter);
@@ -1688,7 +1688,7 @@
 			this.labelViUsedForReductionsDesc.Text = "V-I used for reductions";
 			this.labelViUsedForReductionsDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelViUsedForReductionsDesc, "V-I used for reductions");
-			this.labelViUsedForReductionsDesc.DoubleClick += new System.EventHandler(this.LabelViUsedForReductionsDesc_DoubleClick);
+			this.labelViUsedForReductionsDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelViUsedForReductionsDesc.Enter += new System.EventHandler(this.LabelViUsedForReductionsDesc_Enter);
 			this.labelViUsedForReductionsDesc.Leave += new System.EventHandler(this.LabelViUsedForReductionsDesc_Leave);
 			this.labelViUsedForReductionsDesc.MouseEnter += new System.EventHandler(this.LabelViUsedForReductionsDesc_MouseEnter);
@@ -1710,7 +1710,7 @@
 			this.labelCapePhotographicDmDesc.Text = "Cape Photographic DM";
 			this.labelCapePhotographicDmDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCapePhotographicDmDesc, "Cape Photographic DM");
-			this.labelCapePhotographicDmDesc.DoubleClick += new System.EventHandler(this.LabelCapePhotographicDmDesc_DoubleClick);
+			this.labelCapePhotographicDmDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCapePhotographicDmDesc.Enter += new System.EventHandler(this.LabelCapePhotographicDmDesc_Enter);
 			this.labelCapePhotographicDmDesc.Leave += new System.EventHandler(this.LabelCapePhotographicDmDesc_Leave);
 			this.labelCapePhotographicDmDesc.MouseEnter += new System.EventHandler(this.LabelCapePhotographicDmDesc_MouseEnter);
@@ -1732,7 +1732,7 @@
 			this.labelCordobaDmDesc.Text = "Cordoba Durchmusterung (DM)";
 			this.labelCordobaDmDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCordobaDmDesc, "Cordoba Durchmusterung (DM)");
-			this.labelCordobaDmDesc.DoubleClick += new System.EventHandler(this.LabelCordobaDmDesc_DoubleClick);
+			this.labelCordobaDmDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCordobaDmDesc.Enter += new System.EventHandler(this.LabelCordobaDmDesc_Enter);
 			this.labelCordobaDmDesc.Leave += new System.EventHandler(this.LabelCordobaDmDesc_Leave);
 			this.labelCordobaDmDesc.MouseEnter += new System.EventHandler(this.LabelCordobaDmDesc_MouseEnter);
@@ -1754,7 +1754,7 @@
 			this.labelReferenceFlagForAstrometryDesc.Text = "Reference flag for astrometry";
 			this.labelReferenceFlagForAstrometryDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelReferenceFlagForAstrometryDesc, "Reference flag for astrometry");
-			this.labelReferenceFlagForAstrometryDesc.DoubleClick += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_DoubleClick);
+			this.labelReferenceFlagForAstrometryDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelReferenceFlagForAstrometryDesc.Enter += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_Enter);
 			this.labelReferenceFlagForAstrometryDesc.Leave += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_Leave);
 			this.labelReferenceFlagForAstrometryDesc.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForAstrometryDesc_MouseEnter);
@@ -1776,7 +1776,7 @@
 			this.labelSourceOfSpectralTypeDesc.Text = "Source of spectral type";
 			this.labelSourceOfSpectralTypeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSourceOfSpectralTypeDesc, "Source of spectral type");
-			this.labelSourceOfSpectralTypeDesc.DoubleClick += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_DoubleClick);
+			this.labelSourceOfSpectralTypeDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSourceOfSpectralTypeDesc.Enter += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_Enter);
 			this.labelSourceOfSpectralTypeDesc.Leave += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_Leave);
 			this.labelSourceOfSpectralTypeDesc.MouseEnter += new System.EventHandler(this.LabelSourceOfSpectralTypeDesc_MouseEnter);
@@ -1798,7 +1798,7 @@
 			this.labelCoarseVariabilityFlagDesc.Text = "Coarse variability flag";
 			this.labelCoarseVariabilityFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCoarseVariabilityFlagDesc, "Coarse variability flag");
-			this.labelCoarseVariabilityFlagDesc.DoubleClick += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_DoubleClick);
+			this.labelCoarseVariabilityFlagDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCoarseVariabilityFlagDesc.Enter += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_Enter);
 			this.labelCoarseVariabilityFlagDesc.Leave += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_Leave);
 			this.labelCoarseVariabilityFlagDesc.MouseEnter += new System.EventHandler(this.LabelCoarseVariabilityFlagDesc_MouseEnter);
@@ -1820,7 +1820,7 @@
 			this.labelProximityFlagDesc.Text = "Proximity flag";
 			this.labelProximityFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelProximityFlagDesc, "Proximity flag");
-			this.labelProximityFlagDesc.DoubleClick += new System.EventHandler(this.LabelProximityFlagDesc_DoubleClick);
+			this.labelProximityFlagDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelProximityFlagDesc.Enter += new System.EventHandler(this.LabelProximityFlagDesc_Enter);
 			this.labelProximityFlagDesc.Leave += new System.EventHandler(this.LabelProximityFlagDesc_Leave);
 			this.labelProximityFlagDesc.MouseEnter += new System.EventHandler(this.LabelProximityFlagDesc_MouseEnter);
@@ -1842,7 +1842,7 @@
 			this.labelCatalogDesc.Text = "Catalog (H=Hipparcos)";
 			this.labelCatalogDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCatalogDesc, "Catalogue (H=Hipparcos)");
-			this.labelCatalogDesc.DoubleClick += new System.EventHandler(this.LabelCatalogDesc_DoubleClick);
+			this.labelCatalogDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCatalogDesc.Enter += new System.EventHandler(this.LabelCatalogDesc_Enter);
 			this.labelCatalogDesc.Leave += new System.EventHandler(this.LabelCatalogDesc_Leave);
 			this.labelCatalogDesc.MouseEnter += new System.EventHandler(this.LabelCatalogDesc_MouseEnter);
@@ -1864,7 +1864,7 @@
 			this.labelFlagForCombinedMagnitudesDesc.Text = "Flag for combined Vmag, B-V, V-I";
 			this.labelFlagForCombinedMagnitudesDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelFlagForCombinedMagnitudesDesc, "Flag for combined Vmag, B-V, V-I");
-			this.labelFlagForCombinedMagnitudesDesc.DoubleClick += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_DoubleClick);
+			this.labelFlagForCombinedMagnitudesDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelFlagForCombinedMagnitudesDesc.Enter += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_Enter);
 			this.labelFlagForCombinedMagnitudesDesc.Leave += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_Leave);
 			this.labelFlagForCombinedMagnitudesDesc.MouseEnter += new System.EventHandler(this.LabelFlagForCombinedMagnitudesDesc_MouseEnter);
@@ -1886,7 +1886,7 @@
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Text = "Reference flag for BT and VTmag";
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelReferenceFlagForBtAndVtMagnitudeDesc, "Reference flag for BT and VTmag");
-			this.labelReferenceFlagForBtAndVtMagnitudeDesc.DoubleClick += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_DoubleClick);
+			this.labelReferenceFlagForBtAndVtMagnitudeDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Enter += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_Enter);
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Leave += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_Leave);
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeDesc_MouseEnter);
@@ -1908,7 +1908,7 @@
 			this.labelHistoricalStatusFlagDesc.Text = "Historical status flag";
 			this.labelHistoricalStatusFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelHistoricalStatusFlagDesc, "Historical status flag");
-			this.labelHistoricalStatusFlagDesc.DoubleClick += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_DoubleClick);
+			this.labelHistoricalStatusFlagDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelHistoricalStatusFlagDesc.Enter += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_Enter);
 			this.labelHistoricalStatusFlagDesc.Leave += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_Leave);
 			this.labelHistoricalStatusFlagDesc.MouseEnter += new System.EventHandler(this.LabelHistoricalStatusFlagDesc_MouseEnter);
@@ -1930,7 +1930,7 @@
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Text = "Reference flag for Hpmag";
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc, "Reference flag for Hpmag");
-			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_DoubleClick);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Enter += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Enter);
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.Leave += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_Leave);
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemDesc_MouseEnter);
@@ -2477,7 +2477,7 @@
 			this.labelSourceOfBvColorData.TabIndex = 77;
 			this.labelSourceOfBvColorData.Text = "---";
 			this.labelSourceOfBvColorData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelSourceOfBvColorData.DoubleClick += new System.EventHandler(this.LabelSourceOfBvColorData_DoubleClick);
+			this.labelSourceOfBvColorData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSourceOfBvColorData.Enter += new System.EventHandler(this.LabelSourceOfBvColorData_Enter);
 			this.labelSourceOfBvColorData.Leave += new System.EventHandler(this.LabelSourceOfBvColorData_Leave);
 			this.labelSourceOfBvColorData.MouseEnter += new System.EventHandler(this.LabelSourceOfBvColorData_MouseEnter);
@@ -2499,7 +2499,7 @@
 			this.labelSourceOfSpectralTypeData.TabIndex = 6;
 			this.labelSourceOfSpectralTypeData.Text = "---";
 			this.labelSourceOfSpectralTypeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelSourceOfSpectralTypeData.DoubleClick += new System.EventHandler(this.LabelSourceOfSpectralTypeData_DoubleClick);
+			this.labelSourceOfSpectralTypeData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSourceOfSpectralTypeData.Enter += new System.EventHandler(this.LabelSourceOfSpectralTypeData_Enter);
 			this.labelSourceOfSpectralTypeData.Leave += new System.EventHandler(this.LabelSourceOfSpectralTypeData_Leave);
 			this.labelSourceOfSpectralTypeData.MouseEnter += new System.EventHandler(this.LabelSourceOfSpectralTypeData_MouseEnter);
@@ -2520,7 +2520,7 @@
 			this.labelReferenceFlagForBtAndVtMagnitudeData.TabIndex = 75;
 			this.labelReferenceFlagForBtAndVtMagnitudeData.Text = "---";
 			this.labelReferenceFlagForBtAndVtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelReferenceFlagForBtAndVtMagnitudeData.DoubleClick += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeData_DoubleClick);
+			this.labelReferenceFlagForBtAndVtMagnitudeData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelReferenceFlagForBtAndVtMagnitudeData.Enter += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeData_Enter);
 			this.labelReferenceFlagForBtAndVtMagnitudeData.Leave += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeData_Leave);
 			this.labelReferenceFlagForBtAndVtMagnitudeData.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForBtAndVtMagnitudeData_MouseEnter);
@@ -2542,7 +2542,7 @@
 			this.labelSpectralTypeData.TabIndex = 4;
 			this.labelSpectralTypeData.Text = "---";
 			this.labelSpectralTypeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelSpectralTypeData.DoubleClick += new System.EventHandler(this.LabelSpectralTypeData_DoubleClick);
+			this.labelSpectralTypeData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSpectralTypeData.Enter += new System.EventHandler(this.LabelSpectralTypeData_Enter);
 			this.labelSpectralTypeData.Leave += new System.EventHandler(this.LabelSpectralTypeData_Leave);
 			this.labelSpectralTypeData.MouseEnter += new System.EventHandler(this.LabelSpectralTypeData_MouseEnter);
@@ -2563,7 +2563,7 @@
 			this.labelStandardErrorJohnsonBvColorData.TabIndex = 73;
 			this.labelStandardErrorJohnsonBvColorData.Text = "---";
 			this.labelStandardErrorJohnsonBvColorData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorJohnsonBvColorData.DoubleClick += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorData_DoubleClick);
+			this.labelStandardErrorJohnsonBvColorData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorJohnsonBvColorData.Enter += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorData_Enter);
 			this.labelStandardErrorJohnsonBvColorData.Leave += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorData_Leave);
 			this.labelStandardErrorJohnsonBvColorData.MouseEnter += new System.EventHandler(this.LabelStandardErrorJohnsonBvColorData_MouseEnter);
@@ -2585,7 +2585,7 @@
 			this.labelViUsedForReductionsData.TabIndex = 2;
 			this.labelViUsedForReductionsData.Text = "---";
 			this.labelViUsedForReductionsData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelViUsedForReductionsData.DoubleClick += new System.EventHandler(this.LabelViUsedForReductionsData_DoubleClick);
+			this.labelViUsedForReductionsData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelViUsedForReductionsData.Enter += new System.EventHandler(this.LabelViUsedForReductionsData_Enter);
 			this.labelViUsedForReductionsData.Leave += new System.EventHandler(this.LabelViUsedForReductionsData_Leave);
 			this.labelViUsedForReductionsData.MouseEnter += new System.EventHandler(this.LabelViUsedForReductionsData_MouseEnter);
@@ -2606,7 +2606,7 @@
 			this.labelJohnsonBvColorData.TabIndex = 71;
 			this.labelJohnsonBvColorData.Text = "---";
 			this.labelJohnsonBvColorData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelJohnsonBvColorData.DoubleClick += new System.EventHandler(this.LabelJohnsonBvColorData_DoubleClick);
+			this.labelJohnsonBvColorData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelJohnsonBvColorData.Enter += new System.EventHandler(this.LabelJohnsonBvColorData_Enter);
 			this.labelJohnsonBvColorData.Leave += new System.EventHandler(this.LabelJohnsonBvColorData_Leave);
 			this.labelJohnsonBvColorData.MouseEnter += new System.EventHandler(this.LabelJohnsonBvColorData_MouseEnter);
@@ -2628,7 +2628,7 @@
 			this.labelCapePhotographicDmData.TabIndex = 0;
 			this.labelCapePhotographicDmData.Text = "---";
 			this.labelCapePhotographicDmData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCapePhotographicDmData.DoubleClick += new System.EventHandler(this.LabelCapePhotographicDmData_DoubleClick);
+			this.labelCapePhotographicDmData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCapePhotographicDmData.Enter += new System.EventHandler(this.LabelCapePhotographicDmData_Enter);
 			this.labelCapePhotographicDmData.Leave += new System.EventHandler(this.LabelCapePhotographicDmData_Leave);
 			this.labelCapePhotographicDmData.MouseEnter += new System.EventHandler(this.LabelCapePhotographicDmData_MouseEnter);
@@ -2649,7 +2649,7 @@
 			this.labelStandardErrorMeanVtMagnitudeData.TabIndex = 69;
 			this.labelStandardErrorMeanVtMagnitudeData.Text = "---";
 			this.labelStandardErrorMeanVtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorMeanVtMagnitudeData.DoubleClick += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeData_DoubleClick);
+			this.labelStandardErrorMeanVtMagnitudeData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorMeanVtMagnitudeData.Enter += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeData_Enter);
 			this.labelStandardErrorMeanVtMagnitudeData.Leave += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeData_Leave);
 			this.labelStandardErrorMeanVtMagnitudeData.MouseEnter += new System.EventHandler(this.LabelStandardErrorMeanVtMagnitudeData_MouseEnter);
@@ -2671,7 +2671,7 @@
 			this.labelCordobaDmData.TabIndex = 152;
 			this.labelCordobaDmData.Text = "---";
 			this.labelCordobaDmData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCordobaDmData.DoubleClick += new System.EventHandler(this.LabelCordobaDmData_DoubleClick);
+			this.labelCordobaDmData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCordobaDmData.Enter += new System.EventHandler(this.LabelCordobaDmData_Enter);
 			this.labelCordobaDmData.Leave += new System.EventHandler(this.LabelCordobaDmData_Leave);
 			this.labelCordobaDmData.MouseEnter += new System.EventHandler(this.LabelCordobaDmData_MouseEnter);
@@ -2693,7 +2693,7 @@
 			this.labelMeanVtMagnitudeData.TabIndex = 67;
 			this.labelMeanVtMagnitudeData.Text = "---";
 			this.labelMeanVtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelMeanVtMagnitudeData.DoubleClick += new System.EventHandler(this.LabelMeanVtMagnitudeData_DoubleClick);
+			this.labelMeanVtMagnitudeData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMeanVtMagnitudeData.Enter += new System.EventHandler(this.LabelMeanVtMagnitudeData_Enter);
 			this.labelMeanVtMagnitudeData.Leave += new System.EventHandler(this.LabelMeanVtMagnitudeData_Leave);
 			this.labelMeanVtMagnitudeData.MouseEnter += new System.EventHandler(this.LabelMeanVtMagnitudeData_MouseEnter);
@@ -2715,7 +2715,7 @@
 			this.labelBonnerDmData.TabIndex = 150;
 			this.labelBonnerDmData.Text = "---";
 			this.labelBonnerDmData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelBonnerDmData.DoubleClick += new System.EventHandler(this.LabelBonnerDmData_DoubleClick);
+			this.labelBonnerDmData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelBonnerDmData.Enter += new System.EventHandler(this.LabelBonnerDmData_Enter);
 			this.labelBonnerDmData.Leave += new System.EventHandler(this.LabelBonnerDmData_Leave);
 			this.labelBonnerDmData.MouseEnter += new System.EventHandler(this.LabelBonnerDmData_MouseEnter);
@@ -2737,7 +2737,7 @@
 			this.labelStandardErrorMeanBtMagnitudeData.TabIndex = 65;
 			this.labelStandardErrorMeanBtMagnitudeData.Text = "---";
 			this.labelStandardErrorMeanBtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorMeanBtMagnitudeData.DoubleClick += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeData_DoubleClick);
+			this.labelStandardErrorMeanBtMagnitudeData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorMeanBtMagnitudeData.Enter += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeData_Enter);
 			this.labelStandardErrorMeanBtMagnitudeData.Leave += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeData_Leave);
 			this.labelStandardErrorMeanBtMagnitudeData.MouseEnter += new System.EventHandler(this.LabelStandardErrorMeanBtMagnitudeData_MouseEnter);
@@ -2759,7 +2759,7 @@
 			this.labelHdNumberData.TabIndex = 148;
 			this.labelHdNumberData.Text = "---";
 			this.labelHdNumberData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelHdNumberData.DoubleClick += new System.EventHandler(this.LabelHdNumberData_DoubleClick);
+			this.labelHdNumberData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelHdNumberData.Enter += new System.EventHandler(this.LabelHdNumberData_Enter);
 			this.labelHdNumberData.Leave += new System.EventHandler(this.LabelHdNumberData_Leave);
 			this.labelHdNumberData.MouseEnter += new System.EventHandler(this.LabelHdNumberData_MouseEnter);
@@ -2781,7 +2781,7 @@
 			this.labelMeanBtMagnitudeData.TabIndex = 63;
 			this.labelMeanBtMagnitudeData.Text = "---";
 			this.labelMeanBtMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelMeanBtMagnitudeData.DoubleClick += new System.EventHandler(this.LabelMeanBtMagnitudeData_DoubleClick);
+			this.labelMeanBtMagnitudeData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMeanBtMagnitudeData.Enter += new System.EventHandler(this.LabelMeanBtMagnitudeData_Enter);
 			this.labelMeanBtMagnitudeData.Leave += new System.EventHandler(this.LabelMeanBtMagnitudeData_Leave);
 			this.labelMeanBtMagnitudeData.MouseEnter += new System.EventHandler(this.LabelMeanBtMagnitudeData_MouseEnter);
@@ -2803,7 +2803,7 @@
 			this.labelExistenceOfNotesData.TabIndex = 146;
 			this.labelExistenceOfNotesData.Text = "---";
 			this.labelExistenceOfNotesData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelExistenceOfNotesData.DoubleClick += new System.EventHandler(this.LabelExistenceOfNotesData_DoubleClick);
+			this.labelExistenceOfNotesData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelExistenceOfNotesData.Enter += new System.EventHandler(this.LabelExistenceOfNotesData_Enter);
 			this.labelExistenceOfNotesData.Leave += new System.EventHandler(this.LabelExistenceOfNotesData_Leave);
 			this.labelExistenceOfNotesData.MouseEnter += new System.EventHandler(this.LabelExistenceOfNotesData_MouseEnter);
@@ -2825,7 +2825,7 @@
 			this.labelGoodnessOfFitParameterData.TabIndex = 61;
 			this.labelGoodnessOfFitParameterData.Text = "---";
 			this.labelGoodnessOfFitParameterData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelGoodnessOfFitParameterData.DoubleClick += new System.EventHandler(this.LabelGoodnessOfFitParameterData_DoubleClick);
+			this.labelGoodnessOfFitParameterData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelGoodnessOfFitParameterData.Enter += new System.EventHandler(this.LabelGoodnessOfFitParameterData_Enter);
 			this.labelGoodnessOfFitParameterData.Leave += new System.EventHandler(this.LabelGoodnessOfFitParameterData_Leave);
 			this.labelGoodnessOfFitParameterData.MouseEnter += new System.EventHandler(this.LabelGoodnessOfFitParameterData_MouseEnter);
@@ -2847,7 +2847,7 @@
 			this.labelIdentificationChartData.TabIndex = 144;
 			this.labelIdentificationChartData.Text = "---";
 			this.labelIdentificationChartData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelIdentificationChartData.DoubleClick += new System.EventHandler(this.LabelIdentificationChartData_DoubleClick);
+			this.labelIdentificationChartData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelIdentificationChartData.Enter += new System.EventHandler(this.LabelIdentificationChartData_Enter);
 			this.labelIdentificationChartData.Leave += new System.EventHandler(this.LabelIdentificationChartData_Leave);
 			this.labelIdentificationChartData.MouseEnter += new System.EventHandler(this.LabelIdentificationChartData_MouseEnter);
@@ -2869,7 +2869,7 @@
 			this.labelPercentageOfRejectedDataData.TabIndex = 59;
 			this.labelPercentageOfRejectedDataData.Text = "---";
 			this.labelPercentageOfRejectedDataData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelPercentageOfRejectedDataData.DoubleClick += new System.EventHandler(this.LabelPercentageOfRejectedDataData_DoubleClick);
+			this.labelPercentageOfRejectedDataData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelPercentageOfRejectedDataData.Enter += new System.EventHandler(this.LabelPercentageOfRejectedDataData_Enter);
 			this.labelPercentageOfRejectedDataData.Leave += new System.EventHandler(this.LabelPercentageOfRejectedDataData_Leave);
 			this.labelPercentageOfRejectedDataData.MouseEnter += new System.EventHandler(this.LabelPercentageOfRejectedDataData_MouseEnter);
@@ -2891,7 +2891,7 @@
 			this.labelFlagIndicatingSurveyStarData.TabIndex = 142;
 			this.labelFlagIndicatingSurveyStarData.Text = "---";
 			this.labelFlagIndicatingSurveyStarData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelFlagIndicatingSurveyStarData.DoubleClick += new System.EventHandler(this.LabelFlagIndicatingSurveyStarData_DoubleClick);
+			this.labelFlagIndicatingSurveyStarData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelFlagIndicatingSurveyStarData.Enter += new System.EventHandler(this.LabelFlagIndicatingSurveyStarData_Enter);
 			this.labelFlagIndicatingSurveyStarData.Leave += new System.EventHandler(this.LabelFlagIndicatingSurveyStarData_Leave);
 			this.labelFlagIndicatingSurveyStarData.MouseEnter += new System.EventHandler(this.LabelFlagIndicatingSurveyStarData_MouseEnter);
@@ -2913,7 +2913,7 @@
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.TabIndex = 57;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Text = "---";
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_DoubleClick);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_Enter);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_Leave);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseEnter);
@@ -2935,7 +2935,7 @@
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.TabIndex = 138;
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.Text = "---";
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.DoubleClick += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_DoubleClick);
+			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.Enter += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_Enter);
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.Leave += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_Leave);
 			this.labelStandardErrorMagnitudeDifferenceBetweenComponentsData.MouseEnter += new System.EventHandler(this.LabelStandardErrorMagnitudeDifferenceBetweenComponentsData_MouseEnter);
@@ -2957,7 +2957,7 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.TabIndex = 55;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Text = "---";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_DoubleClick);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_Enter);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_Leave);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseEnter);
@@ -2979,7 +2979,7 @@
 			this.labelMagnitudeDifferenceBetweenComponentsData.TabIndex = 136;
 			this.labelMagnitudeDifferenceBetweenComponentsData.Text = "---";
 			this.labelMagnitudeDifferenceBetweenComponentsData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelMagnitudeDifferenceBetweenComponentsData.DoubleClick += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsData_DoubleClick);
+			this.labelMagnitudeDifferenceBetweenComponentsData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMagnitudeDifferenceBetweenComponentsData.Enter += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsData_Enter);
 			this.labelMagnitudeDifferenceBetweenComponentsData.Leave += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsData_Leave);
 			this.labelMagnitudeDifferenceBetweenComponentsData.MouseEnter += new System.EventHandler(this.LabelMagnitudeDifferenceBetweenComponentsData_MouseEnter);
@@ -3001,7 +3001,7 @@
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.TabIndex = 53;
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.Text = "---";
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_DoubleClick);
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_Enter);
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_Leave);
 			this.labelCorrelationProperMotionDeclinationByDeclinationData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_MouseEnter);
@@ -3023,7 +3023,7 @@
 			this.labelStandardErrorRhoData.TabIndex = 134;
 			this.labelStandardErrorRhoData.Text = "---";
 			this.labelStandardErrorRhoData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorRhoData.DoubleClick += new System.EventHandler(this.LabelStandardErrorRhoData_DoubleClick);
+			this.labelStandardErrorRhoData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorRhoData.Enter += new System.EventHandler(this.LabelStandardErrorRhoData_Enter);
 			this.labelStandardErrorRhoData.Leave += new System.EventHandler(this.LabelStandardErrorRhoData_Leave);
 			this.labelStandardErrorRhoData.MouseEnter += new System.EventHandler(this.LabelStandardErrorRhoData_MouseEnter);
@@ -3045,7 +3045,7 @@
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.TabIndex = 51;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Text = "---";
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionDeclinationByRightAscensionData.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionData_DoubleClick);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionData_Enter);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionData_Leave);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseEnter);
@@ -3067,7 +3067,7 @@
 			this.labelAngularSeparationBetweenComponentsData.TabIndex = 132;
 			this.labelAngularSeparationBetweenComponentsData.Text = "---";
 			this.labelAngularSeparationBetweenComponentsData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelAngularSeparationBetweenComponentsData.DoubleClick += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsData_DoubleClick);
+			this.labelAngularSeparationBetweenComponentsData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelAngularSeparationBetweenComponentsData.Enter += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsData_Enter);
 			this.labelAngularSeparationBetweenComponentsData.Leave += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsData_Leave);
 			this.labelAngularSeparationBetweenComponentsData.MouseEnter += new System.EventHandler(this.LabelAngularSeparationBetweenComponentsData_MouseEnter);
@@ -3089,7 +3089,7 @@
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.TabIndex = 49;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Text = "---";
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_DoubleClick);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_Enter);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_Leave);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseEnter);
@@ -3111,7 +3111,7 @@
 			this.labelPositionAngleBetweenComponentsData.TabIndex = 130;
 			this.labelPositionAngleBetweenComponentsData.Text = "---";
 			this.labelPositionAngleBetweenComponentsData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelPositionAngleBetweenComponentsData.DoubleClick += new System.EventHandler(this.LabelPositionAngleBetweenComponentsData_DoubleClick);
+			this.labelPositionAngleBetweenComponentsData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelPositionAngleBetweenComponentsData.Enter += new System.EventHandler(this.LabelPositionAngleBetweenComponentsData_Enter);
 			this.labelPositionAngleBetweenComponentsData.Leave += new System.EventHandler(this.LabelPositionAngleBetweenComponentsData_Leave);
 			this.labelPositionAngleBetweenComponentsData.MouseEnter += new System.EventHandler(this.LabelPositionAngleBetweenComponentsData_MouseEnter);
@@ -3133,7 +3133,7 @@
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.TabIndex = 47;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Text = "---";
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionRightAscensionByDeclinationData.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationData_DoubleClick);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationData_Enter);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationData_Leave);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseEnter);
@@ -3155,7 +3155,7 @@
 			this.labelComponentIdentifiersData.TabIndex = 128;
 			this.labelComponentIdentifiersData.Text = "---";
 			this.labelComponentIdentifiersData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelComponentIdentifiersData.DoubleClick += new System.EventHandler(this.LabelComponentIdentifiersData_DoubleClick);
+			this.labelComponentIdentifiersData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelComponentIdentifiersData.Enter += new System.EventHandler(this.LabelComponentIdentifiersData_Enter);
 			this.labelComponentIdentifiersData.Leave += new System.EventHandler(this.LabelComponentIdentifiersData_Leave);
 			this.labelComponentIdentifiersData.MouseEnter += new System.EventHandler(this.LabelComponentIdentifiersData_MouseEnter);
@@ -3177,7 +3177,7 @@
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.TabIndex = 45;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Text = "---";
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.DoubleClick += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionData_DoubleClick);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionData_Enter);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionData_Leave);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseEnter);
@@ -3199,7 +3199,7 @@
 			this.labelSolutionQualityData.TabIndex = 126;
 			this.labelSolutionQualityData.Text = "---";
 			this.labelSolutionQualityData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelSolutionQualityData.DoubleClick += new System.EventHandler(this.LabelSolutionQualityData_DoubleClick);
+			this.labelSolutionQualityData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSolutionQualityData.Enter += new System.EventHandler(this.LabelSolutionQualityData_Enter);
 			this.labelSolutionQualityData.Leave += new System.EventHandler(this.LabelSolutionQualityData_Leave);
 			this.labelSolutionQualityData.MouseEnter += new System.EventHandler(this.LabelSolutionQualityData_MouseEnter);
@@ -3221,7 +3221,7 @@
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.TabIndex = 43;
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.Text = "---";
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationTrigonomicParallaxByDeclinationData.DoubleClick += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationData_DoubleClick);
+			this.labelCorrelationTrigonomicParallaxByDeclinationData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.Enter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationData_Enter);
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.Leave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationData_Leave);
 			this.labelCorrelationTrigonomicParallaxByDeclinationData.MouseEnter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByDeclinationData_MouseEnter);
@@ -3243,7 +3243,7 @@
 			this.labelAstrometricSourceFlagData.TabIndex = 124;
 			this.labelAstrometricSourceFlagData.Text = "---";
 			this.labelAstrometricSourceFlagData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelAstrometricSourceFlagData.DoubleClick += new System.EventHandler(this.LabelAstrometricSourceFlagData_DoubleClick);
+			this.labelAstrometricSourceFlagData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelAstrometricSourceFlagData.Enter += new System.EventHandler(this.LabelAstrometricSourceFlagData_Enter);
 			this.labelAstrometricSourceFlagData.Leave += new System.EventHandler(this.LabelAstrometricSourceFlagData_Leave);
 			this.labelAstrometricSourceFlagData.MouseEnter += new System.EventHandler(this.LabelAstrometricSourceFlagData_MouseEnter);
@@ -3265,7 +3265,7 @@
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.TabIndex = 41;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Text = "---";
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationTrigonomicParallaxByRightAscensionData.DoubleClick += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionData_DoubleClick);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Enter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionData_Enter);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.Leave += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionData_Leave);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionData.MouseEnter += new System.EventHandler(this.LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseEnter);
@@ -3287,7 +3287,7 @@
 			this.labelMultipleSystemsFlagData.TabIndex = 122;
 			this.labelMultipleSystemsFlagData.Text = "---";
 			this.labelMultipleSystemsFlagData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelMultipleSystemsFlagData.DoubleClick += new System.EventHandler(this.LabelMultipleSystemsFlagData_DoubleClick);
+			this.labelMultipleSystemsFlagData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMultipleSystemsFlagData.Enter += new System.EventHandler(this.LabelMultipleSystemsFlagData_Enter);
 			this.labelMultipleSystemsFlagData.Leave += new System.EventHandler(this.LabelMultipleSystemsFlagData_Leave);
 			this.labelMultipleSystemsFlagData.MouseEnter += new System.EventHandler(this.LabelMultipleSystemsFlagData_MouseEnter);
@@ -3309,7 +3309,7 @@
 			this.labelCorrelationDeclinationByRightAscensionData.TabIndex = 39;
 			this.labelCorrelationDeclinationByRightAscensionData.Text = "---";
 			this.labelCorrelationDeclinationByRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationDeclinationByRightAscensionData.DoubleClick += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionData_DoubleClick);
+			this.labelCorrelationDeclinationByRightAscensionData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCorrelationDeclinationByRightAscensionData.Enter += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionData_Enter);
 			this.labelCorrelationDeclinationByRightAscensionData.Leave += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionData_Leave);
 			this.labelCorrelationDeclinationByRightAscensionData.MouseEnter += new System.EventHandler(this.LabelCorrelationDeclinationByRightAscensionData_MouseEnter);
@@ -3331,7 +3331,7 @@
 			this.labelNumberComponentsInThisEntryData.TabIndex = 120;
 			this.labelNumberComponentsInThisEntryData.Text = "---";
 			this.labelNumberComponentsInThisEntryData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelNumberComponentsInThisEntryData.DoubleClick += new System.EventHandler(this.LabelNumberComponentsInThisEntryData_DoubleClick);
+			this.labelNumberComponentsInThisEntryData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelNumberComponentsInThisEntryData.Enter += new System.EventHandler(this.LabelNumberComponentsInThisEntryData_Enter);
 			this.labelNumberComponentsInThisEntryData.Leave += new System.EventHandler(this.LabelNumberComponentsInThisEntryData_Leave);
 			this.labelNumberComponentsInThisEntryData.MouseEnter += new System.EventHandler(this.LabelNumberComponentsInThisEntryData_MouseEnter);
@@ -3353,7 +3353,7 @@
 			this.labelStandardErrorProperMotionDeclinationData.TabIndex = 37;
 			this.labelStandardErrorProperMotionDeclinationData.Text = "---";
 			this.labelStandardErrorProperMotionDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorProperMotionDeclinationData.DoubleClick += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationData_DoubleClick);
+			this.labelStandardErrorProperMotionDeclinationData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorProperMotionDeclinationData.Enter += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationData_Enter);
 			this.labelStandardErrorProperMotionDeclinationData.Leave += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationData_Leave);
 			this.labelStandardErrorProperMotionDeclinationData.MouseEnter += new System.EventHandler(this.LabelStandardErrorProperMotionDeclinationData_MouseEnter);
@@ -3375,7 +3375,7 @@
 			this.labelNumberEntriesWithSameCcdmData.TabIndex = 118;
 			this.labelNumberEntriesWithSameCcdmData.Text = "---";
 			this.labelNumberEntriesWithSameCcdmData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelNumberEntriesWithSameCcdmData.DoubleClick += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmData_DoubleClick);
+			this.labelNumberEntriesWithSameCcdmData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelNumberEntriesWithSameCcdmData.Enter += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmData_Enter);
 			this.labelNumberEntriesWithSameCcdmData.Leave += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmData_Leave);
 			this.labelNumberEntriesWithSameCcdmData.MouseEnter += new System.EventHandler(this.LabelNumberEntriesWithSameCcdmData_MouseEnter);
@@ -3397,7 +3397,7 @@
 			this.labelStandardErrorProperMotionRightAscensionData.TabIndex = 35;
 			this.labelStandardErrorProperMotionRightAscensionData.Text = "---";
 			this.labelStandardErrorProperMotionRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorProperMotionRightAscensionData.DoubleClick += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionData_DoubleClick);
+			this.labelStandardErrorProperMotionRightAscensionData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorProperMotionRightAscensionData.Enter += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionData_Enter);
 			this.labelStandardErrorProperMotionRightAscensionData.Leave += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionData_Leave);
 			this.labelStandardErrorProperMotionRightAscensionData.MouseEnter += new System.EventHandler(this.LabelStandardErrorProperMotionRightAscensionData_MouseEnter);
@@ -3419,7 +3419,7 @@
 			this.labelHistoricalStatusFlagData.TabIndex = 116;
 			this.labelHistoricalStatusFlagData.Text = "---";
 			this.labelHistoricalStatusFlagData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelHistoricalStatusFlagData.DoubleClick += new System.EventHandler(this.LabelHistoricalStatusFlagData_DoubleClick);
+			this.labelHistoricalStatusFlagData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelHistoricalStatusFlagData.Enter += new System.EventHandler(this.LabelHistoricalStatusFlagData_Enter);
 			this.labelHistoricalStatusFlagData.Leave += new System.EventHandler(this.LabelHistoricalStatusFlagData_Leave);
 			this.labelHistoricalStatusFlagData.MouseEnter += new System.EventHandler(this.LabelHistoricalStatusFlagData_MouseEnter);
@@ -3441,7 +3441,7 @@
 			this.labelStandardErrorTrigonomicParallaxData.TabIndex = 33;
 			this.labelStandardErrorTrigonomicParallaxData.Text = "---";
 			this.labelStandardErrorTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorTrigonomicParallaxData.DoubleClick += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxData_DoubleClick);
+			this.labelStandardErrorTrigonomicParallaxData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorTrigonomicParallaxData.Enter += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxData_Enter);
 			this.labelStandardErrorTrigonomicParallaxData.Leave += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxData_Leave);
 			this.labelStandardErrorTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.LabelStandardErrorTrigonomicParallaxData_MouseEnter);
@@ -3463,7 +3463,7 @@
 			this.labelCcdmIdentifierData.TabIndex = 114;
 			this.labelCcdmIdentifierData.Text = "---";
 			this.labelCcdmIdentifierData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCcdmIdentifierData.DoubleClick += new System.EventHandler(this.LabelCcdmIdentifierData_DoubleClick);
+			this.labelCcdmIdentifierData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCcdmIdentifierData.Enter += new System.EventHandler(this.LabelCcdmIdentifierData_Enter);
 			this.labelCcdmIdentifierData.Leave += new System.EventHandler(this.LabelCcdmIdentifierData_Leave);
 			this.labelCcdmIdentifierData.MouseEnter += new System.EventHandler(this.LabelCcdmIdentifierData_MouseEnter);
@@ -3485,7 +3485,7 @@
 			this.labelStandardErrorDeclinationData.TabIndex = 31;
 			this.labelStandardErrorDeclinationData.Text = "---";
 			this.labelStandardErrorDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorDeclinationData.DoubleClick += new System.EventHandler(this.LabelStandardErrorDeclinationData_DoubleClick);
+			this.labelStandardErrorDeclinationData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorDeclinationData.Enter += new System.EventHandler(this.LabelStandardErrorDeclinationData_Enter);
 			this.labelStandardErrorDeclinationData.Leave += new System.EventHandler(this.LabelStandardErrorDeclinationData_Leave);
 			this.labelStandardErrorDeclinationData.MouseEnter += new System.EventHandler(this.LabelStandardErrorDeclinationData_MouseEnter);
@@ -3507,7 +3507,7 @@
 			this.labelLightCurveAnnexData.TabIndex = 112;
 			this.labelLightCurveAnnexData.Text = "---";
 			this.labelLightCurveAnnexData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelLightCurveAnnexData.DoubleClick += new System.EventHandler(this.LabelLightCurveAnnexData_DoubleClick);
+			this.labelLightCurveAnnexData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelLightCurveAnnexData.Enter += new System.EventHandler(this.LabelLightCurveAnnexData_Enter);
 			this.labelLightCurveAnnexData.Leave += new System.EventHandler(this.LabelLightCurveAnnexData_Leave);
 			this.labelLightCurveAnnexData.MouseEnter += new System.EventHandler(this.LabelLightCurveAnnexData_MouseEnter);
@@ -3529,7 +3529,7 @@
 			this.labelStandardErrorRightAscensionData.TabIndex = 29;
 			this.labelStandardErrorRightAscensionData.Text = "---";
 			this.labelStandardErrorRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorRightAscensionData.DoubleClick += new System.EventHandler(this.LabelStandardErrorRightAscensionData_DoubleClick);
+			this.labelStandardErrorRightAscensionData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorRightAscensionData.Enter += new System.EventHandler(this.LabelStandardErrorRightAscensionData_Enter);
 			this.labelStandardErrorRightAscensionData.Leave += new System.EventHandler(this.LabelStandardErrorRightAscensionData_Leave);
 			this.labelStandardErrorRightAscensionData.MouseEnter += new System.EventHandler(this.LabelStandardErrorRightAscensionData_MouseEnter);
@@ -3551,7 +3551,7 @@
 			this.labelAdditionalDataAboutVariabilityData.TabIndex = 110;
 			this.labelAdditionalDataAboutVariabilityData.Text = "---";
 			this.labelAdditionalDataAboutVariabilityData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelAdditionalDataAboutVariabilityData.DoubleClick += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityData_DoubleClick);
+			this.labelAdditionalDataAboutVariabilityData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelAdditionalDataAboutVariabilityData.Enter += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityData_Enter);
 			this.labelAdditionalDataAboutVariabilityData.Leave += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityData_Leave);
 			this.labelAdditionalDataAboutVariabilityData.MouseEnter += new System.EventHandler(this.LabelAdditionalDataAboutVariabilityData_MouseEnter);
@@ -3573,7 +3573,7 @@
 			this.labelProperMotionDeltaData.TabIndex = 27;
 			this.labelProperMotionDeltaData.Text = "---";
 			this.labelProperMotionDeltaData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelProperMotionDeltaData.DoubleClick += new System.EventHandler(this.LabelProperMotionDeltaData_DoubleClick);
+			this.labelProperMotionDeltaData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelProperMotionDeltaData.Enter += new System.EventHandler(this.LabelProperMotionDeltaData_Enter);
 			this.labelProperMotionDeltaData.Leave += new System.EventHandler(this.LabelProperMotionDeltaData_Leave);
 			this.labelProperMotionDeltaData.MouseEnter += new System.EventHandler(this.LabelProperMotionDeltaData_MouseEnter);
@@ -3595,7 +3595,7 @@
 			this.labelVariabilityTypeData.TabIndex = 108;
 			this.labelVariabilityTypeData.Text = "---";
 			this.labelVariabilityTypeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelVariabilityTypeData.DoubleClick += new System.EventHandler(this.LabelVariabilityTypeData_DoubleClick);
+			this.labelVariabilityTypeData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelVariabilityTypeData.Enter += new System.EventHandler(this.LabelVariabilityTypeData_Enter);
 			this.labelVariabilityTypeData.Leave += new System.EventHandler(this.LabelVariabilityTypeData_Leave);
 			this.labelVariabilityTypeData.MouseEnter += new System.EventHandler(this.LabelVariabilityTypeData_MouseEnter);
@@ -3617,7 +3617,7 @@
 			this.labelProperMotionAlphaData.TabIndex = 25;
 			this.labelProperMotionAlphaData.Text = "---";
 			this.labelProperMotionAlphaData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelProperMotionAlphaData.DoubleClick += new System.EventHandler(this.LabelProperMotionAlphaData_DoubleClick);
+			this.labelProperMotionAlphaData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelProperMotionAlphaData.Enter += new System.EventHandler(this.LabelProperMotionAlphaData_Enter);
 			this.labelProperMotionAlphaData.Leave += new System.EventHandler(this.LabelProperMotionAlphaData_Leave);
 			this.labelProperMotionAlphaData.MouseEnter += new System.EventHandler(this.LabelProperMotionAlphaData_MouseEnter);
@@ -3639,7 +3639,7 @@
 			this.labelVariabilityPeriodData.TabIndex = 106;
 			this.labelVariabilityPeriodData.Text = "---";
 			this.labelVariabilityPeriodData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelVariabilityPeriodData.DoubleClick += new System.EventHandler(this.LabelVariabilityPeriodData_DoubleClick);
+			this.labelVariabilityPeriodData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelVariabilityPeriodData.Enter += new System.EventHandler(this.LabelVariabilityPeriodData_Enter);
 			this.labelVariabilityPeriodData.Leave += new System.EventHandler(this.LabelVariabilityPeriodData_Leave);
 			this.labelVariabilityPeriodData.MouseEnter += new System.EventHandler(this.LabelVariabilityPeriodData_MouseEnter);
@@ -3661,7 +3661,7 @@
 			this.labelTrigonomicParallaxData.TabIndex = 23;
 			this.labelTrigonomicParallaxData.Text = "---";
 			this.labelTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelTrigonomicParallaxData.DoubleClick += new System.EventHandler(this.LabelTrigonomicParallaxData_DoubleClick);
+			this.labelTrigonomicParallaxData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelTrigonomicParallaxData.Enter += new System.EventHandler(this.LabelTrigonomicParallaxData_Enter);
 			this.labelTrigonomicParallaxData.Leave += new System.EventHandler(this.LabelTrigonomicParallaxData_Leave);
 			this.labelTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.LabelTrigonomicParallaxData_MouseEnter);
@@ -3683,7 +3683,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.TabIndex = 104;
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Text = "---";
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.DoubleClick += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumData_DoubleClick);
+			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumData_Enter);
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumData_Leave);
 			this.labelMedianMagnitudeInHipparcosSystemAtMinimumData.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMinimumData_MouseEnter);
@@ -3705,7 +3705,7 @@
 			this.labelReferenceFlagForAstrometryData.TabIndex = 21;
 			this.labelReferenceFlagForAstrometryData.Text = "---";
 			this.labelReferenceFlagForAstrometryData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelReferenceFlagForAstrometryData.DoubleClick += new System.EventHandler(this.LabelReferenceFlagForAstrometryData_DoubleClick);
+			this.labelReferenceFlagForAstrometryData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelReferenceFlagForAstrometryData.Enter += new System.EventHandler(this.LabelReferenceFlagForAstrometryData_Enter);
 			this.labelReferenceFlagForAstrometryData.Leave += new System.EventHandler(this.LabelReferenceFlagForAstrometryData_Leave);
 			this.labelReferenceFlagForAstrometryData.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForAstrometryData_MouseEnter);
@@ -3727,7 +3727,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.TabIndex = 102;
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Text = "---";
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.DoubleClick += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumData_DoubleClick);
+			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumData_Enter);
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumData_Leave);
 			this.labelMedianMagnitudeInHipparcosSystemAtMaximumData.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemAtMaximumData_MouseEnter);
@@ -3749,7 +3749,7 @@
 			this.labelDeltaData.TabIndex = 19;
 			this.labelDeltaData.Text = "---";
 			this.labelDeltaData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelDeltaData.DoubleClick += new System.EventHandler(this.LabelDeltaData_DoubleClick);
+			this.labelDeltaData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelDeltaData.Enter += new System.EventHandler(this.LabelDeltaData_Enter);
 			this.labelDeltaData.Leave += new System.EventHandler(this.LabelDeltaData_Leave);
 			this.labelDeltaData.MouseEnter += new System.EventHandler(this.LabelDeltaData_MouseEnter);
@@ -3771,7 +3771,7 @@
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.TabIndex = 100;
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Text = "---";
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.DoubleClick += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_DoubleClick);
+			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Enter += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_Enter);
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.Leave += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_Leave);
 			this.labelReferenceFlagForMedianMagnitudeInHipparcosSystemData.MouseEnter += new System.EventHandler(this.LabelReferenceFlagForMedianMagnitudeInHipparcosSystemData_MouseEnter);
@@ -3793,7 +3793,7 @@
 			this.labelAlphaData.TabIndex = 17;
 			this.labelAlphaData.Text = "---";
 			this.labelAlphaData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelAlphaData.DoubleClick += new System.EventHandler(this.LabelAlphaData_DoubleClick);
+			this.labelAlphaData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelAlphaData.Enter += new System.EventHandler(this.LabelAlphaData_Enter);
 			this.labelAlphaData.Leave += new System.EventHandler(this.LabelAlphaData_Leave);
 			this.labelAlphaData.MouseEnter += new System.EventHandler(this.LabelAlphaData_MouseEnter);
@@ -3815,7 +3815,7 @@
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.TabIndex = 98;
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Text = "---";
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.DoubleClick += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_DoubleClick);
+			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Enter += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_Enter);
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.Leave += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_Leave);
 			this.labelNumberObservationsForMedianMagnitudeInHipparcosSystemData.MouseEnter += new System.EventHandler(this.LabelNumberObservationsForMedianMagnitudeInHipparcosSystemData_MouseEnter);
@@ -3837,7 +3837,7 @@
 			this.labelSourceOfMagnitudeData.TabIndex = 15;
 			this.labelSourceOfMagnitudeData.Text = "---";
 			this.labelSourceOfMagnitudeData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelSourceOfMagnitudeData.DoubleClick += new System.EventHandler(this.LabelSourceOfMagnitudeData_DoubleClick);
+			this.labelSourceOfMagnitudeData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSourceOfMagnitudeData.Enter += new System.EventHandler(this.LabelSourceOfMagnitudeData_Enter);
 			this.labelSourceOfMagnitudeData.Leave += new System.EventHandler(this.LabelSourceOfMagnitudeData_Leave);
 			this.labelSourceOfMagnitudeData.MouseEnter += new System.EventHandler(this.LabelSourceOfMagnitudeData_MouseEnter);
@@ -3859,7 +3859,7 @@
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.TabIndex = 96;
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.Text = "---";
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelScatterMedianMagnitudeInHipparcosSystemData.DoubleClick += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemData_DoubleClick);
+			this.labelScatterMedianMagnitudeInHipparcosSystemData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.Enter += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemData_Enter);
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.Leave += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemData_Leave);
 			this.labelScatterMedianMagnitudeInHipparcosSystemData.MouseEnter += new System.EventHandler(this.LabelScatterMedianMagnitudeInHipparcosSystemData_MouseEnter);
@@ -3881,7 +3881,7 @@
 			this.labelCoarseVariabilityFlagData.TabIndex = 13;
 			this.labelCoarseVariabilityFlagData.Text = "---";
 			this.labelCoarseVariabilityFlagData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCoarseVariabilityFlagData.DoubleClick += new System.EventHandler(this.LabelCoarseVariabilityFlagData_DoubleClick);
+			this.labelCoarseVariabilityFlagData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCoarseVariabilityFlagData.Enter += new System.EventHandler(this.LabelCoarseVariabilityFlagData_Enter);
 			this.labelCoarseVariabilityFlagData.Leave += new System.EventHandler(this.LabelCoarseVariabilityFlagData_Leave);
 			this.labelCoarseVariabilityFlagData.MouseEnter += new System.EventHandler(this.LabelCoarseVariabilityFlagData_MouseEnter);
@@ -3903,7 +3903,7 @@
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.TabIndex = 93;
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Text = "---";
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.DoubleClick += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemData_DoubleClick);
+			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Enter += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemData_Enter);
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.Leave += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemData_Leave);
 			this.labelStandardErrorMedianMagnitudeInHipparcosSystemData.MouseEnter += new System.EventHandler(this.LabelStandardErrorMedianMagnitudeInHipparcosSystemData_MouseEnter);
@@ -3925,7 +3925,7 @@
 			this.labelMagnitudeJohnsonData.TabIndex = 11;
 			this.labelMagnitudeJohnsonData.Text = "---";
 			this.labelMagnitudeJohnsonData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelMagnitudeJohnsonData.DoubleClick += new System.EventHandler(this.LabelMagnitudeJohnsonData_DoubleClick);
+			this.labelMagnitudeJohnsonData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMagnitudeJohnsonData.Enter += new System.EventHandler(this.LabelMagnitudeJohnsonData_Enter);
 			this.labelMagnitudeJohnsonData.Leave += new System.EventHandler(this.LabelMagnitudeJohnsonData_Leave);
 			this.labelMagnitudeJohnsonData.MouseEnter += new System.EventHandler(this.LabelMagnitudeJohnsonData_MouseEnter);
@@ -3947,7 +3947,7 @@
 			this.labelMedianMagnitudeInHipparcosSystemData.TabIndex = 91;
 			this.labelMedianMagnitudeInHipparcosSystemData.Text = "---";
 			this.labelMedianMagnitudeInHipparcosSystemData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelMedianMagnitudeInHipparcosSystemData.DoubleClick += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemData_DoubleClick);
+			this.labelMedianMagnitudeInHipparcosSystemData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelMedianMagnitudeInHipparcosSystemData.Enter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemData_Enter);
 			this.labelMedianMagnitudeInHipparcosSystemData.Leave += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemData_Leave);
 			this.labelMedianMagnitudeInHipparcosSystemData.MouseEnter += new System.EventHandler(this.LabelMedianMagnitudeInHipparcosSystemData_MouseEnter);
@@ -3969,7 +3969,7 @@
 			this.labelDeclinationData.TabIndex = 9;
 			this.labelDeclinationData.Text = "---";
 			this.labelDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelDeclinationData.DoubleClick += new System.EventHandler(this.LabelDeclinationData_DoubleClick);
+			this.labelDeclinationData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelDeclinationData.Enter += new System.EventHandler(this.LabelDeclinationData_Enter);
 			this.labelDeclinationData.Leave += new System.EventHandler(this.LabelDeclinationData_Leave);
 			this.labelDeclinationData.MouseEnter += new System.EventHandler(this.LabelDeclinationData_MouseEnter);
@@ -3991,7 +3991,7 @@
 			this.labelFlagForCombinedMagnitudesData.TabIndex = 89;
 			this.labelFlagForCombinedMagnitudesData.Text = "---";
 			this.labelFlagForCombinedMagnitudesData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelFlagForCombinedMagnitudesData.DoubleClick += new System.EventHandler(this.LabelFlagForCombinedMagnitudesData_DoubleClick);
+			this.labelFlagForCombinedMagnitudesData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelFlagForCombinedMagnitudesData.Enter += new System.EventHandler(this.LabelFlagForCombinedMagnitudesData_Enter);
 			this.labelFlagForCombinedMagnitudesData.Leave += new System.EventHandler(this.LabelFlagForCombinedMagnitudesData_Leave);
 			this.labelFlagForCombinedMagnitudesData.MouseEnter += new System.EventHandler(this.LabelFlagForCombinedMagnitudesData_MouseEnter);
@@ -4013,7 +4013,7 @@
 			this.labelRightAscensionData.TabIndex = 7;
 			this.labelRightAscensionData.Text = "---";
 			this.labelRightAscensionData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelRightAscensionData.DoubleClick += new System.EventHandler(this.LabelRightAscensionData_DoubleClick);
+			this.labelRightAscensionData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelRightAscensionData.Enter += new System.EventHandler(this.LabelRightAscensionData_Enter);
 			this.labelRightAscensionData.Leave += new System.EventHandler(this.LabelRightAscensionData_Leave);
 			this.labelRightAscensionData.MouseEnter += new System.EventHandler(this.LabelRightAscensionData_MouseEnter);
@@ -4035,7 +4035,7 @@
 			this.labelSourceOfViData.TabIndex = 83;
 			this.labelSourceOfViData.Text = "---";
 			this.labelSourceOfViData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelSourceOfViData.DoubleClick += new System.EventHandler(this.LabelSourceOfViData_DoubleClick);
+			this.labelSourceOfViData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelSourceOfViData.Enter += new System.EventHandler(this.LabelSourceOfViData_Enter);
 			this.labelSourceOfViData.Leave += new System.EventHandler(this.LabelSourceOfViData_Leave);
 			this.labelSourceOfViData.MouseEnter += new System.EventHandler(this.LabelSourceOfViData_MouseEnter);
@@ -4057,7 +4057,7 @@
 			this.labelProximityFlagData.TabIndex = 5;
 			this.labelProximityFlagData.Text = "---";
 			this.labelProximityFlagData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelProximityFlagData.DoubleClick += new System.EventHandler(this.LabelProximityFlagData_DoubleClick);
+			this.labelProximityFlagData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelProximityFlagData.Enter += new System.EventHandler(this.LabelProximityFlagData_Enter);
 			this.labelProximityFlagData.Leave += new System.EventHandler(this.LabelProximityFlagData_Leave);
 			this.labelProximityFlagData.MouseEnter += new System.EventHandler(this.LabelProximityFlagData_MouseEnter);
@@ -4079,7 +4079,7 @@
 			this.labelStandardErrorViData.TabIndex = 81;
 			this.labelStandardErrorViData.Text = "---";
 			this.labelStandardErrorViData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelStandardErrorViData.DoubleClick += new System.EventHandler(this.LabelStandardErrorViData_DoubleClick);
+			this.labelStandardErrorViData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelStandardErrorViData.Enter += new System.EventHandler(this.LabelStandardErrorViData_Enter);
 			this.labelStandardErrorViData.Leave += new System.EventHandler(this.LabelStandardErrorViData_Leave);
 			this.labelStandardErrorViData.MouseEnter += new System.EventHandler(this.LabelStandardErrorViData_MouseEnter);
@@ -4101,7 +4101,7 @@
 			this.labelIdentifierData.TabIndex = 3;
 			this.labelIdentifierData.Text = "---";
 			this.labelIdentifierData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelIdentifierData.DoubleClick += new System.EventHandler(this.LabelIdentifierData_DoubleClick);
+			this.labelIdentifierData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelIdentifierData.Enter += new System.EventHandler(this.LabelIdentifierData_Enter);
 			this.labelIdentifierData.Leave += new System.EventHandler(this.LabelIdentifierData_Leave);
 			this.labelIdentifierData.MouseEnter += new System.EventHandler(this.LabelIdentifierData_MouseEnter);
@@ -4123,7 +4123,7 @@
 			this.labelColorIndexInCousinsSystemData.TabIndex = 79;
 			this.labelColorIndexInCousinsSystemData.Text = "---";
 			this.labelColorIndexInCousinsSystemData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelColorIndexInCousinsSystemData.DoubleClick += new System.EventHandler(this.LabelColorIndexInCousinsSystemData_DoubleClick);
+			this.labelColorIndexInCousinsSystemData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelColorIndexInCousinsSystemData.Enter += new System.EventHandler(this.LabelColorIndexInCousinsSystemData_Enter);
 			this.labelColorIndexInCousinsSystemData.Leave += new System.EventHandler(this.LabelColorIndexInCousinsSystemData_Leave);
 			this.labelColorIndexInCousinsSystemData.MouseEnter += new System.EventHandler(this.LabelColorIndexInCousinsSystemData_MouseEnter);
@@ -4145,7 +4145,7 @@
 			this.labelCatalogData.TabIndex = 1;
 			this.labelCatalogData.Text = "---";
 			this.labelCatalogData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCatalogData.DoubleClick += new System.EventHandler(this.LabelCatalogData_DoubleClick);
+			this.labelCatalogData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
 			this.labelCatalogData.Enter += new System.EventHandler(this.LabelCatalogData_Enter);
 			this.labelCatalogData.Leave += new System.EventHandler(this.LabelCatalogData_Leave);
 			this.labelCatalogData.MouseEnter += new System.EventHandler(this.LabelCatalogData_MouseEnter);
