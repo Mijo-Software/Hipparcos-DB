@@ -1,11 +1,513 @@
-﻿using System;
+﻿using Hipparcos_DB.Properties;
+using System;
+using System.Drawing;
+using System.IO;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace Hipparcos_DB
 {
 	public partial class TychoCatalogViewerForm : Form
 	{
+		private enum AstroElement
+		{
+			None = 0,
+			CatalogDesc,
+			IdentifierDesc,
+			ProximityFlagDesc,
+			RightAscensionDesc,
+			DeclinationDesc,
+			MagnitudeJohnsonDesc,
+			SourceOfMagnitudeDesc,
+			AlphaDesc,
+			DeltaDesc,
+			ReferenceFlagForAstrometryDesc,
+			TrigonomicParallaxDesc,
+			ProperMotionAlphaDesc,
+			ProperMotionDeltaDesc,
+			StandardErrorRightAscensionDesc,
+			StandardErrorDeclinationDesc,
+			StandardErrorTrigonomicParallaxDesc,
+			StandardErrorProperMotionRightAscensionDesc,
+			StandardErrorProperMotionDeclinationDesc,
+			CorrelationDeclinationByRightAscensionDesc,
+			CorrelationTrigonomicParallaxByRightAscensionDesc,
+			CorrelationTrigonomicParallaxByDeclinationDesc,
+			CorrelationProperMotionRightAscensionByRightAscensionDesc,
+			CorrelationProperMotionRightAscensionByDeclinationDesc,
+			CorrelationProperMotionRightAscensionByTrigonomicParallaxDesc,
+			CorrelationProperMotionDeclinationByRightAscensionDesc,
+			CorrelationProperMotionDeclinationByDeclinationDesc,
+			CorrelationProperMotionDeclinationByTrigonomicParallaxDesc,
+			CorrelationProperMotionDeclinationByProperMotionRightAscensionDesc,
+			NumberOfTransitsForAstrometryDesc,
+			GoodnessOfFitParameterDesc,
+			HipparcosNumberDesc,
+			MeanBtMagnitudeDesc,
+			StandardErrorMeanBtMagnitudeDesc,
+			MeanVtMagnitudeDesc,
+			StandardErrorMeanVtMagnitudeDesc,
+			SourceOfPhotometryDesc,
+			JohnsonBvColorDesc,
+			StandardErrorJohnsonBvColorDesc,
+			AstrometricQualityFlagDesc,
+			SignalToNoiseRatioOfTheStarImageDesc,
+			SourceOfAstrometricDataDesc,
+			NumberOfTransitsForPhotometryDesc,
+			EstimateOfVtmagScatterDesc,
+			VtmagAtMaximumDesc,
+			VtmagAtMinimumDesc,
+			KnownVariabilityFromGcvsNsvDesc,
+			VariabilityFromTychoDesc,
+			DuplicityFromTychoDesc,
+			EpochPhotometryInAnnexDesc,
+			CcdmComponentIdentifierDesc,
+			PpmAndSupplementDesc,
+			HdNumberDesc,
+			BonnerDmDesc,
+			CordobaDmDesc,
+			CapePhotographicDmDesc,
+			NotesDesc,
+			CatalogData,
+			IdentifierData,
+			ProximityFlagData,
+			RightAscensionData,
+			DeclinationData,
+			MagnitudeJohnsonData,
+			SourceOfMagnitudeData,
+			AlphaData,
+			DeltaData,
+			ReferenceFlagForAstrometryData,
+			TrigonomicParallaxData,
+			ProperMotionAlphaData,
+			ProperMotionDeltaData,
+			StandardErrorRightAscensionData,
+			StandardErrorDeclinationData,
+			StandardErrorTrigonomicParallaxData,
+			StandardErrorProperMotionRightAscensionData,
+			StandardErrorProperMotionDeclinationData,
+			CorrelationDeclinationByRightAscensionData,
+			CorrelationTrigonomicParallaxByRightAscensionData,
+			CorrelationTrigonomicParallaxByDeclinationData,
+			CorrelationProperMotionRightAscensionByRightAscensionData,
+			CorrelationProperMotionRightAscensionByDeclinationData,
+			CorrelationProperMotionRightAscensionByTrigonomicParallaxData,
+			CorrelationProperMotionDeclinationByRightAscensionData,
+			CorrelationProperMotionDeclinationByDeclinationData,
+			CorrelationProperMotionDeclinationByTrigonomicParallaxData,
+			CorrelationProperMotionDeclinationByProperMotionRightAscensionData,
+			NumberOfTransitsForAstrometryData,
+			GoodnessOfFitParameterData,
+			HipparcosNumberData,
+			MeanBtMagnitudeData,
+			StandardErrorMeanBtMagnitudeData,
+			MeanVtMagnitudeData,
+			StandardErrorMeanVtMagnitudeData,
+			SourceOfPhotometryData,
+			JohnsonBvColorData,
+			StandardErrorJohnsonBvColorData,
+			AstrometricQualityFlagData,
+			SignalToNoiseRatioOfTheStarImageData,
+			SourceOfAstrometricDataData,
+			NumberOfTransitsForPhotometryData,
+			EstimateOfVtmagScatterData,
+			VtmagAtMaximumData,
+			VtmagAtMinimumData,
+			KnownVariabilityFromGcvsNsvData,
+			VariabilityFromTychoData,
+			DuplicityFromTychoData,
+			EpochPhotometryInAnnexData,
+			CcdmComponentIdentifierData,
+			PpmAndSupplementData,
+			HdNumberData,
+			BonnerDmData,
+			CordobaDmData,
+			CapePhotographicDmData,
+			NotesData
+		}
+
+		private readonly Settings settings = new Settings();
+
+		private readonly string[] filesHipparcosCatalog =
+			{
+				"h_dm_com.dat.gz",
+				"h_dm_cor.dat.gz",
+				"hd_notes.doc.gz",
+				"hg_notes.doc.gz",
+				"h_dm_cor.dat.gz",
+				"hip_dm_g.dat.gz",
+				"hip_dm_o.dat.gz",
+				"hip_dm_v.dat.gz",
+				"hip_dm_x.dat.gz",
+				"hip_main.dat.gz",
+				"hip_va_1.dat.gz",
+				"hip_va_2.dat.gz",
+				"hp_auth.doc.gz",
+				"hp_notes.doc.gz",
+				"hp_refs.doc.gz",
+				"solar_ha.dat.gz",
+				"solar_hp.dat.gz",
+				"solar_t.dat.gz"
+			};
+
+		private string[] catalogEntries;
+
+		private uint
+			astrophysicalElement = 0,
+			index = 0,
+			maxIndex = 0;
+
 		#region Local methods
+
+		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
+
+		private void CopyToClipboard(string text)
+		{
+			Clipboard.SetText(text: text);
+			MessageBox.Show(
+				owner: this,
+				text: "Copied to clipboard",
+				caption: "The text was copied to the clipboard!",
+				buttons: MessageBoxButtons.OK,
+				icon: MessageBoxIcon.Information);
+		}
+
+		private void CopyToClipboard(object sender, EventArgs e)
+		{
+			if (sender is TextBox)
+			{
+				CopyToClipboard(text: ((TextBox)sender).Text);
+			}
+			else if (sender is Button)
+			{
+				CopyToClipboard(text: ((Button)sender).Text);
+			}
+			else if (sender is RadioButton)
+			{
+				CopyToClipboard(text: ((RadioButton)sender).Text);
+			}
+			else if (sender is CheckBox)
+			{
+				SetStatusbar(text: ((CheckBox)sender).Text);
+			}
+			else if (sender is DateTimePicker)
+			{
+				CopyToClipboard(text: ((DateTimePicker)sender).Text);
+			}
+			else if (sender is Label)
+			{
+				CopyToClipboard(text: ((Label)sender).Text);
+			}
+			else if (sender is ToolStripButton)
+			{
+				CopyToClipboard(text: ((ToolStripButton)sender).Text);
+			}
+			else if (sender is ToolStripMenuItem)
+			{
+				CopyToClipboard(text: ((ToolStripMenuItem)sender).Text);
+			}
+			else if (sender is ToolStripLabel)
+			{
+				CopyToClipboard(text: ((ToolStripLabel)sender).Text);
+			}
+			else if (sender is ToolStripComboBox)
+			{
+				CopyToClipboard(text: ((ToolStripComboBox)sender).Text);
+			}
+			else if (sender is ToolStripDropDown)
+			{
+				CopyToClipboard(text: ((ToolStripDropDown)sender).Text);
+			}
+			else if (sender is ToolStripDropDownButton)
+			{
+				CopyToClipboard(text: ((ToolStripDropDownButton)sender).Text);
+			}
+			else if (sender is ToolStripDropDownItem)
+			{
+				CopyToClipboard(text: ((ToolStripDropDownItem)sender).Text);
+			}
+			else if (sender is ToolStripDropDownMenu)
+			{
+				CopyToClipboard(text: ((ToolStripDropDownMenu)sender).Text);
+			}
+			else if (sender is ToolStripProgressBar)
+			{
+				CopyToClipboard(text: ((ToolStripProgressBar)sender).Text);
+			}
+			else if (sender is ToolStripSplitButton)
+			{
+				CopyToClipboard(text: ((ToolStripSplitButton)sender).Text);
+			}
+			else if (sender is ToolStripSeparator)
+			{
+				CopyToClipboard(text: ((ToolStripSeparator)sender).Text);
+			}
+			else if (sender is ToolStripStatusLabel)
+			{
+				CopyToClipboard(text: ((ToolStripStatusLabel)sender).Text);
+			}
+			else if (sender is ToolStripTextBox)
+			{
+				CopyToClipboard(text: ((ToolStripTextBox)sender).Text);
+			}
+		}
+
+		private void SetStatusbar(string text)
+		{
+			toolStripStatusLabelInfo.Visible = true;
+			toolStripStatusLabelInfo.Text = text;
+		}
+
+		private void SetStatusbar(object sender, EventArgs e)
+		{
+			if (sender is TextBox)
+			{
+				SetStatusbar(text: ((TextBox)sender).AccessibleDescription);
+			}
+			else if (sender is Button)
+			{
+				SetStatusbar(text: ((Button)sender).AccessibleDescription);
+			}
+			else if (sender is RadioButton)
+			{
+				SetStatusbar(text: ((RadioButton)sender).AccessibleDescription);
+			}
+			else if (sender is CheckBox)
+			{
+				SetStatusbar(text: ((CheckBox)sender).AccessibleDescription);
+			}
+			else if (sender is DateTimePicker)
+			{
+				SetStatusbar(text: ((DateTimePicker)sender).AccessibleDescription);
+			}
+			else if (sender is Label)
+			{
+				SetStatusbar(text: ((Label)sender).AccessibleDescription);
+			}
+			else if (sender is PictureBox)
+			{
+				SetStatusbar(text: ((PictureBox)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripButton)
+			{
+				SetStatusbar(text: ((ToolStripButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripMenuItem)
+			{
+				SetStatusbar(text: ((ToolStripMenuItem)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripLabel)
+			{
+				SetStatusbar(text: ((ToolStripLabel)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripComboBox)
+			{
+				SetStatusbar(text: ((ToolStripComboBox)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDown)
+			{
+				SetStatusbar(text: ((ToolStripDropDown)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownButton)
+			{
+				SetStatusbar(text: ((ToolStripDropDownButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownItem)
+			{
+				SetStatusbar(text: ((ToolStripDropDownItem)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripDropDownMenu)
+			{
+				SetStatusbar(text: ((ToolStripDropDownMenu)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripProgressBar)
+			{
+				SetStatusbar(text: ((ToolStripProgressBar)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripSplitButton)
+			{
+				SetStatusbar(text: ((ToolStripSplitButton)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripSeparator)
+			{
+				SetStatusbar(text: ((ToolStripSeparator)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripStatusLabel)
+			{
+				SetStatusbar(text: ((ToolStripStatusLabel)sender).AccessibleDescription);
+			}
+			else if (sender is ToolStripTextBox)
+			{
+				SetStatusbar(text: ((ToolStripTextBox)sender).AccessibleDescription);
+			}
+		}
+
+		private void ClearStatusbar()
+		{
+			toolStripStatusLabelInfo.Text = string.Empty;
+			toolStripStatusLabelInfo.Visible = false;
+		}
+
+		private void SetColorSelfAndSetStatusbar(uint astroElemId, ref Label labelSelf, Color color, object sender, EventArgs e)
+		{
+			astrophysicalElement = astroElemId;
+			SetStatusbar(sender: sender, e: e);
+			if (settings.UserEnableHoverEffect)
+			{
+				SetColorSelf(labelSelf: ref labelSelf, color: color);
+			}
+		}
+
+		private void SetColorSelfAndClearStatusbar(ref Label labelSelf, Color color)
+		{
+			ClearStatusbar();
+			if (settings.UserEnableHoverEffect)
+			{
+				SetColorSelf(labelSelf: ref labelSelf, color: color);
+			}
+		}
+
+		private void SetColorSelfAndNeighbourAndSetStatusbar(uint astroElemId, ref Label labelSelf, ref Label labelNeighbour, Color color, object sender, EventArgs e)
+		{
+			astrophysicalElement = astroElemId;
+			SetStatusbar(sender: sender, e: e);
+			if (settings.UserEnableHoverEffect)
+			{
+				SetColorSelfAndNeighbour(labelSelf: ref labelSelf, labelNeighbour: ref labelNeighbour, color: color);
+			}
+		}
+
+		private void SetColorSelfAndNeighbourAndClearStatusbar(ref Label labelSelf, ref Label labelNeighbour, Color color)
+		{
+			ClearStatusbar();
+			if (settings.UserEnableHoverEffect)
+			{
+				SetColorSelfAndNeighbour(labelSelf: ref labelSelf, labelNeighbour: ref labelNeighbour, color: color);
+			}
+		}
+
+		private void SetColorSelf(ref Label labelSelf, Color color) => labelSelf.BackColor = color;
+
+		private void SetColorSelfAndNeighbour(ref Label labelSelf, ref Label labelNeighbour, Color color) => labelSelf.BackColor = labelNeighbour.BackColor = color;
+
+		private void UpdateIndexLabel() => toolStripTextBoxGoToIndex.Text = index.ToString();
+
+		private void CheckIndexMinimum()
+		{
+			if (index < 1 || index > maxIndex)
+			{
+				index = 1;
+			}
+		}
+
+		private void CheckIndexMaximum()
+		{
+			if (index > maxIndex)
+			{
+				index = maxIndex;
+			}
+		}
+
+		private void ShowEntriesOnIndex()
+		{
+			labelCatalogData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelIdentifierData.Text = catalogEntries[index - 1].Substring(startIndex: 14, length: 12); //.Trim();
+			labelProximityFlagData.Text = catalogEntries[index - 1].Substring(startIndex: 16, length: 1); //.Trim();
+			labelRightAscensionData.Text = catalogEntries[index - 1].Substring(startIndex: 28, length: 11); //.Trim();
+			labelDeclinationData.Text = catalogEntries[index - 1].Substring(startIndex: 40, length: 11); //.Trim();
+			labelMagnitudeJohnsonData.Text = catalogEntries[index - 1].Substring(startIndex: 46, length: 5); //.Trim();
+			labelSourceOfMagnitudeData.Text = catalogEntries[index - 1].Substring(startIndex: 50, length: 1); //.Trim();
+			labelAlphaData.Text = catalogEntries[index - 1].Substring(startIndex: 63, length: 12); //.Trim();
+			labelDeltaData.Text = catalogEntries[index - 1].Substring(startIndex: 76, length: 12); //.Trim();
+			labelReferenceFlagForAstrometryData.Text = catalogEntries[index - 1].Substring(startIndex: 78, length: 1); //.Trim();
+			labelTrigonomicParallaxData.Text = catalogEntries[index - 1].Substring(startIndex: 85, length: 6); //.Trim();
+			labelProperMotionAlphaData.Text = catalogEntries[index - 1].Substring(startIndex: 94, length: 7); //.Trim();
+			labelProperMotionDeltaData.Text = catalogEntries[index - 1].Substring(startIndex: 103, length: 7); //.Trim();
+			labelStandardErrorRightAscensionData.Text = catalogEntries[index - 1].Substring(startIndex: 110, length: 5); //.Trim();
+			labelStandardErrorDeclinationData.Text = catalogEntries[index - 1].Substring(startIndex: 117, length: 5); //.Trim();
+			labelStandardErrorTrigonomicParallaxData.Text = catalogEntries[index - 1].Substring(startIndex: 124, length: 5); //.Trim();
+			labelStandardErrorProperMotionRightAscensionData.Text = catalogEntries[index - 1].Substring(startIndex: 131, length: 5); //.Trim();
+			labelStandardErrorProperMotionDeclinationData.Text = catalogEntries[index - 1].Substring(startIndex: 138, length: 5); //.Trim();
+			labelCorrelationDeclinationByRightAscensionData.Text = catalogEntries[index - 1].Substring(startIndex: 145, length: 5); //.Trim();
+			labelCorrelationTrigonomicParallaxByRightAscensionData.Text = catalogEntries[index - 1].Substring(startIndex: 151, length: 5); //.Trim();
+			labelCorrelationTrigonomicParallaxByDeclinationData.Text = catalogEntries[index - 1].Substring(startIndex: 157, length: 5); //.Trim();
+			labelCorrelationProperMotionRightAscensionByRightAscensionData.Text = catalogEntries[index - 1].Substring(startIndex: 163, length: 5); //.Trim();
+			labelCorrelationProperMotionRightAscensionByDeclinationData.Text = catalogEntries[index - 1].Substring(startIndex: 169, length: 5); //.Trim();
+			labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData.Text = catalogEntries[index - 1].Substring(startIndex: 175, length: 5); //.Trim();
+			labelCorrelationProperMotionDeclinationByRightAscensionData.Text = catalogEntries[index - 1].Substring(startIndex: 181, length: 5); //.Trim();
+			labelCorrelationProperMotionDeclinationByDeclinationData.Text = catalogEntries[index - 1].Substring(startIndex: 187, length: 5); //.Trim();
+			labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Text = catalogEntries[index - 1].Substring(startIndex: 193, length: 5); //.Trim();
+			labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelNumberOfTransitsForAstrometryData.Text = catalogEntries[index - 1].Substring(startIndex: 203, length: 3); //.Trim();
+			labelGoodnessOfFitParameterData.Text = catalogEntries[index - 1].Substring(startIndex: 209, length: 5); //.Trim();
+			labelHipparcosNumberData.Text = catalogEntries[index - 1].Substring(startIndex: 216, length: 6); //.Trim();
+			labelMeanBtMagnitudeData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelStandardErrorMeanBtMagnitudeData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelMeanVtMagnitudeData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelStandardErrorMeanVtMagnitudeData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelSourceOfPhotometryData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelJohnsonBvColorData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelStandardErrorJohnsonBvColorData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelAstrometricQualityFlagData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelSignalToNoiseRatioOfTheStarImageData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelSourceOfAstrometricDataData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelNumberOfTransitsForPhotometryData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelEstimateOfVtmagScatterData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelVtmagAtMaximumData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelVtmagAtMinimumData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelKnownVariabilityFromGcvsNsvData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelVariabilityFromTychoData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelDuplicityFromTychoData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelEpochPhotometryInAnnexData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelCcdmComponentIdentifierData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelPpmAndSupplementData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelHdNumberData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelBonnerDmData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelCordobaDmData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelCapePhotographicDmData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+			labelNotesData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
+		}
+
+		private void GoToIndex()
+		{
+			if (int.TryParse(s: toolStripTextBoxGoToIndex.Text, result: out int tempIndex))
+			{
+				if (tempIndex < 1 || tempIndex > maxIndex)
+				{
+					MessageBox.Show(
+						owner: this,
+						text: "The number is out of range. The number to be entered must be greater than zero and less than the maximum value.",
+						caption: "Number out of range",
+						buttons: MessageBoxButtons.OK,
+						icon: MessageBoxIcon.Error);
+				}
+				else
+				{
+					index = Convert.ToUInt32(tempIndex);
+					UpdateIndexLabel();
+					ShowEntriesOnIndex();
+				}
+			}
+			else
+			{
+				MessageBox.Show(
+					owner: this,
+					text: "The input is not a natural number. Make sure the input is a natural number, for example: 1, 2, 3, ...",
+					caption: "Wrong number format",
+					buttons: MessageBoxButtons.OK,
+					icon: MessageBoxIcon.Error);
+			}
+		}
+
+		private static void SetDoubleBuffered(Control control)
+		{
+			if (SystemInformation.TerminalServerSession)
+			{
+				return;
+			}
+			PropertyInfo aProp = typeof(Control).GetProperty(name: "DoubleBuffered", bindingAttr: BindingFlags.NonPublic | BindingFlags.Instance);
+			aProp.SetValue(obj: control, value: true, index: null);
+		}
 
 		#endregion
 
