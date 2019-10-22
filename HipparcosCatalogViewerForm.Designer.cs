@@ -209,6 +209,7 @@
 			this.labelIdentifierData = new System.Windows.Forms.Label();
 			this.labelColorIndexInCousinsSystemData = new System.Windows.Forms.Label();
 			this.labelCatalogData = new System.Windows.Forms.Label();
+			this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
 			this.contextMenuStripCopyData.SuspendLayout();
 			this.toolStrip.SuspendLayout();
 			this.statusStrip.SuspendLayout();
@@ -2198,6 +2199,7 @@
 			this.progressBar.AccessibleName = "Loading progress";
 			this.progressBar.AccessibleRole = System.Windows.Forms.AccessibleRole.ProgressBar;
 			this.progressBar.AutoToolTip = true;
+			this.progressBar.MarqueeAnimationSpeed = 10;
 			this.progressBar.Name = "progressBar";
 			this.progressBar.Size = new System.Drawing.Size(100, 16);
 			this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
@@ -4151,6 +4153,10 @@
 			this.labelCatalogData.MouseEnter += new System.EventHandler(this.LabelCatalogData_MouseEnter);
 			this.labelCatalogData.MouseLeave += new System.EventHandler(this.LabelCatalogData_MouseLeave);
 			// 
+			// backgroundWorker
+			// 
+			this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BackgroundWorker_DoWork);
+			// 
 			// HipparcosCatalogViewerForm
 			// 
 			this.AccessibleDescription = "Window of the Hipparcos Catalog Viewer";
@@ -4369,5 +4375,6 @@
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparatorOptions;
 		private System.Windows.Forms.ToolStripButton toolStripButtonChangeDataTableStyle;
 		private System.Windows.Forms.ToolStripButton toolStripButtonChangeHoverEffect;
+		private System.ComponentModel.BackgroundWorker backgroundWorker;
 	}
 }

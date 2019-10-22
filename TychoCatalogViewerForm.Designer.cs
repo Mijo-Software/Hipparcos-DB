@@ -167,6 +167,7 @@
 			this.labelHipparcosNumberData = new System.Windows.Forms.Label();
 			this.labelGoodnessOfFitParameterData = new System.Windows.Forms.Label();
 			this.labelNumberOfTransitsForAstrometryData = new System.Windows.Forms.Label();
+			this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
 			this.contextMenuStripCopyData.SuspendLayout();
 			this.statusStrip.SuspendLayout();
 			this.menuStrip.SuspendLayout();
@@ -1467,6 +1468,7 @@
 			this.progressBar.AccessibleName = "Loading progress";
 			this.progressBar.AccessibleRole = System.Windows.Forms.AccessibleRole.ProgressBar;
 			this.progressBar.AutoToolTip = true;
+			this.progressBar.MarqueeAnimationSpeed = 10;
 			this.progressBar.Name = "progressBar";
 			this.progressBar.Size = new System.Drawing.Size(100, 16);
 			this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
@@ -3141,6 +3143,10 @@
 			this.labelNumberOfTransitsForAstrometryData.MouseEnter += new System.EventHandler(this.LabelNumberOfTransitsForAstrometryData_MouseEnter);
 			this.labelNumberOfTransitsForAstrometryData.MouseLeave += new System.EventHandler(this.LabelNumberOfTransitsForAstrometryData_MouseLeave);
 			// 
+			// backgroundWorker
+			// 
+			this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BackgroundWorker_DoWork);
+			// 
 			// TychoCatalogViewerForm
 			// 
 			this.AccessibleDescription = "Window of the Hipparcos Catalog Viewer";
@@ -3317,5 +3323,6 @@
 		private System.Windows.Forms.ToolStripButton toolStripButtonChangeHoverEffect;
 		private System.Windows.Forms.Label labelHipparcosNumberDesc;
 		private System.Windows.Forms.Label labelHipparcosNumberData;
+		private System.ComponentModel.BackgroundWorker backgroundWorker;
 	}
 }

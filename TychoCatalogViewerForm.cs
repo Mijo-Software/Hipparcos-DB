@@ -1,5 +1,6 @@
 ﻿using Hipparcos_DB.Properties;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Reflection;
@@ -150,7 +151,9 @@ namespace Hipparcos_DB
 				"solar_t.dat.gz"
 			};
 
-		private string[] catalogEntries;
+		private bool isDatabaseLoading = true;
+
+		private string[] catalogEntries = { "" };
 
 		private uint
 			astrophysicalElement = 0,
@@ -350,39 +353,51 @@ namespace Hipparcos_DB
 
 		private void SetColorSelfAndSetStatusbar(uint astroElemId, ref Label labelSelf, Color color, object sender, EventArgs e)
 		{
-			astrophysicalElement = astroElemId;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
+			if (!isDatabaseLoading)
 			{
-				SetColorSelf(labelSelf: ref labelSelf, color: color);
+				astrophysicalElement = astroElemId;
+				SetStatusbar(sender: sender, e: e);
+				if (settings.UserEnableHoverEffect)
+				{
+					SetColorSelf(labelSelf: ref labelSelf, color: color);
+				}
 			}
 		}
 
 		private void SetColorSelfAndClearStatusbar(ref Label labelSelf, Color color)
 		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
+			if (!isDatabaseLoading)
 			{
-				SetColorSelf(labelSelf: ref labelSelf, color: color);
+				ClearStatusbar();
+				if (settings.UserEnableHoverEffect)
+				{
+					SetColorSelf(labelSelf: ref labelSelf, color: color);
+				}
 			}
 		}
 
 		private void SetColorSelfAndNeighbourAndSetStatusbar(uint astroElemId, ref Label labelSelf, ref Label labelNeighbour, Color color, object sender, EventArgs e)
 		{
-			astrophysicalElement = astroElemId;
-			SetStatusbar(sender: sender, e: e);
-			if (settings.UserEnableHoverEffect)
+			if (!isDatabaseLoading)
 			{
-				SetColorSelfAndNeighbour(labelSelf: ref labelSelf, labelNeighbour: ref labelNeighbour, color: color);
+				astrophysicalElement = astroElemId;
+				SetStatusbar(sender: sender, e: e);
+				if (settings.UserEnableHoverEffect)
+				{
+					SetColorSelfAndNeighbour(labelSelf: ref labelSelf, labelNeighbour: ref labelNeighbour, color: color);
+				}
 			}
 		}
 
 		private void SetColorSelfAndNeighbourAndClearStatusbar(ref Label labelSelf, ref Label labelNeighbour, Color color)
 		{
-			ClearStatusbar();
-			if (settings.UserEnableHoverEffect)
+			if (!isDatabaseLoading)
 			{
-				SetColorSelfAndNeighbour(labelSelf: ref labelSelf, labelNeighbour: ref labelNeighbour, color: color);
+				ClearStatusbar();
+				if (settings.UserEnableHoverEffect)
+				{
+					SetColorSelfAndNeighbour(labelSelf: ref labelSelf, labelNeighbour: ref labelNeighbour, color: color);
+				}
 			}
 		}
 
@@ -536,7 +551,6 @@ namespace Hipparcos_DB
 
 		private void TychoCatalogViewerForm_Load(object sender, EventArgs e)
 		{
-			ClearStatusbar();
 			switch (settings.UserEnableHoverEffect)
 			{
 				case true:
@@ -559,14 +573,31 @@ namespace Hipparcos_DB
 					tableLayoutPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.InsetDouble;
 					break;
 			}
+			SetDoubleBuffered(control: tableLayoutPanel);
+			backgroundWorker.RunWorkerAsync();
+		}
+
+		private void TychoCatalogViewerForm_FormClosing(object sender, FormClosingEventArgs e) => settings.Save();
+
+		#endregion
+
+		#region BackgroundWorker event handler
+
+		private void BackgroundWorker_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+		{
 			string dataFile = settings.UserHipparcosCatalogDirectory + "tyc_main.dat";
 			if (File.Exists(path: dataFile))
 			{
+				menuStrip.Enabled = toolStrip.Visible = false;
+				toolStripStatusLabelInfo.Text = "Loading file...";
 				catalogEntries = File.ReadAllLines(path: dataFile);
 				index = 1;
 				maxIndex = Convert.ToUInt32(value: catalogEntries.Length);
 				toolStripLabelMaxIndex.Text = "of " + maxIndex.ToString();
 				progressBar.Visible = false;
+				isDatabaseLoading = false;
+				menuStrip.Enabled = toolStrip.Visible = true;
+				ClearStatusbar();
 				UpdateIndexLabel();
 				ShowEntriesOnIndex();
 			}
@@ -580,10 +611,7 @@ namespace Hipparcos_DB
 					icon: MessageBoxIcon.Error);
 				Close();
 			}
-			SetDoubleBuffered(control: tableLayoutPanel);
 		}
-
-		private void TychoCatalogViewerForm_FormClosing(object sender, FormClosingEventArgs e) => settings.Save();
 
 		#endregion
 
@@ -594,7 +622,7 @@ namespace Hipparcos_DB
 			Array.Clear(array: catalogEntries, index: 0, length: catalogEntries.Length);
 			GC.Collect();
 			Close();
-		}		
+		}
 
 		private void ToolStripButtonStepToBegin_Click(object sender, EventArgs e)
 		{
@@ -1178,7 +1206,7 @@ namespace Hipparcos_DB
 		private void LabelCorrelationProperMotionDeclinationByDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationData, labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
-		
+
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByProperMotionRightAscensionData, labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
