@@ -136,8 +136,8 @@
 			this.labelCorrelationProperMotionRightAscensionByDeclinationData = new System.Windows.Forms.Label();
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData = new System.Windows.Forms.Label();
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData = new System.Windows.Forms.Label();
-			this.labelCorrelationProperMotionDeclinationByDeclinationData = new System.Windows.Forms.Label();
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData = new System.Windows.Forms.Label();
+			this.labelCorrelationProperMotionDeclinationByDeclinationData = new System.Windows.Forms.Label();
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData = new System.Windows.Forms.Label();
 			this.labelVtmagAtMinimumData = new System.Windows.Forms.Label();
 			this.labelKnownVariabilityFromGcvsNsvData = new System.Windows.Forms.Label();
@@ -484,6 +484,7 @@
 			this.labelDeclinationDesc.Enter += new System.EventHandler(this.LabelDeclinationDesc_Enter);
 			this.labelDeclinationDesc.Leave += new System.EventHandler(this.LabelDeclinationDesc_Leave);
 			this.labelDeclinationDesc.MouseEnter += new System.EventHandler(this.LabelDeclinationDesc_MouseEnter);
+			this.labelDeclinationDesc.MouseLeave += new System.EventHandler(this.LabelDeclinationDesc_MouseLeave);
 			// 
 			// labelCcdmComponentIdentifierDesc
 			// 
@@ -1808,8 +1809,8 @@
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByDeclinationData, 1, 22);
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, 1, 23);
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByRightAscensionData, 1, 24);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByDeclinationData, 1, 25);
-			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, 1, 26);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, 1, 25);
+			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByDeclinationData, 1, 26);
 			this.tableLayoutPanel.Controls.Add(this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, 1, 27);
 			this.tableLayoutPanel.Controls.Add(this.labelVtmagAtMinimumDesc, 2, 16);
 			this.tableLayoutPanel.Controls.Add(this.labelVtmagAtMinimumData, 3, 16);
@@ -2463,42 +2464,20 @@
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseEnter);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionData.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseLeave);
 			// 
-			// labelCorrelationProperMotionDeclinationByDeclinationData
-			// 
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleDescription = "Correlation, pmDE/DE data";
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleName = "Correlation, pmDE/DE data";
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.AutoSize = true;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.ContextMenuStrip = this.contextMenuStripCopyData;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Location = new System.Drawing.Point(282, 453);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Margin = new System.Windows.Forms.Padding(0);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Name = "labelCorrelationProperMotionDeclinationByDeclinationData";
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Size = new System.Drawing.Size(138, 15);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.TabIndex = 51;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Text = "---";
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_Enter);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_Leave);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_MouseEnter);
-			this.labelCorrelationProperMotionDeclinationByDeclinationData.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_MouseLeave);
-			// 
 			// labelCorrelationProperMotionDeclinationByTrigonomicParallaxData
 			// 
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleDescription = "Correlation, pmDE/Plx data";
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleName = "Correlation, pmDE/Plx data";
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleDescription = "Correlation, pmDE/DE data";
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleName = "Correlation, pmDE/DE data";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.AutoSize = true;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.ContextMenuStrip = this.contextMenuStripCopyData;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Location = new System.Drawing.Point(282, 471);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Location = new System.Drawing.Point(282, 453);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Margin = new System.Windows.Forms.Padding(0);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Name = "labelCorrelationProperMotionDeclinationByTrigonomicParallaxData";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Size = new System.Drawing.Size(138, 15);
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.TabIndex = 53;
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.TabIndex = 51;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Text = "---";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
@@ -2506,6 +2485,28 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_Leave);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseEnter);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxData.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseLeave);
+			// 
+			// labelCorrelationProperMotionDeclinationByDeclinationData
+			// 
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleDescription = "Correlation, pmDE/Plx data";
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleName = "Correlation, pmDE/Plx data";
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.AutoSize = true;
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.ContextMenuStrip = this.contextMenuStripCopyData;
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.Location = new System.Drawing.Point(282, 471);
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.Name = "labelCorrelationProperMotionDeclinationByDeclinationData";
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.Size = new System.Drawing.Size(138, 15);
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.TabIndex = 53;
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.Text = "---";
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.DoubleClick += new System.EventHandler(this.CopyToClipboard_DoubleClick);
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.Enter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_Enter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.Leave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_Leave);
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.MouseEnter += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_MouseEnter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationData.MouseLeave += new System.EventHandler(this.LabelCorrelationProperMotionDeclinationByDeclinationData_MouseLeave);
 			// 
 			// labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData
 			// 
@@ -3218,8 +3219,8 @@
 		private System.Windows.Forms.Label labelCcdmComponentIdentifierData;
 		private System.Windows.Forms.Label labelNumberOfTransitsForAstrometryData;
 		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData;
-		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByTrigonomicParallaxData;
 		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByDeclinationData;
+		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByTrigonomicParallaxData;
 		private System.Windows.Forms.Label labelCorrelationProperMotionDeclinationByRightAscensionData;
 		private System.Windows.Forms.Label labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData;
 		private System.Windows.Forms.Label labelCorrelationProperMotionRightAscensionByDeclinationData;
