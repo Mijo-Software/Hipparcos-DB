@@ -2201,9 +2201,10 @@
 			this.progressBar.AutoToolTip = true;
 			this.progressBar.MarqueeAnimationSpeed = 10;
 			this.progressBar.Name = "progressBar";
-			this.progressBar.Size = new System.Drawing.Size(100, 16);
+			this.progressBar.Size = new System.Drawing.Size(200, 16);
 			this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
 			this.progressBar.ToolTipText = "Loading file...";
+			this.progressBar.Click += new System.EventHandler(this.ProgressBar_Click);
 			// 
 			// menuStrip
 			// 

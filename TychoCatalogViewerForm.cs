@@ -1,6 +1,5 @@
 ﻿using Hipparcos_DB.Properties;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Reflection;
@@ -829,6 +828,16 @@ namespace Hipparcos_DB
 			}
 		}
 
+		private void ProgressBar_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show(
+				owner: this,
+				text: "Don't disturb me! I'm loading. ;-)",
+				caption: "Loading",
+				buttons: MessageBoxButtons.OK,
+				icon: MessageBoxIcon.Exclamation);
+		}
+		
 		#endregion
 
 		#region DoubleClick event handlers

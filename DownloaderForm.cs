@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.IO;
 using System.IO.Compression;
 using System.Net;
+using System.Net.Http;
 using System.Windows.Forms;
 
 namespace Hipparcos_DB
@@ -262,7 +263,7 @@ namespace Hipparcos_DB
 			toolStripTextBoxHost.Text = GetHost();
 		}
 
-		private void ToolStripButtonSaveLogging_Click(object sender, EventArgs e) => saveFileDialog.ShowDialog();
+		private void ToolStripButtonSaveLogging_Click(object sender, EventArgs e) => saveFileDialog.ShowDialog();		
 
 		#endregion
 
@@ -324,6 +325,7 @@ namespace Hipparcos_DB
 
 		private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
 		{
+			progressBarDownloadFile.MarqueeAnimationSpeed = 10;
 			bool downloadWasSuccessful = true;
 			using (WebClient webClient = new WebClient())
 			{
@@ -371,6 +373,7 @@ namespace Hipparcos_DB
 					}
 				}
 				toolStripStatusLabelDownloadAnimation.Visible = timerDownloadAnimation.Enabled = false;
+				progressBarDownloadFile.MarqueeAnimationSpeed = 0;
 				if (downloadWasSuccessful)
 				{
 					if (!settings.UserEnableQuickDownload)

@@ -34,7 +34,6 @@
 			this.progressBarDownloadFiles = new System.Windows.Forms.ProgressBar();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.textBox = new System.Windows.Forms.TextBox();
-			this.labelFilesDownload = new System.Windows.Forms.Label();
 			this.labelDownloadStatus = new System.Windows.Forms.Label();
 			this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.labelDownloadPercent = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
 			this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
 			this.timerDownloadAnimation = new System.Windows.Forms.Timer(this.components);
 			this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+			this.labelFilesDownload = new System.Windows.Forms.Label();
 			this.tableLayoutPanel.SuspendLayout();
 			this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
 			this.toolStripContainer.ContentPanel.SuspendLayout();
@@ -64,14 +64,18 @@
 			// 
 			// progressBarDownloadFile
 			// 
+			this.progressBarDownloadFile.AccessibleDescription = "Show the progress of the download";
+			this.progressBarDownloadFile.AccessibleName = "Progress bar of the download";
 			this.progressBarDownloadFile.AccessibleRole = System.Windows.Forms.AccessibleRole.ProgressBar;
-			this.progressBarDownloadFile.Location = new System.Drawing.Point(3, 360);
+			this.progressBarDownloadFile.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.progressBarDownloadFile.Location = new System.Drawing.Point(3, 16);
+			this.progressBarDownloadFile.MarqueeAnimationSpeed = 0;
 			this.progressBarDownloadFile.Name = "progressBarDownloadFile";
-			this.progressBarDownloadFile.Size = new System.Drawing.Size(490, 13);
+			this.progressBarDownloadFile.Size = new System.Drawing.Size(588, 13);
 			this.progressBarDownloadFile.Step = 1;
-			this.progressBarDownloadFile.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+			this.progressBarDownloadFile.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
 			this.progressBarDownloadFile.TabIndex = 1;
-			this.progressBarDownloadFile.Visible = false;
+			this.toolTip.SetToolTip(this.progressBarDownloadFile, "Download progress of the current file");
 			this.progressBarDownloadFile.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
 			this.progressBarDownloadFile.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
 			// 
@@ -81,13 +85,13 @@
 			this.progressBarDownloadFiles.AccessibleName = "Progress bar of the download";
 			this.progressBarDownloadFiles.AccessibleRole = System.Windows.Forms.AccessibleRole.ProgressBar;
 			this.progressBarDownloadFiles.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.progressBarDownloadFiles.Location = new System.Drawing.Point(3, 16);
+			this.progressBarDownloadFiles.Location = new System.Drawing.Point(3, 35);
 			this.progressBarDownloadFiles.Name = "progressBarDownloadFiles";
 			this.progressBarDownloadFiles.Size = new System.Drawing.Size(588, 13);
 			this.progressBarDownloadFiles.Step = 1;
 			this.progressBarDownloadFiles.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
 			this.progressBarDownloadFiles.TabIndex = 3;
-			this.toolTip.SetToolTip(this.progressBarDownloadFiles, "Download progress");
+			this.toolTip.SetToolTip(this.progressBarDownloadFiles, "Download progress of all files");
 			this.progressBarDownloadFiles.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
 			this.progressBarDownloadFiles.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
 			// 
@@ -100,37 +104,18 @@
 			this.textBox.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
 			this.tableLayoutPanel.SetColumnSpan(this.textBox, 2);
 			this.textBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox.Location = new System.Drawing.Point(3, 35);
+			this.textBox.Location = new System.Drawing.Point(3, 54);
 			this.textBox.Multiline = true;
 			this.textBox.Name = "textBox";
 			this.textBox.ReadOnly = true;
 			this.textBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.textBox.Size = new System.Drawing.Size(646, 319);
+			this.textBox.Size = new System.Drawing.Size(646, 328);
 			this.textBox.TabIndex = 5;
 			this.toolTip.SetToolTip(this.textBox, "Download logging");
 			this.textBox.Enter += new System.EventHandler(this.SetStatusbar_Enter);
 			this.textBox.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
 			this.textBox.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
 			this.textBox.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
-			// 
-			// labelFilesDownload
-			// 
-			this.labelFilesDownload.AccessibleDescription = "Show how many files are in progress";
-			this.labelFilesDownload.AccessibleName = "File counter text";
-			this.labelFilesDownload.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelFilesDownload.AutoSize = true;
-			this.labelFilesDownload.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelFilesDownload.Location = new System.Drawing.Point(597, 13);
-			this.labelFilesDownload.Name = "labelFilesDownload";
-			this.labelFilesDownload.Size = new System.Drawing.Size(52, 19);
-			this.labelFilesDownload.TabIndex = 4;
-			this.labelFilesDownload.Text = "00 / 99";
-			this.labelFilesDownload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.toolTip.SetToolTip(this.labelFilesDownload, "How many files in progress");
-			this.labelFilesDownload.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelFilesDownload.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelFilesDownload.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelFilesDownload.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
 			// 
 			// labelDownloadStatus
 			// 
@@ -156,12 +141,12 @@
 			this.tableLayoutPanel.ColumnCount = 2;
 			this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-			this.tableLayoutPanel.Controls.Add(this.labelFilesDownload, 1, 2);
-			this.tableLayoutPanel.Controls.Add(this.textBox, 0, 3);
-			this.tableLayoutPanel.Controls.Add(this.progressBarDownloadFiles, 0, 2);
 			this.tableLayoutPanel.Controls.Add(this.labelDownloadStatus, 0, 0);
-			this.tableLayoutPanel.Controls.Add(this.progressBarDownloadFile, 0, 4);
-			this.tableLayoutPanel.Controls.Add(this.labelDownloadPercent, 1, 4);
+			this.tableLayoutPanel.Controls.Add(this.progressBarDownloadFile, 0, 2);
+			this.tableLayoutPanel.Controls.Add(this.labelDownloadPercent, 1, 2);
+			this.tableLayoutPanel.Controls.Add(this.textBox, 1, 4);
+			this.tableLayoutPanel.Controls.Add(this.labelFilesDownload, 1, 3);
+			this.tableLayoutPanel.Controls.Add(this.progressBarDownloadFiles, 0, 3);
 			this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel.Name = "tableLayoutPanel";
@@ -171,6 +156,7 @@
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
 			this.tableLayoutPanel.Size = new System.Drawing.Size(652, 385);
 			this.tableLayoutPanel.TabIndex = 4;
 			// 
@@ -178,9 +164,10 @@
 			// 
 			this.labelDownloadPercent.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelDownloadPercent.AutoSize = true;
-			this.labelDownloadPercent.Location = new System.Drawing.Point(597, 357);
+			this.labelDownloadPercent.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelDownloadPercent.Location = new System.Drawing.Point(597, 13);
 			this.labelDownloadPercent.Name = "labelDownloadPercent";
-			this.labelDownloadPercent.Size = new System.Drawing.Size(36, 13);
+			this.labelDownloadPercent.Size = new System.Drawing.Size(52, 19);
 			this.labelDownloadPercent.TabIndex = 2;
 			this.labelDownloadPercent.Text = "100 %";
 			this.labelDownloadPercent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -279,7 +266,7 @@
 			this.toolStripStatusLabelDownloadAnimation.Image = global::Hipparcos_DB.Properties.Resources.fugue_arrow_270_16px_shadowless;
 			this.toolStripStatusLabelDownloadAnimation.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.toolStripStatusLabelDownloadAnimation.Name = "toolStripStatusLabelDownloadAnimation";
-			this.toolStripStatusLabelDownloadAnimation.Size = new System.Drawing.Size(540, 17);
+			this.toolStripStatusLabelDownloadAnimation.Size = new System.Drawing.Size(571, 17);
 			this.toolStripStatusLabelDownloadAnimation.Spring = true;
 			this.toolStripStatusLabelDownloadAnimation.Text = "Download animation";
 			this.toolStripStatusLabelDownloadAnimation.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
@@ -419,6 +406,25 @@
 			this.saveFileDialog.Title = "Save file";
 			this.saveFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.SaveFileDialog_FileOk);
 			// 
+			// labelFilesDownload
+			// 
+			this.labelFilesDownload.AccessibleDescription = "Show how many files are in progress";
+			this.labelFilesDownload.AccessibleName = "File counter text";
+			this.labelFilesDownload.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelFilesDownload.AutoSize = true;
+			this.labelFilesDownload.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelFilesDownload.Location = new System.Drawing.Point(597, 32);
+			this.labelFilesDownload.Name = "labelFilesDownload";
+			this.labelFilesDownload.Size = new System.Drawing.Size(52, 19);
+			this.labelFilesDownload.TabIndex = 4;
+			this.labelFilesDownload.Text = "00 / 99";
+			this.labelFilesDownload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.toolTip.SetToolTip(this.labelFilesDownload, "How many files in progress");
+			this.labelFilesDownload.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelFilesDownload.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelFilesDownload.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelFilesDownload.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
 			// DownloaderForm
 			// 
 			this.AccessibleDescription = "Dialog to download all required catalog files";
@@ -459,7 +465,6 @@
 		private System.Windows.Forms.ToolTip toolTip;
 		private System.Windows.Forms.TextBox textBox;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
-		private System.Windows.Forms.Label labelFilesDownload;
 		private System.Windows.Forms.Label labelDownloadPercent;
 		private System.Windows.Forms.Label labelDownloadStatus;
 		private System.Windows.Forms.ToolStripContainer toolStripContainer;
@@ -477,5 +482,6 @@
 		private System.Windows.Forms.Timer timerDownloadAnimation;
 		private System.Windows.Forms.ToolStripButton toolStripButtonSaveLogging;
 		private System.Windows.Forms.SaveFileDialog saveFileDialog;
+		private System.Windows.Forms.Label labelFilesDownload;
 	}
 }
