@@ -3,17 +3,23 @@ using System.Windows.Forms;
 
 namespace Hipparcos_DB
 {
+	/// <summary>
+	/// Program
+	/// </summary>
 	internal static class Program
 	{
 		/// <summary>
-		/// Der Haupteinstiegspunkt für die Anwendung.
+		/// main entry point of the application
 		/// </summary>
 		[STAThread]
 		private static void Main()
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(defaultValue: false);
-			Application.Run(mainForm: new CatalogChooserForm());
+			using (CatalogChooserForm catalogChooserForm = new CatalogChooserForm())
+			{
+				Application.Run(mainForm: catalogChooserForm);
+			}
 		}
 	}
 }

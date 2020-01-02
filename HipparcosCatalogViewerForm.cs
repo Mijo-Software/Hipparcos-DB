@@ -1,12 +1,16 @@
-﻿using Hipparcos_DB.Properties;
-using System;
+﻿using System;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
+using Hipparcos_DB.Properties;
 
 namespace Hipparcos_DB
 {
+	/// <summary>
+	/// HipparcosCatalogViewerForm : Form
+	/// </summary>
 	public partial class HipparcosCatalogViewerForm : Form
 	{
 		private enum AstroElement
@@ -201,98 +205,85 @@ namespace Hipparcos_DB
 			index = 0,
 			maxIndex = 0;
 
+		/// <summary>
+		/// Culture info
+		/// </summary>
+		private static readonly CultureInfo culture = CultureInfo.CurrentUICulture;
+
 		#region Local methods
 
-		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
+		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: ".", comparisonType: StringComparison.CurrentCulture));
 
 		private void CopyToClipboard(string text)
 		{
 			Clipboard.SetText(text: text);
 			MessageBox.Show(
 				owner: this,
-				text: "Copied to clipboard",
-				caption: "The text was copied to the clipboard!",
+				text: Resources.copiedToClipboardText,
+				caption: Resources.copiedToClipboardTitle,
 				buttons: MessageBoxButtons.OK,
-				icon: MessageBoxIcon.Information);
+				icon: MessageBoxIcon.Information,
+				defaultButton: MessageBoxDefaultButton.Button1,
+				options: MessageBoxOptions.DefaultDesktopOnly);
 		}
 
 		private void CopyToClipboard(object sender, EventArgs e)
 		{
-			if (sender is TextBox)
+			if (sender is Control control)
 			{
-				CopyToClipboard(text: ((TextBox)sender).Text);
+				CopyToClipboard(text: (control).Text);
 			}
-			else if (sender is Button)
+			else if (sender is ToolStripButton toolStripButton)
 			{
-				CopyToClipboard(text: ((Button)sender).Text);
+				CopyToClipboard(text: (toolStripButton).Text);
 			}
-			else if (sender is RadioButton)
+			else if (sender is ToolStripMenuItem toolStripMenuItem)
 			{
-				CopyToClipboard(text: ((RadioButton)sender).Text);
+				CopyToClipboard(text: (toolStripMenuItem).Text);
 			}
-			else if (sender is CheckBox)
+			else if (sender is ToolStripLabel toolStripLabel)
 			{
-				SetStatusbar(text: ((CheckBox)sender).Text);
+				CopyToClipboard(text: (toolStripLabel).Text);
 			}
-			else if (sender is DateTimePicker)
+			else if (sender is ToolStripComboBox toolStripComboBox)
 			{
-				CopyToClipboard(text: ((DateTimePicker)sender).Text);
+				CopyToClipboard(text: (toolStripComboBox).Text);
 			}
-			else if (sender is Label)
+			else if (sender is ToolStripDropDown toolStripDropDown)
 			{
-				CopyToClipboard(text: ((Label)sender).Text);
+				CopyToClipboard(text: (toolStripDropDown).Text);
 			}
-			else if (sender is ToolStripButton)
+			else if (sender is ToolStripDropDownButton toolStripDropDownButton)
 			{
-				CopyToClipboard(text: ((ToolStripButton)sender).Text);
+				CopyToClipboard(text: (toolStripDropDownButton).Text);
 			}
-			else if (sender is ToolStripMenuItem)
+			else if (sender is ToolStripDropDownItem toolStripDropDownItem)
 			{
-				CopyToClipboard(text: ((ToolStripMenuItem)sender).Text);
+				CopyToClipboard(text: (toolStripDropDownItem).Text);
 			}
-			else if (sender is ToolStripLabel)
+			else if (sender is ToolStripDropDownMenu toolStripDropDownMenu)
 			{
-				CopyToClipboard(text: ((ToolStripLabel)sender).Text);
+				CopyToClipboard(text: (toolStripDropDownMenu).Text);
 			}
-			else if (sender is ToolStripComboBox)
+			else if (sender is ToolStripProgressBar toolStripProgressBar)
 			{
-				CopyToClipboard(text: ((ToolStripComboBox)sender).Text);
+				CopyToClipboard(text: (toolStripProgressBar).Text);
 			}
-			else if (sender is ToolStripDropDown)
+			else if (sender is ToolStripSplitButton toolStripSplitButton)
 			{
-				CopyToClipboard(text: ((ToolStripDropDown)sender).Text);
+				CopyToClipboard(text: (toolStripSplitButton).Text);
 			}
-			else if (sender is ToolStripDropDownButton)
+			else if (sender is ToolStripSeparator toolStripSeparator)
 			{
-				CopyToClipboard(text: ((ToolStripDropDownButton)sender).Text);
+				CopyToClipboard(text: (toolStripSeparator).Text);
 			}
-			else if (sender is ToolStripDropDownItem)
+			else if (sender is ToolStripStatusLabel toolStripStatusLabel)
 			{
-				CopyToClipboard(text: ((ToolStripDropDownItem)sender).Text);
+				CopyToClipboard(text: (toolStripStatusLabel).Text);
 			}
-			else if (sender is ToolStripDropDownMenu)
+			else if (sender is ToolStripTextBox toolStripTextBox)
 			{
-				CopyToClipboard(text: ((ToolStripDropDownMenu)sender).Text);
-			}
-			else if (sender is ToolStripProgressBar)
-			{
-				CopyToClipboard(text: ((ToolStripProgressBar)sender).Text);
-			}
-			else if (sender is ToolStripSplitButton)
-			{
-				CopyToClipboard(text: ((ToolStripSplitButton)sender).Text);
-			}
-			else if (sender is ToolStripSeparator)
-			{
-				CopyToClipboard(text: ((ToolStripSeparator)sender).Text);
-			}
-			else if (sender is ToolStripStatusLabel)
-			{
-				CopyToClipboard(text: ((ToolStripStatusLabel)sender).Text);
-			}
-			else if (sender is ToolStripTextBox)
-			{
-				CopyToClipboard(text: ((ToolStripTextBox)sender).Text);
+				CopyToClipboard(text: (toolStripTextBox).Text);
 			}
 		}
 
@@ -304,85 +295,61 @@ namespace Hipparcos_DB
 
 		private void SetStatusbar(object sender, EventArgs e)
 		{
-			if (sender is TextBox)
+			if (sender is Control control)
 			{
-				SetStatusbar(text: ((TextBox)sender).AccessibleDescription);
+				SetStatusbar(text: (control).AccessibleDescription);
 			}
-			else if (sender is Button)
+			else if (sender is ToolStripButton toolStripButton)
 			{
-				SetStatusbar(text: ((Button)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripButton).AccessibleDescription);
 			}
-			else if (sender is RadioButton)
+			else if (sender is ToolStripMenuItem toolStripMenuItem)
 			{
-				SetStatusbar(text: ((RadioButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripMenuItem).AccessibleDescription);
 			}
-			else if (sender is CheckBox)
+			else if (sender is ToolStripLabel toolStripLabel)
 			{
-				SetStatusbar(text: ((CheckBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripLabel).AccessibleDescription);
 			}
-			else if (sender is DateTimePicker)
+			else if (sender is ToolStripComboBox toolStripComboBox)
 			{
-				SetStatusbar(text: ((DateTimePicker)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripComboBox).AccessibleDescription);
 			}
-			else if (sender is Label)
+			else if (sender is ToolStripDropDown toolStripDropDown)
 			{
-				SetStatusbar(text: ((Label)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDown).AccessibleDescription);
 			}
-			else if (sender is PictureBox)
+			else if (sender is ToolStripDropDownButton toolStripDropDownButton)
 			{
-				SetStatusbar(text: ((PictureBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownButton).AccessibleDescription);
 			}
-			else if (sender is ToolStripButton)
+			else if (sender is ToolStripDropDownItem toolStripDropDownItem)
 			{
-				SetStatusbar(text: ((ToolStripButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownItem).AccessibleDescription);
 			}
-			else if (sender is ToolStripMenuItem)
+			else if (sender is ToolStripDropDownMenu toolStripDropDownMenu)
 			{
-				SetStatusbar(text: ((ToolStripMenuItem)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownMenu).AccessibleDescription);
 			}
-			else if (sender is ToolStripLabel)
+			else if (sender is ToolStripProgressBar toolStripProgressBar)
 			{
-				SetStatusbar(text: ((ToolStripLabel)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripProgressBar).AccessibleDescription);
 			}
-			else if (sender is ToolStripComboBox)
+			else if (sender is ToolStripSplitButton toolStripSplitButton)
 			{
-				SetStatusbar(text: ((ToolStripComboBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripSplitButton).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDown)
+			else if (sender is ToolStripSeparator toolStripSeparator)
 			{
-				SetStatusbar(text: ((ToolStripDropDown)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripSeparator).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDownButton)
+			else if (sender is ToolStripStatusLabel toolStripStatusLabel)
 			{
-				SetStatusbar(text: ((ToolStripDropDownButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripStatusLabel).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDownItem)
+			else if (sender is ToolStripTextBox toolStripTextBox)
 			{
-				SetStatusbar(text: ((ToolStripDropDownItem)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripDropDownMenu)
-			{
-				SetStatusbar(text: ((ToolStripDropDownMenu)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripProgressBar)
-			{
-				SetStatusbar(text: ((ToolStripProgressBar)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripSplitButton)
-			{
-				SetStatusbar(text: ((ToolStripSplitButton)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripSeparator)
-			{
-				SetStatusbar(text: ((ToolStripSeparator)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripStatusLabel)
-			{
-				SetStatusbar(text: ((ToolStripStatusLabel)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripTextBox)
-			{
-				SetStatusbar(text: ((ToolStripTextBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripTextBox).AccessibleDescription);
 			}
 		}
 
@@ -442,11 +409,11 @@ namespace Hipparcos_DB
 			}
 		}
 
-		private void SetColorSelf(ref Label labelSelf, Color color) => labelSelf.BackColor = color;
+		private static void SetColorSelf(ref Label labelSelf, Color color) => labelSelf.BackColor = color;
 
-		private void SetColorSelfAndNeighbour(ref Label labelSelf, ref Label labelNeighbour, Color color) => labelSelf.BackColor = labelNeighbour.BackColor = color;
+		private static void SetColorSelfAndNeighbour(ref Label labelSelf, ref Label labelNeighbour, Color color) => labelSelf.BackColor = labelNeighbour.BackColor = color;
 
-		private void UpdateIndexLabel() => toolStripTextBoxGoToIndex.Text = index.ToString();
+		private void UpdateIndexLabel() => toolStripTextBoxGoToIndex.Text = index.ToString(provider: culture);
 
 		private void CheckIndexMinimum()
 		{
@@ -553,14 +520,16 @@ namespace Hipparcos_DB
 				{
 					MessageBox.Show(
 						owner: this,
-						text: "The number is out of range. The number to be entered must be greater than zero and less than the maximum value.",
-						caption: "Number out of range",
+						text: Resources.numberOutOfRangeText,
+						caption: Resources.numberOutOfRangeTitle,
 						buttons: MessageBoxButtons.OK,
-						icon: MessageBoxIcon.Error);
+						icon: MessageBoxIcon.Error,
+						defaultButton: MessageBoxDefaultButton.Button1,
+						options: MessageBoxOptions.DefaultDesktopOnly);
 				}
 				else
 				{
-					index = Convert.ToUInt32(tempIndex);
+					index = Convert.ToUInt32(value: tempIndex);
 					UpdateIndexLabel();
 					ShowEntriesOnIndex();
 				}
@@ -569,10 +538,12 @@ namespace Hipparcos_DB
 			{
 				MessageBox.Show(
 					owner: this,
-					text: "The input is not a natural number. Make sure the input is a natural number, for example: 1, 2, 3, ...",
-					caption: "Wrong number format",
+					text: Resources.wrongNumberFormatText,
+					caption: Resources.wrongNumberFormatTitle,
 					buttons: MessageBoxButtons.OK,
-					icon: MessageBoxIcon.Error);
+					icon: MessageBoxIcon.Error,
+					defaultButton: MessageBoxDefaultButton.Button1,
+					options: MessageBoxOptions.DefaultDesktopOnly);
 			}
 		}
 
@@ -590,6 +561,9 @@ namespace Hipparcos_DB
 
 		#region Con- and destructor
 
+		/// <summary>
+		/// Constructor
+		/// </summary>
 		public HipparcosCatalogViewerForm()
 		{
 			InitializeComponent();
@@ -646,16 +620,16 @@ namespace Hipparcos_DB
 		#region BackgroundWorker event handler
 
 		private void BackgroundWorker_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
-		{			
+		{
 			string dataFile = settings.UserHipparcosCatalogDirectory + "hip_main.dat";
 			if (File.Exists(path: dataFile))
 			{
 				menuStrip.Enabled = toolStrip.Visible = false;
-				toolStripStatusLabelInfo.Text = "Loading file...";
+				toolStripStatusLabelInfo.Text = Resources.loadingFile;
 				catalogEntries = File.ReadAllLines(path: dataFile);
 				index = 1;
 				maxIndex = Convert.ToUInt32(value: catalogEntries.Length);
-				toolStripLabelMaxIndex.Text = "of " + maxIndex.ToString();
+				toolStripLabelMaxIndex.Text = "of " + maxIndex.ToString(provider: culture);
 				progressBar.Visible = false;
 				isDatabaseLoading = false;
 				menuStrip.Enabled = toolStrip.Visible = true;
@@ -667,10 +641,12 @@ namespace Hipparcos_DB
 			{
 				MessageBox.Show(
 					owner: this,
-					text: "Some files are missing. Please download all files in the main window.",
-					caption: "Missing files",
+					text: Resources.missingDownloadFilesText1,
+					caption: Resources.missingDownloadFilesTitle,
 					buttons: MessageBoxButtons.OK,
-					icon: MessageBoxIcon.Error);
+					icon: MessageBoxIcon.Error,
+					defaultButton: MessageBoxDefaultButton.Button1,
+					options: MessageBoxOptions.DefaultDesktopOnly);
 				Close();
 			}
 		}
@@ -679,6 +655,7 @@ namespace Hipparcos_DB
 
 		#region Click event handlers
 
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2001:AvoidCallingProblematicMethods", MessageId = "System.GC.Collect")]
 		private void MenuitemClose_Click(object sender, EventArgs e)
 		{
 			Array.Clear(array: catalogEntries, index: 0, length: catalogEntries.Length);
@@ -825,7 +802,7 @@ namespace Hipparcos_DB
 				case (uint)AstroElement.SpectralTypeData: CopyToClipboard(text: labelSpectralTypeData.Text); break;
 				case (uint)AstroElement.SourceOfSpectralTypeData: CopyToClipboard(text: labelSourceOfSpectralTypeData.Text); break;
 				case (uint)AstroElement.CatalogDesc: CopyToClipboard(text: labelCatalogDesc.Text); break;
-				case (uint)AstroElement.IdentifierDesc: CopyToClipboard(text: labelIdentifierDesc.Text); break; ;
+				case (uint)AstroElement.IdentifierDesc: CopyToClipboard(text: labelIdentifierDesc.Text); break;
 				case (uint)AstroElement.ProximityFlagDesc: CopyToClipboard(text: labelProximityFlagDesc.Text); break;
 				case (uint)AstroElement.RightAscensionDesc: CopyToClipboard(text: labelRightAscensionDesc.Text); break;
 				case (uint)AstroElement.DeclinationDesc: CopyToClipboard(text: labelDeclinationDesc.Text); break;
@@ -937,10 +914,12 @@ namespace Hipparcos_DB
 		{
 			MessageBox.Show(
 				owner: this,
-				text: "Don't disturb me! I'm loading. ;-)",
-				caption: "Loading",
+				text: Resources.jokeLoadingText,
+				caption: Resources.jokeLoadingTitle,
 				buttons: MessageBoxButtons.OK,
-				icon: MessageBoxIcon.Exclamation);
+				icon: MessageBoxIcon.Exclamation,
+				defaultButton: MessageBoxDefaultButton.Button1,
+				options: MessageBoxOptions.DefaultDesktopOnly);
 		}
 
 		#endregion
@@ -1023,7 +1002,7 @@ namespace Hipparcos_DB
 
 		private void LabelStandardErrorDeclinationData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorDeclinationData, labelSelf: ref labelStandardErrorDeclinationData, color: SystemColors.ControlLightLight, sender: sender, e: e);
 
-		private void LabelStandardErrorTrigonomicParallaxDesc_Enter(object sender, EventArgs e) =>	SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorTrigonomicParallaxDesc, labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
+		private void LabelStandardErrorTrigonomicParallaxDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorTrigonomicParallaxDesc, labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
 
 		private void LabelStandardErrorTrigonomicParallaxData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorTrigonomicParallaxData, labelSelf: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.ControlLightLight, sender: sender, e: e);
 
@@ -1182,7 +1161,7 @@ namespace Hipparcos_DB
 		private void LabelHistoricalStatusFlagDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.HistoricalStatusFlagDesc, labelSelf: ref labelHistoricalStatusFlagDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
 
 		private void LabelHistoricalStatusFlagData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.HistoricalStatusFlagData, labelSelf: ref labelHistoricalStatusFlagData, color: SystemColors.ControlLightLight, sender: sender, e: e);
-		
+
 		private void LabelNumberEntriesWithSameCcdmDesc_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.NumberEntriesWithSameCcdmDesc, labelSelf: ref labelNumberEntriesWithSameCcdmDesc, color: SystemColors.ControlLightLight, sender: sender, e: e);
 
 		private void LabelNumberEntriesWithSameCcdmData_Enter(object sender, EventArgs e) => SetColorSelfAndSetStatusbar(astroElemId: (uint)AstroElement.NumberEntriesWithSameCcdmData, labelSelf: ref labelNumberEntriesWithSameCcdmData, color: SystemColors.ControlLightLight, sender: sender, e: e);
@@ -1298,7 +1277,7 @@ namespace Hipparcos_DB
 		private void LabelIdentifierData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.IdentifierData, labelSelf: ref labelIdentifierDesc, labelNeighbour: ref labelIdentifierData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelProximityFlagDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProximityFlagDesc, labelSelf: ref labelProximityFlagDesc, labelNeighbour: ref labelProximityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
-		
+
 		private void LabelProximityFlagData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProximityFlagData, labelSelf: ref labelProximityFlagDesc, labelNeighbour: ref labelProximityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.RightAscensionDesc, labelSelf: ref labelRightAscensionDesc, labelNeighbour: ref labelRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
@@ -1418,7 +1397,7 @@ namespace Hipparcos_DB
 		private void LabelMeanBtMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MeanBtMagnitudeData, labelSelf: ref labelMeanBtMagnitudeDesc, labelNeighbour: ref labelMeanBtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelStandardErrorMeanBtMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanBtMagnitudeDesc, labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
-		
+
 		private void LabelStandardErrorMeanBtMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanBtMagnitudeData, labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelMeanVtMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanVtMagnitudeDesc, labelSelf: ref labelMeanVtMagnitudeDesc, labelNeighbour: ref labelMeanVtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
@@ -1444,7 +1423,7 @@ namespace Hipparcos_DB
 		private void LabelStandardErrorViDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorViDesc, labelSelf: ref labelStandardErrorViDesc, labelNeighbour: ref labelStandardErrorViData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelStandardErrorViData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorViData, labelSelf: ref labelStandardErrorViDesc, labelNeighbour: ref labelStandardErrorViData, color: SystemColors.ControlLight, sender: sender, e: e);
-		
+
 		private void LabelSourceOfViDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfViDesc, labelSelf: ref labelSourceOfViDesc, labelNeighbour: ref labelSourceOfViData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelSourceOfViData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfViData, labelSelf: ref labelSourceOfViDesc, labelNeighbour: ref labelSourceOfViData, color: SystemColors.ControlLight, sender: sender, e: e);
@@ -1476,7 +1455,7 @@ namespace Hipparcos_DB
 		private void LabelReferenceFlagForBtAndVtMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeData, labelSelf: ref labelReferenceFlagForBtAndVtMagnitudeDesc, labelNeighbour: ref labelReferenceFlagForBtAndVtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelReferenceFlagForBtAndVtMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeDesc, labelSelf: ref labelReferenceFlagForBtAndVtMagnitudeDesc, labelNeighbour: ref labelReferenceFlagForBtAndVtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
-		
+
 		private void LabelSourceOfBvColorDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeDesc, labelSelf: ref labelSourceOfBvColorDesc, labelNeighbour: ref labelSourceOfBvColorData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelSourceOfBvColorData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForBtAndVtMagnitudeData, labelSelf: ref labelSourceOfBvColorDesc, labelNeighbour: ref labelSourceOfBvColorData, color: SystemColors.ControlLight, sender: sender, e: e);
@@ -1524,7 +1503,7 @@ namespace Hipparcos_DB
 		private void LabelMultipleSystemsFlagDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MultipleSystemsFlagDesc, labelSelf: ref labelMultipleSystemsFlagDesc, labelNeighbour: ref labelMultipleSystemsFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelMultipleSystemsFlagData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MultipleSystemsFlagData, labelSelf: ref labelMultipleSystemsFlagDesc, labelNeighbour: ref labelMultipleSystemsFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
-		
+
 		private void LabelAstrometricSourceFlagDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.AstrometricSourceFlagDesc, labelSelf: ref labelAstrometricSourceFlagDesc, labelNeighbour: ref labelAstrometricSourceFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelAstrometricSourceFlagData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.AstrometricSourceFlagData, labelSelf: ref labelAstrometricSourceFlagDesc, labelNeighbour: ref labelAstrometricSourceFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
@@ -1539,7 +1518,7 @@ namespace Hipparcos_DB
 
 		private void LabelPositionAngleBetweenComponentsDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.PositionAngleBetweenComponentsDesc, labelSelf: ref labelPositionAngleBetweenComponentsDesc, labelNeighbour: ref labelPositionAngleBetweenComponentsData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelPositionAngleBetweenComponentsData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.PositionAngleBetweenComponentsData, labelSelf: ref labelPositionAngleBetweenComponentsDesc, labelNeighbour: ref labelPositionAngleBetweenComponentsData, color: SystemColors.ControlLight, sender: sender, e: e);		
+		private void LabelPositionAngleBetweenComponentsData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.PositionAngleBetweenComponentsData, labelSelf: ref labelPositionAngleBetweenComponentsDesc, labelNeighbour: ref labelPositionAngleBetweenComponentsData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		private void LabelAngularSeparationBetweenComponentsDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.AngularSeparationBetweenComponentsData, labelSelf: ref labelAngularSeparationBetweenComponentsDesc, labelNeighbour: ref labelAngularSeparationBetweenComponentsData, color: SystemColors.ControlLight, sender: sender, e: e);
 

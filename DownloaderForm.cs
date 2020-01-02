@@ -1,14 +1,19 @@
-﻿using Hipparcos_DB.Properties;
-using System;
+﻿using System;
 using System.ComponentModel;
+using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.IO.Compression;
 using System.Net;
-using System.Net.Http;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using Hipparcos_DB.Properties;
 
 namespace Hipparcos_DB
 {
+	/// <summary>
+	/// DownloaderForm : Form
+	/// </summary>
 	public partial class DownloaderForm : Form
 	{
 		private readonly Settings settings = new Settings();
@@ -16,17 +21,32 @@ namespace Hipparcos_DB
 		private string host, catalogDirectory;
 
 		private string[] hostFiles;
+
 		private long ticks;
+
+		/// <summary>
+		/// Culture info
+		/// </summary>
+		private static readonly CultureInfo culture = CultureInfo.CurrentUICulture;
 
 		#region Local methods
 
-		public void SetHostUrls(string[] files) => hostFiles = files ?? throw new ArgumentNullException(paramName: nameof(files), message: "The name of the host files are null.");
+		/// <summary>
+		/// Set the host urls
+		/// </summary>
+		/// <param name="files">host urls</param>
+		public void SetHostUrls(string[] files) => hostFiles = files ?? throw new ArgumentNullException(paramName: nameof(files), message: Resources.invalidHostnameText);
 
+		/// <summary>
+		/// Set the host
+		/// </summary>
+		/// <param name="host">url to host</param>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1500:VariableNamesShouldNotMatchFieldNames", MessageId = "host")]
 		public void SetHost(string host)
 		{
 			if (host is null || string.IsNullOrEmpty(value: host) || string.IsNullOrWhiteSpace(value: host))
 			{
-				throw new ArgumentException(message: "The name of the host are null, emtpy or a space.", paramName: nameof(host));
+				throw new ArgumentException(message: Resources.invalidHostnameText, paramName: nameof(host));
 			}
 			this.host = host;
 			toolStripTextBoxHost.Text = host;
@@ -34,11 +54,15 @@ namespace Hipparcos_DB
 
 		private string GetHost() => host;
 
+		/// <summary>
+		/// Set the catalog directory
+		/// </summary>
+		/// <param name="directory">path to catalog</param>
 		public void SetCatalogDirectory(string directory) => catalogDirectory = directory;
 
 		private string GetCatalogDirectory() => catalogDirectory;
 
-		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
+		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: ".", comparisonType: StringComparison.CurrentCulture));
 
 		private static byte[] Decompress(byte[] gzip)
 		{
@@ -73,85 +97,61 @@ namespace Hipparcos_DB
 
 		private void SetStatusbar(object sender, EventArgs e)
 		{
-			if (sender is TextBox)
+			if (sender is Control control)
 			{
-				SetStatusbar(text: ((TextBox)sender).AccessibleDescription);
+				SetStatusbar(text: (control).AccessibleDescription);
 			}
-			else if (sender is Button)
+			else if (sender is ToolStripButton toolStripButton)
 			{
-				SetStatusbar(text: ((Button)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripButton).AccessibleDescription);
 			}
-			else if (sender is RadioButton)
+			else if (sender is ToolStripMenuItem toolStripMenuItem)
 			{
-				SetStatusbar(text: ((RadioButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripMenuItem).AccessibleDescription);
 			}
-			else if (sender is CheckBox)
+			else if (sender is ToolStripLabel toolStripLabel)
 			{
-				SetStatusbar(text: ((CheckBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripLabel).AccessibleDescription);
 			}
-			else if (sender is DateTimePicker)
+			else if (sender is ToolStripComboBox toolStripComboBox)
 			{
-				SetStatusbar(text: ((DateTimePicker)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripComboBox).AccessibleDescription);
 			}
-			else if (sender is Label)
+			else if (sender is ToolStripDropDown toolStripDropDown)
 			{
-				SetStatusbar(text: ((Label)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDown).AccessibleDescription);
 			}
-			else if (sender is PictureBox)
+			else if (sender is ToolStripDropDownButton toolStripDropDownButton)
 			{
-				SetStatusbar(text: ((PictureBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownButton).AccessibleDescription);
 			}
-			else if (sender is ToolStripButton)
+			else if (sender is ToolStripDropDownItem toolStripDropDownItem)
 			{
-				SetStatusbar(text: ((ToolStripButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownItem).AccessibleDescription);
 			}
-			else if (sender is ToolStripMenuItem)
+			else if (sender is ToolStripDropDownMenu toolStripDropDownMenu)
 			{
-				SetStatusbar(text: ((ToolStripMenuItem)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownMenu).AccessibleDescription);
 			}
-			else if (sender is ToolStripLabel)
+			else if (sender is ToolStripProgressBar toolStripProgressBar)
 			{
-				SetStatusbar(text: ((ToolStripLabel)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripProgressBar).AccessibleDescription);
 			}
-			else if (sender is ToolStripComboBox)
+			else if (sender is ToolStripSplitButton toolStripSplitButton)
 			{
-				SetStatusbar(text: ((ToolStripComboBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripSplitButton).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDown)
+			else if (sender is ToolStripSeparator toolStripSeparator)
 			{
-				SetStatusbar(text: ((ToolStripDropDown)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripSeparator).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDownButton)
+			else if (sender is ToolStripStatusLabel toolStripStatusLabel)
 			{
-				SetStatusbar(text: ((ToolStripDropDownButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripStatusLabel).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDownItem)
+			else if (sender is ToolStripTextBox toolStripTextBox)
 			{
-				SetStatusbar(text: ((ToolStripDropDownItem)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripDropDownMenu)
-			{
-				SetStatusbar(text: ((ToolStripDropDownMenu)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripProgressBar)
-			{
-				SetStatusbar(text: ((ToolStripProgressBar)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripSplitButton)
-			{
-				SetStatusbar(text: ((ToolStripSplitButton)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripSeparator)
-			{
-				SetStatusbar(text: ((ToolStripSeparator)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripStatusLabel)
-			{
-				SetStatusbar(text: ((ToolStripStatusLabel)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripTextBox)
-			{
-				SetStatusbar(text: ((ToolStripTextBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripTextBox).AccessibleDescription);
 			}
 		}
 
@@ -159,6 +159,18 @@ namespace Hipparcos_DB
 		{
 			toolStripStatusLabelInfo.Text = string.Empty;
 			toolStripStatusLabelInfo.Visible = false;
+		}
+
+		private void SaveFileErrorMessage(string message)
+		{
+			MessageBox.Show(
+					owner: this,
+					text: "Logging file couldn't saved." + Environment.NewLine + Environment.NewLine + "Reason: " + message,
+					caption: Resources.errorTitle,
+					buttons: MessageBoxButtons.OK,
+					icon: MessageBoxIcon.Error,
+					defaultButton: MessageBoxDefaultButton.Button1,
+					options: MessageBoxOptions.DefaultDesktopOnly);
 		}
 
 		/*
@@ -193,6 +205,9 @@ namespace Hipparcos_DB
 
 		#region Don-/Destructor
 
+		/// <summary>
+		/// Constructor
+		/// </summary>
 		public DownloaderForm()
 		{
 			InitializeComponent();
@@ -213,6 +228,7 @@ namespace Hipparcos_DB
 		private void DownloaderForm_Load(object sender, EventArgs e)
 		{
 			ClearStatusbar();
+			textBox.BackColor = Color.White;
 			labelFilesDownload.Text = string.Empty;
 			if (settings.UserEnableQuickDownload)
 			{
@@ -230,13 +246,13 @@ namespace Hipparcos_DB
 			if (toolStripButtonEditHost.Checked)
 			{
 				toolStripButtonEditHost.Image = Resources.fugue_tick_button_16px_shadowless;
-				toolStripButtonEditHost.Text = "&Apply";
+				toolStripButtonEditHost.Text = Resources.applyLabel;
 				toolStripButtonRestoreHost.Enabled = true;
 			}
 			else
 			{
 				toolStripButtonEditHost.Image = Resources.fugue_pencil_16px_shadowless;
-				toolStripButtonEditHost.Text = "&Edit host";
+				toolStripButtonEditHost.Text = Resources.editHostLabel;
 				settings.UserHostName = toolStripTextBoxHost.Text;
 				settings.Save();
 			}
@@ -263,7 +279,7 @@ namespace Hipparcos_DB
 			toolStripTextBoxHost.Text = GetHost();
 		}
 
-		private void ToolStripButtonSaveLogging_Click(object sender, EventArgs e) => saveFileDialog.ShowDialog();		
+		private void ToolStripButtonSaveLogging_Click(object sender, EventArgs e) => saveFileDialog.ShowDialog();
 
 		#endregion
 
@@ -299,23 +315,28 @@ namespace Hipparcos_DB
 			{
 				File.WriteAllText(path: saveFileDialog.FileName, contents: textBox.Text);
 			}
-			catch (Exception exception)
+			catch (ArgumentException exception)
 			{
-				MessageBox.Show(
-					owner: this,
-					text: "Logging file couldn't saved." + Environment.NewLine + Environment.NewLine + "Reason: " + exception.Message,
-					caption: "Error",
-					buttons: MessageBoxButtons.OK,
-					icon: MessageBoxIcon.Error);
+				SaveFileErrorMessage(exception.Message);
+			}
+			catch (PathTooLongException exception)
+			{
+				SaveFileErrorMessage(exception.Message);
+			}
+			catch (DirectoryNotFoundException exception)
+			{
+				SaveFileErrorMessage(exception.Message);
 			}
 			finally
 			{
 				MessageBox.Show(
 					owner: this,
-					text: "Logging file saved.",
-					caption: "Successful",
+					text: Resources.loggingFileSavedText,
+					caption: Resources.loggingFileSavedTitle,
 					buttons: MessageBoxButtons.OK,
-					icon: MessageBoxIcon.Information);
+					icon: MessageBoxIcon.Information,
+					defaultButton: MessageBoxDefaultButton.Button1,
+					options: MessageBoxOptions.DefaultDesktopOnly);
 			}
 		}
 
@@ -337,39 +358,39 @@ namespace Hipparcos_DB
 					try
 					{
 						downloadedFile = GetCatalogDirectory() + hostFiles[index];
-						decompressedFile = GetCatalogDirectory() + RemoveFileExtension(hostFiles[index]);
+						decompressedFile = GetCatalogDirectory() + RemoveFileExtension(filename: hostFiles[index]);
 						url = GetHost() + hostFiles[index];
 						uri = new Uri(uriString: url);
 						webClient.Proxy = null;
-						labelDownloadStatus.Text = "[" + DateTime.Now.ToString() + "] Downloading: " + url;
+						labelDownloadStatus.Text = "[" + DateTime.Now.ToString(provider: culture) + "] Downloading: " + url;
 						textBox.AppendText(text: labelDownloadStatus.Text + Environment.NewLine);
 						//progressBarDownloadFile.Value = 0;
 						progressBarDownloadFiles.PerformStep();
-						labelFilesDownload.Text = (index + 1).ToString() + "/" + hostFiles.Length.ToString();
+						labelFilesDownload.Text = (index + 1).ToString(provider: culture) + "/" + hostFiles.Length.ToString(provider: culture);
 						//webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
 						//webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChanged);
 						webClient.DownloadFile(address: uri, fileName: downloadedFile);
 						if (File.Exists(downloadedFile))
 						{
 							fileArray = File.ReadAllBytes(path: downloadedFile);
-							labelDownloadStatus.Text = "[" + DateTime.Now.ToString() + "] Decompress: " + downloadedFile + " -> " + decompressedFile;
+							labelDownloadStatus.Text = "[" + DateTime.Now.ToString(provider: culture) + "] Decompress: " + downloadedFile + " -> " + decompressedFile;
 							textBox.AppendText(text: labelDownloadStatus.Text + Environment.NewLine);
 							progressBarDownloadFiles.PerformStep();
 							File.WriteAllBytes(path: decompressedFile, bytes: Decompress(gzip: fileArray));
-							labelDownloadStatus.Text = "[" + DateTime.Now.ToString() + "] Delete: " + downloadedFile;
+							labelDownloadStatus.Text = "[" + DateTime.Now.ToString(provider: culture) + "] Delete: " + downloadedFile;
 							textBox.AppendText(text: labelDownloadStatus.Text + Environment.NewLine + Environment.NewLine);
 							File.Delete(path: downloadedFile);
 							progressBarDownloadFiles.PerformStep();
 						}
 						else
 						{
-							textBox.AppendText(text: "[" + DateTime.Now.ToString() + "] ERROR!!! " + downloadedFile + "couldn't decompressed." + Environment.NewLine + Environment.NewLine);
+							textBox.AppendText(text: "[" + DateTime.Now.ToString(provider: culture) + "] ERROR!!! " + downloadedFile + "couldn't decompressed." + Environment.NewLine + Environment.NewLine);
 						}
 					}
-					catch (Exception exception)
+					catch (WebException exception)
 					{
 						downloadWasSuccessful = false;
-						textBox.AppendText(text: "[" + DateTime.Now.ToString() + "] ERROR!!! " + exception.Message + Environment.NewLine + Environment.NewLine);
+						textBox.AppendText(text: "[" + DateTime.Now.ToString(provider: culture) + "] ERROR!!! " + exception.Message + Environment.NewLine + Environment.NewLine);
 					}
 				}
 				toolStripStatusLabelDownloadAnimation.Visible = timerDownloadAnimation.Enabled = false;
@@ -380,10 +401,12 @@ namespace Hipparcos_DB
 					{
 						MessageBox.Show(
 							owner: this,
-							text: "All files were downloaded and decompressed.",
-							caption: "Successful",
+							text: Resources.allFilesDownloadedText,
+							caption: Resources.allFilesDownloadedTitle,
 							buttons: MessageBoxButtons.OK,
-							icon: MessageBoxIcon.Information);
+							icon: MessageBoxIcon.Information,
+							defaultButton: MessageBoxDefaultButton.Button1,
+							options: MessageBoxOptions.DefaultDesktopOnly);
 					}
 					Close();
 				}
@@ -392,13 +415,24 @@ namespace Hipparcos_DB
 					toolStripButtonSaveLogging.Enabled = true;
 					MessageBox.Show(
 						owner: this,
-						text: "Some files couldn't downloaded and decompressed. Read the logged error messages!",
-						caption: "Error",
+						text: Resources.someFilesNotDowloadedText,
+						caption: Resources.errorTitle,
 						buttons: MessageBoxButtons.OK,
-						icon: MessageBoxIcon.Error);
+						icon: MessageBoxIcon.Error,
+						defaultButton: MessageBoxDefaultButton.Button1,
+						options: MessageBoxOptions.DefaultDesktopOnly);
 				}
 			}
-		}		
+		}
+
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Interoperability", "CA1414:MarkBooleanPInvokeArgumentsWithMarshalAs")]
+		[DllImport("user32.dll")]
+		private static extern bool HideCaret(IntPtr hWnd);
+
+		private void TextBox_TextChanged(object sender, EventArgs e)
+		{
+			HideCaret(hWnd: textBox.Handle);
+		}
 
 		#endregion
 

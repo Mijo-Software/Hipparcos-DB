@@ -420,18 +420,6 @@
   <data name="statusStripText.AccessibleName" xml:space="preserve">
     <value>information status bar</value>
   </data>
-  <data name="toolStripStatusLabelInfo.AccessibleDescription" xml:space="preserve">
-    <value>Text with some information</value>
-  </data>
-  <data name="toolStripStatusLabelInfo.AccessibleName" xml:space="preserve">
-    <value>information text</value>
-  </data>
-  <data name="toolStripStatusLabelInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 17</value>
-  </data>
-  <data name="toolStripStatusLabelInfo.Text" xml:space="preserve">
-    <value>info text</value>
-  </data>
   <data name="statusStripText.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 217</value>
   </data>
@@ -456,11 +444,95 @@
   <data name="&gt;&gt;statusStripText.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="toolStripStatusLabelInfo.AccessibleDescription" xml:space="preserve">
+    <value>Text with some information</value>
+  </data>
+  <data name="toolStripStatusLabelInfo.AccessibleName" xml:space="preserve">
+    <value>information text</value>
+  </data>
+  <data name="toolStripStatusLabelInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 17</value>
+  </data>
+  <data name="toolStripStatusLabelInfo.Text" xml:space="preserve">
+    <value>info text</value>
+  </data>
   <data name="groupBoxChooseCatalog.AccessibleDescription" xml:space="preserve">
     <value>Group the catalogs</value>
   </data>
   <data name="groupBoxChooseCatalog.AccessibleName" xml:space="preserve">
     <value>catalog chooser grouping</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadTychoCatalog.Name" xml:space="preserve">
+    <value>buttonDownloadTychoCatalog</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadTychoCatalog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadTychoCatalog.Parent" xml:space="preserve">
+    <value>groupBoxChooseCatalog</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadTychoCatalog.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadHipparcosCatalog.Name" xml:space="preserve">
+    <value>buttonDownloadHipparcosCatalog</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadHipparcosCatalog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadHipparcosCatalog.Parent" xml:space="preserve">
+    <value>groupBoxChooseCatalog</value>
+  </data>
+  <data name="&gt;&gt;buttonDownloadHipparcosCatalog.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;labelTychoCatalog.Name" xml:space="preserve">
+    <value>labelTychoCatalog</value>
+  </data>
+  <data name="&gt;&gt;labelTychoCatalog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTychoCatalog.Parent" xml:space="preserve">
+    <value>groupBoxChooseCatalog</value>
+  </data>
+  <data name="&gt;&gt;labelTychoCatalog.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelHipparcosCatalog.Name" xml:space="preserve">
+    <value>labelHipparcosCatalog</value>
+  </data>
+  <data name="&gt;&gt;labelHipparcosCatalog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelHipparcosCatalog.Parent" xml:space="preserve">
+    <value>groupBoxChooseCatalog</value>
+  </data>
+  <data name="&gt;&gt;labelHipparcosCatalog.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBoxChooseCatalog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 57</value>
+  </data>
+  <data name="groupBoxChooseCatalog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 76</value>
+  </data>
+  <data name="groupBoxChooseCatalog.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxChooseCatalog.Text" xml:space="preserve">
+    <value>Catalogs</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalog.Name" xml:space="preserve">
+    <value>groupBoxChooseCatalog</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalog.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalog.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="buttonDownloadTychoCatalog.AccessibleDescription" xml:space="preserve">
     <value>Download the Tycho Catalog</value>
@@ -600,88 +672,64 @@
   <data name="&gt;&gt;labelHipparcosCatalog.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="groupBoxChooseCatalog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 57</value>
-  </data>
-  <data name="groupBoxChooseCatalog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 76</value>
-  </data>
-  <data name="groupBoxChooseCatalog.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBoxChooseCatalog.Text" xml:space="preserve">
-    <value>Catalogs</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.Name" xml:space="preserve">
-    <value>groupBoxChooseCatalog</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="labelApplicationName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="labelApplicationName.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 26.25pt, style=Bold, Underline</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="labelApplicationName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="labelApplicationName.Location" type="System.Drawing.Point, System.Drawing">
     <value>177, 12</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelApplicationName.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 42</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelApplicationName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="labelApplicationName.Text" xml:space="preserve">
     <value>Hipparcos-DB</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;labelApplicationName.Name" xml:space="preserve">
+    <value>labelApplicationName</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelApplicationName.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelApplicationName.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelApplicationName.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="pictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pictureBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 193</value>
   </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="pictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="pictureBox.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
+  <data name="&gt;&gt;pictureBox.Name" xml:space="preserve">
+    <value>pictureBox</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;pictureBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pictureBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pictureBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

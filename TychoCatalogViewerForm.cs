@@ -1,9 +1,10 @@
-﻿using Hipparcos_DB.Properties;
-using System;
+﻿using System;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
+using Hipparcos_DB.Properties;
 
 namespace Hipparcos_DB
 {
@@ -159,98 +160,85 @@ namespace Hipparcos_DB
 			index = 0,
 			maxIndex = 0;
 
+		/// <summary>
+		/// Culture info
+		/// </summary>
+		private static readonly CultureInfo culture = CultureInfo.CurrentUICulture;
+
 		#region Local methods
 
-		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
+		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: ".", comparisonType: StringComparison.CurrentCulture));
 
 		private void CopyToClipboard(string text)
 		{
 			Clipboard.SetText(text: text);
 			MessageBox.Show(
 				owner: this,
-				text: "Copied to clipboard",
-				caption: "The text was copied to the clipboard!",
+				text: Resources.copiedToClipboardText,
+				caption: Resources.copiedToClipboardTitle,
 				buttons: MessageBoxButtons.OK,
-				icon: MessageBoxIcon.Information);
+				icon: MessageBoxIcon.Information,
+				defaultButton: MessageBoxDefaultButton.Button1,
+				options: MessageBoxOptions.DefaultDesktopOnly);
 		}
 
 		private void CopyToClipboard(object sender, EventArgs e)
 		{
-			if (sender is TextBox)
+			if (sender is Control control)
 			{
-				CopyToClipboard(text: ((TextBox)sender).Text);
+				CopyToClipboard(text: (control).Text);
 			}
-			else if (sender is Button)
+			else if (sender is ToolStripButton toolStripButton)
 			{
-				CopyToClipboard(text: ((Button)sender).Text);
+				CopyToClipboard(text: (toolStripButton).Text);
 			}
-			else if (sender is RadioButton)
+			else if (sender is ToolStripMenuItem toolStripMenuItem)
 			{
-				CopyToClipboard(text: ((RadioButton)sender).Text);
+				CopyToClipboard(text: (toolStripMenuItem).Text);
 			}
-			else if (sender is CheckBox)
+			else if (sender is ToolStripLabel toolStripLabel)
 			{
-				SetStatusbar(text: ((CheckBox)sender).Text);
+				CopyToClipboard(text: (toolStripLabel).Text);
 			}
-			else if (sender is DateTimePicker)
+			else if (sender is ToolStripComboBox toolStripComboBox)
 			{
-				CopyToClipboard(text: ((DateTimePicker)sender).Text);
+				CopyToClipboard(text: (toolStripComboBox).Text);
 			}
-			else if (sender is Label)
+			else if (sender is ToolStripDropDown toolStripDropDown)
 			{
-				CopyToClipboard(text: ((Label)sender).Text);
+				CopyToClipboard(text: (toolStripDropDown).Text);
 			}
-			else if (sender is ToolStripButton)
+			else if (sender is ToolStripDropDownButton toolStripDropDownButton)
 			{
-				CopyToClipboard(text: ((ToolStripButton)sender).Text);
+				CopyToClipboard(text: (toolStripDropDownButton).Text);
 			}
-			else if (sender is ToolStripMenuItem)
+			else if (sender is ToolStripDropDownItem toolStripDropDownItem)
 			{
-				CopyToClipboard(text: ((ToolStripMenuItem)sender).Text);
+				CopyToClipboard(text: (toolStripDropDownItem).Text);
 			}
-			else if (sender is ToolStripLabel)
+			else if (sender is ToolStripDropDownMenu toolStripDropDownMenu)
 			{
-				CopyToClipboard(text: ((ToolStripLabel)sender).Text);
+				CopyToClipboard(text: (toolStripDropDownMenu).Text);
 			}
-			else if (sender is ToolStripComboBox)
+			else if (sender is ToolStripProgressBar toolStripProgressBar)
 			{
-				CopyToClipboard(text: ((ToolStripComboBox)sender).Text);
+				CopyToClipboard(text: (toolStripProgressBar).Text);
 			}
-			else if (sender is ToolStripDropDown)
+			else if (sender is ToolStripSplitButton toolStripSplitButton)
 			{
-				CopyToClipboard(text: ((ToolStripDropDown)sender).Text);
+				CopyToClipboard(text: (toolStripSplitButton).Text);
 			}
-			else if (sender is ToolStripDropDownButton)
+			else if (sender is ToolStripSeparator toolStripSeparator)
 			{
-				CopyToClipboard(text: ((ToolStripDropDownButton)sender).Text);
+				CopyToClipboard(text: (toolStripSeparator).Text);
 			}
-			else if (sender is ToolStripDropDownItem)
+			else if (sender is ToolStripStatusLabel toolStripStatusLabel)
 			{
-				CopyToClipboard(text: ((ToolStripDropDownItem)sender).Text);
+				CopyToClipboard(text: (toolStripStatusLabel).Text);
 			}
-			else if (sender is ToolStripDropDownMenu)
+			else if (sender is ToolStripTextBox toolStripTextBox)
 			{
-				CopyToClipboard(text: ((ToolStripDropDownMenu)sender).Text);
-			}
-			else if (sender is ToolStripProgressBar)
-			{
-				CopyToClipboard(text: ((ToolStripProgressBar)sender).Text);
-			}
-			else if (sender is ToolStripSplitButton)
-			{
-				CopyToClipboard(text: ((ToolStripSplitButton)sender).Text);
-			}
-			else if (sender is ToolStripSeparator)
-			{
-				CopyToClipboard(text: ((ToolStripSeparator)sender).Text);
-			}
-			else if (sender is ToolStripStatusLabel)
-			{
-				CopyToClipboard(text: ((ToolStripStatusLabel)sender).Text);
-			}
-			else if (sender is ToolStripTextBox)
-			{
-				CopyToClipboard(text: ((ToolStripTextBox)sender).Text);
+				CopyToClipboard(text: (toolStripTextBox).Text);
 			}
 		}
 
@@ -262,85 +250,61 @@ namespace Hipparcos_DB
 
 		private void SetStatusbar(object sender, EventArgs e)
 		{
-			if (sender is TextBox)
+			if (sender is Control control)
 			{
-				SetStatusbar(text: ((TextBox)sender).AccessibleDescription);
+				SetStatusbar(text: (control).AccessibleDescription);
 			}
-			else if (sender is Button)
+			else if (sender is ToolStripButton toolStripButton)
 			{
-				SetStatusbar(text: ((Button)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripButton).AccessibleDescription);
 			}
-			else if (sender is RadioButton)
+			else if (sender is ToolStripMenuItem toolStripMenuItem)
 			{
-				SetStatusbar(text: ((RadioButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripMenuItem).AccessibleDescription);
 			}
-			else if (sender is CheckBox)
+			else if (sender is ToolStripLabel toolStripLabel)
 			{
-				SetStatusbar(text: ((CheckBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripLabel).AccessibleDescription);
 			}
-			else if (sender is DateTimePicker)
+			else if (sender is ToolStripComboBox toolStripComboBox)
 			{
-				SetStatusbar(text: ((DateTimePicker)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripComboBox).AccessibleDescription);
 			}
-			else if (sender is Label)
+			else if (sender is ToolStripDropDown toolStripDropDown)
 			{
-				SetStatusbar(text: ((Label)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDown).AccessibleDescription);
 			}
-			else if (sender is PictureBox)
+			else if (sender is ToolStripDropDownButton toolStripDropDownButton)
 			{
-				SetStatusbar(text: ((PictureBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownButton).AccessibleDescription);
 			}
-			else if (sender is ToolStripButton)
+			else if (sender is ToolStripDropDownItem toolStripDropDownItem)
 			{
-				SetStatusbar(text: ((ToolStripButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownItem).AccessibleDescription);
 			}
-			else if (sender is ToolStripMenuItem)
+			else if (sender is ToolStripDropDownMenu toolStripDropDownMenu)
 			{
-				SetStatusbar(text: ((ToolStripMenuItem)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownMenu).AccessibleDescription);
 			}
-			else if (sender is ToolStripLabel)
+			else if (sender is ToolStripProgressBar toolStripProgressBar)
 			{
-				SetStatusbar(text: ((ToolStripLabel)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripProgressBar).AccessibleDescription);
 			}
-			else if (sender is ToolStripComboBox)
+			else if (sender is ToolStripSplitButton toolStripSplitButton)
 			{
-				SetStatusbar(text: ((ToolStripComboBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripSplitButton).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDown)
+			else if (sender is ToolStripSeparator toolStripSeparator)
 			{
-				SetStatusbar(text: ((ToolStripDropDown)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripSeparator).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDownButton)
+			else if (sender is ToolStripStatusLabel toolStripStatusLabel)
 			{
-				SetStatusbar(text: ((ToolStripDropDownButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripStatusLabel).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDownItem)
+			else if (sender is ToolStripTextBox toolStripTextBox)
 			{
-				SetStatusbar(text: ((ToolStripDropDownItem)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripDropDownMenu)
-			{
-				SetStatusbar(text: ((ToolStripDropDownMenu)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripProgressBar)
-			{
-				SetStatusbar(text: ((ToolStripProgressBar)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripSplitButton)
-			{
-				SetStatusbar(text: ((ToolStripSplitButton)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripSeparator)
-			{
-				SetStatusbar(text: ((ToolStripSeparator)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripStatusLabel)
-			{
-				SetStatusbar(text: ((ToolStripStatusLabel)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripTextBox)
-			{
-				SetStatusbar(text: ((ToolStripTextBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripTextBox).AccessibleDescription);
 			}
 		}
 
@@ -400,11 +364,11 @@ namespace Hipparcos_DB
 			}
 		}
 
-		private void SetColorSelf(ref Label labelSelf, Color color) => labelSelf.BackColor = color;
+		private static void SetColorSelf(ref Label labelSelf, Color color) => labelSelf.BackColor = color;
 
-		private void SetColorSelfAndNeighbour(ref Label labelSelf, ref Label labelNeighbour, Color color) => labelSelf.BackColor = labelNeighbour.BackColor = color;
+		private static void SetColorSelfAndNeighbour(ref Label labelSelf, ref Label labelNeighbour, Color color) => labelSelf.BackColor = labelNeighbour.BackColor = color;
 
-		private void UpdateIndexLabel() => toolStripTextBoxGoToIndex.Text = index.ToString();
+		private void UpdateIndexLabel() => toolStripTextBoxGoToIndex.Text = index.ToString(provider: culture);
 
 		private void CheckIndexMinimum()
 		{
@@ -490,10 +454,12 @@ namespace Hipparcos_DB
 				{
 					MessageBox.Show(
 						owner: this,
-						text: "The number is out of range. The number to be entered must be greater than zero and less than the maximum value.",
-						caption: "Number out of range",
+						text: Resources.numberOutOfRangeText,
+						caption: Resources.numberOutOfRangeTitle,
 						buttons: MessageBoxButtons.OK,
-						icon: MessageBoxIcon.Error);
+						icon: MessageBoxIcon.Error,
+						defaultButton: MessageBoxDefaultButton.Button1,
+						options: MessageBoxOptions.DefaultDesktopOnly);
 				}
 				else
 				{
@@ -506,10 +472,12 @@ namespace Hipparcos_DB
 			{
 				MessageBox.Show(
 					owner: this,
-					text: "The input is not a natural number. Make sure the input is a natural number, for example: 1, 2, 3, ...",
-					caption: "Wrong number format",
+					text: Resources.wrongNumberFormatText,
+					caption: Resources.wrongNumberFormatTitle,
 					buttons: MessageBoxButtons.OK,
-					icon: MessageBoxIcon.Error);
+					icon: MessageBoxIcon.Error,
+					defaultButton: MessageBoxDefaultButton.Button1,
+					options: MessageBoxOptions.DefaultDesktopOnly);
 			}
 		}
 
@@ -527,6 +495,9 @@ namespace Hipparcos_DB
 
 		#region Con- and destructor
 
+		/// <summary>
+		/// Constructor
+		/// </summary>
 		public TychoCatalogViewerForm()
 		{
 			InitializeComponent();
@@ -588,11 +559,11 @@ namespace Hipparcos_DB
 			if (File.Exists(path: dataFile))
 			{
 				menuStrip.Enabled = toolStrip.Visible = false;
-				toolStripStatusLabelInfo.Text = "Loading file...";
+				toolStripStatusLabelInfo.Text = Resources.loadingFile;
 				catalogEntries = File.ReadAllLines(path: dataFile);
 				index = 1;
 				maxIndex = Convert.ToUInt32(value: catalogEntries.Length);
-				toolStripLabelMaxIndex.Text = "of " + maxIndex.ToString();
+				toolStripLabelMaxIndex.Text = "of " + maxIndex.ToString(provider: culture);
 				progressBar.Visible = false;
 				isDatabaseLoading = false;
 				menuStrip.Enabled = toolStrip.Visible = true;
@@ -604,10 +575,12 @@ namespace Hipparcos_DB
 			{
 				MessageBox.Show(
 					owner: this,
-					text: "Some files are missing. Please download all files in the main window.",
-					caption: "Missing files",
+					text: Resources.missingDownloadFilesText1,
+					caption: Resources.missingDownloadFilesTitle,
 					buttons: MessageBoxButtons.OK,
-					icon: MessageBoxIcon.Error);
+					icon: MessageBoxIcon.Error,
+					defaultButton: MessageBoxDefaultButton.Button1,
+					options: MessageBoxOptions.DefaultDesktopOnly);
 				Close();
 			}
 		}
@@ -616,6 +589,7 @@ namespace Hipparcos_DB
 
 		#region Click event handlers
 
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2001:AvoidCallingProblematicMethods", MessageId = "System.GC.Collect")]
 		private void MenuitemClose_Click(object sender, EventArgs e)
 		{
 			Array.Clear(array: catalogEntries, index: 0, length: catalogEntries.Length);
@@ -832,12 +806,14 @@ namespace Hipparcos_DB
 		{
 			MessageBox.Show(
 				owner: this,
-				text: "Don't disturb me! I'm loading. ;-)",
-				caption: "Loading",
+				text: Resources.jokeLoadingText,
+				caption: Resources.jokeLoadingTitle,
 				buttons: MessageBoxButtons.OK,
-				icon: MessageBoxIcon.Exclamation);
+				icon: MessageBoxIcon.Exclamation,
+				defaultButton: MessageBoxDefaultButton.Button1,
+				options: MessageBoxOptions.DefaultDesktopOnly);
 		}
-		
+
 		#endregion
 
 		#region DoubleClick event handlers

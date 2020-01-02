@@ -1,5 +1,8 @@
 ﻿namespace Hipparcos_DB
 {
+	/// <summary>
+	/// TychoCatalogViewerForm
+	/// </summary>
 	partial class TychoCatalogViewerForm
 	{
 		/// <summary>

@@ -26,6 +26,7 @@
 		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
 		/// </summary>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Mobility", "CA1601:DoNotUseTimersThatPreventPowerStateChanges")]
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
@@ -35,6 +36,7 @@
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.textBox = new System.Windows.Forms.TextBox();
 			this.labelDownloadStatus = new System.Windows.Forms.Label();
+			this.labelFilesDownload = new System.Windows.Forms.Label();
 			this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
 			this.labelDownloadPercent = new System.Windows.Forms.Label();
 			this.toolStripContainer = new System.Windows.Forms.ToolStripContainer();
@@ -52,7 +54,6 @@
 			this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
 			this.timerDownloadAnimation = new System.Windows.Forms.Timer(this.components);
 			this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-			this.labelFilesDownload = new System.Windows.Forms.Label();
 			this.tableLayoutPanel.SuspendLayout();
 			this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
 			this.toolStripContainer.ContentPanel.SuspendLayout();
@@ -112,6 +113,7 @@
 			this.textBox.Size = new System.Drawing.Size(646, 328);
 			this.textBox.TabIndex = 5;
 			this.toolTip.SetToolTip(this.textBox, "Download logging");
+			this.textBox.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
 			this.textBox.Enter += new System.EventHandler(this.SetStatusbar_Enter);
 			this.textBox.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
 			this.textBox.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
@@ -135,6 +137,25 @@
 			this.labelDownloadStatus.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
 			this.labelDownloadStatus.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
 			this.labelDownloadStatus.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			// 
+			// labelFilesDownload
+			// 
+			this.labelFilesDownload.AccessibleDescription = "Show how many files are in progress";
+			this.labelFilesDownload.AccessibleName = "File counter text";
+			this.labelFilesDownload.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelFilesDownload.AutoSize = true;
+			this.labelFilesDownload.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelFilesDownload.Location = new System.Drawing.Point(597, 32);
+			this.labelFilesDownload.Name = "labelFilesDownload";
+			this.labelFilesDownload.Size = new System.Drawing.Size(52, 19);
+			this.labelFilesDownload.TabIndex = 4;
+			this.labelFilesDownload.Text = "00 / 99";
+			this.labelFilesDownload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.toolTip.SetToolTip(this.labelFilesDownload, "How many files in progress");
+			this.labelFilesDownload.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelFilesDownload.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelFilesDownload.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
+			this.labelFilesDownload.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
 			// 
 			// tableLayoutPanel
 			// 
@@ -405,25 +426,6 @@
 			this.saveFileDialog.SupportMultiDottedExtensions = true;
 			this.saveFileDialog.Title = "Save file";
 			this.saveFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.SaveFileDialog_FileOk);
-			// 
-			// labelFilesDownload
-			// 
-			this.labelFilesDownload.AccessibleDescription = "Show how many files are in progress";
-			this.labelFilesDownload.AccessibleName = "File counter text";
-			this.labelFilesDownload.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labelFilesDownload.AutoSize = true;
-			this.labelFilesDownload.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelFilesDownload.Location = new System.Drawing.Point(597, 32);
-			this.labelFilesDownload.Name = "labelFilesDownload";
-			this.labelFilesDownload.Size = new System.Drawing.Size(52, 19);
-			this.labelFilesDownload.TabIndex = 4;
-			this.labelFilesDownload.Text = "00 / 99";
-			this.labelFilesDownload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.toolTip.SetToolTip(this.labelFilesDownload, "How many files in progress");
-			this.labelFilesDownload.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelFilesDownload.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelFilesDownload.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelFilesDownload.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
 			// 
 			// DownloaderForm
 			// 

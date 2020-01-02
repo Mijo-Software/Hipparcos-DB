@@ -1,5 +1,8 @@
 ﻿namespace Hipparcos_DB.Properties
 {
+	/// <summary>
+	/// SubsetCatalogExporterForm
+	/// </summary>
 	partial class SubsetCatalogExporterForm
 	{
 		/// <summary>
@@ -26,6 +29,7 @@
 		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
 		/// </summary>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Mobility", "CA1601:DoNotUseTimersThatPreventPowerStateChanges")]
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
