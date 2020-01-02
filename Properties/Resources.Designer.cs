@@ -61,6 +61,69 @@ namespace Hipparcos_DB.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die All files were downloaded and decompressed. ähnelt.
+        /// </summary>
+        internal static string allFilesDownloadedText {
+            get {
+                return ResourceManager.GetString("allFilesDownloadedText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Successful ähnelt.
+        /// </summary>
+        internal static string allFilesDownloadedTitle {
+            get {
+                return ResourceManager.GetString("allFilesDownloadedTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die &amp;Apply ähnelt.
+        /// </summary>
+        internal static string applyLabel {
+            get {
+                return ResourceManager.GetString("applyLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die The text was copied to the clipboard! ähnelt.
+        /// </summary>
+        internal static string copiedToClipboardText {
+            get {
+                return ResourceManager.GetString("copiedToClipboardText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Copied to clipboard ähnelt.
+        /// </summary>
+        internal static string copiedToClipboardTitle {
+            get {
+                return ResourceManager.GetString("copiedToClipboardTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die &amp;Edit host ähnelt.
+        /// </summary>
+        internal static string editHostLabel {
+            get {
+                return ResourceManager.GetString("editHostLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Error ähnelt.
+        /// </summary>
+        internal static string errorTitle {
+            get {
+                return ResourceManager.GetString("errorTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap fugue_application_16px_shadowless {
@@ -407,6 +470,141 @@ namespace Hipparcos_DB.Properties {
             get {
                 object obj = ResourceManager.GetObject("hipparcos1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die The name of the host are null, empty or a space. ähnelt.
+        /// </summary>
+        internal static string invalidHostnameText {
+            get {
+                return ResourceManager.GetString("invalidHostnameText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Don&apos;t disturb me! I&apos;m loading. ;-) ähnelt.
+        /// </summary>
+        internal static string jokeLoadingText {
+            get {
+                return ResourceManager.GetString("jokeLoadingText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Loading ähnelt.
+        /// </summary>
+        internal static string jokeLoadingTitle {
+            get {
+                return ResourceManager.GetString("jokeLoadingTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Loading file... ähnelt.
+        /// </summary>
+        internal static string loadingFile {
+            get {
+                return ResourceManager.GetString("loadingFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Logging file saved. ähnelt.
+        /// </summary>
+        internal static string loggingFileSavedText {
+            get {
+                return ResourceManager.GetString("loggingFileSavedText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Successful ähnelt.
+        /// </summary>
+        internal static string loggingFileSavedTitle {
+            get {
+                return ResourceManager.GetString("loggingFileSavedTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Some files are missing. Please download all files in the main window. ähnelt.
+        /// </summary>
+        internal static string missingDownloadFilesText1 {
+            get {
+                return ResourceManager.GetString("missingDownloadFilesText1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Some files are missing. Please use the download button to download all files. ähnelt.
+        /// </summary>
+        internal static string missingDownloadFilesText2 {
+            get {
+                return ResourceManager.GetString("missingDownloadFilesText2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Missing files ähnelt.
+        /// </summary>
+        internal static string missingDownloadFilesTitle {
+            get {
+                return ResourceManager.GetString("missingDownloadFilesTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die The number is out of range. The number to be entered must be greater than zero and less than the maximum value. ähnelt.
+        /// </summary>
+        internal static string numberOutOfRangeText {
+            get {
+                return ResourceManager.GetString("numberOutOfRangeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Number out of range ähnelt.
+        /// </summary>
+        internal static string numberOutOfRangeTitle {
+            get {
+                return ResourceManager.GetString("numberOutOfRangeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Some files couldn&apos;t downloaded and decompressed. Read the logged error messages! ähnelt.
+        /// </summary>
+        internal static string someFilesNotDowloadedText {
+            get {
+                return ResourceManager.GetString("someFilesNotDowloadedText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die ... ähnelt.
+        /// </summary>
+        internal static string someFilesNotDowloadedTitle {
+            get {
+                return ResourceManager.GetString("someFilesNotDowloadedTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die The input is not a natural number. Make sure the input is a natural number, for example: 1, 2, 3, ... ähnelt.
+        /// </summary>
+        internal static string wrongNumberFormatText {
+            get {
+                return ResourceManager.GetString("wrongNumberFormatText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Wrong number format ähnelt.
+        /// </summary>
+        internal static string wrongNumberFormatTitle {
+            get {
+                return ResourceManager.GetString("wrongNumberFormatTitle", resourceCulture);
             }
         }
     }
