@@ -1,11 +1,15 @@
-﻿using Hipparcos_DB.Properties;
-using System;
+﻿using System;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Windows.Forms;
+using Hipparcos_DB.Properties;
 
 namespace Hipparcos_DB
 {
+	/// <summary>
+	/// CatalogChooserForm : Form
+	/// </summary>
 	public partial class CatalogChooserForm : Form
 	{
 		private readonly Settings settings = new Settings();
@@ -55,11 +59,16 @@ namespace Hipparcos_DB
 				"tyc_main.dat"
 			};
 
+		/// <summary>
+		/// Culture info
+		/// </summary>
+		private static readonly CultureInfo culture = CultureInfo.CurrentUICulture;
+
 		#region Local methods
 
-		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: "."));
+		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: ".", comparisonType: StringComparison.CurrentCulture));
 
-		private bool HasFileExtension(string filename, string extension) => Path.GetExtension(path: filename).ToLower() == extension.ToLower();
+		private bool HasFileExtension(string filename, string extension) => Path.GetExtension(path: filename).ToLower(culture: culture) == extension.ToLower(culture: culture);
 
 		private static void OpenExplorer(string path)
 		{
@@ -77,85 +86,61 @@ namespace Hipparcos_DB
 
 		private void SetStatusbar(object sender, EventArgs e)
 		{
-			if (sender is TextBox)
+			if (sender is Control control)
 			{
-				SetStatusbar(text: ((TextBox)sender).AccessibleDescription);
+				SetStatusbar(text: (control).AccessibleDescription);
 			}
-			else if (sender is Button)
+			else if (sender is ToolStripButton toolStripButton)
 			{
-				SetStatusbar(text: ((Button)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripButton).AccessibleDescription);
 			}
-			else if (sender is RadioButton)
+			else if (sender is ToolStripMenuItem toolStripMenuItem)
 			{
-				SetStatusbar(text: ((RadioButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripMenuItem).AccessibleDescription);
 			}
-			else if (sender is CheckBox)
+			else if (sender is ToolStripLabel toolStripLabel)
 			{
-				SetStatusbar(text: ((CheckBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripLabel).AccessibleDescription);
 			}
-			else if (sender is DateTimePicker)
+			else if (sender is ToolStripComboBox toolStripComboBox)
 			{
-				SetStatusbar(text: ((DateTimePicker)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripComboBox).AccessibleDescription);
 			}
-			else if (sender is Label)
+			else if (sender is ToolStripDropDown toolStripDropDown)
 			{
-				SetStatusbar(text: ((Label)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDown).AccessibleDescription);
 			}
-			else if (sender is PictureBox)
+			else if (sender is ToolStripDropDownButton toolStripDropDownButton)
 			{
-				SetStatusbar(text: ((PictureBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownButton).AccessibleDescription);
 			}
-			else if (sender is ToolStripButton)
+			else if (sender is ToolStripDropDownItem toolStripDropDownItem)
 			{
-				SetStatusbar(text: ((ToolStripButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownItem).AccessibleDescription);
 			}
-			else if (sender is ToolStripMenuItem)
+			else if (sender is ToolStripDropDownMenu toolStripDropDownMenu)
 			{
-				SetStatusbar(text: ((ToolStripMenuItem)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripDropDownMenu).AccessibleDescription);
 			}
-			else if (sender is ToolStripLabel)
+			else if (sender is ToolStripProgressBar toolStripProgressBar)
 			{
-				SetStatusbar(text: ((ToolStripLabel)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripProgressBar).AccessibleDescription);
 			}
-			else if (sender is ToolStripComboBox)
+			else if (sender is ToolStripSplitButton toolStripSplitButton)
 			{
-				SetStatusbar(text: ((ToolStripComboBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripSplitButton).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDown)
+			else if (sender is ToolStripSeparator toolStripSeparator)
 			{
-				SetStatusbar(text: ((ToolStripDropDown)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripSeparator).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDownButton)
+			else if (sender is ToolStripStatusLabel toolStripStatusLabel)
 			{
-				SetStatusbar(text: ((ToolStripDropDownButton)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripStatusLabel).AccessibleDescription);
 			}
-			else if (sender is ToolStripDropDownItem)
+			else if (sender is ToolStripTextBox toolStripTextBox)
 			{
-				SetStatusbar(text: ((ToolStripDropDownItem)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripDropDownMenu)
-			{
-				SetStatusbar(text: ((ToolStripDropDownMenu)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripProgressBar)
-			{
-				SetStatusbar(text: ((ToolStripProgressBar)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripSplitButton)
-			{
-				SetStatusbar(text: ((ToolStripSplitButton)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripSeparator)
-			{
-				SetStatusbar(text: ((ToolStripSeparator)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripStatusLabel)
-			{
-				SetStatusbar(text: ((ToolStripStatusLabel)sender).AccessibleDescription);
-			}
-			else if (sender is ToolStripTextBox)
-			{
-				SetStatusbar(text: ((ToolStripTextBox)sender).AccessibleDescription);
+				SetStatusbar(text: (toolStripTextBox).AccessibleDescription);
 			}
 		}
 
@@ -169,6 +154,9 @@ namespace Hipparcos_DB
 
 		#region Con- and Destructor
 
+		/// <summary>
+		/// Constructor
+		/// </summary>
 		public CatalogChooserForm()
 		{
 			InitializeComponent();
@@ -243,14 +231,7 @@ namespace Hipparcos_DB
 			{
 				if (allFilesFound)
 				{
-					if (File.Exists(path: settings.UserHipparcosCatalogDirectory + RemoveFileExtension(filename: file)))
-					{
-						allFilesFound = true;
-					}
-					else
-					{
-						allFilesFound = false;
-					}
+					allFilesFound = File.Exists(path: settings.UserHipparcosCatalogDirectory + RemoveFileExtension(filename: file));
 				}
 			}
 			if (allFilesFound)
@@ -264,10 +245,12 @@ namespace Hipparcos_DB
 			{
 				MessageBox.Show(
 					owner: this,
-					text: "Some files are missing. Please use the download button to download all files.",
-					caption: "Missing files",
+					text: Resources.missingDownloadFilesText2,
+					caption: Resources.missingDownloadFilesTitle,
 					buttons: MessageBoxButtons.OK,
-					icon: MessageBoxIcon.Error);
+					icon: MessageBoxIcon.Error,
+					defaultButton: MessageBoxDefaultButton.Button1,
+					options: MessageBoxOptions.DefaultDesktopOnly);
 			}
 		}
 
@@ -281,25 +264,11 @@ namespace Hipparcos_DB
 				{
 					if (HasFileExtension(filename: file, extension: ".gz"))
 					{
-						if (File.Exists(path: settings.UserTychoCatalogDirectory + RemoveFileExtension(filename: file)))
-						{
-							allFilesFound = true;
-						}
-						else
-						{
-							allFilesFound = false;
-						}
+						allFilesFound = File.Exists(path: settings.UserTychoCatalogDirectory + RemoveFileExtension(filename: file));
 					}
 					else
 					{
-						if (File.Exists(path: settings.UserTychoCatalogDirectory + file))
-						{
-							allFilesFound = true;
-						}
-						else
-						{
-							allFilesFound = false;
-						}
+						allFilesFound = File.Exists(path: settings.UserTychoCatalogDirectory + file);
 					}
 				}
 			}
@@ -314,10 +283,12 @@ namespace Hipparcos_DB
 			{
 				MessageBox.Show(
 					owner: this,
-					text: "Some files are missing. Please use the download button to download all files.",
-					caption: "Missing files",
+					text: Resources.missingDownloadFilesText2,
+					caption: Resources.missingDownloadFilesTitle,
 					buttons: MessageBoxButtons.OK,
-					icon: MessageBoxIcon.Error);
+					icon: MessageBoxIcon.Error,
+					defaultButton: MessageBoxDefaultButton.Button1,
+					options: MessageBoxOptions.DefaultDesktopOnly);
 			}
 		}
 

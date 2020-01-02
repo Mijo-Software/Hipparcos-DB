@@ -1,5 +1,8 @@
 ﻿namespace Hipparcos_DB
 {
+	/// <summary>
+	/// HipparcosCatalogFilterForm
+	/// </summary>
 	partial class HipparcosCatalogFilterForm
 	{
 		/// <summary>

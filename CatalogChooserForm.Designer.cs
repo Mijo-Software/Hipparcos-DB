@@ -45,11 +45,11 @@
 			this.buttonDownloadHipparcosCatalog = new System.Windows.Forms.Button();
 			this.labelTychoCatalog = new System.Windows.Forms.Label();
 			this.labelHipparcosCatalog = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.labelApplicationName = new System.Windows.Forms.Label();
+			this.pictureBox = new System.Windows.Forms.PictureBox();
 			this.statusStripText.SuspendLayout();
 			this.groupBoxChooseCatalog.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// buttonOpenHipparcosDirectory
@@ -215,17 +215,17 @@
 			resources.ApplyResources(this.labelHipparcosCatalog, "labelHipparcosCatalog");
 			this.labelHipparcosCatalog.Name = "labelHipparcosCatalog";
 			// 
-			// label1
+			// labelApplicationName
 			// 
-			resources.ApplyResources(this.label1, "label1");
-			this.label1.Name = "label1";
+			resources.ApplyResources(this.labelApplicationName, "labelApplicationName");
+			this.labelApplicationName.Name = "labelApplicationName";
 			// 
-			// pictureBox1
+			// pictureBox
 			// 
-			this.pictureBox1.Image = global::Hipparcos_DB.Properties.Resources.hipparcos1;
-			resources.ApplyResources(this.pictureBox1, "pictureBox1");
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.TabStop = false;
+			this.pictureBox.Image = global::Hipparcos_DB.Properties.Resources.hipparcos1;
+			resources.ApplyResources(this.pictureBox, "pictureBox");
+			this.pictureBox.Name = "pictureBox";
+			this.pictureBox.TabStop = false;
 			// 
 			// CatalogChooserForm
 			// 
@@ -233,8 +233,8 @@
 			this.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.buttonOptions);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.labelApplicationName);
+			this.Controls.Add(this.pictureBox);
 			this.Controls.Add(this.buttonInfo);
 			this.Controls.Add(this.groupBoxChooseCatalog);
 			this.Controls.Add(this.statusStripText);
@@ -247,7 +247,7 @@
 			this.statusStripText.PerformLayout();
 			this.groupBoxChooseCatalog.ResumeLayout(false);
 			this.groupBoxChooseCatalog.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -262,12 +262,12 @@
 		private System.Windows.Forms.Button buttonOpenHipparcosCatalog;
 		private System.Windows.Forms.GroupBox groupBoxChooseCatalog;
 		private System.Windows.Forms.Button buttonInfo;
-		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox pictureBox;
 		private System.Windows.Forms.Button buttonDownloadTychoCatalog;
 		private System.Windows.Forms.Button buttonDownloadHipparcosCatalog;
 		private System.Windows.Forms.Label labelTychoCatalog;
 		private System.Windows.Forms.Label labelHipparcosCatalog;
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label labelApplicationName;
 		private System.Windows.Forms.Button buttonOptions;
 		private System.Windows.Forms.Button buttonOpenHipparcosDirectory;
 		private System.Windows.Forms.Button buttonOpenTychoDirectory;
