@@ -223,4 +223,70 @@
   <data name="fugue_funnel_16px_shadowless" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>fugue_funnel_16px_shadowless.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="allFilesDownloadedText" xml:space="preserve">
+    <value>All files were downloaded and decompressed.</value>
+  </data>
+  <data name="allFilesDownloadedTitle" xml:space="preserve">
+    <value>Successful</value>
+  </data>
+  <data name="applyLabel" xml:space="preserve">
+    <value>&amp;Apply</value>
+  </data>
+  <data name="copiedToClipboardText" xml:space="preserve">
+    <value>The text was copied to the clipboard!</value>
+  </data>
+  <data name="copiedToClipboardTitle" xml:space="preserve">
+    <value>Copied to clipboard</value>
+  </data>
+  <data name="editHostLabel" xml:space="preserve">
+    <value>&amp;Edit host</value>
+  </data>
+  <data name="errorTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="invalidHostnameText" xml:space="preserve">
+    <value>The name of the host are null, empty or a space.</value>
+  </data>
+  <data name="jokeLoadingText" xml:space="preserve">
+    <value>Don't disturb me! I'm loading. ;-)</value>
+  </data>
+  <data name="jokeLoadingTitle" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="loadingFile" xml:space="preserve">
+    <value>Loading file...</value>
+  </data>
+  <data name="loggingFileSavedText" xml:space="preserve">
+    <value>Logging file saved.</value>
+  </data>
+  <data name="loggingFileSavedTitle" xml:space="preserve">
+    <value>Successful</value>
+  </data>
+  <data name="missingDownloadFilesText1" xml:space="preserve">
+    <value>Some files are missing. Please download all files in the main window.</value>
+  </data>
+  <data name="missingDownloadFilesText2" xml:space="preserve">
+    <value>Some files are missing. Please use the download button to download all files.</value>
+  </data>
+  <data name="missingDownloadFilesTitle" xml:space="preserve">
+    <value>Missing files</value>
+  </data>
+  <data name="numberOutOfRangeText" xml:space="preserve">
+    <value>The number is out of range. The number to be entered must be greater than zero and less than the maximum value.</value>
+  </data>
+  <data name="numberOutOfRangeTitle" xml:space="preserve">
+    <value>Number out of range</value>
+  </data>
+  <data name="someFilesNotDowloadedText" xml:space="preserve">
+    <value>Some files couldn't downloaded and decompressed. Read the logged error messages!</value>
+  </data>
+  <data name="someFilesNotDowloadedTitle" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="wrongNumberFormatText" xml:space="preserve">
+    <value>The input is not a natural number. Make sure the input is a natural number, for example: 1, 2, 3, ...</value>
+  </data>
+  <data name="wrongNumberFormatTitle" xml:space="preserve">
+    <value>Wrong number format</value>
+  </data>
 </root>
