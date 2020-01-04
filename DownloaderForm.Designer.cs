@@ -77,8 +77,8 @@
 			this.progressBarDownloadFile.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
 			this.progressBarDownloadFile.TabIndex = 1;
 			this.toolTip.SetToolTip(this.progressBarDownloadFile, "Download progress of the current file");
-			this.progressBarDownloadFile.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.progressBarDownloadFile.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.progressBarDownloadFile.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.progressBarDownloadFile.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// progressBarDownloadFiles
 			// 
@@ -93,8 +93,8 @@
 			this.progressBarDownloadFiles.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
 			this.progressBarDownloadFiles.TabIndex = 3;
 			this.toolTip.SetToolTip(this.progressBarDownloadFiles, "Download progress of all files");
-			this.progressBarDownloadFiles.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.progressBarDownloadFiles.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.progressBarDownloadFiles.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.progressBarDownloadFiles.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBox
 			// 
@@ -116,8 +116,8 @@
 			this.textBox.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
 			this.textBox.Enter += new System.EventHandler(this.SetStatusbar_Enter);
 			this.textBox.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.textBox.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.textBox.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBox.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelDownloadStatus
 			// 
@@ -135,8 +135,8 @@
 			this.toolTip.SetToolTip(this.labelDownloadStatus, "Download status");
 			this.labelDownloadStatus.Enter += new System.EventHandler(this.SetStatusbar_Enter);
 			this.labelDownloadStatus.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelDownloadStatus.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelDownloadStatus.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.labelDownloadStatus.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDownloadStatus.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelFilesDownload
 			// 
@@ -154,8 +154,8 @@
 			this.toolTip.SetToolTip(this.labelFilesDownload, "How many files in progress");
 			this.labelFilesDownload.Enter += new System.EventHandler(this.SetStatusbar_Enter);
 			this.labelFilesDownload.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelFilesDownload.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelFilesDownload.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.labelFilesDownload.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelFilesDownload.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// tableLayoutPanel
 			// 
@@ -195,8 +195,8 @@
 			this.labelDownloadPercent.Visible = false;
 			this.labelDownloadPercent.Enter += new System.EventHandler(this.SetStatusbar_Enter);
 			this.labelDownloadPercent.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelDownloadPercent.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.labelDownloadPercent.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.labelDownloadPercent.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDownloadPercent.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// toolStripContainer
 			// 
@@ -274,8 +274,8 @@
 			this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
 			this.toolStripStatusLabelInfo.Size = new System.Drawing.Size(66, 17);
 			this.toolStripStatusLabelInfo.Text = "info text";
-			this.toolStripStatusLabelInfo.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.toolStripStatusLabelInfo.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.toolStripStatusLabelInfo.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.toolStripStatusLabelInfo.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// toolStripStatusLabelDownloadAnimation
 			// 
@@ -290,8 +290,8 @@
 			this.toolStripStatusLabelDownloadAnimation.Size = new System.Drawing.Size(571, 17);
 			this.toolStripStatusLabelDownloadAnimation.Spring = true;
 			this.toolStripStatusLabelDownloadAnimation.Text = "Download animation";
-			this.toolStripStatusLabelDownloadAnimation.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.toolStripStatusLabelDownloadAnimation.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.toolStripStatusLabelDownloadAnimation.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.toolStripStatusLabelDownloadAnimation.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// toolStrip
 			// 
@@ -325,8 +325,8 @@
 			this.toolStripButtonStartDownload.Size = new System.Drawing.Size(107, 22);
 			this.toolStripButtonStartDownload.Text = "&Start download";
 			this.toolStripButtonStartDownload.Click += new System.EventHandler(this.ToolStripButtonStartDownload_Click);
-			this.toolStripButtonStartDownload.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.toolStripButtonStartDownload.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.toolStripButtonStartDownload.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.toolStripButtonStartDownload.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// toolStripSeparatorDownload
 			// 
@@ -345,8 +345,8 @@
 			this.toolStripLabelHost.Size = new System.Drawing.Size(35, 22);
 			this.toolStripLabelHost.Text = "&Host:";
 			this.toolStripLabelHost.ToolTipText = "Name of the host";
-			this.toolStripLabelHost.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.toolStripLabelHost.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.toolStripLabelHost.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.toolStripLabelHost.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// toolStripTextBoxHost
 			// 
@@ -360,8 +360,8 @@
 			this.toolStripTextBoxHost.ToolTipText = "Name of the host";
 			this.toolStripTextBoxHost.Enter += new System.EventHandler(this.SetStatusbar_Enter);
 			this.toolStripTextBoxHost.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.toolStripTextBoxHost.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.toolStripTextBoxHost.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.toolStripTextBoxHost.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.toolStripTextBoxHost.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// toolStripButtonEditHost
 			// 
@@ -374,8 +374,8 @@
 			this.toolStripButtonEditHost.Size = new System.Drawing.Size(73, 22);
 			this.toolStripButtonEditHost.Text = "&Edit host";
 			this.toolStripButtonEditHost.Click += new System.EventHandler(this.ToolStripButtonEditHost_Click);
-			this.toolStripButtonEditHost.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.toolStripButtonEditHost.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.toolStripButtonEditHost.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.toolStripButtonEditHost.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// toolStripButtonRestoreHost
 			// 
@@ -388,8 +388,8 @@
 			this.toolStripButtonRestoreHost.Size = new System.Drawing.Size(92, 22);
 			this.toolStripButtonRestoreHost.Text = "&Restore host";
 			this.toolStripButtonRestoreHost.Click += new System.EventHandler(this.ToolStripButtonRestoreHost_Click);
-			this.toolStripButtonRestoreHost.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.toolStripButtonRestoreHost.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.toolStripButtonRestoreHost.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.toolStripButtonRestoreHost.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// toolStripButtonSaveLogging
 			// 
@@ -402,8 +402,8 @@
 			this.toolStripButtonSaveLogging.Size = new System.Drawing.Size(95, 22);
 			this.toolStripButtonSaveLogging.Text = "Save &logging";
 			this.toolStripButtonSaveLogging.Click += new System.EventHandler(this.ToolStripButtonSaveLogging_Click);
-			this.toolStripButtonSaveLogging.MouseEnter += new System.EventHandler(this.SetStatusbar_MouseEnter);
-			this.toolStripButtonSaveLogging.MouseLeave += new System.EventHandler(this.ClearStatusbar_MouseLeave);
+			this.toolStripButtonSaveLogging.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.toolStripButtonSaveLogging.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// backgroundWorker
 			// 
