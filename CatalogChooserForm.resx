@@ -139,7 +139,7 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="buttonOpenHipparcosDirectory.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>3</value>
   </data>
   <data name="buttonOpenHipparcosDirectory.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -246,88 +246,88 @@
   <data name="&gt;&gt;buttonInfo.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="buttonOpenTychoCatalog.AccessibleDescription" xml:space="preserve">
-    <value>Open the Tycho Catalog</value>
+  <data name="buttonViewTychoCatalog.AccessibleDescription" xml:space="preserve">
+    <value>View the Tycho Catalog</value>
   </data>
-  <data name="buttonOpenTychoCatalog.AccessibleName" xml:space="preserve">
-    <value>Open the Tycho Catalog</value>
+  <data name="buttonViewTychoCatalog.AccessibleName" xml:space="preserve">
+    <value>View the Tycho Catalog</value>
   </data>
-  <data name="buttonOpenTychoCatalog.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="buttonViewTychoCatalog.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="buttonOpenTychoCatalog.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonViewTychoCatalog.Location" type="System.Drawing.Point, System.Drawing">
     <value>201, 42</value>
   </data>
-  <data name="buttonOpenTychoCatalog.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonViewTychoCatalog.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 23</value>
   </data>
-  <data name="buttonOpenTychoCatalog.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="buttonViewTychoCatalog.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="buttonOpenTychoCatalog.Text" xml:space="preserve">
-    <value>Open</value>
+  <data name="buttonViewTychoCatalog.Text" xml:space="preserve">
+    <value>View</value>
   </data>
-  <data name="buttonOpenTychoCatalog.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="buttonViewTychoCatalog.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="buttonOpenTychoCatalog.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="buttonViewTychoCatalog.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="buttonOpenTychoCatalog.ToolTip" xml:space="preserve">
-    <value>Open the Tycho Catalog</value>
+  <data name="buttonViewTychoCatalog.ToolTip" xml:space="preserve">
+    <value>View the Tycho Catalog</value>
   </data>
-  <data name="&gt;&gt;buttonOpenTychoCatalog.Name" xml:space="preserve">
-    <value>buttonOpenTychoCatalog</value>
+  <data name="&gt;&gt;buttonViewTychoCatalog.Name" xml:space="preserve">
+    <value>buttonViewTychoCatalog</value>
   </data>
-  <data name="&gt;&gt;buttonOpenTychoCatalog.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonViewTychoCatalog.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonOpenTychoCatalog.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonViewTychoCatalog.Parent" xml:space="preserve">
     <value>groupBoxChooseCatalog</value>
   </data>
-  <data name="&gt;&gt;buttonOpenTychoCatalog.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonViewTychoCatalog.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="buttonOpenHipparcosCatalog.AccessibleDescription" xml:space="preserve">
-    <value>Open the Hipparcos Catalog</value>
+  <data name="buttonViewHipparcosCatalog.AccessibleDescription" xml:space="preserve">
+    <value>View the Hipparcos Catalog</value>
   </data>
-  <data name="buttonOpenHipparcosCatalog.AccessibleName" xml:space="preserve">
-    <value>Open the Hipparcos Catalog</value>
+  <data name="buttonViewHipparcosCatalog.AccessibleName" xml:space="preserve">
+    <value>View the Hipparcos Catalog</value>
   </data>
-  <data name="buttonOpenHipparcosCatalog.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="buttonViewHipparcosCatalog.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="buttonOpenHipparcosCatalog.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonViewHipparcosCatalog.Location" type="System.Drawing.Point, System.Drawing">
     <value>201, 11</value>
   </data>
-  <data name="buttonOpenHipparcosCatalog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 23</value>
+  <data name="buttonViewHipparcosCatalog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 23</value>
   </data>
-  <data name="buttonOpenHipparcosCatalog.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonViewHipparcosCatalog.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="buttonOpenHipparcosCatalog.Text" xml:space="preserve">
-    <value>Open</value>
+  <data name="buttonViewHipparcosCatalog.Text" xml:space="preserve">
+    <value>View</value>
   </data>
-  <data name="buttonOpenHipparcosCatalog.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="buttonViewHipparcosCatalog.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="buttonOpenHipparcosCatalog.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="buttonViewHipparcosCatalog.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="buttonOpenHipparcosCatalog.ToolTip" xml:space="preserve">
-    <value>Open the Hipparcos Catalog</value>
+  <data name="buttonViewHipparcosCatalog.ToolTip" xml:space="preserve">
+    <value>View the Hipparcos Catalog</value>
   </data>
-  <data name="&gt;&gt;buttonOpenHipparcosCatalog.Name" xml:space="preserve">
-    <value>buttonOpenHipparcosCatalog</value>
+  <data name="&gt;&gt;buttonViewHipparcosCatalog.Name" xml:space="preserve">
+    <value>buttonViewHipparcosCatalog</value>
   </data>
-  <data name="&gt;&gt;buttonOpenHipparcosCatalog.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonViewHipparcosCatalog.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonOpenHipparcosCatalog.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonViewHipparcosCatalog.Parent" xml:space="preserve">
     <value>groupBoxChooseCatalog</value>
   </data>
-  <data name="&gt;&gt;buttonOpenHipparcosCatalog.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonViewHipparcosCatalog.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="buttonExit.AccessibleDescription" xml:space="preserve">
@@ -411,129 +411,6 @@
   <data name="&gt;&gt;buttonOpenTychoDirectory.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="statusStripText.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>107, 17</value>
-  </metadata>
-  <data name="statusStripText.AccessibleDescription" xml:space="preserve">
-    <value>Status bar with some information</value>
-  </data>
-  <data name="statusStripText.AccessibleName" xml:space="preserve">
-    <value>information status bar</value>
-  </data>
-  <data name="statusStripText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 217</value>
-  </data>
-  <data name="statusStripText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 22</value>
-  </data>
-  <data name="statusStripText.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="statusStripText.Text" xml:space="preserve">
-    <value>statusStrip</value>
-  </data>
-  <data name="&gt;&gt;statusStripText.Name" xml:space="preserve">
-    <value>statusStripText</value>
-  </data>
-  <data name="&gt;&gt;statusStripText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;statusStripText.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;statusStripText.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="toolStripStatusLabelInfo.AccessibleDescription" xml:space="preserve">
-    <value>Text with some information</value>
-  </data>
-  <data name="toolStripStatusLabelInfo.AccessibleName" xml:space="preserve">
-    <value>information text</value>
-  </data>
-  <data name="toolStripStatusLabelInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 17</value>
-  </data>
-  <data name="toolStripStatusLabelInfo.Text" xml:space="preserve">
-    <value>info text</value>
-  </data>
-  <data name="groupBoxChooseCatalog.AccessibleDescription" xml:space="preserve">
-    <value>Group the catalogs</value>
-  </data>
-  <data name="groupBoxChooseCatalog.AccessibleName" xml:space="preserve">
-    <value>catalog chooser grouping</value>
-  </data>
-  <data name="&gt;&gt;buttonDownloadTychoCatalog.Name" xml:space="preserve">
-    <value>buttonDownloadTychoCatalog</value>
-  </data>
-  <data name="&gt;&gt;buttonDownloadTychoCatalog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonDownloadTychoCatalog.Parent" xml:space="preserve">
-    <value>groupBoxChooseCatalog</value>
-  </data>
-  <data name="&gt;&gt;buttonDownloadTychoCatalog.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;buttonDownloadHipparcosCatalog.Name" xml:space="preserve">
-    <value>buttonDownloadHipparcosCatalog</value>
-  </data>
-  <data name="&gt;&gt;buttonDownloadHipparcosCatalog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonDownloadHipparcosCatalog.Parent" xml:space="preserve">
-    <value>groupBoxChooseCatalog</value>
-  </data>
-  <data name="&gt;&gt;buttonDownloadHipparcosCatalog.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelTychoCatalog.Name" xml:space="preserve">
-    <value>labelTychoCatalog</value>
-  </data>
-  <data name="&gt;&gt;labelTychoCatalog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelTychoCatalog.Parent" xml:space="preserve">
-    <value>groupBoxChooseCatalog</value>
-  </data>
-  <data name="&gt;&gt;labelTychoCatalog.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;labelHipparcosCatalog.Name" xml:space="preserve">
-    <value>labelHipparcosCatalog</value>
-  </data>
-  <data name="&gt;&gt;labelHipparcosCatalog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelHipparcosCatalog.Parent" xml:space="preserve">
-    <value>groupBoxChooseCatalog</value>
-  </data>
-  <data name="&gt;&gt;labelHipparcosCatalog.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="groupBoxChooseCatalog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 57</value>
-  </data>
-  <data name="groupBoxChooseCatalog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 76</value>
-  </data>
-  <data name="groupBoxChooseCatalog.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBoxChooseCatalog.Text" xml:space="preserve">
-    <value>Catalogs</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.Name" xml:space="preserve">
-    <value>groupBoxChooseCatalog</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="buttonDownloadTychoCatalog.AccessibleDescription" xml:space="preserve">
     <value>Download the Tycho Catalog</value>
   </data>
@@ -550,7 +427,7 @@
     <value>86, 23</value>
   </data>
   <data name="buttonDownloadTychoCatalog.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="buttonDownloadTychoCatalog.Text" xml:space="preserve">
     <value>Download</value>
@@ -560,6 +437,9 @@
   </data>
   <data name="buttonDownloadTychoCatalog.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
+  </data>
+  <data name="buttonDownloadTychoCatalog.ToolTip" xml:space="preserve">
+    <value>Download the Tycho Catalog</value>
   </data>
   <data name="&gt;&gt;buttonDownloadTychoCatalog.Name" xml:space="preserve">
     <value>buttonDownloadTychoCatalog</value>
@@ -600,6 +480,9 @@
   <data name="buttonDownloadHipparcosCatalog.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
+  <data name="buttonDownloadHipparcosCatalog.ToolTip" xml:space="preserve">
+    <value>Download the Hipparcos Catalog</value>
+  </data>
   <data name="&gt;&gt;buttonDownloadHipparcosCatalog.Name" xml:space="preserve">
     <value>buttonDownloadHipparcosCatalog</value>
   </data>
@@ -611,6 +494,135 @@
   </data>
   <data name="&gt;&gt;buttonDownloadHipparcosCatalog.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="labelApplicationName.AccessibleDescription" xml:space="preserve">
+    <value>Name of the application</value>
+  </data>
+  <data name="labelApplicationName.AccessibleName" xml:space="preserve">
+    <value>Application name</value>
+  </data>
+  <data name="labelApplicationName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelApplicationName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 26.25pt, style=Bold, Underline</value>
+  </data>
+  <data name="labelApplicationName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelApplicationName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 12</value>
+  </data>
+  <data name="labelApplicationName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 42</value>
+  </data>
+  <data name="labelApplicationName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelApplicationName.Text" xml:space="preserve">
+    <value>Hipparcos-DB</value>
+  </data>
+  <data name="labelApplicationName.ToolTip" xml:space="preserve">
+    <value>Name of the application</value>
+  </data>
+  <data name="&gt;&gt;labelApplicationName.Name" xml:space="preserve">
+    <value>labelApplicationName</value>
+  </data>
+  <data name="&gt;&gt;labelApplicationName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelApplicationName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelApplicationName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox.AccessibleDescription" xml:space="preserve">
+    <value>Illustrated image of the Hipparcos  space probe</value>
+  </data>
+  <data name="pictureBox.AccessibleName" xml:space="preserve">
+    <value>Illustrated image of the Hipparcos  space probe</value>
+  </data>
+  <data name="pictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="pictureBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 193</value>
+  </data>
+  <data name="pictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="pictureBox.ToolTip" xml:space="preserve">
+    <value>Illustrated image of the Hipparcos  space probe</value>
+  </data>
+  <data name="&gt;&gt;pictureBox.Name" xml:space="preserve">
+    <value>pictureBox</value>
+  </data>
+  <data name="&gt;&gt;pictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="statusStripText.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 17</value>
+  </metadata>
+  <data name="statusStripText.AccessibleDescription" xml:space="preserve">
+    <value>Status bar with some information</value>
+  </data>
+  <data name="statusStripText.AccessibleName" xml:space="preserve">
+    <value>information status bar</value>
+  </data>
+  <data name="toolStripStatusLabelInfo.AccessibleDescription" xml:space="preserve">
+    <value>Text with some information</value>
+  </data>
+  <data name="toolStripStatusLabelInfo.AccessibleName" xml:space="preserve">
+    <value>information text</value>
+  </data>
+  <data name="toolStripStatusLabelInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 17</value>
+  </data>
+  <data name="toolStripStatusLabelInfo.Text" xml:space="preserve">
+    <value>info text</value>
+  </data>
+  <data name="statusStripText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 217</value>
+  </data>
+  <data name="statusStripText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 22</value>
+  </data>
+  <data name="statusStripText.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="statusStripText.Text" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="&gt;&gt;statusStripText.Name" xml:space="preserve">
+    <value>statusStripText</value>
+  </data>
+  <data name="&gt;&gt;statusStripText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStripText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStripText.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBoxChooseCatalog.AccessibleDescription" xml:space="preserve">
+    <value>Group the catalogs</value>
+  </data>
+  <data name="groupBoxChooseCatalog.AccessibleName" xml:space="preserve">
+    <value>catalog chooser grouping</value>
   </data>
   <data name="labelTychoCatalog.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -625,7 +637,7 @@
     <value>79, 13</value>
   </data>
   <data name="labelTychoCatalog.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="labelTychoCatalog.Text" xml:space="preserve">
     <value>Tycho Catalog:</value>
@@ -672,65 +684,29 @@
   <data name="&gt;&gt;labelHipparcosCatalog.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="labelApplicationName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="groupBoxChooseCatalog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 57</value>
   </data>
-  <data name="labelApplicationName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 26.25pt, style=Bold, Underline</value>
+  <data name="groupBoxChooseCatalog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 76</value>
   </data>
-  <data name="labelApplicationName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelApplicationName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 12</value>
-  </data>
-  <data name="labelApplicationName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 42</value>
-  </data>
-  <data name="labelApplicationName.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="labelApplicationName.Text" xml:space="preserve">
-    <value>Hipparcos-DB</value>
-  </data>
-  <data name="&gt;&gt;labelApplicationName.Name" xml:space="preserve">
-    <value>labelApplicationName</value>
-  </data>
-  <data name="&gt;&gt;labelApplicationName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelApplicationName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelApplicationName.ZOrder" xml:space="preserve">
+  <data name="groupBoxChooseCatalog.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="pictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="groupBoxChooseCatalog.Text" xml:space="preserve">
+    <value>Catalogs</value>
   </data>
-  <data name="pictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+  <data name="&gt;&gt;groupBoxChooseCatalog.Name" xml:space="preserve">
+    <value>groupBoxChooseCatalog</value>
   </data>
-  <data name="pictureBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 193</value>
+  <data name="&gt;&gt;groupBoxChooseCatalog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="pictureBox.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pictureBox.Name" xml:space="preserve">
-    <value>pictureBox</value>
-  </data>
-  <data name="&gt;&gt;pictureBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxChooseCatalog.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;pictureBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;groupBoxChooseCatalog.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

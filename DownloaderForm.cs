@@ -16,12 +16,29 @@ namespace Hipparcos_DB
 	/// </summary>
 	public partial class DownloaderForm : Form
 	{
+		/// <summary>
+		/// Settings
+		/// </summary>
 		private readonly Settings settings = new Settings();
 
-		private string host, catalogDirectory;
+		/// <summary>
+		/// Host
+		/// </summary>
+		private string host;
 
+		/// <summary>
+		/// Catalog directory
+		/// </summary>
+		private string catalogDirectory;
+
+		/// <summary>
+		/// Host files
+		/// </summary>
 		private string[] hostFiles;
 
+		/// <summary>
+		/// Ticks
+		/// </summary>
 		private long ticks;
 
 		/// <summary>
@@ -52,6 +69,9 @@ namespace Hipparcos_DB
 			toolStripTextBoxHost.Text = host;
 		}
 
+		/// <summary>
+		/// Get the host
+		/// </summary>
 		private string GetHost() => host;
 
 		/// <summary>
@@ -60,10 +80,23 @@ namespace Hipparcos_DB
 		/// <param name="directory">path to catalog</param>
 		public void SetCatalogDirectory(string directory) => catalogDirectory = directory;
 
+		/// <summary>
+		/// Get the catalog directory
+		/// </summary>
 		private string GetCatalogDirectory() => catalogDirectory;
 
-		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: ".", comparisonType: StringComparison.CurrentCulture));
+		/// <summary>
+		/// Remove the file extension of a file name
+		/// </summary>
+		/// <param name="filename">file name</param>
+		/// <returns>file name without extension</returns>
+		private static string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: ".", comparisonType: StringComparison.CurrentCulture));
 
+		/// <summary>
+		/// Decomprees a GZ compressed file
+		/// </summary>
+		/// <param name="gzip">GZ compressed file as byte array</param>
+		/// <returns>decompressed file</returns>
 		private static byte[] Decompress(byte[] gzip)
 		{
 			// Create a GZIP stream with decompression mode.
@@ -89,13 +122,182 @@ namespace Hipparcos_DB
 			}
 		}
 
-		private void SetStatusbar(string text)
+		/// <summary>
+		/// Set the information text in the status bar
+		/// </summary>
+		/// <param name="text">information text</param>
+		private void SetStatusbar(string text) => toolStripStatusLabelInfo.Text = text;
+
+		/// <summary>
+		/// Remove the information text in the status bar
+		/// </summary>
+		private void ClearStatusbar() => toolStripStatusLabelInfo.Text = string.Empty;
+
+		/// <summary>
+		/// Show a specified error message
+		/// </summary>
+		/// <param name="message">error message</param>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")]
+		private void ShowFileErrorMessage(string message)
 		{
-			toolStripStatusLabelInfo.Text = text;
-			toolStripStatusLabelInfo.Visible = true;
+			MessageBox.Show(
+				owner: this,
+				text: "Logging file couldn't saved." + Environment.NewLine + Environment.NewLine + "Reason: " + message,
+				caption: Resources.errorTitle,
+				buttons: MessageBoxButtons.OK,
+				icon: MessageBoxIcon.Error,
+				defaultButton: MessageBoxDefaultButton.Button1);
 		}
 
-		private void SetStatusbar(object sender, EventArgs e)
+		/*
+		private void ProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+		{
+			progressBarDownloadFile.Value = e.ProgressPercentage;
+			labelDownloadPercent.Text = e.ProgressPercentage.ToString() + "%";
+			TaskbarProgress.SetValue(windowHandle: Handle, progressValue: e.ProgressPercentage, progressMax: 100);
+		}
+		*/
+
+		/*
+		private void Completed(object sender, AsyncCompletedEventArgs e)
+		{
+			TaskbarProgress.SetValue(windowHandle: Handle, progressValue: 0, progressMax: 100);
+			if (e.Error == null)
+			{
+			}
+			else
+			{
+				if (e.Cancelled)
+				{
+				}
+				else
+				{
+				}
+			}
+		}
+		*/
+
+		#endregion
+
+		#region Don-/Destructor
+
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		public DownloaderForm()
+		{
+			InitializeComponent();
+			switch (settings.UserStartPosition)
+			{
+				case 0: StartPosition = FormStartPosition.CenterParent; break;
+				case 1: StartPosition = FormStartPosition.CenterScreen; break;
+				default: StartPosition = FormStartPosition.CenterParent; break;
+			}
+			toolStripButtonEditHost.Checked = toolStripTextBoxHost.Enabled = !toolStripTextBoxHost.Enabled;
+			toolStripButtonRestoreHost.Enabled = toolStripStatusLabelDownloadAnimation.Visible = toolStripButtonSaveLogging.Enabled = false;
+		}
+
+		#endregion
+
+		#region Form* event handler
+
+		/// <summary>
+		/// Load the main window
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
+		private void DownloaderForm_Load(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+			textBox.BackColor = Color.White;
+			labelFilesDownload.Text = string.Empty;
+			if (settings.UserEnableQuickDownload)
+			{
+				ToolStripButtonStartDownload_Click(sender: sender, e: e);
+			}
+		}
+
+		#endregion
+
+		#region Click event handlers
+
+		/// <summary>
+		/// Enable to edit the host
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
+		private void ToolStripButtonEditHost_Click(object sender, EventArgs e)
+		{
+			toolStripButtonEditHost.Checked = toolStripTextBoxHost.Enabled = !toolStripTextBoxHost.Enabled;
+			if (toolStripButtonEditHost.Checked)
+			{
+				toolStripButtonEditHost.Image = Resources.fugue_tick_button_16px_shadowless;
+				toolStripButtonEditHost.Text = Resources.applyLabel;
+				toolStripButtonRestoreHost.Enabled = true;
+			}
+			else
+			{
+				toolStripButtonEditHost.Image = Resources.fugue_pencil_16px_shadowless;
+				toolStripButtonEditHost.Text = Resources.editHostLabel;
+				settings.UserHostName = toolStripTextBoxHost.Text;
+				settings.Save();
+			}
+		}
+
+		/// <summary>
+		/// Start the download
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
+		private void ToolStripButtonStartDownload_Click(object sender, EventArgs e)
+		{
+			toolStripStatusLabelDownloadAnimation.Visible = true;
+			timerDownloadAnimation.Enabled = true;
+			toolStripButtonStartDownload.Enabled = toolStripTextBoxHost.Enabled = toolStripButtonEditHost.Enabled = toolStripButtonRestoreHost.Enabled = false;
+			labelFilesDownload.Text = string.Empty;
+			if (!Directory.Exists(path: GetCatalogDirectory()))
+			{
+				Directory.CreateDirectory(path: GetCatalogDirectory());
+			}
+			progressBarDownloadFiles.Maximum = hostFiles.Length * 3;
+			SetHost(host: toolStripTextBoxHost.Text);
+			backgroundWorker.RunWorkerAsync();
+		}
+
+		/// <summary>
+		/// Restore the default host
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
+		private void ToolStripButtonRestoreHost_Click(object sender, EventArgs e)
+		{
+			SetHost(host: settings.DefaultHostName);
+			toolStripTextBoxHost.Text = GetHost();
+		}
+
+		/// <summary>
+		/// Save the settings
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
+		private void ToolStripButtonSaveLogging_Click(object sender, EventArgs e) => saveFileDialog.ShowDialog();
+
+		#endregion
+
+		#region Enter event handlers
+
+		/// <summary>
+		/// Set the information text in the status bar while entering a control
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameter <paramref name="e"/> is not needed, but must be indicated.</remarks>
+		private void SetStatusbar_Enter(object sender, EventArgs e)
 		{
 			if (sender is Control control)
 			{
@@ -155,160 +357,29 @@ namespace Hipparcos_DB
 			}
 		}
 
-		private void ClearStatusbar()
-		{
-			toolStripStatusLabelInfo.Text = string.Empty;
-			toolStripStatusLabelInfo.Visible = false;
-		}
-
-		private void SaveFileErrorMessage(string message)
-		{
-			MessageBox.Show(
-					owner: this,
-					text: "Logging file couldn't saved." + Environment.NewLine + Environment.NewLine + "Reason: " + message,
-					caption: Resources.errorTitle,
-					buttons: MessageBoxButtons.OK,
-					icon: MessageBoxIcon.Error,
-					defaultButton: MessageBoxDefaultButton.Button1,
-					options: MessageBoxOptions.DefaultDesktopOnly);
-		}
-
-		/*
-		private void ProgressChanged(object sender, DownloadProgressChangedEventArgs e)
-		{
-			progressBarDownloadFile.Value = e.ProgressPercentage;
-			labelDownloadPercent.Text = e.ProgressPercentage.ToString() + "%";
-			TaskbarProgress.SetValue(windowHandle: Handle, progressValue: e.ProgressPercentage, progressMax: 100);
-		}
-		*/
-
-		/*
-		private void Completed(object sender, AsyncCompletedEventArgs e)
-		{
-			TaskbarProgress.SetValue(windowHandle: Handle, progressValue: 0, progressMax: 100);
-			if (e.Error == null)
-			{
-			}
-			else
-			{
-				if (e.Cancelled)
-				{
-				}
-				else
-				{
-				}
-			}
-		}
-		*/
-
-		#endregion
-
-		#region Don-/Destructor
-
-		/// <summary>
-		/// Constructor
-		/// </summary>
-		public DownloaderForm()
-		{
-			InitializeComponent();
-			switch (settings.UserStartPosition)
-			{
-				case 0: StartPosition = FormStartPosition.CenterParent; break;
-				case 1: StartPosition = FormStartPosition.CenterScreen; break;
-				default: StartPosition = FormStartPosition.CenterParent; break;
-			}
-			toolStripButtonEditHost.Checked = toolStripTextBoxHost.Enabled = !toolStripTextBoxHost.Enabled;
-			toolStripButtonRestoreHost.Enabled = toolStripStatusLabelDownloadAnimation.Visible = toolStripButtonSaveLogging.Enabled = false;
-		}
-
-		#endregion
-
-		#region Form* event handler
-
-		private void DownloaderForm_Load(object sender, EventArgs e)
-		{
-			ClearStatusbar();
-			textBox.BackColor = Color.White;
-			labelFilesDownload.Text = string.Empty;
-			if (settings.UserEnableQuickDownload)
-			{
-				ToolStripButtonStartDownload_Click(sender: sender, e: e);
-			}
-		}
-
-		#endregion
-
-		#region Click event handlers
-
-		private void ToolStripButtonEditHost_Click(object sender, EventArgs e)
-		{
-			toolStripButtonEditHost.Checked = toolStripTextBoxHost.Enabled = !toolStripTextBoxHost.Enabled;
-			if (toolStripButtonEditHost.Checked)
-			{
-				toolStripButtonEditHost.Image = Resources.fugue_tick_button_16px_shadowless;
-				toolStripButtonEditHost.Text = Resources.applyLabel;
-				toolStripButtonRestoreHost.Enabled = true;
-			}
-			else
-			{
-				toolStripButtonEditHost.Image = Resources.fugue_pencil_16px_shadowless;
-				toolStripButtonEditHost.Text = Resources.editHostLabel;
-				settings.UserHostName = toolStripTextBoxHost.Text;
-				settings.Save();
-			}
-		}
-
-		private void ToolStripButtonStartDownload_Click(object sender, EventArgs e)
-		{
-			toolStripStatusLabelDownloadAnimation.Visible = true;
-			timerDownloadAnimation.Enabled = true;
-			toolStripButtonStartDownload.Enabled = toolStripTextBoxHost.Enabled = toolStripButtonEditHost.Enabled = toolStripButtonRestoreHost.Enabled = false;
-			labelFilesDownload.Text = string.Empty;
-			if (!Directory.Exists(path: GetCatalogDirectory()))
-			{
-				Directory.CreateDirectory(path: GetCatalogDirectory());
-			}
-			progressBarDownloadFiles.Maximum = hostFiles.Length * 3;
-			SetHost(host: toolStripTextBoxHost.Text);
-			backgroundWorker.RunWorkerAsync();
-		}
-
-		private void ToolStripButtonRestoreHost_Click(object sender, EventArgs e)
-		{
-			SetHost(host: settings.DefaultHostName);
-			toolStripTextBoxHost.Text = GetHost();
-		}
-
-		private void ToolStripButtonSaveLogging_Click(object sender, EventArgs e) => saveFileDialog.ShowDialog();
-
-		#endregion
-
-		#region Enter event handlers
-
-		private void SetStatusbar_Enter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
-
-		#endregion
-
-		#region MouseEnter event handlers
-
-		private void SetStatusbar_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
-
 		#endregion
 
 		#region Leave event handlers
 
+		/// <summary>
+		/// Clear the information text in the status bar while leaving a control
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
 		private void ClearStatusbar_Leave(object sender, EventArgs e) => ClearStatusbar();
-
-		#endregion
-
-		#region MouseLeave event handlers
-
-		private void ClearStatusbar_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
 		#endregion
 
 		#region File* event handler
 
+		/// <summary>
+		/// Save the logging file
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")]
 		private void SaveFileDialog_FileOk(object sender, CancelEventArgs e)
 		{
 			try
@@ -317,15 +388,15 @@ namespace Hipparcos_DB
 			}
 			catch (ArgumentException exception)
 			{
-				SaveFileErrorMessage(exception.Message);
+				ShowFileErrorMessage(exception.Message);
 			}
 			catch (PathTooLongException exception)
 			{
-				SaveFileErrorMessage(exception.Message);
+				ShowFileErrorMessage(exception.Message);
 			}
 			catch (DirectoryNotFoundException exception)
 			{
-				SaveFileErrorMessage(exception.Message);
+				ShowFileErrorMessage(exception.Message);
 			}
 			finally
 			{
@@ -334,9 +405,8 @@ namespace Hipparcos_DB
 					text: Resources.loggingFileSavedText,
 					caption: Resources.loggingFileSavedTitle,
 					buttons: MessageBoxButtons.OK,
-					icon: MessageBoxIcon.Information,
-					defaultButton: MessageBoxDefaultButton.Button1,
-					options: MessageBoxOptions.DefaultDesktopOnly);
+					icon: MessageBoxIcon.Error,
+					defaultButton: MessageBoxDefaultButton.Button1);
 			}
 		}
 
@@ -344,6 +414,13 @@ namespace Hipparcos_DB
 
 		#region BackgroundWorker event handler
 
+		/// <summary>
+		/// Download the files
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")]
 		private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
 		{
 			progressBarDownloadFile.MarqueeAnimationSpeed = 10;
@@ -362,35 +439,35 @@ namespace Hipparcos_DB
 						url = GetHost() + hostFiles[index];
 						uri = new Uri(uriString: url);
 						webClient.Proxy = null;
-						labelDownloadStatus.Text = "[" + DateTime.Now.ToString(provider: culture) + "] Downloading: " + url;
+						labelDownloadStatus.Text = $"[{DateTime.Now.ToString(provider: culture)}] Downloading: {url}";
 						textBox.AppendText(text: labelDownloadStatus.Text + Environment.NewLine);
 						//progressBarDownloadFile.Value = 0;
 						progressBarDownloadFiles.PerformStep();
-						labelFilesDownload.Text = (index + 1).ToString(provider: culture) + "/" + hostFiles.Length.ToString(provider: culture);
+						labelFilesDownload.Text = $"{(index + 1).ToString(provider: culture)}/{hostFiles.Length.ToString(provider: culture)}";
 						//webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
 						//webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChanged);
 						webClient.DownloadFile(address: uri, fileName: downloadedFile);
 						if (File.Exists(downloadedFile))
 						{
 							fileArray = File.ReadAllBytes(path: downloadedFile);
-							labelDownloadStatus.Text = "[" + DateTime.Now.ToString(provider: culture) + "] Decompress: " + downloadedFile + " -> " + decompressedFile;
+							labelDownloadStatus.Text = $"[{DateTime.Now.ToString(provider: culture)}] Decompress: {downloadedFile} -> {decompressedFile}";
 							textBox.AppendText(text: labelDownloadStatus.Text + Environment.NewLine);
 							progressBarDownloadFiles.PerformStep();
 							File.WriteAllBytes(path: decompressedFile, bytes: Decompress(gzip: fileArray));
-							labelDownloadStatus.Text = "[" + DateTime.Now.ToString(provider: culture) + "] Delete: " + downloadedFile;
+							labelDownloadStatus.Text = $"[{DateTime.Now.ToString(provider: culture)}] Delete: {downloadedFile}";
 							textBox.AppendText(text: labelDownloadStatus.Text + Environment.NewLine + Environment.NewLine);
 							File.Delete(path: downloadedFile);
 							progressBarDownloadFiles.PerformStep();
 						}
 						else
 						{
-							textBox.AppendText(text: "[" + DateTime.Now.ToString(provider: culture) + "] ERROR!!! " + downloadedFile + "couldn't decompressed." + Environment.NewLine + Environment.NewLine);
+							textBox.AppendText(text: $"[{DateTime.Now.ToString(provider: culture)}] ERROR!!! {downloadedFile} couldn't decompressed.{Environment.NewLine}{Environment.NewLine}");
 						}
 					}
 					catch (WebException exception)
 					{
 						downloadWasSuccessful = false;
-						textBox.AppendText(text: "[" + DateTime.Now.ToString(provider: culture) + "] ERROR!!! " + exception.Message + Environment.NewLine + Environment.NewLine);
+						textBox.AppendText(text: $"[{DateTime.Now.ToString(provider: culture)}] ERROR!!! {exception.Message}{Environment.NewLine}{Environment.NewLine}");
 					}
 				}
 				toolStripStatusLabelDownloadAnimation.Visible = timerDownloadAnimation.Enabled = false;
@@ -405,8 +482,7 @@ namespace Hipparcos_DB
 							caption: Resources.allFilesDownloadedTitle,
 							buttons: MessageBoxButtons.OK,
 							icon: MessageBoxIcon.Information,
-							defaultButton: MessageBoxDefaultButton.Button1,
-							options: MessageBoxOptions.DefaultDesktopOnly);
+							defaultButton: MessageBoxDefaultButton.Button1);
 					}
 					Close();
 				}
@@ -419,36 +495,42 @@ namespace Hipparcos_DB
 						caption: Resources.errorTitle,
 						buttons: MessageBoxButtons.OK,
 						icon: MessageBoxIcon.Error,
-						defaultButton: MessageBoxDefaultButton.Button1,
-						options: MessageBoxOptions.DefaultDesktopOnly);
+						defaultButton: MessageBoxDefaultButton.Button1);
 				}
 			}
 		}
 
+		/// <summary>
+		/// Hide the text cursor
+		/// </summary>
+		/// <param name="hWnd">window handler</param>
+		/// <returns>true if hided</returns>
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Interoperability", "CA1414:MarkBooleanPInvokeArgumentsWithMarshalAs")]
 		[DllImport("user32.dll")]
 		private static extern bool HideCaret(IntPtr hWnd);
 
-		private void TextBox_TextChanged(object sender, EventArgs e)
-		{
-			HideCaret(hWnd: textBox.Handle);
-		}
+		/// <summary>
+		/// Hide the text cursor while changed the text in the text box
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
+		private void TextBox_TextChanged(object sender, EventArgs e) => HideCaret(hWnd: textBox.Handle);
 
 		#endregion
 
 		#region Tick event handler
 
+		/// <summary>
+		/// Animate the download icon
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
 		private void TimerDownloadAnimation_Tick(object sender, EventArgs e)
 		{
 			ticks++;
-			if (ticks % 2 == 0)
-			{
-				toolStripStatusLabelDownloadAnimation.Image = Resources.fugue_arrow_270_16px_shadowless;
-			}
-			else
-			{
-				toolStripStatusLabelDownloadAnimation.Image = Resources.fugue_arrow_270_small_16px_shadowless;
-			}
+			toolStripStatusLabelDownloadAnimation.Image = ticks % 2 == 0 ? Resources.fugue_arrow_270_16px_shadowless : Resources.fugue_arrow_270_small_16px_shadowless;
 		}
 
 		#endregion
