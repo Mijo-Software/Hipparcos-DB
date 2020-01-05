@@ -8,8 +8,14 @@ using Hipparcos_DB.Properties;
 
 namespace Hipparcos_DB
 {
+	/// <summary>
+	/// TychoCatalogViewerForm : Form
+	/// </summary>
 	public partial class TychoCatalogViewerForm : Form
 	{
+		/// <summary>
+		/// AstroElement
+		/// </summary>
 		private enum AstroElement
 		{
 			None = 0,
@@ -127,38 +133,35 @@ namespace Hipparcos_DB
 			NotesData
 		}
 
+		/// <summary>
+		/// Settings
+		/// </summary>
 		private readonly Settings settings = new Settings();
 
-		private readonly string[] filesHipparcosCatalog =
-			{
-				"h_dm_com.dat.gz",
-				"h_dm_cor.dat.gz",
-				"hd_notes.doc.gz",
-				"hg_notes.doc.gz",
-				"h_dm_cor.dat.gz",
-				"hip_dm_g.dat.gz",
-				"hip_dm_o.dat.gz",
-				"hip_dm_v.dat.gz",
-				"hip_dm_x.dat.gz",
-				"hip_main.dat.gz",
-				"hip_va_1.dat.gz",
-				"hip_va_2.dat.gz",
-				"hp_auth.doc.gz",
-				"hp_notes.doc.gz",
-				"hp_refs.doc.gz",
-				"solar_ha.dat.gz",
-				"solar_hp.dat.gz",
-				"solar_t.dat.gz"
-			};
-
+		/// <summary>
+		/// True if database is loading
+		/// </summary>
 		private bool isDatabaseLoading = true;
 
-		private string[] catalogEntries = { "" };
+		/// <summary>
+		/// Catalog entries
+		/// </summary>
+		private string[] catalogEntries;
 
-		private uint
-			astrophysicalElement = 0,
-			index = 0,
-			maxIndex = 0;
+		/// <summary>
+		/// Value of the enum of the astrophysical elements
+		/// </summary>
+		private uint astrophysicalElement = 0;
+
+		/// <summary>
+		/// Index variable
+		/// </summary>
+		private uint index = 0;
+
+		/// <summary>
+		/// Maximal value of the index variable
+		/// </summary>
+		private uint maxIndex = 0;
 
 		/// <summary>
 		/// Culture info
@@ -167,8 +170,11 @@ namespace Hipparcos_DB
 
 		#region Local methods
 
-		private string RemoveFileExtension(string filename) => filename.Substring(startIndex: 0, length: filename.LastIndexOf(value: ".", comparisonType: StringComparison.CurrentCulture));
-
+		/// <summary>
+		/// Copy a text to the clipbpard
+		/// </summary>
+		/// <param name="text">text to copy</param>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")]
 		private void CopyToClipboard(string text)
 		{
 			Clipboard.SetText(text: text);
@@ -178,142 +184,160 @@ namespace Hipparcos_DB
 				caption: Resources.copiedToClipboardTitle,
 				buttons: MessageBoxButtons.OK,
 				icon: MessageBoxIcon.Information,
-				defaultButton: MessageBoxDefaultButton.Button1,
-				options: MessageBoxOptions.DefaultDesktopOnly);
+				defaultButton: MessageBoxDefaultButton.Button1);
 		}
 
+		/// <summary>
+		/// Copy a text to the clipboard while entering a control
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameter <paramref name="e"/> is not needed, but must be indicated.</remarks>
 		private void CopyToClipboard(object sender, EventArgs e)
 		{
 			if (sender is Control control)
 			{
-				CopyToClipboard(text: (control).Text);
+				CopyToClipboard(text: control.Text);
 			}
 			else if (sender is ToolStripButton toolStripButton)
 			{
-				CopyToClipboard(text: (toolStripButton).Text);
+				CopyToClipboard(text: toolStripButton.Text);
 			}
 			else if (sender is ToolStripMenuItem toolStripMenuItem)
 			{
-				CopyToClipboard(text: (toolStripMenuItem).Text);
+				CopyToClipboard(text: toolStripMenuItem.Text);
 			}
 			else if (sender is ToolStripLabel toolStripLabel)
 			{
-				CopyToClipboard(text: (toolStripLabel).Text);
+				CopyToClipboard(text: toolStripLabel.Text);
 			}
 			else if (sender is ToolStripComboBox toolStripComboBox)
 			{
-				CopyToClipboard(text: (toolStripComboBox).Text);
+				CopyToClipboard(text: toolStripComboBox.Text);
 			}
 			else if (sender is ToolStripDropDown toolStripDropDown)
 			{
-				CopyToClipboard(text: (toolStripDropDown).Text);
+				CopyToClipboard(text: toolStripDropDown.Text);
 			}
 			else if (sender is ToolStripDropDownButton toolStripDropDownButton)
 			{
-				CopyToClipboard(text: (toolStripDropDownButton).Text);
+				CopyToClipboard(text: toolStripDropDownButton.Text);
 			}
 			else if (sender is ToolStripDropDownItem toolStripDropDownItem)
 			{
-				CopyToClipboard(text: (toolStripDropDownItem).Text);
+				CopyToClipboard(text: toolStripDropDownItem.Text);
 			}
 			else if (sender is ToolStripDropDownMenu toolStripDropDownMenu)
 			{
-				CopyToClipboard(text: (toolStripDropDownMenu).Text);
+				CopyToClipboard(text: toolStripDropDownMenu.Text);
 			}
 			else if (sender is ToolStripProgressBar toolStripProgressBar)
 			{
-				CopyToClipboard(text: (toolStripProgressBar).Text);
+				CopyToClipboard(text: toolStripProgressBar.Text);
 			}
 			else if (sender is ToolStripSplitButton toolStripSplitButton)
 			{
-				CopyToClipboard(text: (toolStripSplitButton).Text);
+				CopyToClipboard(text: toolStripSplitButton.Text);
 			}
 			else if (sender is ToolStripSeparator toolStripSeparator)
 			{
-				CopyToClipboard(text: (toolStripSeparator).Text);
+				CopyToClipboard(text: toolStripSeparator.Text);
 			}
 			else if (sender is ToolStripStatusLabel toolStripStatusLabel)
 			{
-				CopyToClipboard(text: (toolStripStatusLabel).Text);
+				CopyToClipboard(text: toolStripStatusLabel.Text);
 			}
 			else if (sender is ToolStripTextBox toolStripTextBox)
 			{
-				CopyToClipboard(text: (toolStripTextBox).Text);
+				CopyToClipboard(text: toolStripTextBox.Text);
 			}
 		}
 
-		private void SetStatusbar(string text)
-		{
-			toolStripStatusLabelInfo.Visible = true;
-			toolStripStatusLabelInfo.Text = text;
-		}
+		/// <summary>
+		/// Set the information text in the status bar
+		/// </summary>
+		/// <param name="text">text to show</param>
+		private void SetStatusbar(string text) => toolStripStatusLabelInfo.Text = text;
 
+		/// <summary>
+		/// Set the information text in the status bar while entering a control
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameter <paramref name="e"/> is not needed, but must be indicated.</remarks>
 		private void SetStatusbar(object sender, EventArgs e)
 		{
 			if (sender is Control control)
 			{
-				SetStatusbar(text: (control).AccessibleDescription);
+				SetStatusbar(text: control.AccessibleDescription);
 			}
 			else if (sender is ToolStripButton toolStripButton)
 			{
-				SetStatusbar(text: (toolStripButton).AccessibleDescription);
+				SetStatusbar(text: toolStripButton.AccessibleDescription);
 			}
 			else if (sender is ToolStripMenuItem toolStripMenuItem)
 			{
-				SetStatusbar(text: (toolStripMenuItem).AccessibleDescription);
+				SetStatusbar(text: toolStripMenuItem.AccessibleDescription);
 			}
 			else if (sender is ToolStripLabel toolStripLabel)
 			{
-				SetStatusbar(text: (toolStripLabel).AccessibleDescription);
+				SetStatusbar(text: toolStripLabel.AccessibleDescription);
 			}
 			else if (sender is ToolStripComboBox toolStripComboBox)
 			{
-				SetStatusbar(text: (toolStripComboBox).AccessibleDescription);
+				SetStatusbar(text: toolStripComboBox.AccessibleDescription);
 			}
 			else if (sender is ToolStripDropDown toolStripDropDown)
 			{
-				SetStatusbar(text: (toolStripDropDown).AccessibleDescription);
+				SetStatusbar(text: toolStripDropDown.AccessibleDescription);
 			}
 			else if (sender is ToolStripDropDownButton toolStripDropDownButton)
 			{
-				SetStatusbar(text: (toolStripDropDownButton).AccessibleDescription);
+				SetStatusbar(text: toolStripDropDownButton.AccessibleDescription);
 			}
 			else if (sender is ToolStripDropDownItem toolStripDropDownItem)
 			{
-				SetStatusbar(text: (toolStripDropDownItem).AccessibleDescription);
+				SetStatusbar(text: toolStripDropDownItem.AccessibleDescription);
 			}
 			else if (sender is ToolStripDropDownMenu toolStripDropDownMenu)
 			{
-				SetStatusbar(text: (toolStripDropDownMenu).AccessibleDescription);
+				SetStatusbar(text: toolStripDropDownMenu.AccessibleDescription);
 			}
 			else if (sender is ToolStripProgressBar toolStripProgressBar)
 			{
-				SetStatusbar(text: (toolStripProgressBar).AccessibleDescription);
+				SetStatusbar(text: toolStripProgressBar.AccessibleDescription);
 			}
 			else if (sender is ToolStripSplitButton toolStripSplitButton)
 			{
-				SetStatusbar(text: (toolStripSplitButton).AccessibleDescription);
+				SetStatusbar(text: toolStripSplitButton.AccessibleDescription);
 			}
 			else if (sender is ToolStripSeparator toolStripSeparator)
 			{
-				SetStatusbar(text: (toolStripSeparator).AccessibleDescription);
+				SetStatusbar(text: toolStripSeparator.AccessibleDescription);
 			}
 			else if (sender is ToolStripStatusLabel toolStripStatusLabel)
 			{
-				SetStatusbar(text: (toolStripStatusLabel).AccessibleDescription);
+				SetStatusbar(text: toolStripStatusLabel.AccessibleDescription);
 			}
 			else if (sender is ToolStripTextBox toolStripTextBox)
 			{
-				SetStatusbar(text: (toolStripTextBox).AccessibleDescription);
+				SetStatusbar(text: toolStripTextBox.AccessibleDescription);
 			}
 		}
 
-		private void ClearStatusbar()
-		{
-			toolStripStatusLabelInfo.Text = string.Empty;
-			toolStripStatusLabelInfo.Visible = false;
-		}
+		/// <summary>
+		/// Clear the information text in the status bar
+		/// </summary>
+		private void ClearStatusbar() => toolStripStatusLabelInfo.Text = string.Empty;
 
+		/// <summary>
+		/// Set the highlight color to itself and set the information text in the status bar while entering the control
+		/// </summary>
+		/// <param name="astroElemId">id of the astrophysical element</param>
+		/// <param name="labelSelf">label of the astrophysical element</param>
+		/// <param name="color">highlight color</param>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
 		private void SetColorSelfAndSetStatusbar(uint astroElemId, ref Label labelSelf, Color color, object sender, EventArgs e)
 		{
 			if (!isDatabaseLoading)
@@ -327,6 +351,11 @@ namespace Hipparcos_DB
 			}
 		}
 
+		/// <summary>
+		/// Set the color to itself and clear the information text in the status bar while leaving the control
+		/// </summary>
+		/// <param name="labelSelf">label of the astrophysical element</param>
+		/// <param name="color">color</param>
 		private void SetColorSelfAndClearStatusbar(ref Label labelSelf, Color color)
 		{
 			if (!isDatabaseLoading)
@@ -339,7 +368,16 @@ namespace Hipparcos_DB
 			}
 		}
 
-		private void SetColorSelfAndNeighbourAndSetStatusbar(uint astroElemId, ref Label labelSelf, ref Label labelNeighbour, Color color, object sender, EventArgs e)
+		/// <summary>
+		/// Set the highlight color to itself and the neighbor field and set the information text in the status bar while entering the control
+		/// </summary>
+		/// <param name="astroElemId">id of the astrophysical element</param>
+		/// <param name="labelSelf">label of the astrophysical element</param>
+		/// <param name="labelNeighbor">label of the astrophysical element in the neighbor field</param>
+		/// <param name="color">highlight color</param>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		private void SetColorSelfAndNeighborAndSetStatusbar(uint astroElemId, ref Label labelSelf, ref Label labelNeighbor, Color color, object sender, EventArgs e)
 		{
 			if (!isDatabaseLoading)
 			{
@@ -347,29 +385,52 @@ namespace Hipparcos_DB
 				SetStatusbar(sender: sender, e: e);
 				if (settings.UserEnableHoverEffect)
 				{
-					SetColorSelfAndNeighbour(labelSelf: ref labelSelf, labelNeighbour: ref labelNeighbour, color: color);
+					SetColorSelfAndNeighbor(labelSelf: ref labelSelf, labelNeighbor: ref labelNeighbor, color: color);
 				}
 			}
 		}
 
-		private void SetColorSelfAndNeighbourAndClearStatusbar(ref Label labelSelf, ref Label labelNeighbour, Color color)
+		/// <summary>
+		/// Set the color to itself and the neighbor field and clear the information text in the status bar while leaving the control
+		/// </summary>
+		/// <param name="labelSelf">label of the astrophysical element</param>
+		/// <param name="labelNeighbor">label of the astrophysical element in the neighbor field</param>
+		/// <param name="color">color</param>
+		private void SetColorSelfAndNeighborAndClearStatusbar(ref Label labelSelf, ref Label labelNeighbor, Color color)
 		{
 			if (!isDatabaseLoading)
 			{
 				ClearStatusbar();
 				if (settings.UserEnableHoverEffect)
 				{
-					SetColorSelfAndNeighbour(labelSelf: ref labelSelf, labelNeighbour: ref labelNeighbour, color: color);
+					SetColorSelfAndNeighbor(labelSelf: ref labelSelf, labelNeighbor: ref labelNeighbor, color: color);
 				}
 			}
 		}
 
+		/// <summary>
+		/// Set the color to itself
+		/// </summary>
+		/// <param name="labelSelf">label of the astrophysical element</param>
+		/// <param name="color">color</param>
 		private static void SetColorSelf(ref Label labelSelf, Color color) => labelSelf.BackColor = color;
 
-		private static void SetColorSelfAndNeighbour(ref Label labelSelf, ref Label labelNeighbour, Color color) => labelSelf.BackColor = labelNeighbour.BackColor = color;
+		/// <summary>
+		/// Set the color to itself and the neighbor field
+		/// </summary>
+		/// <param name="labelSelf">label of the astrophysical element</param>
+		/// <param name="labelNeighbor">label of the astrophysical element in the neighbor field</param>
+		/// <param name="color">color</param>
+		private static void SetColorSelfAndNeighbor(ref Label labelSelf, ref Label labelNeighbor, Color color) => labelSelf.BackColor = labelNeighbor.BackColor = color;
 
+		/// <summary>
+		/// Update the index label
+		/// </summary>
 		private void UpdateIndexLabel() => toolStripTextBoxGoToIndex.Text = index.ToString(provider: culture);
 
+		/// <summary>
+		/// Check if the index is the minimum
+		/// </summary>
 		private void CheckIndexMinimum()
 		{
 			if (index < 1 || index > maxIndex)
@@ -378,6 +439,9 @@ namespace Hipparcos_DB
 			}
 		}
 
+		/// <summary>
+		/// Check if the index is the maximum
+		/// </summary>
 		private void CheckIndexMaximum()
 		{
 			if (index > maxIndex)
@@ -386,6 +450,9 @@ namespace Hipparcos_DB
 			}
 		}
 
+		/// <summary>
+		/// Show all astrophysical elements of the index
+		/// </summary>
 		private void ShowEntriesOnIndex()
 		{
 			labelCatalogData.Text = catalogEntries[index - 1].Substring(startIndex: 0, length: 1); //.Trim();
@@ -446,6 +513,10 @@ namespace Hipparcos_DB
 			labelNotesData.Text = catalogEntries[index - 1].Substring(startIndex: 349, length: 1); //.Trim();
 		}
 
+		/// <summary>
+		/// Go the a specified index number
+		/// </summary>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")]
 		private void GoToIndex()
 		{
 			if (int.TryParse(s: toolStripTextBoxGoToIndex.Text, result: out int tempIndex))
@@ -458,12 +529,11 @@ namespace Hipparcos_DB
 						caption: Resources.numberOutOfRangeTitle,
 						buttons: MessageBoxButtons.OK,
 						icon: MessageBoxIcon.Error,
-						defaultButton: MessageBoxDefaultButton.Button1,
-						options: MessageBoxOptions.DefaultDesktopOnly);
+						defaultButton: MessageBoxDefaultButton.Button1);
 				}
 				else
 				{
-					index = Convert.ToUInt32(tempIndex);
+					index = Convert.ToUInt32(value: tempIndex);
 					UpdateIndexLabel();
 					ShowEntriesOnIndex();
 				}
@@ -476,11 +546,14 @@ namespace Hipparcos_DB
 					caption: Resources.wrongNumberFormatTitle,
 					buttons: MessageBoxButtons.OK,
 					icon: MessageBoxIcon.Error,
-					defaultButton: MessageBoxDefaultButton.Button1,
-					options: MessageBoxOptions.DefaultDesktopOnly);
+					defaultButton: MessageBoxDefaultButton.Button1);
 			}
 		}
 
+		/// <summary>
+		/// Set a double buffer to a specified control
+		/// </summary>
+		/// <param name="control">double buffered control</param>
 		private static void SetDoubleBuffered(Control control)
 		{
 			if (SystemInformation.TerminalServerSession)
@@ -519,11 +592,16 @@ namespace Hipparcos_DB
 
 		#region Form* event handlers
 
+		/// <summary>
+		/// Load the window
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
 		private void TychoCatalogViewerForm_Load(object sender, EventArgs e)
 		{
 			switch (settings.UserEnableHoverEffect)
 			{
-				case true:
 				default:
 					toolStripButtonChangeHoverEffect.Checked = true;
 					toolStripButtonChangeHoverEffect.Image = Resources.fugue_table_select_row_16px_shadowless;
@@ -535,7 +613,6 @@ namespace Hipparcos_DB
 			}
 			switch (settings.UserDataTableStyle)
 			{
-				case 0:
 				default:
 					tableLayoutPanel.CellBorderStyle = TableLayoutPanelCellBorderStyle.OutsetDouble;
 					break;
@@ -547,12 +624,25 @@ namespace Hipparcos_DB
 			backgroundWorker.RunWorkerAsync();
 		}
 
+		/// <summary>
+		/// Save the settings while closing the window
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
 		private void TychoCatalogViewerForm_FormClosing(object sender, FormClosingEventArgs e) => settings.Save();
 
 		#endregion
 
 		#region BackgroundWorker event handler
 
+		/// <summary>
+		/// Load the Hipparcos-DB in background
+		/// </summary>
+		/// <param name="sender">object sender</param>
+		/// <param name="e">event arguments</param>
+		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")]
 		private void BackgroundWorker_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
 		{
 			string dataFile = settings.UserHipparcosCatalogDirectory + "tyc_main.dat";
@@ -579,8 +669,7 @@ namespace Hipparcos_DB
 					caption: Resources.missingDownloadFilesTitle,
 					buttons: MessageBoxButtons.OK,
 					icon: MessageBoxIcon.Error,
-					defaultButton: MessageBoxDefaultButton.Button1,
-					options: MessageBoxOptions.DefaultDesktopOnly);
+					defaultButton: MessageBoxDefaultButton.Button1);
 				Close();
 			}
 		}
@@ -1084,229 +1173,229 @@ namespace Hipparcos_DB
 
 		private void ToolStripButtonChangeHoverEffect_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
-		private void LabelCatalogDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CatalogDesc, labelSelf: ref labelCatalogDesc, labelNeighbour: ref labelCatalogData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCatalogDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CatalogDesc, labelSelf: ref labelCatalogDesc, labelNeighbor: ref labelCatalogData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCatalogData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CatalogData, labelSelf: ref labelCatalogDesc, labelNeighbour: ref labelCatalogData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCatalogData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CatalogData, labelSelf: ref labelCatalogDesc, labelNeighbor: ref labelCatalogData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelIdentifierDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.IdentifierDesc, labelSelf: ref labelIdentifierDesc, labelNeighbour: ref labelIdentifierData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelIdentifierDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.IdentifierDesc, labelSelf: ref labelIdentifierDesc, labelNeighbor: ref labelIdentifierData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelIdentifierData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.IdentifierData, labelSelf: ref labelIdentifierDesc, labelNeighbour: ref labelIdentifierData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelIdentifierData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.IdentifierData, labelSelf: ref labelIdentifierDesc, labelNeighbor: ref labelIdentifierData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelProximityFlagDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProximityFlagDesc, labelSelf: ref labelProximityFlagDesc, labelNeighbour: ref labelProximityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelProximityFlagDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.ProximityFlagDesc, labelSelf: ref labelProximityFlagDesc, labelNeighbor: ref labelProximityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelProximityFlagData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProximityFlagData, labelSelf: ref labelProximityFlagDesc, labelNeighbour: ref labelProximityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelProximityFlagData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.ProximityFlagData, labelSelf: ref labelProximityFlagDesc, labelNeighbor: ref labelProximityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.RightAscensionDesc, labelSelf: ref labelRightAscensionDesc, labelNeighbour: ref labelRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.RightAscensionDesc, labelSelf: ref labelRightAscensionDesc, labelNeighbor: ref labelRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.RightAscensionData, labelSelf: ref labelRightAscensionDesc, labelNeighbour: ref labelRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.RightAscensionData, labelSelf: ref labelRightAscensionDesc, labelNeighbor: ref labelRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeclinationDesc, labelSelf: ref labelDeclinationDesc, labelNeighbour: ref labelDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.DeclinationDesc, labelSelf: ref labelDeclinationDesc, labelNeighbor: ref labelDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeclinationData, labelSelf: ref labelDeclinationDesc, labelNeighbour: ref labelDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.DeclinationData, labelSelf: ref labelDeclinationDesc, labelNeighbor: ref labelDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelMagnitudeJohnsonDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeJohnsonDesc, labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbour: ref labelMagnitudeJohnsonData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelMagnitudeJohnsonDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeJohnsonDesc, labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbor: ref labelMagnitudeJohnsonData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelMagnitudeJohnsonData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeJohnsonData, labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbour: ref labelMagnitudeJohnsonData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelMagnitudeJohnsonData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.MagnitudeJohnsonData, labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbor: ref labelMagnitudeJohnsonData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSourceOfMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfMagnitudeDesc, labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbour: ref labelSourceOfMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelSourceOfMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfMagnitudeDesc, labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbor: ref labelSourceOfMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSourceOfMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfMagnitudeData, labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbour: ref labelSourceOfMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelSourceOfMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfMagnitudeData, labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbor: ref labelSourceOfMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelAlphaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.AlphaDesc, labelSelf: ref labelAlphaDesc, labelNeighbour: ref labelAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelAlphaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.AlphaDesc, labelSelf: ref labelAlphaDesc, labelNeighbor: ref labelAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelAlphaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.AlphaData, labelSelf: ref labelAlphaDesc, labelNeighbour: ref labelAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelAlphaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.AlphaData, labelSelf: ref labelAlphaDesc, labelNeighbor: ref labelAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelDeltaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeltaDesc, labelSelf: ref labelDeltaDesc, labelNeighbour: ref labelDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelDeltaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.DeltaDesc, labelSelf: ref labelDeltaDesc, labelNeighbor: ref labelDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelDeltaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DeltaData, labelSelf: ref labelDeltaDesc, labelNeighbour: ref labelDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelDeltaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.DeltaData, labelSelf: ref labelDeltaDesc, labelNeighbor: ref labelDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelReferenceFlagForAstrometryDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForAstrometryDesc, labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbour: ref labelReferenceFlagForAstrometryData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelReferenceFlagForAstrometryDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForAstrometryDesc, labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbor: ref labelReferenceFlagForAstrometryData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelReferenceFlagForAstrometryData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForAstrometryData, labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbour: ref labelReferenceFlagForAstrometryData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelReferenceFlagForAstrometryData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.ReferenceFlagForAstrometryData, labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbor: ref labelReferenceFlagForAstrometryData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.TrigonomicParallaxDesc, labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbour: ref labelTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.TrigonomicParallaxDesc, labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbor: ref labelTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelTrigonomicParallaxData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.TrigonomicParallaxData, labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbour: ref labelTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelTrigonomicParallaxData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.TrigonomicParallaxData, labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbor: ref labelTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelProperMotionAlphaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionAlphaDesc, labelSelf: ref labelProperMotionAlphaDesc, labelNeighbour: ref labelProperMotionAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelProperMotionAlphaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionAlphaDesc, labelSelf: ref labelProperMotionAlphaDesc, labelNeighbor: ref labelProperMotionAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelProperMotionAlphaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionAlphaData, labelSelf: ref labelProperMotionAlphaDesc, labelNeighbour: ref labelProperMotionAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelProperMotionAlphaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionAlphaData, labelSelf: ref labelProperMotionAlphaDesc, labelNeighbor: ref labelProperMotionAlphaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelProperMotionDeltaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionDeltaDesc, labelSelf: ref labelProperMotionDeltaDesc, labelNeighbour: ref labelProperMotionDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelProperMotionDeltaDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionDeltaDesc, labelSelf: ref labelProperMotionDeltaDesc, labelNeighbor: ref labelProperMotionDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelProperMotionDeltaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionDeltaData, labelSelf: ref labelProperMotionDeltaDesc, labelNeighbour: ref labelProperMotionDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelProperMotionDeltaData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.ProperMotionDeltaData, labelSelf: ref labelProperMotionDeltaDesc, labelNeighbor: ref labelProperMotionDeltaData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorRightAscensionDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorRightAscensionDesc, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbor: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorRightAscensionData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorRightAscensionData, labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbor: ref labelStandardErrorRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorDeclinationDesc, labelSelf: ref labelStandardErrorDeclinationDesc, labelNeighbour: ref labelStandardErrorDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorDeclinationDesc, labelSelf: ref labelStandardErrorDeclinationDesc, labelNeighbor: ref labelStandardErrorDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorDeclinationData, labelSelf: ref labelStandardErrorDeclinationDesc, labelNeighbour: ref labelStandardErrorDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorDeclinationData, labelSelf: ref labelStandardErrorDeclinationDesc, labelNeighbor: ref labelStandardErrorDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorTrigonomicParallaxDesc, labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, labelNeighbour: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorTrigonomicParallaxDesc, labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, labelNeighbor: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorTrigonomicParallaxData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorTrigonomicParallaxData, labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, labelNeighbour: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorTrigonomicParallaxData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorTrigonomicParallaxData, labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, labelNeighbor: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorProperMotionRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionRightAscensionDesc, labelSelf: ref labelStandardErrorProperMotionRightAscensionDesc, labelNeighbour: ref labelStandardErrorProperMotionRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorProperMotionRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionRightAscensionDesc, labelSelf: ref labelStandardErrorProperMotionRightAscensionDesc, labelNeighbor: ref labelStandardErrorProperMotionRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorProperMotionRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionRightAscensionData, labelSelf: ref labelStandardErrorProperMotionRightAscensionDesc, labelNeighbour: ref labelStandardErrorProperMotionRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorProperMotionRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionRightAscensionData, labelSelf: ref labelStandardErrorProperMotionRightAscensionDesc, labelNeighbor: ref labelStandardErrorProperMotionRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorProperMotionDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionDeclinationDesc, labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbour: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorProperMotionDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionDeclinationDesc, labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbor: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorProperMotionDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionDeclinationData, labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbour: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorProperMotionDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorProperMotionDeclinationData, labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbor: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationDeclinationByRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationDeclinationByRightAscensionDesc, labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationDeclinationByRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationDeclinationByRightAscensionDesc, labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbor: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationDeclinationByRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationDeclinationByRightAscensionData, labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationDeclinationByRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationDeclinationByRightAscensionData, labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbor: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionDesc, labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionDesc, labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionDesc, labelNeighbor: ref labelCorrelationTrigonomicParallaxByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionData, labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByRightAscensionData, labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionDesc, labelNeighbor: ref labelCorrelationTrigonomicParallaxByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationDesc, labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationDesc, labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationDesc, labelNeighbor: ref labelCorrelationTrigonomicParallaxByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationTrigonomicParallaxByDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationData, labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationTrigonomicParallaxByDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationTrigonomicParallaxByDeclinationData, labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationDesc, labelNeighbor: ref labelCorrelationTrigonomicParallaxByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionDesc, labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionDesc, labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionData, labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByRightAscensionData, labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationDesc, labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationDesc, labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationData, labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByDeclinationData, labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxData, labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionRightAscensionByTrigonomicParallaxData, labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData, labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByRightAscensionData, labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxData, labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByTrigonomicParallaxData, labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionDeclinationByDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionDeclinationByDeclinationData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationData, labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByDeclinationData, labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByProperMotionRightAscensionData, labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CorrelationProperMotionDeclinationByProperMotionRightAscensionData, labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelNumberOfTransitsForAstrometryDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.NumberOfTransitsForAstrometryDesc, labelSelf: ref labelNumberOfTransitsForAstrometryDesc, labelNeighbour: ref labelNumberOfTransitsForAstrometryData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelNumberOfTransitsForAstrometryDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.NumberOfTransitsForAstrometryDesc, labelSelf: ref labelNumberOfTransitsForAstrometryDesc, labelNeighbor: ref labelNumberOfTransitsForAstrometryData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelNumberOfTransitsForAstrometryData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.NumberOfTransitsForAstrometryData, labelSelf: ref labelNumberOfTransitsForAstrometryDesc, labelNeighbour: ref labelNumberOfTransitsForAstrometryData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelNumberOfTransitsForAstrometryData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.NumberOfTransitsForAstrometryData, labelSelf: ref labelNumberOfTransitsForAstrometryDesc, labelNeighbor: ref labelNumberOfTransitsForAstrometryData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelGoodnessOfFitParameterDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.GoodnessOfFitParameterDesc, labelSelf: ref labelGoodnessOfFitParameterDesc, labelNeighbour: ref labelGoodnessOfFitParameterData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelGoodnessOfFitParameterDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.GoodnessOfFitParameterDesc, labelSelf: ref labelGoodnessOfFitParameterDesc, labelNeighbor: ref labelGoodnessOfFitParameterData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelGoodnessOfFitParameterData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.GoodnessOfFitParameterData, labelSelf: ref labelGoodnessOfFitParameterDesc, labelNeighbour: ref labelGoodnessOfFitParameterData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelGoodnessOfFitParameterData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.GoodnessOfFitParameterData, labelSelf: ref labelGoodnessOfFitParameterDesc, labelNeighbor: ref labelGoodnessOfFitParameterData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelHipparcosNumberDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.HipparcosNumberDesc, labelSelf: ref labelHipparcosNumberDesc, labelNeighbour: ref labelHipparcosNumberData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelHipparcosNumberDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.HipparcosNumberDesc, labelSelf: ref labelHipparcosNumberDesc, labelNeighbor: ref labelHipparcosNumberData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelHipparcosNumberData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.HipparcosNumberData, labelSelf: ref labelHipparcosNumberDesc, labelNeighbour: ref labelHipparcosNumberData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelHipparcosNumberData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.HipparcosNumberData, labelSelf: ref labelHipparcosNumberDesc, labelNeighbor: ref labelHipparcosNumberData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelMeanBtMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MeanBtMagnitudeDesc, labelSelf: ref labelMeanBtMagnitudeDesc, labelNeighbour: ref labelMeanBtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelMeanBtMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.MeanBtMagnitudeDesc, labelSelf: ref labelMeanBtMagnitudeDesc, labelNeighbor: ref labelMeanBtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelMeanBtMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MeanBtMagnitudeData, labelSelf: ref labelMeanBtMagnitudeDesc, labelNeighbour: ref labelMeanBtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelMeanBtMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.MeanBtMagnitudeData, labelSelf: ref labelMeanBtMagnitudeDesc, labelNeighbor: ref labelMeanBtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorMeanBtMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanBtMagnitudeDesc, labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorMeanBtMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanBtMagnitudeDesc, labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbor: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorMeanBtMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanBtMagnitudeData, labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorMeanBtMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanBtMagnitudeData, labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbor: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelMeanVtMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MeanVtMagnitudeDesc, labelSelf: ref labelMeanVtMagnitudeDesc, labelNeighbour: ref labelMeanVtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelMeanVtMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.MeanVtMagnitudeDesc, labelSelf: ref labelMeanVtMagnitudeDesc, labelNeighbor: ref labelMeanVtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelMeanVtMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.MeanVtMagnitudeData, labelSelf: ref labelMeanVtMagnitudeDesc, labelNeighbour: ref labelMeanVtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelMeanVtMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.MeanVtMagnitudeData, labelSelf: ref labelMeanVtMagnitudeDesc, labelNeighbor: ref labelMeanVtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorMeanVtMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanVtMagnitudeDesc, labelSelf: ref labelStandardErrorMeanVtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanVtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorMeanVtMagnitudeDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanVtMagnitudeDesc, labelSelf: ref labelStandardErrorMeanVtMagnitudeDesc, labelNeighbor: ref labelStandardErrorMeanVtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorMeanVtMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanVtMagnitudeData, labelSelf: ref labelStandardErrorMeanVtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanVtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorMeanVtMagnitudeData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorMeanVtMagnitudeData, labelSelf: ref labelStandardErrorMeanVtMagnitudeDesc, labelNeighbor: ref labelStandardErrorMeanVtMagnitudeData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSourceOfPhotometryDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfPhotometryDesc, labelSelf: ref labelSourceOfPhotometryDesc, labelNeighbour: ref labelSourceOfPhotometryData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelSourceOfPhotometryDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfPhotometryDesc, labelSelf: ref labelSourceOfPhotometryDesc, labelNeighbor: ref labelSourceOfPhotometryData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSourceOfPhotometryData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfPhotometryData, labelSelf: ref labelSourceOfPhotometryDesc, labelNeighbour: ref labelSourceOfPhotometryData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelSourceOfPhotometryData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfPhotometryData, labelSelf: ref labelSourceOfPhotometryDesc, labelNeighbor: ref labelSourceOfPhotometryData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelJohnsonBvColorDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.JohnsonBvColorDesc, labelSelf: ref labelJohnsonBvColorDesc, labelNeighbour: ref labelJohnsonBvColorData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelJohnsonBvColorDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.JohnsonBvColorDesc, labelSelf: ref labelJohnsonBvColorDesc, labelNeighbor: ref labelJohnsonBvColorData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelJohnsonBvColorData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.JohnsonBvColorData, labelSelf: ref labelJohnsonBvColorDesc, labelNeighbour: ref labelJohnsonBvColorData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelJohnsonBvColorData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.JohnsonBvColorData, labelSelf: ref labelJohnsonBvColorDesc, labelNeighbor: ref labelJohnsonBvColorData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorJohnsonBvColorDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorJohnsonBvColorDesc, labelSelf: ref labelStandardErrorJohnsonBvColorDesc, labelNeighbour: ref labelStandardErrorJohnsonBvColorData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorJohnsonBvColorDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorJohnsonBvColorDesc, labelSelf: ref labelStandardErrorJohnsonBvColorDesc, labelNeighbor: ref labelStandardErrorJohnsonBvColorData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelStandardErrorJohnsonBvColorData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorJohnsonBvColorData, labelSelf: ref labelStandardErrorJohnsonBvColorDesc, labelNeighbour: ref labelStandardErrorJohnsonBvColorData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelStandardErrorJohnsonBvColorData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.StandardErrorJohnsonBvColorData, labelSelf: ref labelStandardErrorJohnsonBvColorDesc, labelNeighbor: ref labelStandardErrorJohnsonBvColorData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelAstrometricQualityFlagDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.AstrometricQualityFlagDesc, labelSelf: ref labelAstrometricQualityFlagDesc, labelNeighbour: ref labelAstrometricQualityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelAstrometricQualityFlagDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.AstrometricQualityFlagDesc, labelSelf: ref labelAstrometricQualityFlagDesc, labelNeighbor: ref labelAstrometricQualityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelAstrometricQualityFlagData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.AstrometricQualityFlagData, labelSelf: ref labelAstrometricQualityFlagDesc, labelNeighbour: ref labelAstrometricQualityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelAstrometricQualityFlagData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.AstrometricQualityFlagData, labelSelf: ref labelAstrometricQualityFlagDesc, labelNeighbor: ref labelAstrometricQualityFlagData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSignalToNoiseRatioOfTheStarImageDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SignalToNoiseRatioOfTheStarImageDesc, labelSelf: ref labelSignalToNoiseRatioOfTheStarImageDesc, labelNeighbour: ref labelSignalToNoiseRatioOfTheStarImageData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelSignalToNoiseRatioOfTheStarImageDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.SignalToNoiseRatioOfTheStarImageDesc, labelSelf: ref labelSignalToNoiseRatioOfTheStarImageDesc, labelNeighbor: ref labelSignalToNoiseRatioOfTheStarImageData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSignalToNoiseRatioOfTheStarImageData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SignalToNoiseRatioOfTheStarImageData, labelSelf: ref labelSignalToNoiseRatioOfTheStarImageDesc, labelNeighbour: ref labelSignalToNoiseRatioOfTheStarImageData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelSignalToNoiseRatioOfTheStarImageData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.SignalToNoiseRatioOfTheStarImageData, labelSelf: ref labelSignalToNoiseRatioOfTheStarImageDesc, labelNeighbor: ref labelSignalToNoiseRatioOfTheStarImageData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSourceOfAstrometricDataDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfAstrometricDataDesc, labelSelf: ref labelSourceOfAstrometricDataDesc, labelNeighbour: ref labelSourceOfAstrometricDataData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelSourceOfAstrometricDataDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfAstrometricDataDesc, labelSelf: ref labelSourceOfAstrometricDataDesc, labelNeighbor: ref labelSourceOfAstrometricDataData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelSourceOfAstrometricDataData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfAstrometricDataData, labelSelf: ref labelSourceOfAstrometricDataDesc, labelNeighbour: ref labelSourceOfAstrometricDataData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelSourceOfAstrometricDataData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.SourceOfAstrometricDataData, labelSelf: ref labelSourceOfAstrometricDataDesc, labelNeighbor: ref labelSourceOfAstrometricDataData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelNumberOfTransitsForPhotometryDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.NumberOfTransitsForPhotometryDesc, labelSelf: ref labelNumberOfTransitsForPhotometryDesc, labelNeighbour: ref labelNumberOfTransitsForPhotometryData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelNumberOfTransitsForPhotometryDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.NumberOfTransitsForPhotometryDesc, labelSelf: ref labelNumberOfTransitsForPhotometryDesc, labelNeighbor: ref labelNumberOfTransitsForPhotometryData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelNumberOfTransitsForPhotometryData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.NumberOfTransitsForPhotometryData, labelSelf: ref labelNumberOfTransitsForPhotometryDesc, labelNeighbour: ref labelNumberOfTransitsForPhotometryData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelNumberOfTransitsForPhotometryData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.NumberOfTransitsForPhotometryData, labelSelf: ref labelNumberOfTransitsForPhotometryDesc, labelNeighbor: ref labelNumberOfTransitsForPhotometryData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelEstimateOfVtmagScatterDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.EstimateOfVtmagScatterDesc, labelSelf: ref labelEstimateOfVtmagScatterDesc, labelNeighbour: ref labelEstimateOfVtmagScatterData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelEstimateOfVtmagScatterDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.EstimateOfVtmagScatterDesc, labelSelf: ref labelEstimateOfVtmagScatterDesc, labelNeighbor: ref labelEstimateOfVtmagScatterData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelEstimateOfVtmagScatterData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.EstimateOfVtmagScatterData, labelSelf: ref labelEstimateOfVtmagScatterDesc, labelNeighbour: ref labelEstimateOfVtmagScatterData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelEstimateOfVtmagScatterData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.EstimateOfVtmagScatterData, labelSelf: ref labelEstimateOfVtmagScatterDesc, labelNeighbor: ref labelEstimateOfVtmagScatterData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelVtmagAtMaximumDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.VtmagAtMaximumDesc, labelSelf: ref labelVtmagAtMaximumDesc, labelNeighbour: ref labelVtmagAtMaximumData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelVtmagAtMaximumDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.VtmagAtMaximumDesc, labelSelf: ref labelVtmagAtMaximumDesc, labelNeighbor: ref labelVtmagAtMaximumData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelVtmagAtMaximumData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.VtmagAtMaximumData, labelSelf: ref labelVtmagAtMaximumDesc, labelNeighbour: ref labelVtmagAtMaximumData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelVtmagAtMaximumData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.VtmagAtMaximumData, labelSelf: ref labelVtmagAtMaximumDesc, labelNeighbor: ref labelVtmagAtMaximumData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelVtmagAtMinimumDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.VtmagAtMinimumDesc, labelSelf: ref labelVtmagAtMinimumDesc, labelNeighbour: ref labelVtmagAtMinimumData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelVtmagAtMinimumDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.VtmagAtMinimumDesc, labelSelf: ref labelVtmagAtMinimumDesc, labelNeighbor: ref labelVtmagAtMinimumData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelVtmagAtMinimumData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.VtmagAtMinimumData, labelSelf: ref labelVtmagAtMinimumDesc, labelNeighbour: ref labelVtmagAtMinimumData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelVtmagAtMinimumData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.VtmagAtMinimumData, labelSelf: ref labelVtmagAtMinimumDesc, labelNeighbor: ref labelVtmagAtMinimumData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelKnownVariabilityFromGcvsNsvDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.KnownVariabilityFromGcvsNsvDesc, labelSelf: ref labelKnownVariabilityFromGcvsNsvDesc, labelNeighbour: ref labelKnownVariabilityFromGcvsNsvData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelKnownVariabilityFromGcvsNsvDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.KnownVariabilityFromGcvsNsvDesc, labelSelf: ref labelKnownVariabilityFromGcvsNsvDesc, labelNeighbor: ref labelKnownVariabilityFromGcvsNsvData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelKnownVariabilityFromGcvsNsvData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.KnownVariabilityFromGcvsNsvData, labelSelf: ref labelKnownVariabilityFromGcvsNsvDesc, labelNeighbour: ref labelKnownVariabilityFromGcvsNsvData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelKnownVariabilityFromGcvsNsvData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.KnownVariabilityFromGcvsNsvData, labelSelf: ref labelKnownVariabilityFromGcvsNsvDesc, labelNeighbor: ref labelKnownVariabilityFromGcvsNsvData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelVariabilityFromTychoDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.VariabilityFromTychoDesc, labelSelf: ref labelVariabilityFromTychoDesc, labelNeighbour: ref labelVariabilityFromTychoData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelVariabilityFromTychoDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.VariabilityFromTychoDesc, labelSelf: ref labelVariabilityFromTychoDesc, labelNeighbor: ref labelVariabilityFromTychoData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelVariabilityFromTychoData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.VariabilityFromTychoData, labelSelf: ref labelVariabilityFromTychoDesc, labelNeighbour: ref labelVariabilityFromTychoData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelVariabilityFromTychoData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.VariabilityFromTychoData, labelSelf: ref labelVariabilityFromTychoDesc, labelNeighbor: ref labelVariabilityFromTychoData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelDuplicityFromTychoDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DuplicityFromTychoDesc, labelSelf: ref labelDuplicityFromTychoDesc, labelNeighbour: ref labelDuplicityFromTychoData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelDuplicityFromTychoDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.DuplicityFromTychoDesc, labelSelf: ref labelDuplicityFromTychoDesc, labelNeighbor: ref labelDuplicityFromTychoData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelDuplicityFromTychoData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.DuplicityFromTychoData, labelSelf: ref labelDuplicityFromTychoDesc, labelNeighbour: ref labelDuplicityFromTychoData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelDuplicityFromTychoData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.DuplicityFromTychoData, labelSelf: ref labelDuplicityFromTychoDesc, labelNeighbor: ref labelDuplicityFromTychoData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelEpochPhotometryInAnnexDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.EpochPhotometryInAnnexDesc, labelSelf: ref labelEpochPhotometryInAnnexDesc, labelNeighbour: ref labelEpochPhotometryInAnnexData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelEpochPhotometryInAnnexDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.EpochPhotometryInAnnexDesc, labelSelf: ref labelEpochPhotometryInAnnexDesc, labelNeighbor: ref labelEpochPhotometryInAnnexData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelEpochPhotometryInAnnexData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.EpochPhotometryInAnnexData, labelSelf: ref labelEpochPhotometryInAnnexDesc, labelNeighbour: ref labelEpochPhotometryInAnnexData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelEpochPhotometryInAnnexData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.EpochPhotometryInAnnexData, labelSelf: ref labelEpochPhotometryInAnnexDesc, labelNeighbor: ref labelEpochPhotometryInAnnexData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCcdmComponentIdentifierDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CcdmComponentIdentifierDesc, labelSelf: ref labelCcdmComponentIdentifierDesc, labelNeighbour: ref labelCcdmComponentIdentifierData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCcdmComponentIdentifierDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CcdmComponentIdentifierDesc, labelSelf: ref labelCcdmComponentIdentifierDesc, labelNeighbor: ref labelCcdmComponentIdentifierData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCcdmComponentIdentifierData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CcdmComponentIdentifierData, labelSelf: ref labelCcdmComponentIdentifierDesc, labelNeighbour: ref labelCcdmComponentIdentifierData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCcdmComponentIdentifierData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CcdmComponentIdentifierData, labelSelf: ref labelCcdmComponentIdentifierDesc, labelNeighbor: ref labelCcdmComponentIdentifierData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelPpmAndSupplementDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.PpmAndSupplementDesc, labelSelf: ref labelPpmAndSupplementDesc, labelNeighbour: ref labelPpmAndSupplementData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelPpmAndSupplementDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.PpmAndSupplementDesc, labelSelf: ref labelPpmAndSupplementDesc, labelNeighbor: ref labelPpmAndSupplementData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelPpmAndSupplementData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.PpmAndSupplementData, labelSelf: ref labelPpmAndSupplementDesc, labelNeighbour: ref labelPpmAndSupplementData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelPpmAndSupplementData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.PpmAndSupplementData, labelSelf: ref labelPpmAndSupplementDesc, labelNeighbor: ref labelPpmAndSupplementData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelHdNumberDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.HdNumberDesc, labelSelf: ref labelHdNumberDesc, labelNeighbour: ref labelHdNumberData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelHdNumberDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.HdNumberDesc, labelSelf: ref labelHdNumberDesc, labelNeighbor: ref labelHdNumberData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelHdNumberData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.HdNumberData, labelSelf: ref labelHdNumberDesc, labelNeighbour: ref labelHdNumberData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelHdNumberData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.HdNumberData, labelSelf: ref labelHdNumberDesc, labelNeighbor: ref labelHdNumberData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelBonnerDmDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.BonnerDmDesc, labelSelf: ref labelBonnerDmDesc, labelNeighbour: ref labelBonnerDmData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelBonnerDmDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.BonnerDmDesc, labelSelf: ref labelBonnerDmDesc, labelNeighbor: ref labelBonnerDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelBonnerDmData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.BonnerDmData, labelSelf: ref labelBonnerDmDesc, labelNeighbour: ref labelBonnerDmData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelBonnerDmData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.BonnerDmData, labelSelf: ref labelBonnerDmDesc, labelNeighbor: ref labelBonnerDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCordobaDmDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CordobaDmDesc, labelSelf: ref labelCordobaDmDesc, labelNeighbour: ref labelCordobaDmData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCordobaDmDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CordobaDmDesc, labelSelf: ref labelCordobaDmDesc, labelNeighbor: ref labelCordobaDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCordobaDmData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CordobaDmData, labelSelf: ref labelCordobaDmDesc, labelNeighbour: ref labelCordobaDmData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCordobaDmData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CordobaDmData, labelSelf: ref labelCordobaDmDesc, labelNeighbor: ref labelCordobaDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCapePhotographicDmDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CapePhotographicDmDesc, labelSelf: ref labelCapePhotographicDmDesc, labelNeighbour: ref labelCapePhotographicDmData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCapePhotographicDmDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CapePhotographicDmDesc, labelSelf: ref labelCapePhotographicDmDesc, labelNeighbor: ref labelCapePhotographicDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelCapePhotographicDmData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.CapePhotographicDmData, labelSelf: ref labelCapePhotographicDmDesc, labelNeighbour: ref labelCapePhotographicDmData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelCapePhotographicDmData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.CapePhotographicDmData, labelSelf: ref labelCapePhotographicDmDesc, labelNeighbor: ref labelCapePhotographicDmData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelNotesDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.NotesDesc, labelSelf: ref labelNotesDesc, labelNeighbour: ref labelNotesData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelNotesDesc_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.NotesDesc, labelSelf: ref labelNotesDesc, labelNeighbor: ref labelNotesData, color: SystemColors.ControlLight, sender: sender, e: e);
 
-		private void LabelNotesData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighbourAndSetStatusbar(astroElemId: (uint)AstroElement.NotesData, labelSelf: ref labelNotesDesc, labelNeighbour: ref labelNotesData, color: SystemColors.ControlLight, sender: sender, e: e);
+		private void LabelNotesData_MouseEnter(object sender, EventArgs e) => SetColorSelfAndNeighborAndSetStatusbar(astroElemId: (uint)AstroElement.NotesData, labelSelf: ref labelNotesDesc, labelNeighbor: ref labelNotesData, color: SystemColors.ControlLight, sender: sender, e: e);
 
 		#endregion
 
@@ -1566,229 +1655,229 @@ namespace Hipparcos_DB
 
 		private void ToolStripButtonChangeHoverEffect_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
-		private void LabelCatalogDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCatalogDesc, labelNeighbour: ref labelCatalogData, color: SystemColors.Control);
+		private void LabelCatalogDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCatalogDesc, labelNeighbor: ref labelCatalogData, color: SystemColors.Control);
 
-		private void LabelCatalogData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCatalogDesc, labelNeighbour: ref labelCatalogData, color: SystemColors.Control);
+		private void LabelCatalogData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCatalogDesc, labelNeighbor: ref labelCatalogData, color: SystemColors.Control);
 
-		private void LabelIdentifierDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelIdentifierDesc, labelNeighbour: ref labelIdentifierData, color: SystemColors.Control);
+		private void LabelIdentifierDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelIdentifierDesc, labelNeighbor: ref labelIdentifierData, color: SystemColors.Control);
 
-		private void LabelIdentifierData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelIdentifierDesc, labelNeighbour: ref labelIdentifierData, color: SystemColors.Control);
+		private void LabelIdentifierData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelIdentifierDesc, labelNeighbor: ref labelIdentifierData, color: SystemColors.Control);
 
-		private void LabelProximityFlagDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProximityFlagDesc, labelNeighbour: ref labelProximityFlagData, color: SystemColors.Control);
+		private void LabelProximityFlagDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelProximityFlagDesc, labelNeighbor: ref labelProximityFlagData, color: SystemColors.Control);
 
-		private void LabelProximityFlagData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProximityFlagDesc, labelNeighbour: ref labelProximityFlagData, color: SystemColors.Control);
+		private void LabelProximityFlagData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelProximityFlagDesc, labelNeighbor: ref labelProximityFlagData, color: SystemColors.Control);
 
-		private void LabelRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelRightAscensionDesc, labelNeighbour: ref labelRightAscensionData, color: SystemColors.Control);
+		private void LabelRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelRightAscensionDesc, labelNeighbor: ref labelRightAscensionData, color: SystemColors.Control);
 
-		private void LabelRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelRightAscensionDesc, labelNeighbour: ref labelRightAscensionData, color: SystemColors.Control);
+		private void LabelRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelRightAscensionDesc, labelNeighbor: ref labelRightAscensionData, color: SystemColors.Control);
 
-		private void LabelDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelDeclinationDesc, labelNeighbour: ref labelDeclinationData, color: SystemColors.Control);
+		private void LabelDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelDeclinationDesc, labelNeighbor: ref labelDeclinationData, color: SystemColors.Control);
 
-		private void LabelDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelDeclinationDesc, labelNeighbour: ref labelDeclinationData, color: SystemColors.Control);
+		private void LabelDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelDeclinationDesc, labelNeighbor: ref labelDeclinationData, color: SystemColors.Control);
 
-		private void LabelMagnitudeJohnsonDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbour: ref labelMagnitudeJohnsonData, color: SystemColors.Control);
+		private void LabelMagnitudeJohnsonDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbor: ref labelMagnitudeJohnsonData, color: SystemColors.Control);
 
-		private void LabelMagnitudeJohnsonData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbour: ref labelMagnitudeJohnsonData, color: SystemColors.Control);
+		private void LabelMagnitudeJohnsonData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelMagnitudeJohnsonDesc, labelNeighbor: ref labelMagnitudeJohnsonData, color: SystemColors.Control);
 
-		private void LabelSourceOfMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbour: ref labelSourceOfMagnitudeData, color: SystemColors.Control);
+		private void LabelSourceOfMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbor: ref labelSourceOfMagnitudeData, color: SystemColors.Control);
 
-		private void LabelSourceOfMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbour: ref labelSourceOfMagnitudeData, color: SystemColors.Control);
+		private void LabelSourceOfMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelSourceOfMagnitudeDesc, labelNeighbor: ref labelSourceOfMagnitudeData, color: SystemColors.Control);
 
-		private void LabelAlphaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAlphaDesc, labelNeighbour: ref labelAlphaData, color: SystemColors.Control);
+		private void LabelAlphaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelAlphaDesc, labelNeighbor: ref labelAlphaData, color: SystemColors.Control);
 
-		private void LabelAlphaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAlphaDesc, labelNeighbour: ref labelAlphaData, color: SystemColors.Control);
+		private void LabelAlphaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelAlphaDesc, labelNeighbor: ref labelAlphaData, color: SystemColors.Control);
 
-		private void LabelDeltaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelDeltaDesc, labelNeighbour: ref labelDeltaData, color: SystemColors.Control);
+		private void LabelDeltaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelDeltaDesc, labelNeighbor: ref labelDeltaData, color: SystemColors.Control);
 
-		private void LabelDeltaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelDeltaDesc, labelNeighbour: ref labelDeltaData, color: SystemColors.Control);
+		private void LabelDeltaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelDeltaDesc, labelNeighbor: ref labelDeltaData, color: SystemColors.Control);
 
-		private void LabelReferenceFlagForAstrometryDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbour: ref labelReferenceFlagForAstrometryData, color: SystemColors.Control);
+		private void LabelReferenceFlagForAstrometryDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbor: ref labelReferenceFlagForAstrometryData, color: SystemColors.Control);
 
-		private void LabelReferenceFlagForAstrometryData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbour: ref labelReferenceFlagForAstrometryData, color: SystemColors.Control);
+		private void LabelReferenceFlagForAstrometryData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelReferenceFlagForAstrometryDesc, labelNeighbor: ref labelReferenceFlagForAstrometryData, color: SystemColors.Control);
 
-		private void LabelTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbour: ref labelTrigonomicParallaxData, color: SystemColors.Control);
+		private void LabelTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbor: ref labelTrigonomicParallaxData, color: SystemColors.Control);
 
-		private void LabelTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbour: ref labelTrigonomicParallaxData, color: SystemColors.Control);
+		private void LabelTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelTrigonomicParallaxDesc, labelNeighbor: ref labelTrigonomicParallaxData, color: SystemColors.Control);
 
-		private void LabelProperMotionAlphaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProperMotionAlphaDesc, labelNeighbour: ref labelProperMotionAlphaData, color: SystemColors.Control);
+		private void LabelProperMotionAlphaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelProperMotionAlphaDesc, labelNeighbor: ref labelProperMotionAlphaData, color: SystemColors.Control);
 
-		private void LabelProperMotionAlphaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProperMotionAlphaDesc, labelNeighbour: ref labelProperMotionAlphaData, color: SystemColors.Control);
+		private void LabelProperMotionAlphaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelProperMotionAlphaDesc, labelNeighbor: ref labelProperMotionAlphaData, color: SystemColors.Control);
 
-		private void LabelProperMotionDeltaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProperMotionDeltaDesc, labelNeighbour: ref labelProperMotionDeltaData, color: SystemColors.Control);
+		private void LabelProperMotionDeltaDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelProperMotionDeltaDesc, labelNeighbor: ref labelProperMotionDeltaData, color: SystemColors.Control);
 
-		private void LabelProperMotionDeltaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelProperMotionDeltaDesc, labelNeighbour: ref labelProperMotionDeltaData, color: SystemColors.Control);
+		private void LabelProperMotionDeltaData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelProperMotionDeltaDesc, labelNeighbor: ref labelProperMotionDeltaData, color: SystemColors.Control);
 
-		private void LabelStandardErrorRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.Control);
+		private void LabelStandardErrorRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbor: ref labelStandardErrorRightAscensionData, color: SystemColors.Control);
 
-		private void LabelStandardErrorRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbour: ref labelStandardErrorRightAscensionData, color: SystemColors.Control);
+		private void LabelStandardErrorRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorRightAscensionDesc, labelNeighbor: ref labelStandardErrorRightAscensionData, color: SystemColors.Control);
 
-		private void LabelStandardErrorDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorDeclinationDesc, labelNeighbour: ref labelStandardErrorDeclinationData, color: SystemColors.Control);
+		private void LabelStandardErrorDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorDeclinationDesc, labelNeighbor: ref labelStandardErrorDeclinationData, color: SystemColors.Control);
 
-		private void LabelStandardErrorDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorDeclinationDesc, labelNeighbour: ref labelStandardErrorDeclinationData, color: SystemColors.Control);
+		private void LabelStandardErrorDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorDeclinationDesc, labelNeighbor: ref labelStandardErrorDeclinationData, color: SystemColors.Control);
 
-		private void LabelStandardErrorTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, labelNeighbour: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.Control);
+		private void LabelStandardErrorTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, labelNeighbor: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.Control);
 
-		private void LabelStandardErrorTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, labelNeighbour: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.Control);
+		private void LabelStandardErrorTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorTrigonomicParallaxDesc, labelNeighbor: ref labelStandardErrorTrigonomicParallaxData, color: SystemColors.Control);
 
-		private void LabelStandardErrorProperMotionRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionRightAscensionDesc, labelNeighbour: ref labelStandardErrorProperMotionRightAscensionData, color: SystemColors.Control);
+		private void LabelStandardErrorProperMotionRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionRightAscensionDesc, labelNeighbor: ref labelStandardErrorProperMotionRightAscensionData, color: SystemColors.Control);
 
-		private void LabelStandardErrorProperMotionRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionRightAscensionDesc, labelNeighbour: ref labelStandardErrorProperMotionRightAscensionData, color: SystemColors.Control);
+		private void LabelStandardErrorProperMotionRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionRightAscensionDesc, labelNeighbor: ref labelStandardErrorProperMotionRightAscensionData, color: SystemColors.Control);
 
-		private void LabelStandardErrorProperMotionDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbour: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.Control);
+		private void LabelStandardErrorProperMotionDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbor: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.Control);
 
-		private void LabelStandardErrorProperMotionDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbour: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.Control);
+		private void LabelStandardErrorProperMotionDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorProperMotionDeclinationDesc, labelNeighbor: ref labelStandardErrorProperMotionDeclinationData, color: SystemColors.Control);
 
-		private void LabelCorrelationDeclinationByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.Control);
+		private void LabelCorrelationDeclinationByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbor: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.Control);
 
-		private void LabelCorrelationDeclinationByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.Control);
+		private void LabelCorrelationDeclinationByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationDeclinationByRightAscensionDesc, labelNeighbor: ref labelCorrelationDeclinationByRightAscensionData, color: SystemColors.Control);
 
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByRightAscensionData, color: SystemColors.Control);
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionDesc, labelNeighbor: ref labelCorrelationTrigonomicParallaxByRightAscensionData, color: SystemColors.Control);
 
-		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByRightAscensionData, color: SystemColors.Control);
+		private void LabelCorrelationTrigonomicParallaxByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByRightAscensionDesc, labelNeighbor: ref labelCorrelationTrigonomicParallaxByRightAscensionData, color: SystemColors.Control);
 
-		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByDeclinationData, color: SystemColors.Control);
+		private void LabelCorrelationTrigonomicParallaxByDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationDesc, labelNeighbor: ref labelCorrelationTrigonomicParallaxByDeclinationData, color: SystemColors.Control);
 
-		private void LabelCorrelationTrigonomicParallaxByDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationDesc, labelNeighbour: ref labelCorrelationTrigonomicParallaxByDeclinationData, color: SystemColors.Control);
+		private void LabelCorrelationTrigonomicParallaxByDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationTrigonomicParallaxByDeclinationDesc, labelNeighbor: ref labelCorrelationTrigonomicParallaxByDeclinationData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByRightAscensionData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByRightAscensionData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByRightAscensionData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionRightAscensionByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByRightAscensionData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByDeclinationData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByDeclinationData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByDeclinationData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionRightAscensionByDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByDeclinationDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByDeclinationData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionRightAscensionByTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, labelNeighbor: ref labelCorrelationProperMotionRightAscensionByTrigonomicParallaxData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByRightAscensionData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByRightAscensionData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByRightAscensionData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionDeclinationByRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByRightAscensionData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionDeclinationByTrigonomicParallaxData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByTrigonomicParallaxData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionDeclinationByDeclinationDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionDeclinationByDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionDeclinationByDeclinationData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByDeclinationDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByDeclinationData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.Control);
 
-		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbour: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.Control);
+		private void LabelCorrelationProperMotionDeclinationByProperMotionRightAscensionData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, labelNeighbor: ref labelCorrelationProperMotionDeclinationByProperMotionRightAscensionData, color: SystemColors.Control);
 
-		private void LabelNumberOfTransitsForAstrometryDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNumberOfTransitsForAstrometryDesc, labelNeighbour: ref labelNumberOfTransitsForAstrometryData, color: SystemColors.Control);
+		private void LabelNumberOfTransitsForAstrometryDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelNumberOfTransitsForAstrometryDesc, labelNeighbor: ref labelNumberOfTransitsForAstrometryData, color: SystemColors.Control);
 
-		private void LabelNumberOfTransitsForAstrometryData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNumberOfTransitsForAstrometryDesc, labelNeighbour: ref labelNumberOfTransitsForAstrometryData, color: SystemColors.Control);
+		private void LabelNumberOfTransitsForAstrometryData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelNumberOfTransitsForAstrometryDesc, labelNeighbor: ref labelNumberOfTransitsForAstrometryData, color: SystemColors.Control);
 
-		private void LabelGoodnessOfFitParameterDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelGoodnessOfFitParameterDesc, labelNeighbour: ref labelGoodnessOfFitParameterData, color: SystemColors.Control);
+		private void LabelGoodnessOfFitParameterDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelGoodnessOfFitParameterDesc, labelNeighbor: ref labelGoodnessOfFitParameterData, color: SystemColors.Control);
 
-		private void LabelGoodnessOfFitParameterData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelGoodnessOfFitParameterDesc, labelNeighbour: ref labelGoodnessOfFitParameterData, color: SystemColors.Control);
+		private void LabelGoodnessOfFitParameterData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelGoodnessOfFitParameterDesc, labelNeighbor: ref labelGoodnessOfFitParameterData, color: SystemColors.Control);
 
-		private void LabelHipparcosNumberDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelHipparcosNumberDesc, labelNeighbour: ref labelHipparcosNumberData, color: SystemColors.Control);
+		private void LabelHipparcosNumberDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelHipparcosNumberDesc, labelNeighbor: ref labelHipparcosNumberData, color: SystemColors.Control);
 
-		private void LabelHipparcosNumberData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelHipparcosNumberDesc, labelNeighbour: ref labelHipparcosNumberData, color: SystemColors.Control);
+		private void LabelHipparcosNumberData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelHipparcosNumberDesc, labelNeighbor: ref labelHipparcosNumberData, color: SystemColors.Control);
 
-		private void LabelMeanBtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMeanBtMagnitudeDesc, labelNeighbour: ref labelMeanBtMagnitudeData, color: SystemColors.Control);
+		private void LabelMeanBtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelMeanBtMagnitudeDesc, labelNeighbor: ref labelMeanBtMagnitudeData, color: SystemColors.Control);
 
-		private void LabelMeanBtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMeanBtMagnitudeDesc, labelNeighbour: ref labelMeanBtMagnitudeData, color: SystemColors.Control);
+		private void LabelMeanBtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelMeanBtMagnitudeDesc, labelNeighbor: ref labelMeanBtMagnitudeData, color: SystemColors.Control);
 
-		private void LabelStandardErrorMeanBtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.Control);
+		private void LabelStandardErrorMeanBtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbor: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.Control);
 
-		private void LabelStandardErrorMeanBtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.Control);
+		private void LabelStandardErrorMeanBtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorMeanBtMagnitudeDesc, labelNeighbor: ref labelStandardErrorMeanBtMagnitudeData, color: SystemColors.Control);
 
-		private void LabelMeanVtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMeanVtMagnitudeDesc, labelNeighbour: ref labelMeanVtMagnitudeData, color: SystemColors.Control);
+		private void LabelMeanVtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelMeanVtMagnitudeDesc, labelNeighbor: ref labelMeanVtMagnitudeData, color: SystemColors.Control);
 
-		private void LabelMeanVtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelMeanVtMagnitudeDesc, labelNeighbour: ref labelMeanVtMagnitudeData, color: SystemColors.Control);
+		private void LabelMeanVtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelMeanVtMagnitudeDesc, labelNeighbor: ref labelMeanVtMagnitudeData, color: SystemColors.Control);
 
-		private void LabelStandardErrorMeanVtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMeanVtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanVtMagnitudeData, color: SystemColors.Control);
+		private void LabelStandardErrorMeanVtMagnitudeDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorMeanVtMagnitudeDesc, labelNeighbor: ref labelStandardErrorMeanVtMagnitudeData, color: SystemColors.Control);
 
-		private void LabelStandardErrorMeanVtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorMeanVtMagnitudeDesc, labelNeighbour: ref labelStandardErrorMeanVtMagnitudeData, color: SystemColors.Control);
+		private void LabelStandardErrorMeanVtMagnitudeData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorMeanVtMagnitudeDesc, labelNeighbor: ref labelStandardErrorMeanVtMagnitudeData, color: SystemColors.Control);
 
-		private void LabelSourceOfPhotometryDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfPhotometryDesc, labelNeighbour: ref labelSourceOfPhotometryData, color: SystemColors.Control);
+		private void LabelSourceOfPhotometryDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelSourceOfPhotometryDesc, labelNeighbor: ref labelSourceOfPhotometryData, color: SystemColors.Control);
 
-		private void LabelSourceOfPhotometryData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfPhotometryDesc, labelNeighbour: ref labelSourceOfPhotometryData, color: SystemColors.Control);
+		private void LabelSourceOfPhotometryData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelSourceOfPhotometryDesc, labelNeighbor: ref labelSourceOfPhotometryData, color: SystemColors.Control);
 
-		private void LabelJohnsonBvColorDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelJohnsonBvColorDesc, labelNeighbour: ref labelJohnsonBvColorData, color: SystemColors.Control);
+		private void LabelJohnsonBvColorDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelJohnsonBvColorDesc, labelNeighbor: ref labelJohnsonBvColorData, color: SystemColors.Control);
 
-		private void LabelJohnsonBvColorData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelJohnsonBvColorDesc, labelNeighbour: ref labelJohnsonBvColorData, color: SystemColors.Control);
+		private void LabelJohnsonBvColorData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelJohnsonBvColorDesc, labelNeighbor: ref labelJohnsonBvColorData, color: SystemColors.Control);
 
-		private void LabelStandardErrorJohnsonBvColorDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorJohnsonBvColorDesc, labelNeighbour: ref labelStandardErrorJohnsonBvColorData, color: SystemColors.Control);
+		private void LabelStandardErrorJohnsonBvColorDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorJohnsonBvColorDesc, labelNeighbor: ref labelStandardErrorJohnsonBvColorData, color: SystemColors.Control);
 
-		private void LabelStandardErrorJohnsonBvColorData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelStandardErrorJohnsonBvColorDesc, labelNeighbour: ref labelStandardErrorJohnsonBvColorData, color: SystemColors.Control);
+		private void LabelStandardErrorJohnsonBvColorData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelStandardErrorJohnsonBvColorDesc, labelNeighbor: ref labelStandardErrorJohnsonBvColorData, color: SystemColors.Control);
 
-		private void LabelAstrometricQualityFlagDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAstrometricQualityFlagDesc, labelNeighbour: ref labelAstrometricQualityFlagData, color: SystemColors.Control);
+		private void LabelAstrometricQualityFlagDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelAstrometricQualityFlagDesc, labelNeighbor: ref labelAstrometricQualityFlagData, color: SystemColors.Control);
 
-		private void LabelAstrometricQualityFlagData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelAstrometricQualityFlagDesc, labelNeighbour: ref labelAstrometricQualityFlagData, color: SystemColors.Control);
+		private void LabelAstrometricQualityFlagData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelAstrometricQualityFlagDesc, labelNeighbor: ref labelAstrometricQualityFlagData, color: SystemColors.Control);
 
-		private void LabelSignalToNoiseRatioOfTheStarImageDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSignalToNoiseRatioOfTheStarImageDesc, labelNeighbour: ref labelSignalToNoiseRatioOfTheStarImageData, color: SystemColors.Control);
+		private void LabelSignalToNoiseRatioOfTheStarImageDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelSignalToNoiseRatioOfTheStarImageDesc, labelNeighbor: ref labelSignalToNoiseRatioOfTheStarImageData, color: SystemColors.Control);
 
-		private void LabelSignalToNoiseRatioOfTheStarImageData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSignalToNoiseRatioOfTheStarImageDesc, labelNeighbour: ref labelSignalToNoiseRatioOfTheStarImageData, color: SystemColors.Control);
+		private void LabelSignalToNoiseRatioOfTheStarImageData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelSignalToNoiseRatioOfTheStarImageDesc, labelNeighbor: ref labelSignalToNoiseRatioOfTheStarImageData, color: SystemColors.Control);
 
-		private void LabelSourceOfAstrometricDataDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfAstrometricDataDesc, labelNeighbour: ref labelSourceOfAstrometricDataData, color: SystemColors.Control);
+		private void LabelSourceOfAstrometricDataDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelSourceOfAstrometricDataDesc, labelNeighbor: ref labelSourceOfAstrometricDataData, color: SystemColors.Control);
 
-		private void LabelSourceOfAstrometricDataData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelSourceOfAstrometricDataDesc, labelNeighbour: ref labelSourceOfAstrometricDataData, color: SystemColors.Control);
+		private void LabelSourceOfAstrometricDataData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelSourceOfAstrometricDataDesc, labelNeighbor: ref labelSourceOfAstrometricDataData, color: SystemColors.Control);
 
-		private void LabelNumberOfTransitsForPhotometryDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNumberOfTransitsForPhotometryDesc, labelNeighbour: ref labelNumberOfTransitsForPhotometryData, color: SystemColors.Control);
+		private void LabelNumberOfTransitsForPhotometryDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelNumberOfTransitsForPhotometryDesc, labelNeighbor: ref labelNumberOfTransitsForPhotometryData, color: SystemColors.Control);
 
-		private void LabelNumberOfTransitsForPhotometryData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNumberOfTransitsForPhotometryDesc, labelNeighbour: ref labelNumberOfTransitsForPhotometryData, color: SystemColors.Control);
+		private void LabelNumberOfTransitsForPhotometryData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelNumberOfTransitsForPhotometryDesc, labelNeighbor: ref labelNumberOfTransitsForPhotometryData, color: SystemColors.Control);
 
-		private void LabelEstimateOfVtmagScatterDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelEstimateOfVtmagScatterDesc, labelNeighbour: ref labelEstimateOfVtmagScatterData, color: SystemColors.Control);
+		private void LabelEstimateOfVtmagScatterDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelEstimateOfVtmagScatterDesc, labelNeighbor: ref labelEstimateOfVtmagScatterData, color: SystemColors.Control);
 
-		private void LabelEstimateOfVtmagScatterData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelEstimateOfVtmagScatterDesc, labelNeighbour: ref labelEstimateOfVtmagScatterData, color: SystemColors.Control);
+		private void LabelEstimateOfVtmagScatterData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelEstimateOfVtmagScatterDesc, labelNeighbor: ref labelEstimateOfVtmagScatterData, color: SystemColors.Control);
 
-		private void LabelVtmagAtMaximumDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelVtmagAtMaximumDesc, labelNeighbour: ref labelVtmagAtMaximumData, color: SystemColors.Control);
+		private void LabelVtmagAtMaximumDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelVtmagAtMaximumDesc, labelNeighbor: ref labelVtmagAtMaximumData, color: SystemColors.Control);
 
-		private void LabelVtmagAtMaximumData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelVtmagAtMaximumDesc, labelNeighbour: ref labelVtmagAtMaximumData, color: SystemColors.Control);
+		private void LabelVtmagAtMaximumData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelVtmagAtMaximumDesc, labelNeighbor: ref labelVtmagAtMaximumData, color: SystemColors.Control);
 
-		private void LabelVtmagAtMinimumDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelVtmagAtMinimumDesc, labelNeighbour: ref labelVtmagAtMinimumData, color: SystemColors.Control);
+		private void LabelVtmagAtMinimumDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelVtmagAtMinimumDesc, labelNeighbor: ref labelVtmagAtMinimumData, color: SystemColors.Control);
 
-		private void LabelVtmagAtMinimumData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelVtmagAtMinimumDesc, labelNeighbour: ref labelVtmagAtMinimumData, color: SystemColors.Control);
+		private void LabelVtmagAtMinimumData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelVtmagAtMinimumDesc, labelNeighbor: ref labelVtmagAtMinimumData, color: SystemColors.Control);
 
-		private void LabelKnownVariabilityFromGcvsNsvDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelKnownVariabilityFromGcvsNsvDesc, labelNeighbour: ref labelKnownVariabilityFromGcvsNsvData, color: SystemColors.Control);
+		private void LabelKnownVariabilityFromGcvsNsvDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelKnownVariabilityFromGcvsNsvDesc, labelNeighbor: ref labelKnownVariabilityFromGcvsNsvData, color: SystemColors.Control);
 
-		private void LabelKnownVariabilityFromGcvsNsvData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelKnownVariabilityFromGcvsNsvDesc, labelNeighbour: ref labelKnownVariabilityFromGcvsNsvData, color: SystemColors.Control);
+		private void LabelKnownVariabilityFromGcvsNsvData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelKnownVariabilityFromGcvsNsvDesc, labelNeighbor: ref labelKnownVariabilityFromGcvsNsvData, color: SystemColors.Control);
 
-		private void LabelVariabilityFromTychoDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelVariabilityFromTychoDesc, labelNeighbour: ref labelVariabilityFromTychoData, color: SystemColors.Control);
+		private void LabelVariabilityFromTychoDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelVariabilityFromTychoDesc, labelNeighbor: ref labelVariabilityFromTychoData, color: SystemColors.Control);
 
-		private void LabelVariabilityFromTychoData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelVariabilityFromTychoDesc, labelNeighbour: ref labelVariabilityFromTychoData, color: SystemColors.Control);
+		private void LabelVariabilityFromTychoData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelVariabilityFromTychoDesc, labelNeighbor: ref labelVariabilityFromTychoData, color: SystemColors.Control);
 
-		private void LabelDuplicityFromTychoDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelDuplicityFromTychoDesc, labelNeighbour: ref labelDuplicityFromTychoData, color: SystemColors.Control);
+		private void LabelDuplicityFromTychoDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelDuplicityFromTychoDesc, labelNeighbor: ref labelDuplicityFromTychoData, color: SystemColors.Control);
 
-		private void LabelDuplicityFromTychoData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelDuplicityFromTychoDesc, labelNeighbour: ref labelDuplicityFromTychoData, color: SystemColors.Control);
+		private void LabelDuplicityFromTychoData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelDuplicityFromTychoDesc, labelNeighbor: ref labelDuplicityFromTychoData, color: SystemColors.Control);
 
-		private void LabelEpochPhotometryInAnnexDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelEpochPhotometryInAnnexDesc, labelNeighbour: ref labelEpochPhotometryInAnnexData, color: SystemColors.Control);
+		private void LabelEpochPhotometryInAnnexDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelEpochPhotometryInAnnexDesc, labelNeighbor: ref labelEpochPhotometryInAnnexData, color: SystemColors.Control);
 
-		private void LabelEpochPhotometryInAnnexData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelEpochPhotometryInAnnexDesc, labelNeighbour: ref labelEpochPhotometryInAnnexData, color: SystemColors.Control);
+		private void LabelEpochPhotometryInAnnexData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelEpochPhotometryInAnnexDesc, labelNeighbor: ref labelEpochPhotometryInAnnexData, color: SystemColors.Control);
 
-		private void LabelCcdmComponentIdentifierDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCcdmComponentIdentifierDesc, labelNeighbour: ref labelCcdmComponentIdentifierData, color: SystemColors.Control);
+		private void LabelCcdmComponentIdentifierDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCcdmComponentIdentifierDesc, labelNeighbor: ref labelCcdmComponentIdentifierData, color: SystemColors.Control);
 
-		private void LabelCcdmComponentIdentifierData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCcdmComponentIdentifierDesc, labelNeighbour: ref labelCcdmComponentIdentifierData, color: SystemColors.Control);
+		private void LabelCcdmComponentIdentifierData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCcdmComponentIdentifierDesc, labelNeighbor: ref labelCcdmComponentIdentifierData, color: SystemColors.Control);
 
-		private void LabelPpmAndSupplementDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelPpmAndSupplementDesc, labelNeighbour: ref labelPpmAndSupplementData, color: SystemColors.Control);
+		private void LabelPpmAndSupplementDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelPpmAndSupplementDesc, labelNeighbor: ref labelPpmAndSupplementData, color: SystemColors.Control);
 
-		private void LabelPpmAndSupplementData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelPpmAndSupplementDesc, labelNeighbour: ref labelPpmAndSupplementData, color: SystemColors.Control);
+		private void LabelPpmAndSupplementData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelPpmAndSupplementDesc, labelNeighbor: ref labelPpmAndSupplementData, color: SystemColors.Control);
 
-		private void LabelHdNumberDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelHdNumberDesc, labelNeighbour: ref labelHdNumberData, color: SystemColors.Control);
+		private void LabelHdNumberDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelHdNumberDesc, labelNeighbor: ref labelHdNumberData, color: SystemColors.Control);
 
-		private void LabelHdNumberData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelHdNumberDesc, labelNeighbour: ref labelHdNumberData, color: SystemColors.Control);
+		private void LabelHdNumberData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelHdNumberDesc, labelNeighbor: ref labelHdNumberData, color: SystemColors.Control);
 
-		private void LabelBonnerDmDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelBonnerDmDesc, labelNeighbour: ref labelBonnerDmData, color: SystemColors.Control);
+		private void LabelBonnerDmDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelBonnerDmDesc, labelNeighbor: ref labelBonnerDmData, color: SystemColors.Control);
 
-		private void LabelBonnerDmData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelBonnerDmDesc, labelNeighbour: ref labelBonnerDmData, color: SystemColors.Control);
+		private void LabelBonnerDmData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelBonnerDmDesc, labelNeighbor: ref labelBonnerDmData, color: SystemColors.Control);
 
-		private void LabelCordobaDmDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCordobaDmDesc, labelNeighbour: ref labelCordobaDmData, color: SystemColors.Control);
+		private void LabelCordobaDmDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCordobaDmDesc, labelNeighbor: ref labelCordobaDmData, color: SystemColors.Control);
 
-		private void LabelCordobaDmData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCordobaDmDesc, labelNeighbour: ref labelCordobaDmData, color: SystemColors.Control);
+		private void LabelCordobaDmData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCordobaDmDesc, labelNeighbor: ref labelCordobaDmData, color: SystemColors.Control);
 
-		private void LabelCapePhotographicDmDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCapePhotographicDmDesc, labelNeighbour: ref labelCapePhotographicDmData, color: SystemColors.Control);
+		private void LabelCapePhotographicDmDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCapePhotographicDmDesc, labelNeighbor: ref labelCapePhotographicDmData, color: SystemColors.Control);
 
-		private void LabelCapePhotographicDmData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelCapePhotographicDmDesc, labelNeighbour: ref labelCapePhotographicDmData, color: SystemColors.Control);
+		private void LabelCapePhotographicDmData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelCapePhotographicDmDesc, labelNeighbor: ref labelCapePhotographicDmData, color: SystemColors.Control);
 
-		private void LabelNotesDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNotesDesc, labelNeighbour: ref labelNotesData, color: SystemColors.Control);
+		private void LabelNotesDesc_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelNotesDesc, labelNeighbor: ref labelNotesData, color: SystemColors.Control);
 
-		private void LabelNotesData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighbourAndClearStatusbar(labelSelf: ref labelNotesDesc, labelNeighbour: ref labelNotesData, color: SystemColors.Control);
+		private void LabelNotesData_MouseLeave(object sender, EventArgs e) => SetColorSelfAndNeighborAndClearStatusbar(labelSelf: ref labelNotesDesc, labelNeighbor: ref labelNotesData, color: SystemColors.Control);
 
 		#endregion
 
@@ -1810,26 +1899,18 @@ namespace Hipparcos_DB
 				case Keys.Left:
 					index--;
 					CheckIndexMinimum();
-					UpdateIndexLabel();
-					ShowEntriesOnIndex();
 					break;
 				case Keys.Right:
 					index++;
 					CheckIndexMaximum();
-					UpdateIndexLabel();
-					ShowEntriesOnIndex();
 					break;
 				case Keys.PageUp:
 					index -= 1000;
 					CheckIndexMinimum();
-					UpdateIndexLabel();
-					ShowEntriesOnIndex();
 					break;
 				case Keys.PageDown:
 					index += 1000;
 					CheckIndexMinimum();
-					UpdateIndexLabel();
-					ShowEntriesOnIndex();
 					break;
 				case Keys.Home:
 					index = 1;
@@ -1838,10 +1919,10 @@ namespace Hipparcos_DB
 					break;
 				case Keys.End:
 					index = maxIndex;
-					UpdateIndexLabel();
-					ShowEntriesOnIndex();
 					break;
 			}
+			UpdateIndexLabel();
+			ShowEntriesOnIndex();
 		}
 
 		#endregion

@@ -60,20 +60,20 @@
 			this.textBoxDescription.AccessibleName = "description";
 			this.textBoxDescription.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
 			this.textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBoxDescription.Location = new System.Drawing.Point(112, 55);
+			this.textBoxDescription.Location = new System.Drawing.Point(131, 59);
 			this.textBoxDescription.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
 			this.textBoxDescription.Multiline = true;
 			this.textBoxDescription.Name = "textBoxDescription";
 			this.textBoxDescription.ReadOnly = true;
 			this.textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.textBoxDescription.Size = new System.Drawing.Size(209, 47);
+			this.textBoxDescription.Size = new System.Drawing.Size(246, 52);
 			this.textBoxDescription.TabIndex = 4;
 			this.textBoxDescription.Text = "description";
 			this.toolTip.SetToolTip(this.textBoxDescription, "description of the application");
-			this.textBoxDescription.Enter += new System.EventHandler(this.TextBoxDescription_Enter);
-			this.textBoxDescription.Leave += new System.EventHandler(this.TextBoxDescription_Leave);
-			this.textBoxDescription.MouseEnter += new System.EventHandler(this.TextBoxDescription_MouseEnter);
-			this.textBoxDescription.MouseLeave += new System.EventHandler(this.TextBoxDescription_MouseLeave);
+			this.textBoxDescription.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDescription.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxDescription.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDescription.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCompanyName
 			// 
@@ -81,19 +81,19 @@
 			this.labelCompanyName.AccessibleName = "company name";
 			this.labelCompanyName.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCompanyName.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCompanyName.Location = new System.Drawing.Point(112, 39);
+			this.labelCompanyName.Location = new System.Drawing.Point(131, 42);
 			this.labelCompanyName.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
 			this.labelCompanyName.MaximumSize = new System.Drawing.Size(0, 17);
 			this.labelCompanyName.Name = "labelCompanyName";
-			this.labelCompanyName.Size = new System.Drawing.Size(209, 13);
+			this.labelCompanyName.Size = new System.Drawing.Size(246, 14);
 			this.labelCompanyName.TabIndex = 3;
 			this.labelCompanyName.Text = "company name";
 			this.labelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCompanyName, "company name of the application");
-			this.labelCompanyName.Enter += new System.EventHandler(this.LabelCompanyName_Enter);
-			this.labelCompanyName.Leave += new System.EventHandler(this.LabelCompanyName_Leave);
-			this.labelCompanyName.MouseEnter += new System.EventHandler(this.LabelCompanyName_MouseEnter);
-			this.labelCompanyName.MouseLeave += new System.EventHandler(this.LabelCompanyName_MouseLeave);
+			this.labelCompanyName.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCompanyName.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCompanyName.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCompanyName.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCopyright
 			// 
@@ -101,19 +101,19 @@
 			this.labelCopyright.AccessibleName = "copyright";
 			this.labelCopyright.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCopyright.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelCopyright.Location = new System.Drawing.Point(112, 26);
+			this.labelCopyright.Location = new System.Drawing.Point(131, 28);
 			this.labelCopyright.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
 			this.labelCopyright.MaximumSize = new System.Drawing.Size(0, 17);
 			this.labelCopyright.Name = "labelCopyright";
-			this.labelCopyright.Size = new System.Drawing.Size(209, 13);
+			this.labelCopyright.Size = new System.Drawing.Size(246, 14);
 			this.labelCopyright.TabIndex = 2;
 			this.labelCopyright.Text = "copyright";
 			this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCopyright, "copyright of the application");
-			this.labelCopyright.Enter += new System.EventHandler(this.LabelCopyright_Enter);
-			this.labelCopyright.Leave += new System.EventHandler(this.LabelCopyright_Leave);
-			this.labelCopyright.MouseEnter += new System.EventHandler(this.LabelCopyright_MouseEnter);
-			this.labelCopyright.MouseLeave += new System.EventHandler(this.LabelCopyright_MouseLeave);
+			this.labelCopyright.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCopyright.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCopyright.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCopyright.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelVersion
 			// 
@@ -121,19 +121,19 @@
 			this.labelVersion.AccessibleName = "version";
 			this.labelVersion.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelVersion.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelVersion.Location = new System.Drawing.Point(112, 13);
+			this.labelVersion.Location = new System.Drawing.Point(131, 14);
 			this.labelVersion.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
 			this.labelVersion.MaximumSize = new System.Drawing.Size(0, 17);
 			this.labelVersion.Name = "labelVersion";
-			this.labelVersion.Size = new System.Drawing.Size(209, 13);
+			this.labelVersion.Size = new System.Drawing.Size(246, 14);
 			this.labelVersion.TabIndex = 1;
 			this.labelVersion.Text = "version";
 			this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelVersion, "version of the application");
-			this.labelVersion.Enter += new System.EventHandler(this.LabelVersion_Enter);
-			this.labelVersion.Leave += new System.EventHandler(this.LabelVersion_Leave);
-			this.labelVersion.MouseEnter += new System.EventHandler(this.LabelVersion_MouseEnter);
-			this.labelVersion.MouseLeave += new System.EventHandler(this.LabelVersion_MouseLeave);
+			this.labelVersion.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelVersion.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelVersion.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelVersion.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelProductName
 			// 
@@ -141,39 +141,40 @@
 			this.labelProductName.AccessibleName = "product name";
 			this.labelProductName.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelProductName.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelProductName.Location = new System.Drawing.Point(112, 0);
+			this.labelProductName.Location = new System.Drawing.Point(131, 0);
 			this.labelProductName.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
 			this.labelProductName.MaximumSize = new System.Drawing.Size(0, 17);
 			this.labelProductName.Name = "labelProductName";
-			this.labelProductName.Size = new System.Drawing.Size(209, 13);
+			this.labelProductName.Size = new System.Drawing.Size(246, 14);
 			this.labelProductName.TabIndex = 0;
 			this.labelProductName.Text = "product name";
 			this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelProductName, "product name of the application");
-			this.labelProductName.Enter += new System.EventHandler(this.LabelProductName_Enter);
-			this.labelProductName.Leave += new System.EventHandler(this.LabelProductName_Leave);
-			this.labelProductName.MouseEnter += new System.EventHandler(this.LabelProductName_MouseEnter);
-			this.labelProductName.MouseLeave += new System.EventHandler(this.LabelProductName_MouseLeave);
+			this.labelProductName.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProductName.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelProductName.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProductName.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// okButton
 			// 
-			this.okButton.AccessibleDescription = "Clock to close the dialog";
-			this.okButton.AccessibleName = "okay button";
+			this.okButton.AccessibleDescription = "Click to close the dialog";
+			this.okButton.AccessibleName = "Okay button";
 			this.okButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
 			this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
 			this.okButton.Image = global::Hipparcos_DB.Properties.Resources.fugue_tick_button_16px_shadowless;
-			this.okButton.Location = new System.Drawing.Point(246, 111);
+			this.okButton.Location = new System.Drawing.Point(302, 124);
 			this.okButton.Name = "okButton";
-			this.okButton.Size = new System.Drawing.Size(75, 23);
+			this.okButton.Size = new System.Drawing.Size(75, 22);
 			this.okButton.TabIndex = 5;
 			this.okButton.Text = "&OK";
 			this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.toolTip.SetToolTip(this.okButton, "OK");
-			this.okButton.Enter += new System.EventHandler(this.OkButton_Enter);
-			this.okButton.MouseEnter += new System.EventHandler(this.OkButton_MouseEnter);
-			this.okButton.MouseLeave += new System.EventHandler(this.OkButton_MouseLeave);
+			this.okButton.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.okButton.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.okButton.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.okButton.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// BottomToolStripPanel
 			// 
@@ -199,7 +200,7 @@
 			this.statusStrip.Name = "statusStrip";
 			this.statusStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
 			this.statusStrip.ShowItemToolTips = true;
-			this.statusStrip.Size = new System.Drawing.Size(324, 22);
+			this.statusStrip.Size = new System.Drawing.Size(380, 22);
 			this.statusStrip.SizingGrip = false;
 			this.statusStrip.TabIndex = 0;
 			this.statusStrip.Text = "statusStrip";
@@ -215,8 +216,8 @@
 			this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
 			this.toolStripStatusLabelInfo.Size = new System.Drawing.Size(66, 17);
 			this.toolStripStatusLabelInfo.Text = "info text";
-			this.toolStripStatusLabelInfo.MouseEnter += new System.EventHandler(this.ToolStripStatusLabel_MouseEnter);
-			this.toolStripStatusLabelInfo.MouseLeave += new System.EventHandler(this.ToolStripStatusLabel_MouseLeave);
+			this.toolStripStatusLabelInfo.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.toolStripStatusLabelInfo.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// TopToolStripPanel
 			// 
@@ -286,7 +287,7 @@
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.14598F));
 			this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.89781F));
-			this.tableLayoutPanel.Size = new System.Drawing.Size(324, 137);
+			this.tableLayoutPanel.Size = new System.Drawing.Size(380, 149);
 			this.tableLayoutPanel.TabIndex = 0;
 			this.tableLayoutPanel.TabStop = true;
 			// 
@@ -300,11 +301,12 @@
 			this.logoPictureBox.Location = new System.Drawing.Point(3, 3);
 			this.logoPictureBox.Name = "logoPictureBox";
 			this.tableLayoutPanel.SetRowSpan(this.logoPictureBox, 6);
-			this.logoPictureBox.Size = new System.Drawing.Size(100, 131);
+			this.logoPictureBox.Size = new System.Drawing.Size(119, 143);
 			this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.logoPictureBox.TabIndex = 12;
 			this.logoPictureBox.TabStop = false;
-			this.logoPictureBox.MouseEnter += new System.EventHandler(this.LogoPictureBox_MouseEnter);
+			this.logoPictureBox.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.logoPictureBox.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// toolStripContainer
 			// 
@@ -325,7 +327,7 @@
 			this.toolStripContainer.ContentPanel.AccessibleName = "content panel of the container";
 			this.toolStripContainer.ContentPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
 			this.toolStripContainer.ContentPanel.Controls.Add(this.tableLayoutPanel);
-			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(324, 137);
+			this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(380, 149);
 			this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
 			// 
 			// toolStripContainer.LeftToolStripPanel
@@ -341,7 +343,7 @@
 			this.toolStripContainer.RightToolStripPanel.AccessibleDescription = "right part of the container";
 			this.toolStripContainer.RightToolStripPanel.AccessibleName = "right part of the container";
 			this.toolStripContainer.RightToolStripPanel.AccessibleRole = System.Windows.Forms.AccessibleRole.Pane;
-			this.toolStripContainer.Size = new System.Drawing.Size(324, 159);
+			this.toolStripContainer.Size = new System.Drawing.Size(380, 171);
 			this.toolStripContainer.TabIndex = 3;
 			this.toolStripContainer.Text = "toolStripContainer";
 			// 
@@ -359,7 +361,7 @@
 			this.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(324, 159);
+			this.ClientSize = new System.Drawing.Size(380, 171);
 			this.Controls.Add(this.toolStripContainer);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

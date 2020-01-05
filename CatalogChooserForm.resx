@@ -538,10 +538,10 @@
     <value>1</value>
   </data>
   <data name="pictureBox.AccessibleDescription" xml:space="preserve">
-    <value>Illustrated image of the Hipparcos  space probe</value>
+    <value>Illustrated image of the Hipparcos space probe</value>
   </data>
   <data name="pictureBox.AccessibleName" xml:space="preserve">
-    <value>Illustrated image of the Hipparcos  space probe</value>
+    <value>Illustrated image of the Hipparcos space probe</value>
   </data>
   <data name="pictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -559,7 +559,7 @@
     <value>4</value>
   </data>
   <data name="pictureBox.ToolTip" xml:space="preserve">
-    <value>Illustrated image of the Hipparcos  space probe</value>
+    <value>Illustrated image of the Hipparcos space probe</value>
   </data>
   <data name="&gt;&gt;pictureBox.Name" xml:space="preserve">
     <value>pictureBox</value>
@@ -581,18 +581,6 @@
   </data>
   <data name="statusStripText.AccessibleName" xml:space="preserve">
     <value>information status bar</value>
-  </data>
-  <data name="toolStripStatusLabelInfo.AccessibleDescription" xml:space="preserve">
-    <value>Text with some information</value>
-  </data>
-  <data name="toolStripStatusLabelInfo.AccessibleName" xml:space="preserve">
-    <value>information text</value>
-  </data>
-  <data name="toolStripStatusLabelInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 17</value>
-  </data>
-  <data name="toolStripStatusLabelInfo.Text" xml:space="preserve">
-    <value>info text</value>
   </data>
   <data name="statusStripText.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 217</value>
@@ -618,11 +606,71 @@
   <data name="&gt;&gt;statusStripText.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="toolStripStatusLabelInfo.AccessibleDescription" xml:space="preserve">
+    <value>Text with some information</value>
+  </data>
+  <data name="toolStripStatusLabelInfo.AccessibleName" xml:space="preserve">
+    <value>information text</value>
+  </data>
+  <data name="toolStripStatusLabelInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 17</value>
+  </data>
+  <data name="toolStripStatusLabelInfo.Text" xml:space="preserve">
+    <value>info text</value>
+  </data>
   <data name="groupBoxChooseCatalog.AccessibleDescription" xml:space="preserve">
     <value>Group the catalogs</value>
   </data>
   <data name="groupBoxChooseCatalog.AccessibleName" xml:space="preserve">
     <value>catalog chooser grouping</value>
+  </data>
+  <data name="&gt;&gt;labelTychoCatalog.Name" xml:space="preserve">
+    <value>labelTychoCatalog</value>
+  </data>
+  <data name="&gt;&gt;labelTychoCatalog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTychoCatalog.Parent" xml:space="preserve">
+    <value>groupBoxChooseCatalog</value>
+  </data>
+  <data name="&gt;&gt;labelTychoCatalog.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelHipparcosCatalog.Name" xml:space="preserve">
+    <value>labelHipparcosCatalog</value>
+  </data>
+  <data name="&gt;&gt;labelHipparcosCatalog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelHipparcosCatalog.Parent" xml:space="preserve">
+    <value>groupBoxChooseCatalog</value>
+  </data>
+  <data name="&gt;&gt;labelHipparcosCatalog.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBoxChooseCatalog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 57</value>
+  </data>
+  <data name="groupBoxChooseCatalog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>307, 76</value>
+  </data>
+  <data name="groupBoxChooseCatalog.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxChooseCatalog.Text" xml:space="preserve">
+    <value>Catalogs</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalog.Name" xml:space="preserve">
+    <value>groupBoxChooseCatalog</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalog.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxChooseCatalog.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="labelTychoCatalog.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -683,30 +731,6 @@
   </data>
   <data name="&gt;&gt;labelHipparcosCatalog.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="groupBoxChooseCatalog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 57</value>
-  </data>
-  <data name="groupBoxChooseCatalog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 76</value>
-  </data>
-  <data name="groupBoxChooseCatalog.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBoxChooseCatalog.Text" xml:space="preserve">
-    <value>Catalogs</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.Name" xml:space="preserve">
-    <value>groupBoxChooseCatalog</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxChooseCatalog.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

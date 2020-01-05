@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Windows.Forms;
 using Hipparcos_DB.Properties;
+using Office2007Rendering;
 
 namespace Hipparcos_DB
 {
@@ -174,7 +175,11 @@ namespace Hipparcos_DB
 		/// <param name="sender">object sender</param>
 		/// <param name="e">event arguments</param>
 		/// <remarks>The parameters <paramref name="sender"/> and <paramref name="e"/> are not needed, but must be indicated.</remarks>
-		private void CatalogChooserForm_Load(object sender, EventArgs e) => ClearStatusbar();
+		private void CatalogChooserForm_Load(object sender, EventArgs e)
+		{
+			ClearStatusbar();
+			ToolStripManager.Renderer = new Office2007Renderer();
+		}
 
 		#endregion
 
@@ -330,59 +335,59 @@ namespace Hipparcos_DB
 		{
 			if (sender is Control control)
 			{
-				SetStatusbar(text: (control).AccessibleDescription);
+				SetStatusbar(text: control.AccessibleDescription);
 			}
 			else if (sender is ToolStripButton toolStripButton)
 			{
-				SetStatusbar(text: (toolStripButton).AccessibleDescription);
+				SetStatusbar(text: toolStripButton.AccessibleDescription);
 			}
 			else if (sender is ToolStripMenuItem toolStripMenuItem)
 			{
-				SetStatusbar(text: (toolStripMenuItem).AccessibleDescription);
+				SetStatusbar(text: toolStripMenuItem.AccessibleDescription);
 			}
 			else if (sender is ToolStripLabel toolStripLabel)
 			{
-				SetStatusbar(text: (toolStripLabel).AccessibleDescription);
+				SetStatusbar(text: toolStripLabel.AccessibleDescription);
 			}
 			else if (sender is ToolStripComboBox toolStripComboBox)
 			{
-				SetStatusbar(text: (toolStripComboBox).AccessibleDescription);
+				SetStatusbar(text: toolStripComboBox.AccessibleDescription);
 			}
 			else if (sender is ToolStripDropDown toolStripDropDown)
 			{
-				SetStatusbar(text: (toolStripDropDown).AccessibleDescription);
+				SetStatusbar(text: toolStripDropDown.AccessibleDescription);
 			}
 			else if (sender is ToolStripDropDownButton toolStripDropDownButton)
 			{
-				SetStatusbar(text: (toolStripDropDownButton).AccessibleDescription);
+				SetStatusbar(text: toolStripDropDownButton.AccessibleDescription);
 			}
 			else if (sender is ToolStripDropDownItem toolStripDropDownItem)
 			{
-				SetStatusbar(text: (toolStripDropDownItem).AccessibleDescription);
+				SetStatusbar(text: toolStripDropDownItem.AccessibleDescription);
 			}
 			else if (sender is ToolStripDropDownMenu toolStripDropDownMenu)
 			{
-				SetStatusbar(text: (toolStripDropDownMenu).AccessibleDescription);
+				SetStatusbar(text: toolStripDropDownMenu.AccessibleDescription);
 			}
 			else if (sender is ToolStripProgressBar toolStripProgressBar)
 			{
-				SetStatusbar(text: (toolStripProgressBar).AccessibleDescription);
+				SetStatusbar(text: toolStripProgressBar.AccessibleDescription);
 			}
 			else if (sender is ToolStripSplitButton toolStripSplitButton)
 			{
-				SetStatusbar(text: (toolStripSplitButton).AccessibleDescription);
+				SetStatusbar(text: toolStripSplitButton.AccessibleDescription);
 			}
 			else if (sender is ToolStripSeparator toolStripSeparator)
 			{
-				SetStatusbar(text: (toolStripSeparator).AccessibleDescription);
+				SetStatusbar(text: toolStripSeparator.AccessibleDescription);
 			}
 			else if (sender is ToolStripStatusLabel toolStripStatusLabel)
 			{
-				SetStatusbar(text: (toolStripStatusLabel).AccessibleDescription);
+				SetStatusbar(text: toolStripStatusLabel.AccessibleDescription);
 			}
 			else if (sender is ToolStripTextBox toolStripTextBox)
 			{
-				SetStatusbar(text: (toolStripTextBox).AccessibleDescription);
+				SetStatusbar(text: toolStripTextBox.AccessibleDescription);
 			}
 		}
 
