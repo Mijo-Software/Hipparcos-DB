@@ -138,6 +138,9 @@
     <Compile Include="HipparcosCatalogViewerForm.Designer.cs">
       <DependentUpon>HipparcosCatalogViewerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Office2007ColorTable.cs" />
+    <Compile Include="Office2007Helpers.cs" />
+    <Compile Include="Office2007Renderer.cs" />
     <Compile Include="OptionsForm.cs">
       <SubType>Form</SubType>
     </Compile>

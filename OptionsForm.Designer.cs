@@ -101,8 +101,8 @@
 			this.toolStripStatusLabelInfo.Name = "toolStripStatusLabelInfo";
 			this.toolStripStatusLabelInfo.Size = new System.Drawing.Size(66, 17);
 			this.toolStripStatusLabelInfo.Text = "info text";
-			this.toolStripStatusLabelInfo.MouseEnter += new System.EventHandler(this.ToolStripStatusLabelInfo_MouseEnter);
-			this.toolStripStatusLabelInfo.MouseLeave += new System.EventHandler(this.ToolStripStatusLabelInfo_MouseLeave);
+			this.toolStripStatusLabelInfo.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.toolStripStatusLabelInfo.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxTychoDirectory
 			// 
@@ -116,10 +116,10 @@
 			this.textBoxTychoDirectory.TabIndex = 4;
 			this.textBoxTychoDirectory.Text = "catalog/i239/";
 			this.toolTip.SetToolTip(this.textBoxTychoDirectory, "Tycho catalog directory");
-			this.textBoxTychoDirectory.Enter += new System.EventHandler(this.TextBoxTychoDirectory_Enter);
-			this.textBoxTychoDirectory.Leave += new System.EventHandler(this.TextBoxTychoDirectory_Leave);
-			this.textBoxTychoDirectory.MouseEnter += new System.EventHandler(this.TextBoxTychoDirectory_MouseEnter);
-			this.textBoxTychoDirectory.MouseLeave += new System.EventHandler(this.TextBoxTychoDirectory_MouseLeave);
+			this.textBoxTychoDirectory.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxTychoDirectory.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxTychoDirectory.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxTychoDirectory.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelTychoDirectory
 			// 
@@ -133,10 +133,10 @@
 			this.labelTychoDirectory.TabIndex = 3;
 			this.labelTychoDirectory.Text = "&Tycho catalog:";
 			this.toolTip.SetToolTip(this.labelTychoDirectory, "Tycho catalog directory");
-			this.labelTychoDirectory.Enter += new System.EventHandler(this.LabelTychoDirectory_Enter);
-			this.labelTychoDirectory.Leave += new System.EventHandler(this.LabelTychoDirectory_Leave);
-			this.labelTychoDirectory.MouseEnter += new System.EventHandler(this.LabelTychoDirectory_MouseEnter);
-			this.labelTychoDirectory.MouseLeave += new System.EventHandler(this.LabelTychoDirectory_MouseLeave);
+			this.labelTychoDirectory.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelTychoDirectory.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelTychoDirectory.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelTychoDirectory.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxHipparcosDirectory
 			// 
@@ -150,10 +150,10 @@
 			this.textBoxHipparcosDirectory.TabIndex = 1;
 			this.textBoxHipparcosDirectory.Text = "catalog/i239/";
 			this.toolTip.SetToolTip(this.textBoxHipparcosDirectory, "Hipparcos catalog directory");
-			this.textBoxHipparcosDirectory.Enter += new System.EventHandler(this.TextBoxHipparcosDirectory_Enter);
-			this.textBoxHipparcosDirectory.Leave += new System.EventHandler(this.TextBoxHipparcosDirectory_Leave);
-			this.textBoxHipparcosDirectory.MouseEnter += new System.EventHandler(this.TextBoxHipparcosDirectory_MouseEnter);
-			this.textBoxHipparcosDirectory.MouseLeave += new System.EventHandler(this.TextBoxHipparcosDirectory_MouseLeave);
+			this.textBoxHipparcosDirectory.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxHipparcosDirectory.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxHipparcosDirectory.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxHipparcosDirectory.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelHipparcosDirectory
 			// 
@@ -167,10 +167,10 @@
 			this.labelHipparcosDirectory.TabIndex = 0;
 			this.labelHipparcosDirectory.Text = "&Hippparcos catalog:";
 			this.toolTip.SetToolTip(this.labelHipparcosDirectory, "Hipparcos catalog directory");
-			this.labelHipparcosDirectory.Enter += new System.EventHandler(this.LabelHipparcosDirectory_Enter);
-			this.labelHipparcosDirectory.Leave += new System.EventHandler(this.LabelHipparcosDirectory_Leave);
-			this.labelHipparcosDirectory.MouseEnter += new System.EventHandler(this.LabelHipparcosDirectory_MouseEnter);
-			this.labelHipparcosDirectory.MouseLeave += new System.EventHandler(this.LabelHipparcosDirectory_MouseLeave);
+			this.labelHipparcosDirectory.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelHipparcosDirectory.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelHipparcosDirectory.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelHipparcosDirectory.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// checkBoxEnableHoverEffect
 			// 
@@ -187,10 +187,10 @@
 			this.checkBoxEnableHoverEffect.Text = "&Enable hover effect";
 			this.toolTip.SetToolTip(this.checkBoxEnableHoverEffect, "Check to enable hover effect");
 			this.checkBoxEnableHoverEffect.UseVisualStyleBackColor = true;
-			this.checkBoxEnableHoverEffect.Enter += new System.EventHandler(this.CheckBoxEnableHoverEffect_Enter);
-			this.checkBoxEnableHoverEffect.Leave += new System.EventHandler(this.CheckBoxEnableHoverEffect_Leave);
-			this.checkBoxEnableHoverEffect.MouseEnter += new System.EventHandler(this.CheckBoxEnableHoverEffect_MouseEnter);
-			this.checkBoxEnableHoverEffect.MouseLeave += new System.EventHandler(this.CheckBoxEnableHoverEffect_MouseLeave);
+			this.checkBoxEnableHoverEffect.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.checkBoxEnableHoverEffect.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.checkBoxEnableHoverEffect.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.checkBoxEnableHoverEffect.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// comboBoxDataTableStyle
 			// 
@@ -207,10 +207,10 @@
 			this.comboBoxDataTableStyle.Size = new System.Drawing.Size(131, 21);
 			this.comboBoxDataTableStyle.TabIndex = 1;
 			this.toolTip.SetToolTip(this.comboBoxDataTableStyle, "Data table style");
-			this.comboBoxDataTableStyle.Enter += new System.EventHandler(this.ComboBoxDataTableStyle_Enter);
-			this.comboBoxDataTableStyle.Leave += new System.EventHandler(this.ComboBoxDataTableStyle_Leave);
-			this.comboBoxDataTableStyle.MouseEnter += new System.EventHandler(this.ComboBoxDataTableStyle_MouseEnter);
-			this.comboBoxDataTableStyle.MouseLeave += new System.EventHandler(this.ComboBoxDataTableStyle_MouseLeave);
+			this.comboBoxDataTableStyle.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.comboBoxDataTableStyle.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.comboBoxDataTableStyle.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.comboBoxDataTableStyle.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelDataTableStyle
 			// 
@@ -224,10 +224,10 @@
 			this.labelDataTableStyle.TabIndex = 0;
 			this.labelDataTableStyle.Text = "&Style:";
 			this.toolTip.SetToolTip(this.labelDataTableStyle, "Data table style");
-			this.labelDataTableStyle.Enter += new System.EventHandler(this.LabelDataTableStyle_Enter);
-			this.labelDataTableStyle.Leave += new System.EventHandler(this.LabelDataTableStyle_Leave);
-			this.labelDataTableStyle.MouseEnter += new System.EventHandler(this.LabelDataTableStyle_MouseEnter);
-			this.labelDataTableStyle.MouseLeave += new System.EventHandler(this.LabelDataTableStyle_MouseLeave);
+			this.labelDataTableStyle.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDataTableStyle.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelDataTableStyle.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDataTableStyle.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxHost
 			// 
@@ -241,10 +241,10 @@
 			this.textBoxHost.TabIndex = 1;
 			this.textBoxHost.Text = "http://cdsarc.u-strasbg.fr/ftp/I/239/";
 			this.toolTip.SetToolTip(this.textBoxHost, "URL of the host");
-			this.textBoxHost.Enter += new System.EventHandler(this.TextBoxHost_Enter);
-			this.textBoxHost.Leave += new System.EventHandler(this.TextBoxHost_Leave);
-			this.textBoxHost.MouseEnter += new System.EventHandler(this.TextBoxDefaultHost_MouseEnter);
-			this.textBoxHost.MouseLeave += new System.EventHandler(this.TextBoxDefaultHost_MouseLeave);
+			this.textBoxHost.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxHost.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxHost.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxHost.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelHost
 			// 
@@ -258,10 +258,10 @@
 			this.labelHost.TabIndex = 0;
 			this.labelHost.Text = "H&ost:";
 			this.toolTip.SetToolTip(this.labelHost, "URL of the host");
-			this.labelHost.Enter += new System.EventHandler(this.LabelHost_Enter);
-			this.labelHost.Leave += new System.EventHandler(this.LabelHost_Leave);
-			this.labelHost.MouseEnter += new System.EventHandler(this.LabelDefaultHost_MouseEnter);
-			this.labelHost.MouseLeave += new System.EventHandler(this.LabelDefaultHost_MouseLeave);
+			this.labelHost.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelHost.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelHost.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelHost.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// checkBoxEnableQuickDownload
 			// 
@@ -276,10 +276,10 @@
 			this.checkBoxEnableQuickDownload.Text = "Enable &quick download of catalog files";
 			this.toolTip.SetToolTip(this.checkBoxEnableQuickDownload, "Check to enable quick download of catalog files");
 			this.checkBoxEnableQuickDownload.UseVisualStyleBackColor = true;
-			this.checkBoxEnableQuickDownload.Enter += new System.EventHandler(this.CheckBoxEnableQuickDownload_Enter);
-			this.checkBoxEnableQuickDownload.Leave += new System.EventHandler(this.CheckBoxEnableQuickDownload_Leave);
-			this.checkBoxEnableQuickDownload.MouseEnter += new System.EventHandler(this.CheckBoxEnableQuickDownload_MouseEnter);
-			this.checkBoxEnableQuickDownload.MouseLeave += new System.EventHandler(this.CheckBoxEnableQuickDownload_MouseLeave);
+			this.checkBoxEnableQuickDownload.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.checkBoxEnableQuickDownload.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.checkBoxEnableQuickDownload.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.checkBoxEnableQuickDownload.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// comboBoxStartPosition
 			// 
@@ -296,10 +296,10 @@
 			this.comboBoxStartPosition.Size = new System.Drawing.Size(118, 21);
 			this.comboBoxStartPosition.TabIndex = 1;
 			this.toolTip.SetToolTip(this.comboBoxStartPosition, "Start position");
-			this.comboBoxStartPosition.Enter += new System.EventHandler(this.ComboBoxStartPosition_Enter);
-			this.comboBoxStartPosition.Leave += new System.EventHandler(this.ComboBoxStartPosition_Leave);
-			this.comboBoxStartPosition.MouseEnter += new System.EventHandler(this.ComboBoxStartPosition_MouseEnter);
-			this.comboBoxStartPosition.MouseLeave += new System.EventHandler(this.ComboBoxStartPosition_MouseLeave);
+			this.comboBoxStartPosition.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.comboBoxStartPosition.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.comboBoxStartPosition.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.comboBoxStartPosition.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStartPosition
 			// 
@@ -313,10 +313,10 @@
 			this.labelStartPosition.TabIndex = 0;
 			this.labelStartPosition.Text = "&Position:";
 			this.toolTip.SetToolTip(this.labelStartPosition, "Start position");
-			this.labelStartPosition.Enter += new System.EventHandler(this.LabelStartPosition_Enter);
-			this.labelStartPosition.Leave += new System.EventHandler(this.LabelStartPosition_Leave);
-			this.labelStartPosition.MouseEnter += new System.EventHandler(this.LabelStartPosition_MouseEnter);
-			this.labelStartPosition.MouseLeave += new System.EventHandler(this.LabelStartPosition_MouseLeave);
+			this.labelStartPosition.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStartPosition.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelStartPosition.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStartPosition.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// buttonApply
 			// 
@@ -335,10 +335,10 @@
 			this.toolTip.SetToolTip(this.buttonApply, "Apply");
 			this.buttonApply.UseVisualStyleBackColor = true;
 			this.buttonApply.Click += new System.EventHandler(this.ButtonApply_Click);
-			this.buttonApply.Enter += new System.EventHandler(this.ButtonApply_Enter);
-			this.buttonApply.Leave += new System.EventHandler(this.ButtonApply_Leave);
-			this.buttonApply.MouseEnter += new System.EventHandler(this.ButtonApply_MouseEnter);
-			this.buttonApply.MouseLeave += new System.EventHandler(this.ButtonApply_MouseLeave);
+			this.buttonApply.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonApply.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.buttonApply.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonApply.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// buttonCancel
 			// 
@@ -356,10 +356,10 @@
 			this.buttonCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.toolTip.SetToolTip(this.buttonCancel, "Cancel");
 			this.buttonCancel.UseVisualStyleBackColor = true;
-			this.buttonCancel.Enter += new System.EventHandler(this.ButtonCancel_Enter);
-			this.buttonCancel.Leave += new System.EventHandler(this.ButtonCancel_Leave);
-			this.buttonCancel.MouseEnter += new System.EventHandler(this.ButtonCancel_MouseEnter);
-			this.buttonCancel.MouseLeave += new System.EventHandler(this.ButtonCancel_MouseLeave);
+			this.buttonCancel.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonCancel.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.buttonCancel.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonCancel.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// buttonRestoreHost
 			// 
@@ -375,10 +375,10 @@
 			this.toolTip.SetToolTip(this.buttonRestoreHost, "Restore the host url");
 			this.buttonRestoreHost.UseVisualStyleBackColor = true;
 			this.buttonRestoreHost.Click += new System.EventHandler(this.ButtonRestoreHost_Click);
-			this.buttonRestoreHost.Enter += new System.EventHandler(this.ButtonRestoreHost_Enter);
-			this.buttonRestoreHost.Leave += new System.EventHandler(this.ButtonRestoreHost_Leave);
-			this.buttonRestoreHost.MouseEnter += new System.EventHandler(this.ButtonRestoreHost_MouseEnter);
-			this.buttonRestoreHost.MouseLeave += new System.EventHandler(this.ButtonRestoreHost_MouseLeave);
+			this.buttonRestoreHost.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonRestoreHost.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.buttonRestoreHost.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonRestoreHost.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// buttonDefaultSettings
 			// 
@@ -396,10 +396,10 @@
 			this.toolTip.SetToolTip(this.buttonDefaultSettings, "Default settings");
 			this.buttonDefaultSettings.UseVisualStyleBackColor = true;
 			this.buttonDefaultSettings.Click += new System.EventHandler(this.ButtonDefaultSettings_Click);
-			this.buttonDefaultSettings.Enter += new System.EventHandler(this.ButtonDefaultSettings_Enter);
-			this.buttonDefaultSettings.Leave += new System.EventHandler(this.ButtonDefaultSettings_Leave);
-			this.buttonDefaultSettings.MouseEnter += new System.EventHandler(this.ButtonDefaultSettings_MouseEnter);
-			this.buttonDefaultSettings.MouseLeave += new System.EventHandler(this.ButtonDefaultSettings_MouseLeave);
+			this.buttonDefaultSettings.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonDefaultSettings.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.buttonDefaultSettings.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonDefaultSettings.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// buttonRestoreTychoDirectory
 			// 
@@ -415,10 +415,10 @@
 			this.toolTip.SetToolTip(this.buttonRestoreTychoDirectory, "Restore Tycho catalog directory");
 			this.buttonRestoreTychoDirectory.UseVisualStyleBackColor = true;
 			this.buttonRestoreTychoDirectory.Click += new System.EventHandler(this.ButtonRestoreTychoDirectory_Click);
-			this.buttonRestoreTychoDirectory.Enter += new System.EventHandler(this.ButtonRestoreTychoDirectory_Enter);
-			this.buttonRestoreTychoDirectory.Leave += new System.EventHandler(this.ButtonRestoreTychoDirectory_Leave);
-			this.buttonRestoreTychoDirectory.MouseEnter += new System.EventHandler(this.ButtonRestoreTychoDirectory_MouseEnter);
-			this.buttonRestoreTychoDirectory.MouseLeave += new System.EventHandler(this.ButtonRestoreTychoDirectory_MouseLeave);
+			this.buttonRestoreTychoDirectory.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonRestoreTychoDirectory.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.buttonRestoreTychoDirectory.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonRestoreTychoDirectory.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// buttonRestoreHipparcosDirectory
 			// 
@@ -434,10 +434,10 @@
 			this.toolTip.SetToolTip(this.buttonRestoreHipparcosDirectory, "Restore the Hipparcos catalog directory");
 			this.buttonRestoreHipparcosDirectory.UseVisualStyleBackColor = true;
 			this.buttonRestoreHipparcosDirectory.Click += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_Click);
-			this.buttonRestoreHipparcosDirectory.Enter += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_Enter);
-			this.buttonRestoreHipparcosDirectory.Leave += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_Leave);
-			this.buttonRestoreHipparcosDirectory.MouseEnter += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_MouseEnter);
-			this.buttonRestoreHipparcosDirectory.MouseLeave += new System.EventHandler(this.ButtonRestoreHipparcosDirectory_MouseLeave);
+			this.buttonRestoreHipparcosDirectory.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonRestoreHipparcosDirectory.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.buttonRestoreHipparcosDirectory.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.buttonRestoreHipparcosDirectory.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// checkBoxEnableDoubleClickCopy
 			// 
@@ -454,10 +454,10 @@
 			this.checkBoxEnableDoubleClickCopy.Text = "Enable double-click &copy";
 			this.toolTip.SetToolTip(this.checkBoxEnableDoubleClickCopy, "Check to enable hover effect");
 			this.checkBoxEnableDoubleClickCopy.UseVisualStyleBackColor = true;
-			this.checkBoxEnableDoubleClickCopy.Enter += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_Enter);
-			this.checkBoxEnableDoubleClickCopy.Leave += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_Leave);
-			this.checkBoxEnableDoubleClickCopy.MouseEnter += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_MouseEnter);
-			this.checkBoxEnableDoubleClickCopy.MouseLeave += new System.EventHandler(this.CheckBoxEnableDoubleClickCopy_MouseLeave);
+			this.checkBoxEnableDoubleClickCopy.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.checkBoxEnableDoubleClickCopy.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.checkBoxEnableDoubleClickCopy.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.checkBoxEnableDoubleClickCopy.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// toolStripContainer
 			// 

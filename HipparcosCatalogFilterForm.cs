@@ -25,14 +25,6 @@ namespace Hipparcos_DB
 		{
 		}
 
-		private void SetStatusbar_MouseEnter(object sender, EventArgs e)
-		{
-		}
-
-		private void ClearStatusbar_MouseLeave(object sender, EventArgs e)
-		{
-		}
-
 		private void ToolStripButtonApplyFilterSettings_Click(object sender, EventArgs e)
 		{
 		}

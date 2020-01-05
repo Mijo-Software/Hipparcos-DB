@@ -3,13 +3,16 @@ using System.Windows.Forms;
 
 namespace Hipparcos_DB.Properties
 {
+	/// <summary>
+	/// SubsetCatalogExporterForm : Form
+	/// </summary>
 	public partial class SubsetCatalogExporterForm : Form
 	{
 		#region Local methods
 
 		#endregion
 
-		#region Con- and destructor
+		#region Constructor
 
 		/// <summary>
 		/// Constructor
