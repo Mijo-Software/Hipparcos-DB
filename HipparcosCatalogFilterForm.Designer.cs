@@ -348,7 +348,7 @@
 			this.textBoxIdentifierMax = new System.Windows.Forms.TextBox();
 			this.textBoxIdentifierMin = new System.Windows.Forms.TextBox();
 			this.textBoxlCatalogMax = new System.Windows.Forms.TextBox();
-			this.labellCatalogMax = new System.Windows.Forms.Label();
+			this.labelCatalogMax = new System.Windows.Forms.Label();
 			this.labelSourceOfBvColorMin = new System.Windows.Forms.Label();
 			this.labelReferenceFlagForBtAndVtMagnitudeMin = new System.Windows.Forms.Label();
 			this.labelStandardErrorJohnsonBvColorMin = new System.Windows.Forms.Label();
@@ -492,9 +492,9 @@
 			this.labelSourceOfBvColorDesc.Text = "Source of B-V from Ground or Tycho";
 			this.labelSourceOfBvColorDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSourceOfBvColorDesc, "Source of B-V from Ground or Tycho");
-			this.labelSourceOfBvColorDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfBvColorDesc.Enter += new System.EventHandler(this.SetSourceOfBvColorHoverColor_Enter);
 			this.labelSourceOfBvColorDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelSourceOfBvColorDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfBvColorDesc.MouseEnter += new System.EventHandler(this.SetSourceOfBvColorHoverColor_Enter);
 			this.labelSourceOfBvColorDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorJohnsonBvColorDesc
@@ -512,9 +512,9 @@
 			this.labelStandardErrorJohnsonBvColorDesc.Text = "Standard error on B-V";
 			this.labelStandardErrorJohnsonBvColorDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorJohnsonBvColorDesc, "Standard error on B-V");
-			this.labelStandardErrorJohnsonBvColorDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorJohnsonBvColorDesc.Enter += new System.EventHandler(this.SetStandardErrorJohnsonBvColorHoverColor_Enter);
 			this.labelStandardErrorJohnsonBvColorDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorJohnsonBvColorDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorJohnsonBvColorDesc.MouseEnter += new System.EventHandler(this.SetStandardErrorJohnsonBvColorHoverColor_Enter);
 			this.labelStandardErrorJohnsonBvColorDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelColorIndexInCousinsSystemDesc
@@ -572,9 +572,9 @@
 			this.labelJohnsonBvColorDesc.Text = "Johnson B-V color";
 			this.labelJohnsonBvColorDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelJohnsonBvColorDesc, "Johnson B-V color");
-			this.labelJohnsonBvColorDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelJohnsonBvColorDesc.Enter += new System.EventHandler(this.SetJohnsonBvColorHoverColor_Enter);
 			this.labelJohnsonBvColorDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelJohnsonBvColorDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelJohnsonBvColorDesc.MouseEnter += new System.EventHandler(this.SetJohnsonBvColorHoverColor_Enter);
 			this.labelJohnsonBvColorDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorMeanVtMagnitudeDesc
@@ -592,9 +592,9 @@
 			this.labelStandardErrorMeanVtMagnitudeDesc.Text = "Standard error on VTmag";
 			this.labelStandardErrorMeanVtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorMeanVtMagnitudeDesc, "Standard error on VTmag");
-			this.labelStandardErrorMeanVtMagnitudeDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanVtMagnitudeDesc.Enter += new System.EventHandler(this.SetStandardErrorMeanVtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanVtMagnitudeDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorMeanVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetStandardErrorMeanVtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanVtMagnitudeDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelSourceOfViDesc
@@ -632,9 +632,9 @@
 			this.labelMeanVtMagnitudeDesc.Text = "Mean VT magnitude";
 			this.labelMeanVtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMeanVtMagnitudeDesc, "Mean VT magnitude");
-			this.labelMeanVtMagnitudeDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanVtMagnitudeDesc.Enter += new System.EventHandler(this.SetMeanVtMagnitudeHoverColor_Enter);
 			this.labelMeanVtMagnitudeDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMeanVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetMeanVtMagnitudeHoverColor_Enter);
 			this.labelMeanVtMagnitudeDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorMeanBtMagnitudeDesc
@@ -652,9 +652,9 @@
 			this.labelStandardErrorMeanBtMagnitudeDesc.Text = "Standard error on BTmag";
 			this.labelStandardErrorMeanBtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorMeanBtMagnitudeDesc, "Standard error on BTmag");
-			this.labelStandardErrorMeanBtMagnitudeDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanBtMagnitudeDesc.Enter += new System.EventHandler(this.SetStandardErrorMeanBtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanBtMagnitudeDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorMeanBtMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanBtMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetStandardErrorMeanBtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanBtMagnitudeDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelMeanBtMagnitudeDesc
@@ -672,9 +672,9 @@
 			this.labelMeanBtMagnitudeDesc.Text = "Mean BT magnitude";
 			this.labelMeanBtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMeanBtMagnitudeDesc, "Mean BT magnitude");
-			this.labelMeanBtMagnitudeDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanBtMagnitudeDesc.Enter += new System.EventHandler(this.SetMeanBtMagnitudeHoverColor_Enter);
 			this.labelMeanBtMagnitudeDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMeanBtMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanBtMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetMeanBtMagnitudeHoverColor_Enter);
 			this.labelMeanBtMagnitudeDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelGoodnessOfFitParameterDesc
@@ -692,9 +692,9 @@
 			this.labelGoodnessOfFitParameterDesc.Text = "Goodness-of-fit parameter";
 			this.labelGoodnessOfFitParameterDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelGoodnessOfFitParameterDesc, "Goodness-of-fit parameter");
-			this.labelGoodnessOfFitParameterDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelGoodnessOfFitParameterDesc.Enter += new System.EventHandler(this.SetGoodnessOfFitParameterHoverColor_Enter);
 			this.labelGoodnessOfFitParameterDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelGoodnessOfFitParameterDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelGoodnessOfFitParameterDesc.MouseEnter += new System.EventHandler(this.SetGoodnessOfFitParameterHoverColor_Enter);
 			this.labelGoodnessOfFitParameterDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorMedianMagnitudeInHipparcosSystemDesc
@@ -732,9 +732,9 @@
 			this.labelPercentageOfRejectedDataDesc.Text = "Percentage of rejected data";
 			this.labelPercentageOfRejectedDataDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelPercentageOfRejectedDataDesc, "Percentage of rejected data");
-			this.labelPercentageOfRejectedDataDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelPercentageOfRejectedDataDesc.Enter += new System.EventHandler(this.SetPercentageOfRejectedDataHoverColor_Enter);
 			this.labelPercentageOfRejectedDataDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelPercentageOfRejectedDataDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelPercentageOfRejectedDataDesc.MouseEnter += new System.EventHandler(this.SetPercentageOfRejectedDataHoverColor_Enter);
 			this.labelPercentageOfRejectedDataDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelScatterMedianMagnitudeInHipparcosSystemDesc
@@ -772,9 +772,9 @@
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Text = "Correlation, pmDE/pmRA";
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc, "Correlation, pmDE/pmRA");
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByProperMotionRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByProperMotionRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelNumberObservationsForMedianMagnitudeInHipparcosSystemDesc
@@ -812,9 +812,9 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Text = "Correlation, pmDE/Plx";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc, "Correlation, pmDE/Plx");
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionDeclinationByDeclinationDesc
@@ -832,9 +832,9 @@
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Text = "Correlation, pmDE/DE";
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByDeclinationDesc, "Correlation, pmDE/DE");
-			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByDeclinationDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelMedianMagnitudeInHipparcosSystemAtMaximumDesc
@@ -872,9 +872,9 @@
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Text = "Correlation, pmDE/RA*cos(delta)";
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionDeclinationByRightAscensionDesc, "Correlation, pmDE/RA*cos(delta)");
-			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc
@@ -892,9 +892,9 @@
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Text = "Correlation, pmRA/Plx";
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc, "Correlation, pmRA/Plx");
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelMedianMagnitudeInHipparcosSystemAtMinimumDesc
@@ -932,9 +932,9 @@
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Text = "Correlation, pmRA/DE";
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByDeclinationDesc, "Correlation, pmRA/DE");
-			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelVariabilityPeriodDesc
@@ -972,9 +972,9 @@
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Text = "Correlation, pmRA/RA*cos(delta)";
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc, "Correlation, pmRA/RA*cos(delta)");
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelVariabilityTypeDesc
@@ -1012,9 +1012,9 @@
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Text = "Correlation, Plx/DE";
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationTrigonomicParallaxByDeclinationDesc, "Correlation, Plx/DE");
-			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Enter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByDeclinationHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.MouseEnter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByDeclinationHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByDeclinationDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelAdditionalDataAboutVariabilityDesc
@@ -1052,9 +1052,9 @@
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Text = "Correlation, Plx/RA*cos(delta)";
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationTrigonomicParallaxByRightAscensionDesc, "Correlation, Plx/RA*cos(delta)");
-			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Enter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByRightAscensionHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByRightAscensionHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCcdmIdentifierDesc
@@ -1092,9 +1092,9 @@
 			this.labelCorrelationDeclinationByRightAscensionDesc.Text = "Correlation, DE/RA*cos(delta)";
 			this.labelCorrelationDeclinationByRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCorrelationDeclinationByRightAscensionDesc, "Correlation, DE/RA*cos(delta)");
-			this.labelCorrelationDeclinationByRightAscensionDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationDeclinationByRightAscensionDesc.Enter += new System.EventHandler(this.SetCorrelationDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationDeclinationByRightAscensionDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationDeclinationByRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationDeclinationByRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetCorrelationDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationDeclinationByRightAscensionDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorProperMotionDeclinationDesc
@@ -1112,9 +1112,9 @@
 			this.labelStandardErrorProperMotionDeclinationDesc.Text = "Standard error in pmDE";
 			this.labelStandardErrorProperMotionDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorProperMotionDeclinationDesc, "Standard error in pmDE");
-			this.labelStandardErrorProperMotionDeclinationDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionDeclinationDesc.Enter += new System.EventHandler(this.SetStandardErrorProperMotionDeclinationHoverColor_Enter);
 			this.labelStandardErrorProperMotionDeclinationDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorProperMotionDeclinationDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionDeclinationDesc.MouseEnter += new System.EventHandler(this.SetStandardErrorProperMotionDeclinationHoverColor_Enter);
 			this.labelStandardErrorProperMotionDeclinationDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorProperMotionRightAscensionDesc
@@ -1132,9 +1132,9 @@
 			this.labelStandardErrorProperMotionRightAscensionDesc.Text = "Standard error in pmRA";
 			this.labelStandardErrorProperMotionRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorProperMotionRightAscensionDesc, "Standard error in pmRA");
-			this.labelStandardErrorProperMotionRightAscensionDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionRightAscensionDesc.Enter += new System.EventHandler(this.SetStandardErrorProperMotionRightAscensionHoverColor_Enter);
 			this.labelStandardErrorProperMotionRightAscensionDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorProperMotionRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetStandardErrorProperMotionRightAscensionHoverColor_Enter);
 			this.labelStandardErrorProperMotionRightAscensionDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorTrigonomicParallaxDesc
@@ -1152,9 +1152,9 @@
 			this.labelStandardErrorTrigonomicParallaxDesc.Text = "Standard error in Plx";
 			this.labelStandardErrorTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorTrigonomicParallaxDesc, "Standard error in Plx");
-			this.labelStandardErrorTrigonomicParallaxDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorTrigonomicParallaxDesc.Enter += new System.EventHandler(this.SetStandardErrorTrigonomicParallaxHoverColor_Enter);
 			this.labelStandardErrorTrigonomicParallaxDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.SetStandardErrorTrigonomicParallaxHoverColor_Enter);
 			this.labelStandardErrorTrigonomicParallaxDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelNumberEntriesWithSameCcdmDesc
@@ -1192,9 +1192,9 @@
 			this.labelStandardErrorDeclinationDesc.Text = "Standard error in DE";
 			this.labelStandardErrorDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorDeclinationDesc, "Standard error in DE");
-			this.labelStandardErrorDeclinationDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorDeclinationDesc.Enter += new System.EventHandler(this.SetStandardErrorDeclinationHoverColor_Enter);
 			this.labelStandardErrorDeclinationDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorDeclinationDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorDeclinationDesc.MouseEnter += new System.EventHandler(this.SetStandardErrorDeclinationHoverColor_Enter);
 			this.labelStandardErrorDeclinationDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelNumberComponentsInThisEntryDesc
@@ -1232,9 +1232,9 @@
 			this.labelStandardErrorRightAscensionDesc.Text = "Standard error in RA*cos(DEdeg)";
 			this.labelStandardErrorRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelStandardErrorRightAscensionDesc, "Standard error in RA*cos(DEdeg)");
-			this.labelStandardErrorRightAscensionDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorRightAscensionDesc.Enter += new System.EventHandler(this.SetStandardErrorRightAscensionHoverColor_Enter);
 			this.labelStandardErrorRightAscensionDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetStandardErrorRightAscensionHoverColor_Enter);
 			this.labelStandardErrorRightAscensionDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelMultipleSystemsFlagDesc
@@ -1272,9 +1272,9 @@
 			this.labelProperMotionDeltaDesc.Text = "Proper motion mu_delta, ICRS";
 			this.labelProperMotionDeltaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelProperMotionDeltaDesc, "Proper motion mu_delta, ICRS");
-			this.labelProperMotionDeltaDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionDeltaDesc.Enter += new System.EventHandler(this.SetProperMotionDeltaHoverColor_Enter);
 			this.labelProperMotionDeltaDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProperMotionDeltaDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionDeltaDesc.MouseEnter += new System.EventHandler(this.SetProperMotionDeltaHoverColor_Enter);
 			this.labelProperMotionDeltaDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelAstrometricSourceFlagDesc
@@ -1312,9 +1312,9 @@
 			this.labelProperMotionAlphaDesc.Text = "Proper motion mu_alpha.cos(delta), ICRS";
 			this.labelProperMotionAlphaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelProperMotionAlphaDesc, "Proper motion mu_alpha.cos(delta), ICRS");
-			this.labelProperMotionAlphaDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionAlphaDesc.Enter += new System.EventHandler(this.SetProperMotionAlphaHoverColor_Enter);
 			this.labelProperMotionAlphaDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProperMotionAlphaDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionAlphaDesc.MouseEnter += new System.EventHandler(this.SetProperMotionAlphaHoverColor_Enter);
 			this.labelProperMotionAlphaDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelSolutionQualityDesc
@@ -1372,9 +1372,9 @@
 			this.labelTrigonomicParallaxDesc.Text = "Trigonometric parallax";
 			this.labelTrigonomicParallaxDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelTrigonomicParallaxDesc, "Trigonometric parallax");
-			this.labelTrigonomicParallaxDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelTrigonomicParallaxDesc.Enter += new System.EventHandler(this.SetTrigonomicParallaxHoverColor_Enter);
 			this.labelTrigonomicParallaxDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelTrigonomicParallaxDesc.MouseEnter += new System.EventHandler(this.SetTrigonomicParallaxHoverColor_Enter);
 			this.labelTrigonomicParallaxDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelPositionAngleBetweenComponentsDesc
@@ -1412,9 +1412,9 @@
 			this.labelDeltaDesc.Text = "delta, degrees (ICRS, Epoch=J1991.25)";
 			this.labelDeltaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelDeltaDesc, "delta, degrees (ICRS, Epoch=J1991.25)");
-			this.labelDeltaDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeltaDesc.Enter += new System.EventHandler(this.SetDeltaHoverColor_Enter);
 			this.labelDeltaDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelDeltaDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeltaDesc.MouseEnter += new System.EventHandler(this.SetDeltaHoverColor_Enter);
 			this.labelDeltaDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelAngularSeparationBetweenComponentsDesc
@@ -1452,9 +1452,9 @@
 			this.labelAlphaDesc.Text = "alpha, degrees (ICRS, Epoch=J1991.25)";
 			this.labelAlphaDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelAlphaDesc, "alpha, degrees (ICRS, Epoch=J1991.25)");
-			this.labelAlphaDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelAlphaDesc.Enter += new System.EventHandler(this.SetAlphaHoverColor_Enter);
 			this.labelAlphaDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelAlphaDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelAlphaDesc.MouseEnter += new System.EventHandler(this.SetAlphaHoverColor_Enter);
 			this.labelAlphaDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorRhoDesc
@@ -1492,9 +1492,9 @@
 			this.labelSourceOfMagnitudeDesc.Text = "Source of magnitude";
 			this.labelSourceOfMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelSourceOfMagnitudeDesc, "Source of magnitude");
-			this.labelSourceOfMagnitudeDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfMagnitudeDesc.Enter += new System.EventHandler(this.SetSourceOfMagnitudeHoverColor_Enter);
 			this.labelSourceOfMagnitudeDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelSourceOfMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetSourceOfMagnitudeHoverColor_Enter);
 			this.labelSourceOfMagnitudeDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelMagnitudeDifferenceBetweenComponentsDesc
@@ -1532,9 +1532,9 @@
 			this.labelMagnitudeJohnsonDesc.Text = "Magnitude in Johnson V";
 			this.labelMagnitudeJohnsonDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelMagnitudeJohnsonDesc, "Magnitude in Johnson V");
-			this.labelMagnitudeJohnsonDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMagnitudeJohnsonDesc.Enter += new System.EventHandler(this.SetMagnitudeJohnsonHoverColor_Enter);
 			this.labelMagnitudeJohnsonDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMagnitudeJohnsonDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMagnitudeJohnsonDesc.MouseEnter += new System.EventHandler(this.SetMagnitudeJohnsonHoverColor_Enter);
 			this.labelMagnitudeJohnsonDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorMagnitudeDifferenceBetweenComponentsDesc
@@ -1572,9 +1572,9 @@
 			this.labelCoarseVariabilityFlagDesc.Text = "Coarse variability flag";
 			this.labelCoarseVariabilityFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCoarseVariabilityFlagDesc, "Coarse variability flag");
-			this.labelCoarseVariabilityFlagDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCoarseVariabilityFlagDesc.Enter += new System.EventHandler(this.SetCoarseVariabilityFlagHoverColor_Enter);
 			this.labelCoarseVariabilityFlagDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCoarseVariabilityFlagDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCoarseVariabilityFlagDesc.MouseEnter += new System.EventHandler(this.SetCoarseVariabilityFlagHoverColor_Enter);
 			this.labelCoarseVariabilityFlagDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelFlagIndicatingSurveyStarDesc
@@ -1612,9 +1612,9 @@
 			this.labelReferenceFlagForAstrometryDesc.Text = "Reference flag for astrometry";
 			this.labelReferenceFlagForAstrometryDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelReferenceFlagForAstrometryDesc, "Reference flag for astrometry");
-			this.labelReferenceFlagForAstrometryDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForAstrometryDesc.Enter += new System.EventHandler(this.SetReferenceFlagForAstrometryHoverColor_Enter);
 			this.labelReferenceFlagForAstrometryDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelReferenceFlagForAstrometryDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForAstrometryDesc.MouseEnter += new System.EventHandler(this.SetReferenceFlagForAstrometryHoverColor_Enter);
 			this.labelReferenceFlagForAstrometryDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelIdentificationChartDesc
@@ -1652,9 +1652,9 @@
 			this.labelDeclinationDesc.Text = "Declination in deg \' \", ICRS (J1991.25)";
 			this.labelDeclinationDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelDeclinationDesc, "Declination in deg \' \", ICRS (J1991.25)");
-			this.labelDeclinationDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeclinationDesc.Enter += new System.EventHandler(this.SetDeclinationHoverColor_Enter);
 			this.labelDeclinationDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelDeclinationDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeclinationDesc.MouseEnter += new System.EventHandler(this.SetDeclinationHoverColor_Enter);
 			this.labelDeclinationDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelExistenceOfNotesDesc
@@ -1692,9 +1692,9 @@
 			this.labelRightAscensionDesc.Text = "Right ascension in h m s, ICRS (J1991.25)";
 			this.labelRightAscensionDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelRightAscensionDesc, "Right ascension in h m s, ICRS (J1991.25)");
-			this.labelRightAscensionDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelRightAscensionDesc.Enter += new System.EventHandler(this.SetRightAscensionHoverColor_Enter);
 			this.labelRightAscensionDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelRightAscensionDesc.MouseEnter += new System.EventHandler(this.SetRightAscensionHoverColor_Enter);
 			this.labelRightAscensionDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelHdNumberDesc
@@ -1732,10 +1732,10 @@
 			this.labelIdentifierDesc.Text = "Identifier (HIP number)";
 			this.labelIdentifierDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelIdentifierDesc, "Identifier (HIP number)");
-			this.labelIdentifierDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelIdentifierDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelIdentifierDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelIdentifierDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelIdentifierDesc.Enter += new System.EventHandler(this.SetIdentifierHoverColor_Enter);
+			this.labelIdentifierDesc.Leave += new System.EventHandler(this.ClearIdentifierHoverColor_Leave);
+			this.labelIdentifierDesc.MouseEnter += new System.EventHandler(this.SetIdentifierHoverColor_Enter);
+			this.labelIdentifierDesc.MouseLeave += new System.EventHandler(this.ClearIdentifierHoverColor_Leave);
 			// 
 			// labelBonnerDmDesc
 			// 
@@ -1772,9 +1772,9 @@
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Text = "Reference flag for BT and VTmag";
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelReferenceFlagForBtAndVtMagnitudeDesc, "Reference flag for BT and VTmag");
-			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Enter += new System.EventHandler(this.SetReferenceFlagForBtAndVtMagnitudeHoverColor_Enter);
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelReferenceFlagForBtAndVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForBtAndVtMagnitudeDesc.MouseEnter += new System.EventHandler(this.SetReferenceFlagForBtAndVtMagnitudeHoverColor_Enter);
 			this.labelReferenceFlagForBtAndVtMagnitudeDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCordobaDmDesc
@@ -1812,9 +1812,9 @@
 			this.labelProximityFlagDesc.Text = "Proximity flag";
 			this.labelProximityFlagDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelProximityFlagDesc, "Proximity flag");
-			this.labelProximityFlagDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProximityFlagDesc.Enter += new System.EventHandler(this.SetlProximityFlagHoverColor_Enter);
 			this.labelProximityFlagDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProximityFlagDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProximityFlagDesc.MouseEnter += new System.EventHandler(this.SetlProximityFlagHoverColor_Enter);
 			this.labelProximityFlagDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCapePhotographicDmDesc
@@ -1964,6 +1964,7 @@
 			this.labelCatalogDesc.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCatalogDesc.AutoSize = true;
 			this.labelCatalogDesc.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCatalogDesc.Enabled = false;
 			this.labelCatalogDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
 			this.labelCatalogDesc.Location = new System.Drawing.Point(0, 0);
 			this.labelCatalogDesc.Margin = new System.Windows.Forms.Padding(0);
@@ -1973,10 +1974,10 @@
 			this.labelCatalogDesc.Text = "Catalog (H=Hipparcos)";
 			this.labelCatalogDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.toolTip.SetToolTip(this.labelCatalogDesc, "Catalogue (H=Hipparcos)");
-			this.labelCatalogDesc.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCatalogDesc.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCatalogDesc.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCatalogDesc.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCatalogDesc.Enter += new System.EventHandler(this.SetCatalogHoverColor_Enter);
+			this.labelCatalogDesc.Leave += new System.EventHandler(this.ClearCatalogHoverColor_Leave);
+			this.labelCatalogDesc.MouseEnter += new System.EventHandler(this.SetCatalogHoverColor_Enter);
+			this.labelCatalogDesc.MouseLeave += new System.EventHandler(this.ClearCatalogHoverColor_Leave);
 			// 
 			// progressBar
 			// 
@@ -2341,7 +2342,7 @@
 			this.tableLayoutPanel.Controls.Add(this.textBoxIdentifierMax, 4, 1);
 			this.tableLayoutPanel.Controls.Add(this.textBoxIdentifierMin, 2, 1);
 			this.tableLayoutPanel.Controls.Add(this.textBoxlCatalogMax, 4, 0);
-			this.tableLayoutPanel.Controls.Add(this.labellCatalogMax, 3, 0);
+			this.tableLayoutPanel.Controls.Add(this.labelCatalogMax, 3, 0);
 			this.tableLayoutPanel.Controls.Add(this.labelSourceOfBvColorMin, 1, 38);
 			this.tableLayoutPanel.Controls.Add(this.labelReferenceFlagForBtAndVtMagnitudeMin, 1, 37);
 			this.tableLayoutPanel.Controls.Add(this.labelStandardErrorJohnsonBvColorMin, 1, 36);
@@ -5139,9 +5140,9 @@
 			this.textBoxSourceOfBvColorMin.Name = "textBoxSourceOfBvColorMin";
 			this.textBoxSourceOfBvColorMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxSourceOfBvColorMin.TabIndex = 24;
-			this.textBoxSourceOfBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfBvColorMin.Enter += new System.EventHandler(this.SetSourceOfBvColorHoverColor_Enter);
 			this.textBoxSourceOfBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxSourceOfBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfBvColorMin.MouseEnter += new System.EventHandler(this.SetSourceOfBvColorHoverColor_Enter);
 			this.textBoxSourceOfBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxReferenceFlagForBtAndVtMagnitudeMax
@@ -5154,9 +5155,9 @@
 			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Name = "textBoxReferenceFlagForBtAndVtMagnitudeMax";
 			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.TabIndex = 16;
-			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Enter += new System.EventHandler(this.SetReferenceFlagForBtAndVtMagnitudeHoverColor_Enter);
 			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetReferenceFlagForBtAndVtMagnitudeHoverColor_Enter);
 			this.textBoxReferenceFlagForBtAndVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorJohnsonBvColorMax
@@ -5169,9 +5170,9 @@
 			this.textBoxStandardErrorJohnsonBvColorMax.Name = "textBoxStandardErrorJohnsonBvColorMax";
 			this.textBoxStandardErrorJohnsonBvColorMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorJohnsonBvColorMax.TabIndex = 6;
-			this.textBoxStandardErrorJohnsonBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorJohnsonBvColorMax.Enter += new System.EventHandler(this.SetStandardErrorJohnsonBvColorHoverColor_Enter);
 			this.textBoxStandardErrorJohnsonBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetStandardErrorJohnsonBvColorHoverColor_Enter);
 			this.textBoxStandardErrorJohnsonBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxReferenceFlagForBtAndVtMagnitudeMin
@@ -5184,9 +5185,9 @@
 			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Name = "textBoxReferenceFlagForBtAndVtMagnitudeMin";
 			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.TabIndex = 14;
-			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Enter += new System.EventHandler(this.SetReferenceFlagForBtAndVtMagnitudeHoverColor_Enter);
 			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetReferenceFlagForBtAndVtMagnitudeHoverColor_Enter);
 			this.textBoxReferenceFlagForBtAndVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorJohnsonBvColorMin
@@ -5199,9 +5200,9 @@
 			this.textBoxStandardErrorJohnsonBvColorMin.Name = "textBoxStandardErrorJohnsonBvColorMin";
 			this.textBoxStandardErrorJohnsonBvColorMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorJohnsonBvColorMin.TabIndex = 4;
-			this.textBoxStandardErrorJohnsonBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorJohnsonBvColorMin.Enter += new System.EventHandler(this.SetStandardErrorJohnsonBvColorHoverColor_Enter);
 			this.textBoxStandardErrorJohnsonBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetStandardErrorJohnsonBvColorHoverColor_Enter);
 			this.textBoxStandardErrorJohnsonBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxJohnsonBvColorMax
@@ -5214,9 +5215,9 @@
 			this.textBoxJohnsonBvColorMax.Name = "textBoxJohnsonBvColorMax";
 			this.textBoxJohnsonBvColorMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxJohnsonBvColorMax.TabIndex = 381;
-			this.textBoxJohnsonBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxJohnsonBvColorMax.Enter += new System.EventHandler(this.SetJohnsonBvColorHoverColor_Enter);
 			this.textBoxJohnsonBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetJohnsonBvColorHoverColor_Enter);
 			this.textBoxJohnsonBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorMeanVtMagnitudeMax
@@ -5229,9 +5230,9 @@
 			this.textBoxStandardErrorMeanVtMagnitudeMax.Name = "textBoxStandardErrorMeanVtMagnitudeMax";
 			this.textBoxStandardErrorMeanVtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorMeanVtMagnitudeMax.TabIndex = 371;
-			this.textBoxStandardErrorMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetStandardErrorMeanVtMagnitudeHoverColor_Enter);
 			this.textBoxStandardErrorMeanVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStandardErrorMeanVtMagnitudeHoverColor_Enter);
 			this.textBoxStandardErrorMeanVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxJohnsonBvColorMin
@@ -5244,9 +5245,9 @@
 			this.textBoxJohnsonBvColorMin.Name = "textBoxJohnsonBvColorMin";
 			this.textBoxJohnsonBvColorMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxJohnsonBvColorMin.TabIndex = 379;
-			this.textBoxJohnsonBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxJohnsonBvColorMin.Enter += new System.EventHandler(this.SetJohnsonBvColorHoverColor_Enter);
 			this.textBoxJohnsonBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetJohnsonBvColorHoverColor_Enter);
 			this.textBoxJohnsonBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorMeanVtMagnitudeMin
@@ -5259,9 +5260,9 @@
 			this.textBoxStandardErrorMeanVtMagnitudeMin.Name = "textBoxStandardErrorMeanVtMagnitudeMin";
 			this.textBoxStandardErrorMeanVtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorMeanVtMagnitudeMin.TabIndex = 369;
-			this.textBoxStandardErrorMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetStandardErrorMeanVtMagnitudeHoverColor_Enter);
 			this.textBoxStandardErrorMeanVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStandardErrorMeanVtMagnitudeHoverColor_Enter);
 			this.textBoxStandardErrorMeanVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxMeanVtMagnitudeMax
@@ -5274,9 +5275,9 @@
 			this.textBoxMeanVtMagnitudeMax.Name = "textBoxMeanVtMagnitudeMax";
 			this.textBoxMeanVtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxMeanVtMagnitudeMax.TabIndex = 361;
-			this.textBoxMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetMeanVtMagnitudeHoverColor_Enter);
 			this.textBoxMeanVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetMeanVtMagnitudeHoverColor_Enter);
 			this.textBoxMeanVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorMeanBtMagnitudeMax
@@ -5289,9 +5290,9 @@
 			this.textBoxStandardErrorMeanBtMagnitudeMax.Name = "textBoxStandardErrorMeanBtMagnitudeMax";
 			this.textBoxStandardErrorMeanBtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorMeanBtMagnitudeMax.TabIndex = 351;
-			this.textBoxStandardErrorMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetStandardErrorMeanBtMagnitudeHoverColor_Enter);
 			this.textBoxStandardErrorMeanBtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStandardErrorMeanBtMagnitudeHoverColor_Enter);
 			this.textBoxStandardErrorMeanBtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxMeanVtMagnitudeMin
@@ -5304,9 +5305,9 @@
 			this.textBoxMeanVtMagnitudeMin.Name = "textBoxMeanVtMagnitudeMin";
 			this.textBoxMeanVtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxMeanVtMagnitudeMin.TabIndex = 359;
-			this.textBoxMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetMeanVtMagnitudeHoverColor_Enter);
 			this.textBoxMeanVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetMeanVtMagnitudeHoverColor_Enter);
 			this.textBoxMeanVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorMeanBtMagnitudeMin
@@ -5319,9 +5320,9 @@
 			this.textBoxStandardErrorMeanBtMagnitudeMin.Name = "textBoxStandardErrorMeanBtMagnitudeMin";
 			this.textBoxStandardErrorMeanBtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorMeanBtMagnitudeMin.TabIndex = 349;
-			this.textBoxStandardErrorMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetStandardErrorMeanBtMagnitudeHoverColor_Enter);
 			this.textBoxStandardErrorMeanBtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStandardErrorMeanBtMagnitudeHoverColor_Enter);
 			this.textBoxStandardErrorMeanBtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxMeanBtMagnitudeMax
@@ -5334,9 +5335,9 @@
 			this.textBoxMeanBtMagnitudeMax.Name = "textBoxMeanBtMagnitudeMax";
 			this.textBoxMeanBtMagnitudeMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxMeanBtMagnitudeMax.TabIndex = 341;
-			this.textBoxMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetMeanBtMagnitudeHoverColor_Enter);
 			this.textBoxMeanBtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetMeanBtMagnitudeHoverColor_Enter);
 			this.textBoxMeanBtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxMeanBtMagnitudeMin
@@ -5349,9 +5350,9 @@
 			this.textBoxMeanBtMagnitudeMin.Name = "textBoxMeanBtMagnitudeMin";
 			this.textBoxMeanBtMagnitudeMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxMeanBtMagnitudeMin.TabIndex = 339;
-			this.textBoxMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetMeanBtMagnitudeHoverColor_Enter);
 			this.textBoxMeanBtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetMeanBtMagnitudeHoverColor_Enter);
 			this.textBoxMeanBtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxGoodnessOfFitParameterMin
@@ -5364,9 +5365,9 @@
 			this.textBoxGoodnessOfFitParameterMin.Name = "textBoxGoodnessOfFitParameterMin";
 			this.textBoxGoodnessOfFitParameterMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxGoodnessOfFitParameterMin.TabIndex = 329;
-			this.textBoxGoodnessOfFitParameterMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxGoodnessOfFitParameterMin.Enter += new System.EventHandler(this.SetGoodnessOfFitParameterHoverColor_Enter);
 			this.textBoxGoodnessOfFitParameterMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxGoodnessOfFitParameterMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxGoodnessOfFitParameterMin.MouseEnter += new System.EventHandler(this.SetGoodnessOfFitParameterHoverColor_Enter);
 			this.textBoxGoodnessOfFitParameterMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxGoodnessOfFitParameterMax
@@ -5379,9 +5380,9 @@
 			this.textBoxGoodnessOfFitParameterMax.Name = "textBoxGoodnessOfFitParameterMax";
 			this.textBoxGoodnessOfFitParameterMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxGoodnessOfFitParameterMax.TabIndex = 331;
-			this.textBoxGoodnessOfFitParameterMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxGoodnessOfFitParameterMax.Enter += new System.EventHandler(this.SetGoodnessOfFitParameterHoverColor_Enter);
 			this.textBoxGoodnessOfFitParameterMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxGoodnessOfFitParameterMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxGoodnessOfFitParameterMax.MouseEnter += new System.EventHandler(this.SetGoodnessOfFitParameterHoverColor_Enter);
 			this.textBoxGoodnessOfFitParameterMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxPercentageOfRejectedDataMin
@@ -5394,9 +5395,9 @@
 			this.textBoxPercentageOfRejectedDataMin.Name = "textBoxPercentageOfRejectedDataMin";
 			this.textBoxPercentageOfRejectedDataMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxPercentageOfRejectedDataMin.TabIndex = 319;
-			this.textBoxPercentageOfRejectedDataMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxPercentageOfRejectedDataMin.Enter += new System.EventHandler(this.SetPercentageOfRejectedDataHoverColor_Enter);
 			this.textBoxPercentageOfRejectedDataMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxPercentageOfRejectedDataMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxPercentageOfRejectedDataMin.MouseEnter += new System.EventHandler(this.SetPercentageOfRejectedDataHoverColor_Enter);
 			this.textBoxPercentageOfRejectedDataMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxPercentageOfRejectedDataMax
@@ -5409,9 +5410,9 @@
 			this.textBoxPercentageOfRejectedDataMax.Name = "textBoxPercentageOfRejectedDataMax";
 			this.textBoxPercentageOfRejectedDataMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxPercentageOfRejectedDataMax.TabIndex = 321;
-			this.textBoxPercentageOfRejectedDataMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxPercentageOfRejectedDataMax.Enter += new System.EventHandler(this.SetPercentageOfRejectedDataHoverColor_Enter);
 			this.textBoxPercentageOfRejectedDataMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxPercentageOfRejectedDataMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxPercentageOfRejectedDataMax.MouseEnter += new System.EventHandler(this.SetPercentageOfRejectedDataHoverColor_Enter);
 			this.textBoxPercentageOfRejectedDataMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin
@@ -5424,9 +5425,9 @@
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Name = "textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin";
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.TabIndex = 302;
-			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByProperMotionRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByProperMotionRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax
@@ -5439,9 +5440,9 @@
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Name = "textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax";
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.TabIndex = 304;
-			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByProperMotionRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByProperMotionRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin
@@ -5454,9 +5455,9 @@
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Name = "textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin";
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.TabIndex = 292;
-			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByTrigonomicParallaxHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByTrigonomicParallaxHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax
@@ -5469,9 +5470,9 @@
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Name = "textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax";
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.TabIndex = 294;
-			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByTrigonomicParallaxHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByTrigonomicParallaxHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionDeclinationByDeclinationMin
@@ -5484,9 +5485,9 @@
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Name = "textBoxCorrelationProperMotionDeclinationByDeclinationMin";
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.TabIndex = 282;
-			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionDeclinationByDeclinationMax
@@ -5499,9 +5500,9 @@
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Name = "textBoxCorrelationProperMotionDeclinationByDeclinationMax";
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.TabIndex = 284;
-			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionDeclinationByRightAscensionMin
@@ -5514,9 +5515,9 @@
 			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Name = "textBoxCorrelationProperMotionDeclinationByRightAscensionMin";
 			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.TabIndex = 270;
-			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionDeclinationByRightAscensionMax
@@ -5529,9 +5530,9 @@
 			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Name = "textBoxCorrelationProperMotionDeclinationByRightAscensionMax";
 			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.TabIndex = 272;
-			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionDeclinationByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin
@@ -5544,9 +5545,9 @@
 			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Name = "textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin";
 			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.TabIndex = 260;
-			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByTrigonomicParallaxHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByTrigonomicParallaxHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax
@@ -5559,9 +5560,9 @@
 			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Name = "textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax";
 			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.TabIndex = 262;
-			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByTrigonomicParallaxHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByTrigonomicParallaxHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionRightAscensionByDeclinationMin
@@ -5574,9 +5575,9 @@
 			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Name = "textBoxCorrelationProperMotionRightAscensionByDeclinationMin";
 			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.TabIndex = 250;
-			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionRightAscensionByDeclinationMax
@@ -5589,9 +5590,9 @@
 			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Name = "textBoxCorrelationProperMotionRightAscensionByDeclinationMax";
 			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.TabIndex = 252;
-			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionRightAscensionByRightAscensionMax
@@ -5604,9 +5605,9 @@
 			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Name = "textBoxCorrelationProperMotionRightAscensionByRightAscensionMax";
 			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.TabIndex = 242;
-			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationProperMotionRightAscensionByRightAscensionMin
@@ -5619,9 +5620,9 @@
 			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Name = "textBoxCorrelationProperMotionRightAscensionByRightAscensionMin";
 			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.TabIndex = 240;
-			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationProperMotionRightAscensionByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationTrigonomicParallaxByDeclinationMax
@@ -5634,9 +5635,9 @@
 			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Name = "textBoxCorrelationTrigonomicParallaxByDeclinationMax";
 			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.TabIndex = 232;
-			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Enter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.MouseEnter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationTrigonomicParallaxByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationTrigonomicParallaxByDeclinationMin
@@ -5649,9 +5650,9 @@
 			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Name = "textBoxCorrelationTrigonomicParallaxByDeclinationMin";
 			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.TabIndex = 230;
-			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Enter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.MouseEnter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByDeclinationHoverColor_Enter);
 			this.textBoxCorrelationTrigonomicParallaxByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationTrigonomicParallaxByRightAscensionMax
@@ -5664,9 +5665,9 @@
 			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Name = "textBoxCorrelationTrigonomicParallaxByRightAscensionMax";
 			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.TabIndex = 222;
-			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Enter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationTrigonomicParallaxByRightAscensionMin
@@ -5679,9 +5680,9 @@
 			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Name = "textBoxCorrelationTrigonomicParallaxByRightAscensionMin";
 			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.TabIndex = 220;
-			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Enter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationTrigonomicParallaxByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationDeclinationByRightAscensionMax
@@ -5694,9 +5695,9 @@
 			this.textBoxCorrelationDeclinationByRightAscensionMax.Name = "textBoxCorrelationDeclinationByRightAscensionMax";
 			this.textBoxCorrelationDeclinationByRightAscensionMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationDeclinationByRightAscensionMax.TabIndex = 212;
-			this.textBoxCorrelationDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetCorrelationDeclinationByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationDeclinationByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetCorrelationDeclinationByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationDeclinationByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCorrelationDeclinationByRightAscensionMin
@@ -5709,9 +5710,9 @@
 			this.textBoxCorrelationDeclinationByRightAscensionMin.Name = "textBoxCorrelationDeclinationByRightAscensionMin";
 			this.textBoxCorrelationDeclinationByRightAscensionMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCorrelationDeclinationByRightAscensionMin.TabIndex = 210;
-			this.textBoxCorrelationDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetCorrelationDeclinationByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationDeclinationByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCorrelationDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCorrelationDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetCorrelationDeclinationByRightAscensionHoverColor_Enter);
 			this.textBoxCorrelationDeclinationByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxlStandardErrorProperMotionDeclinationMax
@@ -5724,9 +5725,9 @@
 			this.textBoxlStandardErrorProperMotionDeclinationMax.Name = "textBoxlStandardErrorProperMotionDeclinationMax";
 			this.textBoxlStandardErrorProperMotionDeclinationMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxlStandardErrorProperMotionDeclinationMax.TabIndex = 202;
-			this.textBoxlStandardErrorProperMotionDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlStandardErrorProperMotionDeclinationMax.Enter += new System.EventHandler(this.SetStandardErrorProperMotionDeclinationHoverColor_Enter);
 			this.textBoxlStandardErrorProperMotionDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxlStandardErrorProperMotionDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlStandardErrorProperMotionDeclinationMax.MouseEnter += new System.EventHandler(this.SetStandardErrorProperMotionDeclinationHoverColor_Enter);
 			this.textBoxlStandardErrorProperMotionDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxlStandardErrorProperMotionDeclinationMin
@@ -5739,9 +5740,9 @@
 			this.textBoxlStandardErrorProperMotionDeclinationMin.Name = "textBoxlStandardErrorProperMotionDeclinationMin";
 			this.textBoxlStandardErrorProperMotionDeclinationMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxlStandardErrorProperMotionDeclinationMin.TabIndex = 200;
-			this.textBoxlStandardErrorProperMotionDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlStandardErrorProperMotionDeclinationMin.Enter += new System.EventHandler(this.SetStandardErrorProperMotionDeclinationHoverColor_Enter);
 			this.textBoxlStandardErrorProperMotionDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxlStandardErrorProperMotionDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlStandardErrorProperMotionDeclinationMin.MouseEnter += new System.EventHandler(this.SetStandardErrorProperMotionDeclinationHoverColor_Enter);
 			this.textBoxlStandardErrorProperMotionDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorProperMotionRightAscensionMax
@@ -5754,9 +5755,9 @@
 			this.textBoxStandardErrorProperMotionRightAscensionMax.Name = "textBoxStandardErrorProperMotionRightAscensionMax";
 			this.textBoxStandardErrorProperMotionRightAscensionMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorProperMotionRightAscensionMax.TabIndex = 192;
-			this.textBoxStandardErrorProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetStandardErrorProperMotionRightAscensionHoverColor_Enter);
 			this.textBoxStandardErrorProperMotionRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStandardErrorProperMotionRightAscensionHoverColor_Enter);
 			this.textBoxStandardErrorProperMotionRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorProperMotionRightAscensionMin
@@ -5769,9 +5770,9 @@
 			this.textBoxStandardErrorProperMotionRightAscensionMin.Name = "textBoxStandardErrorProperMotionRightAscensionMin";
 			this.textBoxStandardErrorProperMotionRightAscensionMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorProperMotionRightAscensionMin.TabIndex = 190;
-			this.textBoxStandardErrorProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetStandardErrorProperMotionRightAscensionHoverColor_Enter);
 			this.textBoxStandardErrorProperMotionRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStandardErrorProperMotionRightAscensionHoverColor_Enter);
 			this.textBoxStandardErrorProperMotionRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorTrigonomicParallaxMax
@@ -5784,9 +5785,9 @@
 			this.textBoxStandardErrorTrigonomicParallaxMax.Name = "textBoxStandardErrorTrigonomicParallaxMax";
 			this.textBoxStandardErrorTrigonomicParallaxMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorTrigonomicParallaxMax.TabIndex = 182;
-			this.textBoxStandardErrorTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStandardErrorTrigonomicParallaxHoverColor_Enter);
 			this.textBoxStandardErrorTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStandardErrorTrigonomicParallaxHoverColor_Enter);
 			this.textBoxStandardErrorTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorTrigonomicParallaxMin
@@ -5799,9 +5800,9 @@
 			this.textBoxStandardErrorTrigonomicParallaxMin.Name = "textBoxStandardErrorTrigonomicParallaxMin";
 			this.textBoxStandardErrorTrigonomicParallaxMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorTrigonomicParallaxMin.TabIndex = 180;
-			this.textBoxStandardErrorTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStandardErrorTrigonomicParallaxHoverColor_Enter);
 			this.textBoxStandardErrorTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStandardErrorTrigonomicParallaxHoverColor_Enter);
 			this.textBoxStandardErrorTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorDeclinationMax
@@ -5814,9 +5815,9 @@
 			this.textBoxStandardErrorDeclinationMax.Name = "textBoxStandardErrorDeclinationMax";
 			this.textBoxStandardErrorDeclinationMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorDeclinationMax.TabIndex = 172;
-			this.textBoxStandardErrorDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorDeclinationMax.Enter += new System.EventHandler(this.SetStandardErrorDeclinationHoverColor_Enter);
 			this.textBoxStandardErrorDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorDeclinationMax.MouseEnter += new System.EventHandler(this.SetStandardErrorDeclinationHoverColor_Enter);
 			this.textBoxStandardErrorDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorDeclinationMin
@@ -5829,9 +5830,9 @@
 			this.textBoxStandardErrorDeclinationMin.Name = "textBoxStandardErrorDeclinationMin";
 			this.textBoxStandardErrorDeclinationMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorDeclinationMin.TabIndex = 170;
-			this.textBoxStandardErrorDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorDeclinationMin.Enter += new System.EventHandler(this.SetStandardErrorDeclinationHoverColor_Enter);
 			this.textBoxStandardErrorDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorDeclinationMin.MouseEnter += new System.EventHandler(this.SetStandardErrorDeclinationHoverColor_Enter);
 			this.textBoxStandardErrorDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorRightAscensionMax
@@ -5844,9 +5845,9 @@
 			this.textBoxStandardErrorRightAscensionMax.Name = "textBoxStandardErrorRightAscensionMax";
 			this.textBoxStandardErrorRightAscensionMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorRightAscensionMax.TabIndex = 162;
-			this.textBoxStandardErrorRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorRightAscensionMax.Enter += new System.EventHandler(this.SetStandardErrorRightAscensionHoverColor_Enter);
 			this.textBoxStandardErrorRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStandardErrorRightAscensionHoverColor_Enter);
 			this.textBoxStandardErrorRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxStandardErrorRightAscensionMin
@@ -5859,9 +5860,9 @@
 			this.textBoxStandardErrorRightAscensionMin.Name = "textBoxStandardErrorRightAscensionMin";
 			this.textBoxStandardErrorRightAscensionMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxStandardErrorRightAscensionMin.TabIndex = 160;
-			this.textBoxStandardErrorRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorRightAscensionMin.Enter += new System.EventHandler(this.SetStandardErrorRightAscensionHoverColor_Enter);
 			this.textBoxStandardErrorRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxStandardErrorRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxStandardErrorRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStandardErrorRightAscensionHoverColor_Enter);
 			this.textBoxStandardErrorRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxProperMotionDeltaMax
@@ -5874,9 +5875,9 @@
 			this.textBoxProperMotionDeltaMax.Name = "textBoxProperMotionDeltaMax";
 			this.textBoxProperMotionDeltaMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxProperMotionDeltaMax.TabIndex = 152;
-			this.textBoxProperMotionDeltaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionDeltaMax.Enter += new System.EventHandler(this.SetProperMotionDeltaHoverColor_Enter);
 			this.textBoxProperMotionDeltaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxProperMotionDeltaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionDeltaMax.MouseEnter += new System.EventHandler(this.SetProperMotionDeltaHoverColor_Enter);
 			this.textBoxProperMotionDeltaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxProperMotionDeltaMin
@@ -5889,9 +5890,9 @@
 			this.textBoxProperMotionDeltaMin.Name = "textBoxProperMotionDeltaMin";
 			this.textBoxProperMotionDeltaMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxProperMotionDeltaMin.TabIndex = 150;
-			this.textBoxProperMotionDeltaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionDeltaMin.Enter += new System.EventHandler(this.SetProperMotionDeltaHoverColor_Enter);
 			this.textBoxProperMotionDeltaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxProperMotionDeltaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionDeltaMin.MouseEnter += new System.EventHandler(this.SetProperMotionDeltaHoverColor_Enter);
 			this.textBoxProperMotionDeltaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxProperMotionAlphaMax
@@ -5904,9 +5905,9 @@
 			this.textBoxProperMotionAlphaMax.Name = "textBoxProperMotionAlphaMax";
 			this.textBoxProperMotionAlphaMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxProperMotionAlphaMax.TabIndex = 142;
-			this.textBoxProperMotionAlphaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionAlphaMax.Enter += new System.EventHandler(this.SetProperMotionAlphaHoverColor_Enter);
 			this.textBoxProperMotionAlphaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxProperMotionAlphaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionAlphaMax.MouseEnter += new System.EventHandler(this.SetProperMotionAlphaHoverColor_Enter);
 			this.textBoxProperMotionAlphaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxProperMotionAlphaMin
@@ -5919,9 +5920,9 @@
 			this.textBoxProperMotionAlphaMin.Name = "textBoxProperMotionAlphaMin";
 			this.textBoxProperMotionAlphaMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxProperMotionAlphaMin.TabIndex = 140;
-			this.textBoxProperMotionAlphaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionAlphaMin.Enter += new System.EventHandler(this.SetProperMotionAlphaHoverColor_Enter);
 			this.textBoxProperMotionAlphaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxProperMotionAlphaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProperMotionAlphaMin.MouseEnter += new System.EventHandler(this.SetProperMotionAlphaHoverColor_Enter);
 			this.textBoxProperMotionAlphaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxTrigonomicParallaxMax
@@ -5934,9 +5935,9 @@
 			this.textBoxTrigonomicParallaxMax.Name = "textBoxTrigonomicParallaxMax";
 			this.textBoxTrigonomicParallaxMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxTrigonomicParallaxMax.TabIndex = 132;
-			this.textBoxTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetTrigonomicParallaxHoverColor_Enter);
 			this.textBoxTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetTrigonomicParallaxHoverColor_Enter);
 			this.textBoxTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxTrigonomicParallaxMin
@@ -5949,9 +5950,9 @@
 			this.textBoxTrigonomicParallaxMin.Name = "textBoxTrigonomicParallaxMin";
 			this.textBoxTrigonomicParallaxMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxTrigonomicParallaxMin.TabIndex = 130;
-			this.textBoxTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetTrigonomicParallaxHoverColor_Enter);
 			this.textBoxTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetTrigonomicParallaxHoverColor_Enter);
 			this.textBoxTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxReferenceFlagForAstrometryMax
@@ -5964,9 +5965,9 @@
 			this.textBoxReferenceFlagForAstrometryMax.Name = "textBoxReferenceFlagForAstrometryMax";
 			this.textBoxReferenceFlagForAstrometryMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxReferenceFlagForAstrometryMax.TabIndex = 122;
-			this.textBoxReferenceFlagForAstrometryMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForAstrometryMax.Enter += new System.EventHandler(this.SetReferenceFlagForAstrometryHoverColor_Enter);
 			this.textBoxReferenceFlagForAstrometryMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxReferenceFlagForAstrometryMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForAstrometryMax.MouseEnter += new System.EventHandler(this.SetReferenceFlagForAstrometryHoverColor_Enter);
 			this.textBoxReferenceFlagForAstrometryMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxReferenceFlagForAstrometryMin
@@ -5979,9 +5980,9 @@
 			this.textBoxReferenceFlagForAstrometryMin.Name = "textBoxReferenceFlagForAstrometryMin";
 			this.textBoxReferenceFlagForAstrometryMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxReferenceFlagForAstrometryMin.TabIndex = 120;
-			this.textBoxReferenceFlagForAstrometryMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForAstrometryMin.Enter += new System.EventHandler(this.SetReferenceFlagForAstrometryHoverColor_Enter);
 			this.textBoxReferenceFlagForAstrometryMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxReferenceFlagForAstrometryMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxReferenceFlagForAstrometryMin.MouseEnter += new System.EventHandler(this.SetReferenceFlagForAstrometryHoverColor_Enter);
 			this.textBoxReferenceFlagForAstrometryMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxDeltaMax
@@ -5994,9 +5995,9 @@
 			this.textBoxDeltaMax.Name = "textBoxDeltaMax";
 			this.textBoxDeltaMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxDeltaMax.TabIndex = 112;
-			this.textBoxDeltaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeltaMax.Enter += new System.EventHandler(this.SetDeltaHoverColor_Enter);
 			this.textBoxDeltaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxDeltaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeltaMax.MouseEnter += new System.EventHandler(this.SetDeltaHoverColor_Enter);
 			this.textBoxDeltaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxDeltaMin
@@ -6009,9 +6010,9 @@
 			this.textBoxDeltaMin.Name = "textBoxDeltaMin";
 			this.textBoxDeltaMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxDeltaMin.TabIndex = 110;
-			this.textBoxDeltaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeltaMin.Enter += new System.EventHandler(this.SetDeltaHoverColor_Enter);
 			this.textBoxDeltaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxDeltaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeltaMin.MouseEnter += new System.EventHandler(this.SetDeltaHoverColor_Enter);
 			this.textBoxDeltaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxlAlphaMax
@@ -6024,9 +6025,9 @@
 			this.textBoxlAlphaMax.Name = "textBoxlAlphaMax";
 			this.textBoxlAlphaMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxlAlphaMax.TabIndex = 102;
-			this.textBoxlAlphaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlAlphaMax.Enter += new System.EventHandler(this.SetAlphaHoverColor_Enter);
 			this.textBoxlAlphaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxlAlphaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlAlphaMax.MouseEnter += new System.EventHandler(this.SetAlphaHoverColor_Enter);
 			this.textBoxlAlphaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxlAlphaMin
@@ -6039,9 +6040,9 @@
 			this.textBoxlAlphaMin.Name = "textBoxlAlphaMin";
 			this.textBoxlAlphaMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxlAlphaMin.TabIndex = 100;
-			this.textBoxlAlphaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlAlphaMin.Enter += new System.EventHandler(this.SetAlphaHoverColor_Enter);
 			this.textBoxlAlphaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxlAlphaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxlAlphaMin.MouseEnter += new System.EventHandler(this.SetAlphaHoverColor_Enter);
 			this.textBoxlAlphaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxSourceOfMagnitudeMax
@@ -6054,9 +6055,9 @@
 			this.textBoxSourceOfMagnitudeMax.Name = "textBoxSourceOfMagnitudeMax";
 			this.textBoxSourceOfMagnitudeMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxSourceOfMagnitudeMax.TabIndex = 92;
-			this.textBoxSourceOfMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfMagnitudeMax.Enter += new System.EventHandler(this.SetSourceOfMagnitudeHoverColor_Enter);
 			this.textBoxSourceOfMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxSourceOfMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfMagnitudeMax.MouseEnter += new System.EventHandler(this.SetSourceOfMagnitudeHoverColor_Enter);
 			this.textBoxSourceOfMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxSourceOfMagnitudeMin
@@ -6069,9 +6070,9 @@
 			this.textBoxSourceOfMagnitudeMin.Name = "textBoxSourceOfMagnitudeMin";
 			this.textBoxSourceOfMagnitudeMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxSourceOfMagnitudeMin.TabIndex = 90;
-			this.textBoxSourceOfMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfMagnitudeMin.Enter += new System.EventHandler(this.SetSourceOfMagnitudeHoverColor_Enter);
 			this.textBoxSourceOfMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxSourceOfMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfMagnitudeMin.MouseEnter += new System.EventHandler(this.SetSourceOfMagnitudeHoverColor_Enter);
 			this.textBoxSourceOfMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCoarseVariabilityFlagMax
@@ -6084,9 +6085,9 @@
 			this.textBoxCoarseVariabilityFlagMax.Name = "textBoxCoarseVariabilityFlagMax";
 			this.textBoxCoarseVariabilityFlagMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCoarseVariabilityFlagMax.TabIndex = 82;
-			this.textBoxCoarseVariabilityFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCoarseVariabilityFlagMax.Enter += new System.EventHandler(this.SetCoarseVariabilityFlagHoverColor_Enter);
 			this.textBoxCoarseVariabilityFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCoarseVariabilityFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCoarseVariabilityFlagMax.MouseEnter += new System.EventHandler(this.SetCoarseVariabilityFlagHoverColor_Enter);
 			this.textBoxCoarseVariabilityFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxCoarseVariabilityFlagMin
@@ -6099,9 +6100,9 @@
 			this.textBoxCoarseVariabilityFlagMin.Name = "textBoxCoarseVariabilityFlagMin";
 			this.textBoxCoarseVariabilityFlagMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxCoarseVariabilityFlagMin.TabIndex = 80;
-			this.textBoxCoarseVariabilityFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCoarseVariabilityFlagMin.Enter += new System.EventHandler(this.SetCoarseVariabilityFlagHoverColor_Enter);
 			this.textBoxCoarseVariabilityFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxCoarseVariabilityFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxCoarseVariabilityFlagMin.MouseEnter += new System.EventHandler(this.SetCoarseVariabilityFlagHoverColor_Enter);
 			this.textBoxCoarseVariabilityFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxMagnitudeJohnsonMax
@@ -6114,9 +6115,9 @@
 			this.textBoxMagnitudeJohnsonMax.Name = "textBoxMagnitudeJohnsonMax";
 			this.textBoxMagnitudeJohnsonMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxMagnitudeJohnsonMax.TabIndex = 65;
-			this.textBoxMagnitudeJohnsonMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMagnitudeJohnsonMax.Enter += new System.EventHandler(this.SetMagnitudeJohnsonHoverColor_Enter);
 			this.textBoxMagnitudeJohnsonMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxMagnitudeJohnsonMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMagnitudeJohnsonMax.MouseEnter += new System.EventHandler(this.SetMagnitudeJohnsonHoverColor_Enter);
 			this.textBoxMagnitudeJohnsonMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxMagnitudeJohnsonMin
@@ -6129,9 +6130,9 @@
 			this.textBoxMagnitudeJohnsonMin.Name = "textBoxMagnitudeJohnsonMin";
 			this.textBoxMagnitudeJohnsonMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxMagnitudeJohnsonMin.TabIndex = 63;
-			this.textBoxMagnitudeJohnsonMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMagnitudeJohnsonMin.Enter += new System.EventHandler(this.SetMagnitudeJohnsonHoverColor_Enter);
 			this.textBoxMagnitudeJohnsonMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxMagnitudeJohnsonMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxMagnitudeJohnsonMin.MouseEnter += new System.EventHandler(this.SetMagnitudeJohnsonHoverColor_Enter);
 			this.textBoxMagnitudeJohnsonMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxDeclinationMax
@@ -6144,9 +6145,9 @@
 			this.textBoxDeclinationMax.Name = "textBoxDeclinationMax";
 			this.textBoxDeclinationMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxDeclinationMax.TabIndex = 55;
-			this.textBoxDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeclinationMax.Enter += new System.EventHandler(this.SetDeclinationHoverColor_Enter);
 			this.textBoxDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeclinationMax.MouseEnter += new System.EventHandler(this.SetDeclinationHoverColor_Enter);
 			this.textBoxDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxDeclinationMin
@@ -6159,9 +6160,9 @@
 			this.textBoxDeclinationMin.Name = "textBoxDeclinationMin";
 			this.textBoxDeclinationMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxDeclinationMin.TabIndex = 53;
-			this.textBoxDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeclinationMin.Enter += new System.EventHandler(this.SetDeclinationHoverColor_Enter);
 			this.textBoxDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxDeclinationMin.MouseEnter += new System.EventHandler(this.SetDeclinationHoverColor_Enter);
 			this.textBoxDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBox11
@@ -6174,9 +6175,9 @@
 			this.textBox11.Name = "textBox11";
 			this.textBox11.Size = new System.Drawing.Size(50, 18);
 			this.textBox11.TabIndex = 34;
-			this.textBox11.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBox11.Enter += new System.EventHandler(this.SetRightAscensionHoverColor_Enter);
 			this.textBox11.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBox11.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBox11.MouseEnter += new System.EventHandler(this.SetRightAscensionHoverColor_Enter);
 			this.textBox11.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxRightAscensionMax
@@ -6189,9 +6190,9 @@
 			this.textBoxRightAscensionMax.Name = "textBoxRightAscensionMax";
 			this.textBoxRightAscensionMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxRightAscensionMax.TabIndex = 32;
-			this.textBoxRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxRightAscensionMax.Enter += new System.EventHandler(this.SetRightAscensionHoverColor_Enter);
 			this.textBoxRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxRightAscensionMax.MouseEnter += new System.EventHandler(this.SetRightAscensionHoverColor_Enter);
 			this.textBoxRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxProximityFlagMax
@@ -6204,9 +6205,9 @@
 			this.textBoxProximityFlagMax.Name = "textBoxProximityFlagMax";
 			this.textBoxProximityFlagMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxProximityFlagMax.TabIndex = 24;
-			this.textBoxProximityFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProximityFlagMax.Enter += new System.EventHandler(this.SetlProximityFlagHoverColor_Enter);
 			this.textBoxProximityFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxProximityFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProximityFlagMax.MouseEnter += new System.EventHandler(this.SetlProximityFlagHoverColor_Enter);
 			this.textBoxProximityFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxProximityFlagMin
@@ -6219,9 +6220,9 @@
 			this.textBoxProximityFlagMin.Name = "textBoxProximityFlagMin";
 			this.textBoxProximityFlagMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxProximityFlagMin.TabIndex = 22;
-			this.textBoxProximityFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProximityFlagMin.Enter += new System.EventHandler(this.SetlProximityFlagHoverColor_Enter);
 			this.textBoxProximityFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxProximityFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxProximityFlagMin.MouseEnter += new System.EventHandler(this.SetlProximityFlagHoverColor_Enter);
 			this.textBoxProximityFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// textBoxIdentifierMax
@@ -6234,10 +6235,10 @@
 			this.textBoxIdentifierMax.Name = "textBoxIdentifierMax";
 			this.textBoxIdentifierMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxIdentifierMax.TabIndex = 14;
-			this.textBoxIdentifierMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBoxIdentifierMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxIdentifierMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBoxIdentifierMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxIdentifierMax.Enter += new System.EventHandler(this.SetIdentifierHoverColor_Enter);
+			this.textBoxIdentifierMax.Leave += new System.EventHandler(this.ClearIdentifierHoverColor_Leave);
+			this.textBoxIdentifierMax.MouseEnter += new System.EventHandler(this.SetIdentifierHoverColor_Enter);
+			this.textBoxIdentifierMax.MouseLeave += new System.EventHandler(this.ClearIdentifierHoverColor_Leave);
 			// 
 			// textBoxIdentifierMin
 			// 
@@ -6249,44 +6250,46 @@
 			this.textBoxIdentifierMin.Name = "textBoxIdentifierMin";
 			this.textBoxIdentifierMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxIdentifierMin.TabIndex = 12;
-			this.textBoxIdentifierMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBoxIdentifierMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxIdentifierMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBoxIdentifierMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxIdentifierMin.Enter += new System.EventHandler(this.SetIdentifierHoverColor_Enter);
+			this.textBoxIdentifierMin.Leave += new System.EventHandler(this.ClearIdentifierHoverColor_Leave);
+			this.textBoxIdentifierMin.MouseEnter += new System.EventHandler(this.SetIdentifierHoverColor_Enter);
+			this.textBoxIdentifierMin.MouseLeave += new System.EventHandler(this.ClearIdentifierHoverColor_Leave);
 			// 
 			// textBoxlCatalogMax
 			// 
 			this.textBoxlCatalogMax.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
 			this.textBoxlCatalogMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxlCatalogMax.Enabled = false;
 			this.textBoxlCatalogMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
 			this.textBoxlCatalogMax.Location = new System.Drawing.Point(330, 0);
 			this.textBoxlCatalogMax.Margin = new System.Windows.Forms.Padding(0);
 			this.textBoxlCatalogMax.Name = "textBoxlCatalogMax";
 			this.textBoxlCatalogMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxlCatalogMax.TabIndex = 4;
-			this.textBoxlCatalogMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBoxlCatalogMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxlCatalogMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBoxlCatalogMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxlCatalogMax.Enter += new System.EventHandler(this.SetCatalogHoverColor_Enter);
+			this.textBoxlCatalogMax.Leave += new System.EventHandler(this.ClearCatalogHoverColor_Leave);
+			this.textBoxlCatalogMax.MouseEnter += new System.EventHandler(this.SetCatalogHoverColor_Enter);
+			this.textBoxlCatalogMax.MouseLeave += new System.EventHandler(this.ClearCatalogHoverColor_Leave);
 			// 
-			// labellCatalogMax
+			// labelCatalogMax
 			// 
-			this.labellCatalogMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
-			this.labellCatalogMax.AccessibleName = "Catalogue (H=Hipparcos) data";
-			this.labellCatalogMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
-			this.labellCatalogMax.AutoSize = true;
-			this.labellCatalogMax.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labellCatalogMax.Location = new System.Drawing.Point(295, 0);
-			this.labellCatalogMax.Margin = new System.Windows.Forms.Padding(0);
-			this.labellCatalogMax.Name = "labellCatalogMax";
-			this.labellCatalogMax.Size = new System.Drawing.Size(35, 18);
-			this.labellCatalogMax.TabIndex = 3;
-			this.labellCatalogMax.Text = "max.:";
-			this.labellCatalogMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labellCatalogMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labellCatalogMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labellCatalogMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labellCatalogMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCatalogMax.AccessibleDescription = "Catalogue (H=Hipparcos) data";
+			this.labelCatalogMax.AccessibleName = "Catalogue (H=Hipparcos) data";
+			this.labelCatalogMax.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
+			this.labelCatalogMax.AutoSize = true;
+			this.labelCatalogMax.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCatalogMax.Enabled = false;
+			this.labelCatalogMax.Location = new System.Drawing.Point(295, 0);
+			this.labelCatalogMax.Margin = new System.Windows.Forms.Padding(0);
+			this.labelCatalogMax.Name = "labelCatalogMax";
+			this.labelCatalogMax.Size = new System.Drawing.Size(35, 18);
+			this.labelCatalogMax.TabIndex = 3;
+			this.labelCatalogMax.Text = "max.:";
+			this.labelCatalogMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.labelCatalogMax.Enter += new System.EventHandler(this.SetCatalogHoverColor_Enter);
+			this.labelCatalogMax.Leave += new System.EventHandler(this.ClearCatalogHoverColor_Leave);
+			this.labelCatalogMax.MouseEnter += new System.EventHandler(this.SetCatalogHoverColor_Enter);
+			this.labelCatalogMax.MouseLeave += new System.EventHandler(this.ClearCatalogHoverColor_Leave);
 			// 
 			// labelSourceOfBvColorMin
 			// 
@@ -6302,9 +6305,9 @@
 			this.labelSourceOfBvColorMin.TabIndex = 23;
 			this.labelSourceOfBvColorMin.Text = "min.:";
 			this.labelSourceOfBvColorMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelSourceOfBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfBvColorMin.Enter += new System.EventHandler(this.SetSourceOfBvColorHoverColor_Enter);
 			this.labelSourceOfBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelSourceOfBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfBvColorMin.MouseEnter += new System.EventHandler(this.SetSourceOfBvColorHoverColor_Enter);
 			this.labelSourceOfBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelReferenceFlagForBtAndVtMagnitudeMin
@@ -6321,9 +6324,9 @@
 			this.labelReferenceFlagForBtAndVtMagnitudeMin.TabIndex = 13;
 			this.labelReferenceFlagForBtAndVtMagnitudeMin.Text = "min.:";
 			this.labelReferenceFlagForBtAndVtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelReferenceFlagForBtAndVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.Enter += new System.EventHandler(this.SetReferenceFlagForBtAndVtMagnitudeHoverColor_Enter);
 			this.labelReferenceFlagForBtAndVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelReferenceFlagForBtAndVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForBtAndVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetReferenceFlagForBtAndVtMagnitudeHoverColor_Enter);
 			this.labelReferenceFlagForBtAndVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorJohnsonBvColorMin
@@ -6340,9 +6343,9 @@
 			this.labelStandardErrorJohnsonBvColorMin.TabIndex = 3;
 			this.labelStandardErrorJohnsonBvColorMin.Text = "min.:";
 			this.labelStandardErrorJohnsonBvColorMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorJohnsonBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorJohnsonBvColorMin.Enter += new System.EventHandler(this.SetStandardErrorJohnsonBvColorHoverColor_Enter);
 			this.labelStandardErrorJohnsonBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetStandardErrorJohnsonBvColorHoverColor_Enter);
 			this.labelStandardErrorJohnsonBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelJohnsonBvColorMin
@@ -6359,9 +6362,9 @@
 			this.labelJohnsonBvColorMin.TabIndex = 378;
 			this.labelJohnsonBvColorMin.Text = "min.:";
 			this.labelJohnsonBvColorMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelJohnsonBvColorMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelJohnsonBvColorMin.Enter += new System.EventHandler(this.SetJohnsonBvColorHoverColor_Enter);
 			this.labelJohnsonBvColorMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelJohnsonBvColorMin.MouseEnter += new System.EventHandler(this.SetJohnsonBvColorHoverColor_Enter);
 			this.labelJohnsonBvColorMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorMeanVtMagnitudeMin
@@ -6378,9 +6381,9 @@
 			this.labelStandardErrorMeanVtMagnitudeMin.TabIndex = 368;
 			this.labelStandardErrorMeanVtMagnitudeMin.Text = "min.:";
 			this.labelStandardErrorMeanVtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetStandardErrorMeanVtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStandardErrorMeanVtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelMeanVtMagnitudeMin
@@ -6397,9 +6400,9 @@
 			this.labelMeanVtMagnitudeMin.TabIndex = 358;
 			this.labelMeanVtMagnitudeMin.Text = "min.:";
 			this.labelMeanVtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanVtMagnitudeMin.Enter += new System.EventHandler(this.SetMeanVtMagnitudeHoverColor_Enter);
 			this.labelMeanVtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanVtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetMeanVtMagnitudeHoverColor_Enter);
 			this.labelMeanVtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorMeanBtMagnitudeMin
@@ -6416,9 +6419,9 @@
 			this.labelStandardErrorMeanBtMagnitudeMin.TabIndex = 348;
 			this.labelStandardErrorMeanBtMagnitudeMin.Text = "min.:";
 			this.labelStandardErrorMeanBtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetStandardErrorMeanBtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanBtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStandardErrorMeanBtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanBtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelMeanBtMagnitudeMin
@@ -6435,9 +6438,9 @@
 			this.labelMeanBtMagnitudeMin.TabIndex = 338;
 			this.labelMeanBtMagnitudeMin.Text = "min.:";
 			this.labelMeanBtMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanBtMagnitudeMin.Enter += new System.EventHandler(this.SetMeanBtMagnitudeHoverColor_Enter);
 			this.labelMeanBtMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanBtMagnitudeMin.MouseEnter += new System.EventHandler(this.SetMeanBtMagnitudeHoverColor_Enter);
 			this.labelMeanBtMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelGoodnessOfFitParameterMin
@@ -6454,9 +6457,9 @@
 			this.labelGoodnessOfFitParameterMin.TabIndex = 328;
 			this.labelGoodnessOfFitParameterMin.Text = "min.:";
 			this.labelGoodnessOfFitParameterMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelGoodnessOfFitParameterMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelGoodnessOfFitParameterMin.Enter += new System.EventHandler(this.SetGoodnessOfFitParameterHoverColor_Enter);
 			this.labelGoodnessOfFitParameterMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelGoodnessOfFitParameterMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelGoodnessOfFitParameterMin.MouseEnter += new System.EventHandler(this.SetGoodnessOfFitParameterHoverColor_Enter);
 			this.labelGoodnessOfFitParameterMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelPercentageOfRejectedDataMin
@@ -6473,9 +6476,9 @@
 			this.labelPercentageOfRejectedDataMin.TabIndex = 318;
 			this.labelPercentageOfRejectedDataMin.Text = "min.:";
 			this.labelPercentageOfRejectedDataMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelPercentageOfRejectedDataMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelPercentageOfRejectedDataMin.Enter += new System.EventHandler(this.SetPercentageOfRejectedDataHoverColor_Enter);
 			this.labelPercentageOfRejectedDataMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelPercentageOfRejectedDataMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelPercentageOfRejectedDataMin.MouseEnter += new System.EventHandler(this.SetPercentageOfRejectedDataHoverColor_Enter);
 			this.labelPercentageOfRejectedDataMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin
@@ -6492,9 +6495,9 @@
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.TabIndex = 301;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Text = "min.:";
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByProperMotionRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByProperMotionRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin
@@ -6511,9 +6514,9 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.TabIndex = 291;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Text = "min.:";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionDeclinationByDeclinationMin
@@ -6530,9 +6533,9 @@
 			this.labelCorrelationProperMotionDeclinationByDeclinationMin.TabIndex = 281;
 			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Text = "min.:";
 			this.labelCorrelationProperMotionDeclinationByDeclinationMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionDeclinationByRightAscensionMin
@@ -6549,9 +6552,9 @@
 			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.TabIndex = 269;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Text = "min.:";
 			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin
@@ -6568,9 +6571,9 @@
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.TabIndex = 259;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Text = "min.:";
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByDeclinationMin
@@ -6587,9 +6590,9 @@
 			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.TabIndex = 249;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Text = "min.:";
 			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByRightAscensionMin
@@ -6606,9 +6609,9 @@
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.TabIndex = 239;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Text = "min.:";
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationTrigonomicParallaxByDeclinationMin
@@ -6625,9 +6628,9 @@
 			this.labelCorrelationTrigonomicParallaxByDeclinationMin.TabIndex = 229;
 			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Text = "min.:";
 			this.labelCorrelationTrigonomicParallaxByDeclinationMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Enter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByDeclinationHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationTrigonomicParallaxByDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMin.MouseEnter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByDeclinationHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationTrigonomicParallaxByRightAscensionMin
@@ -6644,9 +6647,9 @@
 			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.TabIndex = 219;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Text = "min.:";
 			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Enter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByRightAscensionHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByRightAscensionHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationDeclinationByRightAscensionMin
@@ -6663,9 +6666,9 @@
 			this.labelCorrelationDeclinationByRightAscensionMin.TabIndex = 209;
 			this.labelCorrelationDeclinationByRightAscensionMin.Text = "min.:";
 			this.labelCorrelationDeclinationByRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationDeclinationByRightAscensionMin.Enter += new System.EventHandler(this.SetCorrelationDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationDeclinationByRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationDeclinationByRightAscensionMin.MouseEnter += new System.EventHandler(this.SetCorrelationDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationDeclinationByRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorProperMotionDeclinationmMin
@@ -6682,9 +6685,9 @@
 			this.labelStandardErrorProperMotionDeclinationmMin.TabIndex = 199;
 			this.labelStandardErrorProperMotionDeclinationmMin.Text = "min.:";
 			this.labelStandardErrorProperMotionDeclinationmMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorProperMotionDeclinationmMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionDeclinationmMin.Enter += new System.EventHandler(this.SetStandardErrorProperMotionDeclinationHoverColor_Enter);
 			this.labelStandardErrorProperMotionDeclinationmMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorProperMotionDeclinationmMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionDeclinationmMin.MouseEnter += new System.EventHandler(this.SetStandardErrorProperMotionDeclinationHoverColor_Enter);
 			this.labelStandardErrorProperMotionDeclinationmMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorProperMotionRightAscensionMin
@@ -6701,9 +6704,9 @@
 			this.labelStandardErrorProperMotionRightAscensionMin.TabIndex = 189;
 			this.labelStandardErrorProperMotionRightAscensionMin.Text = "min.:";
 			this.labelStandardErrorProperMotionRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionRightAscensionMin.Enter += new System.EventHandler(this.SetStandardErrorProperMotionRightAscensionHoverColor_Enter);
 			this.labelStandardErrorProperMotionRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStandardErrorProperMotionRightAscensionHoverColor_Enter);
 			this.labelStandardErrorProperMotionRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorTrigonomicParallaxMin
@@ -6720,9 +6723,9 @@
 			this.labelStandardErrorTrigonomicParallaxMin.TabIndex = 179;
 			this.labelStandardErrorTrigonomicParallaxMin.Text = "min.:";
 			this.labelStandardErrorTrigonomicParallaxMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStandardErrorTrigonomicParallaxHoverColor_Enter);
 			this.labelStandardErrorTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStandardErrorTrigonomicParallaxHoverColor_Enter);
 			this.labelStandardErrorTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorDeclinationMin
@@ -6739,9 +6742,9 @@
 			this.labelStandardErrorDeclinationMin.TabIndex = 169;
 			this.labelStandardErrorDeclinationMin.Text = "min.:";
 			this.labelStandardErrorDeclinationMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorDeclinationMin.Enter += new System.EventHandler(this.SetStandardErrorDeclinationHoverColor_Enter);
 			this.labelStandardErrorDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorDeclinationMin.MouseEnter += new System.EventHandler(this.SetStandardErrorDeclinationHoverColor_Enter);
 			this.labelStandardErrorDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorRightAscensionMin
@@ -6758,9 +6761,9 @@
 			this.labelStandardErrorRightAscensionMin.TabIndex = 159;
 			this.labelStandardErrorRightAscensionMin.Text = "min.:";
 			this.labelStandardErrorRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorRightAscensionMin.Enter += new System.EventHandler(this.SetStandardErrorRightAscensionHoverColor_Enter);
 			this.labelStandardErrorRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStandardErrorRightAscensionHoverColor_Enter);
 			this.labelStandardErrorRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelProperMotionDeltaMin
@@ -6777,9 +6780,9 @@
 			this.labelProperMotionDeltaMin.TabIndex = 149;
 			this.labelProperMotionDeltaMin.Text = "min.:";
 			this.labelProperMotionDeltaMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelProperMotionDeltaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionDeltaMin.Enter += new System.EventHandler(this.SetProperMotionDeltaHoverColor_Enter);
 			this.labelProperMotionDeltaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProperMotionDeltaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionDeltaMin.MouseEnter += new System.EventHandler(this.SetProperMotionDeltaHoverColor_Enter);
 			this.labelProperMotionDeltaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelProperMotionAlphaMin
@@ -6796,9 +6799,9 @@
 			this.labelProperMotionAlphaMin.TabIndex = 139;
 			this.labelProperMotionAlphaMin.Text = "min.:";
 			this.labelProperMotionAlphaMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelProperMotionAlphaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionAlphaMin.Enter += new System.EventHandler(this.SetProperMotionAlphaHoverColor_Enter);
 			this.labelProperMotionAlphaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProperMotionAlphaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionAlphaMin.MouseEnter += new System.EventHandler(this.SetProperMotionAlphaHoverColor_Enter);
 			this.labelProperMotionAlphaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelTrigonomicParallaxMin
@@ -6815,9 +6818,9 @@
 			this.labelTrigonomicParallaxMin.TabIndex = 129;
 			this.labelTrigonomicParallaxMin.Text = "min.:";
 			this.labelTrigonomicParallaxMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelTrigonomicParallaxMin.Enter += new System.EventHandler(this.SetTrigonomicParallaxHoverColor_Enter);
 			this.labelTrigonomicParallaxMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelTrigonomicParallaxMin.MouseEnter += new System.EventHandler(this.SetTrigonomicParallaxHoverColor_Enter);
 			this.labelTrigonomicParallaxMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelReferenceFlagForAstrometryMin
@@ -6834,9 +6837,9 @@
 			this.labelReferenceFlagForAstrometryMin.TabIndex = 119;
 			this.labelReferenceFlagForAstrometryMin.Text = "min.:";
 			this.labelReferenceFlagForAstrometryMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelReferenceFlagForAstrometryMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForAstrometryMin.Enter += new System.EventHandler(this.SetReferenceFlagForAstrometryHoverColor_Enter);
 			this.labelReferenceFlagForAstrometryMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelReferenceFlagForAstrometryMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForAstrometryMin.MouseEnter += new System.EventHandler(this.SetReferenceFlagForAstrometryHoverColor_Enter);
 			this.labelReferenceFlagForAstrometryMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelDeltaMin
@@ -6853,9 +6856,9 @@
 			this.labelDeltaMin.TabIndex = 109;
 			this.labelDeltaMin.Text = "min.:";
 			this.labelDeltaMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelDeltaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeltaMin.Enter += new System.EventHandler(this.SetDeltaHoverColor_Enter);
 			this.labelDeltaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelDeltaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeltaMin.MouseEnter += new System.EventHandler(this.SetDeltaHoverColor_Enter);
 			this.labelDeltaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelAlphaMin
@@ -6872,9 +6875,9 @@
 			this.labelAlphaMin.TabIndex = 99;
 			this.labelAlphaMin.Text = "min.:";
 			this.labelAlphaMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelAlphaMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelAlphaMin.Enter += new System.EventHandler(this.SetAlphaHoverColor_Enter);
 			this.labelAlphaMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelAlphaMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelAlphaMin.MouseEnter += new System.EventHandler(this.SetAlphaHoverColor_Enter);
 			this.labelAlphaMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelSourceOfMagnitudeMin
@@ -6891,9 +6894,9 @@
 			this.labelSourceOfMagnitudeMin.TabIndex = 89;
 			this.labelSourceOfMagnitudeMin.Text = "min.:";
 			this.labelSourceOfMagnitudeMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelSourceOfMagnitudeMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfMagnitudeMin.Enter += new System.EventHandler(this.SetSourceOfMagnitudeHoverColor_Enter);
 			this.labelSourceOfMagnitudeMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelSourceOfMagnitudeMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfMagnitudeMin.MouseEnter += new System.EventHandler(this.SetSourceOfMagnitudeHoverColor_Enter);
 			this.labelSourceOfMagnitudeMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCoarseVariabilityFlagMin
@@ -6910,9 +6913,9 @@
 			this.labelCoarseVariabilityFlagMin.TabIndex = 79;
 			this.labelCoarseVariabilityFlagMin.Text = "min.:";
 			this.labelCoarseVariabilityFlagMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCoarseVariabilityFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCoarseVariabilityFlagMin.Enter += new System.EventHandler(this.SetCoarseVariabilityFlagHoverColor_Enter);
 			this.labelCoarseVariabilityFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCoarseVariabilityFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCoarseVariabilityFlagMin.MouseEnter += new System.EventHandler(this.SetCoarseVariabilityFlagHoverColor_Enter);
 			this.labelCoarseVariabilityFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelMagnitudeJohnsonMin
@@ -6929,9 +6932,9 @@
 			this.labelMagnitudeJohnsonMin.TabIndex = 62;
 			this.labelMagnitudeJohnsonMin.Text = "min.:";
 			this.labelMagnitudeJohnsonMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelMagnitudeJohnsonMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMagnitudeJohnsonMin.Enter += new System.EventHandler(this.SetMagnitudeJohnsonHoverColor_Enter);
 			this.labelMagnitudeJohnsonMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMagnitudeJohnsonMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMagnitudeJohnsonMin.MouseEnter += new System.EventHandler(this.SetMagnitudeJohnsonHoverColor_Enter);
 			this.labelMagnitudeJohnsonMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelDeclinationMin
@@ -6948,9 +6951,9 @@
 			this.labelDeclinationMin.TabIndex = 52;
 			this.labelDeclinationMin.Text = "min.:";
 			this.labelDeclinationMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelDeclinationMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeclinationMin.Enter += new System.EventHandler(this.SetDeclinationHoverColor_Enter);
 			this.labelDeclinationMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelDeclinationMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeclinationMin.MouseEnter += new System.EventHandler(this.SetDeclinationHoverColor_Enter);
 			this.labelDeclinationMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelRightAscensionMin
@@ -6967,9 +6970,9 @@
 			this.labelRightAscensionMin.TabIndex = 31;
 			this.labelRightAscensionMin.Text = "min.:";
 			this.labelRightAscensionMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelRightAscensionMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelRightAscensionMin.Enter += new System.EventHandler(this.SetRightAscensionHoverColor_Enter);
 			this.labelRightAscensionMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelRightAscensionMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelRightAscensionMin.MouseEnter += new System.EventHandler(this.SetRightAscensionHoverColor_Enter);
 			this.labelRightAscensionMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelProximityFlagMin
@@ -6986,9 +6989,9 @@
 			this.labelProximityFlagMin.TabIndex = 21;
 			this.labelProximityFlagMin.Text = "min.:";
 			this.labelProximityFlagMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelProximityFlagMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProximityFlagMin.Enter += new System.EventHandler(this.SetlProximityFlagHoverColor_Enter);
 			this.labelProximityFlagMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProximityFlagMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProximityFlagMin.MouseEnter += new System.EventHandler(this.SetlProximityFlagHoverColor_Enter);
 			this.labelProximityFlagMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelIdentifierMin
@@ -7005,10 +7008,10 @@
 			this.labelIdentifierMin.TabIndex = 11;
 			this.labelIdentifierMin.Text = "min.:";
 			this.labelIdentifierMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelIdentifierMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelIdentifierMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelIdentifierMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelIdentifierMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelIdentifierMin.Enter += new System.EventHandler(this.SetIdentifierHoverColor_Enter);
+			this.labelIdentifierMin.Leave += new System.EventHandler(this.ClearIdentifierHoverColor_Leave);
+			this.labelIdentifierMin.MouseEnter += new System.EventHandler(this.SetIdentifierHoverColor_Enter);
+			this.labelIdentifierMin.MouseLeave += new System.EventHandler(this.ClearIdentifierHoverColor_Leave);
 			// 
 			// labelCatalogMin
 			// 
@@ -7017,6 +7020,7 @@
 			this.labelCatalogMin.AccessibleRole = System.Windows.Forms.AccessibleRole.StaticText;
 			this.labelCatalogMin.AutoSize = true;
 			this.labelCatalogMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.labelCatalogMin.Enabled = false;
 			this.labelCatalogMin.Location = new System.Drawing.Point(210, 0);
 			this.labelCatalogMin.Margin = new System.Windows.Forms.Padding(0);
 			this.labelCatalogMin.Name = "labelCatalogMin";
@@ -7024,25 +7028,26 @@
 			this.labelCatalogMin.TabIndex = 1;
 			this.labelCatalogMin.Text = "min.:";
 			this.labelCatalogMin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCatalogMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCatalogMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCatalogMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelCatalogMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelCatalogMin.Enter += new System.EventHandler(this.SetCatalogHoverColor_Enter);
+			this.labelCatalogMin.Leave += new System.EventHandler(this.ClearCatalogHoverColor_Leave);
+			this.labelCatalogMin.MouseEnter += new System.EventHandler(this.SetCatalogHoverColor_Enter);
+			this.labelCatalogMin.MouseLeave += new System.EventHandler(this.ClearCatalogHoverColor_Leave);
 			// 
 			// textBoxlCatalogMin
 			// 
 			this.textBoxlCatalogMin.AccessibleRole = System.Windows.Forms.AccessibleRole.Text;
 			this.textBoxlCatalogMin.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBoxlCatalogMin.Enabled = false;
 			this.textBoxlCatalogMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
 			this.textBoxlCatalogMin.Location = new System.Drawing.Point(245, 0);
 			this.textBoxlCatalogMin.Margin = new System.Windows.Forms.Padding(0);
 			this.textBoxlCatalogMin.Name = "textBoxlCatalogMin";
 			this.textBoxlCatalogMin.Size = new System.Drawing.Size(50, 18);
 			this.textBoxlCatalogMin.TabIndex = 2;
-			this.textBoxlCatalogMin.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBoxlCatalogMin.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxlCatalogMin.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.textBoxlCatalogMin.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.textBoxlCatalogMin.Enter += new System.EventHandler(this.SetCatalogHoverColor_Enter);
+			this.textBoxlCatalogMin.Leave += new System.EventHandler(this.ClearCatalogHoverColor_Leave);
+			this.textBoxlCatalogMin.MouseEnter += new System.EventHandler(this.SetCatalogHoverColor_Enter);
+			this.textBoxlCatalogMin.MouseLeave += new System.EventHandler(this.ClearCatalogHoverColor_Leave);
 			// 
 			// textBoxSourceOfBvColorMax
 			// 
@@ -7054,9 +7059,9 @@
 			this.textBoxSourceOfBvColorMax.Name = "textBoxSourceOfBvColorMax";
 			this.textBoxSourceOfBvColorMax.Size = new System.Drawing.Size(50, 18);
 			this.textBoxSourceOfBvColorMax.TabIndex = 26;
-			this.textBoxSourceOfBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfBvColorMax.Enter += new System.EventHandler(this.SetSourceOfBvColorHoverColor_Enter);
 			this.textBoxSourceOfBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.textBoxSourceOfBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.textBoxSourceOfBvColorMax.MouseEnter += new System.EventHandler(this.SetSourceOfBvColorHoverColor_Enter);
 			this.textBoxSourceOfBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelIdentifierMax
@@ -7071,10 +7076,10 @@
 			this.labelIdentifierMax.TabIndex = 13;
 			this.labelIdentifierMax.Text = "max.:";
 			this.labelIdentifierMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelIdentifierMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelIdentifierMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelIdentifierMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
-			this.labelIdentifierMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
+			this.labelIdentifierMax.Enter += new System.EventHandler(this.SetIdentifierHoverColor_Enter);
+			this.labelIdentifierMax.Leave += new System.EventHandler(this.ClearIdentifierHoverColor_Leave);
+			this.labelIdentifierMax.MouseEnter += new System.EventHandler(this.SetIdentifierHoverColor_Enter);
+			this.labelIdentifierMax.MouseLeave += new System.EventHandler(this.ClearIdentifierHoverColor_Leave);
 			// 
 			// labelProximityFlagMax
 			// 
@@ -7088,9 +7093,9 @@
 			this.labelProximityFlagMax.TabIndex = 23;
 			this.labelProximityFlagMax.Text = "max.:";
 			this.labelProximityFlagMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelProximityFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProximityFlagMax.Enter += new System.EventHandler(this.SetlProximityFlagHoverColor_Enter);
 			this.labelProximityFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProximityFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProximityFlagMax.MouseEnter += new System.EventHandler(this.SetlProximityFlagHoverColor_Enter);
 			this.labelProximityFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelRightAscensionMax
@@ -7105,9 +7110,9 @@
 			this.labelRightAscensionMax.TabIndex = 33;
 			this.labelRightAscensionMax.Text = "max.:";
 			this.labelRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelRightAscensionMax.Enter += new System.EventHandler(this.SetRightAscensionHoverColor_Enter);
 			this.labelRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelRightAscensionMax.MouseEnter += new System.EventHandler(this.SetRightAscensionHoverColor_Enter);
 			this.labelRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelDeclinationMax
@@ -7122,9 +7127,9 @@
 			this.labelDeclinationMax.TabIndex = 54;
 			this.labelDeclinationMax.Text = "max.:";
 			this.labelDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeclinationMax.Enter += new System.EventHandler(this.SetDeclinationHoverColor_Enter);
 			this.labelDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeclinationMax.MouseEnter += new System.EventHandler(this.SetDeclinationHoverColor_Enter);
 			this.labelDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelMagnitudeJohnsonMax
@@ -7139,9 +7144,9 @@
 			this.labelMagnitudeJohnsonMax.TabIndex = 64;
 			this.labelMagnitudeJohnsonMax.Text = "max.:";
 			this.labelMagnitudeJohnsonMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelMagnitudeJohnsonMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMagnitudeJohnsonMax.Enter += new System.EventHandler(this.SetMagnitudeJohnsonHoverColor_Enter);
 			this.labelMagnitudeJohnsonMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMagnitudeJohnsonMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMagnitudeJohnsonMax.MouseEnter += new System.EventHandler(this.SetMagnitudeJohnsonHoverColor_Enter);
 			this.labelMagnitudeJohnsonMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCoarseVariabilityFlagMax
@@ -7156,9 +7161,9 @@
 			this.labelCoarseVariabilityFlagMax.TabIndex = 81;
 			this.labelCoarseVariabilityFlagMax.Text = "max.:";
 			this.labelCoarseVariabilityFlagMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCoarseVariabilityFlagMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCoarseVariabilityFlagMax.Enter += new System.EventHandler(this.SetCoarseVariabilityFlagHoverColor_Enter);
 			this.labelCoarseVariabilityFlagMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCoarseVariabilityFlagMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCoarseVariabilityFlagMax.MouseEnter += new System.EventHandler(this.SetCoarseVariabilityFlagHoverColor_Enter);
 			this.labelCoarseVariabilityFlagMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelSourceOfMagnitudeMax
@@ -7173,9 +7178,9 @@
 			this.labelSourceOfMagnitudeMax.TabIndex = 91;
 			this.labelSourceOfMagnitudeMax.Text = "max.:";
 			this.labelSourceOfMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelSourceOfMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfMagnitudeMax.Enter += new System.EventHandler(this.SetSourceOfMagnitudeHoverColor_Enter);
 			this.labelSourceOfMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelSourceOfMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfMagnitudeMax.MouseEnter += new System.EventHandler(this.SetSourceOfMagnitudeHoverColor_Enter);
 			this.labelSourceOfMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labellAlphaMax
@@ -7190,9 +7195,9 @@
 			this.labellAlphaMax.TabIndex = 101;
 			this.labellAlphaMax.Text = "max.:";
 			this.labellAlphaMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labellAlphaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labellAlphaMax.Enter += new System.EventHandler(this.SetAlphaHoverColor_Enter);
 			this.labellAlphaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labellAlphaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labellAlphaMax.MouseEnter += new System.EventHandler(this.SetAlphaHoverColor_Enter);
 			this.labellAlphaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelDeltaMax
@@ -7207,9 +7212,9 @@
 			this.labelDeltaMax.TabIndex = 111;
 			this.labelDeltaMax.Text = "max.:";
 			this.labelDeltaMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelDeltaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeltaMax.Enter += new System.EventHandler(this.SetDeltaHoverColor_Enter);
 			this.labelDeltaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelDeltaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelDeltaMax.MouseEnter += new System.EventHandler(this.SetDeltaHoverColor_Enter);
 			this.labelDeltaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// label1ReferenceFlagForAstrometryMax
@@ -7224,9 +7229,9 @@
 			this.label1ReferenceFlagForAstrometryMax.TabIndex = 121;
 			this.label1ReferenceFlagForAstrometryMax.Text = "max.:";
 			this.label1ReferenceFlagForAstrometryMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.label1ReferenceFlagForAstrometryMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.label1ReferenceFlagForAstrometryMax.Enter += new System.EventHandler(this.SetReferenceFlagForAstrometryHoverColor_Enter);
 			this.label1ReferenceFlagForAstrometryMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.label1ReferenceFlagForAstrometryMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.label1ReferenceFlagForAstrometryMax.MouseEnter += new System.EventHandler(this.SetReferenceFlagForAstrometryHoverColor_Enter);
 			this.label1ReferenceFlagForAstrometryMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelTrigonomicParallaxMax
@@ -7241,9 +7246,9 @@
 			this.labelTrigonomicParallaxMax.TabIndex = 131;
 			this.labelTrigonomicParallaxMax.Text = "max.:";
 			this.labelTrigonomicParallaxMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetTrigonomicParallaxHoverColor_Enter);
 			this.labelTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetTrigonomicParallaxHoverColor_Enter);
 			this.labelTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelProperMotionAlphaMax
@@ -7258,9 +7263,9 @@
 			this.labelProperMotionAlphaMax.TabIndex = 141;
 			this.labelProperMotionAlphaMax.Text = "max.:";
 			this.labelProperMotionAlphaMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelProperMotionAlphaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionAlphaMax.Enter += new System.EventHandler(this.SetProperMotionAlphaHoverColor_Enter);
 			this.labelProperMotionAlphaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProperMotionAlphaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionAlphaMax.MouseEnter += new System.EventHandler(this.SetProperMotionAlphaHoverColor_Enter);
 			this.labelProperMotionAlphaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelProperMotionDeltaMax
@@ -7275,9 +7280,9 @@
 			this.labelProperMotionDeltaMax.TabIndex = 151;
 			this.labelProperMotionDeltaMax.Text = "max.:";
 			this.labelProperMotionDeltaMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelProperMotionDeltaMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionDeltaMax.Enter += new System.EventHandler(this.SetProperMotionDeltaHoverColor_Enter);
 			this.labelProperMotionDeltaMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelProperMotionDeltaMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelProperMotionDeltaMax.MouseEnter += new System.EventHandler(this.SetProperMotionDeltaHoverColor_Enter);
 			this.labelProperMotionDeltaMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorRightAscensionMax
@@ -7292,9 +7297,9 @@
 			this.labelStandardErrorRightAscensionMax.TabIndex = 161;
 			this.labelStandardErrorRightAscensionMax.Text = "max.:";
 			this.labelStandardErrorRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorRightAscensionMax.Enter += new System.EventHandler(this.SetStandardErrorRightAscensionHoverColor_Enter);
 			this.labelStandardErrorRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStandardErrorRightAscensionHoverColor_Enter);
 			this.labelStandardErrorRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorDeclinationMax
@@ -7309,9 +7314,9 @@
 			this.labelStandardErrorDeclinationMax.TabIndex = 171;
 			this.labelStandardErrorDeclinationMax.Text = "max.:";
 			this.labelStandardErrorDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorDeclinationMax.Enter += new System.EventHandler(this.SetStandardErrorDeclinationHoverColor_Enter);
 			this.labelStandardErrorDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorDeclinationMax.MouseEnter += new System.EventHandler(this.SetStandardErrorDeclinationHoverColor_Enter);
 			this.labelStandardErrorDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorTrigonomicParallaxMax
@@ -7326,9 +7331,9 @@
 			this.labelStandardErrorTrigonomicParallaxMax.TabIndex = 181;
 			this.labelStandardErrorTrigonomicParallaxMax.Text = "max.:";
 			this.labelStandardErrorTrigonomicParallaxMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStandardErrorTrigonomicParallaxHoverColor_Enter);
 			this.labelStandardErrorTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStandardErrorTrigonomicParallaxHoverColor_Enter);
 			this.labelStandardErrorTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorProperMotionRightAscensionMax
@@ -7343,9 +7348,9 @@
 			this.labelStandardErrorProperMotionRightAscensionMax.TabIndex = 191;
 			this.labelStandardErrorProperMotionRightAscensionMax.Text = "max.:";
 			this.labelStandardErrorProperMotionRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetStandardErrorProperMotionRightAscensionHoverColor_Enter);
 			this.labelStandardErrorProperMotionRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStandardErrorProperMotionRightAscensionHoverColor_Enter);
 			this.labelStandardErrorProperMotionRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labellStandardErrorProperMotionDeclinationMax
@@ -7360,9 +7365,9 @@
 			this.labellStandardErrorProperMotionDeclinationMax.TabIndex = 201;
 			this.labellStandardErrorProperMotionDeclinationMax.Text = "max.:";
 			this.labellStandardErrorProperMotionDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labellStandardErrorProperMotionDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labellStandardErrorProperMotionDeclinationMax.Enter += new System.EventHandler(this.SetStandardErrorProperMotionDeclinationHoverColor_Enter);
 			this.labellStandardErrorProperMotionDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labellStandardErrorProperMotionDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labellStandardErrorProperMotionDeclinationMax.MouseEnter += new System.EventHandler(this.SetStandardErrorProperMotionDeclinationHoverColor_Enter);
 			this.labellStandardErrorProperMotionDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationDeclinationByRightAscensionMax
@@ -7377,9 +7382,9 @@
 			this.labelCorrelationDeclinationByRightAscensionMax.TabIndex = 211;
 			this.labelCorrelationDeclinationByRightAscensionMax.Text = "max.:";
 			this.labelCorrelationDeclinationByRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetCorrelationDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationDeclinationByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetCorrelationDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationDeclinationByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationTrigonomicParallaxByRightAscensionMax
@@ -7394,9 +7399,9 @@
 			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.TabIndex = 221;
 			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Text = "max.:";
 			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Enter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByRightAscensionHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByRightAscensionHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationTrigonomicParallaxByDeclinationMax
@@ -7411,9 +7416,9 @@
 			this.labelCorrelationTrigonomicParallaxByDeclinationMax.TabIndex = 231;
 			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Text = "max.:";
 			this.labelCorrelationTrigonomicParallaxByDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Enter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByDeclinationHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationTrigonomicParallaxByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationTrigonomicParallaxByDeclinationMax.MouseEnter += new System.EventHandler(this.SetCorrelationTrigonomicParallaxByDeclinationHoverColor_Enter);
 			this.labelCorrelationTrigonomicParallaxByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByRightAscensionMax
@@ -7428,9 +7433,9 @@
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.TabIndex = 241;
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Text = "max.:";
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByDeclinationMax
@@ -7445,9 +7450,9 @@
 			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.TabIndex = 251;
 			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Text = "max.:";
 			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax
@@ -7462,9 +7467,9 @@
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.TabIndex = 261;
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Text = "max.:";
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionRightAscensionByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionRightAscensionByTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionDeclinationByRightAscensionMax
@@ -7479,9 +7484,9 @@
 			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.TabIndex = 271;
 			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Text = "max.:";
 			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionDeclinationByDeclinationMax
@@ -7496,9 +7501,9 @@
 			this.labelCorrelationProperMotionDeclinationByDeclinationMax.TabIndex = 283;
 			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Text = "max.:";
 			this.labelCorrelationProperMotionDeclinationByDeclinationMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByDeclinationMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByDeclinationMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByDeclinationMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByDeclinationHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByDeclinationMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax
@@ -7513,9 +7518,9 @@
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.TabIndex = 293;
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Text = "max.:";
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByTrigonomicParallaxHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByTrigonomicParallaxMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax
@@ -7530,9 +7535,9 @@
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.TabIndex = 303;
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Text = "max.:";
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Enter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByProperMotionRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.MouseEnter += new System.EventHandler(this.SetCorrelationProperMotionDeclinationByProperMotionRightAscensionHoverColor_Enter);
 			this.labelCorrelationProperMotionDeclinationByProperMotionRightAscensionMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelSourceOfBvColorMax
@@ -7547,9 +7552,9 @@
 			this.labelSourceOfBvColorMax.TabIndex = 25;
 			this.labelSourceOfBvColorMax.Text = "max.:";
 			this.labelSourceOfBvColorMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelSourceOfBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfBvColorMax.Enter += new System.EventHandler(this.SetSourceOfBvColorHoverColor_Enter);
 			this.labelSourceOfBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelSourceOfBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelSourceOfBvColorMax.MouseEnter += new System.EventHandler(this.SetSourceOfBvColorHoverColor_Enter);
 			this.labelSourceOfBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelReferenceFlagForBtAndVtMagnitudeMax
@@ -7564,9 +7569,9 @@
 			this.labelReferenceFlagForBtAndVtMagnitudeMax.TabIndex = 15;
 			this.labelReferenceFlagForBtAndVtMagnitudeMax.Text = "max.:";
 			this.labelReferenceFlagForBtAndVtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelReferenceFlagForBtAndVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.Enter += new System.EventHandler(this.SetReferenceFlagForBtAndVtMagnitudeHoverColor_Enter);
 			this.labelReferenceFlagForBtAndVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelReferenceFlagForBtAndVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelReferenceFlagForBtAndVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetReferenceFlagForBtAndVtMagnitudeHoverColor_Enter);
 			this.labelReferenceFlagForBtAndVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorJohnsonBvColorMax
@@ -7581,9 +7586,9 @@
 			this.labelStandardErrorJohnsonBvColorMax.TabIndex = 5;
 			this.labelStandardErrorJohnsonBvColorMax.Text = "max.:";
 			this.labelStandardErrorJohnsonBvColorMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorJohnsonBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorJohnsonBvColorMax.Enter += new System.EventHandler(this.SetStandardErrorJohnsonBvColorHoverColor_Enter);
 			this.labelStandardErrorJohnsonBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetStandardErrorJohnsonBvColorHoverColor_Enter);
 			this.labelStandardErrorJohnsonBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelJohnsonBvColorMax
@@ -7598,9 +7603,9 @@
 			this.labelJohnsonBvColorMax.TabIndex = 380;
 			this.labelJohnsonBvColorMax.Text = "max.:";
 			this.labelJohnsonBvColorMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelJohnsonBvColorMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelJohnsonBvColorMax.Enter += new System.EventHandler(this.SetJohnsonBvColorHoverColor_Enter);
 			this.labelJohnsonBvColorMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelJohnsonBvColorMax.MouseEnter += new System.EventHandler(this.SetJohnsonBvColorHoverColor_Enter);
 			this.labelJohnsonBvColorMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorMeanVtMagnitudeMax
@@ -7615,9 +7620,9 @@
 			this.labelStandardErrorMeanVtMagnitudeMax.TabIndex = 370;
 			this.labelStandardErrorMeanVtMagnitudeMax.Text = "max.:";
 			this.labelStandardErrorMeanVtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetStandardErrorMeanVtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStandardErrorMeanVtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelMeanVtMagnitudeMax
@@ -7632,9 +7637,9 @@
 			this.labelMeanVtMagnitudeMax.TabIndex = 360;
 			this.labelMeanVtMagnitudeMax.Text = "max.:";
 			this.labelMeanVtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanVtMagnitudeMax.Enter += new System.EventHandler(this.SetMeanVtMagnitudeHoverColor_Enter);
 			this.labelMeanVtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanVtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetMeanVtMagnitudeHoverColor_Enter);
 			this.labelMeanVtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelStandardErrorMeanBtMagnitudeMax
@@ -7649,9 +7654,9 @@
 			this.labelStandardErrorMeanBtMagnitudeMax.TabIndex = 350;
 			this.labelStandardErrorMeanBtMagnitudeMax.Text = "max.:";
 			this.labelStandardErrorMeanBtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardErrorMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetStandardErrorMeanBtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanBtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelStandardErrorMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelStandardErrorMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStandardErrorMeanBtMagnitudeHoverColor_Enter);
 			this.labelStandardErrorMeanBtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelMeanBtMagnitudeMax
@@ -7666,9 +7671,9 @@
 			this.labelMeanBtMagnitudeMax.TabIndex = 340;
 			this.labelMeanBtMagnitudeMax.Text = "max.:";
 			this.labelMeanBtMagnitudeMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanBtMagnitudeMax.Enter += new System.EventHandler(this.SetMeanBtMagnitudeHoverColor_Enter);
 			this.labelMeanBtMagnitudeMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelMeanBtMagnitudeMax.MouseEnter += new System.EventHandler(this.SetMeanBtMagnitudeHoverColor_Enter);
 			this.labelMeanBtMagnitudeMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelGoodnessOfFitParameterMax
@@ -7683,9 +7688,9 @@
 			this.labelGoodnessOfFitParameterMax.TabIndex = 330;
 			this.labelGoodnessOfFitParameterMax.Text = "max.:";
 			this.labelGoodnessOfFitParameterMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelGoodnessOfFitParameterMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelGoodnessOfFitParameterMax.Enter += new System.EventHandler(this.SetGoodnessOfFitParameterHoverColor_Enter);
 			this.labelGoodnessOfFitParameterMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelGoodnessOfFitParameterMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelGoodnessOfFitParameterMax.MouseEnter += new System.EventHandler(this.SetGoodnessOfFitParameterHoverColor_Enter);
 			this.labelGoodnessOfFitParameterMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// labelPercentageOfRejectedDataMax
@@ -7700,9 +7705,9 @@
 			this.labelPercentageOfRejectedDataMax.TabIndex = 320;
 			this.labelPercentageOfRejectedDataMax.Text = "max.:";
 			this.labelPercentageOfRejectedDataMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelPercentageOfRejectedDataMax.Enter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelPercentageOfRejectedDataMax.Enter += new System.EventHandler(this.SetPercentageOfRejectedDataHoverColor_Enter);
 			this.labelPercentageOfRejectedDataMax.Leave += new System.EventHandler(this.ClearStatusbar_Leave);
-			this.labelPercentageOfRejectedDataMax.MouseEnter += new System.EventHandler(this.SetStatusbar_Enter);
+			this.labelPercentageOfRejectedDataMax.MouseEnter += new System.EventHandler(this.SetPercentageOfRejectedDataHoverColor_Enter);
 			this.labelPercentageOfRejectedDataMax.MouseLeave += new System.EventHandler(this.ClearStatusbar_Leave);
 			// 
 			// HipparcosCatalogFilterForm
@@ -7823,7 +7828,7 @@
 		private System.Windows.Forms.TextBox textBoxIdentifierMax;
 		private System.Windows.Forms.TextBox textBoxIdentifierMin;
 		private System.Windows.Forms.TextBox textBoxlCatalogMax;
-		private System.Windows.Forms.Label labellCatalogMax;
+		private System.Windows.Forms.Label labelCatalogMax;
 		private System.Windows.Forms.Label labelSourceOfBvColorMin;
 		private System.Windows.Forms.Label labelReferenceFlagForBtAndVtMagnitudeMin;
 		private System.Windows.Forms.Label labelStandardErrorJohnsonBvColorMin;

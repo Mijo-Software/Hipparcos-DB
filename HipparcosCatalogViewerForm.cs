@@ -1665,6 +1665,8 @@ namespace Hipparcos_DB
 
 		private void ToolStripButtonChangeHoverEffect_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
 
+		private void ToolStripButtonFilter_MouseEnter(object sender, EventArgs e) => SetStatusbar(sender: sender, e: e);
+
 		#endregion
 
 		#region Leave event handlers
@@ -2315,6 +2317,8 @@ namespace Hipparcos_DB
 
 		private void ToolStripButtonChangeHoverEffect_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
 
+		private void ToolStripButtonFilter_MouseLeave(object sender, EventArgs e) => ClearStatusbar();
+
 		#endregion
 
 		#region Key* event handlers
@@ -2360,5 +2364,13 @@ namespace Hipparcos_DB
 		}
 
 		#endregion
+
+		private void ToolStripButtonFilter_Click(object sender, EventArgs e)
+		{
+			using (HipparcosCatalogFilterForm hipparcosCatalogFilterForm = new HipparcosCatalogFilterForm())
+			{
+				hipparcosCatalogFilterForm.ShowDialog();
+			}
+		}
 	}
 }
