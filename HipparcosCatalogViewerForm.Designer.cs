@@ -210,6 +210,8 @@
 			this.labelColorIndexInCousinsSystemData = new System.Windows.Forms.Label();
 			this.labelCatalogData = new System.Windows.Forms.Label();
 			this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
+			this.toolStripButtonFilter = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparatorFilter = new System.Windows.Forms.ToolStripSeparator();
 			this.contextMenuStripCopyData.SuspendLayout();
 			this.toolStrip.SuspendLayout();
 			this.statusStrip.SuspendLayout();
@@ -1955,6 +1957,8 @@
             this.toolStripTextBoxGoToIndex,
             this.toolStripLabelMaxIndex,
             this.toolStripButtonGoToIndex,
+            this.toolStripSeparatorFilter,
+            this.toolStripButtonFilter,
             this.toolStripSeparatorOptions,
             this.toolStripButtonChangeDataTableStyle,
             this.toolStripButtonChangeHoverEffect});
@@ -4158,6 +4162,26 @@
 			// 
 			this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BackgroundWorker_DoWork);
 			// 
+			// toolStripButtonFilter
+			// 
+			this.toolStripButtonFilter.AccessibleDescription = "Add filter settings";
+			this.toolStripButtonFilter.AccessibleName = "Filter";
+			this.toolStripButtonFilter.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+			this.toolStripButtonFilter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripButtonFilter.Image = global::Hipparcos_DB.Properties.Resources.fugue_funnel_16px_shadowless;
+			this.toolStripButtonFilter.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButtonFilter.Name = "toolStripButtonFilter";
+			this.toolStripButtonFilter.Size = new System.Drawing.Size(23, 22);
+			this.toolStripButtonFilter.Text = "Filter";
+			this.toolStripButtonFilter.Click += new System.EventHandler(this.ToolStripButtonFilter_Click);
+			this.toolStripButtonFilter.MouseEnter += new System.EventHandler(this.ToolStripButtonFilter_MouseEnter);
+			this.toolStripButtonFilter.MouseLeave += new System.EventHandler(this.ToolStripButtonFilter_MouseLeave);
+			// 
+			// toolStripSeparatorFilter
+			// 
+			this.toolStripSeparatorFilter.Name = "toolStripSeparatorFilter";
+			this.toolStripSeparatorFilter.Size = new System.Drawing.Size(6, 25);
+			// 
 			// HipparcosCatalogViewerForm
 			// 
 			this.AccessibleDescription = "Window of the Hipparcos Catalog Viewer";
@@ -4377,5 +4401,7 @@
 		private System.Windows.Forms.ToolStripButton toolStripButtonChangeDataTableStyle;
 		private System.Windows.Forms.ToolStripButton toolStripButtonChangeHoverEffect;
 		private System.ComponentModel.BackgroundWorker backgroundWorker;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparatorFilter;
+		private System.Windows.Forms.ToolStripButton toolStripButtonFilter;
 	}
 }
