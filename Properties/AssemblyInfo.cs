@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration(configuration: "")]
 [assembly: AssemblyCompany("Mijo Software")]
 [assembly: AssemblyProduct("Hipparcos-DB")]
-[assembly: AssemblyCopyright("Copyright © 2019")]
+[assembly: AssemblyCopyright("Copyright © 2019-2020")]
 [assembly: AssemblyTrademark("Hipparcos-DB")]
 [assembly: AssemblyCulture("")]
 
@@ -32,7 +32,7 @@ using System.Runtime.InteropServices;
 // Sie können alle Werte angeben oder Standardwerte für die Build- und Revisionsnummern verwenden,
 // indem Sie "*" wie unten gezeigt eingeben:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.5.5.24")]
-[assembly: AssemblyFileVersion("0.5.5.24")]
+[assembly: AssemblyVersion("0.5.6.25")]
+[assembly: AssemblyFileVersion("0.5.6.25")]
 [assembly: NeutralResourcesLanguage("en")]
 
